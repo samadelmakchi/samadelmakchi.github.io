@@ -114,13 +114,13 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 
 |DevOps                        |Development                     |Team Managment                 |Server                                |
 |------------------------------|--------------------------------|-------------------------------|--------------------------------------|
-|VCS Hosting:<br/> Gitlab[][o01]           |Container Management:<br/> Portainer[][d01] |Project Managment:<br/> Open Proect[][t01] |DNS:<br/> Webmin + Bind9[][s01]             |
+|VCS Hosting:<br/> `Gitlab`[][o01]           |Container Management:<br/> Portainer[][d01] |Project Managment:<br/> Open Proect[][t01] |DNS:<br/> Webmin + Bind9[][s01]             |
 |CI/CD:<br/> Jenkins[][o02]                |Repository Manager:<br/> Nexus[][d02]       |Task Managment:<br/> Plane[][t02]          |Reverse Proxy:<br/> Traefik[][s02]          |
 |Ansible:<br/> AWX[][o03]                  |Message Broker:<br/> RabbitMQ[][d03]        |Cloud storage:<br/> [Nextcloud][t03]       |Network Monitoring:<br/> Uptime Kuma[][s03] |
 |Terraform:<br/> Gaia[][o04]               |Push Notifications:<br/> Apprise[][d04]     |Time Tracking:<br/> Tuleap[][t04]          |Mail Server:<br/> [][s04]                   |
 |Monitor:<br/> Grafana[][o05] & Prometheus[][o06] |Caching Server:<br/> Redis[][d05]           |Password Managment:<br/> Teampass[][t05]   |Webmail Client:<br/> [][s05]                |
-|Log Management:<br/> ELK[][o07]           |                                |Team Communication: Mattermost[][t06] |Backup:<br/> [][s06]                        |
-|Service Mesh:<br/> Consul[][o08]          |                                |Video Confrance: Slack[][t07]         |Database Backup:<br/> [][s07]               |
+|Log Management:<br/> ELK[][o07]           |                                |Team Communication:<br/> Mattermost[][t06] |Backup:<br/> [][s06]                        |
+|Service Mesh:<br/> Consul[][o08]          |                                |Video Confrance:<br/> Slack[][t07]         |Database Backup:<br/> [][s07]               |
 |Secret Management:<br/> Vault[][o09]      |                                |                               |Web Server:<br/> [][s08]                    |
 |                              |                                |                               |Firewall:<br/> [][s09]                      |
 |                              |                                |                               |Terminal:<br/> [][s10]                      |
