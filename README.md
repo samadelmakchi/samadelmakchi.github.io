@@ -54,9 +54,9 @@
 
 SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
-|DevOps        |Development     |Team Managment  |Server                            |
-|--------------|----------------|----------------|----------------------------------|
-|`aaaaaaa`     |`aaaaaaa`       |`aaaaaaa`       |`DNS: Webmin + Bind9`             |
-|`aaaaaaa`     |`aaaaaaa`       |`aaaaaaa`       |`Reverse Proxy: Traefik`          |
-|`aaaaaaa`     |`aaaaaaa`       |`aaaaaaa`       |`Network Monitoring: Uptime Kuma` |
+|DevOps        |Development     |Team Managment  |Server                          |
+|--------------|----------------|----------------|--------------------------------|
+|aaaaaaa       |aaaaaaa         |aaaaaaa         |DNS: Webmin + Bind9             |
+|aaaaaaa       |aaaaaaa         |aaaaaaa         |Reverse Proxy: Traefik          |
+|aaaaaaa       |aaaaaaa         |aaaaaaa         |Network Monitoring: Uptime Kuma |
 
