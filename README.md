@@ -31,7 +31,7 @@
 [1.10]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/pinterest_online_social_media-32.png
 
 ## Follow me on:
-[![1.1]][1] [![1.2]][2] [![1.3]][3] [![1.4]][4] [![1.5]][5] [![1.6]][6] [![1.7]][7] 
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.05]][05] [![1.06]][06] [![1.07]][07] 
 
 ## Tech Stack:
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
