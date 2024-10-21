@@ -102,19 +102,19 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 [s10]: #
 [s11]: #
 
-|DevOps        |Development                     |Team Managment                 |Server                                |
-|--------------|--------------------------------|-------------------------------|--------------------------------------|
-|              |Container Management: Portainer[][d01] |Project Managment: Open Proect[][t01] |DNS: Webmin + Bind9[][s01]             |
-|              |Repository Manager: Nexus[][d02]       |Task Managment: Plane[][t02]          |Reverse Proxy: Traefik[][s02]          |
-|              |Message Broker: RabbitMQ[][d03]        |Cloud storage: [Nextcloud][t03]       |Network Monitoring: Uptime Kuma[][s03] |
-|              |Push Notifications: Apprise[][d04]     |Time Tracking: Tuleap[][t04]          |Mail Server: [][s04]                   |
-|              |Caching Server: Redis[][d05]           |Password Managment: Teampass[][t05]   |Webmail Client: [][s05]                |
-|              |                                |Team Communication: Mattermost[][t06] |Backup: [][s06]                        |
-|              |                                |Video Confrance: Slack[][t07]         |Database Backup: [][s07]               |
-|              |                                |                               |Web Server: [][s08]                    |
-|              |                                |                               |Firewall: [][s09]                      |
-|              |                                |                               |Terminal: [][s10]                      |
-|              |                                |                               |File Manager: [][s11]                  |
+|DevOps                        |Development                     |Team Managment                 |Server                                |
+|------------------------------|--------------------------------|-------------------------------|--------------------------------------|
+|VCS Hosting: Gitlab[][o01]           |Container Management: Portainer[][d01] |Project Managment: Open Proect[][t01] |DNS: Webmin + Bind9[][s01]             |
+|CI/CD: Jenkins[][o02]                |Repository Manager: Nexus[][d02]       |Task Managment: Plane[][t02]          |Reverse Proxy: Traefik[][s02]          |
+|Ansible: AWX[][o03]                  |Message Broker: RabbitMQ[][d03]        |Cloud storage: [Nextcloud][t03]       |Network Monitoring: Uptime Kuma[][s03] |
+|Terraform: Gaia[][o04]               |Push Notifications: Apprise[][d04]     |Time Tracking: Tuleap[][t04]          |Mail Server: [][s04]                   |
+|Monitor: Grafana[][o05] & Prometheus[][o06] |Caching Server: Redis[][d05]           |Password Managment: Teampass[][t05]   |Webmail Client: [][s05]                |
+|Log Management: ELK[][o07]           |                                |Team Communication: Mattermost[][t06] |Backup: [][s06]                        |
+|Service Mesh: Consul[][o08]          |                                |Video Confrance: Slack[][t07]         |Database Backup: [][s07]               |
+|Secret Management: Vault[][o09]      |                                |                               |Web Server: [][s08]                    |
+|                              |                                |                               |Firewall: [][s09]                      |
+|                              |                                |                               |Terminal: [][s10]                      |
+|                              |                                |                               |File Manager: [][s11]                  |
 
 <!-- > Blockquote -->
 
