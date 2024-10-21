@@ -3,7 +3,7 @@
 <h4>I am a results-driven senior engineer with a strong background in web development development.</h3>
 <h4>A Python Backend Developer, who is trying to become a DevOps Engineer & Open Source Developer.</h4>
 
-- 🔭 I'm currently working on Nikan Mehr Pardazesh Afza
+- 🔭 I'm currently working at Nikan Mehr Pardazesh Afza
 - 🌱 I'm currently learning **How to build scaleable applications & DevOps**
 - 👯 I'm looking to collaborate on startups projects
 - 👨‍💻 All of my projects are available at [https://github.com/samadelmakchi/](https://github.com/samadelmakchi/)
