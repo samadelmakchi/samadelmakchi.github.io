@@ -95,10 +95,10 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 |DevOps        |Development     |Team Managment                 |Server                                |
 |--------------|----------------|-------------------------------|--------------------------------------|
 |aaaaaaa       |aaaaaaa         |Project Managment: Open Proect[][t1] |DNS: Webmin + Bind9[][s1]             |
-|aaaaaaa       |aaaaaaa         |Task Managment: [][t2]               |Reverse Proxy: Traefik[][s2]          |
+|aaaaaaa       |aaaaaaa         |Task Managment: Plane[][t2]          |Reverse Proxy: Traefik[][s2]          |
 |aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3]       |Network Monitoring: Uptime Kuma[][s3] |
-|aaaaaaa       |aaaaaaa         |Time Tracking: [][t4]                |Network Monitoring: Uptime Kuma[][s4] |
-|aaaaaaa       |aaaaaaa         |Password Managment: [][t5]           |Network Monitoring: Uptime Kuma[][s5] |
+|aaaaaaa       |aaaaaaa         |Time Tracking: Tuleap[][t4]          |Network Monitoring: Uptime Kuma[][s4] |
+|aaaaaaa       |aaaaaaa         |Password Managment: Teampass[][t5]   |Network Monitoring: Uptime Kuma[][s5] |
 |aaaaaaa       |aaaaaaa         |Team Communication: Mattermost[][t6] |Network Monitoring: Uptime Kuma[][s6] |
 |aaaaaaa       |aaaaaaa         |Video Confrance: Slack[][t7]         |Network Monitoring: Uptime Kuma[][s7] |
 
