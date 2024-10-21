@@ -30,6 +30,7 @@
 ![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=Kibana&logoColor=white) 
 ![Logstash](https://img.shields.io/badge/-Logstash-A9A9A9?style=for-the-badge&logo=Logstash&logoColor=white) 
 ![Git](https://img.shields.io/badge/Git-e84d31?style=for-the-badge&logo=git&logoColor=white) 
+![Portainer](https://img.shields.io/badge/Portainer-13b8f1?style=for-the-badge&logo=Portainer&logoColor=white) 
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) 
@@ -48,4 +49,14 @@
 
 ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
 <!-- ![Cypress](https://img.shields.io/badge/Cypress-4aa184?style=for-the-badge&logo=cypress&logoColor=white)  -->
+
+## Tools
+
+SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+
+|DevOps        |Development     |Team Managment  |Server                            |
+|--------------|----------------|----------------|----------------------------------|
+|`aaaaaaa`     |`aaaaaaa`       |`aaaaaaa`       |`DNS: Webmin + Bind9`             |
+|`aaaaaaa`     |`aaaaaaa`       |`aaaaaaa`       |`Reverse Proxy: Traefik`          |
+|`aaaaaaa`     |`aaaaaaa`       |`aaaaaaa`       |`Network Monitoring: Uptime Kuma` |
 
