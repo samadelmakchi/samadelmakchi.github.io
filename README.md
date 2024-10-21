@@ -89,15 +89,15 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 [t6]: #
 [t7]: #
 
-|DevOps        |Development     |Team Managment                 |Server                          |
-|--------------|----------------|-------------------------------|--------------------------------|
-|aaaaaaa       |aaaaaaa         |Project Managment: [Open Proect][t1] |DNS: Webmin + Bind9             |
-|aaaaaaa       |aaaaaaa         |Task Managment: [] [t3]              |Reverse Proxy: Traefik          |
-|aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3]       |Network Monitoring: Uptime Kuma |
-|aaaaaaa       |aaaaaaa         |Time Tracking: [][t4]                |Network Monitoring: Uptime Kuma |
-|aaaaaaa       |aaaaaaa         |Password Managment: [][t5]           |Network Monitoring: Uptime Kuma |
-|aaaaaaa       |aaaaaaa         |Team Communication: [Mattermost][t6] |Network Monitoring: Uptime Kuma |
-|aaaaaaa       |aaaaaaa         |Video Confrance: [Slack][t7]         |Network Monitoring: Uptime Kuma |
+|DevOps        |Development     |Team Managment                 |Server                                |
+|--------------|----------------|-------------------------------|--------------------------------------|
+|aaaaaaa       |aaaaaaa         |Project Managment: Open Proect[][t1] |DNS: Webmin + Bind9[][s1]             |
+|aaaaaaa       |aaaaaaa         |Task Managment: [][t2]               |Reverse Proxy: Traefik[][s1]          |
+|aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3]       |Network Monitoring: Uptime Kuma[][s1] |
+|aaaaaaa       |aaaaaaa         |Time Tracking: [][t4]                |Network Monitoring: Uptime Kuma       |
+|aaaaaaa       |aaaaaaa         |Password Managment: [][t5]           |Network Monitoring: Uptime Kuma       |
+|aaaaaaa       |aaaaaaa         |Team Communication: Mattermost[][t6] |Network Monitoring: Uptime Kuma       |
+|aaaaaaa       |aaaaaaa         |Video Confrance: Slack[][t7]         |Network Monitoring: Uptime Kuma       |
 
 > Blockquote  
 
