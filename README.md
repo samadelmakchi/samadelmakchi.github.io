@@ -10,25 +10,6 @@
 - 💬 Ask me about **Docker, Microservices, Software Architecture, Software Analysis, Databases, Python and Javascript**
 - 📫 How to reach me? Just mail me **(samad.elmakchi@gmail.com)**
 
-[01]: https://www.linkedin.com/in/samad-elmakchi
-[02]: https://www.instagram.com/samad.elmakchi
-[03]: https://wa.me/989141189645
-[04]: https://t.me/samadelmakchi
-[05]: https://x.com/elmakchi
-[06]: https://facebook.com/samad.elmakchi
-[07]: mailto:samad.elmakchi@gmail.com
-
-[1.01]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-32.png
-[1.02]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media-32.png
-[1.03]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/whatsapp_social_media_logo-32.png
-[1.04]: https://cdn4.iconfinder.com/data/icons/social-media-2552/64/social_media_telegram-05-32.png
-[1.05]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_twitter-32.png
-[1.06]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/facebook_online_social_media-32.png
-[1.07]: https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/email_mail_envelope_send_message-32.png
-[1.08]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/skype_online_social_media-32.png
-[1.09]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media-32.png
-[1.10]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/pinterest_online_social_media-32.png
-
 ## Follow me on:
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.05]][05] [![1.06]][06] [![1.07]][07] 
 
@@ -93,3 +74,24 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 
 > Blockquote  
 
+
+[01]: https://www.linkedin.com/in/samad-elmakchi
+[02]: https://www.instagram.com/samad.elmakchi
+[03]: https://wa.me/989141189645
+[04]: https://t.me/samadelmakchi
+[05]: https://x.com/elmakchi
+[06]: https://facebook.com/samad.elmakchi
+[07]: mailto:samad.elmakchi@gmail.com
+[08]: 
+[09]: 
+[10]: 
+[1.01]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-32.png
+[1.02]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media-32.png
+[1.03]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/whatsapp_social_media_logo-32.png
+[1.04]: https://cdn4.iconfinder.com/data/icons/social-media-2552/64/social_media_telegram-05-32.png
+[1.05]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_twitter-32.png
+[1.06]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/facebook_online_social_media-32.png
+[1.07]: https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/email_mail_envelope_send_message-32.png
+[1.08]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/skype_online_social_media-32.png
+[1.09]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media-32.png
+[1.10]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/pinterest_online_social_media-32.png
