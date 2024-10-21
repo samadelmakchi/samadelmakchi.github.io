@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-<h1> I'm Samad Elmakchi.</h1>
+<h1>I'm Samad Elmakchi.</h1>
 <h3>I am a results-driven senior engineer with a strong background in web development development.</h3>
 <h4>A Python Backend Developer, who is trying to become a DevOps Engineer & Open Source Developer.</h4>
 
@@ -10,6 +10,14 @@
 - 👨‍💻 All of my projects are available at [https://github.com/samadelmakchi/](https://github.com/samadelmakchi/)
 - 💬 Ask me about **Docker, Microservices, Software Architecture, Software Analysis, Databases, Python and Javascript**
 - 📫 How to reach me? Just mail me **(samad.elmakchi@gmail.com)**
+
+<!--
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 
 # 💻 Tech Stack:
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
@@ -24,9 +32,11 @@
 ![Nginx](https://img.shields.io/badge/Nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) 
 ![Jenkins](https://img.shields.io/badge/Jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) 
 ![Gitlab](https://img.shields.io/badge/Gitlab-da4127?style=for-the-badge&logo=gitlab&logoColor=white) 
+![Github](https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white) 
 ![Elasticsearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white) 
 ![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=Kibana&logoColor=white) 
 ![Logstash](https://img.shields.io/badge/-Logstash-A9A9A9?style=for-the-badge&logo=Logstash&logoColor=white) 
+![Git](https://img.shields.io/badge/Git-e84d31?style=for-the-badge&logo=git&logoColor=white) 
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) 
@@ -38,15 +48,12 @@
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) 
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white) 
 ![RabbitMQ](https://img.shields.io/badge/-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white) 
-![Celery](https://img.shields.io/static/v1?style=for-the-badge&message=Celery&color=37814A&logo=Celery&logoColor=white) 
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=Celery&logoColor=white) 
 ![Selenium](https://img.shields.io/badge/-selenium-CB02A?style=for-the-badge&logo=selenium&logoColor=white) 
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
 <!--
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
+![Cypress](https://img.shields.io/badge/Cypress-4aa184?style=for-the-badge&logo=cypress&logoColor=white) 
 -->
