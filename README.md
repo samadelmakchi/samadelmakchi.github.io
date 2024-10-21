@@ -7,7 +7,7 @@
 - 🌱 I'm currently learning **How to build scaleable applications & DevOps**
 - 👯 I'm looking to collaborate on startups projects
 - 👨‍💻 All of my projects are available at [https://github.com/samadelmakchi/](https://github.com/samadelmakchi/)
-- 💬 Ask me about **Docker, Microservices, Software Architecture, Software Analysis, Databases, Python and Javascript**
+- 💬 Ask me about **Docker, Microservices, Software Architecture, Software Analysis, Databases, Python and Fasiapi**
 <!-- - 📫 How to reach me? Just mail me **(samad.elmakchi@gmail.com)**  -->
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
@@ -68,8 +68,8 @@
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
-![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
-<!-- ![Cypress](https://img.shields.io/badge/Cypress-4aa184?style=for-the-badge&logo=cypress&logoColor=white)  -->
+<!-- ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
+![Cypress](https://img.shields.io/badge/Cypress-4aa184?style=for-the-badge&logo=cypress&logoColor=white)  -->
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
