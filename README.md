@@ -1,23 +1,16 @@
 ## Hi there 👋
 
-<h1>I'm Samad Elmakchi.</h1>
-<h3>I am a results-driven senior engineer with a strong background in web development development.</h3>
+<h2>I'm Samad Elmakchi.</h2>
+<h4>I am a results-driven senior engineer with a strong background in web development development.</h3>
 <h4>A Python Backend Developer, who is trying to become a DevOps Engineer & Open Source Developer.</h4>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning **How to build scaleable applications & DevOps**
-- 👯 I’m looking to collaborate on ...
+- 🔭 I'm currently working on Nikan Mehr Pardazesh Afza
+- 🌱 I'm currently learning **How to build scaleable applications & DevOps**
+- 👯 I'm looking to collaborate on startups projects
 - 👨‍💻 All of my projects are available at [https://github.com/samadelmakchi/](https://github.com/samadelmakchi/)
 - 💬 Ask me about **Docker, Microservices, Software Architecture, Software Analysis, Databases, Python and Javascript**
 - 📫 How to reach me? Just mail me **(samad.elmakchi@gmail.com)**
 
-<!--
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
 
 # 💻 Tech Stack:
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
@@ -53,7 +46,6 @@
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
-<!--
 ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
-![Cypress](https://img.shields.io/badge/Cypress-4aa184?style=for-the-badge&logo=cypress&logoColor=white) 
--->
+<!-- ![Cypress](https://img.shields.io/badge/Cypress-4aa184?style=for-the-badge&logo=cypress&logoColor=white)  -->
+
