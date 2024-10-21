@@ -17,7 +17,7 @@
 [04]: https://t.me/samadelmakchi
 [05]: https://x.com/elmakchi
 [06]: https://facebook.com/samad.elmakchi
-[07]: samad.elmakchi@gmail.com
+[07]: mailto:samad.elmakchi@gmail.com
 
 [1.01]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-32.png
 [1.02]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media-32.png
