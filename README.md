@@ -1,6 +1,5 @@
-## Hi there 👋
+## Hi there 👋 I'm Samad Elmakchi.
 
-<h2>I'm Samad Elmakchi.</h2>
 <h4>I am a results-driven senior engineer with a strong background in web development development.</h3>
 <h4>A Python Backend Developer, who is trying to become a DevOps Engineer & Open Source Developer.</h4>
 
@@ -74,18 +73,23 @@
 ## Tools
 SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
-[t1]: https://github.com/samadelmakchi/nextcloud
-[t2]: https://github.com/samadelmakchi/nextcloud
+[t1]: #
+[t2]: #
 [t3]: https://github.com/samadelmakchi/nextcloud
-[t4]: https://github.com/samadelmakchi/nextcloud
-[t5]: https://github.com/samadelmakchi/nextcloud
-[t6]: https://github.com/samadelmakchi/nextcloud
+[t4]: #
+[t5]: #
+[t6]: #
+[t7]: #
 
-|DevOps        |Development     |Team Managment           |Server                          |
-|--------------|----------------|-------------------------|--------------------------------|
-|aaaaaaa       |aaaaaaa         |aaaaaaa                  |DNS: Webmin + Bind9             |
-|aaaaaaa       |aaaaaaa         |aaaaaaa                  |Reverse Proxy: Traefik          |
-|aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3] |Network Monitoring: Uptime Kuma |
+|DevOps        |Development     |Team Managment                 |Server                          |
+|--------------|----------------|-------------------------------|--------------------------------|
+|aaaaaaa       |aaaaaaa         |Project Managment: [Open Proect][t1] |DNS: Webmin + Bind9             |
+|aaaaaaa       |aaaaaaa         |Task Managment: [aaaaaaaaaa] [t2]    |Reverse Proxy: Traefik          |
+|aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3]       |Network Monitoring: Uptime Kuma |
+|aaaaaaa       |aaaaaaa         |Time Tracking: [aaaaaaaaaa][t4]      |Network Monitoring: Uptime Kuma |
+|aaaaaaa       |aaaaaaa         |Password Managment: [aaaaaaaaaa][t5] |Network Monitoring: Uptime Kuma |
+|aaaaaaa       |aaaaaaa         |Team Communication: [Mattermost][t6] |Network Monitoring: Uptime Kuma |
+|aaaaaaa       |aaaaaaa         |Video Confrance: [Slack][t7]         |Network Monitoring: Uptime Kuma |
 
 > Blockquote  
 
