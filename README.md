@@ -102,6 +102,16 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 [s10]: #
 [s11]: #
 
+[o01]: #
+[o02]: #
+[o03]: #
+[o04]: #
+[o05]: #
+[o06]: #
+[o07]: #
+[o08]: #
+[o09]: #
+
 |DevOps                        |Development                     |Team Managment                 |Server                                |
 |------------------------------|--------------------------------|-------------------------------|--------------------------------------|
 |VCS Hosting: Gitlab[][o01]           |Container Management: Portainer[][d01] |Project Managment: Open Proect[][t01] |DNS: Webmin + Bind9[][s01]             |
