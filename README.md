@@ -20,18 +20,18 @@
 [06]: https://facebook.com/samad.elmakchi
 [07]: mailto:samad.elmakchi@gmail.com
 
-[1.01]: https://img.icons8.com/?size=80&id=jpXIUhHIOLAX&format=png (LinkedIn)
-[1.02]: https://img.icons8.com/?size=80&id=dB8RcuVnnA23&format=png (Instagram)
-[1.03]: https://img.icons8.com/?size=80&id=M1CPZyi4GCgL&format=png (WhatsApp)
-[1.04]: https://img.icons8.com/?size=50&id=TCnKnYZFoOzM&format=png (Telegram)
-[1.05]: https://img.icons8.com/?size=80&id=8RAOGCjHC5I3&format=png (X)
-[1.06]: https://img.icons8.com/?size=80&id=QOY6k0Xz4Hdg&format=png (Facebook)
-[1.07]: https://img.icons8.com/?size=80&id=mj3PSJHr7HbR&format=png (Gmail)
-[1.08]: https://img.icons8.com/?size=80&id=G2KgOHWbQCdj&format=png (Pinterest)
-[1.09]: https://img.icons8.com/?size=80&id=VGNzEdnDnQRZ&format=png (Youtube)
+[1.01]: social/linkedin.png (LinkedIn)
+[1.02]: social/instagram.png (Instagram)
+[1.03]: social/whatsapp.png (WhatsApp)
+[1.04]: social/telegram.png (Telegram)
+[1.05]: social/x.png (X)
+[1.06]: social/facebook.png (Facebook)
+[1.07]: social/gmail.png (Gmail)
+[1.08]: social/pinterest.png (Pinterest)
+[1.09]: social/youtube.png (Youtube)
 
 ## Follow me on:
-[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.05]][05] [![1.06]][06] [![1.07]][07] [![1.04]][04]
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.05]][05] [![1.06]][06] [![1.07]][07]
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
