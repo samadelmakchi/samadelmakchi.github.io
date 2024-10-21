@@ -8,9 +8,9 @@
 - 👯 I'm looking to collaborate on startups projects
 - 👨‍💻 All of my projects are available at [https://github.com/samadelmakchi/](https://github.com/samadelmakchi/)
 - 💬 Ask me about **Docker, Microservices, Software Architecture, Software Analysis, Databases, Python and Javascript**
-- 📫 How to reach me? Just mail me **(samad.elmakchi@gmail.com)**
+<!-- - 📫 How to reach me? Just mail me **(samad.elmakchi@gmail.com)**  -->
 
-<!-- ##############################################################################################################################  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 [01]: https://www.linkedin.com/in/samad-elmakchi
 [02]: https://www.instagram.com/samad.elmakchi
@@ -22,6 +22,7 @@
 [08]: 
 [09]: 
 [10]: 
+
 [1.01]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_linked_in-32.png
 [1.02]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media-32.png
 [1.03]: https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/whatsapp_social_media_logo-32.png
@@ -36,7 +37,7 @@
 ## Follow me on:
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.05]][05] [![1.06]][06] [![1.07]][07] 
 
-<!-- ##############################################################################################################################  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 ## Tech Stack:
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
@@ -76,7 +77,7 @@
 ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
 <!-- ![Cypress](https://img.shields.io/badge/Cypress-4aa184?style=for-the-badge&logo=cypress&logoColor=white)  -->
 
-<!-- ##############################################################################################################################  -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 ## Tools
 SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
@@ -89,15 +90,23 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 [t6]: #
 [t7]: #
 
+[s1]: #
+[s2]: #
+[s3]: #
+[s4]: #
+[s5]: #
+[s6]: #
+[s7]: #
+
 |DevOps        |Development     |Team Managment                 |Server                                |
 |--------------|----------------|-------------------------------|--------------------------------------|
 |aaaaaaa       |aaaaaaa         |Project Managment: Open Proect[][t1] |DNS: Webmin + Bind9[][s1]             |
-|aaaaaaa       |aaaaaaa         |Task Managment: [][t2]               |Reverse Proxy: Traefik[][s1]          |
-|aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3]       |Network Monitoring: Uptime Kuma[][s1] |
-|aaaaaaa       |aaaaaaa         |Time Tracking: [][t4]                |Network Monitoring: Uptime Kuma       |
-|aaaaaaa       |aaaaaaa         |Password Managment: [][t5]           |Network Monitoring: Uptime Kuma       |
-|aaaaaaa       |aaaaaaa         |Team Communication: Mattermost[][t6] |Network Monitoring: Uptime Kuma       |
-|aaaaaaa       |aaaaaaa         |Video Confrance: Slack[][t7]         |Network Monitoring: Uptime Kuma       |
+|aaaaaaa       |aaaaaaa         |Task Managment: [][t2]               |Reverse Proxy: Traefik[][s2]          |
+|aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3]       |Network Monitoring: Uptime Kuma[][s3] |
+|aaaaaaa       |aaaaaaa         |Time Tracking: [][t4]                |Network Monitoring: Uptime Kuma[][s4] |
+|aaaaaaa       |aaaaaaa         |Password Managment: [][t5]           |Network Monitoring: Uptime Kuma[][s5] |
+|aaaaaaa       |aaaaaaa         |Team Communication: Mattermost[][t6] |Network Monitoring: Uptime Kuma[][s6] |
+|aaaaaaa       |aaaaaaa         |Video Confrance: Slack[][t7]         |Network Monitoring: Uptime Kuma[][s7] |
 
 > Blockquote  
 
