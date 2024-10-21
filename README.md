@@ -22,7 +22,7 @@
 
 [1.01]: https://img.icons8.com/?size=80&id=jpXIUhHIOLAX&format=png (LinkedIn)
 [1.02]: https://img.icons8.com/?size=80&id=dB8RcuVnnA23&format=png (Instagram)
-[1.03]: https://img.icons8.com/?size=50&id=16712&format=png (WhatsApp)
+[1.03]: https://img.icons8.com/?size=80&id=M1CPZyi4GCgL&format=png (WhatsApp)
 [1.04]: https://img.icons8.com/?size=50&id=TCnKnYZFoOzM&format=png (Telegram)
 [1.05]: https://img.icons8.com/?size=80&id=8RAOGCjHC5I3&format=png (X)
 [1.06]: https://img.icons8.com/?size=80&id=QOY6k0Xz4Hdg&format=png (Facebook)
@@ -31,7 +31,7 @@
 [1.09]: https://img.icons8.com/?size=80&id=VGNzEdnDnQRZ&format=png (Youtube)
 
 ## Follow me on:
-[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.05]][05] [![1.06]][06] [![1.07]][07] 
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.05]][05] [![1.06]][06] [![1.07]][07] [![1.04]][04]
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
