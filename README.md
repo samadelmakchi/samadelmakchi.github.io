@@ -76,31 +76,39 @@
 ## Tools
 SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
-[t1]: #
-[t2]: #
-[t3]: https://github.com/samadelmakchi/nextcloud
-[t4]: #
-[t5]: #
-[t6]: #
-[t7]: #
+[t01]: #
+[t02]: #
+[t03]: https://github.com/samadelmakchi/nextcloud
+[t04]: #
+[t05]: #
+[t06]: #
+[t07]: #
 
-[s1]: #
-[s2]: #
-[s3]: #
-[s4]: #
-[s5]: #
-[s6]: #
-[s7]: #
+[s01]: #
+[s02]: #
+[s03]: #
+[s04]: #
+[s05]: #
+[s06]: #
+[s07]: #
+[s08]: #
+[s09]: #
+[s10]: #
+[s11]: #
 
 |DevOps        |Development     |Team Managment                 |Server                                |
 |--------------|----------------|-------------------------------|--------------------------------------|
-|aaaaaaa       |aaaaaaa         |Project Managment: Open Proect[][t1] |DNS: Webmin + Bind9[][s1]             |
-|aaaaaaa       |aaaaaaa         |Task Managment: Plane[][t2]          |Reverse Proxy: Traefik[][s2]          |
-|aaaaaaa       |aaaaaaa         |Cloud storage: [Nextcloud][t3]       |Network Monitoring: Uptime Kuma[][s3] |
-|aaaaaaa       |aaaaaaa         |Time Tracking: Tuleap[][t4]          |Network Monitoring: Uptime Kuma[][s4] |
-|aaaaaaa       |aaaaaaa         |Password Managment: Teampass[][t5]   |Network Monitoring: Uptime Kuma[][s5] |
-|aaaaaaa       |aaaaaaa         |Team Communication: Mattermost[][t6] |Network Monitoring: Uptime Kuma[][s6] |
-|aaaaaaa       |aaaaaaa         |Video Confrance: Slack[][t7]         |Network Monitoring: Uptime Kuma[][s7] |
+|              |                |Project Managment: Open Proect[][t01] |DNS: Webmin + Bind9[][s01]             |
+|              |                |Task Managment: Plane[][t02]          |Reverse Proxy: Traefik[][s02]          |
+|              |                |Cloud storage: [Nextcloud][t03]       |Network Monitoring: Uptime Kuma[][s03] |
+|              |                |Time Tracking: Tuleap[][t04]          |Mail Server: [][s04]                   |
+|              |                |Password Managment: Teampass[][t05]   |Webmail Client: [][s05]                |
+|              |                |Team Communication: Mattermost[][t06] |Backup: [][s06]                        |
+|              |                |Video Confrance: Slack[][t07]         |Database Backup: [][s07]               |
+|              |                |                               |Web Server: [][s08]                    |
+|              |                |                               |Firewall: [][s09]                      |
+|              |                |                               |Terminal: [][s10]                      |
+|              |                |                               |File Manager: [][s11]                  |
 
 <!-- > Blockquote -->
 
