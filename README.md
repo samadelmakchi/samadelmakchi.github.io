@@ -19,6 +19,8 @@
 [05]: https://x.com/elmakchi
 [06]: https://facebook.com/samad.elmakchi
 [07]: mailto:samad.elmakchi@gmail.com
+[10]: https://gitlab.com/samadelmakchi
+[11]: https://github.com/samadelmakchi
 
 [1.01]: social/linkedin.png (LinkedIn)
 [1.02]: social/instagram.png (Instagram)
@@ -29,9 +31,11 @@
 [1.07]: social/gmail.png (Gmail)
 [1.08]: social/pinterest.png (Pinterest)
 [1.09]: social/youtube.png (Youtube)
+[1.10]: social/gitlab.png (Gitlab)
+[1.11]: social/github.png (Github)
 
 ## Follow me on:
-[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07] [![1.10]][10]
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
