@@ -35,11 +35,13 @@
 [1.11]: social/github.png (Github)
 
 ### Follow me on:
-[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07] [![1.10]][10]
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.10]][10] [![1.05]][05] [![1.07]][07]
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 ### Tech Stack:
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
@@ -76,8 +78,8 @@
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
-# Docker Compose
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+### Docker Compose
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 [t01]: #
 [t02]: #
@@ -133,11 +135,11 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 # CI/CD
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
-# Functional Testing vs Non-Functional Testing
+### Functional Testing vs Non-Functional Testing
 Below are the differences between functional testing and non-functional testing:
 |Parameters                      |Functional Testing	                                                   |Non-functional Testing                                                       |
 |--------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -192,22 +194,22 @@ There are various types of functional testing which are as follows:
     <!-- برای تست بازیابی سیستم‌ها -->
 - **Sanity Testing**
     Sanity testing is a subset of regression testing and is done to make sure that the code changes introduced are working as expected.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Database Testing**
     Database testing is a type of software testing that checks the schema, tables, etc of the database under test.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Adhoc Testing**
     Adhoc testing also known as monkey testing or random testing is a type of software testing that does not follow any documentation or test plan to perform testing.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Static Testing**
     Static testing is a type of software testing that is performed to check the defects in software without actually executing the code of the software application.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Grey-box Testing**
     Grey box testing is a type of software testing that includes black-box and white-box testing.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Component Testing**
     Component testing also known as program testing or module testing is a type of software testing that is done after the unit testing. In this, the test objects can be tested independently as a component without integrating with other components.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Migration Test**
     > *Tools : Flyway*
     <!-- برای مهاجرت دیتابیس‌ها -->
@@ -259,26 +261,25 @@ There are various types of non-functional testing which are as follows:
     <!-- تست قابلیت اطمینان -->
 - **Compliance testing**
     is a type of testing to ensure that a software program or system meets a specific compliance standard, such as HIPAA or Sarbanes-Oxley. It is often the first type of testing that is performed when accessing the control environment.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Usability testing**
     is a type of testing to ensure that a software program or system is easy to use. For example, on the e-commerce website, it can be tested whether the users can easily locate the Buy Now button or not.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Volume testing**
     is a type of testing to ensure that a software program or system can handle a large volume of data. For example, if the website is developed to handle traffic of 500 users, volume testing will whether the site is able to handle 500 users or not.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Failover testing**
     is validates the system’s capability to allocate sufficient resources toward recovery during a server failure.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Portability testing**
     is testing the ease with which the application can be moved from one environment to another. 
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Baseline testing**
     is used to make sure that the application performance is not degraded over time with new changes. 
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Documentation testing**
     is a type of software testing that involves testing the documented artifacts developed before or during the software testing process.
-    <!-- > *Tools : * -->
+    > *Tools :*
 - **Internationalization testing**
     is a type of software testing that ensures the adaptability of software to different cultures and languages around the world accordingly without any modifications in source code.  
-    <!-- > *Tools : * -->
-    
+    > *Tools :*
