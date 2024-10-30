@@ -115,10 +115,10 @@ Hazırda, konteyner idarəetməsi və orkestrasiyasında bacarıqlarımı artır
 
 ### Suggested content
 I invite you to explore the following content on my GitHub page:
-> [Essential applications for every company and software project, categorized into four sections][a01]
-> [An example of a CI/CD process implemented in GitLab][a02]
-> [Important types of tests in application development][a03]
-> [Dockerizing applications in various programming languages and frameworks][a04]
+- > [Essential applications for every company and software project, categorized into four sections][a01]
+- > [An example of a CI/CD process implemented in GitLab][a02]
+- > [Important types of tests in application development][a03]
+- > [Dockerizing applications in various programming languages and frameworks][a04]
 
 <!-- از شما دعوت میکنم تا مطالب زیر را در صفحه گیت هابم مطالعه کنید:
 - > [اپلیکیشن های ضروری برای هر شرکت و پروژه نرم افزاری که در 4 بخش دسته بندی شده است][a01]
