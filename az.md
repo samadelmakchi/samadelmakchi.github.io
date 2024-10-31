@@ -1,10 +1,10 @@
-# Hi there 👋 I'm Samad Elmakchi.
+# Merhaba! 👋 Ben Samad Elmakçı.
 
-Hello! I am Samad Emakchi, a software engineer with over 20 years of experience in web development, focusing primarily on backend and DevOps. Throughout the years, I have played key roles in various projects as a DevOps Manager and Scrum Master, striving to optimize and automate software development and deployment processes using Docker, Docker Compose, and CI/CD tools. I also have a strong interest in designing and implementing microservices architectures, which provide applications with enhanced scalability and flexibility.
+Merhaba! Ben Samad Elmakçı, yazılım mühendisi olarak 20 yılı aşkın bir süredir web geliştirme alanında, özellikle de arka uç ve DevOps üzerinde uzmanlaşmış bir profesyonelim. Bu yıllar boyunca, çeşitli projelerde DevOps Yöneticisi ve Scrum Master olarak önemli roller üstlendim ve Docker, Docker Compose ve CI/CD araçlarını kullanarak yazılım geliştirme ve dağıtım süreçlerini optimize etmeye ve otomatikleştirmeye çalıştım. Ayrıca, uygulamaların daha ölçeklenebilir ve esnek olmasını sağlamak için mikro hizmet mimarileri tasarlamak ve uygulamak konusunda da büyük bir ilgiye sahibim.
 
-In terms of testing, I utilize Python to create automated tests, considering agile programming principles and working with the Scrum methodology as essential parts of software development. As a Scrum Master, I place great importance on fostering coordination and synergy among team members, as I believe teamwork is crucial to the success of projects. Personally, I am a calm and energetic individual who values effective interactions within the team as opportunities for learning and growth.
+Test yazımı konusunda, otomatik testler oluşturmak için Python kullanıyorum ve çevik yazılım geliştirme prensiplerini ve Scrum metodolojisiyle çalışma yaklaşımını yazılım geliştirme sürecinin ayrılmaz bir parçası olarak görüyorum. Scrum Master olarak, ekip üyeleri arasında koordinasyonu ve sinerjiyi sağlamak için büyük önem veriyorum, çünkü ekip çalışmasının projelerin başarısında kritik bir rol oynadığına inanıyorum. Kişisel olarak, sakin ve enerjik bir bireyim; etkili etkileşimleri öğrenme ve gelişim fırsatları olarak değerlendiriyorum.
 
-Currently, I am expanding my knowledge in Kubernetes to enhance my skills in container management and orchestration. I also believe in the importance of sharing knowledge and documenting code, and I welcome the opportunity to share my projects publicly so that others can benefit from my experiences and solutions.
+Şu anda, konteyner yönetimi ve orkestrasyonu alanındaki bilgi birikimimi artırmak için Kubernetes öğreniyorum. Ayrıca, bilgiyi paylaşmanın ve kodu belgelerle desteklemenin önemine inanıyorum ve projelerimi kamuya açık bir şekilde paylaşmaktan memnuniyet duyuyorum, böylece diğerleri de deneyimlerimden ve çözümlerimden faydalanabilir.
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
@@ -30,12 +30,12 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 [1.10]: social/gitlab.png (Gitlab)
 [1.11]: social/github.png (Github)
 
-### Follow me on
+### Məni izlə
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
-### Tech Stack
+### Texnologiya yığını
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
@@ -78,11 +78,11 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 [a04]: https://github.com/samadelmakchi/dockerize
 [a05]: https://github.com/samadelmakchi/fastapi
 
-### Suggested content
-I invite you to explore the following content on my GitHub page:
-- > [Essential applications for every company and software project, categorized into four sections][a01]
-- > [An example of a CI/CD process implemented in GitLab][a02]
-- > [Important types of tests in application development][a03]
-- > [Dockerizing applications in various programming languages and frameworks][a04]
+### Təklif olunan məzmun
+Sizi GitHub səhifəmdə aşağıdakı məzmunu araşdırmağa dəvət edirəm:
+- > [Dörd bölməyə bölünən hər bir şirkət və proqram layihəsi üçün əsas tətbiqlər][a01]
+- > [GitLab-da həyata keçirilən CI/CD prosesinin nümunəsi][a02]
+- > [Tətbiqlərin hazırlanmasında mühüm test növləri][a03]
+- > [Müxtəlif proqramlaşdırma dillərində və çərçivələrdə tətbiqlərin dokerləşdirilməsi][a04]
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->

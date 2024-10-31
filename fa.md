@@ -1,10 +1,10 @@
-# Hi there 👋 I'm Samad Elmakchi.
+# سلام! 👋 من صمد المکچی هستم.
 
-Hello! I am Samad Emakchi, a software engineer with over 20 years of experience in web development, focusing primarily on backend and DevOps. Throughout the years, I have played key roles in various projects as a DevOps Manager and Scrum Master, striving to optimize and automate software development and deployment processes using Docker, Docker Compose, and CI/CD tools. I also have a strong interest in designing and implementing microservices architectures, which provide applications with enhanced scalability and flexibility.
+سلام! من صمد المکچی هستم، مهندس نرم‌افزار با بیش از ۲۰ سال تجربه در توسعه وب، با تمرکز ویژه روی بک‌اند و DevOps. در این سال‌ها، به‌عنوان مدیر DevOps و اسکرام‌مستر، همراه تیم‌ها در پروژه‌های گوناگون نقش‌های کلیدی ایفا کرده‌ام و با به‌کارگیری Docker، Docker Compose و ابزارهای CI/CD تلاش کرده‌ام فرایندهای توسعه و استقرار نرم‌افزار را بهینه و خودکار کنم. همچنین علاقه زیادی به طراحی و پیاده‌سازی معماری‌های میکروسرویس دارم که به اپلیکیشن‌ها امکان مقیاس‌پذیری و انعطاف‌پذیری بیشتری می‌دهد.
 
-In terms of testing, I utilize Python to create automated tests, considering agile programming principles and working with the Scrum methodology as essential parts of software development. As a Scrum Master, I place great importance on fostering coordination and synergy among team members, as I believe teamwork is crucial to the success of projects. Personally, I am a calm and energetic individual who values effective interactions within the team as opportunities for learning and growth.
+در زمینه تست‌نویسی، از پایتون برای ساخت تست‌های خودکار استفاده می‌کنم و اصول برنامه‌نویسی چابک و کار به روش اسکرام را بخشی جدایی‌ناپذیر از توسعه نرم‌افزار می‌دانم. به‌عنوان اسکرام‌مستر، همواره به ایجاد هماهنگی و هم‌افزایی بین اعضای تیم اهمیت می‌دهم، چرا که به عقیده من، همکاری تیمی نقش اساسی در موفقیت پروژه‌ها دارد. از نظر شخصیتی فردی آرام و باانرژی هستم و تعاملات موثر در تیم را به‌عنوان فرصتی برای یادگیری و رشد ارزشمند می‌دانم.
 
-Currently, I am expanding my knowledge in Kubernetes to enhance my skills in container management and orchestration. I also believe in the importance of sharing knowledge and documenting code, and I welcome the opportunity to share my projects publicly so that others can benefit from my experiences and solutions.
+در حال حاضر، با یادگیری Kubernetes قصد دارم دانش خود را در زمینه مدیریت و ارکستراسیون کانتینرها گسترش دهم. همچنین به اشتراک‌گذاری دانش و مستندسازی کد اهمیت می‌دهم و از به‌اشتراک‌گذاری عمومی پروژه‌هایم استقبال می‌کنم تا دیگران نیز از تجربه‌ها و راهکارهایم بهره‌مند شوند.
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
@@ -30,12 +30,12 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 [1.10]: social/gitlab.png (Gitlab)
 [1.11]: social/github.png (Github)
 
-### Follow me on
+### من را دنبال کنید
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
-### Tech Stack
+### پشته فناوری
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
@@ -78,11 +78,11 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 [a04]: https://github.com/samadelmakchi/dockerize
 [a05]: https://github.com/samadelmakchi/fastapi
 
-### Suggested content
-I invite you to explore the following content on my GitHub page:
-- > [Essential applications for every company and software project, categorized into four sections][a01]
-- > [An example of a CI/CD process implemented in GitLab][a02]
-- > [Important types of tests in application development][a03]
-- > [Dockerizing applications in various programming languages and frameworks][a04]
+### مطالب پیشنهادی
+از شما دعوت میکنم تا مطالب زیر را در صفحه گیت هابم مطالعه کنید:
+- > [اپلیکیشن های ضروری برای هر شرکت و پروژه نرم افزاری که در 4 بخش دسته بندی شده است][a01]
+- > [یک نمونه فرایند CI/CD اجرا شده در Gitlab][a02]
+- > [انواع تست های مهم در تولید اپلیکیشن ها][a03]
+- > [داکرایز کردن اپلیکیشن ها در انواع زبان ها و فریم ورک ها][a04]
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
