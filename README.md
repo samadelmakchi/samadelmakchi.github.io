@@ -86,10 +86,10 @@ I invite you to explore the following content on my GitHub page:
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
-[z01]: fa.md
-[z02]: az.md
-[z03]: tr.md
-[z04]: ar.md
+[z01]: README-fa.md
+[z02]: README-az.md
+[z03]: README-tr.md
+[z04]: README-ar.md
 [z05]: README.md
 
 [1.z01]: flag/fa.svg (فارسی)
@@ -97,6 +97,22 @@ I invite you to explore the following content on my GitHub page:
 [1.z03]: flag/tr.svg (Türkisch)
 [1.z04]: flag/ar.svg (العربي)
 [1.z05]: flag/en.svg (English)
+
+<!-- 
+بلژیک
+آلمان 
+دانمارک
+فنلاند
+نروژ
+هلند
+فرانسه
+روسیه
+سوئیس
+اتریش
+کرواسی
+اسپانیا
+سوئد
+-->
 
 ### Translate
 [![1.z01]][z01] [![1.z02]][z02] [![1.z03]][z03] [![1.z04]][z04]
