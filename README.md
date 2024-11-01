@@ -70,7 +70,6 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
-
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 [a01]: https://github.com/samadelmakchi/docker
 [a02]: https://github.com/samadelmakchi/cicd
@@ -84,5 +83,14 @@ I invite you to explore the following content on my GitHub page:
 - > [An example of a CI/CD process implemented in GitLab][a02]
 - > [Important types of tests in application development][a03]
 - > [Dockerizing applications in various programming languages and frameworks][a04]
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+
+[z01]: fa.md
+[z02]: az.md
+[z03]: tr.md
+[z04]: ar.md
+
+[فارسی][z01] [Azərbaycani][z02] [Türkisch][z03] [العربي][z04]
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
