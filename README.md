@@ -38,6 +38,7 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 ### Tech Stack
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
+![Docker 20Swarm](https://img.shields.io/badge/Docker%20Swarm-%230db7ed?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
 ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) 
 ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white) 
@@ -52,8 +53,11 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 ![Elasticsearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white) 
 ![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=Kibana&logoColor=white) 
 ![Logstash](https://img.shields.io/badge/-Logstash-A9A9A9?style=for-the-badge&logo=Logstash&logoColor=white) 
+![Fluentd](https://img.shields.io/badge/Fluentd-0E83C8?style=for-the-badge&logo=fluentd&logoColor=white) 
 ![Git](https://img.shields.io/badge/Git-e84d31?style=for-the-badge&logo=git&logoColor=white) 
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white) 
 ![Portainer](https://img.shields.io/badge/Portainer-13b8f1?style=for-the-badge&logo=Portainer&logoColor=white) 
+![SonarQube](https://img.shields.io/badge/SonarQube-499cd2?style=for-the-badge&logo=SonarQube&logoColor=white) 
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) 
@@ -69,6 +73,7 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 ![Selenium](https://img.shields.io/badge/-selenium-CB02A?style=for-the-badge&logo=selenium&logoColor=white) 
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
+![Locust](https://img.shields.io/badge/Locust-b8ee4b?style=for-the-badge&logo=python&logoColor=white) 
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 [a01]: https://github.com/samadelmakchi/docker
