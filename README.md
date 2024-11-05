@@ -58,7 +58,6 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 ![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white) 
 ![Portainer](https://img.shields.io/badge/Portainer-13b8f1?style=for-the-badge&logo=Portainer&logoColor=white) 
 ![SonarQube](https://img.shields.io/badge/SonarQube-499cd2?style=for-the-badge&logo=SonarQube&logoColor=white) 
-
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) 
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-306998?style=for-the-badge&logo=python&logoColor=white) 
