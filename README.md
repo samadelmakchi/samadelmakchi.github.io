@@ -103,7 +103,7 @@ I invite you to explore the following content on my GitHub page:
 [z12]: README-es.md
 [z13]: README-se.md
 [z14]: README-no.md
-[z15]: README-no.md
+[z15]: README-it.md
 
 [1.z01]: flag/en.svg (English)
 [1.z02]: flag/az.svg (Azərbaycani)
@@ -119,7 +119,7 @@ I invite you to explore the following content on my GitHub page:
 [1.z12]: flag/es.svg (Español - اسپانیایی)
 [1.z13]: flag/se.svg (Svenska - سوئدی)
 [1.z14]: flag/no.svg (Norsk - نروژی)
-[1.z15]: flag/no.svg (Italiano - ایتالیایی)
+[1.z15]: flag/it.svg (Italiano - ایتالیایی)
 
 ### Translate
 [![1.z02]][z02] [![1.z03]][z03] [![1.z05]][z05] 
