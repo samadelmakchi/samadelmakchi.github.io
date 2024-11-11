@@ -6,7 +6,6 @@ Test yazma sahəsində, avtomatlaşdırılmış testlər yaratmaq üçün Python
 
 Hazırda, konteyner idarəetməsi və orkestrasiyasında bacarıqlarımı artırmaq üçün Kubernetes ilə bağlı biliklərimi genişləndirməkdayam. Eyni zamanda, biliklərin paylaşılmasına və kodun sənədləşdirilməsinə əhəmiyyət verirəm və layihələrimi ictimai şəkildə paylaşmağa açıqam ki, başqaları da mənim təcrübələrimdən və həllərimdən faydalansın.
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 [01]: https://www.linkedin.com/in/samad-elmakchi
 [02]: https://www.instagram.com/samad.elmakchi
@@ -34,7 +33,6 @@ Hazırda, konteyner idarəetməsi və orkestrasiyasında bacarıqlarımı artır
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 ### Teknoloji yığını
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
@@ -71,7 +69,8 @@ Hazırda, konteyner idarəetməsi və orkestrasiyasında bacarıqlarımı artır
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+-----
+
 [a01]: https://github.com/samadelmakchi/docker
 [a02]: https://github.com/samadelmakchi/cicd
 [a03]: https://github.com/samadelmakchi/testing
@@ -85,7 +84,7 @@ GitHub sayfamda bulunan aşağıdaki içerikleri incelemenizi rica ediyorum:
 - > [Uygulama geliştirmede önemli test türleri][a03]
 - > [Çeşitli programlama dilleri ve çerçevelerinde uygulamaları Dockerlaştırma][a04]
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+-----
 
 [z01]: README.md
 [z02]: README-az.md
@@ -101,4 +100,4 @@ GitHub sayfamda bulunan aşağıdaki içerikleri incelemenizi rica ediyorum:
 [![1.z01]][z01] [![1.z02]][z02] [![1.z04]][z04] 
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+

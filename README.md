@@ -6,7 +6,6 @@ In terms of testing, I utilize Python to create automated tests, considering agi
 
 Currently, I am expanding my knowledge in Kubernetes to enhance my skills in container management and orchestration. I also believe in the importance of sharing knowledge and documenting code, and I welcome the opportunity to share my projects publicly so that others can benefit from my experiences and solutions.
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 [01]: https://www.linkedin.com/in/samad-elmakchi
 [02]: https://www.instagram.com/samad.elmakchi
@@ -34,7 +33,6 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 ### Tech Stack
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
@@ -74,7 +72,8 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 ![Locust](https://img.shields.io/badge/Locust-b8ee4b?style=for-the-badge&logo=python&logoColor=white) 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+-----
+
 [a01]: https://github.com/samadelmakchi/docker
 [a02]: https://github.com/samadelmakchi/cicd
 [a03]: https://github.com/samadelmakchi/testing
@@ -88,7 +87,7 @@ I invite you to explore the following content on my GitHub page:
 - > [Important types of tests in application development][a03]
 - > [Dockerizing applications in various programming languages and frameworks][a04]
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+-----
 
 [z01]: README.md
 [z02]: README-az.md
@@ -103,5 +102,3 @@ I invite you to explore the following content on my GitHub page:
 ### Translate
 [![1.z02]][z02] [![1.z03]][z03] [![1.z04]][z04] 
 
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->

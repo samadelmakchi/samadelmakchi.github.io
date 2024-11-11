@@ -6,7 +6,6 @@ Test yazımı konusunda, otomatik testler oluşturmak için Python kullanıyorum
 
 Şu anda, konteyner yönetimi ve orkestrasyonu alanındaki bilgi birikimimi artırmak için Kubernetes öğreniyorum. Ayrıca, bilgiyi paylaşmanın ve kodu belgelerle desteklemenin önemine inanıyorum ve projelerimi kamuya açık bir şekilde paylaşmaktan memnuniyet duyuyorum, böylece diğerleri de deneyimlerimden ve çözümlerimden faydalanabilir.
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 
 [01]: https://www.linkedin.com/in/samad-elmakchi
 [02]: https://www.instagram.com/samad.elmakchi
@@ -34,7 +33,6 @@ Test yazımı konusunda, otomatik testler oluşturmak için Python kullanıyorum
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 ### Texnologiya yığını
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
@@ -70,8 +68,8 @@ Test yazımı konusunda, otomatik testler oluşturmak için Python kullanıyorum
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
+-----
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
 [a01]: https://github.com/samadelmakchi/docker
 [a02]: https://github.com/samadelmakchi/cicd
 [a03]: https://github.com/samadelmakchi/testing
@@ -85,7 +83,7 @@ Sizi GitHub səhifəmdə aşağıdakı məzmunu araşdırmağa dəvət edirəm:
 - > [Tətbiqlərin hazırlanmasında mühüm test növləri][a03]
 - > [Müxtəlif proqramlaşdırma dillərində və çərçivələrdə tətbiqlərin dokerləşdirilməsi][a04]
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+-----
 
 [z01]: README.md
 [z02]: README-az.md
@@ -100,5 +98,3 @@ Sizi GitHub səhifəmdə aşağıdakı məzmunu araşdırmağa dəvət edirəm:
 ### Translate
 [![1.z01]][z01] [![1.z03]][z03] [![1.z04]][z04] 
 
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
