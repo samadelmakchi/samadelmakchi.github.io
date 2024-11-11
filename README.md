@@ -93,36 +93,15 @@ I invite you to explore the following content on my GitHub page:
 [z01]: README.md
 [z02]: README-az.md
 [z03]: README-tr.md
-[z04]: README-ar.md
-[z05]: README-fa.md
-[z06]: README-de.md
-[z07]: README-nl.md
-[z08]: README-fr.md
-[z09]: README-dk.md
-[z11]: README-ru.md
-[z12]: README-es.md
-[z13]: README-se.md
-[z14]: README-no.md
-[z15]: README-it.md
+[z04]: README-fa.md
 
 [1.z01]: flag/en.svg (English)
 [1.z02]: flag/az.svg (Azərbaycani)
 [1.z03]: flag/tr.svg (Türkisch)
-[1.z04]: flag/ar.svg (العربي)
-[1.z05]: flag/fa.svg (فارسی)
-[1.z06]: flag/de.svg (Deutsch)
-[1.z07]: flag/nl.svg (Nederlands)
-[1.z08]: flag/fr.svg (Français)
-[1.z09]: flag/dk.svg (Dansk sprog - دانمارکی)
-[1.z10]: flag/fi.svg (Suomen kieli - فنلاندی)
-[1.z11]: flag/ru.svg (Pу́сский язы́к - روسی)
-[1.z12]: flag/es.svg (Español - اسپانیایی)
-[1.z13]: flag/se.svg (Svenska - سوئدی)
-[1.z14]: flag/no.svg (Norsk - نروژی)
-[1.z15]: flag/it.svg (Italiano - ایتالیایی)
+[1.z04]: flag/fa.svg (فارسی)
 
 ### Translate
-[![1.z02]][z02] [![1.z03]][z03] [![1.z05]][z05] 
+[![1.z02]][z02] [![1.z03]][z03] [![1.z04]][z04] 
 
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
