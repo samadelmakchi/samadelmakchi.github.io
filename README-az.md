@@ -70,21 +70,6 @@ Test yazımı konusunda, otomatik testler oluşturmak için Python kullanıyorum
 
 -----
 
-[a01]: https://github.com/samadelmakchi/docker
-[a02]: https://github.com/samadelmakchi/cicd
-[a03]: https://github.com/samadelmakchi/testing
-[a04]: https://github.com/samadelmakchi/dockerize
-[a05]: https://github.com/samadelmakchi/fastapi
-
-### Təklif olunan məzmun
-Sizi GitHub səhifəmdə aşağıdakı məzmunu araşdırmağa dəvət edirəm:
-- > [Dörd bölməyə bölünən hər bir şirkət və proqram layihəsi üçün əsas tətbiqlər][a01]
-- > [GitLab-da həyata keçirilən CI/CD prosesinin nümunəsi][a02]
-- > [Tətbiqlərin hazırlanmasında mühüm test növləri][a03]
-- > [Müxtəlif proqramlaşdırma dillərində və çərçivələrdə tətbiqlərin dokerləşdirilməsi][a04]
-
------
-
 [z01]: README.md
 [z02]: README-az.md
 [z03]: README-tr.md

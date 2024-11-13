@@ -74,21 +74,6 @@ Currently, I am expanding my knowledge in Kubernetes to enhance my skills in con
 
 -----
 
-[a01]: https://github.com/samadelmakchi/docker
-[a02]: https://github.com/samadelmakchi/cicd
-[a03]: https://github.com/samadelmakchi/testing
-[a04]: https://github.com/samadelmakchi/dockerize
-[a05]: https://github.com/samadelmakchi/fastapi
-
-### Suggested content
-I invite you to explore the following content on my GitHub page:
-- > [Essential applications for every company and software project, categorized into four sections][a01]
-- > [An example of a CI/CD process implemented in GitLab][a02]
-- > [Important types of tests in application development][a03]
-- > [Dockerizing applications in various programming languages and frameworks][a04]
-
------
-
 [z01]: README.md
 [z02]: README-az.md
 [z03]: README-tr.md

@@ -71,21 +71,6 @@ Hazırda, konteyner idarəetməsi və orkestrasiyasında bacarıqlarımı artır
 
 -----
 
-[a01]: https://github.com/samadelmakchi/docker
-[a02]: https://github.com/samadelmakchi/cicd
-[a03]: https://github.com/samadelmakchi/testing
-[a04]: https://github.com/samadelmakchi/dockerize
-[a05]: https://github.com/samadelmakchi/fastapi
-
-### Önerilen içerik
-GitHub sayfamda bulunan aşağıdaki içerikleri incelemenizi rica ediyorum:
-- > [Her şirket ve yazılım projesi için temel uygulamalar, dört bölüme ayrılmıştır][a01]
-- > [GitLab'da uygulanan bir CI/CD sürecinin örneği][a02]
-- > [Uygulama geliştirmede önemli test türleri][a03]
-- > [Çeşitli programlama dilleri ve çerçevelerinde uygulamaları Dockerlaştırma][a04]
-
------
-
 [z01]: README.md
 [z02]: README-az.md
 [z03]: README-tr.md

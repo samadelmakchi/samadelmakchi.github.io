@@ -68,22 +68,7 @@
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
------
-
-[a01]: https://github.com/samadelmakchi/docker
-[a02]: https://github.com/samadelmakchi/cicd
-[a03]: https://github.com/samadelmakchi/testing
-[a04]: https://github.com/samadelmakchi/dockerize
-[a05]: https://github.com/samadelmakchi/fastapi
-
-### مطالب پیشنهادی
-از شما دعوت میکنم تا مطالب زیر را در صفحه گیت هابم مطالعه کنید:
-- > [اپلیکیشن های ضروری برای هر شرکت و پروژه نرم افزاری که در 4 بخش دسته بندی شده است][a01]
-- > [یک نمونه فرایند CI/CD اجرا شده در Gitlab][a02]
-- > [انواع تست های مهم در تولید اپلیکیشن ها][a03]
-- > [داکرایز کردن اپلیکیشن ها در انواع زبان ها و فریم ورک ها][a04]
-
------
+----
 
 [z01]: README.md
 [z02]: README-az.md
