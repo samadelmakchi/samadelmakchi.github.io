@@ -71,10 +71,10 @@ Hazırda, konteyner idarəetməsi və orkestrasiyasında bacarıqlarımı artır
 
 -----
 
-[z01]: README.md
+[z01]: README-en.md
 [z02]: README-az.md
 [z03]: README-tr.md
-[z04]: README-fa.md
+[z04]: README.md
 
 [1.z01]: https://raw.githubusercontent.com/samadelmakchi/samadelmakchi/main/flag/en.svg (English)
 [1.z02]: https://raw.githubusercontent.com/samadelmakchi/samadelmakchi/main/flag/az.svg (Azərbaycani)
