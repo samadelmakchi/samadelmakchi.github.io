@@ -70,6 +70,8 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) 
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-306998?style=for-the-badge&logo=python&logoColor=white) 
+![PHP](https://img.shields.io/badge/PHP-7377ad?style=for-the-badge&logo=PHP&logoColor=white) 
+![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
 
 <!-- 
 ![netdata]() 
@@ -82,15 +84,54 @@
 ![gaia]() 
 ![semaphore]() 
 
-![traefik](https://img.shields.io/badge/traefik-e88e24?style=for-the-badge&logo=traefik&logoColor=white) 
+![Traefik](https://img.shields.io/badge/traefik-e88e24?style=for-the-badge&logo=traefik&logoColor=white) 
 ![HAProxy](https://img.shields.io/badge/haproxy-3b6aa0?style=for-the-badge&logo=haproxy&logoColor=white) 
 ![Dozzle](https://img.shields.io/badge/dozzle-f7d654?style=for-the-badge&logo=dozzle&logoColor=white) 
 ![Tempo](https://img.shields.io/badge/tempo-e85a27?style=for-the-badge&logo=tempo&logoColor=white) 
 ![Nexus](https://img.shields.io/badge/nexus-26ba7b?style=for-the-badge&logo=nexus&logoColor=white) 
+
 ![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=Celery&logoColor=white) 
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
+
 ![phpmMyAdmin](https://img.shields.io/badge/phpmyadmin-f0970e?style=for-the-badge&logo=phpmyadmin&logoColor=white) 
+![pgAdmin](https://img.shields.io/badge/pgAdmin-4d4f9a?style=for-the-badge&logo=pgAdmin&logoColor=white) 
+
+![Open WebUI]() 
+![n8n]() 
+
+![Chatwoot]() 
+![Joomla]() 
+![Wordpress]() 
+
+![MQL4]() 
+![MQL5]() 
+![cTrader]() 
+![PineScript]() 
+![NinjaTader]() 
+
+![Apache]() 
+![HTML]() 
+![CSS]() 
+![Bootstrap]() 
+![PWA]() 
+![React]() 
+![Next.js]() 
+![Node.js]() 
+![Express.js]() 
+![VSCode]() 
+![Jupyter]() 
+![Drawio]() 
+
+![mattermost]() 
+![jira]() 
+![openproject]() 
+![shortcut]() 
+![taiga]() 
+![trello]() 
+![agile]() 
+![scrum]() 
+![kanban]() 
 -->
 
 # 📊 آمار گیت هاب:
