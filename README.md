@@ -142,18 +142,3 @@
 ### 🔝 بهترین مخزن مشارکتی
 ![](https://github-contributor-stats.vercel.app/api?username=samadelmakchi&limit=5&theme=light&combine_all_yearly_contributions=true)
 
-----
-
-[z01]: README-en.md
-[z02]: README-az.md
-[z03]: README-tr.md
-[z04]: README.md
-
-[1.z01]: https://raw.githubusercontent.com/samadelmakchi/samadelmakchi/main/flag/en.svg (English)
-[1.z02]: https://raw.githubusercontent.com/samadelmakchi/samadelmakchi/main/flag/az.svg (Azərbaycani)
-[1.z03]: https://raw.githubusercontent.com/samadelmakchi/samadelmakchi/main/flag/tr.svg (Türkisch)
-[1.z04]: https://raw.githubusercontent.com/samadelmakchi/samadelmakchi/main/flag/fa.svg (فارسی)
-
-### Translate
-[![1.z01]][z01] [![1.z03]][z03] [![1.z02]][z02] 
-
