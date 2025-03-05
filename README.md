@@ -73,6 +73,13 @@
 ![PHP](https://img.shields.io/badge/PHP-7377ad?style=for-the-badge&logo=PHP&logoColor=white) 
 ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
 
+![phpmMyAdmin](https://img.shields.io/badge/phpmyadmin-f0970e?style=for-the-badge&logo=phpmyadmin&logoColor=white) 
+![pgAdmin](https://img.shields.io/badge/pgAdmin-4d4f9a?style=for-the-badge&logo=pgAdmin&logoColor=white) 
+![n8n](https://img.shields.io/badge/n8n-e2496d?style=for-the-badge&logo=n8n&logoColor=white) 
+![Chatwoot](https://img.shields.io/badge/Chatwoot-399fe9?style=for-the-badge&logo=Chatwoot&logoColor=white) 
+![Joomla](https://img.shields.io/badge/Joomla-78ba4d?style=for-the-badge&logo=Joomla&logoColor=white) 
+![Wordpress](https://img.shields.io/badge/Wordpress-2089b6?style=for-the-badge&logo=Wordpress&logoColor=white) 
+
 <!-- 
 ![netdata]() 
 ![vault]() 
@@ -94,15 +101,9 @@
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
 
-![phpmMyAdmin](https://img.shields.io/badge/phpmyadmin-f0970e?style=for-the-badge&logo=phpmyadmin&logoColor=white) 
-![pgAdmin](https://img.shields.io/badge/pgAdmin-4d4f9a?style=for-the-badge&logo=pgAdmin&logoColor=white) 
+
 
 ![Open WebUI]() 
-![n8n]() 
-
-![Chatwoot]() 
-![Joomla]() 
-![Wordpress]() 
 
 ![MQL4]() 
 ![MQL5]() 
