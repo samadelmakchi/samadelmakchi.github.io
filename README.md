@@ -72,38 +72,27 @@
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-306998?style=for-the-badge&logo=python&logoColor=white) 
 ![PHP](https://img.shields.io/badge/PHP-7377ad?style=for-the-badge&logo=PHP&logoColor=white) 
 ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
-
 ![phpmMyAdmin](https://img.shields.io/badge/phpmyadmin-f0970e?style=for-the-badge&logo=phpmyadmin&logoColor=white) 
 ![pgAdmin](https://img.shields.io/badge/pgAdmin-4d4f9a?style=for-the-badge&logo=pgAdmin&logoColor=white) 
 ![n8n](https://img.shields.io/badge/n8n-e2496d?style=for-the-badge&logo=n8n&logoColor=white) 
 ![Chatwoot](https://img.shields.io/badge/Chatwoot-399fe9?style=for-the-badge&logo=Chatwoot&logoColor=white) 
 ![Joomla](https://img.shields.io/badge/Joomla-78ba4d?style=for-the-badge&logo=Joomla&logoColor=white) 
 ![Wordpress](https://img.shields.io/badge/Wordpress-2089b6?style=for-the-badge&logo=Wordpress&logoColor=white) 
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=Celery&logoColor=white) 
+![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
+![Traefik](https://img.shields.io/badge/traefik-e88e24?style=for-the-badge&logo=traefik&logoColor=white) 
+![Dozzle](https://img.shields.io/badge/dozzle-f7d654?style=for-the-badge&logo=dozzle&logoColor=white) 
+![Nexus](https://img.shields.io/badge/nexus-26ba7b?style=for-the-badge&logo=nexus&logoColor=white) 
 
 <!-- 
-![netdata]() 
 ![vault]() 
 ![consul]() 
 ![harbor]() 
 ![poste.io]() 
 ![duplicati]() 
 ![uptime_kuma]() 
-![gaia]() 
-![semaphore]() 
-
-![Traefik](https://img.shields.io/badge/traefik-e88e24?style=for-the-badge&logo=traefik&logoColor=white) 
 ![HAProxy](https://img.shields.io/badge/haproxy-3b6aa0?style=for-the-badge&logo=haproxy&logoColor=white) 
-![Dozzle](https://img.shields.io/badge/dozzle-f7d654?style=for-the-badge&logo=dozzle&logoColor=white) 
 ![Tempo](https://img.shields.io/badge/tempo-e85a27?style=for-the-badge&logo=tempo&logoColor=white) 
-![Nexus](https://img.shields.io/badge/nexus-26ba7b?style=for-the-badge&logo=nexus&logoColor=white) 
-
-![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=Celery&logoColor=white) 
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
-![Pylint](https://img.shields.io/badge/Pylint-4930bd?style=for-the-badge&logo=python&logoColor=white) 
-
-
-
-![Open WebUI]() 
 
 ![MQL4]() 
 ![MQL5]() 
@@ -111,13 +100,11 @@
 ![PineScript]() 
 ![NinjaTader]() 
 
-![Apache]() 
 ![HTML]() 
 ![CSS]() 
 ![Bootstrap]() 
 ![PWA]() 
 ![React]() 
-![Next.js]() 
 ![Node.js]() 
 ![Express.js]() 
 ![VSCode]() 
