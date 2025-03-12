@@ -68,6 +68,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white) 
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-306998?style=for-the-badge&logo=python&logoColor=white) 
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
+![PHP](https://img.shields.io/badge/PHP-7377ad?style=for-the-badge&logo=PHP&logoColor=white) 
 ![React](https://img.shields.io/badge/React-58bfd3?style=for-the-badge&logo=React&logoColor=white) 
 ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
 ![PWA](https://img.shields.io/badge/PWA-5521be?style=for-the-badge&logo=PWA&logoColor=white) 
@@ -91,7 +92,6 @@
 ![cTrader](https://img.shields.io/badge/cTrader-f20012?style=for-the-badge&logo=cTrader&logoColor=white) 
 ![PineScript](https://img.shields.io/badge/pinescript-127f43?style=for-the-badge&logo=pinescript&logoColor=white) 
 ![NinjaTader](https://img.shields.io/badge/NinjaTrader-f53e16?style=for-the-badge&logo=NinjaTrader&logoColor=white) 
-![PHP](https://img.shields.io/badge/PHP-7377ad?style=for-the-badge&logo=PHP&logoColor=white) 
 <!-- ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)  -->
 
 # 📊 آمار گیت هاب:
