@@ -6,7 +6,6 @@
 
 در حال حاضر، با یادگیری Kubernetes قصد دارم دانش خود را در زمینه مدیریت و ارکستراسیون کانتینرها گسترش دهم. همچنین به اشتراک‌گذاری دانش و مستندسازی کد اهمیت می‌دهم و از به‌اشتراک‌گذاری عمومی پروژه‌هایم استقبال می‌کنم تا دیگران نیز از تجربه‌ها و راهکارهایم بهره‌مند شوند.
 
-
 [01]: https://www.linkedin.com/in/samad-elmakchi
 [02]: https://www.instagram.com/samad.elmakchi
 [03]: https://wa.me/989141189645
@@ -31,7 +30,6 @@
 
 ### من را دنبال کنید
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
-
 
 ### پشته فناوری
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
@@ -72,7 +70,10 @@
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-306998?style=for-the-badge&logo=python&logoColor=white) 
 ![PHP](https://img.shields.io/badge/PHP-7377ad?style=for-the-badge&logo=PHP&logoColor=white) 
 ![Symfony](https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=Symfony&logoColor=white) 
+![Bootstrap](https://img.shields.io/badge/HTML-6c27df?style=for-the-badge&logo=Bootstrap&logoColor=white) 
+![React](https://img.shields.io/badge/React-58bfd3?style=for-the-badge&logo=React&logoColor=white) 
 ![Javascript](https://img.shields.io/badge/Javascript-e8d44d?style=for-the-badge&logo=Javascript&logoColor=white) 
+![PWA](https://img.shields.io/badge/PWA-5521be?style=for-the-badge&logo=PWA&logoColor=white) 
 ![phpmMyAdmin](https://img.shields.io/badge/phpmyadmin-f0970e?style=for-the-badge&logo=phpmyadmin&logoColor=white) 
 ![pgAdmin](https://img.shields.io/badge/pgAdmin-4d4f9a?style=for-the-badge&logo=postgresql&logoColor=white) 
 ![n8n](https://img.shields.io/badge/n8n-e2496d?style=for-the-badge&logo=n8n&logoColor=white) 
@@ -84,46 +85,17 @@
 ![Traefik](https://img.shields.io/badge/traefik-e88e24?style=for-the-badge&logo=traefik&logoColor=white) 
 ![Dozzle](https://img.shields.io/badge/dozzle-f7d654?style=for-the-badge&logo=dozzle&logoColor=white) 
 ![Nexus](https://img.shields.io/badge/nexus-26ba7b?style=for-the-badge&logo=nexus&logoColor=white) 
-
-<!-- 
-Symfony
-
-![vault]() 
-![consul]() 
-![harbor]() 
-![poste.io]() 
-![duplicati]() 
-![uptime_kuma]() 
-![HAProxy](https://img.shields.io/badge/haproxy-3b6aa0?style=for-the-badge&logo=haproxy&logoColor=white) 
-![Tempo](https://img.shields.io/badge/tempo-e85a27?style=for-the-badge&logo=tempo&logoColor=white) 
-
-![MQL4]() 
-![MQL5]() 
-![cTrader]() 
-![PineScript]() 
-![NinjaTader]() 
-
-![HTML]() 
-![CSS]() 
-![Bootstrap]() 
-![PWA]() 
-![React]() 
-![Node.js]() 
-![Express.js]() 
-![VSCode]() 
-![Jupyter]() 
-![Drawio]() 
-
-![mattermost]() 
-![jira]() 
-![openproject]() 
-![shortcut]() 
-![taiga]() 
-![trello]() 
-![agile]() 
-![scrum]() 
-![kanban]() 
--->
+![Jupyter](https://img.shields.io/badge/Jupyter-eb7131?style=for-the-badge&logo=Jupyter&logoColor=white) 
+![mattermost](https://img.shields.io/badge/mattermost-274275?style=for-the-badge&logo=mattermost&logoColor=white) 
+![jira](https://img.shields.io/badge/jira-0051c9?style=for-the-badge&logo=jira&logoColor=white) 
+![openproject](https://img.shields.io/badge/openproject-0b72b3?style=for-the-badge&logo=openproject&logoColor=white) 
+![shortcut](https://img.shields.io/badge/shortcut-74b6f0?style=for-the-badge&logo=shortcut&logoColor=white) 
+![trello](https://img.shields.io/badge/trello-0864d2?style=for-the-badge&logo=trello&logoColor=white) 
+![MQL4](https://img.shields.io/badge/MQL4-667fa6?style=for-the-badge&logo=MQL4&logoColor=white) 
+![MQL5](https://img.shields.io/badge/MQL5-2b6bc0?style=for-the-badge&logo=MQL5&logoColor=white) 
+![cTrader](https://img.shields.io/badge/cTrader-f20012?style=for-the-badge&logo=cTrader&logoColor=white) 
+![PineScript](https://img.shields.io/badge/pinescript-127f43?style=for-the-badge&logo=pinescript&logoColor=white) 
+![NinjaTader](https://img.shields.io/badge/NinjaTrader-f53e16?style=for-the-badge&logo=NinjaTrader&logoColor=white) 
 
 # 📊 آمار گیت هاب:
 ![](https://github-readme-stats.vercel.app/api?username=samadelmakchi&theme=default&hide_border=false&include_all_commits=false&count_private=false)<br/>
