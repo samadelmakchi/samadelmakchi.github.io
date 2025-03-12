@@ -36,6 +36,7 @@
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
 ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white) 
+![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white) 
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white) 
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=Grafana&logoColor=white) 
@@ -92,7 +93,6 @@
 ![cTrader](https://img.shields.io/badge/cTrader-f20012?style=for-the-badge&logo=cTrader&logoColor=white) 
 ![PineScript](https://img.shields.io/badge/pinescript-127f43?style=for-the-badge&logo=pinescript&logoColor=white) 
 ![NinjaTader](https://img.shields.io/badge/NinjaTrader-f53e16?style=for-the-badge&logo=NinjaTrader&logoColor=white) 
-<!-- ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)  -->
 
 # 📊 آمار گیت هاب:
 ![](https://github-readme-stats.vercel.app/api?username=samadelmakchi&theme=default&hide_border=false&include_all_commits=false&count_private=false)<br/>
