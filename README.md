@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="[https://example.com](https://github.com/samadelmakchi/devops)">
-    <img src="devops.png" width="400" alt="تجربیات من در دواپس" title="تجربیات من در دواپس"/>
+    <img src="devops.png" width="200" alt="تجربیات من در دواپس" title="تجربیات من در دواپس"/>
   </a>
 </p>
 
