@@ -67,13 +67,6 @@
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
 ![Nexus](https://img.shields.io/badge/nexus-26ba7b?style=for-the-badge&logo=nexus&logoColor=white) 
 ![n8n](https://img.shields.io/badge/n8n-e2496d?style=for-the-badge&logo=n8n&logoColor=white) 
-![openproject](https://img.shields.io/badge/openproject-0b72b3?style=for-the-badge&logo=openproject&logoColor=white) 
-![shortcut](https://img.shields.io/badge/shortcut-74b6f0?style=for-the-badge&logo=shortcut&logoColor=white) 
 ![jira](https://img.shields.io/badge/jira-0051c9?style=for-the-badge&logo=jira&logoColor=white) 
 ![trello](https://img.shields.io/badge/trello-0864d2?style=for-the-badge&logo=trello&logoColor=white) 
-![Joomla](https://img.shields.io/badge/Joomla-78ba4d?style=for-the-badge&logo=Joomla&logoColor=white) 
-![Wordpress](https://img.shields.io/badge/Wordpress-2089b6?style=for-the-badge&logo=Wordpress&logoColor=white) 
-![Chatwoot](https://img.shields.io/badge/Chatwoot-399fe9?style=for-the-badge&logo=Chatwoot&logoColor=white) 
-![mattermost](https://img.shields.io/badge/mattermost-274275?style=for-the-badge&logo=mattermost&logoColor=white) 
-![Nextcloud](https://img.shields.io/badge/nextcloud-007ec3?style=for-the-badge&logo=nextcloud&logoColor=white) 
 
