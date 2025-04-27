@@ -6,13 +6,11 @@
 
 در حال حاضر، با یادگیری Kubernetes قصد دارم دانش خود را در زمینه مدیریت و ارکستراسیون کانتینرها گسترش دهم. همچنین به اشتراک‌گذاری دانش و مستندسازی کد اهمیت می‌دهم و از به‌اشتراک‌گذاری عمومی پروژه‌هایم استقبال می‌کنم تا دیگران نیز از تجربه‌ها و راهکارهایم بهره‌مند شوند.
 
----
 
 [repository]: https://github.com/samadelmakchi/devops
 [repository_img]: devops.png (تجربیات من در دواپس)
 [![repository_img]][repository]
 
----
 
 [01]: https://www.linkedin.com/in/samad-elmakchi
 [02]: https://www.instagram.com/samad.elmakchi
@@ -39,7 +37,6 @@
 ### من را دنبال کنید
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
----
 ### پشته فناوری
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
@@ -79,7 +76,6 @@
 ![mattermost](https://img.shields.io/badge/mattermost-274275?style=for-the-badge&logo=mattermost&logoColor=white) 
 ![Nextcloud](https://img.shields.io/badge/nextcloud-007ec3?style=for-the-badge&logo=nextcloud&logoColor=white) 
 
----
 # 📊 آمار گیت هاب:
 ![](https://github-readme-stats.vercel.app/api?username=samadelmakchi&theme=default&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=samadelmakchi&theme=default&hide_border=false)<br/>
