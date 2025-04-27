@@ -35,10 +35,10 @@
 [1.10]: social/gitlab.png (Gitlab)
 [1.11]: social/github.png (Github)
 
-## 🔗 Links
+### 🔗 Links
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
-## 🛠 Skills
+### 🛠 Skills
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
