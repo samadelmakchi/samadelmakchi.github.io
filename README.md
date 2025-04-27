@@ -36,10 +36,11 @@
 [1.10]: social/gitlab.png (Gitlab)
 [1.11]: social/github.png (Github)
 
+### من را دنبال کنید
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
 ---
-
+### پشته فناوری
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
@@ -79,10 +80,11 @@
 ![Nextcloud](https://img.shields.io/badge/nextcloud-007ec3?style=for-the-badge&logo=nextcloud&logoColor=white) 
 
 ---
-
+# 📊 آمار گیت هاب:
 ![](https://github-readme-stats.vercel.app/api?username=samadelmakchi&theme=default&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=samadelmakchi&theme=default&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=samadelmakchi&theme=default&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
+### 🔝 بهترین مخزن مشارکتی
 ![](https://github-contributor-stats.vercel.app/api?username=samadelmakchi&limit=5&theme=light&combine_all_yearly_contributions=true)
 
