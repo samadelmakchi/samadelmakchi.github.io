@@ -6,14 +6,6 @@
 
 در حال حاضر، با یادگیری Kubernetes قصد دارم دانش خود را در زمینه مدیریت و ارکستراسیون کانتینرها گسترش دهم. همچنین به اشتراک‌گذاری دانش و مستندسازی کد اهمیت می‌دهم و از به‌اشتراک‌گذاری عمومی پروژه‌هایم استقبال می‌کنم تا دیگران نیز از تجربه‌ها و راهکارهایم بهره‌مند شوند.
 
-
-<br>
-<p align="center">
-  <a href="https://github.com/samadelmakchi/devops">
-    <img src="devops.png" width="300" alt="تجربیات من در دواپس" title="تجربیات من در دواپس"/>
-  </a>
-</p>
-
 [01]: https://www.linkedin.com/in/samad-elmakchi
 [02]: https://www.instagram.com/samad.elmakchi
 [03]: https://wa.me/989141189645
