@@ -1,138 +1,150 @@
 # DevOps Engineer | Scrum Master | Software Architect
 
-سلام! من **صمد المکچی** هستم، مهندس نرم‌افزار با بیش از ۲۰ سال تجربه در توسعه سیستم‌های وب‌محور، با تمرکز ویژه بر **DevOps**، **برنامه‌نویسی بک‌اند** و **مدیریت تیم‌های چابک**. در مسیر حرفه‌ای‌ام نقش‌هایی مانند توسعه‌دهنده ارشد، معمار نرم‌افزار، اسکرام‌مستر و مهندس DevOps را در پروژه‌های مقیاس‌پذیر ایفا کرده‌ام. در کنار توانمندی فنی، فردی **آرام، تحلیل‌گر و علاقه‌مند به یادگیری مستمر** هستم، با مهارت بالا در **ارتباط مؤثر، بازخورد سازنده** و **تقویت روحیه تیمی**. باور دارم ایجاد فضای کاری **مشارکتی و الهام‌بخش**، کلید رشد تیم و دستیابی به نتایج مؤثر و پایدار است.
+## About Me
+
+Greetings! I am **Samad Elmakchi**, a software engineer with over 20 years of experience in developing web-based systems, with a strong focus on **DevOps**, **backend development**, and **agile team management**.
+
+Throughout my professional journey, I have taken on roles such as **Senior Developer**, **Software Architect**, **Scrum Master**, and **DevOps Engineer** in scalable and high-impact projects.
+
+In addition to my technical expertise, I am a **calm, analytical**, and **continuously learning** individual, with strong skills in **effective communication**, **constructive feedback**, and **team morale building**.
+
+I firmly believe that creating a **collaborative and inspiring work environment** is the key to team growth and achieving meaningful and sustainable outcomes.
 
 ---
 
-### 🔧 تخصص در DevOps و زیرساخت
-تمرکز اصلی من بر **اتوماسیون فرآیندهای توسعه، استقرار، مانیتورینگ و CI/CD** است. مهارت‌های کلیدی من عبارت‌اند از:
+### 🔧 Expertise in DevOps and Infrastructure
+
+My primary focus is on **automating development workflows, deployment processes, monitoring, and CI/CD pipelines**.  
+My key skills include:
 
 - **Containerization:** Docker, Docker Compose  
 - **Configuration Management:** Ansible (IaC)  
 - **CI/CD Pipelines:** GitLab CI, GitHub Actions, Jenkins  
 - **Monitoring & Logging:** ELK Stack, Fluentd, Prometheus, Grafana  
 
-> در حال حاضر مشغول یادگیری **Kubernetes** برای مدیریت ارکستراسیون کانتینرها با مقیاس‌پذیری و خودترمیمی هستم.
+> I am currently learning **Kubernetes** to manage container orchestration with scalability and self-healing capabilities.
 
-### 🛠 مهارت‌های DevOps و زیرساخت
+### 🛠 DevOps and Infrastructure Skills
 
-| مهارت‌ها | توضیحات |
-|----------|----------|
-| 🐳 **Docker / Compose** | کانتینرسازی و ارکستراسیون ساده |
-| ⚙️ **Ansible** | مدیریت پیکربندی و Automation |
-| 🔁 **GitLab CI / GitHub Actions / Jenkins** | پیاده‌سازی CI/CD |
-| ☸️ **Kubernetes** | ارکستراسیون کانتینرها |
-| 🎛 **Helm** | مدیریت Package در Kubernetes |
-| 📈 **Prometheus / Grafana** | مانیتورینگ و آلارم‌گذاری |
-| 🔎 **ELK Stack / Fluentd / Beats** | لاگ‌گذاری، تحلیل و تجمیع لاگ‌ها |
-| 🌐 **Nginx / Traefik** | معکوس‌پراکسی، لود بالانسر |
-| 🖥 **Portainer** | مدیریت گرافیکی Docker |
-| 🐚 **Bash / Linux / Systemd / SSH** | مدیریت سرور و اسکریپت‌نویسی |
-| 🔐 **SSL/TLS / Let’s Encrypt** | امنیت و گواهی‌نامه |
-| 🛰 **BIND9** | مدیریت DNS اختصاصی |
-| 🔧 **Git** | کنترل نسخه و همکاری تیمی |
-| ☁️ **AWS / Azure** | (در حال یادگیری) سرویس‌های ابری برای میزبانی و مدیریت زیرساخت |
-| 🚀 **ArgoCD** | (در حال یادگیری) ابزار تحویل مداوم در Kubernetes با روش GitOps |
-| 🔐 **Vault** | (در حال یادگیری) مدیریت امن اسرار و کلیدهای امنیتی |
-| 🛠️ **Terraform** | (در حال یادگیری) زیرساخت به عنوان کد |
-
----
-
-### 🧠 رهبری چابک و Scrum Mastering
-به‌عنوان **Scrum Master** در هدایت تیم‌های چندتخصصی نقش مؤثری داشته‌ام. فعالیت‌های من در این زمینه شامل:
-
-- برنامه‌ریزی و اجرای اسپرینت‌ها  
-- برگزاری جلسات Daily، Sprint Review و Retrospective  
-- حذف موانع تیمی (Impediment Removal)  
-- تقویت فرهنگ همکاری، شفافیت و بهبود مستمر 
-- مستندسازی دقیق، نگهداری Wikiهای تیمی و انتقال دانش  
-
-> با رویکرد **Servant Leadership**، تیم‌هایی انگیزه‌مند و نتیجه‌محور ساخته‌ام.
-
-### 🛠 مدیریت پروژه و چابکی
-
-| مفاهیم و ابزارها | توضیحات |
-|------------------|----------|
-| 🌀 **Scrum / Kanban / Agile** | متدولوژی‌های مدیریت پروژه چابک |
-| 👨‍🏫 **Scrum Master / Sprint Planning** | نقش‌ها و جلسات اسکرام |
-| 📝 **Jira / Confluence / Miro** | ابزارهای مستندسازی و همکاری تیمی |
+| Skills                              | Description                                      |
+|-------------------------------------|------------------------------------------------|
+| 🐳 **Docker / Compose**              | Containerization and simple orchestration       |
+| ⚙️ **Ansible**                      | Configuration management and automation          |
+| 🔁 **GitLab CI / GitHub Actions / Jenkins** | Implementation of CI/CD pipelines              |
+| ☸️ **Kubernetes**                   | Container orchestration                           |
+| 🎛 **Helm**                        | Package management in Kubernetes                  |
+| 📈 **Prometheus / Grafana**         | Monitoring and alerting                           |
+| 🔎 **ELK Stack / Fluentd / Beats**  | Logging, analysis, and log aggregation           |
+| 🌐 **Nginx / Traefik**              | Reverse proxy and load balancing                   |
+| 🖥 **Portainer**                   | Graphical Docker management                        |
+| 🐚 **Bash / Linux / Systemd / SSH**| Server management and scripting                    |
+| 🔐 **SSL/TLS / Let’s Encrypt**      | Security and certificates                          |
+| 🛰 **BIND9**                      | Private DNS management                             |
+| 🔧 **Git**                         | Version control and team collaboration            |
+| ☁️ **AWS / Azure**                  | (Learning) Cloud services for hosting and infrastructure management |
+| 🚀 **ArgoCD**                     | (Learning) Continuous delivery tool in Kubernetes using GitOps |
+| 🔐 **Vault**                      | (Learning) Secure management of secrets and keys |
+| 🛠️ **Terraform**                  | (Learning) Infrastructure as Code                  |
 
 ---
 
-### 🌀 تجربه در معماری میکروسرویس‌ها
-با طراحی و اجرای معماری‌های **Microservices** توانسته‌ام اپلیکیشن‌هایی با قابلیت نگهداری بالا، مقیاس‌پذیر و قابل توسعه ایجاد کنم. موارد کلیدی شامل:
+### 🧠 Agile Leadership and Scrum Mastering
 
-- طراحی APIها
-- تقسیم منطقی دامنه‌ها
-- شبکه‌سازی بین سرویس‌ها
-- مدیریت چرخه عمر سرویس‌ها به‌صورت مستقل
+As a **Scrum Master**, I have played a key role in guiding cross-functional teams. My responsibilities in this area include:
 
-### 🛠 معماری نرم‌افزار
+- Planning and executing sprints  
+- Facilitating Daily Standups, Sprint Reviews, and Retrospectives  
+- Removing team impediments  
+- Fostering a culture of collaboration, transparency, and continuous improvement  
+- Maintaining thorough documentation, managing team Wikis, and knowledge transfer  
 
-| مفاهیم | توضیحات |
-|--------|----------|
-| 🔧 **Microservices / Monorepo** | ساختار معماری مقیاس‌پذیر |
-| 🧼 **Clean Architecture / DDD** | طراحی ماژولار و دامنه‌محور |
-| 🚪 **API Gateway** | دروازه ورودی میکروسرویس‌ها |
-| 🌐 **Service Mesh** | (در حال آشنایی) کنترل ارتباط سرویس‌ها در Kubernetes |
-| 📊 **UML / Scenario Modeling** | طراحی و مستندسازی ساختار و رفتار سیستم‌ها |
-| 📡 **REST API / Swagger (OpenAPI)** | طراحی و مستندسازی API |
-| 🛢 **MySQL / PostgreSQL / Redis** | دیتابیس‌های رابطه‌ای و حافظه نهان |
+> With a **Servant Leadership** approach, I have built motivated and results-driven teams.
 
----
+### 🛠 Project Management and Agility
 
-### 🧪 تست‌نویسی و تضمین کیفیت
-
-- پایبند به اصول TDD و BDD  
-- توسعه تست‌های خودکار با **Python / Pytest**  
-- آشنایی با **Postman, Selenium, Testcontainers**
-
-### 🛠 تست و تضمین کیفیت
-
-| ابزارها و مفاهیم | توضیحات |
-|------------------|----------|
-| ✅ **TDD / BDD** | رویکردهای توسعه آزمون‌محور |
-| 🔍 **Postman / Selenium** | تست API و رابط کاربری |
-| 🧪 **Testcontainers / Coverage Tools** | تست‌های یکپارچه با محیط واقعی |
-| 🧬 **CI/CD Testing** | خودکارسازی تست‌ها در زنجیره DevOps |
-| 🐍 **Python / Pytest** | توسعه و تست بک‌اند |
+| Concepts & Tools                | Description                        |
+|-------------------------------|----------------------------------|
+| 🌀 **Scrum / Kanban / Agile**  | Agile project management methodologies |
+| 👨‍🏫 **Scrum Master / Sprint Planning** | Scrum roles and ceremonies         |
+| 📝 **Jira / Confluence / Miro**| Documentation and team collaboration tools |
 
 ---
 
-### 💼 سوابق کاری
+### 🌀 Experience in Microservices Architecture
 
-| شرکت                  | عنوان شغلی           | بازه زمانی               | شرح وظایف و دستاوردها                                    |
-|-----------------------|--------------------------|----------------------|----------------------------------------------------------|
-| **Nikan Mehr Pardazesh Afza** | DevOps Engineer  | تیر ۱۴۰۲ – حالا | بهبود مانیتورینگ و امنیت سیستم‌ها با Docker، Ansible، Prometheus و ELK<br>برنامه‌ریزی اسپرینت‌ها و اجرای فرآیندهای Agile<br>توسعه و مدیریت زیرساخت‌های خودکارسازی CI/CD |
-| **Ekeep Startup**      | Project Manager & Scrum Master | آبان ۱۳۹۸ – تیر ۱۴۰۲ | مدیریت پروژه و هدایت تیم‌های چندتخصصی                  |
-| **Noyan Co.**          | Data Visualization Engineer | فروردین ۱۳۹۶ – آبان ۱۳۹۸ | طراحی داشبوردهای تعاملی برای تحلیل داده‌ها             |
-| **Tasmim Yaran Co.**   | Back End Developer         | اردیبهشت ۱۳۹۲ – اسفند ۱۳۹۶ | توسعه APIها و سیستم‌های مقیاس‌پذیر با PHP و Python       |
-| **Rahbord Co.**        | Web Developer              | تیر ۱۳۸۷ – اردیبهشت ۱۳۹۲ |                                                          |
-| **Freelancer**         | Web Developer              | مهر ۱۳۸۴ – تیر ۱۳۸۷  |                                                          |
+By designing and implementing **Microservices** architectures, I have built applications that are maintainable, scalable, and extensible. Key aspects include:
 
----
+- API design  
+- Logical domain decomposition  
+- Service-to-service networking  
+- Independent lifecycle management of services  
 
-### 🌍 زبان‌ها
+### 🛠 Software Architecture
 
-| زبان             | سطح مهارت     |
-|------------------|----------------|
-| آذری             | زبان مادری      |
-| فارسی            | زبان مادری      |
-| انگلیسی          | متوسط           |
-| ترکی استانبولی   | متوسط           |
-
----
-
-### 🎓 تحصیلات
-
-| مقطع تحصیلی                  | رشته                       | دانشگاه     | سال‌ها           |
-|-----------------------------|-----------------------------|-------------|------------------|
-| کارشناسی                    | مهندسی نرم‌افزار کامپیوتر   | پیام نور     | ۱۳۸۰ – ۱۳۸۴      |
-| کارشناسی ارشد (در حال تحصیل) | مدیریت                     | —           | —                |
+| Concepts                         | Description                                          |
+|---------------------------------|------------------------------------------------------|
+| 🔧 **Microservices / Monorepo**   | Scalable architectural patterns                      |
+| 🧼 **Clean Architecture / DDD**   | Modular and domain-driven design                      |
+| 🚪 **API Gateway**                | Entry point for microservices                         |
+| 🌐 **Service Mesh**               | (Familiarizing) Managing service communication in Kubernetes |
+| 📊 **UML / Scenario Modeling**    | Designing and documenting system structure and behavior |
+| 📡 **REST API / Swagger (OpenAPI)** | API design and documentation                         |
+| 🛢 **MySQL / PostgreSQL / Redis** | Relational databases and caching                      |
 
 ---
 
-## 📡 راه‌های ارتباطی و شبکه‌های اجتماعی
+### 🧪 Testing and Quality Assurance
+
+- Adherent to TDD and BDD principles  
+- Developing automated tests using **Python / Pytest**  
+- Familiar with **Postman, Selenium, Testcontainers**
+
+### 🛠 Testing and Quality Assurance
+
+| Tools & Concepts               | Description                                  |
+|-------------------------------|----------------------------------------------|
+| ✅ **TDD / BDD**               | Test-driven development approaches            |
+| 🔍 **Postman / Selenium**      | API and UI testing                             |
+| 🧪 **Testcontainers / Coverage Tools** | Integration testing with real environments |
+| 🧬 **CI/CD Testing**           | Automating tests in the DevOps pipeline       |
+| 🐍 **Python / Pytest**         | Backend development and testing                |
+
+---
+
+### 💼 Work Experience
+
+| Company                       | Job Title                     | Period                   | Responsibilities and Achievements                             |
+|-------------------------------|------------------------------|--------------------------|--------------------------------------------------------------|
+| **Nikan Mehr Pardazesh Afza** | DevOps Engineer               | July 2023 – Present      | Improved system monitoring and security using Docker, Ansible, Prometheus, and ELK<br>Planned sprints and executed Agile processes<br>Developed and managed automated CI/CD infrastructures |
+| **Ekeep Startup**              | Project Manager & Scrum Master| November 2019 – July 2023| Project management and leading cross-functional teams         |
+| **Noyan Co.**                 | Data Visualization Engineer   | March 2017 – November 2019| Designed interactive dashboards for data analysis             |
+| **Tasmim Yaran Co.**           | Back End Developer            | May 2013 – March 2018    | Developed APIs and scalable systems using PHP and Python      |
+| **Rahbord Co.**               | Web Developer                 | July 2008 – May 2013     |                                                              |
+| **Freelancer**                | Web Developer                 | October 2005 – July 2008 |                                                              |
+
+---
+
+### 🌍 Languages
+
+| Language         | Proficiency Level |
+|------------------|-------------------|
+| Azerbaijani      | Native            |
+| Persian (Farsi)  | Native            |
+| English          | Intermediate      |
+| Turkish (Istanbul)| Intermediate     |
+
+---
+
+### 🎓 Education
+
+| Degree                   | Field of Study           | University     | Years           |
+|--------------------------|-------------------------|----------------|-----------------|
+| Bachelor’s Degree        | Computer Software Engineering | Payame Noor University | 2001 – 2005    |
+| Master’s Degree (In Progress) | Management            | —              | —               |
+
+---
+
+## 📡 Contact Information & Social Networks
 
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07] [![1.10]][10] [![1.11]][11]
 
