@@ -1,65 +1,159 @@
-# سلام! 👋 من صمد المکچی هستم.
+# DevOps Engineer | Scrum Master | Software Architect
 
-سلام! من صمد المکچی هستم، مهندس نرم‌افزار با بیش از ۲۰ سال تجربه در توسعه وب، با تمرکز ویژه روی بک‌اند و DevOps. در این سال‌ها، به‌عنوان مدیر DevOps و اسکرام‌مستر، همراه تیم‌ها در پروژه‌های گوناگون نقش‌های کلیدی ایفا کرده‌ام و با به‌کارگیری Docker، Docker Compose و ابزارهای CI/CD تلاش کرده‌ام فرایندهای توسعه و استقرار نرم‌افزار را بهینه و خودکار کنم. همچنین علاقه زیادی به طراحی و پیاده‌سازی معماری‌های میکروسرویس دارم که به اپلیکیشن‌ها امکان مقیاس‌پذیری و انعطاف‌پذیری بیشتری می‌دهد.
+سلام! من **صمد المکچی** هستم، مهندس نرم‌افزار با بیش از ۲۰ سال تجربه در توسعه سیستم‌های وب‌محور، با تمرکز عمیق بر حوزه‌های **DevOps**، **بک‌اند** و **مدیریت تیم‌های چابک**.  
+در طول مسیر حرفه‌ای‌ام، نقش‌هایی مانند توسعه‌دهنده ارشد، معمار نرم‌افزار، اسکرام‌مستر و مدیر DevOps را در پروژه‌های مقیاس‌پذیر ایفا کرده‌ام.
 
-در زمینه تست‌نویسی، از پایتون برای ساخت تست‌های خودکار استفاده می‌کنم و اصول برنامه‌نویسی چابک و کار به روش اسکرام را بخشی جدایی‌ناپذیر از توسعه نرم‌افزار می‌دانم. به‌عنوان اسکرام‌مستر، همواره به ایجاد هماهنگی و هم‌افزایی بین اعضای تیم اهمیت می‌دهم، چرا که به عقیده من، همکاری تیمی نقش اساسی در موفقیت پروژه‌ها دارد. از نظر شخصیتی فردی آرام و باانرژی هستم و تعاملات موثر در تیم را به‌عنوان فرصتی برای یادگیری و رشد ارزشمند می‌دانم.
+---
 
-در حال حاضر، با یادگیری Kubernetes قصد دارم دانش خود را در زمینه مدیریت و ارکستراسیون کانتینرها گسترش دهم. همچنین به اشتراک‌گذاری دانش و مستندسازی کد اهمیت می‌دهم و از به‌اشتراک‌گذاری عمومی پروژه‌هایم استقبال می‌کنم تا دیگران نیز از تجربه‌ها و راهکارهایم بهره‌مند شوند.
+## 🔧 تخصص در DevOps و زیرساخت
+تمرکز اصلی من بر **اتوماسیون فرآیندهای توسعه، استقرار، مانیتورینگ و CI/CD** است. مهارت‌های کلیدی من عبارت‌اند از:
 
-[01]: https://www.linkedin.com/in/samad-elmakchi
-[02]: https://www.instagram.com/samad.elmakchi
-[03]: https://wa.me/989141189645
-[04]: https://t.me/samadelmakchi
-[05]: https://x.com/elmakchi
-[06]: https://facebook.com/samad.elmakchi
-[07]: mailto:samad.elmakchi@gmail.com
-[10]: https://gitlab.com/samadelmakchi
-[11]: https://github.com/samadelmakchi
+- **Containerization:** Docker و Docker Compose  
+- **Configuration Management:** Ansible (IaC)  
+- **CI/CD Pipelines:** GitLab CI, GitHub Actions, Jenkins  
+- **Monitoring & Logging:** ELK Stack, Fluentd, Prometheus, Grafana  
+- **Security & Hardening:** Least Privilege, Secrets Management, RBAC  
 
-[1.01]: social/linkedin.png (LinkedIn)
-[1.02]: social/instagram.png (Instagram)
-[1.03]: social/whatsapp.png (WhatsApp)
-[1.04]: social/telegram.png (Telegram)
-[1.05]: social/x.png (X)
-[1.06]: social/facebook.png (Facebook)
-[1.07]: social/gmail.png (Gmail)
-[1.08]: social/pinterest.png (Pinterest)
-[1.09]: social/youtube.png (Youtube)
-[1.10]: social/gitlab.png (Gitlab)
+> در حال حاضر مشغول یادگیری **Kubernetes** برای مدیریت ارکستراسیون کانتینرها با مقیاس‌پذیری و خودترمیمی هستم.
+
+---
+
+## 🌀 تجربه در معماری میکروسرویس‌ها
+با طراحی و اجرای معماری‌های **Microservices** توانسته‌ام اپلیکیشن‌هایی با قابلیت نگهداری بالا، مقیاس‌پذیر و قابل توسعه ایجاد کنم. موارد کلیدی شامل:
+
+- طراحی APIها
+- تقسیم منطقی دامنه‌ها
+- شبکه‌سازی بین سرویس‌ها
+- مدیریت چرخه عمر سرویس‌ها به‌صورت مستقل
+
+---
+
+## 🧠 رهبری چابک و Scrum Mastering
+به‌عنوان **Scrum Master** در هدایت تیم‌های چندتخصصی نقش مؤثری داشته‌ام. فعالیت‌های من در این زمینه شامل:
+
+- برنامه‌ریزی و اجرای اسپرینت‌ها  
+- برگزاری جلسات Daily، Sprint Review و Retrospective  
+- حذف موانع تیمی (Impediment Removal)  
+- تقویت فرهنگ همکاری، شفافیت و بهبود مستمر  
+
+> با رویکرد **Servant Leadership**، تیم‌هایی انگیزه‌مند و نتیجه‌محور ساخته‌ام.
+
+---
+
+## 🧪 تست‌نویسی و تضمین کیفیت
+- پایبند به اصول TDD و BDD  
+- توسعه تست‌های خودکار با **Python / Pytest**  
+- آشنایی با **Postman, Selenium, Testcontainers**
+
+---
+
+## 📚 مستندسازی و انتقال دانش
+به **مستندسازی دقیق**، نگهداری Wikiهای تیمی و **انتقال دانش** از طریق مقاله، Bash اسکریپت و پروژه‌های متن‌باز علاقه‌مندم.
+
+---
+
+## 🎯 ویژگی‌های شخصیتی و تیمی
+- آرام، تحلیل‌گر و علاقه‌مند به یادگیری مداوم  
+- ارتباط مؤثر، بازخورد سازنده و روحیه کار تیمی  
+- ساخت محیط مشارکتی و الهام‌بخش برای تیم‌ها  
+
+---
+
+## 🔗 Links
+
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07] [![1.10]][10] [![1.11]][11]
+
+[01]: https://www.linkedin.com/in/samad-elmakchi  
+[02]: https://www.instagram.com/samad.elmakchi  
+[03]: https://wa.me/989141189645  
+[04]: https://t.me/samadelmakchi  
+[05]: https://x.com/elmakchi  
+[06]: https://facebook.com/samad.elmakchi  
+[07]: mailto:samad.elmakchi@gmail.com  
+[10]: https://gitlab.com/samadelmakchi  
+[11]: https://github.com/samadelmakchi  
+
+[1.01]: social/linkedin.png (LinkedIn)  
+[1.02]: social/instagram.png (Instagram)  
+[1.03]: social/whatsapp.png (WhatsApp)  
+[1.04]: social/telegram.png (Telegram)  
+[1.05]: social/x.png (X)  
+[1.06]: social/facebook.png (Facebook)  
+[1.07]: social/gmail.png (Gmail)  
+[1.10]: social/gitlab.png (Gitlab)  
 [1.11]: social/github.png (Github)
 
-### 🔗 Links
-[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
+---
+## 🛠 مهارت‌های DevOps و زیرساخت
 
-### 🛠 Skills
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
-![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
-![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) 
-![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white) 
-![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=white) 
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white) 
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=Grafana&logoColor=white) 
-![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C?style=for-the-badge&logo=prometheus&logoColor=white) 
-![Nginx](https://img.shields.io/badge/Nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) 
-![Jenkins](https://img.shields.io/badge/Jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) 
-![Elasticsearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white) 
-![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=Kibana&logoColor=white) 
-![Logstash](https://img.shields.io/badge/-Logstash-A9A9A9?style=for-the-badge&logo=Logstash&logoColor=white) 
-![Git](https://img.shields.io/badge/Git-e84d31?style=for-the-badge&logo=git&logoColor=white) 
-![Portainer](https://img.shields.io/badge/Portainer-13b8f1?style=for-the-badge&logo=Portainer&logoColor=white) 
-![SonarQube](https://img.shields.io/badge/sonarqube-4093c9?style=for-the-badge&logo=sonarqube&logoColor=white) 
-![Gitlab](https://img.shields.io/badge/Gitlab-da4127?style=for-the-badge&logo=gitlab&logoColor=white) 
-![Github](https://img.shields.io/badge/Github-000000?style=for-the-badge&logo=github&logoColor=white) 
-![Gitea](https://img.shields.io/badge/gitea-5d9425?style=for-the-badge&logo=gitea&logoColor=white) 
-![Fluentd](https://img.shields.io/badge/fluentd-66a7d2?style=for-the-badge&logo=fluentd&logoColor=white) 
-![Traefik](https://img.shields.io/badge/traefik-e88e24?style=for-the-badge&logo=traefik&logoColor=white) 
-![Dozzle](https://img.shields.io/badge/dozzle-f7d654?style=for-the-badge&logo=dozzle&logoColor=white) 
-![Selenium](https://img.shields.io/badge/-selenium-CB02A?style=for-the-badge&logo=selenium&logoColor=white) 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white) 
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white) 
-![Nexus](https://img.shields.io/badge/nexus-26ba7b?style=for-the-badge&logo=nexus&logoColor=white) 
-![n8n](https://img.shields.io/badge/n8n-e2496d?style=for-the-badge&logo=n8n&logoColor=white) 
-![jira](https://img.shields.io/badge/jira-0051c9?style=for-the-badge&logo=jira&logoColor=white) 
-![trello](https://img.shields.io/badge/trello-0864d2?style=for-the-badge&logo=trello&logoColor=white) 
+| مهارت‌ها | توضیحات |
+|----------|----------|
+| 🐳 **Docker / Compose** | کانتینرسازی و ارکستراسیون ساده |
+| ⚙️ **Ansible** | مدیریت پیکربندی و Automation |
+| 🔁 **GitLab CI / GitHub Actions / Jenkins** | پیاده‌سازی CI/CD |
+| ☸️ **Kubernetes** | ارکستراسیون کانتینرها |
+| 🎛 **Helm** | مدیریت Package در Kubernetes |
+| 📈 **Prometheus / Grafana** | مانیتورینگ و آلارم‌گذاری |
+| 🔎 **ELK Stack / Fluentd / Filebeat** | لاگ‌گذاری، تحلیل و تجمیع لاگ‌ها |
+| 🌐 **Nginx / Traefik** | معکوس‌پراکسی، لود بالانسر |
+| 🖥 **Portainer** | مدیریت گرافیکی Docker |
+| 🐚 **Bash / Linux / Systemd / SSH** | مدیریت سرور و اسکریپت‌نویسی |
+| 🔐 **SSL/TLS / Let’s Encrypt** | امنیت و گواهی‌نامه |
+| 🛰 **BIND9** | مدیریت DNS اختصاصی |
+| ☁️ **Terraform** | (در حال یادگیری) زیرساخت به عنوان کد |
+
+---
+
+## 📦 توسعه نرم‌افزار و بک‌اند
+
+| مهارت‌ها | توضیحات |
+|----------|----------|
+| 🐍 **Python / Pytest** | توسعه و تست بک‌اند |
+| 🐘 **PHP / Composer / PHPUnit** | توسعه بک‌اند با CodeIgniter و Symfony |
+| 📡 **REST API / Swagger (OpenAPI)** | طراحی و مستندسازی API |
+| 🛢 **MySQL / PostgreSQL / Redis** | دیتابیس‌های رابطه‌ای و حافظه نهان |
+| 🔧 **Git** | کنترل نسخه و همکاری تیمی |
+
+---
+
+## 🌀 معماری نرم‌افزار
+
+| مفاهیم | توضیحات |
+|--------|----------|
+| 🔧 **Microservices / Monorepo** | ساختار معماری مقیاس‌پذیر |
+| 🧼 **Clean Architecture / DDD** | طراحی ماژولار و دامنه‌محور |
+| 🚪 **API Gateway** | دروازه ورودی میکروسرویس‌ها |
+| 🌐 **Service Mesh** | (در حال آشنایی) کنترل ارتباط سرویس‌ها در Kubernetes |
+
+---
+
+## 🧪 تست و تضمین کیفیت
+
+| ابزارها و مفاهیم | توضیحات |
+|------------------|----------|
+| ✅ **TDD / BDD** | رویکردهای توسعه آزمون‌محور |
+| 🔍 **Postman / Selenium** | تست API و رابط کاربری |
+| 🧪 **Testcontainers / Coverage Tools** | تست‌های یکپارچه با محیط واقعی |
+| 🧬 **CI/CD Testing** | خودکارسازی تست‌ها در زنجیره DevOps |
+
+---
+
+## 👥 مدیریت پروژه و چابکی
+
+| مفاهیم و ابزارها | توضیحات |
+|------------------|----------|
+| 🌀 **Scrum / Kanban / Agile** | متدولوژی‌های مدیریت پروژه چابک |
+| 👨‍🏫 **Scrum Master / Sprint Planning** | نقش‌ها و جلسات اسکرام |
+| 📝 **Jira / Confluence / Miro** | ابزارهای مستندسازی و همکاری تیمی |
+
+---
+
+## 📚 در حال یادگیری
+
+| مهارت | وضعیت |
+|--------|--------|
+| ☁️ **AWS / Azure** | در حال یادگیری |
+| 🔐 **Vault** | در حال یادگیری |
+| 🚀 **ArgoCD** | در حال یادگیری |
+| ☁️ **Terraform** | در حال یادگیری |
 
