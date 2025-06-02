@@ -138,14 +138,24 @@
 
 ## 📡 راه‌های ارتباطی و شبکه‌های اجتماعی
 
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="20" alt="LinkedIn" />](https://www.linkedin.com/in/samad-elmakchi) LinkedIn
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" width="20" alt="GitHub" />](https://github.com/samadelmakchi) GitHub
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gitlab.svg" width="20" alt="GitLab" />](https://gitlab.com/samadelmakchi) GitLab
-- [<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="20" alt="Email" />](mailto:samad.elmakchi@gmail.com) Email
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" width="20" alt="Telegram" />](https://t.me/samadelmakchi) Telegram
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" width="20" alt="WhatsApp" />](https://wa.me/989141189645) WhatsApp
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" width="20" alt="X" />](https://x.com/elmakchi) X (Twitter)
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" width="20" alt="Instagram" />](https://www.instagram.com/samad.elmakchi) Instagram
-- [<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" width="20" alt="Facebook" />](https://facebook.com/samad.elmakchi) Facebook
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07] [![1.10]][10] [![1.11]][11]
 
+[01]: https://www.linkedin.com/in/samad-elmakchi  
+[02]: https://www.instagram.com/samad.elmakchi  
+[03]: https://wa.me/989141189645  
+[04]: https://t.me/samadelmakchi  
+[05]: https://x.com/elmakchi  
+[06]: https://facebook.com/samad.elmakchi  
+[07]: mailto:samad.elmakchi@gmail.com  
+[10]: https://gitlab.com/samadelmakchi  
+[11]: https://github.com/samadelmakchi  
 
+[1.01]: social/linkedin.png (LinkedIn)  
+[1.02]: social/instagram.png (Instagram)  
+[1.03]: social/whatsapp.png (WhatsApp)  
+[1.04]: social/telegram.png (Telegram)  
+[1.05]: social/x.png (X)  
+[1.06]: social/facebook.png (Facebook)  
+[1.07]: social/gmail.png (Gmail)  
+[1.10]: social/gitlab.png (Gitlab)  
+[1.11]: social/github.png (Github)
