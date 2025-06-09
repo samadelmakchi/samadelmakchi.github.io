@@ -2,13 +2,12 @@
 
 ## About Me
 
-Greetings! I am **Samad Elmakchi**, a software engineer with over 20 years of experience in developing web-based systems, with a strong focus on **DevOps**, **backend development**, and **agile team management**.
+**Samad Elmakchi**  
+*Experienced Software Engineer & DevOps Specialist*
 
-Throughout my professional journey, I have taken on roles such as **Senior Developer**, **Software Architect**, **Scrum Master**, and **DevOps Engineer** in scalable and high-impact projects.
+I am a software engineer with over 20 years of experience in designing and developing web-based systems, specializing in DevOps, backend development, and agile team leadership. Throughout my career, I have held key positions such as Senior Developer, Software Architect, Scrum Master, and DevOps Engineer in large-scale, high-impact projects.
 
-In addition to my technical expertise, I am a **calm, analytical**, and **continuously learning** individual, with strong skills in **effective communication**, **constructive feedback**, and **team morale building**.
-
-I firmly believe that creating a **collaborative and inspiring work environment** is the key to team growth and achieving meaningful and sustainable outcomes.
+I am a calm, analytical professional, passionate about continuous learning and growth. My strong communication skills, openness to constructive feedback, and commitment to fostering a positive, collaborative team culture have been essential to my success. I firmly believe that creating an inclusive and motivating work environment is critical to team development and achieving sustainable, high-quality outcomes.
 
 ---
 
@@ -29,10 +28,8 @@ My key skills include:
 | Skills                              | Description                                      |
 |-------------------------------------|------------------------------------------------|
 | 🐳 **Docker / Compose**              | Containerization and simple orchestration       |
-| ⚙️ **Ansible**                      | Configuration management and automation          |
+| 🤖 **Ansible**                      | Configuration management and automation          |
 | 🔁 **GitLab CI / GitHub Actions / Jenkins** | Implementation of CI/CD pipelines              |
-| ☸️ **Kubernetes**                   | Container orchestration                           |
-| 🎛 **Helm**                        | Package management in Kubernetes                  |
 | 📈 **Prometheus / Grafana**         | Monitoring and alerting                           |
 | 🔎 **ELK Stack / Fluentd / Beats**  | Logging, analysis, and log aggregation           |
 | 🌐 **Nginx / Traefik**              | Reverse proxy and load balancing                   |
@@ -41,10 +38,13 @@ My key skills include:
 | 🔐 **SSL/TLS / Let’s Encrypt**      | Security and certificates                          |
 | 🛰 **BIND9**                      | Private DNS management                             |
 | 🔧 **Git**                         | Version control and team collaboration            |
+| ☸️ **Kubernetes**                   | (Learning) Container orchestration                           |
+| 🎛 **Helm**                        | (Learning) Package management in Kubernetes                  |
 | ☁️ **AWS / Azure**                  | (Learning) Cloud services for hosting and infrastructure management |
 | 🚀 **ArgoCD**                     | (Learning) Continuous delivery tool in Kubernetes using GitOps |
 | 🔐 **Vault**                      | (Learning) Secure management of secrets and keys |
 | 🛠️ **Terraform**                  | (Learning) Infrastructure as Code                  |
+| ⚙️ **Service Mesh**                  | (Learning) Managing service communication in Kubernetes                  |
 
 ---
 
@@ -67,29 +67,6 @@ As a **Scrum Master**, I have played a key role in guiding cross-functional team
 | 🌀 **Scrum / Kanban / Agile**  | Agile project management methodologies |
 | 👨‍🏫 **Scrum Master / Sprint Planning** | Scrum roles and ceremonies         |
 | 📝 **Jira / Confluence / Miro**| Documentation and team collaboration tools |
-
----
-
-### 🌀 Experience in Microservices Architecture
-
-By designing and implementing **Microservices** architectures, I have built applications that are maintainable, scalable, and extensible. Key aspects include:
-
-- API design  
-- Logical domain decomposition  
-- Service-to-service networking  
-- Independent lifecycle management of services  
-
-### 🛠 Software Architecture
-
-| Concepts                         | Description                                          |
-|---------------------------------|------------------------------------------------------|
-| 🔧 **Microservices / Monorepo**   | Scalable architectural patterns                      |
-| 🧼 **Clean Architecture / DDD**   | Modular and domain-driven design                      |
-| 🚪 **API Gateway**                | Entry point for microservices                         |
-| 🌐 **Service Mesh**               | (Familiarizing) Managing service communication in Kubernetes |
-| 📊 **UML / Scenario Modeling**    | Designing and documenting system structure and behavior |
-| 📡 **REST API / Swagger (OpenAPI)** | API design and documentation                         |
-| 🛢 **MySQL / PostgreSQL / Redis** | Relational databases and caching                      |
 
 ---
 
