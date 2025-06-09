@@ -24,23 +24,23 @@
 | مهارت‌ها | توضیحات |
 |----------|----------|
 | 🐳 **Docker / Compose** | کانتینرسازی و ارکستراسیون ساده |
-| ⚙️ **Ansible** | مدیریت پیکربندی و Automation |
+| 🤖 **Ansible** | مدیریت پیکربندی و Automation |
 | 🔁 **GitLab CI / GitHub Actions / Jenkins** | پیاده‌سازی CI/CD |
-| ☸️ **Kubernetes** | ارکستراسیون کانتینرها |
-| 🎛 **Helm** | مدیریت Package در Kubernetes |
 | 📈 **Prometheus / Grafana** | مانیتورینگ و آلارم‌گذاری |
 | 🔎 **ELK Stack / Fluentd / Beats** | لاگ‌گذاری، تحلیل و تجمیع لاگ‌ها |
 | 🌐 **Nginx / Traefik** | معکوس‌پراکسی، لود بالانسر |
-| 🖥 **Portainer** | مدیریت گرافیکی Docker |
 | 🐚 **Bash / Linux / Systemd / SSH** | مدیریت سرور و اسکریپت‌نویسی |
 | 🔐 **SSL/TLS / Let’s Encrypt** | امنیت و گواهی‌نامه |
 | 🛰 **BIND9** | مدیریت DNS اختصاصی |
 | 🔧 **Git** | کنترل نسخه و همکاری تیمی |
+| 🖥 **Portainer** | مدیریت گرافیکی Docker |
+| ☸️ **Kubernetes** | (یادگیری) ارکستراسیون کانتینرها |
+| 🎛 **Helm** | (یادگیری) مدیریت Package در Kubernetes |
 | ☁️ **AWS / Azure** | (در حال یادگیری) سرویس‌های ابری برای میزبانی و مدیریت زیرساخت |
 | 🚀 **ArgoCD** | (در حال یادگیری) ابزار تحویل مداوم در Kubernetes با روش GitOps |
 | 🔐 **Vault** | (در حال یادگیری) مدیریت امن اسرار و کلیدهای امنیتی |
 | 🛠️ **Terraform** | (در حال یادگیری) زیرساخت به عنوان کد |
-
+| ⚙️ **Service Mesh** | (یادگیری) مدیریت ارتباطات سرویس در Kubernetes |
 ---
 
 ### 🧠 رهبری چابک و Scrum Mastering
