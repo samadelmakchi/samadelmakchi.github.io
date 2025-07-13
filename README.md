@@ -1,6 +1,6 @@
 # DevOps Engineer | Scrum Master | Software Architect
 
-## About Me
+### About Me
 
 **Samad Elmakchi**  
 *Experienced Software Engineer & DevOps Specialist*
@@ -121,7 +121,7 @@ As a **Scrum Master**, I have played a key role in guiding cross-functional team
 
 ---
 
-## 📡 Contact Information & Social Networks
+### 📡 Contact Information & Social Networks
 
 [![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07] [![1.10]][10] [![1.11]][11]
 
@@ -145,7 +145,7 @@ As a **Scrum Master**, I have played a key role in guiding cross-functional team
 [1.10]: social/gitlab.png (Gitlab)  
 [1.11]: social/github.png (Github)
 
-### Translate
+---
 
 [lang_az]: README-AZ.md
 [lang_tr]: README-TR.md
