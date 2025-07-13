@@ -25,26 +25,23 @@ My key skills include:
 
 ### 🛠 DevOps and Infrastructure Skills
 
-| Skills                              | Description                                      |
-|-------------------------------------|------------------------------------------------|
-| 🐳 **Docker / Compose**              | Containerization and simple orchestration       |
-| 🤖 **Ansible**                      | Configuration management and automation          |
-| 🔁 **GitLab CI / GitHub Actions / Jenkins** | Implementation of CI/CD pipelines              |
-| 📈 **Prometheus / Grafana**         | Monitoring and alerting                           |
-| 🔎 **ELK Stack / Fluentd / Beats**  | Logging, analysis, and log aggregation           |
-| 🌐 **Nginx / Traefik**              | Reverse proxy and load balancing                   |
-| 🖥 **Portainer**                   | Graphical Docker management                        |
-| 🐚 **Bash / Linux / Systemd / SSH**| Server management and scripting                    |
-| 🔐 **SSL/TLS / Let’s Encrypt**      | Security and certificates                          |
-| 🛰 **BIND9**                      | Private DNS management                             |
-| 🔧 **Git**                         | Version control and team collaboration            |
-| ☸️ **Kubernetes**                   | (Learning) Container orchestration                           |
-| 🎛 **Helm**                        | (Learning) Package management in Kubernetes                  |
-| ☁️ **AWS / Azure**                  | (Learning) Cloud services for hosting and infrastructure management |
-| 🚀 **ArgoCD**                     | (Learning) Continuous delivery tool in Kubernetes using GitOps |
-| 🔐 **Vault**                      | (Learning) Secure management of secrets and keys |
-| 🛠️ **Terraform**                  | (Learning) Infrastructure as Code                  |
-| ⚙️ **Service Mesh**                  | (Learning) Managing service communication in Kubernetes                  |
+| Skills                                      | Description                                                         |
+|---------------------------------------------|---------------------------------------------------------------------|
+| 🐳 **Docker / Compose**                     | Containerization and simple orchestration                           |
+| 🤖 **Ansible**                              | Configuration management and automation                             |
+| 🔁 **Jenkins / GitLab CI**                  | Implementation of CI/CD pipelines                                   |
+| 📈 **Prometheus / Grafana / Tempo / Loki**  | Observability (Logs, metrics and traces)                            |
+| 🔎 **ELK Stack / Fluentd / Beats**          | Logging, analysis, and log aggregation                              |
+| 🌐 **Traefik**                              | Reverse proxy and load balancing                                    |
+| 🐚 **Bash / Linux**                         | Server management and scripting                                     |
+| 🛰 **PowerDNS**                             | Private DNS management                                              |
+| 🔧 **Git**                                  | Version control and team collaboration                              |
+| ☸️ **Kubernetes**                           | (Learning) Container orchestration                                  |
+| ☁️ **AWS / Azure**                          | (Learning) Cloud services for hosting and infrastructure management |
+| 🚀 **ArgoCD**                               | (Learning) Continuous delivery tool in Kubernetes using GitOps      |
+| 🔐 **Vault**                                | (Learning) Secure management of secrets and keys                    |
+| 🛠️ **Terraform**                            | (Learning) Infrastructure as Code                                   |
+| ⚙️ **Istio**                                | (Learning) Service mesh in Kubernetes                               |
 
 ---
 
