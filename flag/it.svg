@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" width="32" height="24">
+	<title>it</title>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #009246 } 
+		.s2 { fill: #ce2b37 } 
+	</style>
+	<path fill-rule="evenodd" class="s0" d="m64 0v48h-64v-48z"/>
+	<path fill-rule="evenodd" class="s1" d="m21.3 0v48h-21.3v-48z"/>
+	<path fill-rule="evenodd" class="s2" d="m64 0v48h-21.3v-48z"/>
+</svg>
