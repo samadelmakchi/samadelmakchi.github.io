@@ -138,7 +138,7 @@
 [1.10]: social/gitlab.png (Gitlab)  
 [1.11]: social/github.png (Github)
 
-### Translate
+---
 
 [lang_az]: README-AZ.md
 [lang_tr]: README-TR.md
