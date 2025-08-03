@@ -1,4 +1,4 @@
-# DevOps Engineer | Scrum Master | Software Architect
+# DevOps Engineer | Scrum Master
 
 ### About Me
 
