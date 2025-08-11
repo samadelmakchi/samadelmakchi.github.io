@@ -144,6 +144,9 @@ As a **Scrum Master**, I have played a key role in guiding cross-functional team
 
 ---
 
+[lang_az]: README-AZ.md
+[lang_tr]: README-TR.md
+[lang_ar]: README-AR.md
 [lang_fa]: README-FA.md
 [lang_en]: README.md
 
@@ -153,4 +156,4 @@ As a **Scrum Master**, I have played a key role in guiding cross-functional team
 [flag_ar]: flag/ar.svg (العربي)
 [flag_en]: flag/en.svg (English)
 
-[![flag_fa]][lang_fa] [![flag_az]][lang_az] [![flag_tr]][lang_tr] [![flag_ar]][lang_ar]
+[![flag_fa]][lang_fa]
