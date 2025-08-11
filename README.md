@@ -144,9 +144,6 @@ As a **Scrum Master**, I have played a key role in guiding cross-functional team
 
 ---
 
-[lang_az]: README-AZ.md
-[lang_tr]: README-TR.md
-[lang_ar]: README-AR.md
 [lang_fa]: README-FA.md
 [lang_en]: README.md
 
