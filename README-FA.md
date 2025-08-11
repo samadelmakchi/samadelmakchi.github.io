@@ -1,4 +1,4 @@
-# DevOps Engineer | Scrum Master
+# Senior DevOps Engineer | Agile Coach | Backend Architect
 
 **صمد المکچی**  
 *مهندس نرم‌افزار و متخصص DevOps*
