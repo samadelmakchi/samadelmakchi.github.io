@@ -152,4 +152,4 @@
 [flag_ar]: flag/ar.svg (العربي)
 [flag_en]: flag/en.svg (English)
 
-[![flag_en]][lang_en] [![flag_az]][lang_az] [![flag_tr]][lang_tr] [![flag_ar]][lang_ar]
+[![flag_en]][lang_en]
