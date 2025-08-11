@@ -25,63 +25,51 @@ My key skills include:
 
 ### 🛠 DevOps and Infrastructure Skills
 
-| Skills                                      | Description                                                         |
-|---------------------------------------------|---------------------------------------------------------------------|
-| 🐳 **Docker / Compose**                     | Containerization and simple orchestration                           |
-| 🤖 **Ansible**                              | Configuration management and automation                             |
-| 🔁 **Jenkins / GitLab CI**                  | Implementation of CI/CD pipelines                                   |
-| 📈 **Prometheus / Grafana / Tempo / Loki**  | Observability (Logs, metrics and traces)                            |
-| 🔎 **ELK Stack / Fluentd / Beats**          | Logging, analysis, and log aggregation                              |
-| 🌐 **Traefik**                              | Reverse proxy and load balancing                                    |
-| 🐚 **Bash / Linux**                         | Server management and scripting                                     |
-| 🛰 **PowerDNS**                             | Private DNS management                                              |
-| 🔧 **Git**                                  | Version control and team collaboration                              |
-| ☸️ **Kubernetes**                           | (Learning) Container orchestration                                  |
-| ☁️ **AWS / Azure**                          | (Learning) Cloud services for hosting and infrastructure management |
-| 🚀 **ArgoCD**                               | (Learning) Continuous delivery tool in Kubernetes using GitOps      |
-| 🔐 **Vault**                                | (Learning) Secure management of secrets and keys                    |
-| 🛠️ **Terraform**                            | (Learning) Infrastructure as Code                                   |
-| ⚙️ **Istio**                                | (Learning) Service mesh in Kubernetes                               |
+| Skill                              | Description                                              |
+|------------------------------------|----------------------------------------------------------|
+| 🐳 **Docker / Docker Compose**     | Containerization                                         |
+| 🤖 **Ansible**                     | Configuration management and automation                  |
+| 🔁 **GitLab CI / GitHub Actions**  | CI/CD implementation                                     |
+| 📈 **Prometheus**                  | Monitoring and metrics collection                        |
+| 📊 **Grafana**                     | Data visualization and monitoring dashboards             |
+| 🔎 **Loki**                        | Logging, analysis, and aggregation                       |
+| ⚙️ **Tempo**                       | Service communication tracing                            |
+| 🌐 **Traefik**                     | Reverse proxy and load balancing                         |
+| 🐚 **Bash / Linux**                | Server management and scripting                          |
+| 🔧 **Git**                         | Version control and team collaboration                   |
+| 🧪 **Selenium / Pytest**           | Test automation                                          |
+| ☸️ **Kubernetes**                  | (Learning) Container orchestration                       |
+| 🔐 **Vault**                       | (Learning) Secure management of secrets and keys         |
+| 🛠️ **Terraform**                   | (Learning) Infrastructure as Code                        |
+
 
 ---
 
-### 🧠 Agile Leadership and Scrum Mastering
+### 🧠 Project Management & Agile Leadership
+As a **Scrum Master** and **Project Manager**, I have led and coordinated cross-functional teams with an **Agile Mindset**, ensuring alignment between team deliverables and business goals. Key achievements and responsibilities include:
 
-As a **Scrum Master**, I have played a key role in guiding cross-functional teams. My responsibilities in this area include:
+- Planning and executing sprints using Scrum and Kanban best practices  
+- Facilitating essential ceremonies: Daily Standups, Sprint Reviews, Retrospectives, and Planning sessions  
+- Acting as **Product Owner** when needed to prioritize backlog items and define clear acceptance criteria  
+- Removing impediments and enabling smooth delivery flows  
+- Aligning team efforts with project OKRs and KPIs  
+- Maintaining comprehensive documentation, team Wikis, and knowledge sharing  
+- Promoting collaboration, transparency, and continuous improvement  
+- Leveraging project management tools for effective communication and task tracking  
 
-- Planning and executing sprints  
-- Facilitating Daily Standups, Sprint Reviews, and Retrospectives  
-- Removing team impediments  
-- Fostering a culture of collaboration, transparency, and continuous improvement  
-- Maintaining thorough documentation, managing team Wikis, and knowledge transfer  
+**Roles & Concepts**  
+| Role / Concept                      | Description                                   |
+|--------------------------------------|-----------------------------------------------|
+| 🌀 **Scrum / Kanban / Agile**        | Agile project management methodologies        |
+| 👨‍🏫 **Scrum Master / Product Owner / Sprint Planning** | Key Scrum roles and ceremonies                |
 
-> With a **Servant Leadership** approach, I have built motivated and results-driven teams.
-
-### 🛠 Project Management and Agility
-
-| Concepts & Tools                | Description                        |
-|-------------------------------|----------------------------------|
-| 🌀 **Scrum / Kanban / Agile**  | Agile project management methodologies |
-| 👨‍🏫 **Scrum Master / Sprint Planning** | Scrum roles and ceremonies         |
-| 📝 **Jira / Confluence / Miro**| Documentation and team collaboration tools |
-
----
-
-### 🧪 Testing and Quality Assurance
-
-- Adherent to TDD and BDD principles  
-- Developing automated tests using **Python / Pytest**  
-- Familiar with **Postman, Selenium, Testcontainers**
-
-### 🛠 Testing and Quality Assurance
-
-| Tools & Concepts               | Description                                  |
-|-------------------------------|----------------------------------------------|
-| ✅ **TDD / BDD**               | Test-driven development approaches            |
-| 🔍 **Postman / Selenium**      | API and UI testing                             |
-| 🧪 **Testcontainers / Coverage Tools** | Integration testing with real environments |
-| 🧬 **CI/CD Testing**           | Automating tests in the DevOps pipeline       |
-| 🐍 **Python / Pytest**         | Backend development and testing                |
+**Tools**  
+| Tool                                 | Purpose                                       |
+|--------------------------------------|-----------------------------------------------|
+| 📝 **Jira**                           | Task and sprint management                    |
+| 📒 **Confluence**                     | Documentation and knowledge management        |
+| 🖌 **Miro**                           | Diagramming and collaborative whiteboarding   |
+| 📋 **Asana**                          | Project tracking and task assignment          |
 
 ---
 
