@@ -29,7 +29,7 @@ My key skills include:
 |------------------------------------|----------------------------------------------------------|
 | 🐳 **Docker / Docker Compose**     | Containerization                                         |
 | 🤖 **Ansible**                     | Configuration management and automation                  |
-| 🔁 **GitLab CI / GitHub Actions**  | CI/CD implementation                                     |
+| 🔁 **GitHub Actions / GitLab CI**  | CI/CD implementation                                     |
 | 📈 **Prometheus**                  | Monitoring and metrics collection                        |
 | 📊 **Grafana**                     | Data visualization and monitoring dashboards             |
 | 🔎 **Loki**                        | Logging, analysis, and aggregation                       |
@@ -41,7 +41,7 @@ My key skills include:
 | ☸️ **Kubernetes**                  | (Learning) Container orchestration                       |
 | 🔐 **Vault**                       | (Learning) Secure management of secrets and keys         |
 | 🛠️ **Terraform**                   | (Learning) Infrastructure as Code                        |
-
+| ☁️ **AWS**                         | (Learning) Cloud services for infrastructure management  |
 
 ---
 
@@ -75,9 +75,9 @@ As a **Scrum Master** and **Project Manager**, I have led and coordinated cross-
 
 ### 💼 Work Experience
 
-| Company                       | Job Title                     | Period                   | Responsibilities and Achievements                             |
-|-------------------------------|------------------------------|--------------------------|--------------------------------------------------------------|
-| **Nikan Mehr Pardazesh Afza** | DevOps Engineer               | July 2023 – Present      | Improved system monitoring and security using Docker, Ansible, Prometheus, and ELK<br>Planned sprints and executed Agile processes<br>Developed and managed automated CI/CD infrastructures |
+| Company                        | Job Title                     | Period                    | Responsibilities and Achievements                             |
+|--------------------------------|-------------------------------|---------------------------|---------------------------------------------------------------|
+| **Nikan Mehr Pardazesh Afza**  | DevOps Engineer               | July 2023 – Present       | Improved system monitoring and security using Docker, Ansible, Prometheus, and Grafana<br>Planned sprints and executed Agile processes<br>Developed and managed automated CI/CD infrastructures |
 | **Ekeep Startup**              | Project Manager & Scrum Master| November 2019 – July 2023 | Project management and leading cross-functional teams         |
 | **Noyan Co.**                  | Data Visualization Engineer   | March 2017 – November 2019| Designed interactive dashboards for data analysis             |
 | **Tasmim Yaran Co.**           | Back End Developer            | May 2013 – March 2018     | Developed APIs and scalable systems using PHP and Python      |
@@ -91,24 +91,24 @@ As a **Scrum Master** and **Project Manager**, I have led and coordinated cross-
 | Language         | Proficiency Level |
 |------------------|-------------------|
 | Azerbaijani      | Native            |
-| Persian (Farsi)  | Native            |
+| Farsi            | Native            |
 | English          | Intermediate      |
-| Turkish (Istanbul)| Intermediate     |
+| Turkish          | Intermediate      |
 
 ---
 
 ### 🎓 Education
 
-| Degree                   | Field of Study           | University     | Years           |
-|--------------------------|-------------------------|----------------|-----------------|
-| Bachelor’s Degree        | Computer Software Engineering | Payame Noor University | 2001 – 2005    |
-| Master’s Degree (In Progress) | Management            | —              | —               |
+| Degree                        | Field of Study                | University             | Years           |
+|-------------------------------|-------------------------------|------------------------|-----------------|
+| Bachelor’s Degree             | Computer Software Engineering | Payame Noor University | 2001 – 2005     |
+| Master’s Degree (In Progress) | Management                    | —                      | —               |
 
 ---
 
 ### 📡 Contact Information & Social Networks
 
-[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07] [![1.10]][10] [![1.11]][11]
+[![1.01]][01] [![1.02]][02] [![1.03]][03] [![1.04]][04] [![1.06]][06] [![1.05]][05] [![1.07]][07]
 
 [01]: https://www.linkedin.com/in/samad-elmakchi  
 [02]: https://www.instagram.com/samad.elmakchi  
