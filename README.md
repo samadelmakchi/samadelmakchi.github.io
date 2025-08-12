@@ -18,8 +18,8 @@ My key skills include:
 
 - **Containerization:** Docker, Docker Compose  
 - **Configuration Management:** Ansible (IaC)  
-- **CI/CD Pipelines:** GitLab CI, GitHub Actions, Jenkins  
-- **Monitoring & Logging:** ELK Stack, Fluentd, Prometheus, Grafana  
+- **CI/CD Pipelines:** GitLab CI, GitHub Actions
+- **Monitoring & Logging:** Grafana, Prometheus, Loki, Tempo 
 
 > I am currently learning **Kubernetes** to manage container orchestration with scalability and self-healing capabilities.
 
@@ -58,18 +58,18 @@ As a **Scrum Master** and **Project Manager**, I have led and coordinated cross-
 - Leveraging project management tools for effective communication and task tracking  
 
 **Roles & Concepts**  
-| Role / Concept                      | Description                                   |
-|--------------------------------------|-----------------------------------------------|
-| 🌀 **Scrum / Kanban / Agile**        | Agile project management methodologies        |
+| Role / Concept                                        | Description                                   |
+|-------------------------------------------------------|-----------------------------------------------|
+| 🌀 **Scrum / Kanban / Agile**                         | Agile project management methodologies        |
 | 👨‍🏫 **Scrum Master / Product Owner / Sprint Planning** | Key Scrum roles and ceremonies                |
 
 **Tools**  
 | Tool                                 | Purpose                                       |
 |--------------------------------------|-----------------------------------------------|
-| 📝 **Jira**                           | Task and sprint management                    |
-| 📒 **Confluence**                     | Documentation and knowledge management        |
-| 🖌 **Miro**                           | Diagramming and collaborative whiteboarding   |
-| 📋 **Asana**                          | Project tracking and task assignment          |
+| 📝 **Jira**                          | Task and sprint management                    |
+| 📒 **Confluence**                    | Documentation and knowledge management        |
+| 🖌 **Miro**                          | Diagramming and collaborative whiteboarding   |
+| 📋 **Asana**                         | Project tracking and task assignment          |
 
 ---
 
@@ -78,11 +78,11 @@ As a **Scrum Master** and **Project Manager**, I have led and coordinated cross-
 | Company                       | Job Title                     | Period                   | Responsibilities and Achievements                             |
 |-------------------------------|------------------------------|--------------------------|--------------------------------------------------------------|
 | **Nikan Mehr Pardazesh Afza** | DevOps Engineer               | July 2023 – Present      | Improved system monitoring and security using Docker, Ansible, Prometheus, and ELK<br>Planned sprints and executed Agile processes<br>Developed and managed automated CI/CD infrastructures |
-| **Ekeep Startup**              | Project Manager & Scrum Master| November 2019 – July 2023| Project management and leading cross-functional teams         |
-| **Noyan Co.**                 | Data Visualization Engineer   | March 2017 – November 2019| Designed interactive dashboards for data analysis             |
-| **Tasmim Yaran Co.**           | Back End Developer            | May 2013 – March 2018    | Developed APIs and scalable systems using PHP and Python      |
-| **Rahbord Co.**               | Web Developer                 | July 2008 – May 2013     |                                                              |
-| **Freelancer**                | Web Developer                 | October 2005 – July 2008 |                                                              |
+| **Ekeep Startup**              | Project Manager & Scrum Master| November 2019 – July 2023 | Project management and leading cross-functional teams         |
+| **Noyan Co.**                  | Data Visualization Engineer   | March 2017 – November 2019| Designed interactive dashboards for data analysis             |
+| **Tasmim Yaran Co.**           | Back End Developer            | May 2013 – March 2018     | Developed APIs and scalable systems using PHP and Python      |
+| **Rahbord Co.**                | Web Developer                 | July 2008 – May 2013      |                                                               |
+| **Freelancer**                 | Web Developer                 | October 2005 – July 2008  |                                                               |
 
 ---
 
