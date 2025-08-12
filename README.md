@@ -3,8 +3,6 @@
 ### About Me
 
 **Samad Elmakchi**  
-*Experienced Software Engineer & DevOps Specialist*
-
 I am a software engineer with over 20 years of experience in designing and developing web-based systems, specializing in DevOps, backend development, and agile team leadership. Throughout my career, I have held key positions such as Senior Developer, Software Architect, Scrum Master, and DevOps Engineer in large-scale, high-impact projects.
 
 I am a calm, analytical professional, passionate about continuous learning and growth. My strong communication skills, openness to constructive feedback, and commitment to fostering a positive, collaborative team culture have been essential to my success. I firmly believe that creating an inclusive and motivating work environment is critical to team development and achieving sustainable, high-quality outcomes.
