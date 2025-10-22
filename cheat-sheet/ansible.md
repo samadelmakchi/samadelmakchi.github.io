@@ -1,4 +1,4 @@
-# 📘 Ansible
+# 🤖 Ansible
 
 ### 🏗️ ساختار کلی Ansible
 

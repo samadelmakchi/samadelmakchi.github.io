@@ -1,4 +1,4 @@
-# 📘 Best Practice
+# 💯 Best Practice
 
 ## ⚙️ SOLID
 
@@ -12,7 +12,7 @@
 
 ---
 
-## ⚙️ Clean Code
+## 🧼 Clean Code
 
 ---
 
