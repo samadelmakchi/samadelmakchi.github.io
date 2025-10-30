@@ -3,28 +3,45 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>صمد المکچی — Senior DevOps Engineer</title>
-
+    
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Tailwind (CDN) -->
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="icon" type="image/png" sizes="64x64" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    
+    <!-- Apple Touch Icons for iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    
+    <!-- PWA Manifest & Theme -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1e40af">
+    
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- AOS -->
+    
+    <!-- AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- Typed.js -->
+    
+    <!-- Typed.js for typing effect -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- tsParticles (bundle) - we'll also include robust loader in script -->
+    
+    <!-- tsParticles (particle background) -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js" defer></script>
-
+    
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
 
     <style>
         :root {
@@ -148,8 +165,10 @@
 
         /* resume & language popups */
         .popup {
+            direction: ltr;
+            text-align: center;
             position: absolute;
-            right: 0;
+            left: 0;
             margin-top: 8px;
             background: var(--card-light);
             min-width: 220px;
@@ -241,22 +260,21 @@
                     <button id="langBtn" class="p-2 rounded-full hover:bg-gray-100 desktop-only" title="زبان">
                         <i class="fa-solid fa-globe text-gray-300"></i>
                     </button>
-                    <div id="langPopup" class="popup hidden right-0 mt-2">
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="README.md" target="_blank">🇬🇧 English</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-FA.md">🇮🇷 فارسی</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-TR.md">🇹🇷 Türkçe</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-AZ.md">🇦🇿 Azərbaycani</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-AR.md">🇸🇦 العربي</a>
+                    <div id="langPopup" class="popup hidden left-0 mt-2">
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="index.html" target="_blank">🇬🇧 English</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-fa.html">🇮🇷 فارسی</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-tr.html">🇹🇷 Türkçe</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-az.html">🇦🇿 Azərbaycani</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-ar.html">🇸🇦 العربي</a>
                     </div>
                 </div>
 
                 <!-- resume dropdown -->
                 <!-- <div class="relative">
-                    <button id="resumeMain"
-                        class="resume-btn bg-white text-[#0b1220] desktop-only px-3 py-2 rounded-md font-semibold">
-                        <i class="fa-regular fa-file-lines ml-2"></i> 📄 دانلود رزومه من
+                    <button id="resumeMain" class="resume-btn bg-white text-[#0b1220] desktop-only px-3 py-2 rounded-md font-semibold">
+                         📄 دانلود رزومه من
                     </button>
-                    <div id="resumeDropdown" class="popup hidden right-0 mt-2">
+                 <div id="resumeDropdown" class="popup hidden right-0 mt-2">
                         <a href="#" data-resume="en" class="block px-4 py-2 hover:bg-gray-100">🇬🇧 English</a>
                         <a href="#" data-resume="fa" class="block px-4 py-2 hover:bg-gray-100">🇮🇷 فارسی</a>
                         <a href="#" data-resume="tr" class="block px-4 py-2 hover:bg-gray-100">🇹🇷 Türkçe</a>
@@ -344,22 +362,22 @@
                     <!-- Tabs -->
                     <div class="flex gap-2 flex-wrap mb-4">
                         <button class="tab-btn active" data-tab="tab-devops">🔧 DevOps & Infra</button>
-                        <button class="tab-btn" data-tab="tab-backend">💻 Backend & Languages</button>
-                        <button class="tab-btn" data-tab="tab-tools">⚙️ Frameworks & Tools</button>
-                        <button class="tab-btn" data-tab="tab-agile">🧠 Agile & PM</button>
+                        <button class="tab-btn" data-tab="tab-backend-tools">💻 Backend, Languages & Tools</button>
+                        <button class="tab-btn" data-tab="tab-agile-soft">🧠 Agile & Soft Skills</button>
+                        <button class="tab-btn" data-tab="tab-marketing">💼 Marketing & Sales</button>
                     </div>
-
-                    <!-- panes -->
+                    
+                    <!-- Panes -->
                     <div>
-                        <!-- DevOps -->
+                        <!-- DevOps & Infra -->
                         <div id="tab-devops" class="tab-pane">
                             <h4 class="font-semibold mb-2">🔧 تخصص در DevOps و زیرساخت</h4>
-                            <p class="text-gray-600 mb-2">تمرکز بر اتوماسیون فرآیندهای توسعه، استقرار، مانیتورینگ و CI/CD.
+                            <p class="text-gray-600 mb-4 leading-loose text-justify">
+                                تجربه گسترده در مدیریت زیرساخت، کانتینرسازی، اتوماسیون CI/CD، و مانیتورینگ سیستم‌ها.
+                                <br>
+                                در حال یادگیری Kubernetes و Vault برای مدیریت ارکستراسیون کانتینرها و
+                                اسرار امن، و همچنین Terraform و AWS برای زیرساخت به عنوان کد و ابری.
                             </p>
-                            <blockquote class="border-r-4 border-blue-500 pr-3 text-gray-700 italic mb-3">
-                                من در حال حاضر در حال یادگیری <strong>Kubernetes</strong> برای مدیریت ارکستراسیون کانتینرها
-                                با مقیاس‌پذیری و قابلیت خودترمیم هستم.
-                            </blockquote>
                             <div class="overflow-x-auto">
                                 <table class="min-w-full text-sm">
                                     <thead class="text-right">
@@ -370,231 +388,238 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>🐳 Docker / Docker Compose</td>
-                                            <td>کانتینرسازی و محیط‌های ایزوله</td>
+                                            <td>Docker / Docker Compose</td>
+                                            <td>کانتینرسازی و محیط‌های ایزوله برای توسعه و استقرار برنامه‌ها</td>
                                         </tr>
                                         <tr>
-                                            <td>🤖 Ansible</td>
-                                            <td>مدیریت پیکربندی و اتوماسیون</td>
+                                            <td>Ansible</td>
+                                            <td>اتوماسیون پیکربندی و مدیریت زیرساخت</td>
                                         </tr>
                                         <tr>
-                                            <td>🔁 GitHub Actions</td>
-                                            <td>اجرای CI/CD Pipelines</td>
+                                            <td>GitHub Actions / CI/CD</td>
+                                            <td>اجرای pipelineهای خودکار برای build, test و deploy</td>
                                         </tr>
                                         <tr>
-                                            <td>📈 Prometheus</td>
-                                            <td>جمع‌آوری متریک‌ها و مانیتورینگ</td>
+                                            <td>Prometheus & Grafana</td>
+                                            <td>جمع‌آوری متریک‌ها و ساخت داشبوردهای مانیتورینگ</td>
                                         </tr>
                                         <tr>
-                                            <td>📊 Grafana</td>
-                                            <td>مصورسازی و داشبورد</td>
+                                            <td>Loki & Tempo</td>
+                                            <td>لاگ‌گذاری مرکزی و Distributed Tracing برای میکروسرویس‌ها</td>
                                         </tr>
                                         <tr>
-                                            <td>🔎 Loki</td>
-                                            <td>لاگ‌گذاری مرکزی و تحلیل لاگ</td>
+                                            <td>Traefik</td>
+                                            <td>معکوس‌پراکسی، لود بالانسر و مدیریت روتینگ درخواست‌ها</td>
                                         </tr>
                                         <tr>
-                                            <td>⚙️ Tempo</td>
-                                            <td>Distributed Tracing برای میکروسرویس‌ها</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🌐 Traefik</td>
-                                            <td>معکوس‌پراکسی، لود بالانسر و روتینگ</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🔧 Git</td>
-                                            <td>کنترل نسخه و همکاری تیمی</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🧪 Selenium / Pytest</td>
-                                            <td>فریم‌ورک‌های تست اتوماتیک</td>
-                                        </tr>
-                                        <tr>
-                                            <td>☸️ Kubernetes <span class="text-xs text-gray-500"> (در حال یادگیری)</span>
-                                            </td>
+                                            <td>Kubernetes <span class="text-xs text-gray-500">(در حال یادگیری)</span></td>
                                             <td>ارکستراسیون و مقیاس‌پذیری کانتینرها</td>
                                         </tr>
                                         <tr>
-                                            <td>🔐 Vault <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td>
+                                            <td>Vault <span class="text-xs text-gray-500">(در حال یادگیری)</span></td>
                                             <td>مدیریت امن اسرار و کلیدها</td>
                                         </tr>
                                         <tr>
-                                            <td>🛠️ Terraform <span class="text-xs text-gray-500"> (در حال یادگیری)</span>
-                                            </td>
-                                            <td>زیرساخت به عنوان کد</td>
+                                            <td>Terraform <span class="text-xs text-gray-500">(در حال یادگیری)</span></td>
+                                            <td>Infrastructure as Code برای مدیریت زیرساخت‌ها</td>
                                         </tr>
                                         <tr>
-                                            <td>☁️ AWS <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td>
-                                            <td>مدیریت زیرساخت ابری</td>
+                                            <td>AWS <span class="text-xs text-gray-500">(در حال یادگیری)</span></td>
+                                            <td>مدیریت زیرساخت ابری و خدمات مرتبط</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Selenium / Pytest</td>
+                                            <td>تست‌های خودکار و تضمین کیفیت نرم‌افزار</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     
-                        <!-- Backend -->
-                        <div id="tab-backend" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">💻 توسعه نرم‌افزار و معماری بک‌اند</h4>
-                            <p class="text-gray-600 mb-2">تجربه در الگوهای طراحی میکروسرویس (Microservice Design Patterns)،
-                                معماری پاک (Clean Architecture)، DDD، TDD، BDD و الگوهای پیشرفته طراحی. تمرکز بر معماری
-                                مقیاس‌پذیر، میکروسرویس‌ها و کدنویسی تمیز.</p>
+                        <!-- Backend, Languages & Tools -->
+                        <div id="tab-backend-tools" class="tab-pane hidden">
+                            <h4 class="font-semibold mb-2">💻 توسعه نرم‌افزار، معماری بک‌اند و ابزارها</h4>
+                            <p class="text-gray-600 mb-4 leading-loose text-justify">
+                                تخصص در توسعه بک‌اند مقیاس‌پذیر با استفاده از میکروسرویس‌ها و معماری پاک، طراحی API مدرن (RESTful و GraphQL)،
+                                و تضمین کیفیت با BDD، TDD و DDD. استفاده از فریم‌ورک‌ها و کتابخانه‌های پیشرفته برای توسعه سریع، تست،
+                                مستندسازی و مصورسازی داده‌ها در پروژه‌های Python, JavaScript و PHP.
+                                <br>
+                                در حال یادگیری بهترین الگوهای طراحی، ابزارهای جدید و کتابخانه‌های پیشرفته برای بهبود کارایی و کیفیت کدنویسی.
+                            </p>
                             <div class="overflow-x-auto">
                                 <table class="min-w-full text-sm">
                                     <thead class="text-right">
                                         <tr>
-                                            <th>🧩 زبان / تکنولوژی</th>
+                                            <th>🧩 زبان / ابزار / تکنولوژی</th>
                                             <th>📝 توضیحات و کاربرد</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <!-- Python -->
                                         <tr>
-                                            <td>🐍 Python</td>
-                                            <td>میکروسرویس با FastAPI & Flask، ORM با SQLAlchemy، مدیریت پکیج با pip &
-                                                Poetry، مستندسازی با Sphinx & docstrings، تست با Pytest, Unittest, Mock</td>
+                                            <td>Python</td>
+                                            <td>FastAPI, Flask, Pytest, Unittest, Pandas, NumPy, Matplotlib, Seaborn, Requests, BeautifulSoup,
+                                                Scrapy, SQLAlchemy, طراحی میکروسرویس‌ها</td>
                                         </tr>
+                                        <!-- PHP -->
                                         <tr>
-                                            <td>🐘 PHP</td>
-                                            <td>توسعه بک‌اند با Laravel & CodeIgniter، ORM با Eloquent، تست با PHPUnit،
-                                                مستندسازی با PHPDoc</td>
+                                            <td>PHP</td>
+                                            <td>Laravel, CodeIgniter, Symfony, Composer, PHPUnit, PHPDoc, Eloquent ORM, طراحی و توسعه سرویس‌ها
+                                            </td>
                                         </tr>
+                                        <!-- JavaScript / Node.js -->
                                         <tr>
-                                            <td>🟩 Golang</td>
-                                            <td>در حال یادگیری — مناسب برای سرویس‌های پرکار و با کارایی بالا</td>
+                                            <td>JavaScript / Node.js</td>
+                                            <td>Express.js, Socket.io, RESTful & GraphQL API, Next.js, React.js, Jest, Mocha, مستندسازی با JSDoc
+                                            </td>
                                         </tr>
+                                        <!-- Golang -->
                                         <tr>
-                                            <td>🟨 JavaScript / Node.js</td>
-                                            <td>سرویس‌های Backend و Real-time با Express.js, Socket.io, RESTful, GraphQL,
-                                                gRPC، مستندسازی با JSDoc</td>
+                                            <td>Golang</td>
+                                            <td>سرویس‌های پرکار و با کارایی بالا برای میکروسرویس‌ها</td>
                                         </tr>
+                                        <!-- Databases -->
                                         <tr>
-                                            <td>🧱 SQL / NoSQL</td>
-                                            <td>طراحی و بهینه‌سازی دیتابیس‌ها با MySQL, PostgreSQL, MongoDB</td>
+                                            <td>SQL / NoSQL</td>
+                                            <td>MySQL, PostgreSQL, MongoDB, طراحی و بهینه‌سازی دیتابیس‌ها، ORM با SQLAlchemy, Eloquent, Prisma
+                                            </td>
                                         </tr>
+                                        <!-- Design Patterns & Architecture -->
                                         <tr>
-                                            <td>🧰 HTML / CSS / JS</td>
-                                            <td>توسعه رابط‌های کاربری و داشبوردهای سبک</td>
+                                            <td>Design Patterns & Architecture</td>
+                                            <td>Clean Architecture, CQRS, Event Sourcing, Repository Pattern</td>
+                                        </tr>
+                                        <!-- Testing & Quality -->
+                                        <tr>
+                                            <td>Testing & Quality</td>
+                                            <td>Unit, Integration, Functional, E2E Tests، تضمین کیفیت سرویس‌ها و APIها</td>
+                                        </tr>
+                                        <!-- UI / CSS -->
+                                        <tr>
+                                            <td>CSS / UI</td>
+                                            <td>Tailwind, Bootstrap، طراحی رابط کاربری واکنش‌گرا و مدرن</td>
+                                        </tr>
+                                        <!-- API Tools -->
+                                        <tr>
+                                            <td>API Tools</td>
+                                            <td>Postman, Swagger، تست و مستندسازی API</td>
+                                        </tr>
+                                        <!-- Messaging & Caching -->
+                                        <tr>
+                                            <td>Messaging & Caching</td>
+                                            <td>Redis, RabbitMQ، مدیریت کش و صف‌های پیام</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     
-                        <!-- Tools -->
-                        <div id="tab-tools" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">⚙️ فریم‌ورک‌ها، کتابخانه‌ها و ابزارها</h4>
+                        <!-- Agile & Soft Skills -->
+                        <div id="tab-agile-soft" class="tab-pane hidden">
+                            <h4 class="font-semibold mb-2">🧠 مدیریت پروژه چابک و مهارت‌های نرم</h4>
+                            <p class="text-gray-600 mb-4 leading-loose text-justify">
+                                تمرکز بر رهبری تیم، مدیریت پروژه‌های چابک، و توسعه مهارت‌های فردی و بین‌فردی برای افزایش بهره‌وری و هماهنگی تیم.
+                                <br>
+                                در حال یادگیری بهترین روش‌ها برای مدیریت پروژه‌های پیچیده، بهبود مهارت‌های نرم مانند حل مسئله، ارتباط مؤثر،
+                                تصمیم‌گیری، تفکر انتقادی و مدیریت تعارض، و استفاده حرفه‌ای از ابزارهای مدرن مدیریت پروژه.
+                            </p>
                             <div class="overflow-x-auto">
                                 <table class="min-w-full text-sm">
                                     <thead class="text-right">
                                         <tr>
-                                            <th>🛠️ ابزار / فریم‌ورک</th>
+                                            <th>🌀 مهارت / حوزه</th>
                                             <th>📝 توضیحات</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>🚀 FastAPI / Flask / Laravel / Express.js</td>
-                                            <td>سرویس‌های RESTful و مقیاس‌پذیر</td>
+                                            <td>متدولوژی‌ها</td>
+                                            <td>Scrum, Kanban, Agile, Lean, SAFe</td>
                                         </tr>
                                         <tr>
-                                            <td>🔗 GraphQL / gRPC / RESTful API</td>
-                                            <td>طراحی API مدرن برای ارتباطات بین‌سرویسی</td>
-                                        </tr>
-                                        <tr>
-                                            <td>⚡ Socket.io</td>
-                                            <td>اپلیکیشن‌های Real-time و Event-driven</td>
-                                        </tr>
-                                        <tr>
-                                            <td>⚛️ Next.js / React.js</td>
-                                            <td>توسعه رابط‌های کاربری پویا و SSR</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🎨 Bootstrap / Tailwind CSS</td>
-                                            <td>طراحی UI واکنش‌گرا و مدرن</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🗺️ Leaflet.js / ECharts.js</td>
-                                            <td>مصورسازی داده و نقشه‌های تعاملی</td>
-                                        </tr>
-                                        <tr>
-                                            <td>📦 Composer / NPM / pip / Poetry</td>
-                                            <td>مدیریت بسته و وابستگی‌ها</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🧪 Postman / Swagger / Insomnia</td>
-                                            <td>تست و مستندسازی API</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🧰 Redis / RabbitMQ</td>
-                                            <td>مدیریت کش و صف‌های پیام</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🧱 Eloquent / SQLAlchemy / Prisma</td>
-                                            <td>ORM برای دسترسی ساخت‌یافته به داده‌ها</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🧩 Unit / Integration / Functional / E2E Tests</td>
-                                            <td>انواع تست‌ها برای اطمینان از کیفیت سیستم</td>
-                                        </tr>
-                                        <tr>
-                                            <td>🧭 Design Patterns</td>
-                                            <td>Singleton, Factory, Observer, Strategy, Repository, CQRS, Event Sourcing
+                                            <td>نقش‌ها و جلسات</td>
+                                            <td>Scrum Master, Product Owner, Sprint Planning, Daily Standup, Retrospective, Backlog Grooming
                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ابزارها</td>
+                                            <td>Jira, Confluence, Miro, Asana, Trello, ClickUp, Monday.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>مهارت‌های نرم</td>
+                                            <td>ارتباط مؤثر، حل مسئله، مدیریت زمان، کار تیمی، رهبری، تصمیم‌گیری، تفکر انتقادی، خلاقیت، مدیریت
+                                                تعارض</td>
+                                        </tr>
+                                        <tr>
+                                            <td>رهبری و تیم‌سازی</td>
+                                            <td>توانایی ایجاد انگیزه، فرهنگ تیمی، مدیریت عملکرد، coaching و mentoring اعضا</td>
+                                        </tr>
+                                        <tr>
+                                            <td>بهبود فرآیند</td>
+                                            <td>تحلیل فرآیندها، بهبود بهره‌وری، خودکارسازی روندهای کاری و ارزیابی KPIها</td>
+                                        </tr>
+                                        <tr>
+                                            <td>یادگیری مستمر</td>
+                                            <td>مطالعه الگوهای جدید، ابزارهای نوین، بهبود مهارت‌های بین‌فردی و مدیریت پروژه</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     
-                        <!-- Agile -->
-                        <div id="tab-agile" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">🧠 مدیریت پروژه چابک و رهبری</h4>
-                            <table class="min-w-full text-sm mb-3">
-                                <thead class="text-right">
-                                    <tr>
-                                        <th>🌀 مفاهیم و نقش‌ها</th>
-                                        <th>📝 توضیحات</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Scrum / Kanban / Agile</td>
-                                        <td>متدولوژی‌های مدیریت پروژه چابک</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Scrum Master / Product Owner / Sprint Planning</td>
-                                        <td>نقش‌ها و جلسات کلیدی Scrum</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="min-w-full text-sm">
-                                <thead class="text-right">
-                                    <tr>
-                                        <th>🛠️ ابزارها</th>
-                                        <th>📝 توضیحات</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>📝 Jira</td>
-                                        <td>مدیریت وظایف و اسپرینت‌ها</td>
-                                    </tr>
-                                    <tr>
-                                        <td>📒 Confluence</td>
-                                        <td>مستندسازی و مدیریت دانش</td>
-                                    </tr>
-                                    <tr>
-                                        <td>🖌️ Miro</td>
-                                        <td>طراحی جریان‌ها و بوردها</td>
-                                    </tr>
-                                    <tr>
-                                        <td>📋 Asana</td>
-                                        <td>مدیریت پروژه و پیگیری وظایف</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <!-- Marketing & Sales -->
+                        <div id="tab-marketing" class="tab-pane hidden">
+                            <h4 class="font-semibold mb-2">💼 بازاریابی دیجیتال و فروش</h4>
+                            <p class="text-gray-600 mb-4 leading-loose text-justify">
+                                تمرکز بر بازاریابی دیجیتال و استراتژی‌های فروش برای توسعه کسب‌وکار، جذب مشتری و تحلیل داده‌های بازار.
+                                <br>
+                                در حال یادگیری روش‌های نوین دیجیتال مارکتینگ و ابزارهای پیشرفته تحلیل فروش.
+                            </p>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full text-sm">
+                                    <thead class="text-right">
+                                        <tr>
+                                            <th>📌 حوزه / مهارت</th>
+                                            <th>📝 توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>بازاریابی دیجیتال</td>
+                                            <td>SEO, Google Ads, PPC, Content Marketing, Email Marketing, Social Media Marketing, Analytics, Conversion
+                                                Optimization</td>
+                                        </tr>
+                                        <tr>
+                                            <td>فروش و بازاریابی</td>
+                                            <td>CRM, توسعه استراتژی بازاریابی و فروش، مذاکره حرفه‌ای، تحلیل بازار و جذب مشتری، مدیریت روابط با مشتریان</td>
+                                        </tr>
+                                        <tr>
+                                            <td>گیمیفیکیشن</td>
+                                            <td>طراحی برنامه‌ها و کمپین‌های جذاب با فریم‌ورک Octalysis برای افزایش تعامل کاربران</td>
+                                        </tr>
+                                        <tr>
+                                            <td>داستان‌سرایی و برندینگ</td>
+                                            <td>استفاده از داستان‌سرایی در برندینگ و توسعه استراتژی‌های تبلیغاتی</td>
+                                        </tr>
+                                        <tr>
+                                            <td>مدیریت کمپین‌ها</td>
+                                            <td>برگزاری کمپین‌های تبلیغاتی دیجیتال، بازاریابی ایمیلی و شبکه‌های اجتماعی با تحلیل داده‌ها و بهینه‌سازی ROI
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>استراتژی محتوا</td>
+                                            <td>تدوین استراتژی محتوا برای جذب و نگهداری مشتریان و ایجاد ارزش افزوده</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ابزارها و تحلیل داده</td>
+                                            <td>Google Analytics, Hotjar, HubSpot, CRM Tools, Marketing Automation</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                    
                     </div>
+
                 </div>
 
                 <!-- right summary -->
@@ -810,10 +835,10 @@
                             <input type="checkbox" id="sendTelegram">
                             <label for="sendTelegram">ارسال به تلگرام</label>
                         </div>
-                        <div class="flex items-center gap-2 text-sm">
+                        <!-- <div class="flex items-center gap-2 text-sm">
                             <input type="checkbox" id="sendSheet">
                             <label for="sendSheet">ذخیره در Google Sheet</label>
-                        </div>
+                        </div> -->
 
                         <div class="flex gap-2">
                             <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">ارسال</button>
@@ -823,9 +848,9 @@
                         <p id="formStatus" class="text-sm text-gray-400 mt-2"></p>
                     </form>
 
-                    <div class="mt-3 text-xs text-gray-500">
+                    <!-- <div class="mt-3 text-xs text-gray-500">
                         نکته: برای فعال‌سازی تلگرام و Google Sheet توکن/وبهوک را در اسکریپت قرار دهید.
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -898,7 +923,7 @@
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         themeToggle.addEventListener('click', () => {
-            const curr = document.body.getAttribute('data-theme') || 'dark';
+            const curr = document.body.getAttribute('data-theme') || 'light';
             if (curr === 'dark') {
                 document.body.setAttribute('data-theme', 'light');
                 themeIcon.className = 'fa-regular fa-moon text-gray-600';
@@ -981,13 +1006,13 @@
         const statusEl = document.getElementById('formStatus');
 
         // CONFIG — put your real endpoints here:
-        const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"; // replace
-        const TELEGRAM_BOT_TOKEN = ""; // replace
-        const TELEGRAM_CHAT_ID = ""; // replace
+        const FORMSPREE_ENDPOINT = "https://formspree.io/f/xqagdegw"; // replace
+        const TELEGRAM_BOT_TOKEN = "8367149022:AAFqfvY4Upx2hsPYVpWQqkUmsP1F8u-CNws"; // replace
+        const TELEGRAM_CHAT_ID = "472016605"; // replace
         const GOOGLE_SHEET_WEBHOOK = ""; // replace
 
         async function postToFormspree(formData) {
-            if (!FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')) {
+            if (!FORMSPREE_ENDPOINT.includes('xqagdegw')) {
                 const res = await fetch(FORMSPREE_ENDPOINT, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
                 return res.ok;
             }
@@ -999,11 +1024,11 @@
             const resp = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text, parse_mode: 'HTML' }) });
             const j = await resp.json(); return j.ok;
         }
-        async function postToGoogleSheet(payload) {
+        /*async function postToGoogleSheet(payload) {
             if (!GOOGLE_SHEET_WEBHOOK) return false;
             const resp = await fetch(GOOGLE_SHEET_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
             return resp.ok;
-        }
+        }*/
 
         form && form.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -1041,6 +1066,14 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') { resumeDropdown.classList.add('hidden'); langPopup.classList.add('hidden'); mobileMenu.classList.add('hidden'); }
         });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registered', reg))
+                    .catch(err => console.error('Service Worker failed', err));
+            });
+        }
     </script>
 </body>
 
