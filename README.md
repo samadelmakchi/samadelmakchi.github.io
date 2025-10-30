@@ -55,20 +55,20 @@ Clean code, detailed documentation, and modular design are the core principles o
 
 ### ⚙️ Frameworks, Libraries & Tools  
 
-| Tool / Framework | Description |
-|------------------|----------|
-| **FastAPI / Flask / Laravel / Express.js** | Building RESTful and scalable services |
-| **GraphQL / gRPC / RESTful API** | Modern API design for inter-service communication |
-| **Socket.io** | Real-time and event-driven applications |
-| **Next.js / React.js** | Dynamic front-end and SSR solutions |
-| **Bootstrap / Tailwind CSS** | Modern, responsive UI design |
-| **Leaflet.js / ECharts.js** | Data visualization and interactive maps |
-| **Composer / NPM / pip / Poetry** | Package and dependency management |
-| **Postman / Swagger / Insomnia** | API testing and documentation |
-| **Redis / RabbitMQ** | Caching and message queue management |
-| **Eloquent / SQLAlchemy / Prisma** | ORM layers for structured data access |
-| **Unit / Integration / Functional / E2E Tests** | Comprehensive testing for reliability and stability |
-| **Design Patterns** | Expertise in patterns like Singleton, Factory, Observer, Strategy, Repository, CQRS, Event Sourcing |
+| ⚙️ Tool / Framework | 🧠 Description |
+|----------------------|----------------|
+| 🚀 **FastAPI / Flask / Laravel / Express.js** | Building RESTful and scalable backend services |
+| 🔗 **GraphQL / gRPC / RESTful API** | Modern API design for inter-service communication |
+| ⚡ **Socket.io** | Real-time, bidirectional, and event-driven applications |
+| ⚛️ **Next.js / React.js** | Dynamic front-end and SSR solutions |
+| 🎨 **Bootstrap / Tailwind CSS** | Modern, responsive UI design frameworks |
+| 🗺️ **Leaflet.js / ECharts.js** | Data visualization and interactive maps |
+| 📦 **Composer / NPM / pip / Poetry** | Package and dependency management tools |
+| 🧪 **Postman / Swagger / Insomnia** | API testing and documentation suites |
+| 🧰 **Redis / RabbitMQ** | Caching and message queue management |
+| 🧱 **Eloquent / SQLAlchemy / Prisma** | ORM layers for structured data access |
+| 🧩 **Unit / Integration / Functional / E2E Tests** | Comprehensive testing for reliability and stability |
+| 🧭 **Design Patterns** | Expertise in patterns like Singleton, Factory, Observer, Strategy, Repository, CQRS, Event Sourcing |
 
 ---
 
