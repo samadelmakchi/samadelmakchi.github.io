@@ -1,506 +1,1047 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>صمد المکچی — Senior DevOps Engineer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>صمد المکچی — Senior DevOps Engineer</title>
 
-  <!-- TailwindCSS (CDN) -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- AOS (Animate On Scroll) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-  <style>
-    :root {
-      --accent:#2563eb;
-      --muted:#6b7280;
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: "Vazirmatn", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f8fafc; color:#0f172a; }
-    .glass { backdrop-filter: blur(6px); background: rgba(255,255,255,0.75); }
-    .card { background:white; border-radius:12px; box-shadow:0 6px 18px rgba(15,23,42,0.06); }
-    .nav-link { color:var(--muted); }
-    .nav-link:hover { color:var(--accent); }
-    /* tabs */
-    .tab-btn { border-radius:999px; padding:8px 14px; cursor:pointer; border:1px solid rgba(15,23,42,0.06); }
-    .tab-btn.active { background:var(--accent); color:white; border-color:var(--accent); }
-    table th, table td { text-align:right; padding:10px; border:1px solid #e6edf3; }
-    table th { background:#f1f5f9; }
-    /* responsive tweaks */
-    @media (max-width:768px) {
-      .desktop-only { display:none; }
-    }
-  </style>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- tsParticles (bundle) - we'll also include robust loader in script -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js" defer></script>
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --accent: #2563eb;
+            --muted: #94a3b8;
+            --bg-light: #f8fafc;
+            --card-light: #ffffff;
+            --text-light: #0f172a;
+            --neon: #7c3aed;
+        }
+
+        [data-theme="dark"] {
+            --accent: #60a5fa;
+            --muted: #9ca3af;
+            --bg-light: #06070a;
+            --card-light: rgba(3, 7, 18, 0.6);
+            --text-light: #e6eef8;
+            --neon: #7c3aed;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Vazirmatn", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: var(--bg-light);
+            color: var(--text-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* glass & card */
+        .glass {
+            backdrop-filter: blur(6px);
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        [data-theme="dark"] .glass {
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .card {
+            background: var(--card-light);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+            padding: 1rem;
+        }
+
+        /* navbar */
+        header {
+            z-index: 9999;
+        }
+
+        .nav-link {
+            color: var(--text-light);
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* tabs */
+        .tab-btn {
+            border-radius: 999px;
+            padding: 8px 14px;
+            cursor: pointer;
+            border: 1px solid rgba(15, 23, 42, 0.06);
+            background: transparent;
+            color: var(--text-light);
+        }
+
+        .tab-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        /* table */
+        table th,
+        table td {
+            text-align: right;
+            padding: 10px;
+            border: 1px solid #e6edf3;
+        }
+
+        table th {
+            background: #f1f5f9;
+        }
+
+        [data-theme="dark"] table th {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        /* tags */
+        .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            margin: 4px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent);
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        [data-theme="dark"] .skill-tag {
+            background: rgba(96, 165, 250, 0.08);
+            color: var(--accent);
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
+        }
+
+        /* resume & language popups */
+        .popup {
+            position: absolute;
+            right: 0;
+            margin-top: 8px;
+            background: var(--card-light);
+            min-width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(2, 6, 23, 0.12);
+            z-index: 99999;
+        }
+
+        [data-theme="dark"] .popup {
+            background: rgba(6, 7, 10, 0.9);
+            color: var(--text-light);
+        }
+
+        /* hero typed cursor */
+        .typed-cursor {
+            opacity: 1;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* particles behind content */
+        #tsparticles {
+            position: fixed;
+            inset: 0;
+            z-index: -10;
+            pointer-events: none;
+        }
+
+        /* mobile nav */
+        .mobile-menu {
+            transition: transform .22s ease, opacity .22s ease;
+            transform-origin: top right;
+        }
+
+        /* small screens tweaks */
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none;
+            }
+
+            .mobile-only {
+                display: inline-flex;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .mobile-only {
+                display: none;
+            }
+        }
+    </style>
 </head>
-<body>
 
-  <!-- NAVBAR -->
-  <header class="fixed w-full z-40 top-0">
-    <div class="glass container mx-auto flex items-center justify-between py-3 px-4 rounded-b-lg shadow-sm">
-      <div class="flex items-center gap-3">
-        <img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad" class="w-10 h-10 rounded-full border-2 border-white"/>
-        <div class="flex flex-col leading-tight">
-          <span class="font-bold text-sm">صمد المکچی</span>
-          <span class="text-xs text-gray-500">مهندس ارشد دواپس — معمار بک‌اند</span>
-        </div>
-      </div>
+<body data-theme="dark">
 
-      <nav class="flex items-center gap-4">
-        <a class="nav-link text-sm hover:underline" href="#about">درباره من</a>
-        <a class="nav-link text-sm hover:underline" href="#skills">مهارت‌ها</a>
-        <a class="nav-link text-sm hover:underline" href="#education">تحصیلات</a>
-        <a class="nav-link text-sm hover:underline" href="#experience">سوابق کاری</a>
-        <a class="nav-link text-sm hover:underline" href="#languages">زبان‌ها</a>
-        <a class="nav-link text-sm hover:underline" href="#contact">ارتباط</a>
-      </nav>
-    </div>
-  </header>
+    <!-- particles container -->
+    <div id="tsparticles" aria-hidden="true"></div>
 
-  <!-- HERO -->
-  <section id="home" class="pt-28 pb-14 bg-gradient-to-l from-[#1e3a8a] to-[#2563eb]">
-    <div class="container mx-auto px-4 text-center text-white">
-      <img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad" class="w-36 h-36 rounded-full mx-auto border-4 border-white shadow-xl" data-aos="zoom-in"/>
-      <h1 class="mt-6 text-3xl md:text-4xl font-extrabold" data-aos="fade-up">مهندس ارشد دواپس | معمار بک‌اند | متخصص Agile</h1>
-      <p class="mt-2 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="80">
-        صمد المکچی — مهندس ارشد دواپس و معمار نرم‌افزار با بیش از <strong>۲۰ سال تجربه</strong> در طراحی، توسعه و استقرار سیستم‌های تحت وب.
-        متخصص در <strong>DevOps</strong>، توسعه بک‌اند، اتوماسیون CI/CD، کانتینرسازی (Docker) و رهبری تیم‌های چابک.
-      </p>
+    <!-- NAVBAR -->
+    <header class="fixed w-full top-0">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between glass rounded-b-lg">
+            <div class="flex items-center gap-3">
+                <img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad Elmakchi" class="w-10 h-10 rounded-full border-2 border-white" />
+                <div class="leading-tight">
+                    <div class="font-bold text-sm">صمد المکچی</div>
+                    <div class="text-xs text-gray-400 desktop-only">مهندس ارشد دواپس — معمار بک‌اند</div>
+                </div>
+            </div>
 
-      <!-- language badges -->
-      <div class="mt-6 flex justify-center gap-3" data-aos="fade-up" data-aos-delay="160">
-        <a href="README.md"><img src="https://img.shields.io/badge/lang-English-blue" alt="English"></a>
-        <a href="README-FA.md"><img src="https://img.shields.io/badge/lang-Farsi-green" alt="فارسی"></a>
-        <a href="README-TR.md"><img src="https://img.shields.io/badge/lang-Turkish-red" alt="Türkçe"></a>
-        <a href="README-AZ.md"><img src="https://img.shields.io/badge/lang-Azeri-lightblue" alt="Azərbaycani"></a>
-        <a href="README-AR.md"><img src="https://img.shields.io/badge/lang-Arabic-yellow" alt="العربي"></a>
-      </div>
+            <!-- desktop nav -->
+            <nav class="hidden md:flex items-center gap-4">
+                <a class="nav-link text-sm" href="#home">خانه</a>
+                <a class="nav-link text-sm" href="#about">درباره من</a>
+                <a class="nav-link text-sm" href="#skills">مهارت‌ها</a>
+                <a class="nav-link text-sm" href="#experience">سوابق کاری</a>
+                <a class="nav-link text-sm" href="#education">تحصیلات</a>
+                <a class="nav-link text-sm" href="#languages">زبان‌ها</a>
+                <a class="nav-link text-sm" href="#contact">تماس</a>
+            </nav>
 
-      <!-- CTA -->
-      <div class="mt-8 flex justify-center gap-3" data-aos="fade-up" data-aos-delay="220">
-        <a href="#contact" class="bg-white text-[#1e3a8a] font-semibold px-5 py-2 rounded-full shadow hover:opacity-95">تماس با من</a>
-        <a href="#skills" class="border border-white px-5 py-2 rounded-full hover:bg-white/10">مشاهده مهارت‌ها</a>
-      </div>
-    </div>
-  </section>
+            <div class="flex items-center gap-2">
+                <!-- language popup trigger -->
+                <div class="relative">
+                    <button id="langBtn" class="p-2 rounded-full hover:bg-gray-100 desktop-only" title="زبان">
+                        <i class="fa-solid fa-globe text-gray-300"></i>
+                    </button>
+                    <div id="langPopup" class="popup hidden right-0 mt-2">
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="README.md" target="_blank">🇬🇧 English</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-FA.md">🇮🇷 فارسی</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-TR.md">🇹🇷 Türkçe</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-AZ.md">🇦🇿 Azərbaycani</a>
+                        <a class="block px-4 py-2 hover:bg-gray-100" href="README-AR.md">🇸🇦 العربي</a>
+                    </div>
+                </div>
 
-  <!-- ABOUT -->
-  <section id="about" class="container mx-auto px-4 py-12" data-aos="fade-up">
-    <div class="card p-6 md:p-8">
-      <h2 class="text-2xl font-bold mb-3">درباره من</h2>
-      <p class="text-gray-700 leading-relaxed">
-        من <strong>صمد المکچی</strong> هستم؛ مهندس ارشد دواپس و معمار نرم‌افزار با بیش از ۲۰ سال تجربه در طراحی، توسعه و استقرار سیستم‌های تحت وب.
-        دارای سابقه موفق به‌عنوان <strong>Scrum Master</strong>، توسعه‌دهنده ارشد و مهندس دواپس در پروژه‌های بزرگ و تأثیرگذار.
-        دارای مهارت‌های قوی ارتباطی، علاقه‌مند به یادگیری مداوم و متعهد به ایجاد تیم‌های همکاری‌کننده و با عملکرد بالا که سیستم‌های قابل‌اعتماد و مقیاس‌پذیر ارائه می‌دهند.
-      </p>
-    </div>
-  </section>
+                <!-- resume dropdown -->
+                <!-- <div class="relative">
+                    <button id="resumeMain"
+                        class="resume-btn bg-white text-[#0b1220] desktop-only px-3 py-2 rounded-md font-semibold">
+                        <i class="fa-regular fa-file-lines ml-2"></i> 📄 دانلود رزومه من
+                    </button>
+                    <div id="resumeDropdown" class="popup hidden right-0 mt-2">
+                        <a href="#" data-resume="en" class="block px-4 py-2 hover:bg-gray-100">🇬🇧 English</a>
+                        <a href="#" data-resume="fa" class="block px-4 py-2 hover:bg-gray-100">🇮🇷 فارسی</a>
+                        <a href="#" data-resume="tr" class="block px-4 py-2 hover:bg-gray-100">🇹🇷 Türkçe</a>
+                        <a href="#" data-resume="az" class="block px-4 py-2 hover:bg-gray-100">🇦🇿 Azərbaycani</a>
+                        <a href="#" data-resume="ar" class="block px-4 py-2 hover:bg-gray-100">🇸🇦 العربي</a>
+                    </div>
+                </div> -->
 
-  <!-- SKILLS (Tabs + Full table) -->
-  <section id="skills" class="container mx-auto px-4 py-12" data-aos="fade-up">
-    <div class="flex flex-col lg:flex-row gap-6">
-      <!-- left: tabs + content -->
-      <div class="flex-1 card p-6">
-        <h3 class="text-xl font-bold mb-4">مهارت‌ها و تخصص‌ها</h3>
+                <!-- theme toggle -->
+                <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-100" title="تغییر تم">
+                    <i id="themeIcon" class="fa-solid fa-sun text-yellow-300"></i>
+                </button>
 
-        <!-- Tabs -->
-        <div class="flex gap-2 flex-wrap mb-4">
-          <button class="tab-btn active" data-tab="tab-devops">🔧 DevOps & Infra</button>
-          <button class="tab-btn" data-tab="tab-backend">💻 Backend & Languages</button>
-          <button class="tab-btn" data-tab="tab-tools">⚙️ Frameworks & Tools</button>
-          <button class="tab-btn" data-tab="tab-agile">🧠 Agile & PM</button>
+                <!-- mobile hamburger -->
+                <button id="hamburger" class="mobile-only p-2 rounded-md ml-1" aria-label="Open menu">
+                    <i class="fa-solid fa-bars text-gray-200"></i>
+                </button>
+            </div>
         </div>
 
-        <!-- Tab contents -->
-        <div>
-          <!-- DevOps -->
-          <div id="tab-devops" class="tab-pane">
-            <h4 class="font-semibold mb-2">🔧 تخصص در DevOps و زیرساخت</h4>
-            <p class="text-gray-600 mb-2">تمرکز بر اتوماسیون فرآیندهای توسعه، استقرار، مانیتورینگ و CI/CD.</p>
-            <blockquote class="border-r-4 border-blue-500 pr-3 text-gray-700 italic mb-3">
-              من در حال حاضر در حال یادگیری <strong>Kubernetes</strong> برای مدیریت ارکستراسیون کانتینرها با مقیاس‌پذیری و قابلیت خودترمیم هستم.
-            </blockquote>
-            <div class="overflow-x-auto">
-              <table class="min-w-full text-sm">
-                <thead class="text-right">
-                  <tr><th>🛠️ مهارت</th><th>📝 توضیحات</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>🐳 Docker / Docker Compose</td><td>کانتینرسازی و محیط‌های ایزوله</td></tr>
-                  <tr><td>🤖 Ansible</td><td>مدیریت پیکربندی و اتوماسیون</td></tr>
-                  <tr><td>🔁 GitHub Actions</td><td>اجرای CI/CD Pipelines</td></tr>
-                  <tr><td>📈 Prometheus</td><td>جمع‌آوری متریک‌ها و مانیتورینگ</td></tr>
-                  <tr><td>📊 Grafana</td><td>مصورسازی و داشبورد</td></tr>
-                  <tr><td>🔎 Loki</td><td>لاگ‌گذاری مرکزی و تحلیل لاگ</td></tr>
-                  <tr><td>⚙️ Tempo</td><td>Distributed Tracing برای میکروسرویس‌ها</td></tr>
-                  <tr><td>🌐 Traefik</td><td>معکوس‌پراکسی، لود بالانسر و روتینگ</td></tr>
-                  <tr><td>🔧 Git</td><td>کنترل نسخه و همکاری تیمی</td></tr>
-                  <tr><td>🧪 Selenium / Pytest</td><td>فریم‌ورک‌های تست اتوماتیک</td></tr>
-                  <tr><td>☸️ Kubernetes <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td><td>ارکستراسیون و مقیاس‌پذیری کانتینرها</td></tr>
-                  <tr><td>🔐 Vault <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td><td>مدیریت امن اسرار و کلیدها</td></tr>
-                  <tr><td>🛠️ Terraform <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td><td>زیرساخت به عنوان کد</td></tr>
-                  <tr><td>☁️ AWS <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td><td>مدیریت زیرساخت ابری</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Backend -->
-          <div id="tab-backend" class="tab-pane hidden">
-            <h4 class="font-semibold mb-2">💻 توسعه نرم‌افزار و معماری بک‌اند</h4>
-            <p class="text-gray-600 mb-2">تجربه در الگوهای طراحی میکروسرویس (Microservice Design Patterns)، معماری پاک (Clean Architecture)، DDD، TDD، BDD و الگوهای پیشرفته طراحی. تمرکز بر معماری مقیاس‌پذیر، میکروسرویس‌ها و کدنویسی تمیز.</p>
-            <div class="overflow-x-auto">
-              <table class="min-w-full text-sm">
-                <thead class="text-right">
-                  <tr><th>🧩 زبان / تکنولوژی</th><th>📝 توضیحات و کاربرد</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>🐍 Python</td><td>میکروسرویس با FastAPI & Flask، ORM با SQLAlchemy، مدیریت پکیج با pip & Poetry، مستندسازی با Sphinx & docstrings، تست با Pytest, Unittest, Mock</td></tr>
-                  <tr><td>🐘 PHP</td><td>توسعه بک‌اند با Laravel & CodeIgniter، ORM با Eloquent، تست با PHPUnit، مستندسازی با PHPDoc</td></tr>
-                  <tr><td>🟩 Golang</td><td>در حال یادگیری — مناسب برای سرویس‌های پرکار و با کارایی بالا</td></tr>
-                  <tr><td>🟨 JavaScript / Node.js</td><td>سرویس‌های Backend و Real-time با Express.js, Socket.io, RESTful, GraphQL, gRPC، مستندسازی با JSDoc</td></tr>
-                  <tr><td>🧱 SQL / NoSQL</td><td>طراحی و بهینه‌سازی دیتابیس‌ها با MySQL, PostgreSQL, MongoDB</td></tr>
-                  <tr><td>🧰 HTML / CSS / JS</td><td>توسعه رابط‌های کاربری و داشبوردهای سبک</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Tools -->
-          <div id="tab-tools" class="tab-pane hidden">
-            <h4 class="font-semibold mb-2">⚙️ فریم‌ورک‌ها، کتابخانه‌ها و ابزارها</h4>
-            <div class="overflow-x-auto">
-              <table class="min-w-full text-sm">
-                <thead class="text-right"><tr><th>🛠️ ابزار / فریم‌ورک</th><th>📝 توضیحات</th></tr></thead>
-                <tbody>
-                  <tr><td>🚀 FastAPI / Flask / Laravel / Express.js</td><td>سرویس‌های RESTful و مقیاس‌پذیر</td></tr>
-                  <tr><td>🔗 GraphQL / gRPC / RESTful API</td><td>طراحی API مدرن برای ارتباطات بین‌سرویسی</td></tr>
-                  <tr><td>⚡ Socket.io</td><td>اپلیکیشن‌های Real-time و Event-driven</td></tr>
-                  <tr><td>⚛️ Next.js / React.js</td><td>توسعه رابط‌های کاربری پویا و SSR</td></tr>
-                  <tr><td>🎨 Bootstrap / Tailwind CSS</td><td>طراحی UI واکنش‌گرا و مدرن</td></tr>
-                  <tr><td>🗺️ Leaflet.js / ECharts.js</td><td>مصورسازی داده و نقشه‌های تعاملی</td></tr>
-                  <tr><td>📦 Composer / NPM / pip / Poetry</td><td>مدیریت بسته و وابستگی‌ها</td></tr>
-                  <tr><td>🧪 Postman / Swagger / Insomnia</td><td>تست و مستندسازی API</td></tr>
-                  <tr><td>🧰 Redis / RabbitMQ</td><td>مدیریت کش و صف‌های پیام</td></tr>
-                  <tr><td>🧱 Eloquent / SQLAlchemy / Prisma</td><td>ORM برای دسترسی ساخت‌یافته به داده‌ها</td></tr>
-                  <tr><td>🧩 Unit / Integration / Functional / E2E Tests</td><td>انواع تست‌ها برای اطمینان از کیفیت سیستم</td></tr>
-                  <tr><td>🧭 Design Patterns</td><td>Singleton, Factory, Observer, Strategy, Repository, CQRS, Event Sourcing</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Agile -->
-          <div id="tab-agile" class="tab-pane hidden">
-            <h4 class="font-semibold mb-2">🧠 مدیریت پروژه چابک و رهبری</h4>
-            <table class="min-w-full text-sm mb-3">
-              <thead class="text-right"><tr><th>🌀 مفاهیم و نقش‌ها</th><th>📝 توضیحات</th></tr></thead>
-              <tbody>
-                <tr><td>Scrum / Kanban / Agile</td><td>متدولوژی‌های مدیریت پروژه چابک</td></tr>
-                <tr><td>Scrum Master / Product Owner / Sprint Planning</td><td>نقش‌ها و جلسات کلیدی Scrum</td></tr>
-              </tbody>
-            </table>
-            <table class="min-w-full text-sm">
-              <thead class="text-right"><tr><th>🛠️ ابزارها</th><th>📝 توضیحات</th></tr></thead>
-              <tbody>
-                <tr><td>📝 Jira</td><td>مدیریت وظایف و اسپرینت‌ها</td></tr>
-                <tr><td>📒 Confluence</td><td>مستندسازی و مدیریت دانش</td></tr>
-                <tr><td>🖌️ Miro</td><td>طراحی جریان‌ها و بوردها</td></tr>
-                <tr><td>📋 Asana</td><td>مدیریت پروژه و پیگیری وظایف</td></tr>
-              </tbody>
-            </table>
-          </div>
+        <!-- mobile menu (hidden by default) -->
+        <div id="mobileMenu" class="mobile-only fixed top-16 right-4 w-64 bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-4 hidden z-[99999]">
+            <nav class="flex flex-col gap-2">
+                <a class="nav-link" href="#home">خانه</a>
+                <a class="nav-link" href="#about">درباره من</a>
+                <a class="nav-link" href="#skills">مهارت‌ها</a>
+                <a class="nav-link" href="#experience">سوابق کاری</a>
+                <a class="nav-link" href="#education">تحصیلات</a>
+                <a class="nav-link" href="#languages">زبان‌ها</a>
+                <a class="nav-link" href="#contact">تماس</a>
+                <hr class="my-2" />
+                <!-- <a class="nav-link" id="mobileResume" href="#">📄 دانلود رزومه</a> -->
+                <a class="nav-link" id="mobileLang" href="#">🌐 زبان</a>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <!-- right: summary card -->
-      <aside class="w-full lg:w-80 card p-6">
-        <h4 class="text-lg font-bold mb-2">خلاصه مهارت‌ها</h4>
-        <p class="text-gray-600 text-sm mb-3">DevOps, CI/CD, Docker, Ansible, Monitoring, Backend Architecture, Microservices, Python, PHP, Node.js, Golang (in progress)</p>
-        <div class="grid grid-cols-3 gap-2 text-center">
-          <div class="p-2 bg-gray-50 rounded">🏆 ۲۰+ سال</div>
-          <div class="p-2 bg-gray-50 rounded">☸️ Kubernetes</div>
-          <div class="p-2 bg-gray-50 rounded">🔁 CI/CD</div>
-        </div>
-      </aside>
-    </div>
-  </section>
+    <!-- HERO -->
+    <main class="pt-28">
+        <section id="home" class="py-14">
+            <div class="container mx-auto px-4 text-center">
+                <img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad"
+                    class="w-36 h-36 rounded-full mx-auto border-4 border-white shadow-xl mb-4" data-aos="zoom-in" />
+                <h1 class="mt-6 text-3xl md:text-4xl font-extrabold text-black" data-aos="fade-up">مهندس ارشد دواپس | معمار بک‌اند | متخصص Agile</h1>
+                <p class="mt-5 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-500" data-aos="fade-up"
+                    data-aos-delay="80">
+                    <strong>صمد المکچی</strong> — مهندس ارشد دواپس و معمار نرم‌افزار با بیش از <strong>۲۰ سال تجربه</strong> در طراحی، توسعه و استقرار سیستم‌های تحت وب.
+                </p>
 
-  <!-- EDUCATION -->
-  <section id="education" class="container mx-auto px-4 py-12 bg-gray-50" data-aos="fade-up">
-    <div class="card p-6">
-      <h3 class="text-xl font-bold mb-4">🎓 تحصیلات</h3>
-      <div class="overflow-x-auto">
-        <table class="min-w-full text-sm">
-          <thead class="text-right"><tr><th>🎓 مدرک</th><th>🏫 رشته</th><th>🏛 دانشگاه</th><th>📅 سال‌ها</th></tr></thead>
-          <tbody>
-            <tr><td>کارشناسی</td><td>مهندسی نرم‌افزار کامپیوتر</td><td>پیام نور</td><td>۱۳۸۰ – ۱۳۸۴</td></tr>
-            <tr><td>کارشناسی ارشد (در حال تحصیل)</td><td>مدیریت کارآفرینی</td><td>دانشگاه تهران (مجازی)</td><td>۱۴۰۳ —</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+                <p class="mt-4 text-gray-400" data-aos="fade-up" data-aos-delay="140"><span id="typed"></span></p>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="container mx-auto px-4 py-12" data-aos="fade-up">
-    <div class="card p-6">
-      <h3 class="text-xl font-bold mb-4">💼 سوابق کاری</h3>
-      <div class="overflow-x-auto">
-        <table class="min-w-full text-sm">
-          <thead class="text-right"><tr><th>🏢 شرکت</th><th>💼 نقش</th><th>📅 بازه زمانی</th><th>📝 وظایف و دستاوردها</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Nikan Mehr Pardazesh Afza</td>
-              <td>DevOps Engineer</td>
-              <td>تیر ۱۴۰۲ – حالا</td>
-              <td>
-                بهبود امنیت و مانیتورینگ با Docker, Ansible, Prometheus و ELK Stack<br/>
-                هدایت برنامه‌ریزی اسپرینت‌ها و فرآیندهای Agile<br/>
-                توسعه و نگهداری CI/CD pipelines
-              </td>
-            </tr>
-            <tr>
-              <td>Ekeep Startup</td>
-              <td>Project Manager & Scrum Master</td>
-              <td>آبان ۱۳۹۸ – تیر ۱۴۰۲</td>
-              <td>مدیریت پروژه‌ها و تیم‌های چندتخصصی</td>
-            </tr>
-            <tr>
-              <td>Noyan Co.</td>
-              <td>Data Visualization Engineer</td>
-              <td>فروردین ۱۳۹۶ – آبان ۱۳۹۸</td>
-              <td>طراحی و توسعه داشبوردهای تعاملی</td>
-            </tr>
-            <tr>
-              <td>Tasmim Yaran Co.</td>
-              <td>Backend Developer</td>
-              <td>اردیبهشت ۱۳۹۲ – اسفند ۱۳۹۶</td>
-              <td>توسعه APIهای مقیاس‌پذیر با PHP و Python</td>
-            </tr>
-            <tr>
-              <td>Rahbord Co.</td>
-              <td>Web Developer</td>
-              <td>تیر ۱۳۸۷ – اردیبهشت ۱۳۹۲</td>
-              <td>توسعه سیستم‌ها و برنامه‌های وب</td>
-            </tr>
-            <tr>
-              <td>Freelancer</td>
-              <td>Web Developer</td>
-              <td>مهر ۱۳۸۴ – تیر ۱۳۸۷</td>
-              <td>پروژه‌های مستقل وب</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- LANGUAGES -->
-  <section id="languages" class="container mx-auto px-4 py-12 bg-gray-50" data-aos="fade-up">
-    <div class="card p-6">
-      <h3 class="text-xl font-bold mb-4">🌍 زبان‌ها</h3>
-      <div class="overflow-x-auto">
-        <table class="min-w-full text-sm text-right">
-          <thead><tr><th>🌐 زبان</th><th>💬 سطح مهارت</th></tr></thead>
-          <tbody>
-            <tr><td>🇦🇿 آذری</td><td>زبان مادری</td></tr>
-            <tr><td>🇮🇷 فارسی</td><td>زبان مادری</td></tr>
-            <tr><td>🇬🇧 انگلیسی</td><td>متوسط رو به بالا (قابلیت کاری)</td></tr>
-            <tr><td>🇹🇷 ترکی استانبولی</td><td>متوسط</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="container mx-auto px-4 py-12" data-aos="fade-up">
-    <div class="grid lg:grid-cols-2 gap-6">
-      <div class="card p-6">
-        <h3 class="text-xl font-bold mb-4">📡 راه‌های ارتباطی و شبکه‌های اجتماعی</h3>
-        <div class="flex flex-wrap gap-3">
-          <a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank" class="px-3 py-2 rounded bg-blue-600 text-white"><i class="fab fa-linkedin ml-2"></i> LinkedIn</a>
-          <a href="https://www.instagram.com/samad.elmakchi" target="_blank" class="px-3 py-2 rounded bg-pink-500 text-white"><i class="fab fa-instagram ml-2"></i> Instagram</a>
-          <a href="https://wa.me/989141189645" target="_blank" class="px-3 py-2 rounded bg-green-600 text-white"><i class="fab fa-whatsapp ml-2"></i> WhatsApp</a>
-          <a href="https://t.me/samadelmakchi" target="_blank" class="px-3 py-2 rounded bg-blue-400 text-white"><i class="fab fa-telegram ml-2"></i> Telegram</a>
-          <a href="https://x.com/elmakchi" target="_blank" class="px-3 py-2 rounded bg-sky-600 text-white"><i class="fab fa-x-twitter ml-2"></i> X</a>
-          <a href="https://facebook.com/samad.elmakchi" target="_blank" class="px-3 py-2 rounded bg-blue-800 text-white"><i class="fab fa-facebook ml-2"></i> Facebook</a>
-          <a href="mailto:samad.elmakchi@gmail.com" class="px-3 py-2 rounded bg-red-600 text-white"><i class="fas fa-envelope ml-2"></i> Gmail</a>
-          <a href="https://gitlab.com/samadelmakchi" target="_blank" class="px-3 py-2 rounded bg-orange-500 text-white"><i class="fab fa-gitlab ml-2"></i> GitLab</a>
-          <a href="https://github.com/samadelmakchi" target="_blank" class="px-3 py-2 rounded bg-gray-800 text-white"><i class="fab fa-github ml-2"></i> GitHub</a>
-        </div>
-        <p class="text-sm text-gray-500 mt-4">برای همکاری یا مشاوره، خوشحال می‌شوم پیام دریافت کنم — لطفاً از فرم سمت راست استفاده کنید.</p>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="card p-6">
-        <h3 class="text-xl font-bold mb-4">فرم تماس</h3>
-        <form id="contactForm">
-          <div class="grid gap-3">
-            <input id="name" type="text" placeholder="نام شما" class="border rounded px-3 py-2" required>
-            <input id="email" type="email" placeholder="ایمیل شما" class="border rounded px-3 py-2" required>
-            <input id="subject" type="text" placeholder="موضوع" class="border rounded px-3 py-2">
-            <textarea id="message" rows="5" placeholder="پیام شما" class="border rounded px-3 py-2" required></textarea>
-
-            <div class="flex items-center gap-2 text-sm">
-              <input type="checkbox" id="sendEmail" checked>
-              <label for="sendEmail">ارسال به ایمیل (Formspree)</label>
+                <div class="mt-8 flex justify-center gap-3" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#contact" class="bg-white text-[#0b1220] font-semibold px-5 py-2 rounded-full shadow hover:opacity-95">تماس با من</a>
+                    <a href="#skills" class="border border-white/30 px-5 py-2 rounded-full hover:bg-white/5">مشاهده مهارت‌ها</a>
+                </div>
             </div>
+        </section>
 
-            <div class="flex items-center gap-2 text-sm">
-              <input type="checkbox" id="sendTelegram">
-              <label for="sendTelegram">ارسال به تلگرام (نیاز به Bot Token)</label>
+        <!-- ABOUT -->
+        <section id="about" class="container mx-auto px-4 py-10" data-aos="fade-up">
+            <div class="card p-6">
+                <h2 class="text-2xl font-bold mb-3">درباره من</h2>
+                <p class="text-gray-700 dark:text-gray-200 text-justify leading-[2.5rem]">
+                    سلام 👋 من <strong>صمد المکچی</strong> هستم.
+                    <br>
+                    مهندس نرم‌افزار با بیش از ۲۰ سال تجربه در توسعه وب، با تخصص اصلی در بک‌اند، DevOps و توسعه سیستم‌های مدرن مبتنی بر میکروسرویس. در طول سال‌ها، نقش‌های کلیدی در پروژه‌های مختلف به عنوان مدیر DevOps، اسکرام مستر و توسعه‌دهنده ارشد ایفا کرده‌ام و همواره در تلاش بوده‌ام تا فرآیندهای توسعه، تست و استقرار نرم‌افزار را با استفاده از Docker، Docker Compose، Kubernetes، CI/CD و ابزارهای اتوماسیون بهینه و خودکار کنم.
+                    <br>
+                    علاقه‌مند به طراحی و پیاده‌سازی معماری میکروسرویس‌ها، توسعه APIهای مقیاس‌پذیر، و سیستم‌های پیچیده با قابلیت انعطاف بالا هستم. در زمینه توسعه فرانت‌اند و تجربه کاربری، با React، Next.js و سایر فریمورک‌های مدرن جاوااسکریپت کار کرده‌ام و توانایی ایجاد برنامه‌های وب مقیاس‌پذیر و سریع را دارم.
+                    <br>
+                    در زمینه تست و کیفیت نرم‌افزار، از BDD، TDD و DDD بهره می‌برم و با استفاده از پایتون، Jest و ابزارهای خودکارسازی تست، تست‌های جامع و قابل اعتماد ایجاد می‌کنم. متدولوژی‌های چابک و اسکرام برای من بخش حیاتی توسعه نرم‌افزار هستند و به عنوان اسکرام مستر، هماهنگی و هم‌افزایی تیم را کلید موفقیت پروژه‌ها می‌دانم.
+                    <br>
+                    به مستندسازی و به اشتراک‌گذاری دانش اهمیت ویژه‌ای می‌دهم و تجربه کار با ابزارهایی مانند Swagger برای API، PHPDoc برای PHP و JSDoc برای JavaScript را دارم تا کدها و پروژه‌ها به شکل حرفه‌ای و قابل فهم برای تیم و جامعه توسعه‌دهندگان مستندسازی شوند.
+                    <br>
+                    از نظر شخصی، فردی آرام، پرانرژی و خلاق هستم که تعاملات مؤثر تیمی را فرصت‌هایی برای یادگیری و رشد می‌دانم. در حال حاضر، دانش خود را در Kubernetes و ارکستراسیون کانتینرها گسترش می‌دهم تا توانایی مدیریت سیستم‌های پیچیده و توزیع‌شده را افزایش دهم.
+                </p>
             </div>
+        </section>
 
-            <div class="flex items-center gap-2 text-sm">
-              <input type="checkbox" id="sendSheet">
-              <label for="sendSheet">ذخیره در Google Sheet (نیاز به Webhook)</label>
+        <!-- SKILLS -->
+        <section id="skills" class="container mx-auto px-4 py-10" data-aos="fade-up">
+            <div class="flex flex-col lg:flex-row gap-6">
+                <div class="flex-1 card p-6">
+                    <h3 class="text-xl font-bold mb-4">مهارت‌ها و تخصص‌ها</h3>
+
+                    <!-- Tabs -->
+                    <div class="flex gap-2 flex-wrap mb-4">
+                        <button class="tab-btn active" data-tab="tab-devops">🔧 DevOps & Infra</button>
+                        <button class="tab-btn" data-tab="tab-backend">💻 Backend & Languages</button>
+                        <button class="tab-btn" data-tab="tab-tools">⚙️ Frameworks & Tools</button>
+                        <button class="tab-btn" data-tab="tab-agile">🧠 Agile & PM</button>
+                    </div>
+
+                    <!-- panes -->
+                    <div>
+                        <!-- DevOps -->
+                        <div id="tab-devops" class="tab-pane">
+                            <h4 class="font-semibold mb-2">🔧 تخصص در DevOps و زیرساخت</h4>
+                            <p class="text-gray-600 mb-2">تمرکز بر اتوماسیون فرآیندهای توسعه، استقرار، مانیتورینگ و CI/CD.
+                            </p>
+                            <blockquote class="border-r-4 border-blue-500 pr-3 text-gray-700 italic mb-3">
+                                من در حال حاضر در حال یادگیری <strong>Kubernetes</strong> برای مدیریت ارکستراسیون کانتینرها
+                                با مقیاس‌پذیری و قابلیت خودترمیم هستم.
+                            </blockquote>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full text-sm">
+                                    <thead class="text-right">
+                                        <tr>
+                                            <th>🛠️ مهارت</th>
+                                            <th>📝 توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>🐳 Docker / Docker Compose</td>
+                                            <td>کانتینرسازی و محیط‌های ایزوله</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🤖 Ansible</td>
+                                            <td>مدیریت پیکربندی و اتوماسیون</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🔁 GitHub Actions</td>
+                                            <td>اجرای CI/CD Pipelines</td>
+                                        </tr>
+                                        <tr>
+                                            <td>📈 Prometheus</td>
+                                            <td>جمع‌آوری متریک‌ها و مانیتورینگ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>📊 Grafana</td>
+                                            <td>مصورسازی و داشبورد</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🔎 Loki</td>
+                                            <td>لاگ‌گذاری مرکزی و تحلیل لاگ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>⚙️ Tempo</td>
+                                            <td>Distributed Tracing برای میکروسرویس‌ها</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🌐 Traefik</td>
+                                            <td>معکوس‌پراکسی، لود بالانسر و روتینگ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🔧 Git</td>
+                                            <td>کنترل نسخه و همکاری تیمی</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧪 Selenium / Pytest</td>
+                                            <td>فریم‌ورک‌های تست اتوماتیک</td>
+                                        </tr>
+                                        <tr>
+                                            <td>☸️ Kubernetes <span class="text-xs text-gray-500"> (در حال یادگیری)</span>
+                                            </td>
+                                            <td>ارکستراسیون و مقیاس‌پذیری کانتینرها</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🔐 Vault <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td>
+                                            <td>مدیریت امن اسرار و کلیدها</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🛠️ Terraform <span class="text-xs text-gray-500"> (در حال یادگیری)</span>
+                                            </td>
+                                            <td>زیرساخت به عنوان کد</td>
+                                        </tr>
+                                        <tr>
+                                            <td>☁️ AWS <span class="text-xs text-gray-500"> (در حال یادگیری)</span></td>
+                                            <td>مدیریت زیرساخت ابری</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
+                        <!-- Backend -->
+                        <div id="tab-backend" class="tab-pane hidden">
+                            <h4 class="font-semibold mb-2">💻 توسعه نرم‌افزار و معماری بک‌اند</h4>
+                            <p class="text-gray-600 mb-2">تجربه در الگوهای طراحی میکروسرویس (Microservice Design Patterns)،
+                                معماری پاک (Clean Architecture)، DDD، TDD، BDD و الگوهای پیشرفته طراحی. تمرکز بر معماری
+                                مقیاس‌پذیر، میکروسرویس‌ها و کدنویسی تمیز.</p>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full text-sm">
+                                    <thead class="text-right">
+                                        <tr>
+                                            <th>🧩 زبان / تکنولوژی</th>
+                                            <th>📝 توضیحات و کاربرد</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>🐍 Python</td>
+                                            <td>میکروسرویس با FastAPI & Flask، ORM با SQLAlchemy، مدیریت پکیج با pip &
+                                                Poetry، مستندسازی با Sphinx & docstrings، تست با Pytest, Unittest, Mock</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🐘 PHP</td>
+                                            <td>توسعه بک‌اند با Laravel & CodeIgniter، ORM با Eloquent، تست با PHPUnit،
+                                                مستندسازی با PHPDoc</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🟩 Golang</td>
+                                            <td>در حال یادگیری — مناسب برای سرویس‌های پرکار و با کارایی بالا</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🟨 JavaScript / Node.js</td>
+                                            <td>سرویس‌های Backend و Real-time با Express.js, Socket.io, RESTful, GraphQL,
+                                                gRPC، مستندسازی با JSDoc</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧱 SQL / NoSQL</td>
+                                            <td>طراحی و بهینه‌سازی دیتابیس‌ها با MySQL, PostgreSQL, MongoDB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧰 HTML / CSS / JS</td>
+                                            <td>توسعه رابط‌های کاربری و داشبوردهای سبک</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
+                        <!-- Tools -->
+                        <div id="tab-tools" class="tab-pane hidden">
+                            <h4 class="font-semibold mb-2">⚙️ فریم‌ورک‌ها، کتابخانه‌ها و ابزارها</h4>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full text-sm">
+                                    <thead class="text-right">
+                                        <tr>
+                                            <th>🛠️ ابزار / فریم‌ورک</th>
+                                            <th>📝 توضیحات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>🚀 FastAPI / Flask / Laravel / Express.js</td>
+                                            <td>سرویس‌های RESTful و مقیاس‌پذیر</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🔗 GraphQL / gRPC / RESTful API</td>
+                                            <td>طراحی API مدرن برای ارتباطات بین‌سرویسی</td>
+                                        </tr>
+                                        <tr>
+                                            <td>⚡ Socket.io</td>
+                                            <td>اپلیکیشن‌های Real-time و Event-driven</td>
+                                        </tr>
+                                        <tr>
+                                            <td>⚛️ Next.js / React.js</td>
+                                            <td>توسعه رابط‌های کاربری پویا و SSR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🎨 Bootstrap / Tailwind CSS</td>
+                                            <td>طراحی UI واکنش‌گرا و مدرن</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🗺️ Leaflet.js / ECharts.js</td>
+                                            <td>مصورسازی داده و نقشه‌های تعاملی</td>
+                                        </tr>
+                                        <tr>
+                                            <td>📦 Composer / NPM / pip / Poetry</td>
+                                            <td>مدیریت بسته و وابستگی‌ها</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧪 Postman / Swagger / Insomnia</td>
+                                            <td>تست و مستندسازی API</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧰 Redis / RabbitMQ</td>
+                                            <td>مدیریت کش و صف‌های پیام</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧱 Eloquent / SQLAlchemy / Prisma</td>
+                                            <td>ORM برای دسترسی ساخت‌یافته به داده‌ها</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧩 Unit / Integration / Functional / E2E Tests</td>
+                                            <td>انواع تست‌ها برای اطمینان از کیفیت سیستم</td>
+                                        </tr>
+                                        <tr>
+                                            <td>🧭 Design Patterns</td>
+                                            <td>Singleton, Factory, Observer, Strategy, Repository, CQRS, Event Sourcing
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
+                        <!-- Agile -->
+                        <div id="tab-agile" class="tab-pane hidden">
+                            <h4 class="font-semibold mb-2">🧠 مدیریت پروژه چابک و رهبری</h4>
+                            <table class="min-w-full text-sm mb-3">
+                                <thead class="text-right">
+                                    <tr>
+                                        <th>🌀 مفاهیم و نقش‌ها</th>
+                                        <th>📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Scrum / Kanban / Agile</td>
+                                        <td>متدولوژی‌های مدیریت پروژه چابک</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Scrum Master / Product Owner / Sprint Planning</td>
+                                        <td>نقش‌ها و جلسات کلیدی Scrum</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="min-w-full text-sm">
+                                <thead class="text-right">
+                                    <tr>
+                                        <th>🛠️ ابزارها</th>
+                                        <th>📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>📝 Jira</td>
+                                        <td>مدیریت وظایف و اسپرینت‌ها</td>
+                                    </tr>
+                                    <tr>
+                                        <td>📒 Confluence</td>
+                                        <td>مستندسازی و مدیریت دانش</td>
+                                    </tr>
+                                    <tr>
+                                        <td>🖌️ Miro</td>
+                                        <td>طراحی جریان‌ها و بوردها</td>
+                                    </tr>
+                                    <tr>
+                                        <td>📋 Asana</td>
+                                        <td>مدیریت پروژه و پیگیری وظایف</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <!-- right summary -->
+                <aside class="w-full lg:w-80 card p-6">
+                    <h4 class="text-lg font-bold mb-2">خلاصه مهارت‌ها</h4>
+                    <!-- tags summary -->
+                    <div class="flex flex-wrap mb-4">
+                        <span class="skill-tag">DevOps</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Monitoring</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Traefik</span>
+                        <span class="skill-tag">Github Action</span>
+                        <span class="skill-tag">Kubernetes (learning)</span>
+                        <span class="skill-tag">Backend Architecture</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">RESTful</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Golang (learning)</span>
+                        <span class="skill-tag">Scrum</span>
+                    </div>
+
+                    <!-- <div class="grid grid-cols-3 gap-2 text-center">
+                        <div class="p-2 bg-gray-800/30 rounded text-sm">🏆 <br> ۲۰+ سال</div>
+                        <div class="p-2 bg-gray-800/30 rounded text-sm">☸️ <br> DevOps</div>
+                        <div class="p-2 bg-gray-800/30 rounded text-sm">🔁 <br> Backend Architecture</div>
+                    </div> -->
+                </aside>
             </div>
+        </section>
 
-            <div class="flex gap-2">
-              <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">ارسال</button>
-              <button type="reset" class="border px-4 py-2 rounded">پاک کردن</button>
+        <!-- EDUCATION -->
+        <section id="education" class="container mx-auto px-4 py-10 bg-gray-50/10" data-aos="fade-up">
+            <div class="card p-6">
+                <h3 class="text-xl font-bold mb-4">🎓 تحصیلات</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm">
+                        <thead class="text-right">
+                            <tr>
+                                <th>🎓 مدرک</th>
+                                <th>🏫 رشته</th>
+                                <th>🏛 دانشگاه</th>
+                                <th>📅 سال‌ها</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>کارشناسی</td>
+                                <td>مهندسی نرم‌افزار کامپیوتر</td>
+                                <td>پیام نور</td>
+                                <td>۱۳۸۰ – ۱۳۸۴</td>
+                            </tr>
+                            <tr>
+                                <td>کارشناسی ارشد (در حال تحصیل)</td>
+                                <td>مدیریت کارآفرینی</td>
+                                <td>دانشگاه تهران (مجازی)</td>
+                                <td>۱۴۰۴ —</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+        </section>
 
-            <p id="formStatus" class="text-sm text-gray-600"></p>
-          </div>
-        </form>
+        <!-- EXPERIENCE -->
+        <section id="experience" class="container mx-auto px-4 py-10" data-aos="fade-up">
+            <div class="card p-6">
+                <h3 class="text-xl font-bold mb-4">💼 سوابق کاری</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm">
+                        <thead class="text-right">
+                            <tr>
+                                <th>🏢 شرکت</th>
+                                <th>💼 نقش</th>
+                                <th>📅 بازه زمانی</th>
+                                <th>📝 وظایف و دستاوردها</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nikan Mehr Pardazesh Afza</td>
+                                <td>DevOps Engineer</td>
+                                <td>تیر ۱۴۰۲ – حالا</td>
+                                <td>طراحی و پیاده سازی معماری میکروسرویس و مانیتورینگ سرویس ها</td>
+                            </tr>
+                            <tr>
+                                <td>Ekeep Startup</td>
+                                <td>Project Manager & Scrum Master</td>
+                                <td>آبان ۱۳۹۸ – تیر ۱۴۰۲</td>
+                                <td>مدیریت پروژه‌ها و تیم‌های چندتخصصی و هدایت برنامه‌ریزی اسپرینت‌ها و فرآیندهای Agile</td>
+                            </tr>
+                            <tr>
+                                <td>Noyan Co.</td>
+                                <td>Data Visualization Engineer</td>
+                                <td>فروردین ۱۳۹۶ – آبان ۱۳۹۸</td>
+                                <td>طراحی و توسعه داشبوردهای تعاملی</td>
+                            </tr>
+                            <tr>
+                                <td>Tasmim Yaran Co.</td>
+                                <td>Backend Developer</td>
+                                <td>اردیبهشت ۱۳۹۲ – اسفند ۱۳۹۶</td>
+                                <td>توسعه APIهای مقیاس‌پذیر با PHP و Python</td>
+                            </tr>
+                            <tr>
+                                <td>Rahbord Co.</td>
+                                <td>Web Developer</td>
+                                <td>تیر ۱۳۸۷ – اردیبهشت ۱۳۹۲</td>
+                                <td>توسعه سیستم‌ها و برنامه‌های وب</td>
+                            </tr>
+                            <tr>
+                                <td>Freelancer</td>
+                                <td>Web Developer</td>
+                                <td>مهر ۱۳۸۴ – تیر ۱۳۸۷</td>
+                                <td>پروژه‌های مستقل وب</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-        <div class="mt-4 text-xs text-gray-500">
-          <strong>نکته:</strong> فرم به‌صورت پیش‌فرض از Formspree استفاده می‌کند (برای دریافت ایمیل). اگر می‌خواهی پیام‌ها به تلگرام یا Google Sheet فرستاده شوند، توکن یا URL وبهوک را در بخش اسکریپت زیر قرار بده.
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- LANGUAGES -->
+        <section id="languages" class="container mx-auto px-4 py-10 bg-gray-50/10" data-aos="fade-up">
+            <div class="card p-6">
+                <h3 class="text-xl font-bold mb-4">🌍 زبان‌ها</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm text-right">
+                        <thead>
+                            <tr>
+                                <th>🌐 زبان</th>
+                                <th>💬 سطح مهارت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🇦🇿 آذری</td>
+                                <td>زبان مادری</td>
+                            </tr>
+                            <tr>
+                                <td>🇮🇷 فارسی</td>
+                                <td>زبان مادری</td>
+                            </tr>
+                            <tr>
+                                <td>🇬🇧 انگلیسی</td>
+                                <td>متوسط رو به بالا (قابلیت کاری)</td>
+                            </tr>
+                            <tr>
+                                <td>🇹🇷 ترکی استانبولی</td>
+                                <td>متوسط</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-  <footer class="text-center py-6 text-sm text-gray-500">
-    © 2025 Samad Elmakchi — All Rights Reserved
-  </footer>
+        <!-- CONTACT -->
+        <section id="contact" class="container mx-auto px-4 py-10" data-aos="fade-up">
+            <div class="grid lg:grid-cols-2 gap-6">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">📡 راه‌های ارتباطی و شبکه‌های اجتماعی</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank"
+                            class="px-3 py-2 rounded bg-blue-600 text-white"><i class="fab fa-linkedin ml-2"></i>
+                            LinkedIn</a>
+                        <a href="https://www.instagram.com/samad.elmakchi" target="_blank"
+                            class="px-3 py-2 rounded bg-pink-500 text-white"><i class="fab fa-instagram ml-2"></i>
+                            Instagram</a>
+                        <a href="https://wa.me/989141189645" target="_blank"
+                            class="px-3 py-2 rounded bg-green-600 text-white"><i class="fab fa-whatsapp ml-2"></i>
+                            WhatsApp</a>
+                        <a href="https://t.me/samadelmakchi" target="_blank"
+                            class="px-3 py-2 rounded bg-blue-400 text-white"><i class="fab fa-telegram ml-2"></i>
+                            Telegram</a>
+                        <a href="https://x.com/elmakchi" target="_blank"
+                            class="px-3 py-2 rounded bg-sky-600 text-white"><i class="fab fa-x-twitter ml-2"></i> X</a>
+                        <a href="https://facebook.com/samad.elmakchi" target="_blank"
+                            class="px-3 py-2 rounded bg-blue-800 text-white"><i class="fab fa-facebook ml-2"></i>
+                            Facebook</a>
+                        <a href="mailto:samad.elmakchi@gmail.com" class="px-3 py-2 rounded bg-red-600 text-white"><i
+                                class="fas fa-envelope ml-2"></i> Gmail</a>
+                        <a href="https://gitlab.com/samadelmakchi" target="_blank"
+                            class="px-3 py-2 rounded bg-orange-500 text-white"><i class="fab fa-gitlab ml-2"></i>
+                            GitLab</a>
+                        <a href="https://github.com/samadelmakchi" target="_blank"
+                            class="px-3 py-2 rounded bg-gray-800 text-white"><i class="fab fa-github ml-2"></i>
+                            GitHub</a>
+                    </div>
+                </div>
 
-  <!-- SCRIPTS -->
-  <script>
-    AOS.init({ duration: 800, once: true });
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-4">فرم تماس</h3>
+                    <form id="contactForm" class="space-y-3">
+                        <input id="name" type="text" placeholder="نام شما" class="w-full border rounded px-3 py-2"
+                            required>
+                        <input id="email" type="email" placeholder="ایمیل شما" class="w-full border rounded px-3 py-2"
+                            required>
+                        <input id="subject" type="text" placeholder="موضوع" class="w-full border rounded px-3 py-2">
+                        <textarea id="message" rows="5" placeholder="پیام شما" class="w-full border rounded px-3 py-2"
+                            required></textarea>
 
-    // Tabs logic
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        const tab = btn.getAttribute('data-tab');
-        document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
-        document.getElementById(tab).classList.remove('hidden');
-        // scroll to skills content on mobile
-        document.getElementById('skills').scrollIntoView({behavior:'smooth', block:'center'});
-      });
-    });
+                        <div class="flex items-center gap-2 text-sm">
+                            <input type="checkbox" id="sendEmail" checked>
+                            <label for="sendEmail">ارسال به ایمیل (Formspree)</label>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <input type="checkbox" id="sendTelegram">
+                            <label for="sendTelegram">ارسال به تلگرام</label>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm">
+                            <input type="checkbox" id="sendSheet">
+                            <label for="sendSheet">ذخیره در Google Sheet</label>
+                        </div>
 
-    // Initialize: ensure correct pane visible
-    (function initTabs(){
-      document.querySelectorAll('.tab-pane').forEach((p,i) => {
-        if(i!==0) p.classList.add('hidden');
-      });
-    })();
+                        <div class="flex gap-2">
+                            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">ارسال</button>
+                            <button type="reset" class="border px-4 py-2 rounded">پاک کردن</button>
+                        </div>
 
-    // Contact form handling
-    const form = document.getElementById('contactForm');
-    const statusEl = document.getElementById('formStatus');
+                        <p id="formStatus" class="text-sm text-gray-400 mt-2"></p>
+                    </form>
 
-    // CONFIG: replace with your details
-    const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"; // <-- put your Formspree form endpoint
-    const TELEGRAM_BOT_TOKEN = ""; // <-- put bot token if you want Telegram
-    const TELEGRAM_CHAT_ID   = ""; // <-- put chat id
-    const GOOGLE_SHEET_WEBHOOK = ""; // <-- put your Apps Script POST URL
+                    <div class="mt-3 text-xs text-gray-500">
+                        نکته: برای فعال‌سازی تلگرام و Google Sheet توکن/وبهوک را در اسکریپت قرار دهید.
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    async function postToFormspree(data) {
-      if(!FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')) {
-        const resp = await fetch(FORMSPREE_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: data
+        <footer class="text-center py-6 text-sm text-gray-400">
+            © 2025 Samad Elmakchi — All Rights Reserved
+        </footer>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script>
+        // AOS
+        AOS.init({ duration: 700, once: true });
+
+        // Robust tsParticles loader (in case CDN delayed) — will quietly fail if blocked
+        (async function initParticles() {
+            try {
+                if (typeof window.tsParticles === 'undefined') {
+                    // if script tag already loaded (defer) it might be present; otherwise load bundle
+                    await new Promise((resolve, reject) => {
+                        const s = document.createElement('script');
+                        s.src = 'https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js';
+                        s.async = true;
+                        s.onload = () => resolve();
+                        s.onerror = () => reject();
+                        document.head.appendChild(s);
+                    });
+                }
+                if (typeof window.tsParticles !== 'undefined') {
+                    window.tsParticles.load("tsparticles", {
+                        fpsLimit: 60,
+                        detectRetina: true,
+                        background: { color: { value: "transparent" } },
+                        particles: {
+                            number: { value: 60, density: { enable: true, area: 900 } },
+                            color: { value: ["#60a5fa", "#93c5fd", "#a78bfa"] },
+                            shape: { type: "circle" },
+                            opacity: { value: 0.7, random: { enable: true, minimumValue: 0.2 } },
+                            size: { value: { min: 1, max: 4 } },
+                            links: { enable: true, distance: 140, color: "#8b9ae0", opacity: 0.12, width: 1 },
+                            move: { enable: true, speed: 0.9, direction: "none", outModes: { default: "out" } }
+                        },
+                        interactivity: {
+                            events: {
+                                onHover: { enable: true, mode: "repulse" },
+                                onClick: { enable: true, mode: "push" }
+                            },
+                            modes: { repulse: { distance: 100 }, push: { quantity: 2 } }
+                        }
+                    });
+                }
+            } catch (e) {
+                console.warn('tsParticles failed to load or init.', e);
+            }
+        })();
+
+        // Typed.js (typing effect)
+        new Typed('#typed', {
+            strings: [
+                "DevOps · Backend Architecture · CI/CD · Microservices",
+                "Kubernetes (learning) · Docker · Prometheus · Grafana",
+                "Python · PHP · Node.js · Golang (learning)"
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
         });
-        return resp.ok;
-      }
-      return false;
-    }
 
-    async function postToTelegram(text) {
-      if(!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return false;
-      const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-      const resp = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type':'application/json' },
-        body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text, parse_mode: 'HTML' })
-      });
-      const j = await resp.json();
-      return j.ok;
-    }
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        themeToggle.addEventListener('click', () => {
+            const curr = document.body.getAttribute('data-theme') || 'dark';
+            if (curr === 'dark') {
+                document.body.setAttribute('data-theme', 'light');
+                themeIcon.className = 'fa-regular fa-moon text-gray-600';
+            } else {
+                document.body.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fa-solid fa-sun text-yellow-300';
+            }
+        });
 
-    async function postToGoogleSheet(payload) {
-      if(!GOOGLE_SHEET_WEBHOOK) return false;
-      const resp = await fetch(GOOGLE_SHEET_WEBHOOK, {
-        method:'POST',
-        headers: {'Content-Type':'application/json'},
-        body: JSON.stringify(payload)
-      });
-      return resp.ok;
-    }
+        // set initial theme from prefers-color-scheme
+        (function setInitialTheme() {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDark) {
+                document.body.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fa-solid fa-sun text-yellow-300';
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+                themeIcon.className = 'fa-regular fa-moon text-gray-600';
+            }
+        })();
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      statusEl.textContent = "در حال ارسال ...";
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const subject = document.getElementById('subject').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const sendEmail = document.getElementById('sendEmail').checked;
-      const sendTelegram = document.getElementById('sendTelegram').checked;
-      const sendSheet = document.getElementById('sendSheet').checked;
+        // Tabs behavior
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const id = btn.getAttribute('data-tab') || btn.textContent.trim().toLowerCase().split(' ')[0];
+                document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
+                const pane = document.getElementById(id) || document.querySelector('.tab-pane:not(.hidden)');
+                if (pane) pane.classList.remove('hidden');
+                // scroll center
+                document.getElementById('skills').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+        // ensure first pane visible
+        (function initPanes() { const panes = document.querySelectorAll('.tab-pane'); panes.forEach((p, i) => { if (i !== 0) p.classList.add('hidden'); }); })();
 
-      const formData = new FormData();
-      formData.append('name', name);
-      formData.append('email', email);
-      formData.append('subject', subject);
-      formData.append('message', message);
+        // Resume dropdown & language popup z-index fix
+        const resumeMain = document.getElementById('resumeMain');
+        const resumeDropdown = document.getElementById('resumeDropdown');
+        const langBtn = document.getElementById('langBtn');
+        const langPopup = document.getElementById('langPopup');
 
-      let ok = true;
-      // 1) Formspree
-      if(sendEmail) {
-        try {
-          const res = await postToFormspree(formData);
-          if(!res) { ok = false; console.warn('Formspree not configured or failed.'); }
-        } catch(err){ ok = false; console.error(err); }
-      }
+        resumeMain && resumeMain.addEventListener('click', (e) => { e.stopPropagation(); resumeDropdown.classList.toggle('hidden'); resumeDropdown.style.zIndex = 99999; langPopup.classList.add('hidden'); });
+        langBtn && langBtn.addEventListener('click', (e) => { e.stopPropagation(); langPopup.classList.toggle('hidden'); langPopup.style.zIndex = 99999; resumeDropdown.classList.add('hidden'); });
 
-      // 2) Telegram
-      if(sendTelegram) {
-        try {
-          const text = `<b>پیام از سایت</b>\nنام: ${name}\nایمیل: ${email}\nموضوع: ${subject}\n\n${message}`;
-          const res = await postToTelegram(text);
-          if(!res) { ok = false; console.warn('Telegram not configured or failed.'); }
-        } catch(err){ ok=false; console.error(err); }
-      }
+        document.addEventListener('click', () => { resumeDropdown.classList.add('hidden'); langPopup.classList.add('hidden'); });
 
-      // 3) Google Sheet
-      if(sendSheet) {
-        try {
-          const payload = { name, email, subject, message, date: new Date().toISOString() };
-          const res = await postToGoogleSheet(payload);
-          if(!res) { ok=false; console.warn('Google Sheet webhook not configured or failed.'); }
-        } catch(err){ ok=false; console.error(err); }
-      }
+        // Mobile hamburger
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileResume = document.getElementById('mobileResume');
+        const mobileLang = document.getElementById('mobileLang');
 
-      if(ok) {
-        statusEl.textContent = "پیام با موفقیت ارسال شد — از تماس شما متشکرم!";
-        form.reset();
-      } else {
-        statusEl.textContent = "ارسال ناقص بود — لطفاً تنظیمات Formspree/Telegram/Google Sheet را بررسی کنید (جزئیات در کنسول).";
-      }
-    });
-  </script>
+        hamburger && hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileResume && mobileResume.addEventListener('click', (e) => { e.preventDefault(); resumeDropdown.classList.remove('hidden'); mobileMenu.classList.add('hidden'); });
+        mobileLang && mobileLang.addEventListener('click', (e) => { e.preventDefault(); langPopup.classList.remove('hidden'); mobileMenu.classList.add('hidden'); });
+
+        // resume dropdown links - placeholder URLs (replace with your real PDF links)
+        document.querySelectorAll('#resumeDropdown a').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const lang = a.getAttribute('data-resume');
+                const urls = {
+                    en: 'https://your-cdn-or-github.com/resume-en.pdf',
+                    fa: 'https://your-cdn-or-github.com/resume-fa.pdf',
+                    tr: 'https://your-cdn-or-github.com/resume-tr.pdf',
+                    az: 'https://your-cdn-or-github.com/resume-az.pdf',
+                    ar: 'https://your-cdn-or-github.com/resume-ar.pdf'
+                };
+                window.open(urls[lang] || urls.en, '_blank');
+            });
+        });
+
+        // Contact form logic (Formspree + Telegram + GoogleSheet)
+        const form = document.getElementById('contactForm');
+        const statusEl = document.getElementById('formStatus');
+
+        // CONFIG — put your real endpoints here:
+        const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"; // replace
+        const TELEGRAM_BOT_TOKEN = ""; // replace
+        const TELEGRAM_CHAT_ID = ""; // replace
+        const GOOGLE_SHEET_WEBHOOK = ""; // replace
+
+        async function postToFormspree(formData) {
+            if (!FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')) {
+                const res = await fetch(FORMSPREE_ENDPOINT, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+                return res.ok;
+            }
+            return false;
+        }
+        async function postToTelegram(text) {
+            if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return false;
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            const resp = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text, parse_mode: 'HTML' }) });
+            const j = await resp.json(); return j.ok;
+        }
+        async function postToGoogleSheet(payload) {
+            if (!GOOGLE_SHEET_WEBHOOK) return false;
+            const resp = await fetch(GOOGLE_SHEET_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+            return resp.ok;
+        }
+
+        form && form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            statusEl.textContent = "در حال ارسال ...";
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const sendEmail = document.getElementById('sendEmail').checked;
+            const sendTelegram = document.getElementById('sendTelegram').checked;
+            const sendSheet = document.getElementById('sendSheet').checked;
+
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('subject', subject);
+            formData.append('message', message);
+
+            let ok = true;
+            if (sendEmail) {
+                try { const res = await postToFormspree(formData); if (!res) { ok = false; console.warn('Formspree failed'); } } catch (err) { ok = false; console.error(err); }
+            }
+            if (sendTelegram) {
+                try { const txt = `<b>پیام از سایت</b>\nنام: ${name}\nایمیل: ${email}\nموضوع: ${subject}\n\n${message}`; const res = await postToTelegram(txt); if (!res) { ok = false; console.warn('Telegram failed'); } } catch (err) { ok = false; console.error(err); }
+            }
+            if (sendSheet) {
+                try { const payload = { name, email, subject, message, date: new Date().toISOString() }; const res = await postToGoogleSheet(payload); if (!res) { ok = false; console.warn('Google Sheet webhook failed'); } } catch (err) { ok = false; console.error(err); }
+            }
+
+            if (ok) { statusEl.textContent = "پیام با موفقیت ارسال شد — متشکرم!"; form.reset(); }
+            else { statusEl.textContent = "ارسال ناقص بود — تنظیمات را بررسی کن (کنسول را نگاه کن)."; }
+        });
+
+        // Accessibility: close popups with Esc
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') { resumeDropdown.classList.add('hidden'); langPopup.classList.add('hidden'); mobileMenu.classList.add('hidden'); }
+        });
+    </script>
 </body>
+
 </html>
