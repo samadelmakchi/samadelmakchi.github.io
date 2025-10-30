@@ -9,126 +9,121 @@ Strong communicator, passionate about **continuous learning**, and committed to 
 ---
 
 ### 🔧 DevOps & Infrastructure Expertise
-My main focus is on **automation of development, deployment, monitoring, and CI/CD pipelines**.
+Focus on **automation of development, deployment, monitoring, and CI/CD pipelines**.
 
-| Skills | Description |
-|------------------------------------|----------------------------------------------------|
-| 🐳 **Docker / Docker Compose**    | Containerization and isolated environment setup |
-| 🤖 **Ansible**                    | Configuration management and automation |
-| 🔁 **GitHub Actions**             | CI/CD pipelines implementation |
-| 📈 **Prometheus**                 | Metrics collection and monitoring |
-| 📊 **Grafana**                    | Visualization and dashboarding |
-| 🔎 **Loki**                       | Centralized logging and analysis |
-| ⚙️ **Tempo**                      | Distributed tracing in microservices |
-| 🌐 **Traefik**                    | Reverse proxy, load balancing, and routing |
-| 🐚 **Linux / Bash**               | Server management and scripting |
-| 🔧 **Git**                        | Version control and collaboration |
-| 🧪 **Selenium / Pytest**          | Automated testing |
-| ☸️ **Kubernetes** *(Learning)*    | Container orchestration and scaling |
-| 🔐 **Vault** *(Learning)*         | Secret management and key security |
-| 🛠️ **Terraform** *(Learning)*     | Infrastructure as Code |
-| ☁️ **AWS** *(Learning)*           | Cloud-based infrastructure management |
+| 🛠️ Skill | 📝 Description |
+|----------------------|----------------|
+| 🐳 **Docker / Docker Compose** | Containerization and isolated environments |
+| 🤖 **Ansible** | Configuration management and automation |
+| 🔁 **GitHub Actions** | CI/CD pipelines implementation |
+| 📈 **Prometheus** | Metrics collection and monitoring |
+| 📊 **Grafana** | Visualization and dashboards |
+| 🔎 **Loki** | Centralized logging and analysis |
+| ⚙️ **Tempo** | Distributed tracing for microservices |
+| 🌐 **Traefik** | Reverse proxy, load balancing, routing |
+| 🔧 **Git** | Version control and collaboration |
+| 🧪 **Selenium / Pytest** | Automated testing frameworks |
+| ☸️ **Kubernetes** *(Learning)* | Container orchestration & scaling |
+| 🔐 **Vault** *(Learning)* | Secrets & key management |
+| 🛠️ **Terraform** *(Learning)* | Infrastructure as Code (IaC) |
+| ☁️ **AWS** *(Learning)* | Cloud infrastructure management |
 
 ---
 
 ## 💻 Software Development & Backend Architecture
+Experienced in **Microservice Design Patterns**, **Clean Architecture**, **DDD**, **TDD**, **BDD**, and **Advanced Design Patterns**.  
+Focus on **scalable architecture, microservices, and clean code principles**.
 
-My core development focus lies in **scalable architecture design**, **microservices development**, and **modern software design patterns**.  
-As a backend developer and architect, I have strong experience with **Microservice Design Patterns**, **Clean Architecture**,  
-**Domain-Driven Design (DDD)**, **Test-Driven Development (TDD)**, and **Behavior-Driven Development (BDD)**.  
-
-Clean code, detailed documentation, and modular design are the core principles of my engineering approach.  
-
----
-
-### 🧩 Languages & Technologies
-
-| Language / Tech | Description & Use Cases |
+| 🧩 Language / Tech | 📝 Description & Use Cases |
 |------------------|--------------------|
-| 🐍 **Python** | Microservice development using FastAPI & Flask, ORM via SQLAlchemy, package management with pip & Poetry, documentation with **Sphinx** and docstrings, testing with Pytest, Unittest, and Mock |
+| 🐍 **Python** | Microservices with FastAPI & Flask, ORM via SQLAlchemy, package management with pip & Poetry, documentation with **Sphinx & docstrings**, testing with Pytest, Unittest, Mock |
 | 🐘 **PHP** | Backend development with Laravel & CodeIgniter, ORM via Eloquent, testing with PHPUnit, documentation with PHPDoc |
-| 🟨 **JavaScript / Node.js** | Backend and realtime systems using Express.js & Socket.io, API design with RESTful, GraphQL, and gRPC, ORM via Prisma, documentation with JSDoc |
-| 🧱 **SQL / NoSQL** | Database design and optimization using MySQL, PostgreSQL, and MongoDB |
-| 🧰 **HTML / CSS / JS** | Lightweight UI tools and internal dashboards |
+| 🟨 **JavaScript / Node.js** | Backend & realtime services with Express.js, Socket.io, RESTful, GraphQL & gRPC, ORM with Prisma, documentation with JSDoc |
+| 🧱 **SQL / NoSQL** | Database design & optimization with MySQL, PostgreSQL, MongoDB |
+| 🧰 **HTML / CSS / JS** | Frontend development & lightweight dashboards |
 
 ---
 
-### ⚙️ Frameworks, Libraries & Tools  
+### ⚙️ Frameworks, Libraries & Tools
 
-| ⚙️ Tool / Framework | 🧠 Description |
-|----------------------|----------------|
-| 🚀 **FastAPI / Flask / Laravel / Express.js** | Building RESTful and scalable backend services |
+| 🛠️ Tool / Framework | 📝 Description |
+|------------------|----------|
+| 🚀 **FastAPI / Flask / Laravel / Express.js** | RESTful and scalable backend services |
 | 🔗 **GraphQL / gRPC / RESTful API** | Modern API design for inter-service communication |
-| ⚡ **Socket.io** | Real-time, bidirectional, and event-driven applications |
+| ⚡ **Socket.io** | Real-time, bidirectional, event-driven apps |
 | ⚛️ **Next.js / React.js** | Dynamic front-end and SSR solutions |
-| 🎨 **Bootstrap / Tailwind CSS** | Modern, responsive UI design frameworks |
-| 🗺️ **Leaflet.js / ECharts.js** | Data visualization and interactive maps |
-| 📦 **Composer / NPM / pip / Poetry** | Package and dependency management tools |
-| 🧪 **Postman / Swagger / Insomnia** | API testing and documentation suites |
-| 🧰 **Redis / RabbitMQ** | Caching and message queue management |
-| 🧱 **Eloquent / SQLAlchemy / Prisma** | ORM layers for structured data access |
-| 🧩 **Unit / Integration / Functional / E2E Tests** | Comprehensive testing for reliability and stability |
-| 🧭 **Design Patterns** | Expertise in patterns like Singleton, Factory, Observer, Strategy, Repository, CQRS, Event Sourcing |
+| 🎨 **Bootstrap / Tailwind CSS** | Modern, responsive UI frameworks |
+| 🗺️ **Leaflet.js / ECharts.js** | Data visualization & interactive maps |
+| 📦 **Composer / NPM / pip / Poetry** | Package & dependency management |
+| 🧪 **Postman / Swagger / Insomnia** | API testing & documentation |
+| 🧰 **Redis / RabbitMQ** | Caching & message queue management |
+| 🧱 **Eloquent / SQLAlchemy / Prisma** | ORM for structured data access |
+| 🧩 **Unit / Integration / Functional / E2E Tests** | Comprehensive testing for system reliability |
+| 🧭 **Design Patterns** | Singleton, Factory, Observer, Strategy, Repository, CQRS, Event Sourcing |
 
 ---
 
-### 🧱 Design Patterns & Architecture  
+### 🧠 Agile Leadership & Project Management
 
-- **Microservice Design Patterns:** Saga, CQRS, Event Sourcing, API Gateway, Circuit Breaker  
-- **Object-Oriented Patterns:** Singleton, Factory, Repository, Strategy, Observer  
-- **Architectural Patterns:** Clean Architecture, Layered Architecture, Domain-Driven Design (DDD)  
+| 🌀 Concepts & Roles | 📝 Description |
+|--------------------|----------------|
+| **Scrum / Kanban / Agile** | Agile project management methodologies |
+| **Scrum Master / Product Owner / Sprint Planning** | Key Scrum roles & ceremonies |
 
-> Currently focused on **optimizing microservice architecture** and implementing **advanced distributed design patterns**.
-
----
-
-### 🧠 Agile Leadership & Project Management  
-
-Hands-on experience in **facilitating Agile teams**, conducting **Scrum ceremonies**, and aligning team output with **OKRs** and **KPIs**.  
-As a **Scrum Master** and **Project Manager**, I’ve led multidisciplinary teams and driven continuous improvement.  
-
-| Concepts & Roles | Description |
-|-------------------------------------------------------|-------------------------------|
-| 🌀 **Scrum / Kanban / Agile**                         | Agile methodologies for project management |
-| 👨‍🏫 **Scrum Master / Product Owner / Sprint Planning** | Key Scrum roles and ceremonies |
-
-| Tools | Description |
-|-------------------|--------------------------------|
-| 📝 **Jira**       | Task and sprint management |
-| 📒 **Confluence** | Knowledge management and documentation |
+| 🛠️ Tools | 📝 Description |
+|-------------------|----------------|
+| 📝 **Jira** | Task and sprint management |
+| 📒 **Confluence** | Knowledge management & documentation |
+| 🖌️ **Miro** | Flowcharts, boards & diagramming |
+| 📋 **Asana** | Project management & task tracking |
 
 ---
 
-### 💼 Work Experience  
+### 🎓 Education
 
-| Company | Role | Duration | Responsibilities & Achievements |
-|-----------------------|--------------------------|----------------------|----------------------------------------------------------|
-| **Nikan Mehr Pardazesh Afza** | DevOps Engineer | Jul 2023 – Present | Improved system security and monitoring using Docker, Ansible, Prometheus, and ELK Stack<br>Led sprint planning and Agile processes<br>Developed and maintained CI/CD automation pipelines |
-| **Ekeep Startup** | Project Manager & Scrum Master | Nov 2019 – Jul 2023 | Managed Agile projects and cross-functional teams |
-| **Noyan Co.** | Data Visualization Engineer | Apr 2017 – Nov 2019 | Designed and developed interactive dashboards for data analysis |
-| **Tasmim Yaran Co.** | Backend Developer | May 2013 – Mar 2017 | Developed scalable APIs using PHP and Python |
-| **Rahbord Co.** | Web Developer | Jul 2008 – May 2013 | Built web-based systems and applications |
-| **Freelancer** | Web Developer | Oct 2005 – Jul 2008 | Delivered independent web development projects |
-
----
-
-### 🎓 Education  
-
-| Degree | Field | University | Years |
+| 🎓 Degree | 🏫 Field | 🏛 University | 📅 Years |
 |-----------------------------|-----------------------------|-------------|------------------|
-| Bachelor’s Degree | Computer Software Engineering | Payam Noor University | 2001 – 2005 |
-| Master’s Degree *(In Progress)* | Entrepreneurship Management | University of Tehran (Online) | — |
+| 🎓 Bachelor’s Degree | Computer Software Engineering | Payam Noor University | 2001 – 2005 |
+| 🎓 Master’s Degree *(In Progress)* | Entrepreneurship Management | University of Tehran (Online) | 2024 — |
 
 ---
 
-### 🌍 Languages  
+### 💼 Work Experience
 
-| Language | Proficiency |
-|------------------|----------------|
-| Azerbaijani | Native |
-| Persian (Farsi) | Native |
-| English | Upper-Intermediate (Working Proficiency) |
-| Turkish | Intermediate |
+| 🏢 Company | 💼 Role | 📅 Duration | 📝 Responsibilities & Achievements |
+|-----------------------|--------------------------|----------------------|----------------------------------------------------------|
+| **Nikan Mehr Pardazesh Afza** | DevOps Engineer | Jul 2023 – Present | Improved security & monitoring using Docker, Ansible, Prometheus, ELK Stack<br>Led sprint planning & Agile processes<br>Developed & maintained CI/CD pipelines |
+| **Ekeep Startup** | Project Manager & Scrum Master | Nov 2019 – Jul 2023 | Managed Agile projects & cross-functional teams |
+| **Noyan Co.** | Data Visualization Engineer | Apr 2017 – Nov 2019 | Designed & developed interactive dashboards |
+| **Tasmim Yaran Co.** | Backend Developer | May 2013 – Mar 2017 | Developed scalable APIs using PHP & Python |
+| **Rahbord Co.** | Web Developer | Jul 2008 – May 2013 | Built web-based systems & applications |
+| **Freelancer** | Web Developer | Oct 2005 – Jul 2008 | Delivered independent web projects |
+
+---
+
+### 🌍 Languages
+
+| 🌐 Language | 💬 Proficiency |
+|--------------|----------------|
+| 🇦🇿 Azerbaijani | Native |
+| 🇮🇷 Persian (Farsi) | Native |
+| 🇬🇧 English | Upper-Intermediate (Working Proficiency) |
+| 🇹🇷 Turkish | Intermediate |
+
+---
+
+### 📡 Contact & Social Links
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samad-elmakchi)  
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/samad.elmakchi)  
+[![WhatsApp](https://img.shields.io/badge/-WhatsApp-25D366?logo=whatsapp&logoColor=white)](https://wa.me/989141189645)  
+[![Telegram](https://img.shields.io/badge/-Telegram-0088cc?logo=telegram&logoColor=white)](https://t.me/samadelmakchi)  
+[![X](https://img.shields.io/badge/-X-1DA1F2?logo=x&logoColor=white)](https://x.com/elmakchi)  
+[![Facebook](https://img.shields.io/badge/-Facebook-1877F2?logo=facebook&logoColor=white)](https://facebook.com/samad.elmakchi)  
+[![Gmail](https://img.shields.io/badge/-Gmail-D14836?logo=gmail&logoColor=white)](mailto:samad.elmakchi@gmail.com)  
+[![GitLab](https://img.shields.io/badge/-GitLab-FCA121?logo=gitlab&logoColor=white)](https://gitlab.com/samadelmakchi)  
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white)](https://github.com/samadelmakchi)
+
 
 ---
 
