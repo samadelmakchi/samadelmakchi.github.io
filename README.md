@@ -124,33 +124,6 @@ Focus on **scalable architecture, microservices, and clean code principles**.
 [![GitLab](https://img.shields.io/badge/-GitLab-FCA121?logo=gitlab&logoColor=white)](https://gitlab.com/samadelmakchi)  
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white)](https://github.com/samadelmakchi)
 
-
----
-
-### 📡 Contact & Social Links  
-
-[![1.01]][01] [![1.11]][11] [![1.10]][10] [![1.04]][04] [![1.03]][03] [![1.02]][02] [![1.05]][05] [![1.06]][06] [![1.07]][07]
-
-[01]: https://www.linkedin.com/in/samad-elmakchi  
-[02]: https://www.instagram.com/samad.elmakchi  
-[03]: https://wa.me/989141189645  
-[04]: https://t.me/samadelmakchi  
-[05]: https://x.com/elmakchi  
-[06]: https://facebook.com/samad.elmakchi  
-[07]: mailto:samad.elmakchi@gmail.com  
-[10]: https://gitlab.com/samadelmakchi  
-[11]: https://github.com/samadelmakchi  
-
-[1.01]: social/linkedin.png (LinkedIn)  
-[1.02]: social/instagram.png (Instagram)  
-[1.03]: social/whatsapp.png (WhatsApp)  
-[1.04]: social/telegram.png (Telegram)  
-[1.05]: social/x.png (X)  
-[1.06]: social/facebook.png (Facebook)  
-[1.07]: social/gmail.png (Gmail)  
-[1.10]: social/gitlab.png (Gitlab)  
-[1.11]: social/github.png (Github)
-
 ---
 
 [![🇬🇧 English](https://img.shields.io/badge/lang-English-blue)](README.md)
