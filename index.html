@@ -1,73 +1,54 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samad Elmakchi - Personal Page</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            direction: rtl;
-        }
-        header {
-            background-color: #0077b5;
-            color: white;
-            padding: 2rem 1rem;
-        }
-        header h1 {
-            margin: 0.5rem 0;
-            font-size: 2rem;
-        }
-        header p {
-            margin: 0.5rem 0;
-            font-size: 1.2rem;
-        }
-        .badges {
-            margin: 2rem 0;
-        }
-        .badges a {
-            margin: 0 0.5rem;
-            text-decoration: none;
-        }
-        footer {
-            margin-top: 3rem;
-            padding: 1rem;
-            background-color: #f1f1f1;
-            font-size: 0.9rem;
-            color: #333;
-        }
-    </style>
+    <title>صمد المکچی - صفحه شخصی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>صمد المکچی</h1>
-        <p>مهندس ارشد DevOps | معمار نرم‌افزار | توسعه‌دهنده بک‌اند</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-blue-700 text-white py-8 text-center">
+        <h1 class="text-4xl font-bold mb-2">صمد المکچی</h1>
+        <p class="text-xl">مهندس ارشد DevOps | معمار نرم‌افزار | توسعه‌دهنده بک‌اند</p>
     </header>
 
-    <section class="badges">
-        <a href="README.md">
-            <img src="https://img.shields.io/badge/lang-English-blue" alt="English">
-        </a>
-        <a href="README-FA.md">
-            <img src="https://img.shields.io/badge/lang-Farsi-green" alt="فارسی">
-        </a>
-        <a href="README-TR.md">
-            <img src="https://img.shields.io/badge/lang-Turkish-red" alt="Türkçe">
-        </a>
-        <a href="README-AZ.md">
-            <img src="https://img.shields.io/badge/lang-Azeri-lightblue" alt="Azərbaycani">
-        </a>
-        <a href="README-AR.md">
-            <img src="https://img.shields.io/badge/lang-Arabic-yellow" alt="العربي">
-        </a>
+    <!-- Language Badges -->
+    <section class="my-8 text-center">
+        <div class="inline-flex space-x-4">
+            <a href="index.html" class="transition transform hover:scale-110">
+                <img src="https://img.shields.io/badge/lang-English-blue" alt="English">
+            </a>
+            <a href="index-fa.html" class="transition transform hover:scale-110">
+                <img src="https://img.shields.io/badge/lang-Farsi-green" alt="فارسی">
+            </a>
+            <a href="index-tr.html" class="transition transform hover:scale-110">
+                <img src="https://img.shields.io/badge/lang-Turkish-red" alt="Türkçe">
+            </a>
+            <a href="index-az.html" class="transition transform hover:scale-110">
+                <img src="https://img.shields.io/badge/lang-Azeri-lightblue" alt="Azərbaycani">
+            </a>
+            <a href="index-ar.html" class="transition transform hover:scale-110">
+                <img src="https://img.shields.io/badge/lang-Arabic-yellow" alt="العربي">
+            </a>
+        </div>
     </section>
 
-    <footer>
+    <!-- Main Content Placeholder -->
+    <main class="max-w-5xl mx-auto px-4">
+        <section class="my-8">
+            <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-200 pb-2">خوش آمدید!</h2>
+            <p class="text-gray-700 mb-4">
+                اینجا صفحه شخصی من است. شما می‌توانید با انتخاب زبان موردنظر، نسخه‌ی رزومه و اطلاعات کامل من را مشاهده کنید.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-4 text-center text-gray-600">
         &copy; 2025 Samad Elmakchi. All rights reserved.
     </footer>
+
 </body>
 </html>
