@@ -163,5 +163,3 @@
 [![🇹🇷 Türkçe](https://img.shields.io/badge/lang-Turkish-red)](README-TR.md)
 [![🇦🇿 Azərbaycani](https://img.shields.io/badge/lang-Azeri-lightblue)](README-AZ.md)
 [![🇸🇦 عربي](https://img.shields.io/badge/lang-Arabic-yellow)](README-AR.md)
-
-[![flag_en]][lang_en]
