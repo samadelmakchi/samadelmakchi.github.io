@@ -8,17 +8,6 @@ Strong communicator, passionate about **continuous learning**, and committed to 
 
 ---
 
-### 🌍 Languages
-
-| 🌐 Language | 💬 Proficiency |
-|--------------|----------------|
-| 🇦🇿 Azerbaijani | Native |
-| 🇮🇷 Persian (Farsi) | Native |
-| 🇬🇧 English | Upper-Intermediate (Working Proficiency) |
-| 🇹🇷 Turkish | Intermediate |
-
----
-
 ### 📡 Contact & Social Links
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samad-elmakchi)
