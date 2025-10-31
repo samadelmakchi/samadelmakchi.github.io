@@ -827,7 +827,7 @@
                         <textarea id="message" rows="5" placeholder="Your Message" class="w-full border rounded px-3 py-2"
                             required></textarea>
         
-                        <div class="flex items-center gap-2 text-sm">
+                        <!-- <div class="flex items-center gap-2 text-sm">
                             <input type="checkbox" id="sendEmail" checked>
                             <label for="sendEmail">Send via Email (Formspree)</label>
                         </div>
@@ -835,7 +835,7 @@
                             <input type="checkbox" id="sendTelegram">
                             <label for="sendTelegram">Send via Telegram</label>
                         </div>
-                        <!-- <div class="flex items-center gap-2 text-sm">
+                        <div class="flex items-center gap-2 text-sm">
                             <input type="checkbox" id="sendSheet">
                             <label for="sendSheet">Save to Google Sheet</label>
                         </div> -->
@@ -1037,9 +1037,9 @@
             const email = document.getElementById('email').value.trim();
             const subject = document.getElementById('subject').value.trim();
             const message = document.getElementById('message').value.trim();
-            const sendEmail = document.getElementById('sendEmail').checked;
-            const sendTelegram = document.getElementById('sendTelegram').checked;
-            const sendSheet = document.getElementById('sendSheet').checked;
+            // const sendEmail = document.getElementById('sendEmail').checked;
+            // const sendTelegram = document.getElementById('sendTelegram').checked;
+            // const sendSheet = document.getElementById('sendSheet').checked;
 
             const formData = new FormData();
             formData.append('name', name);
@@ -1048,15 +1048,15 @@
             formData.append('message', message);
 
             let ok = true;
-            if (sendEmail) {
+            // if (sendEmail) {
                 try { const res = await postToFormspree(formData); if (!res) { ok = false; console.warn('Formspree failed'); } } catch (err) { ok = false; console.error(err); }
-            }
-            if (sendTelegram) {
+            // }
+            // if (sendTelegram) {
                 try { const txt = `<b>Message from website</b>\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`; const res = await postToTelegram(txt); if (!res) { ok = false; console.warn('Telegram failed'); } } catch (err) { ok = false; console.error(err); }
-            }
-            if (sendSheet) {
-                try { const payload = { name, email, subject, message, date: new Date().toISOString() }; const res = await postToGoogleSheet(payload); if (!res) { ok = false; console.warn('Google Sheet webhook failed'); } } catch (err) { ok = false; console.error(err); }
-            }
+            // }
+            // if (sendSheet) {
+            //     try { const payload = { name, email, subject, message, date: new Date().toISOString() }; const res = await postToGoogleSheet(payload); if (!res) { ok = false; console.warn('Google Sheet webhook failed'); } } catch (err) { ok = false; console.error(err); }
+            // }
 
             if (ok) { statusEl.textContent = "Message sent successfully — thank you!"; form.reset(); }
             else { statusEl.textContent = "Sending failed — please check your settings (see console)."; }
