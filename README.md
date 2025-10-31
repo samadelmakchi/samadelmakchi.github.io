@@ -22,8 +22,8 @@ Strong communicator, passionate about **continuous learning**, and committed to 
 
 ---
 
-[![🇬🇧 English](https://img.shields.io/badge/lang-English-blue)](README.md)
-[![🇮🇷 فارسی](https://img.shields.io/badge/lang-Farsi-green)](README-FA.md)
-[![🇹🇷 Türkçe](https://img.shields.io/badge/lang-Turkish-red)](README-TR.md)
-[![🇦🇿 Azərbaycani](https://img.shields.io/badge/lang-Azeri-lightblue)](README-AZ.md)
-[![🇸🇦 عربي](https://img.shields.io/badge/lang-Arabic-yellow)](README-AR.md)
+[![🇬🇧 English](https://img.shields.io/badge/lang-English-blue)](https://samadelmakchi.github.io/index.html)
+[![🇮🇷 فارسی](https://img.shields.io/badge/lang-Farsi-green)](https://samadelmakchi.github.io/index-fa.html)
+[![🇹🇷 Türkçe](https://img.shields.io/badge/lang-Turkish-red)](https://samadelmakchi.github.io/index-tr.html)
+[![🇦🇿 Azərbaycani](https://img.shields.io/badge/lang-Azeri-lightblue)](https://samadelmakchi.github.io/index-az.html)
+[![🇸🇦 عربي](https://img.shields.io/badge/lang-Arabic-yellow)](https://samadelmakchi.github.io/index-ar.html)
