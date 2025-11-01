@@ -1,10 +1,39 @@
 # Senior DevOps Engineer | Backend Architect | Agile Practitioner
 
-**Samad Elmakchi**  
-**Senior DevOps Engineer** and **Software Architect** with over **20 years of experience** in designing, developing, and deploying web-based systems.  
-Expert in **DevOps**, **backend development**, **CI/CD automation**, **containerization (Docker)**, and **Agile team leadership**.  
-Proven success as a **Scrum Master**, **Senior Developer**, and **DevOps Engineer** in large-scale, high-impact projects.  
-Strong communicator, passionate about **continuous learning**, and committed to building **collaborative, high-performance teams** that deliver **reliable and scalable systems**.
+# Samad Elmakchi
+
+## English
+
+**Hello 👋 I am Samad Elmakchi**  
+I am a **software engineer** with over **20 years of web development experience**, specializing in **backend**, **DevOps**, and **modern microservices-based systems**.  
+
+Over the years, I have played key roles as a **DevOps Manager**, **Scrum Master**, and **Senior Developer**, continuously optimizing **development**, **testing**, and **deployment processes** using **Docker**, **Docker Compose**, **Kubernetes**, **CI/CD**, and **automation tools**.  
+
+I am passionate about designing and implementing **microservices architectures**, building **scalable APIs**, and creating **complex systems** with **high flexibility**. On the **frontend** and **UX** side, I have experience with **React**, **Next.js**, and modern **JavaScript frameworks**, enabling me to develop **scalable and fast web applications**.  
+
+For **software testing** and **quality assurance**, I utilize **BDD**, **TDD**, and **DDD**, leveraging **Python**, **Jest**, and **automated testing tools** to create **reliable, comprehensive test suites**. **Agile methodologies** and **Scrum** are integral to my workflow, and as a **Scrum Master**, I consider **team coordination** and **synergy** the keys to successful projects.  
+
+I place great importance on **documentation** and **knowledge sharing**, with experience using **Swagger** for APIs, **PHPDoc** for PHP, and **JSDoc** for JavaScript to ensure **professional and understandable documentation** for both teams and the developer community.  
+
+Personally, I am **calm**, **energetic**, and **creative**, viewing **team interactions** as opportunities for **learning and growth**. Currently, I am expanding my knowledge in **Kubernetes** and **container orchestration** to enhance my ability to manage **complex distributed systems**.  
+
+---
+
+## فارسی
+
+**سلام 👋 من صمد المکچی هستم**  
+مهندس **نرم‌افزار** با بیش از **۲۰ سال تجربه در توسعه وب**، با تخصص اصلی در **بک‌اند**، **DevOps** و توسعه **سیستم‌های مدرن مبتنی بر میکروسرویس**.  
+
+در طول سال‌ها، نقش‌های کلیدی به عنوان **مدیر DevOps**، **اسکرام مستر** و **توسعه‌دهنده ارشد** ایفا کرده‌ام و همواره فرآیندهای **توسعه**، **تست** و **استقرار نرم‌افزار** را با استفاده از **Docker**، **Docker Compose**، **Kubernetes**، **CI/CD** و **ابزارهای اتوماسیون** بهینه کرده‌ام.  
+
+علاقه‌مند به طراحی و پیاده‌سازی **معماری میکروسرویس‌ها**، توسعه **APIهای مقیاس‌پذیر** و ایجاد **سیستم‌های پیچیده با قابلیت انعطاف بالا** هستم. در زمینه **فرانت‌اند** و **تجربه کاربری (UX)**، با **React**، **Next.js** و سایر **فریمورک‌های مدرن جاوااسکریپت** کار کرده‌ام تا برنامه‌های وب **مقیاس‌پذیر و سریع** بسازم.  
+
+در زمینه **تست و کیفیت نرم‌افزار**، از **BDD**، **TDD** و **DDD** بهره می‌برم و با استفاده از **پایتون**، **Jest** و **ابزارهای خودکارسازی تست**، **تست‌های جامع و قابل اعتماد** ایجاد می‌کنم. **متدولوژی‌های چابک** و **اسکرام** بخش حیاتی فرآیند توسعه من هستند و به عنوان **اسکرام مستر**، **هماهنگی تیمی** و **هم‌افزایی** را کلید موفقیت پروژه‌ها می‌دانم.  
+
+به **مستندسازی** و **به اشتراک‌گذاری دانش** اهمیت ویژه‌ای می‌دهم و تجربه کار با **Swagger** برای API، **PHPDoc** برای PHP و **JSDoc** برای JavaScript را دارم تا مستندات پروژه‌ها **حرفه‌ای و قابل فهم** برای تیم و جامعه توسعه‌دهندگان باشند.  
+
+از نظر شخصی، **آرام**، **پرانرژی** و **خلاق** هستم و تعاملات تیمی را فرصت‌هایی برای **یادگیری و رشد** می‌دانم. در حال حاضر، دانش خود را در **Kubernetes** و **ارکستراسیون کانتینرها** گسترش می‌دهم تا توانایی مدیریت **سیستم‌های پیچیده و توزیع‌شده** را افزایش دهم.
+
 
 ---
 
