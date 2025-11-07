@@ -52,11 +52,11 @@
             --text-light: #0f172a;
             --neon: #7c3aed;
         }
-
+    
         html {
             scroll-behavior: smooth;
         }
-
+    
         body {
             margin: 0;
             font-family: "Vazirmatn", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -65,50 +65,34 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-
+    
         /* glass & card */
         .glass {
             backdrop-filter: blur(6px);
             background: rgba(255, 255, 255, 0.6);
         }
-
+    
         .card {
             background: var(--card-light);
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
             padding: 1rem;
         }
-
+    
         /* navbar */
         header {
             z-index: 9999;
         }
-
+    
         .nav-link {
             color: var(--text-light);
         }
-
+    
         .nav-link:hover {
             color: var(--accent);
             text-decoration: none;
         }
-
-        /* tabs */
-        .tab-btn {
-            border-radius: 999px;
-            padding: 8px 14px;
-            cursor: pointer;
-            border: 1px solid rgba(15, 23, 42, 0.06);
-            background: transparent;
-            color: var(--text-light);
-        }
-
-        .tab-btn.active {
-            background: var(--accent);
-            color: white;
-            border-color: var(--accent);
-        }
-
+    
         /* table */
         table th,
         table td {
@@ -116,43 +100,23 @@
             padding: 10px;
             border: 1px solid #e6edf3;
         }
-
+    
         table th {
             background: #f1f5f9;
         }
-
-        /* tags */
-        .skill-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 10px;
-            margin: 4px;
-            border-radius: 999px;
-            font-size: 13px;
-            font-weight: 600;
-            background: rgba(37, 99, 235, 0.08);
-            color: var(--accent);
-            transition: transform .15s ease, box-shadow .15s ease;
-        }
-
-        .skill-tag:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
-        }
-
+    
         /* hero typed cursor */
         .typed-cursor {
             opacity: 1;
             animation: blink 0.7s infinite;
         }
-
+    
         @keyframes blink {
             50% {
                 opacity: 0;
             }
         }
-
+    
         /* particles behind content */
         #tsparticles {
             position: fixed;
@@ -160,32 +124,28 @@
             z-index: -10;
             pointer-events: none;
         }
-
+    
         /* mobile nav */
         .mobile-menu {
             transition: transform .22s ease, opacity .22s ease;
             transform-origin: top right;
         }
-
+    
         /* small screens tweaks */
         @media (max-width: 768px) {
             .desktop-only {
                 display: none;
             }
-
+    
             .mobile-only {
                 display: inline-flex;
             }
         }
-
+    
         @media (min-width: 769px) {
             .mobile-only {
                 display: none;
             }
-        }
-
-        #themeToggle {
-            display: none;
         }
     </style>
 </head>
@@ -258,7 +218,7 @@
                 <!-- عنوان شغلی -->
                 <p class="mt-3 sm:mt-5 text-base sm:text-lg md:text-xl max-w-full sm:max-w-xl md:max-w-3xl mx-auto leading-relaxed text-gray-500"
                     data-aos="fade-up" data-aos-delay="80">
-                    <strong>استراتژیست بازاریابی دیجیتال | مدیر محصول چابک | توسعه‌دهنده فول‌استک و معمار سیستم</strong>
+                    <strong>استراتژیست بازاریابی دیجیتال | مدیر محصول چابک | توسعه‌دهنده فول‌استک | معمار سیستم</strong>
                 </p>
         
                 <!-- تایپ افکت -->
@@ -288,9 +248,9 @@
                     <a href="mailto:samad.elmakchi@gmail.com">
                         <img src="https://img.shields.io/badge/-Gmail-D14836?logo=gmail&logoColor=white" alt="Gmail">
                     </a>
-                    <a href="https://gitlab.com/samadelmakchi">
+                    <!-- <a href="https://gitlab.com/samadelmakchi">
                         <img src="https://img.shields.io/badge/-GitLab-FCA121?logo=gitlab&logoColor=white" alt="GitLab">
-                    </a>
+                    </a> -->
                     <a href="https://github.com/samadelmakchi">
                         <img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white" alt="GitHub">
                     </a>
@@ -325,353 +285,374 @@
 
         <!-- SKILLS -->
         <section id="skills" class="container mx-auto px-4 py-10" data-aos="fade-up">
-            <div class="flex flex-col lg:flex-row gap-6">
-                <div class="flex-1 card p-6">
-                    <h3 class="text-xl font-bold mb-4">مهارت‌ها و تخصص‌ها</h3>
+            <div class="flex flex-col gap-4">
         
-                    <!-- Tabs -->
-                    <div class="flex gap-2 flex-wrap mb-4">
-                        <button class="tab-btn active" data-tab="tab-agile-soft">🧠 مدیریت چابک و مهارت‌های نرم</button>
-                        <button class="tab-btn" data-tab="tab-marketing">💼 بازاریابی دیجیتال و رشد</button>
-                        <button class="tab-btn" data-tab="tab-ai">🤖 هوش مصنوعی و اتوماسیون هوشمند</button>
-                        <button class="tab-btn" data-tab="tab-devops">🔧 دواپس و زیرساخت</button>
-                        <button class="tab-btn" data-tab="tab-backend-tools">💻 توسعه نرم‌افزار و معماری</button>
-                        <button class="tab-btn" data-tab="tab-web-cms">🌐 طراحی و توسعه وب</button>
-                        <button class="tab-btn" data-tab="tab-finance-blockchain">💹 توسعه سیستم‌های مالی و بلاکچین</button>
+                <!-- 🧠 مدیریت چابک و مهارت‌های نرم -->
+                <div class="accordion-card border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden">
+                    <div class="accordion-header cursor-pointer bg-gray-100 dark:bg-gray-800 p-4 font-semibold text-lg">
+                        🧠 مدیریت چابک و مهارت‌های نرم
                     </div>
-        
-                    <!-- Panes -->
-                    <div>
-                        <!-- Agile & Soft Skills -->
-                        <div id="tab-agile-soft" class="tab-pane">
-                            <h4 class="font-semibold mb-2">🧠 مدیریت چابک و مهارت‌های نرم</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                رهبری و هدایت تیم‌های چندتخصصی در محیط‌های پویا با تمرکز بر همکاری، شفافیت و تحویل مستمر ارزش.
-                                توانایی ایجاد انگیزه، حل تعارض و تصمیم‌گیری مؤثر در شرایط پیچیده، همراه با رویکردی انسانی و نتیجه‌محور.
-                                استفاده از متدولوژی‌های <strong>Scrum</strong>، <strong>Kanban</strong>، <strong>Agile</strong> و
-                                <strong>Scrumban</strong>
-                                و ابزارهایی مانند <strong>Jira</strong>، <strong>Confluence</strong>، <strong>Miro</strong> و
-                                <strong>Trello</strong>.
-                            </p>
-                            <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-6">
-                                <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
-                                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-                                        <tr>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🌀 مهارت / حوزه</th>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">متدولوژی‌ها</td>
-                                            <td class="px-4 py-2 break-words">Scrum, Kanban, Agile, Lean, Scrumban, SAFe</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">نقش‌ها</td>
-                                            <td class="px-4 py-2 break-words">Scrum Master, Product Owner</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">ابزارها</td>
-                                            <td class="px-4 py-2 break-words">Jira, Confluence, Miro, Asana, Trello, ClickUp, Monday.com
-                                            </td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">رهبری تیمی</td>
-                                            <td class="px-4 py-2 break-words">Coaching, Mentoring, ایجاد انگیزه، مدیریت تعارض، مدیریت عملکرد
-                                            </td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">مهارت‌های نرم</td>
-                                            <td class="px-4 py-2 break-words">ارتباط مؤثر، حل مسئله، تصمیم‌گیری، تفکر انتقادی، خلاقیت،
-                                                مدیریت زمان، کار تیمی</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    
-                        <!-- Marketing & Sales -->
-                        <div id="tab-marketing" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">🚀 بازاریابی دیجیتال و رشد</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                طراحی و اجرای استراتژی‌های رشد پایدار با رویکرد داده‌محور. تمرکز بر بهینه‌سازی تجربه مشتری، افزایش نرخ تبدیل
-                                و توسعه برند.
-                            </p>
-                            <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-6">
-                                <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
-                                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-                                        <tr>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">📌 حوزه / مهارت</th>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">استراتژی و اجرا</td>
-                                            <td class="px-4 py-2 break-words">SEO, Google Ads, PPC, Content Marketing, Email Marketing,
-                                                Social Media</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">تحلیل و بهینه‌سازی</td>
-                                            <td class="px-4 py-2 break-words">Google Analytics, Hotjar, Conversion Rate Optimization (CRO)
-                                            </td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">گیمیفیکیشن</td>
-                                            <td class="px-4 py-2 break-words">طراحی با فریم‌ورک Octalysis برای افزایش تعامل کاربران</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">داستان‌سرایی و برندینگ</td>
-                                            <td class="px-4 py-2 break-words">Storytelling و Brand Positioning در کمپین‌های تبلیغاتی</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">اتوماسیون فروش و CRM</td>
-                                            <td class="px-4 py-2 break-words">HubSpot, CRM Tools, Marketing Automation</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    
-                        <!-- AI & Automation -->
-                        <div id="tab-ai" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">🤖 هوش مصنوعی و اتوماسیون هوشمند</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                توسعه سیستم‌ها و فرآیندهای هوشمند برای تصمیم‌گیری خودکار و بهینه‌سازی عملیات.
-                            </p>
-                            <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-6">
-                                <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
-                                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-                                        <tr>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ حوزه / مهارت</th>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">AI Agent & Automation</td>
-                                            <td class="px-4 py-2 break-words">طراحی Agentها برای خودکارسازی تصمیم‌گیری و فرآیندها</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">n8n & Integration</td>
-                                            <td class="px-4 py-2 break-words">ساخت جریان‌های هوشمند و یکپارچه‌سازی سرویس‌ها</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">AI Coding</td>
-                                            <td class="px-4 py-2 break-words">تولید، بازبینی و تست خودکار کد</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">AI DevOps</td>
-                                            <td class="px-4 py-2 break-words">اتوماسیون DevOps با تحلیل پیش‌بینانه</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">AI Marketing</td>
-                                            <td class="px-4 py-2 break-words">تحلیل رفتار کاربر و بهینه‌سازی کمپین‌ها</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Data Analytics & ML</td>
-                                            <td class="px-4 py-2 break-words">تحلیل داده‌ها و پیش‌بینی رشد با مدل‌های ML</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    
-                        <!-- DevOps -->
-                        <div id="tab-devops" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">🔧 DevOps و زیرساخت</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                طراحی و پیاده‌سازی زیرساخت‌های نرم‌افزاری قابل اعتماد و مقیاس‌پذیر با تمرکز بر پایداری و امنیت.
-                            </p>
-                            <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-6">
-                                <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
-                                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-                                        <tr>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ مهارت</th>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">کانتینرسازی و مدیریت محیط‌ها</td>
-                                            <td class="px-4 py-2 break-words">Docker / Compose</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">ارکستراسیون کانتینرها</td>
-                                            <td class="px-4 py-2 break-words">Kubernetes <span class="text-xs text-gray-500">(در حال
-                                                    یادگیری)</span></td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">CI/CD</td>
-                                            <td class="px-4 py-2 break-words">GitHub Actions, Jenkins <span
-                                                    class="text-xs text-gray-500">(در حال یادگیری)</span></td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Infrastructure as Code</td>
-                                            <td class="px-4 py-2 break-words">Ansible, Terraform <span class="text-xs text-gray-500">(در حال
-                                                    یادگیری)</span></td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Monitoring</td>
-                                            <td class="px-4 py-2 break-words">
-                                                Prometheus, Grafana, Loki <span class="text-xs text-gray-500">(در حال یادگیری)</span>,
-                                                Tempo <span class="text-xs text-gray-500">(در حال یادگیری)</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Security</td>
-                                            <td class="px-4 py-2 break-words">Vault <span class="text-xs text-gray-500">(در حال
-                                                    یادگیری)</span></td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Cloud</td>
-                                            <td class="px-4 py-2 break-words">AWS <span class="text-xs text-gray-500">(در حال
-                                                    یادگیری)</span></td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Networking</td>
-                                            <td class="px-4 py-2 break-words">Traefik (Reverse Proxy, Load Balancing)</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    
-                        <!-- Backend -->
-                        <div id="tab-backend-tools" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">💻 توسعه نرم‌افزار و معماری</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                ایجاد راهکارهای نرم‌افزاری پایدار و مقیاس‌پذیر با رویکرد معماری مدرن و تضمین کیفیت و عملکرد بالا.
-                            </p>
-                            <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-6">
-                                <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
-                                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-                                        <tr>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🧩 مهارت</th>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Architecture</td>
-                                            <td class="px-4 py-2 break-words">Microservices, Monolithic, Event-Driven, Layered</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Backend</td>
-                                            <td class="px-4 py-2 break-words">
-                                                PHP (Laravel), Python (FastAPI), Node.js <span class="text-xs text-gray-500">(در حال
-                                                    یادگیری)</span>,
-                                                Go <span class="text-xs text-gray-500">(در حال یادگیری)</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">API</td>
-                                            <td class="px-4 py-2 break-words">RESTful, GraphQL, gRPC <span class="text-xs text-gray-500">(در
-                                                    حال یادگیری)</span>, OpenAPI</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Database</td>
-                                            <td class="px-4 py-2 break-words">MySQL, PostgreSQL, MongoDB | ORM: Eloquent, SQLAlchemy</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Caching & Queueing</td>
-                                            <td class="px-4 py-2 break-words">Redis, RabbitMQ, Laravel Queues</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Design Patterns</td>
-                                            <td class="px-4 py-2 break-words">Clean Architecture, DDD, CQRS, Event Sourcing, Repository</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Frontend</td>
-                                            <td class="px-4 py-2 break-words">Inertia.js, Vue, Nuxt, Tailwind, Bootstrap</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Testing</td>
-                                            <td class="px-4 py-2 break-words">Unit, Integration, E2E, Functional / Non-Functional</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Documentation</td>
-                                            <td class="px-4 py-2 break-words">PHPDoc, JSDoc</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    
-                        <!-- Web & CMS -->
-                        <div id="tab-web-cms" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">🌐 طراحی و توسعه وب</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                طراحی تجربه‌های کاربری ساده، زیبا و مؤثر برای وب‌سایت‌ها و سیستم‌های محتوایی. تمرکز بر کاربردپذیری و
-                                ریسپانسیو بودن.
-                            </p>
-                            <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-6">
-                                <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
-                                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-                                        <tr>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ حوزه</th>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">WordPress / Joomla</td>
-                                            <td class="px-4 py-2 break-words">طراحی و توسعه سایت‌های شرکتی، شخصی و فروشگاهی</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Plugin & Theme Development</td>
-                                            <td class="px-4 py-2 break-words">توسعه و سفارشی‌سازی افزونه‌ها و قالب‌ها</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">WooCommerce</td>
-                                            <td class="px-4 py-2 break-words">ایجاد فروشگاه اینترنتی حرفه‌ای</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Elementor / Responsive Design</td>
-                                            <td class="px-4 py-2 break-words">طراحی صفحات پیشرفته و واکنش‌گرا</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    
-                        <!-- Finance & Blockchain -->
-                        <div id="tab-finance-blockchain" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">💹 توسعه سیستم‌های مالی و بلاکچین</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                ترکیب دانش مالی و فناوری برای خلق راهکارهای نوآورانه در حوزه‌های تحلیل، ترید و بلاکچین.
-                            </p>
-                            <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-6">
-                                <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
-                                    <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
-                                        <tr>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ مهارت</th>
-                                            <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">تحلیل داده‌های مالی</td>
-                                            <td class="px-4 py-2 break-words">Python (Pandas, NumPy, TA-Lib)</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">توسعه اندیکاتور و اکسپرت</td>
-                                            <td class="px-4 py-2 break-words">MetaTrader 4/5 (MQL4, MQL5)</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">استراتژی‌های معاملاتی</td>
-                                            <td class="px-4 py-2 break-words">Pine Script (TradingView)</td>
-                                        </tr>
-                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
-                                            <td class="px-4 py-2 whitespace-nowrap">Blockchain & Smart Contracts</td>
-                                            <td class="px-4 py-2 break-words">Solidity, DApp Architecture, API Integration</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    <div class="accordion-body hidden p-4">
+                        <p class="text-gray-600 mb-4 leading-loose text-justify">
+                            رهبری و هدایت تیم‌های چندتخصصی در محیط‌های پویا با تمرکز بر همکاری، شفافیت و تحویل مستمر ارزش.
+                            توانایی ایجاد انگیزه، حل تعارض و تصمیم‌گیری مؤثر در شرایط پیچیده، همراه با رویکردی انسانی و
+                            نتیجه‌محور.
+                            استفاده از متدولوژی‌های <strong>Scrum</strong>، <strong>Kanban</strong>، <strong>Agile</strong> و
+                            <strong>Scrumban</strong> و ابزارهایی مانند <strong>Jira</strong>، <strong>Confluence</strong>،
+                            <strong>Miro</strong> و
+                            <strong>Trello</strong>.
+                        </p>
+                        <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-4">
+                            <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
+                                <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                    <tr>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🌀 مهارت / حوزه</th>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">متدولوژی‌ها</td>
+                                        <td class="px-4 py-2 break-words">Scrum, Kanban, Agile, Lean, Scrumban, SAFe</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">نقش‌ها</td>
+                                        <td class="px-4 py-2 break-words">Scrum Master, Product Owner</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">ابزارها</td>
+                                        <td class="px-4 py-2 break-words">Jira, Confluence, Miro, Asana, Trello, ClickUp,
+                                            Monday.com</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">رهبری تیمی</td>
+                                        <td class="px-4 py-2 break-words">Coaching, Mentoring, ایجاد انگیزه، مدیریت تعارض،
+                                            مدیریت عملکرد</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">مهارت‌های نرم</td>
+                                        <td class="px-4 py-2 break-words">ارتباط مؤثر، حل مسئله، تصمیم‌گیری، تفکر انتقادی،
+                                            خلاقیت، مدیریت زمان، کار تیمی</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+        
+                <!-- 💼 بازاریابی دیجیتال و رشد -->
+                <div class="accordion-card border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden">
+                    <div class="accordion-header cursor-pointer bg-gray-100 dark:bg-gray-800 p-4 font-semibold text-lg">
+                        💼 بازاریابی دیجیتال و رشد
+                    </div>
+                    <div class="accordion-body hidden p-4">
+                        <p class="text-gray-600 mb-4 leading-loose text-justify">
+                            طراحی و اجرای استراتژی‌های رشد پایدار با رویکرد داده‌محور. تمرکز بر بهینه‌سازی تجربه مشتری، افزایش
+                            نرخ تبدیل و توسعه برند.
+                        </p>
+                        <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-4">
+                            <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
+                                <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                    <tr>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">📌 حوزه / مهارت</th>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">استراتژی و اجرا</td>
+                                        <td class="px-4 py-2 break-words">SEO, Google Ads, PPC, Content Marketing, Email
+                                            Marketing, Social Media</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">تحلیل و بهینه‌سازی</td>
+                                        <td class="px-4 py-2 break-words">Google Analytics, Hotjar, Conversion Rate Optimization
+                                            (CRO)</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">گیمیفیکیشن</td>
+                                        <td class="px-4 py-2 break-words">طراحی با فریم‌ورک Octalysis برای افزایش تعامل کاربران
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">داستان‌سرایی و برندینگ</td>
+                                        <td class="px-4 py-2 break-words">Storytelling و Brand Positioning در کمپین‌های تبلیغاتی
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">اتوماسیون فروش و CRM</td>
+                                        <td class="px-4 py-2 break-words">HubSpot, CRM Tools, Marketing Automation</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 🤖 هوش مصنوعی و اتوماسیون هوشمند -->
+                <div class="accordion-card border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden">
+                    <div class="accordion-header cursor-pointer bg-gray-100 dark:bg-gray-800 p-4 font-semibold text-lg">
+                        🤖 هوش مصنوعی و اتوماسیون هوشمند
+                    </div>
+                    <div class="accordion-body hidden p-4">
+                        <p class="text-gray-600 mb-4 leading-loose text-justify">
+                            توسعه سیستم‌ها و فرآیندهای هوشمند برای تصمیم‌گیری خودکار و بهینه‌سازی عملیات.
+                        </p>
+                        <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-4">
+                            <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
+                                <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                    <tr>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ حوزه / مهارت
+                                        </th>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">AI Agent & Automation</td>
+                                        <td class="px-4 py-2 break-words">طراحی Agentها برای خودکارسازی تصمیم‌گیری و فرآیندها
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">n8n & Integration</td>
+                                        <td class="px-4 py-2 break-words">ساخت جریان‌های هوشمند و یکپارچه‌سازی سرویس‌ها</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">AI Coding</td>
+                                        <td class="px-4 py-2 break-words">تولید، بازبینی و تست خودکار کد</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">AI DevOps</td>
+                                        <td class="px-4 py-2 break-words">اتوماسیون DevOps با تحلیل پیش‌بینانه</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">AI Marketing</td>
+                                        <td class="px-4 py-2 break-words">تحلیل رفتار کاربر و بهینه‌سازی کمپین‌ها</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Data Analytics & ML</td>
+                                        <td class="px-4 py-2 break-words">تحلیل داده‌ها و پیش‌بینی رشد با مدل‌های ML</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 🔧 دواپس و زیرساخت -->
+                <div class="accordion-card border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden">
+                    <div class="accordion-header cursor-pointer bg-gray-100 dark:bg-gray-800 p-4 font-semibold text-lg">
+                        🔧 DevOps و زیرساخت
+                    </div>
+                    <div class="accordion-body hidden p-4">
+                        <p class="text-gray-600 mb-4 leading-loose text-justify">
+                            طراحی و پیاده‌سازی زیرساخت‌های نرم‌افزاری قابل اعتماد و مقیاس‌پذیر با تمرکز بر پایداری و امنیت.
+                        </p>
+                        <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-4">
+                            <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
+                                <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                    <tr>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ مهارت</th>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">کانتینرسازی و مدیریت محیط‌ها</td>
+                                        <td class="px-4 py-2 break-words">Docker / Compose</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">ارکستراسیون کانتینرها</td>
+                                        <td class="px-4 py-2 break-words">Kubernetes <span class="text-xs text-gray-500">(در حال
+                                                یادگیری)</span></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">CI/CD</td>
+                                        <td class="px-4 py-2 break-words">GitHub Actions, Jenkins <span
+                                                class="text-xs text-gray-500">(در حال یادگیری)</span></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Infrastructure as Code</td>
+                                        <td class="px-4 py-2 break-words">Ansible, Terraform <span
+                                                class="text-xs text-gray-500">(در حال یادگیری)</span></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Monitoring</td>
+                                        <td class="px-4 py-2 break-words">
+                                            Prometheus, Grafana, Loki <span class="text-xs text-gray-500">(در حال
+                                                یادگیری)</span>,
+                                            Tempo <span class="text-xs text-gray-500">(در حال یادگیری)</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Security</td>
+                                        <td class="px-4 py-2 break-words">Vault <span class="text-xs text-gray-500">(در حال
+                                                یادگیری)</span></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Cloud</td>
+                                        <td class="px-4 py-2 break-words">AWS <span class="text-xs text-gray-500">(در حال
+                                                یادگیری)</span></td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Networking</td>
+                                        <td class="px-4 py-2 break-words">Traefik (Reverse Proxy, Load Balancing)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 💻 توسعه نرم‌افزار و معماری -->
+                <div class="accordion-card border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden">
+                    <div class="accordion-header cursor-pointer bg-gray-100 dark:bg-gray-800 p-4 font-semibold text-lg">
+                        💻 توسعه نرم‌افزار و معماری
+                    </div>
+                    <div class="accordion-body hidden p-4">
+                        <p class="text-gray-600 mb-4 leading-loose text-justify">
+                            ایجاد راهکارهای نرم‌افزاری پایدار و مقیاس‌پذیر با رویکرد معماری مدرن و تضمین کیفیت و عملکرد بالا.
+                        </p>
+                        <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-4">
+                            <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
+                                <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                    <tr>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🧩 مهارت</th>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Architecture</td>
+                                        <td class="px-4 py-2 break-words">Microservices, Monolithic, Event-Driven, Layered</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Backend</td>
+                                        <td class="px-4 py-2 break-words">
+                                            PHP (Laravel), Python (FastAPI), Node.js <span class="text-xs text-gray-500">(در حال
+                                                یادگیری)</span>,
+                                            Go <span class="text-xs text-gray-500">(در حال یادگیری)</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">API</td>
+                                        <td class="px-4 py-2 break-words">RESTful, GraphQL, gRPC <span
+                                                class="text-xs text-gray-500">(در حال یادگیری)</span>, OpenAPI</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Database</td>
+                                        <td class="px-4 py-2 break-words">MySQL, PostgreSQL, MongoDB | ORM: Eloquent, SQLAlchemy
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Caching & Queueing</td>
+                                        <td class="px-4 py-2 break-words">Redis, RabbitMQ, Laravel Queues</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Design Patterns</td>
+                                        <td class="px-4 py-2 break-words">Clean Architecture, DDD, CQRS, Event Sourcing,
+                                            Repository</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Frontend</td>
+                                        <td class="px-4 py-2 break-words">Inertia.js, Vue, Nuxt, Tailwind, Bootstrap</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Testing</td>
+                                        <td class="px-4 py-2 break-words">Unit, Integration, E2E, Functional / Non-Functional
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Documentation</td>
+                                        <td class="px-4 py-2 break-words">PHPDoc, JSDoc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 🌐 طراحی و توسعه وب -->
+                <div class="accordion-card border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden">
+                    <div class="accordion-header cursor-pointer bg-gray-100 dark:bg-gray-800 p-4 font-semibold text-lg">
+                        🌐 طراحی و توسعه وب
+                    </div>
+                    <div class="accordion-body hidden p-4">
+                        <p class="text-gray-600 mb-4 leading-loose text-justify">
+                            طراحی تجربه‌های کاربری ساده، زیبا و مؤثر برای وب‌سایت‌ها و سیستم‌های محتوایی. تمرکز بر کاربردپذیری و
+                            ریسپانسیو بودن.
+                        </p>
+                        <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-4">
+                            <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
+                                <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                    <tr>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ حوزه</th>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">WordPress / Joomla</td>
+                                        <td class="px-4 py-2 break-words">طراحی و توسعه سایت‌های شرکتی، شخصی و فروشگاهی</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Plugin & Theme Development</td>
+                                        <td class="px-4 py-2 break-words">توسعه و سفارشی‌سازی افزونه‌ها و قالب‌ها</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">WooCommerce</td>
+                                        <td class="px-4 py-2 break-words">ایجاد فروشگاه اینترنتی حرفه‌ای</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Elementor / Responsive Design</td>
+                                        <td class="px-4 py-2 break-words">طراحی صفحات پیشرفته و واکنش‌گرا</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 💹 توسعه سیستم‌های مالی و بلاکچین -->
+                <div class="accordion-card border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm overflow-hidden">
+                    <div class="accordion-header cursor-pointer bg-gray-100 dark:bg-gray-800 p-4 font-semibold text-lg">
+                        💹 توسعه سیستم‌های مالی و بلاکچین
+                    </div>
+                    <div class="accordion-body hidden p-4">
+                        <p class="text-gray-600 mb-4 leading-loose text-justify">
+                            ترکیب دانش مالی و فناوری برای خلق راهکارهای نوآورانه در حوزه‌های تحلیل، ترید و بلاکچین.
+                        </p>
+                        <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm my-4">
+                            <table class="table-auto w-full min-w-max text-sm text-right border-collapse">
+                                <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+                                    <tr>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[150px]">🛠️ مهارت</th>
+                                        <th class="px-4 py-3 font-semibold whitespace-nowrap min-w-[200px]">📝 توضیحات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">تحلیل داده‌های مالی</td>
+                                        <td class="px-4 py-2 break-words">Python (Pandas, NumPy, TA-Lib)</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">توسعه اندیکاتور و اکسپرت</td>
+                                        <td class="px-4 py-2 break-words">MetaTrader 4/5 (MQL4, MQL5)</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">استراتژی‌های معاملاتی</td>
+                                        <td class="px-4 py-2 break-words">Pine Script (TradingView)</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                                        <td class="px-4 py-2 whitespace-nowrap">Blockchain & Smart Contracts</td>
+                                        <td class="px-4 py-2 break-words">Solidity, DApp Architecture, API Integration</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
             </div>
         </section>
 
@@ -934,29 +915,44 @@
             loop: true
         });
 
-        // Tabs behavior
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const id = btn.getAttribute('data-tab') || btn.textContent.trim().toLowerCase().split(' ')[0];
-                document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
-                const pane = document.getElementById(id) || document.querySelector('.tab-pane:not(.hidden)');
-                if (pane) pane.classList.remove('hidden');
-                // scroll center
-                document.getElementById('skills').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const body = header.nextElementSibling;
+
+                // بستن همه آکاردئون‌ها
+                document.querySelectorAll('.accordion-body').forEach(b => {
+                    if (b !== body) b.classList.add('hidden');
+                });
+
+                // باز/بسته کردن آکاردئون انتخاب شده
+                body.classList.toggle('hidden');
             });
         });
-        // ensure first pane visible
-        (function initPanes() { const panes = document.querySelectorAll('.tab-pane'); panes.forEach((p, i) => { if (i !== 0) p.classList.add('hidden'); }); })();
+
+        // باز بودن اولین آکاردئون به صورت پیش‌فرض
+        const firstBody = document.querySelector('.accordion-body');
+        if (firstBody) firstBody.classList.remove('hidden');
 
         // Mobile hamburger
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
 
         hamburger && hamburger.addEventListener('click', (e) => {
-            e.stopPropagation();
+            e.stopPropagation(); // جلوگیری از بسته شدن فوری
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && e.target !== hamburger) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Prevent clicks inside the menu from closing it
+        mobileMenu && mobileMenu.addEventListener('click', (e) => {
+            e.stopPropagation();
         });
 
         if ('serviceWorker' in navigator) {
