@@ -1,1174 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Samad Elmakchi — Senior DevOps Engineer</title>
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-        rel="stylesheet" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-    <link rel="icon" type="image/png" sizes="48x48" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-    <link rel="icon" type="image/png" sizes="64x64" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-
-    <!-- Apple Touch Icons for iOS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-    <link rel="apple-touch-icon" sizes="152x152" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-    <link rel="apple-touch-icon" sizes="120x120" href="https://avatars.githubusercontent.com/u/6169366?v=4" />
-
-    <!-- PWA Manifest & Theme -->
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#1e40af" />
-
-    <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- AOS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <!-- Typed.js for typing effect -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- tsParticles (particle background) -->
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js" defer></script>
-
-    <!-- FontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-
-    <style>
-        :root {
-            --accent: #2563eb;
-            --muted: #94a3b8;
-            --bg-light: #f8fafc;
-            --card-light: #ffffff;
-            --text-light: #0f172a;
-            --neon: #7c3aed;
-        }
-
-        [data-theme="dark"] {
-            --accent: #60a5fa;
-            --muted: #9ca3af;
-            --bg-light: #06070a;
-            --card-light: rgba(3, 7, 18, 0.6);
-            --text-light: #e6eef8;
-            --neon: #7c3aed;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: "Vazirmatn", "Open Sans", system-ui, -apple-system,
-                "Segoe UI", Roboto, "Helvetica Neue", Arial;
-            background: var(--bg-light);
-            color: var(--text-light);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* glass & card */
-        .glass {
-            backdrop-filter: blur(6px);
-            background: rgba(255, 255, 255, 0.6);
-        }
-
-        [data-theme="dark"] .glass {
-            background: rgba(0, 0, 0, 0.45);
-        }
-
-        .card {
-            background: var(--card-light);
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
-            padding: 1rem;
-        }
-
-        /* navbar */
-        header {
-            z-index: 9999;
-        }
-
-        .nav-link {
-            color: var(--text-light);
-        }
-
-        .nav-link:hover {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        /* tabs */
-        .tab-btn {
-            border-radius: 999px;
-            padding: 8px 14px;
-            cursor: pointer;
-            border: 1px solid rgba(15, 23, 42, 0.06);
-            background: transparent;
-            color: var(--text-light);
-        }
-
-        .tab-btn.active {
-            background: var(--accent);
-            color: white;
-            border-color: var(--accent);
-        }
-
-        /* table */
-        table th,
-        table td {
-            text-align: left;
-            padding: 10px;
-            border: 1px solid #e6edf3;
-        }
-
-        table th {
-            background: #f1f5f9;
-        }
-
-        [data-theme="dark"] table th {
-            background: rgba(255, 255, 255, 0.04);
-        }
-
-        /* tags */
-        .skill-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 10px;
-            margin: 4px;
-            border-radius: 999px;
-            font-size: 13px;
-            font-weight: 600;
-            background: rgba(37, 99, 235, 0.08);
-            color: var(--accent);
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-
-        [data-theme="dark"] .skill-tag {
-            background: rgba(96, 165, 250, 0.08);
-            color: var(--accent);
-        }
-
-        .skill-tag:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
-        }
-
-        /* resume & language popups */
-        .popup {
-            direction: ltr;
-            text-align: center;
-            position: absolute;
-            left: 0;
-            margin-top: 8px;
-            background: var(--card-light);
-            min-width: 220px;
-            border-radius: 10px;
-            box-shadow: 0 8px 24px rgba(2, 6, 23, 0.12);
-            z-index: 99999;
-        }
-
-        [data-theme="dark"] .popup {
-            background: rgba(6, 7, 10, 0.9);
-            color: var(--text-light);
-        }
-
-        /* hero typed cursor */
-        .typed-cursor {
-            opacity: 1;
-            animation: blink 0.7s infinite;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-
-        /* particles behind content */
-        #tsparticles {
-            position: fixed;
-            inset: 0;
-            z-index: -10;
-            pointer-events: none;
-        }
-
-        /* mobile nav */
-        .mobile-menu {
-            transition: transform 0.22s ease, opacity 0.22s ease;
-            transform-origin: top right;
-        }
-
-        /* small screens tweaks */
-        @media (max-width: 768px) {
-            .desktop-only {
-                display: none;
-            }
-
-            .mobile-only {
-                display: inline-flex;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .mobile-only {
-                display: none;
-            }
-        }
-
-        #themeToggle {
-            display: none;
-        }
-    </style>
-</head>
-
-<body data-theme="light">
-    <!-- particles container -->
-    <div id="tsparticles" aria-hidden="true"></div>
-
-    <!-- NAVBAR -->
-    <header class="fixed w-full top-0">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between glass rounded-b-lg">
-            <div class="flex items-center gap-3">
-                <img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad Elmakchi"
-                    class="w-10 h-10 rounded-full border-2 border-white" />
-                <div class="leading-tight">
-                    <div class="font-bold text-sm">سامد الماكشي</div>
-                    <div class="text-xs text-gray-400 desktop-only">
-                        مهندس DevOps أول — مهندس Backend
-                    </div>
-                </div>
-            </div>
-    
-            <!-- desktop nav -->
-            <nav class="hidden md:flex items-center gap-4">
-                <a class="nav-link text-sm" href="#home">الصفحة الرئيسية</a>
-                <a class="nav-link text-sm" href="#about">من أنا</a>
-                <a class="nav-link text-sm" href="#skills">المهارات</a>
-                <a class="nav-link text-sm" href="#experience">الخبرة العملية</a>
-                <a class="nav-link text-sm" href="#education">التعليم</a>
-                <a class="nav-link text-sm" href="#languages">اللغات</a>
-                <a class="nav-link text-sm" href="#contact">الاتصال</a>
-            </nav>
-    
-            <div class="flex items-center gap-2">
-                <!-- language popup trigger -->
-                <div class="relative">
-                    <button id="langBtn" class="p-2 rounded-full hover:bg-gray-100 desktop-only" title="اللغة">
-                        <i class="fa-solid fa-globe text-gray-300"></i>
-                    </button>
-                    <div id="langPopup" class="popup hidden left-0 mt-2">
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="index.html">🇬🇧 الإنجليزية</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-fa.html">🇮🇷 الفارسية</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-tr.html">🇹🇷 التركية</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-az.html">🇦🇿 الأذربيجانية</a>
-                        <a class="block px-4 py-2 hover:bg-gray-100" href="index-ar.html">🇸🇦 العربية</a>
-                    </div>
-                </div>
-    
-                <!-- theme toggle -->
-                <button id="themeToggle" class="p-2 rounded-full hover:bg-gray-100" title="تغيير الثيم">
-                    <i id="themeIcon" class="fa-solid fa-sun text-yellow-300"></i>
-                </button>
-    
-                <!-- mobile hamburger -->
-                <button id="hamburger" class="mobile-only p-2 rounded-md ml-1" aria-label="فتح القائمة">
-                    <i class="fa-solid fa-bars text-gray-200"></i>
-                </button>
-            </div>
-        </div>
-    
-        <!-- mobile menu (hidden by default) -->
-        <div id="mobileMenu"
-            class="mobile-only fixed top-16 right-4 w-64 bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-4 hidden z-[99999]">
-            <nav class="flex flex-col gap-2">
-                <a class="nav-link" href="#home">الصفحة الرئيسية</a>
-                <a class="nav-link" href="#about">من أنا</a>
-                <a class="nav-link" href="#skills">المهارات</a>
-                <a class="nav-link" href="#experience">الخبرة العملية</a>
-                <a class="nav-link" href="#education">التعليم</a>
-                <a class="nav-link" href="#languages">اللغات</a>
-                <a class="nav-link" href="#contact">الاتصال</a>
-                <hr class="my-2" />
-                <a class="nav-link" id="mobileLang" href="#">🌐 اللغة</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- HERO -->
-    <main class="pt-28">
-        <!-- HOME -->
-        <section id="home" class="py-14">
-            <div class="container mx-auto px-4 text-center">
-                <img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad"
-                    class="w-36 h-36 rounded-full mx-auto border-4 border-white shadow-xl mb-4" data-aos="zoom-in" />
-                <h1 class="mt-6 text-3xl md:text-4xl font-extrabold text-black" data-aos="fade-up">
-                    مهندس DevOps أول | مهندس Backend | متخصص Agile
-                </h1>
-                <p class="mt-5 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed text-gray-500" data-aos="fade-up"
-                    data-aos-delay="80">
-                    <strong>سامد الماكشي</strong> — مهندس DevOps أول ومهندس برمجيات مع خبرة تزيد عن
-                    <strong>20 عامًا</strong> في تصميم وتطوير ونشر الأنظمة المستندة إلى الويب.
-                </p>
-        
-                <p class="mt-4 text-gray-400" data-aos="fade-up" data-aos-delay="140">
-                    <span id="typed"></span>
-                </p>
-        
-                <div class="mt-8 flex justify-center gap-3" data-aos="fade-up" data-aos-delay="200">
-                    <a href="#contact"
-                        class="bg-white text-[#0b1220] font-semibold px-5 py-2 rounded-full shadow hover:opacity-95">تواصل
-                        معي</a>
-                    <a href="#skills" class="border border-white/30 px-5 py-2 rounded-full hover:bg-white/5">عرض
-                        المهارات</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- ABOUT -->
-        <section id="about" class="container mx-auto px-4 py-10" data-aos="fade-up">
-            <div class="card p-6">
-                <h2 class="text-2xl font-bold mb-3">من أنا</h2>
-                <p class="text-gray-700 dark:text-gray-200 text-justify leading-[2.5rem]">
-                    مرحبًا 👋 أنا <strong>سامد الماكشي</strong>.<br />
-                    أنا مهندس برمجيات مع خبرة تزيد عن 20 عامًا في تطوير الويب، متخصص في الخلفية (Backend)، DevOps،
-                    والأنظمة الحديثة القائمة على الميكروسيرفيس (Microservices). على مر السنوات، لعبت أدوارًا
-                    رئيسية في مشاريع مختلفة كمدير DevOps، Scrum Master، ومطور أول، مع تحسين مستمر لعمليات
-                    التطوير والاختبار والنشر باستخدام Docker، Docker Compose، Kubernetes، CI/CD وأدوات الأتمتة.<br />
-                    أنا شغوف بتصميم وتنفيذ هندسة الميكروسيرفيس، وبناء واجهات برمجية قابلة للتوسع، وإنشاء أنظمة
-                    معقدة عالية المرونة. على جانب الواجهة الأمامية وتجربة المستخدم، لدي خبرة مع React، Next.js،
-                    وأطر JavaScript الحديثة، مما يمكنني من تطوير تطبيقات ويب سريعة وقابلة للتوسع.<br />
-                    لاختبار البرمجيات وضمان الجودة، أستخدم BDD، TDD، و DDD، وأستفيد من Python، Jest، وأدوات
-                    الاختبار الآلي لإنشاء مجموعات اختبار موثوقة وشاملة. المنهجيات الرشيقة (Agile) وScrum جزء
-                    أساسي من سير عملي، وكـ Scrum Master، أعتبر تنسيق الفريق والتعاون مفتاح نجاح المشاريع.<br />
-                    أضع أهمية كبيرة على التوثيق ومشاركة المعرفة، مع خبرة في استخدام أدوات مثل Swagger للواجهات
-                    البرمجية، PHPDoc لـ PHP، و JSDoc لـ JavaScript لضمان توثيق احترافي وواضح للفريق ومجتمع
-                    المطورين.<br />
-                    شخصيًا، أنا هادئ، نشيط، ومبدع، وأرى التفاعلات الجماعية كفرص للتعلم والنمو. حاليًا، أقوم
-                    بتوسيع معرفتي في Kubernetes وتنظيم الحاويات لتعزيز قدرتي على إدارة الأنظمة الموزعة
-                    المعقدة.
-                </p>
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills" class="container mx-auto px-4 py-10" data-aos="fade-up">
-            <div class="flex flex-col lg:flex-row gap-6">
-                <div class="flex-1 card p-6">
-                    <h3 class="text-xl font-bold mb-4">المهارات والخبرة</h3>
-        
-                    <!-- Tabs -->
-                    <div class="flex gap-2 flex-wrap mb-4">
-                        <button class="tab-btn active" data-tab="tab-devops">
-                            🔧 DevOps والبنية التحتية
-                        </button>
-                        <button class="tab-btn" data-tab="tab-backend-tools">
-                            💻 تطوير الخلفية، اللغات والأدوات
-                        </button>
-                        <button class="tab-btn" data-tab="tab-agile-soft">
-                            🧠 Agile والمهارات الشخصية
-                        </button>
-                        <button class="tab-btn" data-tab="tab-marketing">
-                            💼 التسويق والمبيعات
-                        </button>
-                    </div>
-        
-                    <!-- Panes -->
-                    <div>
-                        <!-- DevOps & Infra -->
-                        <div id="tab-devops" class="tab-pane">
-                            <h4 class="font-semibold mb-2">
-                                🔧 خبرة DevOps والبنية التحتية
-                            </h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                خبرة واسعة في إدارة البنية التحتية، حاويات التطبيقات (Containerization)، أتمتة CI/CD،
-                                ومراقبة الأنظمة.
-                                <br />
-                                حالياً أتعلم Kubernetes وVault لإدارة الحاويات والأسرار، بالإضافة إلى Terraform وAWS
-                                لإدارة البنية التحتية ككود والحوسبة السحابية.
-                            </p>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-full text-sm">
-                                    <thead class="text-right">
-                                        <tr>
-                                            <th>🛠️ المهارة</th>
-                                            <th>📝 الوصف</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Docker / Docker Compose</td>
-                                            <td>حاويات التطبيقات وبيئات معزولة لتطوير ونشر التطبيقات</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ansible</td>
-                                            <td>أتمتة التهيئة وإدارة البنية التحتية</td>
-                                        </tr>
-                                        <tr>
-                                            <td>GitHub Actions / CI/CD</td>
-                                            <td>خطوط أنابيب آلية للبناء والاختبار والنشر</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Prometheus & Grafana</td>
-                                            <td>جمع المقاييس وإنشاء لوحات المراقبة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Loki & Tempo</td>
-                                            <td>تسجيل مركزي وتتبع موزع للميكروسيرفيس</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Traefik</td>
-                                            <td>إدارة البروكسي العكسي، توازن التحميل، وتوجيه الطلبات</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kubernetes <span class="text-xs text-gray-500">(تعلم)</span></td>
-                                            <td>تنسيق الحاويات وإمكانية التوسع</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Vault <span class="text-xs text-gray-500">(تعلم)</span></td>
-                                            <td>إدارة آمنة للأسرار والمفاتيح</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Terraform <span class="text-xs text-gray-500">(تعلم)</span></td>
-                                            <td>البنية التحتية ككود لإدارة الموارد</td>
-                                        </tr>
-                                        <tr>
-                                            <td>AWS <span class="text-xs text-gray-500">(تعلم)</span></td>
-                                            <td>إدارة البنية التحتية السحابية والخدمات المرتبطة بها</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Selenium / Pytest</td>
-                                            <td>اختبارات آلية وضمان جودة البرمجيات</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-        
-                        <!-- Backend, Languages & Tools -->
-                        <div id="tab-backend-tools" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">
-                                💻 تطوير الخلفية، اللغات والأدوات
-                            </h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                خبرة في بناء أنظمة خلفية قابلة للتوسع باستخدام الميكروسيرفيس والهندسة النظيفة،
-                                تصميم واجهات برمجة حديثة (RESTful وGraphQL)، وضمان الجودة باستخدام BDD، TDD، وDDD.
-                                الاستفادة من أطر عمل ومكتبات متقدمة للتطوير السريع، الاختبار، التوثيق،
-                                وتصوير البيانات في مشاريع Python وJavaScript وPHP.
-                                <br />
-                                حالياً أتعلم أفضل أنماط التصميم، الأدوات الجديدة، والمكتبات المتقدمة لتحسين جودة
-                                الأداء والكود.
-                            </p>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-full text-sm">
-                                    <thead class="text-right">
-                                        <tr>
-                                            <th>🧩 اللغة / الأداة / التكنولوجيا</th>
-                                            <th>📝 الوصف والاستخدام</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Python</td>
-                                            <td>FastAPI، Flask، Pytest، Unittest، Pandas، NumPy، Matplotlib، Seaborn، Requests،
-                                                BeautifulSoup، Scrapy، SQLAlchemy، تصميم الميكروسيرفيس</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PHP</td>
-                                            <td>Laravel، CodeIgniter، Symfony، Composer، PHPUnit، PHPDoc، Eloquent ORM، تطوير
-                                                الخدمات</td>
-                                        </tr>
-                                        <tr>
-                                            <td>JavaScript / Node.js</td>
-                                            <td>Express.js، Socket.io، RESTful وGraphQL API، Next.js، React.js، Jest، Mocha،
-                                                توثيق JSDoc</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Golang</td>
-                                            <td>تطوير ميكروسيرفيس عالي الأداء</td>
-                                        </tr>
-                                        <tr>
-                                            <td>SQL / NoSQL</td>
-                                            <td>MySQL، PostgreSQL، MongoDB، تصميم وتحسين قواعد البيانات، ORM باستخدام
-                                                SQLAlchemy، Eloquent، Prisma</td>
-                                        </tr>
-                                        <tr>
-                                            <td>أنماط التصميم والهندسة</td>
-                                            <td>الهندسة النظيفة (Clean Architecture)، CQRS، Event Sourcing، Repository Pattern
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>الاختبار والجودة</td>
-                                            <td>اختبارات وحدة، تكامل، وظيفية، شاملة، وضمان جودة الخدمات والواجهات البرمجية</td>
-                                        </tr>
-                                        <tr>
-                                            <td>CSS / واجهة المستخدم</td>
-                                            <td>Tailwind، Bootstrap، تصميم واجهات حديثة ومتجاوبة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>أدوات API</td>
-                                            <td>Postman، Swagger، اختبار وتوثيق API</td>
-                                        </tr>
-                                        <tr>
-                                            <td>الرسائل والتخزين المؤقت</td>
-                                            <td>Redis، RabbitMQ، إدارة الكاش وطابور الرسائل</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-        
-                        <!-- Agile & Soft Skills -->
-                        <div id="tab-agile-soft" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">
-                                🧠 إدارة المشاريع المرنة والمهارات الشخصية
-                            </h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                التركيز على قيادة الفريق، إدارة المشاريع المرنة، وتطوير المهارات الشخصية والاجتماعية
-                                لتحسين الإنتاجية والتعاون داخل الفريق.
-                                <br />
-                                حالياً أتعلم أفضل الممارسات لإدارة المشاريع المعقدة، وتحسين المهارات الشخصية مثل حل
-                                المشكلات، التواصل الفعال، اتخاذ القرار، التفكير النقدي، إدارة النزاعات، والاستخدام
-                                المهني لأدوات إدارة المشاريع الحديثة.
-                            </p>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-full text-sm">
-                                    <thead class="text-right">
-                                        <tr>
-                                            <th>🌀 المهارة / المجال</th>
-                                            <th>📝 الوصف</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>المنهجيات</td>
-                                            <td>Scrum، Kanban، Agile، Lean، SAFe</td>
-                                        </tr>
-                                        <tr>
-                                            <td>الأدوار والاجتماعات</td>
-                                            <td>Scrum Master، Product Owner، تخطيط Sprint، الاجتماع اليومي، Retrospective، ترتيب
-                                                الأولويات</td>
-                                        </tr>
-                                        <tr>
-                                            <td>الأدوات</td>
-                                            <td>Jira، Confluence، Miro، Asana، Trello، ClickUp، Monday.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td>المهارات الشخصية</td>
-                                            <td>التواصل الفعال، حل المشكلات، إدارة الوقت، العمل الجماعي، القيادة، اتخاذ القرار،
-                                                التفكير النقدي، الإبداع، إدارة النزاعات</td>
-                                        </tr>
-                                        <tr>
-                                            <td>القيادة وبناء الفريق</td>
-                                            <td>تحفيز الفرق، تعزيز الثقافة، إدارة الأداء، التدريب والإرشاد</td>
-                                        </tr>
-                                        <tr>
-                                            <td>تحسين العمليات</td>
-                                            <td>تحليل العمليات، تحسين الإنتاجية، أتمتة سير العمل، تقييم مؤشرات الأداء KPI</td>
-                                        </tr>
-                                        <tr>
-                                            <td>التعلم المستمر</td>
-                                            <td>دراسة الأنماط الجديدة، الأدوات، وتحسين المهارات الشخصية وإدارة المشاريع</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-        
-                        <!-- Marketing & Sales -->
-                        <div id="tab-marketing" class="tab-pane hidden">
-                            <h4 class="font-semibold mb-2">💼 التسويق الرقمي والمبيعات</h4>
-                            <p class="text-gray-600 mb-4 leading-loose text-justify">
-                                التركيز على استراتيجيات التسويق الرقمي والمبيعات لتنمية الأعمال، اكتساب العملاء،
-                                وتحليل بيانات السوق.
-                                <br />
-                                حالياً أتعلم أساليب التسويق الرقمي الحديثة وأدوات التحليل المتقدمة للمبيعات.
-                            </p>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-full text-sm">
-                                    <thead class="text-right">
-                                        <tr>
-                                            <th>📌 المجال / المهارة</th>
-                                            <th>📝 الوصف</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>التسويق الرقمي</td>
-                                            <td>SEO، Google Ads، PPC، تسويق المحتوى، البريد الإلكتروني، التسويق عبر وسائل
-                                                التواصل الاجتماعي، التحليلات، تحسين التحويل</td>
-                                        </tr>
-                                        <tr>
-                                            <td>المبيعات والتسويق</td>
-                                            <td>CRM، تطوير استراتيجيات التسويق والمبيعات، التفاوض الاحترافي، تحليل السوق واكتساب
-                                                العملاء، إدارة علاقات العملاء</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gamification</td>
-                                            <td>تصميم برامج وحملات تفاعلية باستخدام إطار عمل Octalysis لزيادة تفاعل المستخدم
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>السرد القصصي والعلامة التجارية</td>
-                                            <td>تطبيق السرد القصصي في تطوير العلامة التجارية واستراتيجيات الإعلان</td>
-                                        </tr>
-                                        <tr>
-                                            <td>إدارة الحملات</td>
-                                            <td>إدارة الحملات الرقمية، البريد الإلكتروني ووسائل التواصل الاجتماعي مع تحليل
-                                                البيانات وتحسين العائد ROI</td>
-                                        </tr>
-                                        <tr>
-                                            <td>استراتيجية المحتوى</td>
-                                            <td>تطوير استراتيجيات محتوى لجذب العملاء، الاحتفاظ بهم، وإضافة قيمة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>الأدوات والتحليلات</td>
-                                            <td>Google Analytics، Hotjar، HubSpot، أدوات CRM، أتمتة التسويق</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- right summary -->
-                <aside class="w-full lg:w-80 card p-6">
-                    <h4 class="text-lg font-bold mb-2">ملخص المهارات</h4>
-                    <!-- tags summary -->
-                    <div class="flex flex-wrap mb-4">
-                        <span class="skill-tag">DevOps</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">المراقبة</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">Traefik</span>
-                        <span class="skill-tag">Github Action</span>
-                        <span class="skill-tag">Kubernetes (تعلم)</span>
-                        <span class="skill-tag">هندسة Backend</span>
-                        <span class="skill-tag">الميكروسيرفيس</span>
-                        <span class="skill-tag">RESTful</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Laravel</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Golang (تعلم)</span>
-                        <span class="skill-tag">Scrum</span>
-                        <span class="skill-tag">Jira</span>
-                        <span class="skill-tag">Gamification</span>
-                        <span class="skill-tag">السرد القصصي والعلامة التجارية</span>
-                        <span class="skill-tag">إدارة الحملات</span>
-                        <span class="skill-tag">التسويق الرقمي</span>
-                    </div>
-                </aside>
-            </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section id="education" class="container mx-auto px-4 py-10 bg-gray-50/10" data-aos="fade-up">
-            <div class="card p-6">
-                <h3 class="text-xl font-bold mb-4">🎓 التعليم</h3>
-                <div class="overflow-x-auto">
-                    <table class="min-w-full text-sm">
-                        <thead class="text-right">
-                            <tr>
-                                <th>🎓 الدرجة العلمية</th>
-                                <th>🏫 التخصص</th>
-                                <th>🏛 الجامعة</th>
-                                <th>📅 السنوات</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>بكالوريوس</td>
-                                <td>هندسة برمجيات الحاسوب</td>
-                                <td>جامعة پیام نور</td>
-                                <td>2001 – 2005</td>
-                            </tr>
-                            <tr>
-                                <td>ماجستير (جاري)</td>
-                                <td>إدارة ريادة الأعمال</td>
-                                <td>جامعة طهران (أونلاين)</td>
-                                <td>2025 —</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        
-        <!-- EXPERIENCE -->
-        <section id="experience" class="container mx-auto px-4 py-10" data-aos="fade-up">
-            <div class="card p-6">
-                <h3 class="text-xl font-bold mb-4">💼 الخبرة العملية</h3>
-                <div class="overflow-x-auto">
-                    <table class="min-w-full text-sm">
-                        <thead class="text-right">
-                            <tr>
-                                <th>🏢 الشركة</th>
-                                <th>💼 الدور</th>
-                                <th>📅 الفترة</th>
-                                <th>📝 المسؤوليات والإنجازات</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Nikan Mehr Pardazesh Afza</td>
-                                <td>مهندس DevOps</td>
-                                <td>يوليو 2023 – الحاضر</td>
-                                <td>تصميم وتنفيذ هندسة الخدمات المصغرة ومراقبة الخدمات</td>
-                            </tr>
-                            <tr>
-                                <td>Ekeep Startup</td>
-                                <td>مدير مشروع & Scrum Master</td>
-                                <td>نوفمبر 2019 – يوليو 2023</td>
-                                <td>إدارة المشاريع والفرق متعددة التخصصات، وتوجيه تخطيط السبرنت والعمليات المرنة</td>
-                            </tr>
-                            <tr>
-                                <td>Noyan Co.</td>
-                                <td>مهندس تصور البيانات</td>
-                                <td>أبريل 2017 – نوفمبر 2019</td>
-                                <td>تصميم وتطوير لوحات البيانات التفاعلية</td>
-                            </tr>
-                            <tr>
-                                <td>Tasmim Yaran Co.</td>
-                                <td>مطور Backend</td>
-                                <td>مايو 2013 – مارس 2018</td>
-                                <td>تطوير APIs قابلة للتوسع باستخدام PHP و Python</td>
-                            </tr>
-                            <tr>
-                                <td>Rahbord Co.</td>
-                                <td>مطور ويب</td>
-                                <td>يوليو 2008 – مايو 2013</td>
-                                <td>تطوير أنظمة وتطبيقات ويب</td>
-                            </tr>
-                            <tr>
-                                <td>Freelancer</td>
-                                <td>مطور ويب</td>
-                                <td>أكتوبر 2005 – يوليو 2008</td>
-                                <td>مشاريع ويب مستقلة</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        
-        <!-- LANGUAGES -->
-        <section id="languages" class="container mx-auto px-4 py-10 bg-gray-50/10" data-aos="fade-up">
-            <div class="card p-6">
-                <h3 class="text-xl font-bold mb-4">🌍 اللغات</h3>
-                <div class="overflow-x-auto">
-                    <table class="min-w-full text-sm text-right">
-                        <thead>
-                            <tr>
-                                <th>🌐 اللغة</th>
-                                <th>💬 مستوى الإتقان</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>🇦🇿 أذربيجانية</td>
-                                <td>اللغة الأم</td>
-                            </tr>
-                            <tr>
-                                <td>🇮🇷 الفارسية</td>
-                                <td>اللغة الأم</td>
-                            </tr>
-                            <tr>
-                                <td>🇬🇧 الإنجليزية</td>
-                                <td>متقدم – مستوى العمل</td>
-                            </tr>
-                            <tr>
-                                <td>🇹🇷 التركية</td>
-                                <td>متوسط</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        
-        <!-- CONTACT -->
-        <section id="contact" class="container mx-auto px-4 py-10" data-aos="fade-up">
-            <div class="grid lg:grid-cols-2 gap-6">
-                <div class="card p-6">
-                    <h3 class="text-xl font-bold mb-4">📡 الاتصال والشبكات الاجتماعية</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank"
-                            class="px-3 py-2 rounded bg-blue-600 text-white"><i class="fab fa-linkedin ml-2"></i>
-                            لينكد إن</a>
-                        <a href="https://www.instagram.com/samad.elmakchi" target="_blank"
-                            class="px-3 py-2 rounded bg-pink-500 text-white"><i class="fab fa-instagram ml-2"></i>
-                            إنستغرام</a>
-                        <a href="https://wa.me/989141189645" target="_blank"
-                            class="px-3 py-2 rounded bg-green-600 text-white"><i class="fab fa-whatsapp ml-2"></i>
-                            واتساب</a>
-                        <a href="https://t.me/samadelmakchi" target="_blank" class="px-3 py-2 rounded bg-blue-400 text-white"><i
-                                class="fab fa-telegram ml-2"></i>
-                            تيليجرام</a>
-                        <a href="https://x.com/elmakchi" target="_blank" class="px-3 py-2 rounded bg-sky-600 text-white"><i
-                                class="fab fa-x-twitter ml-2"></i> X</a>
-                        <a href="https://facebook.com/samad.elmakchi" target="_blank"
-                            class="px-3 py-2 rounded bg-blue-800 text-white"><i class="fab fa-facebook ml-2"></i>
-                            فيسبوك</a>
-                        <a href="mailto:samad.elmakchi@gmail.com" class="px-3 py-2 rounded bg-red-600 text-white"><i
-                                class="fas fa-envelope ml-2"></i> جيميل</a>
-                        <a href="https://gitlab.com/samadelmakchi" target="_blank"
-                            class="px-3 py-2 rounded bg-orange-500 text-white"><i class="fab fa-gitlab ml-2"></i>
-                            GitLab</a>
-                        <a href="https://github.com/samadelmakchi" target="_blank"
-                            class="px-3 py-2 rounded bg-gray-800 text-white"><i class="fab fa-github ml-2"></i>
-                            GitHub</a>
-                    </div>
-                </div>
-        
-                <div class="card p-6">
-                    <h3 class="text-xl font-bold mb-4">نموذج الاتصال</h3>
-                    <form id="contactForm" class="space-y-3">
-                        <input id="name" type="text" placeholder="اسمك" class="w-full border rounded px-3 py-2" required />
-                        <input id="email" type="email" placeholder="البريد الإلكتروني" class="w-full border rounded px-3 py-2"
-                            required />
-                        <input id="subject" type="text" placeholder="الموضوع" class="w-full border rounded px-3 py-2" />
-                        <textarea id="message" rows="5" placeholder="رسالتك" class="w-full border rounded px-3 py-2"
-                            required></textarea>
-        
-                        <div class="flex gap-2">
-                            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
-                                إرسال
-                            </button>
-                            <button type="reset" class="border px-4 py-2 rounded">
-                                مسح
-                            </button>
-                        </div>
-        
-                        <p id="formStatus" class="text-sm text-gray-400 mt-2"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
-        
-        <footer class="text-center py-6 text-sm text-gray-400">
-            © 2025 سامد الماكشي — جميع الحقوق محفوظة
-        </footer>
-
-    </main>
-
-    <!-- SCRIPTS -->
-    <script>
-        // AOS (Animate On Scroll)
-        AOS.init({ duration: 700, once: true });
-
-        // Robust tsParticles loader (in case CDN delayed) — will quietly fail if blocked
-        (async function initParticles() {
-            try {
-                if (typeof window.tsParticles === "undefined") {
-                    await new Promise((resolve, reject) => {
-                        const s = document.createElement("script");
-                        s.src =
-                            "https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js";
-                        s.async = true;
-                        s.onload = () => resolve();
-                        s.onerror = () => reject();
-                        document.head.appendChild(s);
-                    });
-                }
-                if (typeof window.tsParticles !== "undefined") {
-                    window.tsParticles.load("tsparticles", {
-                        fpsLimit: 60,
-                        detectRetina: true,
-                        background: { color: { value: "transparent" } },
-                        particles: {
-                            number: { value: 60, density: { enable: true, area: 900 } },
-                            color: { value: ["#60a5fa", "#93c5fd", "#a78bfa"] },
-                            shape: { type: "circle" },
-                            opacity: {
-                                value: 0.7,
-                                random: { enable: true, minimumValue: 0.2 },
-                            },
-                            size: { value: { min: 1, max: 4 } },
-                            links: {
-                                enable: true,
-                                distance: 140,
-                                color: "#8b9ae0",
-                                opacity: 0.12,
-                                width: 1,
-                            },
-                            move: {
-                                enable: true,
-                                speed: 0.9,
-                                direction: "none",
-                                outModes: { default: "out" },
-                            },
-                        },
-                        interactivity: {
-                            events: {
-                                onHover: { enable: true, mode: "repulse" },
-                                onClick: { enable: true, mode: "push" },
-                            },
-                            modes: { repulse: { distance: 100 }, push: { quantity: 2 } },
-                        },
-                    });
-                }
-            } catch (e) {
-                console.warn("فشل تحميل أو تهيئة tsParticles.", e);
-            }
-        })();
-
-        // Typed.js (typing effect)
-        new Typed("#typed", {
-            strings: [
-                "DevOps · هندسة خلفية · CI/CD · الخدمات المصغرة",
-                "Kubernetes (تعلم) · Docker · Prometheus · Grafana",
-                "Python · PHP · Node.js · Golang (تعلم)",
-            ],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true,
-        });
-
-        // Theme toggle
-        const themeToggle = document.getElementById("themeToggle");
-        const themeIcon = document.getElementById("themeIcon");
-        themeToggle.addEventListener("click", () => {
-            const curr = document.body.getAttribute("data-theme") || "light";
-            if (curr === "dark") {
-                document.body.setAttribute("data-theme", "light");
-                themeIcon.className = "fa-regular fa-moon text-gray-600";
-            } else {
-                document.body.setAttribute("data-theme", "dark");
-                themeIcon.className = "fa-solid fa-sun text-yellow-300";
-            }
-        });
-
-        // set initial theme from prefers-color-scheme
-        (function setInitialTheme() {
-            const prefersDark =
-                window.matchMedia &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches;
-            if (prefersDark) {
-                document.body.setAttribute("data-theme", "dark");
-                themeIcon.className = "fa-solid fa-sun text-yellow-300";
-            } else {
-                document.body.setAttribute("data-theme", "light");
-                themeIcon.className = "fa-regular fa-moon text-gray-600";
-            }
-        })();
-
-        // Tabs behavior
-        document.querySelectorAll(".tab-btn").forEach((btn) => {
-            btn.addEventListener("click", () => {
-                document
-                    .querySelectorAll(".tab-btn")
-                    .forEach((b) => b.classList.remove("active"));
-                btn.classList.add("active");
-                const id =
-                    btn.getAttribute("data-tab") ||
-                    btn.textContent.trim().toLowerCase().split(" ")[0];
-                document
-                    .querySelectorAll(".tab-pane")
-                    .forEach((p) => p.classList.add("hidden"));
-                const pane =
-                    document.getElementById(id) ||
-                    document.querySelector(".tab-pane:not(.hidden)");
-                if (pane) pane.classList.remove("hidden");
-                // scroll center
-                document
-                    .getElementById("skills")
-                    .scrollIntoView({ behavior: "smooth", block: "center" });
-            });
-        });
-        // ensure first pane visible
-        (function initPanes() {
-            const panes = document.querySelectorAll(".tab-pane");
-            panes.forEach((p, i) => {
-                if (i !== 0) p.classList.add("hidden");
-            });
-        })();
-
-        // Resume dropdown & language popup z-index fix
-        const resumeMain = document.getElementById("resumeMain");
-        const resumeDropdown = document.getElementById("resumeDropdown");
-        const langBtn = document.getElementById("langBtn");
-        const langPopup = document.getElementById("langPopup");
-
-        resumeMain &&
-            resumeMain.addEventListener("click", (e) => {
-                e.stopPropagation();
-                resumeDropdown.classList.toggle("hidden");
-                resumeDropdown.style.zIndex = 99999;
-                langPopup.classList.add("hidden");
-            });
-        langBtn &&
-            langBtn.addEventListener("click", (e) => {
-                e.stopPropagation();
-                langPopup.classList.toggle("hidden");
-                langPopup.style.zIndex = 99999;
-                resumeDropdown.classList.add("hidden");
-            });
-
-        document.addEventListener("click", () => {
-            resumeDropdown.classList.add("hidden");
-            langPopup.classList.add("hidden");
-        });
-
-        // Mobile hamburger
-        const hamburger = document.getElementById("hamburger");
-        const mobileMenu = document.getElementById("mobileMenu");
-        const mobileResume = document.getElementById("mobileResume");
-        const mobileLang = document.getElementById("mobileLang");
-
-        hamburger &&
-            hamburger.addEventListener("click", (e) => {
-                e.stopPropagation();
-                mobileMenu.classList.toggle("hidden");
-            });
-        mobileResume &&
-            mobileResume.addEventListener("click", (e) => {
-                e.preventDefault();
-                resumeDropdown.classList.remove("hidden");
-                mobileMenu.classList.add("hidden");
-            });
-        mobileLang &&
-            mobileLang.addEventListener("click", (e) => {
-                e.preventDefault();
-                langPopup.classList.remove("hidden");
-                mobileMenu.classList.add("hidden");
-            });
-
-        // resume dropdown links - placeholder URLs (replace with your real PDF links)
-        document.querySelectorAll("#resumeDropdown a").forEach((a) => {
-            a.addEventListener("click", (e) => {
-                e.preventDefault();
-                const lang = a.getAttribute("data-resume");
-                const urls = {
-                    en: "https://your-cdn-or-github.com/resume-en.pdf",
-                    fa: "https://your-cdn-or-github.com/resume-fa.pdf",
-                    tr: "https://your-cdn-or-github.com/resume-tr.pdf",
-                    az: "https://your-cdn-or-github.com/resume-az.pdf",
-                    ar: "https://your-cdn-or-github.com/resume-ar.pdf",
-                };
-                window.open(urls[lang] || urls.en, "_blank");
-            });
-        });
-
-        // Contact form logic (Formspree + Telegram + GoogleSheet)
-        const form = document.getElementById("contactForm");
-        const statusEl = document.getElementById("formStatus");
-
-        // CONFIG — ضع نقاط النهاية الحقيقية هنا:
-        const FORMSPREE_ENDPOINT = "https://formspree.io/f/xqagdegw"; // replace
-        const TELEGRAM_BOT_TOKEN =
-            "8367149022:AAFqfvY4Upx2hsPYVpWQqkUmsP1F8u-CNws"; // replace
-        const TELEGRAM_CHAT_ID = "472016605"; // replace
-        const GOOGLE_SHEET_WEBHOOK = ""; // replace
-
-        async function postToFormspree(formData) {
-            if (!FORMSPREE_ENDPOINT.includes("xqagdegw")) {
-                const res = await fetch(FORMSPREE_ENDPOINT, {
-                    method: "POST",
-                    body: formData,
-                    headers: { Accept: "application/json" },
-                });
-                return res.ok;
-            }
-            return false;
-        }
-        async function postToTelegram(text) {
-            if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return false;
-            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-            const resp = await fetch(url, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    chat_id: TELEGRAM_CHAT_ID,
-                    text,
-                    parse_mode: "HTML",
-                }),
-            });
-            const j = await resp.json();
-            return j.ok;
-        }
-
-        form &&
-            form.addEventListener("submit", async (e) => {
-                e.preventDefault();
-                statusEl.textContent = "جاري الإرسال...";
-                const name = document.getElementById("name").value.trim();
-                const email = document.getElementById("email").value.trim();
-                const subject = document.getElementById("subject").value.trim();
-                const message = document.getElementById("message").value.trim();
-
-                const formData = new FormData();
-                formData.append("name", name);
-                formData.append("email", email);
-                formData.append("subject", subject);
-                formData.append("message", message);
-
-                let ok = true;
-                try {
-                    const res = await postToFormspree(formData);
-                    if (!res) {
-                        ok = false;
-                        console.warn("فشل Formspree");
-                    }
-                } catch (err) {
-                    ok = false;
-                    console.error(err);
-                }
-                try {
-                    const txt = `<b>رسالة من الموقع</b>\nالاسم: ${name}\nالبريد الإلكتروني: ${email}\nالموضوع: ${subject}\n\n${message}`;
-                    const res = await postToTelegram(txt);
-                    if (!res) {
-                        ok = false;
-                        console.warn("فشل Telegram");
-                    }
-                } catch (err) {
-                    ok = false;
-                    console.error(err);
-                }
-
-                if (ok) {
-                    statusEl.textContent = "تم إرسال الرسالة بنجاح — شكرًا لك!";
-                    form.reset();
-                } else {
-                    statusEl.textContent =
-                        "فشل الإرسال — يرجى التحقق من إعداداتك (انظر وحدة التحكم).";
-                }
-            });
-
-        // Accessibility: close popups with Esc
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") {
-                resumeDropdown.classList.add("hidden");
-                langPopup.classList.add("hidden");
-                mobileMenu.classList.add("hidden");
-            }
-        });
-
-        // Service Worker registration (for PWA)
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("/sw.js")
-                    .then((reg) => console.log("تم تسجيل Service Worker", reg))
-                    .catch((err) => console.error("فشل Service Worker", err));
-            });
-        }
-    </script>
-
-</body>
-
-</html>
