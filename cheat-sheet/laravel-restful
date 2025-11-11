@@ -1,0 +1,217 @@
+# 📗 Laravel RESTful API
+
+### 1️⃣ Routes (تعریف مسیرها)
+
+```php
+// GET
+Route::get('/users', [UserController::class, 'index']);
+Route::get('/users/{id}', [UserController::class, 'show']);
+
+// POST
+Route::post('/users', [UserController::class, 'store']);
+
+// PUT/PATCH
+Route::put('/users/{id}', [UserController::class, 'update']);
+Route::patch('/users/{id}', [UserController::class, 'update']);
+
+// DELETE
+Route::delete('/users/{id}', [UserController::class, 'destroy']);
+```
+
+---
+
+### 2️⃣ Resource Controller
+
+```bash
+php artisan make:controller UserController --api
+```
+
+```php
+// Routes/api.php
+Route::apiResource('users', UserController::class);
+```
+
+* روش **apiResource** فقط مسیرهای API استاندارد (index, store, show, update, destroy) را ایجاد می‌کند.
+
+---
+
+### 3️⃣ Standard RESTful controller (کنترلر استاندارد RESTful)
+
+```php
+class UserController extends Controller {
+
+    public function index() {
+        return response()->json(User::all(), 200);
+    }
+
+    public function store(Request $request) {
+        $validated = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|string|min:6'
+        ]);
+
+        $user = User::create($validated);
+        return response()->json($user, 201);
+    }
+
+    public function show($id) {
+        $user = User::findOrFail($id);
+        return response()->json($user, 200);
+    }
+
+    public function update(Request $request, $id) {
+        $user = User::findOrFail($id);
+        $user->update($request->all());
+        return response()->json($user, 200);
+    }
+
+    public function destroy($id) {
+        $user = User::findOrFail($id);
+        $user->delete();
+        return response()->json(null, 204);
+    }
+}
+```
+
+### 4️⃣ Request Validation
+
+```php
+// FormRequest سفارشی
+php artisan make:request StoreUserRequest
+
+// StoreUserRequest.php
+public function rules() {
+    return [
+        'name' => 'required|string',
+        'email' => 'required|email|unique:users',
+        'password' => 'required|string|min:6'
+    ];
+}
+
+// استفاده در کنترلر
+public function store(StoreUserRequest $request) {
+    $user = User::create($request->validated());
+    return response()->json($user, 201);
+}
+```
+
+### 5️⃣ Standard JSON responses (پاسخ‌های JSON استاندارد)
+
+```php
+// موفقیت
+return response()->json(['message' => 'OK', 'data' => $data], 200);
+
+// خطا
+return response()->json(['error' => 'Not Found'], 404);
+
+// حذف موفق
+return response()->json(null, 204);
+```
+
+### 6️⃣ Pagination
+
+```php
+$users = User::paginate(15);
+return response()->json($users);
+
+// ساده‌تر
+$users = User::simplePaginate(10);
+```
+
+### 7️⃣ Resource & Resource Collection
+
+```bash
+php artisan make:resource UserResource
+```
+
+```php
+// UserResource.php
+public function toArray($request) {
+    return [
+        'id' => $this->id,
+        'name' => $this->name,
+        'email' => $this->email,
+        'created_at' => $this->created_at->toDateTimeString(),
+    ];
+}
+
+// در کنترلر
+return new UserResource($user);
+return UserResource::collection(User::all());
+```
+
+### 8️⃣ Route Groups & Middleware
+
+```php
+Route::prefix('v1')->middleware('auth:sanctum')->group(function () {
+    Route::apiResource('users', UserController::class);
+});
+```
+
+* مناسب برای نسخه‌بندی API و محافظت با Authentication.
+
+### 9️⃣ Response Helpers
+
+```php
+return response()->json(['message' => 'Success']);     // JSON ساده
+return response()->noContent();                        // HTTP 204
+return response()->file($path);                        // ارسال فایل
+return response()->download($path, 'name.pdf');       // دانلود فایل
+```
+
+### 🔟 Query Parameters & Filtering
+
+```php
+$users = User::query();
+
+// فیلتر بر اساس query param
+if ($request->has('status')) {
+    $users->where('status', $request->query('status'));
+}
+
+// مرتب‌سازی
+if ($request->has('sort')) {
+    $users->orderBy($request->query('sort'), 'asc');
+}
+
+return response()->json($users->get());
+```
+
+### 1️⃣1️⃣ API Authentication
+
+* **Sanctum**: توکن SPA و Mobile
+
+```bash
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+php artisan migrate
+```
+
+* **Passport**: OAuth2 سرور
+
+```bash
+composer require laravel/passport
+php artisan migrate
+php artisan passport:install
+```
+
+* Middleware در route:
+
+```php
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
+```
+---
+
+### 🔄 جریان معمول توسعه RESTful API در لاراول
+
+1. ساخت مدل + مایگریشن
+2. ساخت Controller (`--api`)
+3. تعریف Route (`apiResource`)
+4. تعریف Request Validation یا Rules
+5. استفاده از Resource/ResourceCollection برای پاسخ‌ها
+6. اضافه کردن Middleware برای احراز هویت
+7. اضافه کردن Pagination و Filtering
+8. مستندسازی با Swagger یا Doctum (اختیاری)
