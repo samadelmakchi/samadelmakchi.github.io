@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۱: مقدمه و پایه کسب‌وکار آنلاین</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="icon" type="image/png" sizes="64x64" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+
+    <!-- Apple Touch Icons for iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://avatars.githubusercontent.com/u/6169366?v=4">
+
+    <!-- PWA Manifest & Theme -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1e40af">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="font-vazirmatn bg-gray-50 text-gray-800 p-6">
+
+    <h1 class="text-2xl font-bold mb-6 text-right">✅ فصل ۱: مقدمه و پایه کسب‌وکار آنلاین</h1>
+
+    <div class="space-y-4">
+
+        
+        
+        
+    </div>
+
+    <script>
+        function toggleAccordion(element) {
+            const allContents = document.querySelectorAll('.accordion-content');
+            const allIcons = document.querySelectorAll('.flex.items-center.justify-between i');
+
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('i');
+
+            allContents.forEach(c => {
+                if (c !== content) c.classList.add('hidden');
+            });
+            allIcons.forEach(ic => {
+                if (ic !== icon) ic.classList.remove('rotate-180');
+            });
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        //-----------------------
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registered', reg))
+                    .catch(err => console.error('Service Worker failed', err));
+            });
+        }
+    </script>
+
+</body>
+
+</html>
