@@ -1,584 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فصل ۲: برنامه‌ریزی و مدل‌سازی کسب‌وکار آنلاین</title>
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <link rel="icon" type="image/png" sizes="64x64" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <!-- Apple Touch Icons for iOS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-    <!-- PWA Manifest & Theme -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#1e40af">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-</head>
-
-<body class="font-vazirmatn bg-gray-50 text-gray-800 p-6">
-    <h1 class="text-2xl font-bold mb-6 text-right">✅ فصل ۲: برنامه‌ریزی و مدل‌سازی کسب‌وکار آنلاین</h1>
-    <div class="space-y-4">
-        <!-- ۱. تدوین بیزینس پلن -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۱. تدوین بیزینس پلن (Business Plan)</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف دقیق ارزش پیشنهادی و
-                    مسئله‌ای که حل می‌کنید
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل بازار هدف براساس اندازه
-                    بازار، رشد، ترندها
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل رقبا (مستقیم و
-                    غیرمستقیم)
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تدوین استراتژی بازاریابی (4P
-                    یا 7P مارکتینگ)
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تدوین برنامه مالی ۳ تا ۵
-                    ساله
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    محاسبه Break-even
-                    Point
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف ساختار تیم
-                    مدیریتی
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل ریسک‌ها و برنامه کاهش
-                    ریسک
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    مطالعه نمونه بیزینس پلن‌های
-                    Harvard, MIT
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    نوشتن بیزینس پلن ۱۰ صفحه‌ای
-                    به‌جای ۵۰ صفحه
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    استفاده از Canva یا LivePlan
-                    برای ساخت پلن در 2 ساعت
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین ۳ KPI اصلی برای ۶ ماه
-                    اول: نرخ تبدیل، CAC، فروش ماهانه
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف کانال‌های اصلی فروش:
-                    اینستاگرام، سایت، مارکت‌پلیس
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    برآورد دقیق هزینه ماهانه تیم،
-                    تبلیغات، محتوا، لجستیک
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین بودجه بازاریابی عملکردی
-                    (Performance Marketing)
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ساخت نسخه Pitch Deck برای جذب
-                    سرمایه
-                </label>
-            </div>
-        </div>
-        <!-- ۲. طراحی بیزینس مدل -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۲. طراحی بیزینس مدل (Business Model Canvas – BMC)</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تکمیل ۹ بلوک اصلی BMC
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف دقیق Segments
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل Value Proposition با
-                    مدل Osterwalder
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    دسته‌بندی Channels به owned /
-                    paid / earned
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل Cost Structure با مدل
-                    Fixed vs Variable Costs
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    اعتبارسنجی مدل کسب‌وکار
-                    (Business Model Validation)
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    پر
-                    کردن BMC در Canvanizer در
-                    ۲۰ دقیقه
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تست
-                    سریع مدل با ۵ مشتری
-                    اول
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف کانال اولیه رشد:
-                    اینستاگرام، تبلیغات کلیکی، همکاری با اینفلوئنسر
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین نوع درآمد: فروش مستقیم،
-                    اشتراک، پرداخت درون‌برنامه‌ای
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ایجاد نسخه Market-fit شده
-                    براساس داده‌های واقعی
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    بازبینی BMC هر ۶۰ روز
-                </label>
-            </div>
-        </div>
-        <!-- ۳. طراحی Value Proposition Canvas -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۳. طراحی Value Proposition Canvas – VPC</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل Customer Jobs / Pains /
-                    Gains
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل Gain Creators / Pain
-                    Relievers
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    انطباق کامل Value Map با
-                    Customer Profile
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف ارتباط VPC با BMC و
-                    STP
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    مصاحبه با ۱۰ مشتری
-                    واقعی
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    استخراج ۳ مشکل اصلی
-                    مشتری
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف ۳ ارزش برجسته برای
-                    محصول
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تست
-                    نسخه MVP برای تأیید Value
-                    Proposition
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ساخت landing page تست ارزش
-                    پیشنهادی
-                </label>
-            </div>
-        </div>
-        <!-- ۴. تحلیل بازار و رفتار مشتری -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۴. تحلیل بازار و رفتار مشتری</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل PESTEL
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل 5 نیروی پورتر
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف بخش‌بندی بازار براساس
-                    STP
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل قیمت‌گذاری براساس
-                    مدل‌های Cost-based / Value-based
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    بررسی Google Trends برای ۱۰
-                    کلمه کلیدی اصلی
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    آنالیز رقبا با SimilarWeb و
-                    سورس‌کردن داده‌ها
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    بررسی رفتار مشتری با
-                    Instagram Insights
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین قیمت اولیه براساس
-                    رقبا
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ساخت ۲ آفر جذاب اولیه (Offer
-                    Package)
-                </label>
-            </div>
-        </div>
-        <!-- ۵. تحلیل SWOT و SOAR -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۵. تحلیل SWOT و SOAR</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    جدول SWOT کامل
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل ماتریس TOWS
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ارتباط SWOT با استراتژی‌های
-                    توسعه
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف SWOT برای رقبا
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    استخراج ۳ نقطه‌قوت و ۳
-                    نقطه‌ضعف واقعی
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین فرصت‌های بازار با
-                    داده‌های Google Trends
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ساخت اکشن‌پلن ۳۰ روزه براساس
-                    SWOT
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تکمیل SOAR برای تیم و
-                    سرمایه‌گذار
-                </label>
-            </div>
-        </div>
-        <!-- ۶. تعیین بازار هدف و پرسونای مخاطب -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۶. تعیین بازار هدف و پرسونای مخاطب</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف Persona براساس
-                    دموگرافیک، سایکوگرافیک و رفتار
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین Segments مختلف بازار
-                    براساس STP
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تطبیق Persona با Value
-                    Proposition
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ساخت ۲ پرسونا اصلی
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    جمع‌آوری داده از Google
-                    Analytics
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    نقشه رفتار مشتری (Customer
-                    Journey Map)
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تحلیل ۱۰ مشتری واقعی برای
-                    تکمیل پروفایل مخاطب
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین دقیق میانگین سبد خرید
-                    (AOV) مخاطب
-                </label>
-            </div>
-        </div>
-        <!-- ۷. تنظیم KPI و OKR -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۷. تنظیم KPI و OKR</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف OKR فصلی
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین معیارهای SMART
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تفکیک KPIها در سه سطح:
-                    کسب‌وکار، بازاریابی، فروش
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تنظیم ۵ KPI کلیدی: نرخ تبدیل،
-                    CAC، ROAS، CLV، نرخ بازگشت مشتری
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعیین هدف ۶ ماهه فروش
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ساخت داشبورد KPI در Data
-                    Studio
-                </label>
-            </div>
-        </div>
-        <!-- ۸. مراحل قانونی و قراردادها -->
-        <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion(this)">
-                <span class="font-semibold">۸. مراحل قانونی و قراردادها</span>
-                <i class="fas fa-chevron-down transition-transform duration-300"></i>
-            </div>
-            <div class="accordion-content mt-2 hidden text-right space-y-2">
-                <label class="flex items-center space-x-2 space-x-reverse">🎓
-                    <strong>رویکرد دانشگاهی:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تعریف ساختار حقوقی شرکت
-                    (سهامی خاص / مسئولیت محدود)
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    بررسی قوانین تجارت
-                    الکترونیک
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    آشنایی با قوانین حفاظت
-                    داده‌ها
-                </label>
-                <br>
-                <hr>
-                <br>
-                <label class="flex items-center space-x-2 space-x-reverse">🧩
-                    <strong>رویکرد بازار:</strong>
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    ثبت
-                    شرکت و برند در ۳۰
-                    روز
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    دریافت ای‌نماد
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    قرارداد با درگاه پرداخت
-                    (دیجی‌پی، پی‌پینگ، زرین‌پال)
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    قرارداد همکاری با
-                    مارکت‌پلیس‌ها
-                </label>
-                <label class="flex items-center space-x-2 space-x-reverse">
-                    <input type="checkbox" class="mt-1 ml-2">
-                    تنظیم قرارداد همکاری با
-                    فریلنسرها و تولیدکنندگان محتوا
-                </label>
-            </div>
-        </div>
-    </div>
-    <script>
-        function toggleAccordion(element) {
-            const allContents = document.querySelectorAll('.accordion-content');
-            const allIcons = document.querySelectorAll('.flex.items-center.justify-between i');
-
-            const content = element.nextElementSibling;
-            const icon = element.querySelector('i');
-
-            allContents.forEach(c => {
-                if (c !== content) c.classList.add('hidden');
-            });
-            allIcons.forEach(ic => {
-                if (ic !== icon) ic.classList.remove('rotate-180');
-            });
-
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.classList.add('rotate-180');
-            } else {
-                content.classList.add('hidden');
-                icon.classList.remove('rotate-180');
-            }
-        }
-
-        //-----------------------
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(reg => console.log('Service Worker registered', reg))
-                    .catch(err => console.error('Service Worker failed', err));
-            });
-        }
-    </script>
-</body>
-
-</html>
