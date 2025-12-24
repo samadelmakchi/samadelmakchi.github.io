@@ -27,64 +27,62 @@ const ROLES = [
 
 const SKILL_CATEGORIES = [
   {
-    title: 'دیجیتال مارکتینگ و محتوا',
+    title: 'دیجیتال مارکتینگ و رشد',
     icon: 'TrendingUp',
     items: [
-      { title: 'استراتژی دیجیتال مارکتینگ', description: 'طراحی نقشه راه رشد و قیف‌های فروش حرفه‌ای' },
-      { title: 'آنالیز رفتار کاربران', description: 'تحلیل داده‌محور مسیر مشتری (Customer Journey) و نرخ تبدیل' },
-      { title: 'سئو (SEO)', description: 'بهینه‌سازی فنی، محتوایی و خارجی برای موتورهای جستجو' },
-      { title: 'طراحی کمپین‌های تبلیغاتی', description: 'مدیریت کمپین‌های چندکاناله و ROI-focused' },
-      { title: 'AI در مارکتینگ', description: 'بهره‌گیری از هوش مصنوعی در اتوماسیون و توسعه کسب‌وکار' }
+      { title: 'استراتژی رشد', description: 'SEO, SEM, Google Ads, Content Strategy' },
+      { title: 'تحلیل و بهینه‌سازی', description: 'GA4, GTM, Hotjar, CRO, A/B Testing' },
+      { title: 'گیمیفیکیشن', description: 'طراحی با فریم‌ورک Octalysis برای وفادارسازی' },
+      { title: 'اتوماسیون', description: 'HubSpot, CRM Integration, Zapier' }
     ]
   },
   {
-    title: 'دواپس و زیرساخت (DevOps)',
+    title: 'مدیریت محصول و تیم',
+    icon: 'Target',
+    items: [
+      { title: 'متدولوژی‌های چابک', description: 'Scrum, Kanban, Agile Marketing' },
+      { title: 'مدیریت پروژه', description: 'Jira, Confluence, Miro, Asana' },
+      { title: 'نقش‌ها', description: 'Scrum Master, Product Owner' },
+      { title: 'مهارت‌های نرم', description: 'رهبری تیم، حل تعارض، منتورینگ' }
+    ]
+  },
+  {
+    title: 'هوش مصنوعی (AI-Marketing)',
+    icon: 'Brain',
+    items: [
+      { title: 'AI Agent Design', description: 'خودکارسازی تعامل و پشتیبانی هوشمند' },
+      { title: 'n8n Workflow', description: 'اتصال سرویس‌ها برای اتوماسیون مارکتینگ' },
+      { title: 'دیتاماینینگ', description: 'پیش‌بینی رفتار مشتری با مدل‌های ML' },
+      { title: 'AI Automation', description: 'بهینه‌سازی جریان تولید محتوا' }
+    ]
+  },
+  {
+    title: 'دواپس و زیرساخت MarTech',
     icon: 'Shield',
     items: [
-      { title: 'زیرساخت و GitOps', description: 'مدیریت چرخه حیات نرم‌افزار با GitHub Actions' },
-      { title: 'داکر و کانتینرسازی', description: 'استقرار مقیاس‌پذیر با Docker & Docker Compose' },
-      { title: 'اتوماسیون انسیبل', description: 'Ansible Playbooks برای مدیریت سرورها' },
-      { title: 'Traefik & Nginx', description: 'Reverse Proxy، Load Balancing و امنیت SSL' }
+      { title: 'کانتینرسازی', description: 'Docker / Compose برای استقرار سریع' },
+      { title: 'زیرساخت مقیاس‌پذیر', description: 'Kubernetes & CI/CD Pipelines' },
+      { title: 'مانیتورینگ', description: 'Prometheus, Grafana برای پایداری سرویس' },
+      { title: 'شبکه‌سازی', description: 'Traefik, Load Balancing' }
     ]
   },
   {
-    title: 'پلتفرم‌ها و تجارت الکترونیک',
-    icon: 'ShoppingCart',
+    title: 'توسعه نرم‌افزار',
+    icon: 'Code',
     items: [
-      { title: 'مارکت‌پلیس‌ها (Marketplaces)', description: 'طراحی و مدیریت پلتفرم‌های چندفروشندگی پیچیده' },
-      { title: 'تجارت الکترونیک (E-commerce)', description: 'راهکارهای نوین فروش آنلاین و مدیریت موجودی' },
-      { title: 'پلتفرم‌های اشتراکی', description: 'پیاده‌سازی مدل‌های Subscription-based' },
-      { title: 'سیستم‌های ERP و مالی', description: 'یکپارچه‌سازی برنامه‌ریزی منابع سازمانی' }
+      { title: 'Backend', description: 'Laravel (PHP), FastAPI (Python)' },
+      { title: 'Frontend', description: 'Vue.js, Nuxt, Tailwind CSS' },
+      { title: 'Database', description: 'MySQL, PostgreSQL, MongoDB, Redis' },
+      { title: 'API Design', description: 'RESTful, GraphQL Expert' }
     ]
   },
   {
-    title: 'فناوری‌های نوظهور',
-    icon: 'Cpu',
-    items: [
-      { title: 'بلاکچین (Blockchain)', description: 'معماری غیرمتمرکز و قراردادهای هوشمند' },
-      { title: 'متاورس و کریپتو', description: 'تحلیل اکوسیستم‌های رمزارز و پروژه‌های متاورسی' },
-      { title: 'بازارهای مالی', description: 'طراحی الگوریتم‌های معاملاتی و تحلیل تکنیکال' },
-      { title: 'مارکتینگ‌تک و فین‌تک', description: 'تلفیق تکنولوژی در بازاریابی و سیستم‌های مالی' }
-    ]
-  },
-  {
-    title: 'مشاوره و تحلیل کسب‌وکار',
+    title: 'بلاکچین و تحلیل مالی',
     icon: 'BarChart3',
     items: [
-      { title: 'مشاوره توسعه نرم‌افزار', description: 'هدایت تیم‌های فنی و معماری دیتابیس‌های مقیاس‌پذیر' },
-      { title: 'استراتژی و KPIها', description: 'تعیین شاخص‌های کلیدی عملکرد و پایش اهداف' },
-      { title: 'تحلیل داده و مشتری', description: 'شناسایی الگوهای رفتار خرید و وفادارسازی مشتریان' },
-      { title: 'مدل‌های بیزنس مدل', description: 'طراحی و اعتبارسنجی مدل‌های درآمدی مقیاس‌پذیر' }
-    ]
-  },
-  {
-    title: 'کارآفرینی و منتورینگ',
-    icon: 'Rocket',
-    items: [
-      { title: 'منتور استارتاپ', description: 'هدایت تیم‌های نوپا در مسیر محصول و تناسب با بازار' },
-      { title: 'برنامه‌ریزی کسب‌وکار', description: 'تدوین Business Plan و استراتژی‌های ورود به بازار' },
-      { title: 'رهبری تیم‌های چابک', description: 'Agile Leadership در محیط‌های پویا' },
-      { title: 'تفکر حل مسئله', description: 'رویکرد خلاقانه و داده‌محور به چالش‌های سازمانی' }
+      { title: 'تحلیل داده مالی', description: 'Python (Pandas, NumPy, TA-Lib)' },
+      { title: 'الگوریتمیک تریدینگ', description: 'Pine Script, MQL4/5 Development' },
+      { title: 'Web3 & Blockchain', description: 'Solidity, Smart Contracts Architecture' }
     ]
   }
 ];
@@ -101,7 +99,7 @@ const EDUCATION = [
 const LANGUAGES = [
   { name: 'آذری', level: 'زبان مادری' },
   { name: 'فارسی', level: 'زبان مادری' },
-  { name: 'انگلیسی', level: 'Professional Work Proficiency' },
+  { name: 'انگلیسی', level: 'Professional Proficiency' },
   { name: 'ترکی استانبولی', level: 'متوسط' }
 ];
 
@@ -201,7 +199,7 @@ const About = () => html`
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div className="lg:col-span-5 relative">
           <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" className="object-cover w-full h-full opacity-60 mix-blend-screen" />
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200" className="object-cover w-full h-full opacity-60 mix-blend-screen" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
           </div>
           <div className="absolute -bottom-8 -left-8 bg-indigo-600 text-white p-10 rounded-[2rem] shadow-2xl hidden md:block">
@@ -212,21 +210,21 @@ const About = () => html`
         <div className="lg:col-span-7">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-indigo-600 rounded-full"></div>
-            <span className="text-indigo-600 font-black text-sm uppercase tracking-widest">About Me</span>
+            <span className="text-indigo-600 font-black text-sm uppercase tracking-widest">Profile Analysis</span>
           </div>
           <h2 className="text-4xl font-black mb-8 text-slate-900 leading-tight">درباره تخصص، نگاه استراتژیک و مسیر حرفه‌ای من</h2>
           <div className="space-y-6 text-slate-700 leading-relaxed text-lg text-justify font-medium">
-            <p>من <strong>صمد المکچی</strong> هستم، با بیش از ۲۰ سال تجربه در دنیای فناوری و استراتژی رشد. مسیر حرفه‌ای من از برنامه‌نویسی فول‌استک آغاز شد و به مرور به سمت مدیریت محصول و استراتژی‌های بازاریابی داده‌محور سوق پیدا کرد. من معتقدم که در دنیای امروز، مرز بین تکنولوژی و بازاریابی به طور کامل از بین رفته است؛ یک استراتژیست موفق کسی است که نه تنها نیازهای بازار را می‌شناسد، بلکه به زیرساخت‌های فنی مورد نیاز برای پاسخ به آن نیازها نیز اشراف کامل دارد.</p>
-            <p>تخصص اصلی من در طراحی و پیاده‌سازی MarTech (تکنولوژی‌های بازاریابی) است؛ جایی که با استفاده از ابزارهای اتوماسیون، تحلیل دقیق رفتار کاربر و هوش مصنوعی، مسیر رشد کسب‌وکارها را هموار می‌کنم. من به دنبال خلق ارزش‌های واقعی و پایدار هستم و در هر پروژه، از تفکر سیستمی برای حل مسائل پیچیده بهره می‌برم.</p>
-            <p>از مدیریت تیم‌های چابک در استارتاپ‌های نوپا تا بهینه‌سازی زیرساخت‌های دواپس برای پلتفرم‌های بزرگ، همواره تلاش کرده‌ام تا توازن میان سرعت توسعه و پایداری سیستم را حفظ کنم. چشم‌انداز من، پیشرو بودن در استفاده از فناوری‌های نوظهور مانند بلاکچین و هوش مصنوعی برای متحول کردن تجربه مشتری و افزایش بهره‌وری کسب‌وکارهاست. من به یادگیری جمعی و مستندسازی حرفه‌ای استراتژی‌ها معتقدم و معتقدم بزرگترین چالش‌ها با رویکرد داده‌محور و خلاق قابل حل هستند.</p>
+            <p>من <strong>صمد المکچی</strong> هستم، استراتژیست رشد و معمار سیستم‌های مارکتینگ‌تک با بیش از ۲۰ سال سابقه فعالیت مستمر در اکوسیستم فناوری ایران. تخصص من در نقطه تلاقی بازاریابی دیجیتال، مدیریت محصول و مهندسی نرم‌افزار قرار دارد. در طول دو دهه فعالیت، تمرکز اصلی من همواره بر تبدیل داده‌های خام به تصمیمات استراتژیک و سودآور برای کسب‌وکارها بوده است.</p>
+            <p>من به رویکرد <strong>«مهندسی رشد»</strong> معتقدم؛ رویکردی که در آن از ابزارهای فنی نه فقط برای نگهداری سیستم، بلکه برای شتاب‌دهی به فروش و بهبود تجربه مشتری استفاده می‌شود. از طراحی معماری‌های پیچیده بک‌ند و دواپس گرفته تا پیاده‌سازی قیف‌های فروش هوشمند و تحلیل رفتار کاربران با استفاده از هوش مصنوعی، هدف من خلق یک اکوسیستم یکپارچه برای رشد است.</p>
+            <p>سابقه من در نقش‌هایی نظیر مالک محصول (Product Owner) و اسکرام مستر به من آموخته است که چگونه تیم‌های فنی و مارکتینگ را برای رسیدن به اهداف مشترک همسو کنم. من معتقدم که موفقیت یک محصول دیجیتال در گرو تعادل میان پایداری فنی و انعطاف‌پذیری در بازاریابی است. چشم‌انداز من استفاده از آخرین دستاوردهای دنیای Web3، بلاکچین و هوش مصنوعی مولد برای بازتعریف استانداردهای صنعت MarTech و کمک به استارتاپ‌ها برای عبور از چالش‌های مقیاس‌پذیری است. من به یادگیری مداوم، مستندسازی حرفه‌ای و اشتراک دانش در تیم‌های چابک متعهدم.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
             ${[
-              { label: 'تفکر سیستمی', icon: Lucide.Cpu, desc: 'تلفیق هوشمند مارکتینگ و فنی' },
-              { label: 'رشد داده‌محور', icon: Lucide.BarChart3, desc: 'تصمیم‌گیری بر اساس اعداد' },
-              { label: 'مدیریت محصول', icon: Lucide.Layers, desc: 'رهبری چابک با متد اسکرام' }
-            ].map((item) => html`
+    { label: 'تفکر سیستمی', icon: Lucide.Cpu, desc: 'تلفیق هوشمند مارکتینگ و فنی' },
+    { label: 'رشد داده‌محور', icon: Lucide.BarChart3, desc: 'تصمیم‌گیری بر اساس اعداد' },
+    { label: 'مدیریت محصول', icon: Lucide.Layers, desc: 'رهبری چابک با متد اسکرام' }
+  ].map((item) => html`
               <div key=${item.label} className="bg-white p-7 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all text-center">
                 <div className="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-5">
                   <${item.icon} size=${28} />
@@ -280,7 +278,7 @@ const Skills = () => html`
 
 const RolesSection = () => html`
   <section id="roles" className="relative py-32 reveal parallax bg-slate-900" 
-           style=${{ backgroundImage: 'url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000")', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(15, 23, 42, 0.92)' }}>
+           style=${{ backgroundImage: 'url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000")', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(15, 23, 42, 0.92)' }}>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-black text-white mb-6">نقش‌ها و مسئولیت‌های کلیدی</h2>
@@ -300,47 +298,49 @@ const RolesSection = () => html`
 const Portfolio = () => html`
   <section id="portfolio" className="py-24 bg-white reveal">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <!-- Clients column -->
-        <div className="lg:col-span-4">
+      <!-- Top Row: Clients (Right) and Startups (Left) -->
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <!-- Right Side: Clients -->
+        <div>
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 bg-indigo-100 rounded-2xl text-indigo-600"><${Lucide.Briefcase} size=${24} /></div>
+            <div className="p-3 bg-indigo-100 rounded-2xl text-indigo-600"><${Lucide.Briefcase} size=${28} /></div>
             <h2 className="text-2xl font-black text-slate-900">مشتریان منتخب</h2>
           </div>
-          <div className="grid gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             ${CLIENTS.map((c) => html`<div key=${c} className="bg-slate-50 p-5 rounded-2xl border border-slate-100 font-black text-slate-700 hover:bg-white hover:shadow-md transition-all">${c}</div>`)}
           </div>
         </div>
         
-        <!-- Center column: Startups -->
-        <div className="lg:col-span-4">
+        <!-- Left Side: Startups -->
+        <div>
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 bg-purple-100 rounded-2xl text-purple-600"><${Lucide.Rocket} size=${24} /></div>
+            <div className="p-3 bg-purple-100 rounded-2xl text-purple-600"><${Lucide.Rocket} size=${28} /></div>
             <h2 className="text-2xl font-black text-slate-900">استارتاپ‌ها</h2>
           </div>
-          <div className="grid gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             ${STARTUPS.map((s) => html`
-              <div key=${s} className="bg-gradient-to-br from-indigo-600 to-purple-700 p-10 rounded-[2.5rem] text-center text-white shadow-xl hover:scale-[1.02] transition-transform">
+              <div key=${s} className="bg-gradient-to-br from-indigo-600 to-purple-800 p-8 rounded-[2.5rem] text-center text-white shadow-xl hover:scale-[1.03] transition-all">
                 <span className="text-3xl font-black tracking-widest">${s}</span>
-                <p className="text-xs opacity-80 mt-2 font-bold uppercase">Ventures & Products</p>
+                <p className="text-xs opacity-75 mt-2 font-bold uppercase tracking-widest">Co-Founder & Growth</p>
               </div>
             `)}
           </div>
         </div>
+      </div>
 
-        <!-- Partners column -->
-        <div className="lg:col-span-4">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 bg-blue-100 rounded-2xl text-blue-600"><${Lucide.Users} size=${24} /></div>
-            <h2 className="text-2xl font-black text-slate-900">همکاران تجاری</h2>
-          </div>
-          <div className="grid gap-4">
-            ${PARTNERS.map((p) => html`
-              <div key=${p} className="bg-slate-50 p-5 rounded-2xl flex items-center gap-4 font-black text-slate-700 border border-transparent hover:border-indigo-100 transition-all">
-                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div> ${p}
-              </div>
-            `)}
-          </div>
+      <!-- Bottom Row: Partners (Full Width) -->
+      <div className="mt-16 border-t border-slate-100 pt-16">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="p-3 bg-blue-100 rounded-2xl text-blue-600"><${Lucide.Users} size=${28} /></div>
+          <h2 className="text-2xl font-black text-slate-900">همکاران تجاری و استراتژیک</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          ${PARTNERS.map((p) => html`
+            <div key=${p} className="bg-slate-50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 font-black text-slate-700 border border-transparent hover:border-indigo-200 hover:bg-white hover:shadow-lg transition-all text-center">
+              <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
+              <span className="text-sm">${p}</span>
+            </div>
+          `)}
         </div>
       </div>
     </div>
@@ -385,15 +385,15 @@ const Extra = () => html`
 const Goals = () => html`
   <section id="goals" className="py-24 bg-white reveal">
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="bg-gradient-to-br from-indigo-600 to-purple-800 rounded-[4rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
-        <h2 className="text-4xl md:text-5xl font-black mb-12">چشم‌انداز همکاری‌های آتی</h2>
+      <div className="bg-gradient-to-br from-indigo-600 to-purple-900 rounded-[4rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
+        <h2 className="text-4xl md:text-5xl font-black mb-12 tracking-tight">چشم‌انداز همکاری‌های آتی</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-right mb-16">
           ${[
-            "افزایش سهم بازار با استراتژی‌های مدرن",
-            "بهینه‌سازی نرخ تبدیل و سفر مشتری",
-            "اجرای کمپین‌های داده‌محور و ROI-Positive",
-            "هدایت تیم‌های نوپا در مسیر محصول و رشد"
-          ].map((goal) => html`
+    "افزایش سهم بازار با استراتژی‌های مدرن",
+    "بهینه‌سازی نرخ تبدیل و سفر مشتری",
+    "اجرای کمپین‌های داده‌محور و ROI-Positive",
+    "هدایت تیم‌های نوپا در مسیر محصول و رشد"
+  ].map((goal) => html`
             <div key=${goal} className="bg-white/10 backdrop-blur-md p-6 rounded-3xl flex items-center gap-4 border border-white/10">
               <${Lucide.ChevronLeft} size=${24} className="text-indigo-200" />
               <span className="font-bold text-lg">${goal}</span>
@@ -403,7 +403,7 @@ const Goals = () => html`
         <p className="text-indigo-100 text-xl font-bold mb-14 max-w-2xl mx-auto leading-relaxed">
            من به دنبال پروژه‌هایی هستم که در آن تکنولوژی و دیجیتال مارکتینگ برای خلق ارزش واقعی با هم ترکیب شوند.
         </p>
-        <a href="https://wa.me/989141189645" target="_blank" className="inline-flex items-center gap-4 bg-white text-indigo-700 px-14 py-6 rounded-full font-black text-2xl shadow-xl hover:bg-indigo-50 hover:scale-105 active:scale-95 transition-all">
+        <a href="https://wa.me/989141189645" target="_blank" className="inline-flex items-center gap-4 bg-white text-indigo-800 px-14 py-6 rounded-full font-black text-2xl shadow-xl hover:bg-indigo-50 hover:scale-105 active:scale-95 transition-all">
           <${Lucide.MessageCircle} size=${32} />
           ارتباط مستقیم در واتساپ
         </a>
@@ -439,7 +439,7 @@ const App = () => {
     }, { threshold: 0.05 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    
+
     return () => observer.disconnect();
   }, []);
 
