@@ -88,8 +88,7 @@ const SKILL_CATEGORIES = [
 ];
 
 const CLIENTS = ["طب آفرین", "نیکان مهر", "تیراژه چاپ تبریز", "ماشین سازی آقایاری", "مرکز رشد دانشگاه آزاد", "دانشگاه شهید مدنی", "دانشگاه علوم پزشکی تبریز", "پاکت نیما"];
-const STARTUPS = ["اکیپ", "کالیبری"];
-const PARTNERS = ["آرکا وب", "تصمیم یاران ایرانیان", "تبلیغاتی خاک", "داده پردازی آذرمهر", "گروه فناوری راهبرد"];
+const PARTNERS = ["آرکا وب", "تصمیم یاران ایرانیان", "تبلیغاتی خاک", "داده پردازی آذرمهر", "گروه فناوری راهبرد", "هوشمند افزار نوین راهبرد"];
 
 const EDUCATION = [
   { degree: 'کارشناسی ارشد (در حال تحصیل)', major: 'مدیریت کارآفرینی', university: 'دانشگاه تهران (مجازی)', years: '۱۴۰۴ —' },
@@ -199,7 +198,7 @@ const About = () => html`
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div className="lg:col-span-5 relative">
           <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl bg-slate-900">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200" className="object-cover w-full h-full opacity-60 mix-blend-screen" />
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" className="object-cover w-full h-full opacity-70 mix-blend-screen" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
           </div>
           <div className="absolute -bottom-8 -left-8 bg-indigo-600 text-white p-10 rounded-[2rem] shadow-2xl hidden md:block">
@@ -210,13 +209,12 @@ const About = () => html`
         <div className="lg:col-span-7">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-indigo-600 rounded-full"></div>
-            <span className="text-indigo-600 font-black text-sm uppercase tracking-widest">Profile Analysis</span>
+            <span className="text-indigo-600 font-black text-sm uppercase tracking-widest">About My Strategy</span>
           </div>
           <h2 className="text-4xl font-black mb-8 text-slate-900 leading-tight">درباره تخصص، نگاه استراتژیک و مسیر حرفه‌ای من</h2>
           <div className="space-y-6 text-slate-700 leading-relaxed text-lg text-justify font-medium">
             <p>من <strong>صمد المکچی</strong> هستم، استراتژیست رشد و معمار سیستم‌های مارکتینگ‌تک با بیش از ۲۰ سال سابقه فعالیت مستمر در اکوسیستم فناوری ایران. تخصص من در نقطه تلاقی بازاریابی دیجیتال، مدیریت محصول و مهندسی نرم‌افزار قرار دارد. در طول دو دهه فعالیت، تمرکز اصلی من همواره بر تبدیل داده‌های خام به تصمیمات استراتژیک و سودآور برای کسب‌وکارها بوده است.</p>
             <p>من به رویکرد <strong>«مهندسی رشد»</strong> معتقدم؛ رویکردی که در آن از ابزارهای فنی نه فقط برای نگهداری سیستم، بلکه برای شتاب‌دهی به فروش و بهبود تجربه مشتری استفاده می‌شود. از طراحی معماری‌های پیچیده بک‌ند و دواپس گرفته تا پیاده‌سازی قیف‌های فروش هوشمند و تحلیل رفتار کاربران با استفاده از هوش مصنوعی، هدف من خلق یک اکوسیستم یکپارچه برای رشد است.</p>
-            <p>سابقه من در نقش‌هایی نظیر مالک محصول (Product Owner) و اسکرام مستر به من آموخته است که چگونه تیم‌های فنی و مارکتینگ را برای رسیدن به اهداف مشترک همسو کنم. من معتقدم که موفقیت یک محصول دیجیتال در گرو تعادل میان پایداری فنی و انعطاف‌پذیری در بازاریابی است. چشم‌انداز من استفاده از آخرین دستاوردهای دنیای Web3، بلاکچین و هوش مصنوعی مولد برای بازتعریف استانداردهای صنعت MarTech و کمک به استارتاپ‌ها برای عبور از چالش‌های مقیاس‌پذیری است. من به یادگیری مداوم، مستندسازی حرفه‌ای و اشتراک دانش در تیم‌های چابک متعهدم.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
@@ -298,10 +296,9 @@ const RolesSection = () => html`
 const Portfolio = () => html`
   <section id="portfolio" className="py-24 bg-white reveal">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Top Row: Clients (Right) and Startups (Left) -->
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-        <!-- Right Side: Clients -->
-        <div>
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Right Side: Clients (Occupies 5 cols) -->
+        <div className="lg:col-span-5">
           <div className="flex items-center gap-3 mb-8">
             <div className="p-3 bg-indigo-100 rounded-2xl text-indigo-600"><${Lucide.Briefcase} size=${28} /></div>
             <h2 className="text-2xl font-black text-slate-900">مشتریان منتخب</h2>
@@ -311,36 +308,20 @@ const Portfolio = () => html`
           </div>
         </div>
         
-        <!-- Left Side: Startups -->
-        <div>
+        <!-- Left Side: Partners (Occupies 7 cols) -->
+        <div className="lg:col-span-7">
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-3 bg-purple-100 rounded-2xl text-purple-600"><${Lucide.Rocket} size=${28} /></div>
-            <h2 className="text-2xl font-black text-slate-900">استارتاپ‌ها</h2>
+            <div className="p-3 bg-blue-100 rounded-2xl text-blue-600"><${Lucide.Users} size=${28} /></div>
+            <h2 className="text-2xl font-black text-slate-900">همکاران تجاری و استراتژیک</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            ${STARTUPS.map((s) => html`
-              <div key=${s} className="bg-gradient-to-br from-indigo-600 to-purple-800 p-8 rounded-[2.5rem] text-center text-white shadow-xl hover:scale-[1.03] transition-all">
-                <span className="text-3xl font-black tracking-widest">${s}</span>
-                <p className="text-xs opacity-75 mt-2 font-bold uppercase tracking-widest">Co-Founder & Growth</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            ${PARTNERS.map((p) => html`
+              <div key=${p} className="bg-slate-50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 font-black text-slate-700 border border-transparent hover:border-indigo-200 hover:bg-white hover:shadow-lg transition-all text-center h-full">
+                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                <span className="text-sm leading-tight">${p}</span>
               </div>
             `)}
           </div>
-        </div>
-      </div>
-
-      <!-- Bottom Row: Partners (Full Width) -->
-      <div className="mt-16 border-t border-slate-100 pt-16">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="p-3 bg-blue-100 rounded-2xl text-blue-600"><${Lucide.Users} size=${28} /></div>
-          <h2 className="text-2xl font-black text-slate-900">همکاران تجاری و استراتژیک</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          ${PARTNERS.map((p) => html`
-            <div key=${p} className="bg-slate-50 p-6 rounded-2xl flex flex-col items-center justify-center gap-3 font-black text-slate-700 border border-transparent hover:border-indigo-200 hover:bg-white hover:shadow-lg transition-all text-center">
-              <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-              <span className="text-sm">${p}</span>
-            </div>
-          `)}
         </div>
       </div>
     </div>
@@ -413,17 +394,17 @@ const Goals = () => html`
 `;
 
 const Footer = () => html`
-  <footer className="bg-slate-50 border-t py-24">
+  <footer className="bg-slate-50 border-t py-8">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p className="font-black gradient-text text-4xl mb-10 tracking-tighter">صمد المکچی</p>
-      <div className="flex justify-center gap-6 mb-16 flex-wrap">
+      <p className="font-black gradient-text text-xl mb-4 tracking-tighter">صمد المکچی</p>
+      <div className="flex justify-center gap-4 mb-6 flex-wrap">
         ${SOCIAL_LINKS.map(link => html`
-          <a key=${link.name} href=${link.url} target="_blank" title=${link.name} className="w-14 h-14 flex items-center justify-center rounded-2xl bg-white shadow-sm border border-slate-200 text-slate-500 hover:text-indigo-600 hover:border-indigo-600 hover:-translate-y-2 transition-all duration-300">
-            <${Lucide[link.icon]} size=${24} />
+          <a key=${link.name} href=${link.url} target="_blank" title=${link.name} className="w-10 h-10 flex items-center justify-center rounded-xl bg-white shadow-sm border border-slate-200 text-slate-500 hover:text-indigo-600 hover:border-indigo-600 hover:-translate-y-1 transition-all duration-300">
+            <${Lucide[link.icon]} size=${18} />
           </a>
         `)}
       </div>
-      <p className="text-slate-400 text-sm font-black tracking-widest uppercase">© ${new Date().getFullYear()} - Samad Elmakchi Personal Portfolio</p>
+      <p className="text-slate-400 text-[10px] font-black tracking-widest uppercase">© ${new Date().getFullYear()} - Samad Elmakchi Personal Portfolio</p>
     </div>
   </footer>
 `;
