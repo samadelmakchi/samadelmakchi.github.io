@@ -1,5 +1,5 @@
 {
-  "name": "samad-elmakchi-personal-portfolio",
+  "name": "copy-of-samad-elmakchi-personal-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "lucide-react": "^0.561.0"
+    "lucide-react": "^0.562.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

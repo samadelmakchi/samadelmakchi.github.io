@@ -12,73 +12,73 @@ const SOCIAL_LINKS = [
 
 const SKILL_CATEGORIES = [
   {
-    title: 'مدیریت چابک و مهارت‌های نرم',
-    icon: 'rocket',
-    items: [
-      { title: 'متدولوژی‌ها', description: 'Scrum, Kanban, Agile, Lean, Scrumban, SAFe' },
-      { title: 'نقش‌ها', description: 'Scrum Master, Product Owner' },
-      { title: 'ابزارها', description: 'Jira, Confluence, Miro, Asana, Trello' },
-      { title: 'رهبری', description: 'Coaching, Mentoring, مدیریت تعارض' }
-    ]
-  },
-  {
     title: 'بازاریابی دیجیتال و رشد',
-    icon: 'bar-chart-3',
+    icon: 'trending-up',
     items: [
-      { title: 'استراتژی', description: 'SEO, Google Ads, Content Marketing' },
-      { title: 'تحلیل', description: 'Google Analytics, Hotjar, CRO' },
-      { title: 'گیمیفیکیشن', description: 'طراحی با فریم‌ورک Octalysis' },
-      { title: 'برندینگ', description: 'Storytelling و Brand Positioning' }
+      { title: 'استراتژی رشد', description: 'SEO, SEM, Google Ads, Content Strategy' },
+      { title: 'تحلیل و بهینه‌سازی', description: 'GA4, GTM, Hotjar, CRO, A/B Testing' },
+      { title: 'گیمیفیکیشن', description: 'طراحی با فریم‌ورک Octalysis برای وفادارسازی' },
+      { title: 'اتوماسیون', description: 'HubSpot, CRM Integration, Zapier' }
     ]
   },
   {
-    title: 'هوش مصنوعی و اتوماسیون',
+    title: 'مدیریت محصول و تیم',
+    icon: 'target',
+    items: [
+      { title: 'متدولوژی‌های چابک', description: 'Scrum, Kanban, Agile Marketing' },
+      { title: 'مدیریت پروژه', description: 'Jira, Confluence, Miro, Asana' },
+      { title: 'نقش‌ها', description: 'Scrum Master, Product Owner' },
+      { title: 'مهارت‌های نرم', description: 'رهبری تیم، حل تعارض، منتورینگ' }
+    ]
+  },
+  {
+    title: 'هوش مصنوعی (AI-Marketing)',
     icon: 'brain',
     items: [
-      { title: 'AI Agents', description: 'طراحی Agentها برای خودکارسازی تصمیم‌گیری' },
-      { title: 'n8n & Workflow', description: 'ساخت جریان‌های هوشمند و یکپارچه‌سازی' },
-      { title: 'AI Coding', description: 'تولید و تست خودکار کد' },
-      { title: 'Data Analysis', description: 'تحلیل داده‌ها با مدل‌های ML' }
+      { title: 'AI Agent Design', description: 'خودکارسازی تعامل و پشتیبانی هوشمند' },
+      { title: 'n8n Workflow', description: 'اتصال سرویس‌ها برای اتوماسیون مارکتینگ' },
+      { title: 'دیتاماینینگ', description: 'پیش‌بینی رفتار مشتری با مدل‌های ML' },
+      { title: 'AI Automation', description: 'بهینه‌سازی جریان تولید محتوا' }
     ]
   },
   {
-    title: 'دواپس و زیرساخت',
+    title: 'دواپس و زیرساخت MarTech',
     icon: 'shield',
     items: [
-      { title: 'Containerization', description: 'Docker / Compose' },
-      { title: 'Orchestration', description: 'Kubernetes (در حال یادگیری)' },
-      { title: 'CI/CD', description: 'GitHub Actions, Jenkins' },
-      { title: 'Networking', description: 'Traefik (Reverse Proxy, Load Balancing)' }
+      { title: 'کانتینرسازی', description: 'Docker / Compose برای استقرار سریع' },
+      { title: 'زیرساخت مقیاس‌پذیر', description: 'Kubernetes & CI/CD Pipelines' },
+      { title: 'مانیتورینگ', description: 'Prometheus, Grafana برای پایداری سرویس' },
+      { title: 'شبکه‌سازی', description: 'Traefik, Load Balancing' }
     ]
   },
   {
-    title: 'توسعه نرم‌افزار و معماری',
+    title: 'توسعه نرم‌افزار',
     icon: 'code',
     items: [
-      { title: 'Architecture', description: 'Microservices, Event-Driven, DDD' },
-      { title: 'Backend', description: 'Laravel (PHP), FastAPI (Python), Node.js' },
+      { title: 'Backend', description: 'Laravel (PHP), FastAPI (Python)' },
+      { title: 'Frontend', description: 'Vue.js, Nuxt, Tailwind CSS' },
       { title: 'Database', description: 'MySQL, PostgreSQL, MongoDB, Redis' },
-      { title: 'Frontend', description: 'Vue, Nuxt, Tailwind, Inertia.js' }
+      { title: 'API Design', description: 'RESTful, GraphQL Expert' }
     ]
   },
   {
-    title: 'سیستم‌های مالی و بلاکچین',
-    icon: 'globe-2',
+    title: 'بلاکچین و تحلیل مالی',
+    icon: 'bar-chart-3',
     items: [
-      { title: 'تحلیل مالی', description: 'Python (Pandas, NumPy, TA-Lib)' },
-      { title: 'MetaTrader', description: 'MQL4, MQL5 Indicator & Expert' },
-      { title: 'Blockchain', description: 'Solidity, DApp Architecture' }
+      { title: 'تحلیل داده مالی', description: 'Python (Pandas, NumPy, TA-Lib)' },
+      { title: 'الگوریتمیک تریدینگ', description: 'Pine Script, MQL4/5 Development' },
+      { title: 'Web3 & Blockchain', description: 'Solidity, Smart Contracts Architecture' }
     ]
   }
 ];
 
 const EXPERIENCES = [
-  { company: 'نیکان مهر پردازش افزا', role: 'DevOps Engineer', period: 'تیر ۱۴۰۲ – حالا', description: 'طراحی و پیاده‌سازی معماری میکروسرویس و مانیتورینگ سرویس‌ها' },
-  { company: 'استارتاپ اکیپ', role: 'Project Manager & Scrum Master', period: 'آبان ۱۳۹۸ – تیر ۱۴۰۲', description: 'مدیریت پروژه‌ها و هدایت تیم‌های چندتخصصی در فرآیندهای Agile' },
-  { company: 'نویان پردازش', role: 'Data Visualization Engineer', period: 'فروردین ۱۳۹۶ – آبان ۱۳۹۸', description: 'طراحی و توسعه داشبوردهای تحلیلی و تعاملی' },
-  { company: 'تصمیم یاران', role: 'Backend Developer', period: 'اردیبهشت ۱۳۹۲ – اسفند ۱۳۹۶', description: 'توسعه APIهای مقیاس‌پذیر با PHP و Python' },
-  { company: 'گروه فناوری راهبرد', role: 'Web Developer', period: 'تیر ۱۳۸۷ – اردیبهشت ۱۳۹۲', description: 'طراحی و توسعه سیستم‌ها و برنامه‌های وب' },
-  { company: 'فریلنسر', role: 'Web Developer', period: 'مهر ۱۳۸۴ – تیر ۱۳۸۷', description: 'پروژه‌های مستقل طراحی و توسعه وب' }
+  { company: 'نیکان مهر پردازش افزا', role: 'MarTech Infrastructure Lead', period: 'تیر ۱۴۰۲ – حالا', description: 'مدیریت زیرساخت‌های مقیاس‌پذیر برای پلتفرم‌های تحلیل داده و مارکتینگ.' },
+  { company: 'استارتاپ اکیپ', role: 'Growth Strategist & Scrum Master', period: 'آبان ۱۳۹۸ – تیر ۱۴۰۲', description: 'طراحی استراتژی‌های رشد و مدیریت فرآیندهای چابک در توسعه محصول.' },
+  { company: 'نویان پردازش', role: 'Data Visualization Specialist', period: 'فروردین ۱۳۹۶ – آبان ۱۳۹۸', description: 'بصری‌سازی داده‌های رفتار کاربر برای بهینه‌سازی نرخ تبدیل.' },
+  { company: 'تصمیم یاران', role: 'Senior Developer', period: 'اردیبهشت ۱۳۹۲ – اسفند ۱۳۹۶', description: 'توسعه سیستم‌های بک‌اند برای ابزارهای تحلیل بازار.' },
+  { company: 'گروه فناوری راهبرد', role: 'Web Developer', period: 'تیر ۱۳۸۷ – اردیبهشت ۱۳۹۲', description: 'طراحی و توسعه پورتال‌های وب با تمرکز بر جذب مخاطب.' },
+  { company: 'فریلنسر', role: 'Web Solutions Specialist', period: 'مهر ۱۳۸۴ – تیر ۱۳۸۷', description: 'اجرای پروژه‌های آنلاین برای کسب‌وکارهای نوپا.' }
 ];
 
 const EDUCATION = [
@@ -96,7 +96,7 @@ const LANGUAGES = [
 const TRAITS = [
   "آرام، منظم، پرانرژی",
   "همکاری‌محور و متمرکز بر یادگیری جمعی",
-  "علاقه‌مند به مستندسازی حرفه‌ای",
-  "تفکر سیستم‌محور (کد + فرآیند + کسب‌وکار)",
+  "علاقه‌مند به مستندسازی حرفه‌ای استراتژی‌ها",
+  "تفکر سیستم‌محور (مارکتینگ + تکنولوژی)",
   "حل مسئله با رویکرد داده‌محور و خلاق"
 ];

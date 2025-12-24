@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { 
-  Menu, X, Github, Linkedin, Instagram, Mail, Twitter, 
-  MessageCircle, Send, Facebook, ChevronDown, Rocket, 
-  Code, Shield, Brain, BarChart3, Users, Briefcase, GraduationCap,
-  Globe2, Lightbulb, CheckCircle2, ChevronLeft, Link
+  Menu, X, Linkedin, Instagram, Mail, Twitter, 
+  MessageCircle, Send, Facebook, ChevronDown, 
+  Code, Shield, Brain, BarChart3, Briefcase, GraduationCap,
+  Globe2, Lightbulb, CheckCircle2, ChevronLeft, Link, TrendingUp, Target, MousePointer2,
+  Users, Rocket, Handshake, Award
 } from 'lucide-react';
-import { SOCIAL_LINKS, SKILL_CATEGORIES, EXPERIENCES, EDUCATION, LANGUAGES } from './constants';
+import { SOCIAL_LINKS, SKILL_CATEGORIES, EDUCATION, LANGUAGES, ROLES, CLIENTS, STARTUPS, PARTNERS } from './constants';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +21,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'درباره من', href: '#about' },
-    { name: 'مهارت‌ها', href: '#skills' },
-    { name: 'تجربیات', href: '#experience' },
-    { name: 'تحصیلات', href: '#education' },
+    { name: 'نقش‌ها', href: '#roles' },
+    { name: 'تخصص‌ها', href: '#skills' },
+    { name: 'پروژه‌ها و همکاران', href: '#portfolio' },
     { name: 'تماس', href: '#contact' },
   ];
 
@@ -49,7 +50,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden glass border-t border-slate-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -74,9 +74,8 @@ const Hero = () => {
       case 'send': return <Send size={20} />;
       case 'twitter': return <Twitter size={20} />;
       case 'facebook': return <Facebook size={20} />;
-      case 'github': return <Github size={20} />;
+      case 'github': return <Link size={20} />;
       case 'mail': return <Mail size={20} />;
-      // Added Link to imports to satisfy the default case
       default: return <Link size={20} />;
     }
   };
@@ -95,7 +94,7 @@ const Hero = () => {
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-4 tracking-tight">صمد المکچی</h1>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mb-8 leading-relaxed font-medium">
-            استراتژیست بازاریابی دیجیتال | مدیر محصول چابک | توسعه‌دهنده فول‌استک | معمار سیستم
+            استراتژیست رشد و معمار مارکتینگ‌تک | متخصص تحول دیجیتال
           </p>
           
           <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -129,30 +128,29 @@ const About = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 relative">
-          <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
-            <img src="https://picsum.photos/seed/tech/800/800" alt="Work background" className="object-cover w-full h-full" />
+          <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-indigo-100">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Digital Marketing Strategy" className="object-cover w-full h-full mix-blend-multiply opacity-90" />
           </div>
-          <div className="absolute -bottom-6 -left-6 bg-indigo-600 text-white p-8 rounded-3xl shadow-xl hidden md:block">
-            <p className="text-4xl font-black">+۲۰</p>
-            <p className="text-sm">سال تجربه حرفه‌ای</p>
+          <div className="absolute -bottom-6 -left-6 bg-indigo-600 text-white p-8 rounded-3xl shadow-xl hidden md:block text-center">
+            <p className="text-2xl font-bold">Data Driven</p>
+            <p className="text-xs opacity-80 uppercase tracking-widest mt-1">Growth Engineering</p>
           </div>
         </div>
         <div className="lg:col-span-7">
           <h2 className="text-3xl font-black mb-6 text-slate-900 flex items-center gap-3">
-            <Users className="text-indigo-600" />
-            درباره من
+            <Target className="text-indigo-600" />
+            درباره تخصص و استراتژی من
           </h2>
-          <div className="space-y-4 text-slate-600 leading-relaxed text-lg">
-            <p>سلام 👋 من <strong>صمد المکچی</strong> هستم.</p>
-            <p>من <strong>مهندس نرم‌افزار</strong> و <strong>معمار سیستم</strong> با بیش از بیست سال تجربه حرفه‌ای در طراحی، توسعه و مقیاس‌پذیری سیستم‌های تحت وب و معماری‌های میکروسرویس هستم.</p>
-            <p>تلفیقی از دانش فنی عمیق در حوزه‌های DevOps، بک‌اند، فرانت‌اند، تست و مستندسازی و درک راهبردی از رشد کسب‌وکار، بازاریابی دیجیتال، استراتژی فروش، تحلیل داده و گیمیفیکیشن دارم که امکان ایجاد پل میان فناوری و اهداف تجاری را فراهم می‌کند.</p>
-            <p>تمرکز من بر خلق محصولاتی با معماری قدرتمند و عملکرد پایدار است که بتوانند تجربه‌ای متمایز برای کاربر ارائه داده و به رشد واقعی و پایدار سازمان‌ها منجر شوند. رویکرد من بر تفکر سیستمی، تحلیل داده‌محور و اصول مدیریت چابک استوار است.</p>
+          <div className="space-y-4 text-slate-600 leading-relaxed text-lg text-justify">
+            <p>من <strong>صمد المکچی</strong>، متخصص و استراتژیست بازاریابی دیجیتال با بیش از دو دهه تجربه در قلب دنیای فناوری هستم. نگاه من به مارکتینگ، فراتر از تبلیغات صرف است؛ من به <strong>«مهندسی رشد»</strong> معتقدم. جایی که تحلیل دقیق داده‌ها، درک عمیق روانشناسی مشتری و زیرساخت‌های فنی پیشرفته (MarTech) با هم تلاقی می‌کنند تا یک سیستم بازاریابی هوشمند و مقیاس‌پذیر خلق شود.</p>
+            <p>تخصص من در طراحی <strong>استراتژی‌های جامع دیجیتال</strong>، از بهینه‌سازی موتورهای جستجو (SEO) و مدیریت کمپین‌های تبلیغاتی تا تحلیل پیشرفته رفتار کاربر و افزایش نرخ تبدیل (CRO) متمرکز است. من به کسب‌وکارها کمک می‌کنم تا با استفاده از هوش مصنوعی و اتوماسیون، نه تنها دیده شوند، بلکه وفاداری مشتری را به یک دارایی پایدار تبدیل کنند.</p>
+            <p>تجربه من در نقش‌هایی چون مالک محصول و معمار سیستم، به من این توانایی را داده است که شکاف میان تیم‌های مارکتینگ و فنی را پر کرده و با پیاده‌سازی شاخص‌های کلیدی عملکرد (KPIs)، مسیر رشد را شفاف و قابل اندازه‌گیری نمایم.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
             {[
-              { label: 'تفکر سیستمی', icon: Brain },
-              { label: 'مدیریت چابک', icon: Rocket },
-              { label: 'تحلیل داده‌محور', icon: BarChart3 }
+              { label: 'بهینه‌سازی تبدیل', icon: MousePointer2 },
+              { label: 'مارکتینگ‌تک', icon: Briefcase },
+              { label: 'تحلیل داده', icon: BarChart3 }
             ].map((item, idx) => (
               <div key={idx} className="flex flex-col items-center p-4 rounded-2xl bg-slate-50 border border-slate-100">
                 <item.icon className="text-indigo-600 mb-2" size={24} />
@@ -166,31 +164,49 @@ const About = () => (
   </section>
 );
 
+const RolesSection = () => (
+  <section id="roles" className="py-20 bg-slate-50">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-black text-slate-900 mb-4">نقش‌ها و مسئولیت‌ها</h2>
+        <p className="text-slate-500">تخصص‌های متنوعی که در طول سال‌ها تجربه در پروژه‌های بزرگ ایفا کرده‌ام.</p>
+      </div>
+      <div className="flex flex-wrap justify-center gap-4">
+        {ROLES.map((role, idx) => (
+          <div key={idx} className="bg-white px-6 py-3 rounded-2xl shadow-sm border border-slate-200 text-slate-700 font-bold hover:border-indigo-500 hover:text-indigo-600 transition-all cursor-default">
+            {role}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 const Skills = () => {
   const getCategoryIcon = (index: number) => {
     switch (index) {
-      case 0: return <Rocket size={24} className="text-indigo-500" />;
-      case 1: return <BarChart3 size={24} className="text-pink-500" />;
-      case 2: return <Brain size={24} className="text-purple-500" />;
-      case 3: return <Shield size={24} className="text-blue-500" />;
-      case 4: return <Code size={24} className="text-green-500" />;
-      case 5: return <Globe2 size={24} className="text-orange-500" />;
-      default: return <Code size={24} className="text-slate-500" />;
+      case 0: return <TrendingUp size={24} className="text-indigo-500" />;
+      case 1: return <Shield size={24} className="text-blue-500" />;
+      case 2: return <Briefcase size={24} className="text-pink-500" />;
+      case 3: return <Code size={24} className="text-green-500" />;
+      case 4: return <BarChart3 size={24} className="text-orange-500" />;
+      case 5: return <Users size={24} className="text-purple-500" />;
+      default: return <Lightbulb size={24} className="text-slate-500" />;
     }
   };
 
   return (
-    <section id="skills" className="py-20 bg-slate-50">
+    <section id="skills" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-black text-slate-900 mb-4">مهارت‌های تخصصی</h2>
-          <p className="text-slate-500 max-w-2xl mx-auto">مجموعه‌ای از توانمندی‌های فنی و مدیریتی که در طول دو دهه فعالیت حرفه‌ای کسب شده است.</p>
+          <p className="text-slate-500 max-w-2xl mx-auto">مجموعه ابزارها و دانش فنی من برای خلق ارزش در پروژه‌های دیجیتال.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {SKILL_CATEGORIES.map((cat, idx) => (
-            <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:border-indigo-100 transition-all group">
+            <div key={idx} className="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl hover:border-indigo-100 transition-all group">
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-slate-50 rounded-2xl group-hover:bg-indigo-50 transition-colors">
+                <div className="p-3 bg-white rounded-2xl group-hover:bg-indigo-50 transition-colors">
                   {getCategoryIcon(idx)}
                 </div>
                 <h3 className="font-black text-xl text-slate-800">{cat.title}</h3>
@@ -201,7 +217,7 @@ const Skills = () => {
                     <CheckCircle2 size={18} className="text-indigo-500 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-bold text-slate-800 text-sm">{skill.title}</p>
-                      <p className="text-slate-500 text-xs mt-0.5 leading-relaxed">{skill.description}</p>
+                      {skill.description && <p className="text-slate-500 text-xs mt-0.5 leading-relaxed">{skill.description}</p>}
                     </div>
                   </li>
                 ))}
@@ -214,34 +230,60 @@ const Skills = () => {
   );
 };
 
-const Experience = () => (
-  <section id="experience" className="py-20 bg-white overflow-hidden">
+const PortfolioSection = () => (
+  <section id="portfolio" className="py-20 bg-slate-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl font-black text-slate-900 mb-4 flex items-center justify-center gap-3">
-          <Briefcase className="text-indigo-600" /> سوابق کاری
-        </h2>
-      </div>
-      <div className="relative">
-        <div className="absolute top-0 right-8 bottom-0 w-0.5 bg-slate-100 hidden md:block"></div>
-        <div className="space-y-12">
-          {EXPERIENCES.map((exp, idx) => (
-            <div key={idx} className="relative md:pr-16 group">
-              <div className="absolute -right-2 top-0 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white shadow-sm z-10 hidden md:block"></div>
-              <div className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-transparent group-hover:border-indigo-200 transition-all">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
-                  <div>
-                    <h3 className="text-xl font-black text-slate-900">{exp.role}</h3>
-                    <p className="text-indigo-600 font-bold">{exp.company}</p>
-                  </div>
-                  <div className="bg-white px-4 py-1.5 rounded-full border border-slate-200 text-sm font-medium text-slate-500">
-                    {exp.period}
-                  </div>
-                </div>
-                <p className="text-slate-600 leading-relaxed">{exp.description}</p>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        {/* Clients */}
+        <div className="lg:col-span-1">
+          <div className="flex items-center gap-3 mb-8">
+            <Award className="text-indigo-600" size={28} />
+            <h2 className="text-2xl font-black text-slate-900">تعدادی از مشتریان</h2>
+          </div>
+          <div className="grid grid-cols-1 gap-3">
+            {CLIENTS.map((client, idx) => (
+              <div key={idx} className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 text-slate-700 text-sm font-medium flex items-center gap-2">
+                <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full"></div>
+                {client}
               </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Startups & Partners */}
+        <div className="lg:col-span-2 space-y-12">
+          {/* Startups */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <Rocket className="text-orange-500" size={28} />
+              <h2 className="text-2xl font-black text-slate-900">استارتاپ‌ها</h2>
             </div>
-          ))}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {STARTUPS.map((startup, idx) => (
+                <div key={idx} className="bg-white p-6 rounded-3xl shadow-md border border-slate-100 text-center font-black text-lg text-slate-800">
+                  {startup}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Partners */}
+          <div>
+            <div className="flex items-center gap-3 mb-8">
+              <Handshake className="text-green-600" size={28} />
+              <h2 className="text-2xl font-black text-slate-900">همکاران</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {PARTNERS.map((partner, idx) => (
+                <div key={idx} className="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 text-slate-700 font-bold flex items-center gap-3">
+                  <div className="p-2 bg-indigo-50 rounded-lg">
+                    <Users size={18} className="text-indigo-600" />
+                  </div>
+                  {partner}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -252,7 +294,6 @@ const ExtraInfo = () => (
   <section id="education" className="py-20 bg-slate-900 text-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        {/* Education */}
         <div>
           <h2 className="text-2xl font-black mb-10 flex items-center gap-3">
             <GraduationCap className="text-indigo-400" /> تحصیلات
@@ -271,7 +312,6 @@ const ExtraInfo = () => (
           </div>
         </div>
 
-        {/* Languages & Traits */}
         <div>
           <h2 className="text-2xl font-black mb-10 flex items-center gap-3">
             <Globe2 className="text-indigo-400" /> زبان‌ها و ویژگی‌ها
@@ -288,8 +328,8 @@ const ExtraInfo = () => (
             {[
               "آرام، منظم، پرانرژی",
               "همکاری‌محور و متمرکز بر یادگیری جمعی",
-              "علاقه‌مند به مستندسازی حرفه‌ای",
-              "تفکر سیستم‌محور (کد + فرآیند + کسب‌وکار)",
+              "علاقه‌مند به مستندسازی استراتژی‌ها",
+              "تفکر سیستم‌محور (مارکتینگ + تکنولوژی)",
               "حل مسئله با رویکرد داده‌محور و خلاق"
             ].map((trait, idx) => (
               <div key={idx} className="flex items-center gap-3 text-slate-300 text-sm">
@@ -310,13 +350,13 @@ const Goals = () => (
       <div className="bg-indigo-600 rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden">
         <div className="relative z-10">
           <Lightbulb className="text-indigo-200 mx-auto mb-6" size={48} />
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-8">به دنبال چه هستم؟</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-8">چشم‌انداز همکاری</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-right">
             {[
-              "ساخت سیستم‌های فنی قوی و مقیاس‌پذیر",
-              "طراحی تجربه کاربری عالی",
-              "اجرای استراتژی‌های رشد هوشمند",
-              "رهبری تیم‌های چابک و هم‌افزا"
+              "افزایش سهم بازار با استراتژی‌های مدرن",
+              "بهینه‌سازی نرخ تبدیل و سفر مشتری",
+              "اجرای کمپین‌های داده‌محور و ROI-Positive",
+              "هدایت تیم‌های نوپا در مسیر محصول و رشد"
             ].map((goal, idx) => (
               <div key={idx} className="flex items-center gap-4 bg-white/10 p-4 rounded-2xl text-white font-medium">
                 <ChevronLeft size={20} className="text-indigo-200" />
@@ -325,18 +365,17 @@ const Goals = () => (
             ))}
           </div>
           <p className="mt-12 text-indigo-100 text-lg md:text-xl font-medium max-w-2xl mx-auto">
-            اگر تیم شما به کسی نیاز دارد که هم کد بزند، هم فرآیند بسازد، هم بازار را بشناسد و هم تیم را متحد کند — من همین‌جام.
+            من به دنبال پروژه‌هایی هستم که در آن تکنولوژی و دیجیتال مارکتینگ برای خلق ارزش واقعی با هم ترکیب شوند.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
              <a href="mailto:samad.elmakchi@gmail.com" className="bg-white text-indigo-600 px-8 py-3 rounded-full font-black hover:bg-indigo-50 transition-colors shadow-lg">
-               شروع همکاری
+               درخواست مشاوره رشد
              </a>
              <a href="https://t.me/samadelmakchi" target="_blank" className="bg-indigo-500 text-white px-8 py-3 rounded-full font-black border border-indigo-400 hover:bg-indigo-400 transition-colors">
                گفتگو در تلگرام
              </a>
           </div>
         </div>
-        {/* Background shapes */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -ml-32 -mb-32"></div>
       </div>
@@ -345,10 +384,10 @@ const Goals = () => (
 );
 
 const Footer = () => (
-  <footer className="bg-slate-50 border-t border-slate-100 py-12">
+  <footer id="contact" className="bg-slate-50 border-t border-slate-100 py-12">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <span className="text-xl font-black tracking-tighter gradient-text block mb-4">صمد المکچی</span>
-      <p className="text-slate-400 text-sm mb-8">© {new Date().getFullYear()} - تمامی حقوق محفوظ است.</p>
+      <p className="text-slate-400 text-sm mb-8">© {new Date().getFullYear()} - استراتژیست رشد و تحول دیجیتال</p>
       <div className="flex justify-center gap-4">
         {SOCIAL_LINKS.slice(0, 4).map((link) => (
           <a key={link.name} href={link.url} className="text-slate-400 hover:text-indigo-600 transition-colors">
@@ -362,12 +401,13 @@ const Footer = () => (
 
 const App = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen text-right" dir="rtl">
       <Navbar />
       <Hero />
       <About />
+      <RolesSection />
       <Skills />
-      <Experience />
+      <PortfolioSection />
       <ExtraInfo />
       <Goals />
       <Footer />
