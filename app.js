@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'https://esm.sh/react@19.2.3';
+import React, { useState, useEffect, useRef } from 'https://esm.sh/react@19.2.3';
 import ReactDOM from 'https://esm.sh/react-dom@19.2.3/client';
 import htm from 'https://esm.sh/htm';
 import * as Lucide from 'https://esm.sh/lucide-react@0.561.0';
@@ -27,14 +27,13 @@ const ROLES = [
 
 const SKILL_CATEGORIES = [
   {
-    title: 'دیجیتال مارکتینگ و محتوا',
+    title: 'دیجیتال مارکتینگ و رشد',
     items: [
       { title: 'استراتژی دیجیتال مارکتینگ', description: 'طراحی نقشه راه رشد و قیف‌های فروش' },
       { title: 'آنالیز رفتار کاربران', description: 'تحلیل داده‌محور مسیر مشتری و نرخ تبدیل' },
       { title: 'سئو (SEO)', description: 'بهینه‌سازی فنی و محتوایی برای موتورهای جستجو' },
       { title: 'طراحی کمپین‌های تبلیغاتی', description: 'مدیریت کمپین‌های چندکاناله و ROI-focused' },
-      { title: 'AI در مارکتینگ', description: 'بهره‌گیری از هوش مصنوعی در توسعه کسب‌وکار' },
-      { title: 'محتوا نویسی تخصصی', description: 'خلق محتوای استراتژیک و کپی‌رایتینگ' }
+      { title: 'AI در مارکتینگ', description: 'بهره‌گیری از هوش مصنوعی در توسعه کسب‌وکار' }
     ]
   },
   {
@@ -47,15 +46,6 @@ const SKILL_CATEGORIES = [
     ]
   },
   {
-    title: 'پلتفرم‌ها و تجارت الکترونیک',
-    items: [
-      { title: 'مارکت‌پلیس‌ها (Marketplaces)', description: 'طراحی و مدیریت پلتفرم‌های چندفروشندگی' },
-      { title: 'تجارت الکترونیک (E-commerce)', description: 'راهکارهای نوین فروش آنلاین' },
-      { title: 'پلتفرم‌های اشتراکی', description: 'Subscription-based models' },
-      { title: 'سیستم‌های ERP', description: 'برنامه‌ریزی منابع سازمانی' }
-    ]
-  },
-  {
     title: 'فناوری‌های نوظهور',
     items: [
       { title: 'بلاکچین (Blockchain)', description: 'معماری غیرمتمرکز و قراردادهای هوشمند' },
@@ -63,45 +53,16 @@ const SKILL_CATEGORIES = [
       { title: 'بازارهای مالی', description: 'تحلیل و الگوریتم‌های معاملاتی' },
       { title: 'مارکتینگ‌تک و فین‌تک', description: 'MarTech & FinTech Solutions' }
     ]
-  },
-  {
-    title: 'مشاوره و تحلیل کسب‌وکار',
-    items: [
-      { title: 'مشاوره توسعه نرم‌افزار', description: 'هدایت تیم‌های فنی و معماری دیتابیس' },
-      { title: 'استراتژی و KPIها', description: 'تعیین شاخص‌های کلیدی عملکرد' },
-      { title: 'تحلیل داده و مشتری', description: 'الگوهای رفتار خرید و وفادارسازی' },
-      { title: 'مدل‌های تجارت الکترونیک', description: 'طراحی بیزنس مدل‌های مقیاس‌پذیر' }
-    ]
-  },
-  {
-    title: 'کارآفرینی و منتورینگ',
-    items: [
-      { title: 'منتور استارتاپ', description: 'هدایت تیم‌های نوپا در مسیر محصول' },
-      { title: 'برنامه‌ریزی کسب‌وکار', description: 'Business Planning & Pitching' },
-      { title: 'رهبری تیم‌های چابک', description: 'Agile Leadership & Mentorship' }
-    ]
   }
 ];
 
-const CLIENTS = [
-  "طب آفرین", "نیکان مهر", "تیراژه چاپ تبریز", "ماشین سازی آقایاری",
-  "مرکز رشد دانشگاه آزاد اسلامی تبریز", "دانشگاه شهید مدنی آذربایجان",
-  "دانشگاه علوم پزشکی تبریز", "پاکت نیما"
-];
-
+const CLIENTS = ["طب آفرین", "نیکان مهر", "تیراژه چاپ تبریز", "ماشین سازی آقایاری", "مرکز رشد دانشگاه آزاد", "دانشگاه شهید مدنی", "دانشگاه علوم پزشکی تبریز", "پاکت نیما"];
 const STARTUPS = ["اکیپ", "کالیبری"];
 const PARTNERS = ["آرکا وب", "تصمیم یاران ایرانیان", "تبلیغاتی خاک", "داده پردازی آذرمهر", "گروه فناوری راهبرد"];
 
 const EDUCATION = [
   { degree: 'کارشناسی ارشد (در حال تحصیل)', major: 'مدیریت کارآفرینی', university: 'دانشگاه تهران (مجازی)', years: '۱۴۰۴ —' },
   { degree: 'کارشناسی', major: 'مهندسی نرم‌افزار کامپیوتر', university: 'پیام نور', years: '۱۳۸۰ – ۱۳۸۴' }
-];
-
-const LANGUAGES = [
-  { name: 'آذری', level: 'زبان مادری' },
-  { name: 'فارسی', level: 'زبان مادری' },
-  { name: 'انگلیسی', level: 'Professional Work Proficiency' },
-  { name: 'ترکی استانبولی', level: 'متوسط' }
 ];
 
 // --- Components ---
@@ -120,7 +81,7 @@ const Navbar = () => {
     { name: 'درباره من', href: '#about' },
     { name: 'تخصص‌ها', href: '#skills' },
     { name: 'نقش‌ها', href: '#roles' },
-    { name: 'پروژه‌ها و همکاران', href: '#portfolio' },
+    { name: 'پروژه‌ها', href: '#portfolio' },
     { name: 'چشم‌انداز همکاری', href: '#goals' },
   ];
 
@@ -163,71 +124,69 @@ const Navbar = () => {
 };
 
 const Hero = () => html`
-  <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
+  <section className="relative pt-40 pb-24 overflow-hidden bg-white reveal">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
-      <div className="relative mb-8">
-        <div className="absolute inset-0 bg-indigo-200 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+      <div className="relative mb-10">
+        <div className="absolute inset-0 bg-indigo-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
         <img 
           src="https://avatars.githubusercontent.com/u/6169366?v=4" 
           alt="صمد المکچی" 
-          className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-2xl relative"
+          className="w-36 h-36 md:w-44 md:h-44 rounded-full border-[6px] border-white shadow-2xl relative object-cover"
         />
       </div>
-      <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-4 tracking-tight">صمد المکچی</h1>
-      <p className="text-lg md:text-xl text-slate-600 max-w-2xl mb-8 leading-relaxed font-medium">
+      <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tight">صمد المکچی</h1>
+      <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mb-10 leading-relaxed font-medium">
         استراتژیست رشد و معمار مارکتینگ‌تک | متخصص تحول دیجیتال
       </p>
       
-      <div className="flex flex-wrap justify-center gap-3 mb-12">
-        ${SOCIAL_LINKS.map((link) => html`
-          <a key=${link.name} href=${link.url} target="_blank" className=${`${link.color} text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-bold shadow-lg hover:scale-105 transition-transform`}>
-            <${Lucide[link.icon]} size=${20} />
+      <div className="flex flex-wrap justify-center gap-4 mb-14">
+        ${SOCIAL_LINKS.slice(0, 4).map((link) => html`
+          <a key=${link.name} href=${link.url} target="_blank" className=${`${link.color} text-white px-6 py-2.5 rounded-full flex items-center gap-2 text-sm font-bold shadow-lg hover:scale-105 transition-all`}>
+            <${Lucide[link.icon]} size=${18} />
             <span>${link.name}</span>
           </a>
         `)}
       </div>
       
-      <a href="#about" className="animate-bounce text-slate-400 hover:text-indigo-500">
-        <${Lucide.ChevronDown} size=${32} />
+      <a href="#about" className="animate-bounce text-slate-300 hover:text-indigo-500 transition-colors">
+        <${Lucide.ChevronDown} size=${40} />
       </a>
     </div>
   </section>
 `;
 
 const About = () => html`
-  <section id="about" className="py-20 bg-white">
+  <section id="about" className="py-24 bg-slate-50 reveal">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         <div className="lg:col-span-5 relative">
-          <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-indigo-100">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" className="object-cover w-full h-full mix-blend-multiply opacity-90" />
+          <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl bg-indigo-100">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" className="object-cover w-full h-full" />
           </div>
-          <div className="absolute -bottom-6 -left-6 bg-indigo-600 text-white p-8 rounded-3xl shadow-xl hidden md:block text-center">
-            <p className="text-2xl font-bold">Data Driven</p>
-            <p className="text-xs opacity-80 uppercase tracking-widest mt-1">Growth Engineering</p>
+          <div className="absolute -bottom-8 -left-8 bg-indigo-600 text-white p-8 rounded-3xl shadow-2xl hidden md:block">
+            <p className="text-3xl font-black">20+</p>
+            <p className="text-xs opacity-80 uppercase tracking-widest mt-1">سال تجربه در تکنولوژی</p>
           </div>
         </div>
         <div className="lg:col-span-7">
-          <h2 className="text-3xl font-black mb-6 text-slate-900 flex items-center gap-3">
-            <${Lucide.Target} className="text-indigo-600" /> درباره تخصص و استراتژی من
-          </h2>
-          <div className="space-y-4 text-slate-600 leading-relaxed text-lg text-justify">
-            <p>من <strong>صمد المکچی</strong>، استراتژیست بازاریابی دیجیتال با رویکرد <strong>مهندسی رشد</strong> هستم. تخصص من در نقطه تلاقی تحلیل داده، رفتارشناسی مشتری و فناوری‌های نوین (MarTech) قرار دارد.</p>
-            <p>هدف من تبدیل داده‌های خام به مسیرهای رشد سودآور و پایدار برای کسب‌وکارهاست.</p>
+          <h2 className="text-4xl font-black mb-8 text-slate-900">درباره تخصص و استراتژی من</h2>
+          <div className="space-y-6 text-slate-600 leading-relaxed text-lg text-justify">
+            <p>من <strong>صمد المکچی</strong>، متخصص و استراتژیست بازاریابی دیجیتال با بیش از دو دهه تجربه هستم. نگاه من به مارکتینگ، فراتر از تبلیغات است؛ من به <strong>«مهندسی رشد»</strong> معتقدم.</p>
+            <p>هدف من ترکیب داده‌های دقیق با ابزارهای پیشرفته برای خلق نتایج مقیاس‌پذیر در کسب‌وکارهای مدرن است.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             ${[
-              { label: 'بهینه‌سازی تبدیل', icon: Lucide.MousePointer2, desc: 'افزایش نرخ فروش' },
-              { label: 'مارکتینگ‌تک', icon: Lucide.Briefcase, desc: 'زیرساخت فنی بازاریابی' },
-              { label: 'تحلیل داده', icon: Lucide.BarChart3, desc: 'تصمیم‌گیری داده‌محور' }
+              { label: 'تفکر سیستمی', icon: Lucide.Cpu, desc: 'ادغام مارکتینگ و فنی' },
+              { label: 'رشد داده‌محور', icon: Lucide.BarChart3, desc: 'تحلیل دقیق مسیر رشد' },
+              { label: 'مدیریت محصول', icon: Lucide.Layers, desc: 'رهبری تیم‌های چابک' }
             ].map((item) => html`
-              <div key=${item.label} className="flex flex-col items-center p-6 rounded-3xl bg-slate-50 border border-slate-100 hover:border-indigo-200 hover:shadow-lg transition-all text-center">
-                <div className="p-3 bg-white rounded-2xl mb-4 shadow-sm">
-                  <${item.icon} className="text-indigo-600" size=${28} />
+              <div key=${item.label} className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow text-center">
+                <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <${item.icon} size=${24} />
                 </div>
-                <span className="text-base font-black text-slate-800">${item.label}</span>
-                <span className="text-xs text-slate-500 mt-2">${item.desc}</span>
+                <h4 className="font-black text-slate-800 mb-1">${item.label}</h4>
+                <p className="text-xs text-slate-500">${item.desc}</p>
               </div>
             `)}
           </div>
@@ -238,75 +197,85 @@ const About = () => html`
 `;
 
 const Skills = () => html`
-  <section id="skills" className="py-20 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-      <h2 className="text-3xl font-black text-slate-900 mb-4">مهارت‌های تخصصی</h2>
-      <p className="text-slate-500">مجموعه ابزارها و دانش فنی من برای خلق ارزش</p>
-    </div>
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      ${SKILL_CATEGORIES.map((cat) => html`
-        <div key=${cat.title} className="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition-all group">
-          <h3 className="font-black text-xl text-slate-800 mb-6 group-hover:text-indigo-600 transition-colors">${cat.title}</h3>
-          <ul className="space-y-4">
-            ${cat.items.map((s) => html`
-              <li key=${s.title} className="flex items-start gap-3">
-                <${Lucide.CheckCircle2} size=${18} className="text-indigo-500 mt-1 flex-shrink-0" />
-                <div className="text-right">
-                  <p className="font-bold text-slate-800 text-sm">${s.title}</p>
-                  <p className="text-slate-500 text-xs mt-0.5 leading-relaxed">${s.description}</p>
-                </div>
-              </li>
-            `)}
-          </ul>
-        </div>
-      `)}
+  <section id="skills" className="py-24 bg-white reveal">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-black text-slate-900 mb-4">مهارت‌های تخصصی</h2>
+        <div className="w-20 h-1.5 bg-indigo-600 mx-auto rounded-full"></div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        ${SKILL_CATEGORIES.map((cat) => html`
+          <div key=${cat.title} className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 group hover:bg-white hover:shadow-2xl transition-all duration-500">
+            <h3 className="font-black text-2xl text-slate-800 mb-8 group-hover:text-indigo-600 transition-colors">${cat.title}</h3>
+            <ul className="space-y-5">
+              ${cat.items.map((s) => html`
+                <li key=${s.title} className="flex items-start gap-4">
+                  <div className="p-1 bg-white rounded-lg shadow-sm group-hover:bg-indigo-50 transition-colors">
+                    <${Lucide.CheckCircle2} size=${18} className="text-indigo-500" />
+                  </div>
+                  <div className="text-right">
+                    <p className="font-bold text-slate-800 text-sm">${s.title}</p>
+                    <p className="text-slate-500 text-xs mt-1 leading-relaxed">${s.description}</p>
+                  </div>
+                </li>
+              `)}
+            </ul>
+          </div>
+        `)}
+      </div>
     </div>
   </section>
 `;
 
 const RolesSection = () => html`
-  <section id="roles" className="py-20 bg-slate-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
-      <h2 className="text-3xl font-black text-slate-900 mb-4">نقش‌ها و مسئولیت‌ها</h2>
-      <p className="text-slate-500">مسیر حرفه‌ای من تا به امروز در یک نگاه</p>
-    </div>
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-4">
-      ${ROLES.map((r) => html`
-        <div key=${r} className="bg-white px-6 py-3 rounded-2xl shadow-sm border border-slate-200 text-slate-700 font-bold hover:text-indigo-600 hover:border-indigo-200 transition-all cursor-default">
-          ${r}
-        </div>
-      `)}
+  <section id="roles" className="py-24 bg-slate-50 reveal">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-black text-slate-900 mb-4">نقش‌ها و مسئولیت‌ها</h2>
+        <p className="text-slate-500">مسیر حرفه‌ای من در یک نگاه</p>
+      </div>
+      <div className="flex flex-wrap justify-center gap-3">
+        ${ROLES.map((r) => html`
+          <div key=${r} className="bg-white px-6 py-3 rounded-2xl shadow-sm border border-slate-200 text-slate-700 font-bold hover:border-indigo-500 hover:text-indigo-600 transition-all cursor-default">
+            ${r}
+          </div>
+        `)}
+      </div>
     </div>
   </section>
 `;
 
 const Portfolio = () => html`
-  <section id="portfolio" className="py-20 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
-      <div>
-        <h2 className="text-2xl font-black mb-8">تعدادی از مشتریان</h2>
-        <div className="grid gap-3">
-          ${CLIENTS.map((c) => html`<div key=${c} className="bg-slate-50 p-4 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-sm transition-all">${c}</div>`)}
-        </div>
-      </div>
-      <div className="lg:col-span-2 space-y-12">
-        <div className="bg-indigo-900 p-8 rounded-[2.5rem] parallax relative overflow-hidden text-white" 
-             style=${{ backgroundImage: 'url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000")', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(30, 58, 138, 0.8)' }}>
-          <div className="relative z-10">
-            <h2 className="text-2xl font-black mb-6 flex items-center gap-2"><${Lucide.Rocket} /> استارتاپ‌ها</h2>
-            <div className="grid grid-cols-2 gap-4">
-              ${STARTUPS.map((s) => html`<div key=${s} className="bg-white/10 backdrop-blur-md p-6 rounded-3xl text-center font-black text-xl border border-white/20">${s}</div>`)}
-            </div>
+  <section id="portfolio" className="py-24 bg-white reveal">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="lg:col-span-4">
+          <h2 className="text-3xl font-black mb-8 flex items-center gap-3">
+            <${Lucide.Briefcase} className="text-indigo-600" /> مشتریان و همکاران
+          </h2>
+          <div className="grid gap-3">
+            ${CLIENTS.map((c) => html`<div key=${c} className="bg-slate-50 p-4 rounded-2xl border border-slate-100 font-medium text-slate-700">${c}</div>`)}
           </div>
         </div>
-        <div>
-          <h2 className="text-2xl font-black mb-8">همکاران تجاری</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            ${PARTNERS.map((p) => html`
-              <div key=${p} className="bg-slate-50 p-5 rounded-2xl flex items-center gap-3 font-bold border border-transparent hover:border-slate-200 transition-all">
-                <div className="p-2 bg-indigo-100 rounded-xl"><${Lucide.Users} className="text-indigo-600" size=${20} /></div> ${p}
+        <div className="lg:col-span-8 space-y-12">
+          <div className="bg-indigo-900 p-12 rounded-[3rem] parallax relative overflow-hidden text-white" 
+               style=${{ backgroundImage: 'url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=2000")', backgroundBlendMode: 'overlay', backgroundColor: 'rgba(31, 41, 55, 0.85)' }}>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-black mb-8">استارتاپ‌ها</h3>
+              <div className="grid grid-cols-2 gap-6">
+                ${STARTUPS.map((s) => html`<div key=${s} className="bg-white/10 backdrop-blur-xl p-8 rounded-3xl text-center font-black text-2xl border border-white/20">${s}</div>`)}
               </div>
-            `)}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-2xl font-black mb-8">شرکت‌های همکار</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              ${PARTNERS.map((p) => html`
+                <div key=${p} className="bg-slate-50 p-6 rounded-2xl flex items-center gap-4 font-bold border border-transparent hover:border-indigo-100 transition-all">
+                  <div className="p-3 bg-indigo-100 rounded-xl text-indigo-600"><${Lucide.Users} size=${20} /></div> ${p}
+                </div>
+              `)}
+            </div>
           </div>
         </div>
       </div>
@@ -315,32 +284,30 @@ const Portfolio = () => html`
 `;
 
 const Extra = () => html`
-  <section id="extra" className="py-20 bg-slate-900 text-white">
+  <section id="extra" className="py-24 bg-slate-900 text-white reveal">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
       <div>
-        <h2 className="text-2xl font-black mb-10 flex items-center gap-3"><${Lucide.GraduationCap} /> تحصیلات</h2>
+        <h2 className="text-3xl font-black mb-12 flex items-center gap-4"><${Lucide.GraduationCap} className="text-indigo-400" /> تحصیلات</h2>
         ${EDUCATION.map((edu) => html`
-          <div key=${edu.major} className="mb-8 border-r-2 border-indigo-500 pr-4">
-            <h3 className="font-black text-lg">${edu.degree} - ${edu.major}</h3>
-            <p className="text-slate-400 font-medium">${edu.university}</p>
-            <p className="text-indigo-400 text-sm font-bold mt-1">${edu.years}</p>
+          <div key=${edu.major} className="mb-10 border-r-4 border-indigo-500 pr-6">
+            <h3 className="font-black text-xl text-white">${edu.degree} - ${edu.major}</h3>
+            <p className="text-slate-400 mt-1">${edu.university}</p>
+            <p className="text-indigo-400 text-sm font-bold mt-2">${edu.years}</p>
           </div>
         `)}
       </div>
       <div>
-        <h2 className="text-2xl font-black mb-10 flex items-center gap-3"><${Lucide.Globe2} /> زبان‌ها و ویژگی‌ها</h2>
-        <div className="grid grid-cols-2 gap-4 mb-8">
-          ${LANGUAGES.map((l) => html`
-            <div key=${l.name} className="bg-white/5 p-4 rounded-2xl border border-white/10">
-              <p className="font-bold text-white">${l.name}</p>
-              <p className="text-slate-400 text-xs mt-1">${l.level}</p>
-            </div>
-          `)}
-        </div>
-        <div className="space-y-3">
-          ${["آرام، منظم، پرانرژی", "همکاری‌محور و یادگیرنده", "تفکر سیستم‌محور", "حل مسئله خلاق"].map(t => html`
-            <div className="flex items-center gap-3 text-slate-400 text-sm">
-              <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full"></div> ${t}
+        <h2 className="text-3xl font-black mb-12 flex items-center gap-4"><${Lucide.Globe} className="text-indigo-400" /> زبان‌ها</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          ${[
+            { n: 'آذری', l: 'زبان مادری' },
+            { n: 'فارسی', l: 'زبان مادری' },
+            { n: 'انگلیسی', l: 'Professional Proficiency' },
+            { n: 'ترکی استانبولی', l: 'متوسط' }
+          ].map((l) => html`
+            <div key=${l.n} className="bg-white/5 p-6 rounded-3xl border border-white/10">
+              <p className="font-black text-white text-lg">${l.n}</p>
+              <p className="text-slate-400 text-sm mt-1">${l.l}</p>
             </div>
           `)}
         </div>
@@ -350,28 +317,28 @@ const Extra = () => html`
 `;
 
 const Goals = () => html`
-  <section id="goals" className="py-20 bg-white">
+  <section id="goals" className="py-24 bg-white reveal">
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="bg-indigo-600 rounded-[3rem] p-10 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-black mb-8">چشم‌انداز همکاری</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-right mb-12">
+      <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
+        <h2 className="text-4xl md:text-5xl font-black mb-10">چشم‌انداز همکاری</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-right mb-14">
           ${[
             "افزایش سهم بازار با استراتژی‌های مدرن",
             "بهینه‌سازی نرخ تبدیل و سفر مشتری",
             "اجرای کمپین‌های داده‌محور و ROI-Positive",
             "هدایت تیم‌های نوپا در مسیر محصول و رشد"
           ].map((goal) => html`
-            <div key=${goal} className="bg-white/10 p-5 rounded-3xl flex items-center gap-3 border border-white/5">
-              <${Lucide.ChevronLeft} size=${20} className="text-indigo-200" /> ${goal}
+            <div key=${goal} className="bg-white/10 backdrop-blur-md p-6 rounded-3xl flex items-center gap-4 border border-white/10">
+              <${Lucide.ChevronLeft} size=${24} className="text-indigo-200" /> ${goal}
             </div>
           `)}
         </div>
-        <p className="text-indigo-100 text-lg md:text-xl font-medium mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-indigo-100 text-xl font-medium mb-12 max-w-2xl mx-auto leading-relaxed">
            من به دنبال پروژه‌هایی هستم که در آن تکنولوژی و دیجیتال مارکتینگ برای خلق ارزش واقعی با هم ترکیب شوند.
         </p>
-        <a href="https://wa.me/989141189645" target="_blank" className="inline-flex items-center gap-3 bg-white text-indigo-600 px-10 py-4 rounded-full font-black shadow-xl hover:bg-indigo-50 transition-all hover:scale-105 active:scale-95">
-          <${Lucide.MessageCircle} size=${24} />
-          ارتباط مستقیم در واتساپ
+        <a href="https://wa.me/989141189645" target="_blank" className="inline-flex items-center gap-3 bg-white text-indigo-700 px-12 py-5 rounded-full font-black text-xl shadow-xl hover:bg-indigo-50 hover:scale-105 active:scale-95 transition-all">
+          <${Lucide.MessageCircle} size=${28} />
+          ارتباط در واتساپ
         </a>
       </div>
     </div>
@@ -379,34 +346,50 @@ const Goals = () => html`
 `;
 
 const Footer = () => html`
-  <footer className="bg-slate-50 border-t py-16">
+  <footer className="bg-slate-50 border-t py-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p className="font-black gradient-text text-2xl mb-6">صمد المکچی</p>
-      <div className="flex justify-center gap-4 mb-10 flex-wrap">
+      <p className="font-black gradient-text text-3xl mb-8">صمد المکچی</p>
+      <div className="flex justify-center gap-5 mb-12 flex-wrap">
         ${SOCIAL_LINKS.map(link => html`
-          <a key=${link.name} href=${link.url} target="_blank" title=${link.name} className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm border border-slate-200 text-slate-500 hover:text-indigo-600 hover:border-indigo-600 hover:shadow-md transition-all">
-            <${Lucide[link.icon]} size=${20} />
+          <a key=${link.name} href=${link.url} target="_blank" title=${link.name} className="w-12 h-12 flex items-center justify-center rounded-2xl bg-white shadow-sm border border-slate-200 text-slate-500 hover:text-indigo-600 hover:border-indigo-600 hover:-translate-y-1 transition-all duration-300">
+            <${Lucide[link.icon]} size=${22} />
           </a>
         `)}
       </div>
-      <p className="text-slate-400 text-sm font-medium tracking-wide">© ${new Date().getFullYear()} - تمامی حقوق محفوظ است</p>
+      <p className="text-slate-400 text-sm font-medium">© ${new Date().getFullYear()} - تمامی حقوق برای صمد المکچی محفوظ است</p>
     </div>
   </footer>
 `;
 
-const App = () => html`
-  <div className="min-h-screen text-right" dir="rtl">
-    <${Navbar} />
-    <${Hero} />
-    <${About} />
-    <${Skills} />
-    <${RolesSection} />
-    <${Portfolio} />
-    <${Extra} />
-    <${Goals} />
-    <${Footer} />
-  </div>
-`;
+const App = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    
+    return () => observer.disconnect();
+  }, []);
+
+  return html`
+    <div className="min-h-screen text-right" dir="rtl">
+      <${Navbar} />
+      <${Hero} />
+      <${About} />
+      <${Skills} />
+      <${RolesSection} />
+      <${Portfolio} />
+      <${Extra} />
+      <${Goals} />
+      <${Footer} />
+    </div>
+  `;
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(React.createElement(App));
