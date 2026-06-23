@@ -1,1225 +1,1345 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>صمد المکچی | DevOps Engineer & Backend Developer</title>
-  <meta name="description" content="صمد المکچی - مهندس DevOps، توسعه‌دهنده Backend، متخصص Docker/Kubernetes/CI-CD">
-  <meta name="theme-color" content="#030712">
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='url(%23g)'/><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2322c55e'/><stop offset='1' stop-color='%233b82f6'/></linearGradient></defs><text x='50' y='68' font-family='monospace' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>SE</text></svg>">
-  <link rel="apple-touch-icon" href="https://avatars.githubusercontent.com/u/6169366?v=4">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    *, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      --green: #22c55e;
-      --blue: #3b82f6;
-      --teal: #14b8a6;
-      --bg: #030712;
-    }
+	<head>
+		<!-- ========== META CHARSET & VIEWPORT ========== -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<!-- ========== PRIMARY TITLE ========== -->
+		<title id="page-title">صمد المکچی | DevOps Engineer & Full Stack Developer</title>
+		<!-- ========== SEO META ========== -->
+		<meta name="description" content="صمد المکچی - مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو با بیش از ۲۰ سال تجربه. متخصص Docker، Kubernetes، CI/CD، React، Laravel، FastAPI و معماری میکروسرویس.">
+		<meta name="keywords" content="صمد المکچی, Samad Elmakchi, DevOps, Full Stack, Backend, React, Laravel, FastAPI, Docker, Kubernetes, CI/CD, میکروسرویس, معماری نرم‌افزار, Scrum, مدیریت پروژه, سئو, دیجیتال مارکتینگ">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Samad Elmakchi">
+		<meta name="language" content="fa">
+		<meta name="revisit-after" content="7 days">
+		<!-- ========== OPEN GRAPH ========== -->
+		<meta property="og:title" content="صمد المکچی | DevOps Engineer & Full Stack Developer">
+		<meta property="og:description" content="مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو با بیش از ۲۰ سال تجربه.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://elmakchi.ir">
+		<meta property="og:image" content="https://avatars.githubusercontent.com/u/6169366?v=4">
+		<meta property="og:locale" content="fa_IR">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="صمد المکچی | DevOps Engineer & Full Stack Developer">
+		<meta name="twitter:description" content="مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو با بیش از ۲۰ سال تجربه.">
+		<!-- ========== PWA & THEME ========== -->
+		<meta name="theme-color" content="#030712">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href="manifest.json">
+		<!-- ========== FAVICONS ========== -->
+		<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon-48x48.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="favicon/favicon-192x192.png">
+		<link rel="icon" type="image/png" sizes="512x512" href="favicon/favicon-512x512.png">
+		<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<!-- ========== CANONICAL ========== -->
+		<link rel="canonical" href="https://elmakchi.ir">
+		<!-- ========== FONT AWESOME ========== -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<!-- ========== MAIN CSS ========== -->
+		<link rel="stylesheet" href="main.css">
+		<!-- ========== STRUCTURED DATA (JSON-LD) ========== -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Samad Elmakchi",
+				"familyName": "Elmakchi",
+				"givenName": "Samad",
+				"jobTitle": "DevOps Engineer & Full Stack Developer",
+				"description": "مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو با بیش از ۲۰ سال تجربه",
+				"url": "https://elmakchi.ir",
+				"image": "https://avatars.githubusercontent.com/u/6169366?v=4",
+				"email": "samad@elmakchi.ir",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Tabriz",
+					"addressCountry": "IR"
+				},
+				"knowsAbout": ["DevOps", "Full Stack Development", "Backend Development", "React", "Laravel", "FastAPI", "Docker", "Kubernetes", "CI/CD", "Microservices", "Scrum", "Project Management", "SEO", "Digital Marketing"],
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Freelancer"
+				},
+				"sameAs": ["https://github.com/samadelmakchi", "https://www.linkedin.com/in/samad-elmakchi", "https://www.instagram.com/samad.elmakchi"]
+			}
+
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "صمد المکچی | DevOps & Full Stack Developer",
+				"url": "https://elmakchi.ir",
+				"description": "رزومه و نمونه کارهای صمد المکچی - مهندس DevOps و توسعه‌دهنده Full Stack",
+				"inLanguage": "fa"
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<!-- ========== BACKGROUND ========== -->
+		<div class="bg-fixed">
+			<div class="bg-gradient"></div>
+			<div class="bg-orb bg-orb-1"></div>
+			<div class="bg-orb bg-orb-2"></div>
+			<div class="bg-orb bg-orb-3"></div>
+			<div id="matrix-bg"></div>
+		</div>
+		<!-- ========== NAVIGATION ========== -->
+		<nav id="navbar" role="navigation" aria-label="منوی اصلی">
+			<div class="nav-inner">
+				<div class="nav-brand">
+					<div class="nav-logo">
+						<img src="samad-elmakchi.jpg" alt="صمد المکچی - لوگو" width="36" height="36">
+					</div>
+					<span class="nav-name" data-key="nav_name">Samad Elmakchi</span>
+				</div>
+				<div class="nav-links">
+					<a href="#home" class="nav-link active" data-key="nav_home">خانه</a>
+					<a href="#about" class="nav-link" data-key="nav_about">درباره من</a>
+					<a href="#skills" class="nav-link" data-key="nav_skills">مهارت‌ها</a>
+					<a href="#fullstack" class="nav-link" data-key="nav_fullstack">فول استک</a>
+					<a href="#seo" class="nav-link" data-key="nav_seo">سئو</a>
+					<a href="#devops-section" class="nav-link" data-key="nav_devops">دواپس</a>
+					<a href="#projects" class="nav-link" data-key="nav_projects">پروژه‌ها</a>
+					<a href="#experience" class="nav-link" data-key="nav_experience">تجربیات</a>
+					<a href="#contact" class="nav-link" data-key="nav_contact">تماس</a>
+				</div>
+				<div class="nav-social">
+					<div class="lang-dropdown">
+						<div class="lang-btn-dropdown" id="langBtn">
+							<img src="flags/ir.png" alt="فارسی" id="currentLangFlag" width="20" height="20">
+							<span id="currentLangName">فارسی</span>
+							<i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+						</div>
+						<div class="lang-menu" id="langMenu" role="listbox">
+							<div class="lang-item active" data-lang="fa" data-flag="flags/ir.png" data-name="فارسی" role="option">
+								<img src="flags/ir.png" alt="فارسی" width="20" height="20"><span>فارسی</span>
+							</div>
+							<div class="lang-item" data-lang="en" data-flag="flags/en.png" data-name="English" role="option">
+								<img src="flags/en.png" alt="English" width="20" height="20"><span>English</span>
+							</div>
+							<div class="lang-item" data-lang="ar" data-flag="flags/ar.png" data-name="العربية" role="option">
+								<img src="flags/ar.png" alt="العربية" width="20" height="20"><span>العربية</span>
+							</div>
+							<div class="lang-item" data-lang="az" data-flag="flags/az.png" data-name="Azərbaycanca" role="option">
+								<img src="flags/az.png" alt="Azərbaycanca" width="20" height="20"><span>Azərbaycanca</span>
+							</div>
+						</div>
+					</div>
+					<a href="https://github.com/samadelmakchi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<button id="menu-btn" aria-label="منوی موبایل"><i class="fas fa-bars"></i></button>
+				</div>
+			</div>
+			<div id="mobile-menu" class="mobile-menu">
+				<div style="padding:0.75rem 1rem;">
+					<a href="#home" data-key="nav_home">خانه</a>
+					<a href="#about" data-key="nav_about">درباره من</a>
+					<a href="#skills" data-key="nav_skills">مهارت‌ها</a>
+					<a href="#fullstack" data-key="nav_fullstack">فول استک</a>
+					<a href="#seo" data-key="nav_seo">سئو</a>
+					<a href="#devops-section" data-key="nav_devops">دواپس</a>
+					<a href="#projects" data-key="nav_projects">پروژه‌ها</a>
+					<a href="#experience" data-key="nav_experience">تجربیات</a>
+					<a href="#contact" data-key="nav_contact">تماس</a>
+				</div>
+			</div>
+		</nav>
+		<!-- ============================================================ -->
+		<!-- ========== HERO SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="home" class="hero" aria-label="بخش اصلی">
+			<div class="section-inner" style="width:100%;">
+				<div class="hero-grid">
+					<div class="hero-content">
+						<div class="hero-badge">
+							<div class="dot"></div>
+							<span data-key="badge_available">Available for work</span>
+						</div>
+						<h1>
+							<span data-key="hero_name">صمد</span>
+							<span class="gradient" data-key="hero_lastname">المکچی</span>
+						</h1>
+						<div class="hero-line"></div>
+						<div class="hero-role">
+							<div id="typewriter"></div>
+						</div>
+						<!-- ===== HERO TAGS - سه حوزه ===== -->
+						<div class="hero-tags">
+							<span class="hero-tag hero-tag-devops"><i class="fas fa-infinity"></i> DevOps</span>
+							<span class="hero-tag hero-tag-fullstack"><i class="fas fa-code"></i> Full Stack</span>
+							<span class="hero-tag hero-tag-seo"><i class="fas fa-chart-line"></i> SEO & Digital Marketing</span>
+						</div>
+						<p class="hero-desc" data-key="hero_desc"> مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو با بیش از ۲۰ سال تجربه در اکوسیستم فناوری. متخصص در Docker، Kubernetes، CI/CD، React، Laravel، FastAPI و معماری میکروسرویس. </p>
+						<div class="hero-buttons">
+							<a href="#contact" class="btn-primary" data-key="contact_btn">
+								<i class="fas fa-paper-plane" style="font-size:0.875rem;"></i> ارتباط با من </a>
+							<a href="https://github.com/samadelmakchi" target="_blank" rel="noopener noreferrer" class="btn-outline">
+								<i class="fab fa-github" style="font-size:0.875rem;"></i> <span data-key="github_btn">مشاهده GitHub</span>
+							</a>
+						</div>
+						<div class="stats">
+							<div class="stat">
+								<div class="stat-val">20+</div>
+								<div class="stat-label" data-key="stat_years">سال تجربه</div>
+							</div>
+							<div class="stat-divider"></div>
+							<div class="stat">
+								<div class="stat-val">50+</div>
+								<div class="stat-label" data-key="stat_projects">پروژه</div>
+							</div>
+							<div class="stat-divider"></div>
+							<div class="stat">
+								<div class="stat-val">30+</div>
+								<div class="stat-label" data-key="stat_tools">ابزار DevOps</div>
+							</div>
+							<div class="stat-divider"></div>
+							<div class="stat">
+								<div class="stat-val">15+</div>
+								<div class="stat-label" data-key="stat_clients">مشتری</div>
+							</div>
+						</div>
+					</div>
+					<!-- ========== TERMINAL ========== -->
+					<div class="hero-terminal">
+						<div class="terminal" role="img" aria-label="ترمینال نمایش مهارت‌ها">
+							<div class="terminal-header">
+								<div class="terminal-dot dot-red"></div>
+								<div class="terminal-dot dot-yellow"></div>
+								<div class="terminal-dot dot-green"></div>
+								<span class="terminal-title">samad@devops:~$</span>
+							</div>
+							<div class="terminal-body">
+								<div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="t-cmd">whoami</span></div>
+								<div class="t-output">Samad Elmakchi — DevOps & Full Stack Developer</div>
+								<div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="t-cmd">cat skills.yaml</span></div>
+								<div style="margin:0.25rem 0 0.75rem;">
+									<div><span class="t-yaml-key">devops:</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Docker / Compose</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Kubernetes</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">GitHub Actions / Jenkins</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Prometheus / Grafana</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Ansible / Terraform</span></div>
+									<div><span class="t-yaml-key">fullstack:</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">React / Next.js</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">PHP (Laravel)</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Python (FastAPI)</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Node.js</span></div>
+									<div><span class="t-yaml-key">seo:</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Technical SEO</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">AI SEO / AEO / GEO</span></div>
+									<div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Digital Marketing</span></div>
+								</div>
+								<div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="t-cmd">docker ps --all</span></div>
+								<div style="margin:0.25rem 0 0.75rem; overflow-x:auto;">
+									<div class="t-table-header">CONTAINER ID IMAGE STATUS</div>
+									<div class="t-table-row">a1b2c3d4e5f6 nginx:alpine Up 99 days</div>
+									<div class="t-table-row">b2c3d4e5f6a7 postgres:16 Up 99 days</div>
+									<div class="t-table-row">c3d4e5f6a7b8 redis:7 Up 99 days</div>
+								</div>
+								<div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="cursor"></span></div>
+							</div>
+						</div>
+						<div class="tech-badges">
+							<span class="tech-badge badge-green">Docker</span>
+							<span class="tech-badge badge-blue">AI SEO / AEO / GEO</span>
+							<span class="tech-badge badge-teal">CI/CD</span>
+							<span class="tech-badge badge-orange">React</span>
+							<span class="tech-badge badge-green">Laravel</span>
+							<span class="tech-badge badge-yellow">FastAPI</span>
+							<span class="tech-badge badge-red">Prometheus</span>
+							<span class="tech-badge badge-pink">Grafana</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== ABOUT SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="about" class="about" aria-label="درباره من">
+			<div class="section-inner">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:var(--green);" data-key="about_subtitle">About Me</span>
+					<h2 data-key="about_title">درباره من</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, var(--green), var(--blue));"></div>
+				</div>
+				<div class="about-grid">
+					<div>
+						<div class="about-avatar-wrap">
+							<div class="about-avatar">
+								<img src="samad-elmakchi.jpg" alt="صمد المکچی - عکس پروفایل" width="128" height="128">
+							</div>
+							<p class="about-avatar-name">Samad Elmakchi</p>
+							<p class="about-avatar-role">DevOps & Full Stack</p>
+							<div class="about-deco deco-docker"><i class="fab fa-docker"></i></div>
+							<div class="about-deco deco-k8s"><i class="fas fa-dharmachakra"></i></div>
+						</div>
+					</div>
+					<div class="about-text">
+						<p data-key="about_p1"> من <strong class="text-white font-bold">صمد المکچی</strong> هستم، مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو با بیش از <strong class="text-cyan font-bold">۲۰ سال</strong> سابقه فعالیت مستمر در اکوسیستم فناوری ایران. </p>
+						<p class="muted" data-key="about_p2"> تخصص من در سه حوزه <strong class="text-violet font-bold">DevOps</strong>، <strong class="text-emerald font-bold">Full Stack Development</strong> و <strong class="text-cyan font-bold">SEO & Digital Marketing</strong> قرار دارد. از طراحی معماری‌های پیچیده بک‌اند و پیاده‌سازی pipeline‌های CI/CD گرفته تا مدیریت کلاسترهای Kubernetes و بهینه‌سازی سئو برای رشد ارگانیک. </p>
+						<p class="muted" data-key="about_p3"> به رویکرد «<strong class="text-white font-bold">Infrastructure as Code</strong>» و «<strong class="text-white font-bold">Everything as Code</strong>» معتقدم و هدفم خلق سیستم‌های قابل اطمینان، مقیاس‌پذیر و خودکار است. </p>
+						<div class="info-grid">
+							<div class="info-card">
+								<i class="fas fa-map-marker-alt text-cyan"></i>
+								<p class="label" data-key="info_location_label">مکان</p>
+								<p class="value" data-key="info_location_value">تبریز، ایران</p>
+							</div>
+							<div class="info-card">
+								<i class="fas fa-briefcase text-violet"></i>
+								<p class="label" data-key="info_status_label">وضعیت</p>
+								<p class="value" data-key="info_status_value">آماده همکاری</p>
+							</div>
+							<div class="info-card">
+								<i class="fas fa-code text-emerald"></i>
+								<p class="label" data-key="info_specialty_label">تخصص اصلی</p>
+								<p class="value" data-key="info_specialty_value">DevOps & Full Stack</p>
+							</div>
+							<div class="info-card">
+								<i class="fas fa-graduation-cap" style="color:#fb923c;"></i>
+								<p class="label" data-key="info_exp_label">تجربه</p>
+								<p class="value" data-key="info_exp_value">+۲۰ سال</p>
+							</div>
+						</div>
+						<div class="social-links">
+							<a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank" rel="noopener noreferrer" class="social-link sl-blue">
+								<i class="fab fa-linkedin-in"></i> LinkedIn </a>
+							<a href="https://github.com/samadelmakchi" target="_blank" rel="noopener noreferrer" class="social-link sl-gray">
+								<i class="fab fa-github"></i> GitHub </a>
+							<a href="https://www.instagram.com/samad.elmakchi" target="_blank" rel="noopener noreferrer" class="social-link sl-pink">
+								<i class="fab fa-instagram"></i> Instagram </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== SKILLS SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="skills" class="skills" aria-label="مهارت‌ها">
+			<div class="section-inner">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:var(--green);" data-key="skills_subtitle">Technical Skills</span>
+					<h2 data-key="skills_title">مهارت‌های فنی</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, var(--green), var(--blue));"></div>
+				</div>
+				<div class="skills-grid">
+					<!-- ===== 1. DEVOPS - CYAN ===== -->
+					<div class="skill-card skill-card-devops fade-up">
+						<div class="skill-card-header">
+							<div class="skill-icon"><i class="fas fa-infinity"></i></div>
+							<div>
+								<h3 class="skill-card-title" data-key="skill_devops_title">DevOps & Infrastructure</h3>
+								<p class="subtitle" data-key="skill_devops_sub">کانتینرسازی و CI/CD</p>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Docker / Compose</span><span class="skill-item-pct pct-cyan">95%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-cyan" style="width:95%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Kubernetes</span><span class="skill-item-pct pct-cyan">80%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-cyan" style="width:80%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">GitHub Actions / Jenkins</span><span class="skill-item-pct pct-cyan">85%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-cyan" style="width:85%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Ansible / Terraform</span><span class="skill-item-pct pct-cyan">75%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-cyan" style="width:75%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Traefik / Nginx</span><span class="skill-item-pct pct-cyan">88%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-cyan" style="width:88%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Prometheus / Grafana</span><span class="skill-item-pct pct-cyan">85%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-cyan" style="width:85%"></div>
+							</div>
+						</div>
+					</div>
+					<!-- ===== 2. FULL STACK - EMERALD ===== -->
+					<div class="skill-card skill-card-fullstack fade-up">
+						<div class="skill-card-header">
+							<div class="skill-icon"><i class="fas fa-code"></i></div>
+							<div>
+								<h3 class="skill-card-title" data-key="skill_fullstack_title">Full Stack Development</h3>
+								<p class="subtitle" data-key="skill_fullstack_sub">بک‌اند و فرانت‌اند</p>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">React / Next.js</span><span class="skill-item-pct pct-emerald">88%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-emerald" style="width:88%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">PHP / Laravel</span><span class="skill-item-pct pct-emerald">92%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-emerald" style="width:92%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Python / FastAPI</span><span class="skill-item-pct pct-emerald">88%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-emerald" style="width:88%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Node.js / TypeScript</span><span class="skill-item-pct pct-emerald">75%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-emerald" style="width:75%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">RESTful / GraphQL</span><span class="skill-item-pct pct-emerald">90%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-emerald" style="width:90%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">MySQL / PostgreSQL</span><span class="skill-item-pct pct-emerald">88%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-emerald" style="width:88%"></div>
+							</div>
+						</div>
+					</div>
+					<!-- ===== 3. SEO - YELLOW ===== -->
+					<div class="skill-card skill-card-seo fade-up">
+						<div class="skill-card-header">
+							<div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+							<div>
+								<h3 class="skill-card-title" data-key="skill_seo_title">SEO & Digital Marketing</h3>
+								<p class="subtitle" data-key="skill_seo_sub">سئو و دیجیتال مارکتینگ</p>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Technical SEO</span><span class="skill-item-pct pct-yellow">90%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-yellow" style="width:90%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">On-Page / Off-Page SEO</span><span class="skill-item-pct pct-yellow">85%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-yellow" style="width:85%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">AI SEO / AEO / GEO</span><span class="skill-item-pct pct-yellow">78%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-yellow" style="width:78%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Google Ads / PPC</span><span class="skill-item-pct pct-yellow">75%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-yellow" style="width:75%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Google Analytics / GTM</span><span class="skill-item-pct pct-yellow">82%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-yellow" style="width:82%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<div class="skill-item-header"><span class="skill-item-name">Content Strategy</span><span class="skill-item-pct pct-yellow">80%</span></div>
+							<div class="skill-bar-bg">
+								<div class="skill-bar-fill bar-yellow" style="width:80%"></div>
+							</div>
+						</div>
+					</div>
+					<!-- ===== 4. ARCHITECTURE - VIOLET ===== -->
+					<div class="skill-card skill-card-arch fade-up">
+						<div class="skill-card-header">
+							<div class="skill-icon" style="background:rgba(167,139,250,0.15); color:#a78bfa;"><i class="fas fa-sitemap"></i></div>
+							<div>
+								<h3 class="skill-card-title" style="color:#a78bfa;" data-key="skill_arch_title">معماری و طراحی</h3>
+								<p class="subtitle" data-key="skill_arch_sub">معماری نرم‌افزار</p>
+							</div>
+						</div>
+						<div class="tag-grid">
+							<span class="tag tag-violet">Microservices</span>
+							<span class="tag tag-violet">Event-Driven</span>
+							<span class="tag tag-violet">Clean Architecture</span>
+							<span class="tag tag-violet">DDD</span>
+							<span class="tag tag-violet">CQRS</span>
+							<span class="tag tag-violet">Event Sourcing</span>
+							<span class="tag tag-violet">Repository Pattern</span>
+							<span class="tag tag-violet">Layered</span>
+							<span class="tag tag-violet">Hexagonal</span>
+						</div>
+					</div>
+					<!-- ===== 5. PROJECT MANAGEMENT - ORANGE ===== -->
+					<div class="skill-card skill-card-management fade-up">
+						<div class="skill-card-header">
+							<div class="skill-icon" style="background:rgba(251,146,60,0.15); color:#fb923c;"><i class="fas fa-users"></i></div>
+							<div>
+								<h3 class="skill-card-title" style="color:#fb923c;" data-key="skill_mgmt_title">مدیریت پروژه و اجایل</h3>
+								<p class="subtitle" data-key="skill_mgmt_sub">اسکرام و Agile</p>
+							</div>
+						</div>
+						<div class="tag-grid">
+							<span class="tag tag-orange">Scrum</span>
+							<span class="tag tag-orange">Kanban</span>
+							<span class="tag tag-orange">Agile</span>
+							<span class="tag tag-orange">Jira</span>
+							<span class="tag tag-orange">Confluence</span>
+							<span class="tag tag-orange">Miro</span>
+							<span class="tag tag-orange">Product Owner</span>
+							<span class="tag tag-orange">Backlog Management</span>
+							<span class="tag tag-orange">Sprint Planning</span>
+						</div>
+					</div>
+					<!-- ===== 6. AI & AUTOMATION - PINK ===== -->
+					<div class="skill-card skill-card-ai fade-up">
+						<div class="skill-card-header">
+							<div class="skill-icon" style="background:rgba(244,114,182,0.15); color:#f472b6;"><i class="fas fa-robot"></i></div>
+							<div>
+								<h3 class="skill-card-title" style="color:#f472b6;" data-key="skill_ai_title">هوش مصنوعی و اتوماسیون</h3>
+								<p class="subtitle" data-key="skill_ai_sub">AI و اتوماسیون</p>
+							</div>
+						</div>
+						<div class="tag-grid">
+							<span class="tag tag-pink">AI Agent Design</span>
+							<span class="tag tag-pink">n8n Workflow</span>
+							<span class="tag tag-pink">AI DevOps</span>
+							<span class="tag tag-pink">ML Pipeline</span>
+							<span class="tag tag-pink">Pandas / NumPy</span>
+							<span class="tag tag-pink">TensorFlow</span>
+							<span class="tag tag-pink">OpenCV</span>
+							<span class="tag tag-pink">Scikit-learn</span>
+							<span class="tag tag-pink">Data Mining</span>
+						</div>
+					</div>
+				</div>
+				<!-- ===== SOFT SKILLS ===== -->
+				<div class="soft-skills fade-up">
+					<h3 class="soft-skills-title" data-key="soft_skills_title">مهارت‌های نرم</h3>
+					<div class="soft-skills-grid">
+						<span class="soft-skill">🧠 حل مسئله</span>
+						<span class="soft-skill">🤝 کار تیمی</span>
+						<span class="soft-skill">🗣️ ارتباط مؤثر</span>
+						<span class="soft-skill">🎯 تفکر استراتژیک</span>
+						<span class="soft-skill">⏳ مدیریت زمان</span>
+						<span class="soft-skill">📊 تحلیل داده</span>
+						<span class="soft-skill">💡 خلاقیت</span>
+						<span class="soft-skill">🔄 انعطاف‌پذیری</span>
+						<span class="soft-skill">📝 مستندسازی</span>
+						<span class="soft-skill">🎓 یادگیری مستمر</span>
+						<span class="soft-skill">👥 رهبری تیم</span>
+						<span class="soft-skill">🎯 هدف‌گرایی</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== FULL STACK SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="fullstack" class="fullstack-section">
+			<div class="section-inner">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:#34d399;">Full Stack Development</span>
+					<h2 data-key="fullstack_title">برنامه‌نویس فول استک</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, #34d399, #14b8a6);"></div>
+					<p class="text-gray-400 mt-4 max-w-2xl mx-auto" data-key="fullstack_desc">مهندس نرم‌افزار و معمار سیستم با بیش از ۲۰ سال تجربه در طراحی، توسعه و مقیاس‌پذیری سیستم‌های تحت وب و معماری‌های میکروسرویس.</p>
+				</div>
+				<!-- Backend -->
+				<div class="mb-12">
+					<h3 class="flex items-center gap-3 text-emerald-400 font-bold text-lg mb-6 font-mono">
+						<span class="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center"><i class="fas fa-server text-sm"></i></span>
+						<span data-key="fullstack_backend_title">Backend Development</span>
+					</h3>
+					<div class="fs-grid">
+						<div class="fs-card border-emerald-500/20 hover:border-emerald-500/50">
+							<div class="fs-card-icon bg-emerald-500/10 text-emerald-400"><i class="fab fa-python text-xl"></i></div>
+							<h4 class="text-white font-bold mb-1">Python</h4>
+							<p class="text-gray-500 text-xs mb-3">FastAPI · Flask · SQLAlchemy</p>
+							<div class="fs-tags">
+								<span>FastAPI</span><span>Flask</span><span>SQLAlchemy</span>
+								<span>BeautifulSoup</span><span>Selenium</span><span>Scrapy</span>
+								<span>pytest</span><span>Locust</span>
+							</div>
+						</div>
+						<div class="fs-card border-emerald-500/20 hover:border-emerald-500/50">
+							<div class="fs-card-icon bg-emerald-500/10 text-emerald-400"><i class="fab fa-php text-xl"></i></div>
+							<h4 class="text-white font-bold mb-1">PHP</h4>
+							<p class="text-gray-500 text-xs mb-3">Laravel · WordPress · WooCommerce</p>
+							<div class="fs-tags">
+								<span>Laravel</span><span>Eloquent ORM</span>
+								<span>WordPress</span><span>WooCommerce</span>
+								<span>Elementor</span><span>REST API</span>
+								<span>PHPDoc</span>
+							</div>
+						</div>
+						<div class="fs-card border-emerald-500/20 hover:border-emerald-500/50">
+							<div class="fs-card-icon bg-emerald-500/10 text-emerald-400"><i class="fab fa-node-js text-xl"></i></div>
+							<h4 class="text-white font-bold mb-1">Node.js</h4>
+							<p class="text-gray-500 text-xs mb-3">JavaScript · TypeScript</p>
+							<div class="fs-tags">
+								<span>Node.js</span><span>Express</span>
+								<span>TypeScript</span><span>REST API</span>
+								<span>GraphQL</span><span>gRPC</span>
+								<span>JSDoc</span>
+							</div>
+						</div>
+						<div class="fs-card border-emerald-500/20 hover:border-emerald-500/50">
+							<div class="fs-card-icon bg-emerald-500/10 text-emerald-400"><i class="fas fa-database text-xl"></i></div>
+							<h4 class="text-white font-bold mb-1">Database</h4>
+							<p class="text-gray-500 text-xs mb-3">SQL · NoSQL · Cache</p>
+							<div class="fs-tags">
+								<span>PostgreSQL</span><span>MySQL</span>
+								<span>MongoDB</span><span>Redis</span>
+								<span>RabbitMQ</span><span>OpenAPI</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Frontend -->
+				<div class="mb-12">
+					<h3 class="flex items-center gap-3 text-teal-400 font-bold text-lg mb-6 font-mono">
+						<span class="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center"><i class="fas fa-laptop-code text-sm text-teal-400"></i></span>
+						<span data-key="fullstack_frontend_title">Frontend &amp; Full Stack</span>
+					</h3>
+					<div class="fs-grid" style="grid-template-columns:repeat(3,1fr);">
+						<div class="fs-card border-teal-500/20 hover:border-teal-500/50">
+							<div class="fs-card-icon bg-teal-500/10 text-teal-400"><i class="fab fa-react text-xl"></i></div>
+							<h4 class="text-white font-bold mb-1">React &amp; Next</h4>
+							<p class="text-gray-500 text-xs mb-3">Framework Frontend</p>
+							<div class="fs-tags">
+								<span>React.js</span><span>Next.js</span>
+								<span>Inertia.js</span><span>Tailwind CSS</span>
+								<span>Bootstrap</span>
+							</div>
+						</div>
+						<div class="fs-card border-teal-500/20 hover:border-teal-500/50">
+							<div class="fs-card-icon bg-teal-500/10 text-teal-400"><i class="fas fa-sitemap text-xl"></i></div>
+							<h4 class="text-white font-bold mb-1">Architecture</h4>
+							<p class="text-gray-500 text-xs mb-3">Design Patterns</p>
+							<div class="fs-tags">
+								<span>Microservices</span><span>Clean Arch</span>
+								<span>DDD</span><span>CQRS</span>
+								<span>Event-Driven</span><span>Repository</span>
+							</div>
+						</div>
+						<div class="fs-card border-teal-500/20 hover:border-teal-500/50">
+							<div class="fs-card-icon bg-teal-500/10 text-teal-400"><i class="fas fa-flask text-xl"></i></div>
+							<h4 class="text-white font-bold mb-1">Data &amp; ML</h4>
+							<p class="text-gray-500 text-xs mb-3">Python Data Stack</p>
+							<div class="fs-tags">
+								<span>Pandas</span><span>NumPy</span>
+								<span>Matplotlib</span><span>Scikit-learn</span>
+								<span>TensorFlow</span><span>OpenCV</span>
+								<span>Seaborn</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Testing & Docs -->
+				<div>
+					<h3 class="flex items-center gap-3 text-green-400 font-bold text-lg mb-6 font-mono">
+						<span class="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center"><i class="fas fa-vials text-sm text-green-400"></i></span>
+						<span data-key="fullstack_testing_title">Testing, Security &amp; Tools</span>
+					</h3>
+					<div class="flex flex-wrap gap-3">
+						<span class="big-tag bg-emerald-500/8 border-emerald-500/20 text-emerald-300">Unit Testing</span>
+						<span class="big-tag bg-emerald-500/8 border-emerald-500/20 text-emerald-300">Integration Testing</span>
+						<span class="big-tag bg-emerald-500/8 border-emerald-500/20 text-emerald-300">E2E Testing</span>
+						<span class="big-tag bg-emerald-500/8 border-emerald-500/20 text-emerald-300">Selenium</span>
+						<span class="big-tag bg-emerald-500/8 border-emerald-500/20 text-emerald-300">Locust (Load Test)</span>
+						<span class="big-tag bg-teal-500/8 border-teal-500/20 text-teal-300">REST API</span>
+						<span class="big-tag bg-teal-500/8 border-teal-500/20 text-teal-300">GraphQL</span>
+						<span class="big-tag bg-teal-500/8 border-teal-500/20 text-teal-300">gRPC</span>
+						<span class="big-tag bg-teal-500/8 border-teal-500/20 text-teal-300">OpenAPI</span>
+						<span class="big-tag bg-green-500/8 border-green-500/20 text-green-300">اتوماسیون</span>
+						<span class="big-tag bg-green-500/8 border-green-500/20 text-green-300">WordPress Plugin Dev</span>
+						<span class="big-tag bg-green-500/8 border-green-500/20 text-green-300">Bash Scripting</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== SEO & DIGITAL MARKETING SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="seo" class="seo-section">
+			<div class="section-inner">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:#fbbf24;">SEO &amp; Digital Marketing</span>
+					<h2 data-key="seo_title">سئو و دیجیتال مارکتینگ</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, #fbbf24, #f97316);"></div>
+					<p class="text-gray-400 mt-4 max-w-2xl mx-auto" data-key="seo_desc">متخصص و استراتژیست سئو با بیش از ۲۰ سال تجربه در بهینه‌سازی وب‌سایت‌ها، افزایش ترافیک ارگانیک و بهبود نرخ تبدیل با رویکرد داده‌محور.</p>
+				</div>
+				<div class="seo-grid">
+					<!-- SEO Strategy -->
+					<div class="seo-card border-yellow-500/25 hover:border-yellow-500/50">
+						<div class="seo-card-header bg-yellow-500/10 border-yellow-500/20">
+							<div class="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center">
+								<i class="fas fa-map text-yellow-400"></i>
+							</div>
+							<div>
+								<h3 class="text-white font-bold" data-key="seo_strategy_title">SEO Strategy</h3>
+								<p class="text-yellow-400 text-xs font-mono" data-key="seo_strategy_sub">استراتژی سئو</p>
+							</div>
+						</div>
+						<ul class="seo-list">
+							<li data-key="seo_strategy_1">طراحی نقشه راه سئو (SEO Roadmap)</li>
+							<li data-key="seo_strategy_2">تحقیق کلمات کلیدی و Keyword Clustering</li>
+							<li data-key="seo_strategy_3">تحلیل رقبا و Gap Analysis</li>
+							<li data-key="seo_strategy_4">طراحی Topical Authority</li>
+							<li data-key="seo_strategy_5">تعیین KPIهای سئو (Traffic, CTR, Conversion)</li>
+							<li data-key="seo_strategy_6">طراحی Content Strategy</li>
+						</ul>
+					</div>
+					<!-- On-Page SEO -->
+					<div class="seo-card border-orange-500/25 hover:border-orange-500/50">
+						<div class="seo-card-header bg-orange-500/10 border-orange-500/20">
+							<div class="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center">
+								<i class="fas fa-file-alt text-orange-400"></i>
+							</div>
+							<div>
+								<h3 class="text-white font-bold" data-key="seo_onpage_title">On-Page SEO</h3>
+								<p class="text-orange-400 text-xs font-mono" data-key="seo_onpage_sub">بهینه‌سازی درون‌صفحه</p>
+							</div>
+						</div>
+						<ul class="seo-list">
+							<li data-key="seo_onpage_1">بهینه‌سازی Title, Meta, H1-H6</li>
+							<li data-key="seo_onpage_2">طراحی Landing Page بهینه</li>
+							<li data-key="seo_onpage_3">ساختار Internal Linking</li>
+							<li data-key="seo_onpage_4">E-commerce SEO بهینه‌سازی محصول</li>
+							<li data-key="seo_onpage_5">Semantic SEO و محتوای هدفمند</li>
+							<li data-key="seo_onpage_6">Canonicalization و Duplicate Content</li>
+							<li data-key="seo_onpage_7">بهینه‌سازی تصاویر (ALT, WebP, Lazy Load)</li>
+						</ul>
+					</div>
+					<!-- Technical SEO -->
+					<div class="seo-card border-red-500/25 hover:border-red-500/50">
+						<div class="seo-card-header bg-red-500/10 border-red-500/20">
+							<div class="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center">
+								<i class="fas fa-cogs text-red-400"></i>
+							</div>
+							<div>
+								<h3 class="text-white font-bold" data-key="seo_tech_title">Technical SEO</h3>
+								<p class="text-red-400 text-xs font-mono" data-key="seo_tech_sub">سئو فنی</p>
+							</div>
+						</div>
+						<ul class="seo-list">
+							<li data-key="seo_tech_1">Core Web Vitals (LCP, INP, CLS)</li>
+							<li data-key="seo_tech_2">XML Sitemap و robots.txt</li>
+							<li data-key="seo_tech_3">مدیریت Crawl Budget</li>
+							<li data-key="seo_tech_4">Structured Data (Schema Markup)</li>
+							<li data-key="seo_tech_5">PageSpeed و Lighthouse بهینه‌سازی</li>
+							<li data-key="seo_tech_6">مدیریت Redirectها (301, 302)</li>
+							<li data-key="seo_tech_7">HTTPS، امنیت و بهینه‌سازی سرور</li>
+						</ul>
+					</div>
+					<!-- Off-Page & Local SEO -->
+					<div class="seo-card border-pink-500/25 hover:border-pink-500/50">
+						<div class="seo-card-header bg-pink-500/10 border-pink-500/20">
+							<div class="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center">
+								<i class="fas fa-link text-pink-400"></i>
+							</div>
+							<div>
+								<h3 class="text-white font-bold" data-key="seo_offpage_title">Off-Page &amp; Local SEO</h3>
+								<p class="text-pink-400 text-xs font-mono" data-key="seo_offpage_sub">لینک‌سازی و سئو محلی</p>
+							</div>
+						</div>
+						<ul class="seo-list">
+							<li data-key="seo_offpage_1">استراتژی لینک‌سازی White-hat</li>
+							<li data-key="seo_offpage_2">Brand Mentions و Digital PR</li>
+							<li data-key="seo_offpage_3">کمپین‌های رپورتاژ آگهی</li>
+							<li data-key="seo_offpage_4">تحلیل Backlink Profile</li>
+							<li data-key="seo_offpage_5">Google Business Profile</li>
+							<li data-key="seo_offpage_6">NAP Consistency</li>
+							<li data-key="seo_offpage_7">مدیریت Reviews و Reputation</li>
+						</ul>
+					</div>
+					<!-- AI SEO -->
+					<div class="seo-card border-violet-500/25 hover:border-violet-500/50">
+						<div class="seo-card-header bg-violet-500/10 border-violet-500/20">
+							<div class="w-10 h-10 rounded-lg bg-violet-500/20 flex items-center justify-center">
+								<i class="fas fa-robot text-violet-400"></i>
+							</div>
+							<div>
+								<h3 class="text-white font-bold" data-key="seo_ai_title">AI SEO / AEO / GEO</h3>
+								<p class="text-violet-400 text-xs font-mono" data-key="seo_ai_sub">بهینه‌سازی برای هوش مصنوعی</p>
+							</div>
+						</div>
+						<ul class="seo-list">
+							<li data-key="seo_ai_1">بهینه‌سازی برای AI Search (AEO, GEO)</li>
+							<li data-key="seo_ai_2">محتوای Structured برای LLMها</li>
+							<li data-key="seo_ai_3">نمایش در AI Overviews گوگل</li>
+							<li data-key="seo_ai_4">پیاده‌سازی llms.txt</li>
+							<li data-key="seo_ai_5">ChatGPT / Gemini / Perplexity Visibility</li>
+							<li data-key="seo_ai_6">تحلیل AI SERP Presence</li>
+						</ul>
+					</div>
+					<!-- Digital Marketing -->
+					<div class="seo-card border-blue-500/25 hover:border-blue-500/50">
+						<div class="seo-card-header bg-blue-500/10 border-blue-500/20">
+							<div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center">
+								<i class="fas fa-bullhorn text-blue-400"></i>
+							</div>
+							<div>
+								<h3 class="text-white font-bold" data-key="seo_marketing_title">Digital Marketing</h3>
+								<p class="text-blue-400 text-xs font-mono" data-key="seo_marketing_sub">دیجیتال مارکتینگ</p>
+							</div>
+						</div>
+						<ul class="seo-list">
+							<li data-key="seo_marketing_1">Google Ads · PPC · SEM</li>
+							<li data-key="seo_marketing_2">مدیریت کمپین‌های ریتارگتینگ</li>
+							<li data-key="seo_marketing_3">A/B Testing و CRO</li>
+							<li data-key="seo_marketing_4">قیف فروش (User Funnels)</li>
+							<li data-key="seo_marketing_5">Heatmap و Session Recording</li>
+							<li data-key="seo_marketing_6">فروش در دیجی‌کالا، اسنپ شاپ، باسلام</li>
+							<li data-key="seo_marketing_7">GA4 · GTM · Hotjar · Looker Studio</li>
+						</ul>
+					</div>
+				</div>
+				<!-- SEO Tools -->
+				<div class="mt-10">
+					<h3 class="text-center text-gray-400 text-sm font-mono mb-6 uppercase tracking-widest" data-key="seo_tools_title">ابزارهای سئو و مارکتینگ</h3>
+					<div class="flex flex-wrap justify-center gap-3">
+						<span class="tool-badge">Google Search Console</span>
+						<span class="tool-badge">Google Analytics (GA4)</span>
+						<span class="tool-badge">Google Ads</span>
+						<span class="tool-badge">Google Tag Manager</span>
+						<span class="tool-badge">Ahrefs</span>
+						<span class="tool-badge">SEMrush</span>
+						<span class="tool-badge">Moz</span>
+						<span class="tool-badge">Screaming Frog</span>
+						<span class="tool-badge">KWFinder</span>
+						<span class="tool-badge">Looker Studio</span>
+						<span class="tool-badge">GTmetrix</span>
+						<span class="tool-badge">PageSpeed Insights</span>
+						<span class="tool-badge">Hotjar</span>
+						<span class="tool-badge">Google Lighthouse</span>
+						<span class="tool-badge">Keyword Planner</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== DEVOPS ENGINEERING SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="devops-section" class="devops-section">
+			<div class="section-inner">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:#22d3ee;">DevOps Engineering</span>
+					<h2 data-key="devops_title">مهندسی DevOps</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, #22d3ee, #3b82f6);"></div>
+					<p class="text-gray-400 mt-4 max-w-2xl mx-auto" data-key="devops_desc">مسلط به Docker، Kubernetes، CI/CD، Ansible، Prometheus و Linux در حد LPIC2 — با تجربه مدیریت CI/CD Pipelines در مقیاس سازمانی.</p>
+				</div>
+				<!-- CI/CD Pipeline Visual -->
+				<div class="mb-14">
+					<p class="text-center text-gray-500 text-xs font-mono uppercase tracking-widest mb-6" data-key="pipeline_title"> CI/CD Pipeline Flow</p>
+					<div class="pipeline-wrapper">
+						<div class="pipeline-step-w">
+							<div class="pipeline-icon-w border-cyan-500/40 hover:border-cyan-400 hover:shadow-cyan-500/20">
+								<i class="fab fa-github text-cyan-400 text-2xl"></i>
+							</div>
+							<span class="pipeline-label" data-key="pipeline_code">Code</span>
+						</div>
+						<div class="pipeline-arrow">→</div>
+						<div class="pipeline-step-w">
+							<div class="pipeline-icon-w border-violet-500/40 hover:border-violet-400 hover:shadow-violet-500/20">
+								<i class="fas fa-vials text-violet-400 text-2xl"></i>
+							</div>
+							<span class="pipeline-label" data-key="pipeline_test">Test</span>
+						</div>
+						<div class="pipeline-arrow">→</div>
+						<div class="pipeline-step-w">
+							<div class="pipeline-icon-w border-orange-500/40 hover:border-orange-400 hover:shadow-orange-500/20">
+								<i class="fas fa-hammer text-orange-400 text-2xl"></i>
+							</div>
+							<span class="pipeline-label" data-key="pipeline_build">Build</span>
+						</div>
+						<div class="pipeline-arrow">→</div>
+						<div class="pipeline-step-w">
+							<div class="pipeline-icon-w border-blue-500/40 hover:border-blue-400 hover:shadow-blue-500/20">
+								<i class="fab fa-docker text-blue-400 text-2xl"></i>
+							</div>
+							<span class="pipeline-label" data-key="pipeline_container">Container</span>
+						</div>
+						<div class="pipeline-arrow">→</div>
+						<div class="pipeline-step-w">
+							<div class="pipeline-icon-w border-emerald-500/40 hover:border-emerald-400 hover:shadow-emerald-500/20">
+								<i class="fas fa-dharmachakra text-emerald-400 text-2xl"></i>
+							</div>
+							<span class="pipeline-label" data-key="pipeline_deploy">Deploy</span>
+						</div>
+						<div class="pipeline-arrow">→</div>
+						<div class="pipeline-step-w">
+							<div class="pipeline-icon-w border-yellow-500/40 hover:border-yellow-400 hover:shadow-yellow-500/20">
+								<i class="fas fa-chart-bar text-yellow-400 text-2xl"></i>
+							</div>
+							<span class="pipeline-label" data-key="pipeline_monitor">Monitor</span>
+						</div>
+						<div class="pipeline-arrow">→</div>
+						<div class="pipeline-step-w">
+							<div class="pipeline-icon-w border-red-500/40 hover:border-red-400 hover:shadow-red-500/20">
+								<i class="fas fa-bell text-red-400 text-2xl"></i>
+							</div>
+							<span class="pipeline-label" data-key="pipeline_alert">Alert</span>
+						</div>
+					</div>
+				</div>
+				<!-- DevOps Skills Grid -->
+				<div class="devops-skills-grid">
+					<div class="devops-card">
+						<h3 class="devops-card-title text-cyan-400"><i class="fab fa-docker mr-2"></i>Containerization</h3>
+						<div class="skill-bars">
+							<div class="skill-bar-item"><span>Docker / Compose</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-cyan-500" style="width:95%"></div>
+								</div><span class="bar-val">95%</span>
+							</div>
+							<div class="skill-bar-item"><span>Kubernetes</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-cyan-500" style="width:78%"></div>
+								</div><span class="bar-val">78%</span>
+							</div>
+							<div class="skill-bar-item"><span>Object Storage</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-cyan-400" style="width:72%"></div>
+								</div><span class="bar-val">72%</span>
+							</div>
+						</div>
+					</div>
+					<div class="devops-card">
+						<h3 class="devops-card-title text-violet-400"><i class="fas fa-code-branch mr-2"></i>CI/CD &amp; GitOps</h3>
+						<div class="skill-bars">
+							<div class="skill-bar-item"><span>GitHub Actions</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-violet-500" style="width:88%"></div>
+								</div><span class="bar-val">88%</span>
+							</div>
+							<div class="skill-bar-item"><span>GitLab CI</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-violet-500" style="width:82%"></div>
+								</div><span class="bar-val">82%</span>
+							</div>
+							<div class="skill-bar-item"><span>GitOps مفاهیم</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-violet-400" style="width:70%"></div>
+								</div><span class="bar-val">70%</span>
+							</div>
+						</div>
+					</div>
+					<div class="devops-card">
+						<h3 class="devops-card-title text-orange-400"><i class="fas fa-network-wired mr-2"></i>Networking &amp; Proxy </h3>
+						<div class="skill-bars">
+							<div class="skill-bar-item"><span>Nginx</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-orange-500" style="width:88%"></div>
+								</div><span class="bar-val">88%</span>
+							</div>
+							<div class="skill-bar-item"><span>Traefik</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-orange-500" style="width:82%"></div>
+								</div><span class="bar-val">82%</span>
+							</div>
+							<div class="skill-bar-item"><span>Load Balancing</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-orange-400" style="width:80%"></div>
+								</div><span class="bar-val">80%</span>
+							</div>
+						</div>
+					</div>
+					<div class="devops-card">
+						<h3 class="devops-card-title text-yellow-400"><i class="fas fa-chart-area mr-2"></i>Monitoring &amp; Logging </h3>
+						<div class="skill-bars">
+							<div class="skill-bar-item"><span>Prometheus</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-yellow-500" style="width:82%"></div>
+								</div><span class="bar-val">82%</span>
+							</div>
+							<div class="skill-bar-item"><span>Grafana</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-yellow-500" style="width:85%"></div>
+								</div><span class="bar-val">85%</span>
+							</div>
+							<div class="skill-bar-item"><span>ELK Stack</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-yellow-400" style="width:70%"></div>
+								</div><span class="bar-val">70%</span>
+							</div>
+						</div>
+					</div>
+					<div class="devops-card">
+						<h3 class="devops-card-title text-red-400"><i class="fab fa-linux mr-2"></i>Linux &amp; Security</h3>
+						<div class="skill-bars">
+							<div class="skill-bar-item"><span>Linux (LPIC2)</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-red-500" style="width:88%"></div>
+								</div><span class="bar-val">88%</span>
+							</div>
+							<div class="skill-bar-item"><span>Firewall &amp; Security</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-red-500" style="width:80%"></div>
+								</div><span class="bar-val">80%</span>
+							</div>
+							<div class="skill-bar-item"><span>Bash Scripting</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-red-400" style="width:85%"></div>
+								</div><span class="bar-val">85%</span>
+							</div>
+						</div>
+					</div>
+					<div class="devops-card">
+						<h3 class="devops-card-title text-emerald-400"><i class="fas fa-cloud mr-2"></i>IaC &amp; Automation</h3>
+						<div class="skill-bars">
+							<div class="skill-bar-item"><span>Ansible</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-emerald-500" style="width:82%"></div>
+								</div><span class="bar-val">82%</span>
+							</div>
+							<div class="skill-bar-item"><span>Terraform</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-emerald-500" style="width:72%"></div>
+								</div><span class="bar-val">72%</span>
+							</div>
+							<div class="skill-bar-item"><span>Backup &amp; DR</span>
+								<div class="bar-track">
+									<div class="bar-fill bg-emerald-400" style="width:85%"></div>
+								</div><span class="bar-val">85%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- DevOps Tech Tags -->
+				<div class="flex flex-wrap justify-center gap-3 mt-8">
+					<span class="tool-badge border-cyan-500/20 text-cyan-300">Docker</span>
+					<span class="tool-badge border-cyan-500/20 text-cyan-300">Kubernetes</span>
+					<span class="tool-badge border-cyan-500/20 text-cyan-300">GitHub Actions</span>
+					<span class="tool-badge border-cyan-500/20 text-cyan-300">GitLab CI</span>
+					<span class="tool-badge border-violet-500/20 text-violet-300">Ansible</span>
+					<span class="tool-badge border-violet-500/20 text-violet-300">Terraform</span>
+					<span class="tool-badge border-orange-500/20 text-orange-300">Nginx</span>
+					<span class="tool-badge border-orange-500/20 text-orange-300">Traefik</span>
+					<span class="tool-badge border-yellow-500/20 text-yellow-300">Prometheus</span>
+					<span class="tool-badge border-yellow-500/20 text-yellow-300">Grafana</span>
+					<span class="tool-badge border-yellow-500/20 text-yellow-300">ELK Stack</span>
+					<span class="tool-badge border-red-500/20 text-red-300">Linux LPIC2</span>
+					<span class="tool-badge border-red-500/20 text-red-300">Bash Scripting</span>
+					<span class="tool-badge border-emerald-500/20 text-emerald-300">RabbitMQ</span>
+					<span class="tool-badge border-emerald-500/20 text-emerald-300">Selenium</span>
+					<span class="tool-badge border-emerald-500/20 text-emerald-300">Locust</span>
+					<span class="tool-badge border-blue-500/20 text-blue-300">Apache</span>
+					<span class="tool-badge border-blue-500/20 text-blue-300">AWS</span>
+					<span class="tool-badge border-blue-500/20 text-blue-300">Object Storage</span>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== PROJECTS SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="projects" class="projects" aria-label="پروژه‌ها">
+			<div class="section-inner">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:var(--green);" data-key="projects_subtitle">Portfolio</span>
+					<h2 data-key="projects_title">پروژه‌ها و دستاوردها</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, var(--green), var(--blue));"></div>
+				</div>
+				<div class="projects-grid fade-up">
+					<!-- DevOps Project -->
+					<div class="project-card">
+						<div class="project-header">
+							<div class="project-icon bg-cyan-10"><i class="fas fa-infinity c-cyan"></i></div>
+							<span class="project-tag bg-cyan-10 c-cyan border-cyan">DevOps</span>
+						</div>
+						<h3 data-key="project1_title">پلتفرم CI/CD سازمانی</h3>
+						<p class="desc" data-key="project1_desc">پیاده‌سازی کامل pipeline اتوماتیک با GitHub Actions، Docker Registry، تست‌های خودکار و deploy به Kubernetes</p>
+						<div class="project-tags">
+							<span class="tag-sm">GitHub Actions</span>
+							<span class="tag-sm">Docker</span>
+							<span class="tag-sm">K8s</span>
+							<span class="tag-sm">Helm</span>
+						</div>
+					</div>
+					<!-- Full Stack Project -->
+					<div class="project-card">
+						<div class="project-header">
+							<div class="project-icon bg-emerald-10"><i class="fas fa-code c-emerald"></i></div>
+							<span class="project-tag bg-emerald-10 c-emerald border-emerald">Full Stack</span>
+						</div>
+						<h3 data-key="project2_title">سیستم مدیریت محتوای هوشمند</h3>
+						<p class="desc" data-key="project2_desc">طراحی و پیاده‌سازی CMS با React، Laravel و AI برای تولید محتوای خودکار و بهینه‌سازی سئو</p>
+						<div class="project-tags">
+							<span class="tag-sm">React</span>
+							<span class="tag-sm">Laravel</span>
+							<span class="tag-sm">AI</span>
+							<span class="tag-sm">SEO</span>
+						</div>
+					</div>
+					<!-- SEO Project -->
+					<div class="project-card">
+						<div class="project-header">
+							<div class="project-icon bg-yellow-10"><i class="fas fa-chart-line c-yellow"></i></div>
+							<span class="project-tag bg-yellow-10 c-yellow border-yellow">SEO</span>
+						</div>
+						<h3 data-key="project3_title">استراتژی سئو و رشد ارگانیک</h3>
+						<p class="desc" data-key="project3_desc">طراحی و اجرای استراتژی سئو جامع شامل Technical SEO، تولید محتوا و لینک‌سازی برای افزایش ۳۰۰٪ ترافیک</p>
+						<div class="project-tags">
+							<span class="tag-sm">Technical SEO</span>
+							<span class="tag-sm">Content Strategy</span>
+							<span class="tag-sm">Link Building</span>
+							<span class="tag-sm">GA4</span>
+						</div>
+					</div>
+					<!-- DevOps Project 2 -->
+					<div class="project-card">
+						<div class="project-header">
+							<div class="project-icon bg-violet-10"><i class="fas fa-cloud c-violet"></i></div>
+							<span class="project-tag bg-violet-10 c-violet border-violet">DevOps</span>
+						</div>
+						<h3 data-key="project5_title">زیرساخت ابری با Terraform</h3>
+						<p class="desc" data-key="project5_desc">طراحی و پیاده‌سازی زیرساخت کامل AWS با Terraform و Ansible برای configuration management</p>
+						<div class="project-tags">
+							<span class="tag-sm">Terraform</span>
+							<span class="tag-sm">Ansible</span>
+							<span class="tag-sm">AWS</span>
+							<span class="tag-sm">IaC</span>
+						</div>
+					</div>
+					<!-- Full Stack Project 2 -->
+					<div class="project-card">
+						<div class="project-header">
+							<div class="project-icon bg-orange-10"><i class="fab fa-php c-orange"></i></div>
+							<span class="project-tag bg-orange-10 c-orange border-orange">Full Stack</span>
+						</div>
+						<h3 data-key="project2b_title">سیستم API مقیاس‌پذیر با Laravel</h3>
+						<p class="desc" data-key="project2b_desc">طراحی و پیاده‌سازی RESTful API بر اساس Clean Architecture، DDD، Redis Caching و مستندسازی OpenAPI</p>
+						<div class="project-tags">
+							<span class="tag-sm">Laravel</span>
+							<span class="tag-sm">PostgreSQL</span>
+							<span class="tag-sm">Redis</span>
+							<span class="tag-sm">OpenAPI</span>
+						</div>
+					</div>
+					<!-- SEO Project 2 -->
+					<div class="project-card">
+						<div class="project-header">
+							<div class="project-icon bg-pink-10"><i class="fas fa-robot c-pink"></i></div>
+							<span class="project-tag bg-pink-10 c-pink border-pink">AI SEO</span>
+						</div>
+						<h3 data-key="project6_title">بهینه‌سازی برای AI Search (AEO/GEO)</h3>
+						<p class="desc" data-key="project6_desc">پیاده‌سازی استراتژی AEO و GEO برای نمایش در AI Overviews گوگل و ChatGPT/Gemini</p>
+						<div class="project-tags">
+							<span class="tag-sm">AEO</span>
+							<span class="tag-sm">GEO</span>
+							<span class="tag-sm">AI Overviews</span>
+							<span class="tag-sm">llms.txt</span>
+						</div>
+					</div>
+				</div>
+				<div class="projects-cta">
+					<a href="https://github.com/samadelmakchi" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-github"></i> <span data-key="github_all">مشاهده همه پروژه‌ها در GitHub</span>
+						<i class="fas fa-arrow-left" style="font-size:0.75rem;"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== EXPERIENCE SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="experience" class="experience" aria-label="تجربیات">
+			<div class="section-inner">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:var(--green);" data-key="exp_subtitle">Career</span>
+					<h2 data-key="exp_title">تجربیات و نقش‌ها</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, var(--green), var(--blue));"></div>
+				</div>
+				<div class="timeline fade-up">
+					<div class="timeline-item tl-left">
+						<div class="timeline-dot dot-cyan"><i class="fas fa-infinity"></i></div>
+						<div class="timeline-content">
+							<span class="exp-tag bg-cyan-10 c-cyan border-cyan">DevOps</span>
+							<h3 data-key="exp1_title">مهندس DevOps</h3>
+							<p class="desc" data-key="exp1_desc">طراحی و پیاده‌سازی pipeline‌های CI/CD، مدیریت کلاستر Kubernetes، مانیتورینگ با Prometheus/Grafana و بهینه‌سازی زیرساخت.</p>
+						</div>
+					</div>
+					<div class="timeline-item tl-right">
+						<div class="timeline-dot dot-emerald"><i class="fas fa-code"></i></div>
+						<div class="timeline-content">
+							<span class="exp-tag bg-emerald-10 c-emerald border-emerald">Full Stack</span>
+							<h3 data-key="exp2_title">توسعه‌دهنده Full Stack</h3>
+							<p class="desc" data-key="exp2_desc">طراحی و توسعه اپلیکیشن‌های تحت وب با React، Next.js، Laravel و FastAPI. پیاده‌سازی معماری میکروسرویس و Clean Architecture.</p>
+						</div>
+					</div>
+					<div class="timeline-item tl-left">
+						<div class="timeline-dot dot-yellow"><i class="fas fa-chart-line"></i></div>
+						<div class="timeline-content">
+							<span class="exp-tag bg-yellow-10 c-yellow border-yellow">SEO</span>
+							<h3 data-key="exp3_title">متخصص سئو و دیجیتال مارکتینگ</h3>
+							<p class="desc" data-key="exp3_desc">طراحی استراتژی سئو، بهینه‌سازی Technical SEO، تولید محتوا، لینک‌سازی و مدیریت کمپین‌های Google Ads برای رشد ترافیک ارگانیک.</p>
+						</div>
+					</div>
+					<div class="timeline-item tl-right">
+						<div class="timeline-dot dot-orange"><i class="fas fa-users"></i></div>
+						<div class="timeline-content">
+							<span class="exp-tag bg-orange-10 c-orange border-orange">Management</span>
+							<h3 data-key="exp3b_title">اسکرام مستر و مالک محصول</h3>
+							<p class="desc" data-key="exp3b_desc">مدیریت تیم‌های نرم‌افزاری با متدولوژی Scrum/Kanban، استفاده از Jira، Confluence و Miro برای بهبود فرآیندهای توسعه.</p>
+						</div>
+					</div>
+					<div class="timeline-item tl-left">
+						<div class="timeline-dot dot-pink"><i class="fas fa-robot"></i></div>
+						<div class="timeline-content">
+							<span class="exp-tag bg-pink-10 c-pink border-pink">AI</span>
+							<h3 data-key="exp4_title">متخصص AI و اتوماسیون</h3>
+							<p class="desc" data-key="exp4_desc">طراحی AI Agent، اتوماسیون فرآیندها با n8n، پیاده‌سازی ML Pipeline برای تحلیل داده و پیش‌بینی رفتار کاربران.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Clients -->
+				<div class="clients fade-up">
+					<h3 class="clients-title" data-key="clients_title">مشتریان منتخب</h3>
+					<div class="clients-list" id="clientsList"></div>
+				</div>
+			</div>
+		</section>
+		<!-- ============================================================ -->
+		<!-- ========== CONTACT SECTION ========== -->
+		<!-- ============================================================ -->
+		<section id="contact" class="contact" aria-label="تماس با من">
+			<div class="section-inner" style="max-width:64rem;">
+				<div class="section-title fade-up">
+					<span class="section-subtitle" style="color:var(--green);" data-key="contact_subtitle">Get in Touch</span>
+					<h2 data-key="contact_title">ارتباط با من</h2>
+					<div class="section-line" style="background:linear-gradient(90deg, var(--green), var(--blue));"></div>
+					<p class="muted" style="margin-top:1rem; max-width:32rem; margin-left:auto; margin-right:auto;" data-key="contact_desc"> آماده همکاری در پروژه‌های DevOps، Full Stack، SEO و مدیریت محصول هستم. بیایید با هم صحبت کنیم. </p>
+				</div>
+				<div class="contact-grid fade-up">
+					<div class="contact-items">
+						<a href="https://wa.me/989141189645" target="_blank" rel="noopener noreferrer" class="contact-item ci-green">
+							<div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+							<div class="ci-info">
+								<p class="ci-label" data-key="whatsapp_label">واتساپ</p>
+								<p class="ci-value" data-key="whatsapp_value">ارسال پیام مستقیم</p>
+							</div>
+							<i class="fas fa-arrow-left ci-arrow"></i>
+						</a>
+						<a href="https://t.me/samadelmakchi" target="_blank" rel="noopener noreferrer" class="contact-item ci-cyan">
+							<div class="ci-icon"><i class="fab fa-telegram"></i></div>
+							<div class="ci-info">
+								<p class="ci-label" data-key="telegram_label">تلگرام</p>
+								<p class="ci-value">samadelmakchi</p>
+							</div>
+							<i class="fas fa-arrow-left ci-arrow"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank" rel="noopener noreferrer" class="contact-item ci-blue">
+							<div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+							<div class="ci-info">
+								<p class="ci-label">LinkedIn</p>
+								<p class="ci-value">samad-elmakchi</p>
+							</div>
+							<i class="fas fa-arrow-left ci-arrow"></i>
+						</a>
+						<a href="https://github.com/samadelmakchi" target="_blank" rel="noopener noreferrer" class="contact-item ci-gray">
+							<div class="ci-icon"><i class="fab fa-github"></i></div>
+							<div class="ci-info">
+								<p class="ci-label">GitHub</p>
+								<p class="ci-value">samadelmakchi</p>
+							</div>
+							<i class="fas fa-arrow-left ci-arrow"></i>
+						</a>
+						<a href="https://www.instagram.com/samad.elmakchi" target="_blank" rel="noopener noreferrer" class="contact-item ci-pink">
+							<div class="ci-icon"><i class="fab fa-instagram"></i></div>
+							<div class="ci-info">
+								<p class="ci-label">Instagram</p>
+								<p class="ci-value">samad.elmakchi</p>
+							</div>
+							<i class="fas fa-arrow-left ci-arrow"></i>
+						</a>
+					</div>
+					<div class="contact-card">
+						<div class="contact-card-header">
+							<div class="contact-card-avatar">
+								<img src="samad-elmakchi.jpg" alt="صمد المکچی" width="80" height="80">
+							</div>
+							<h3 data-key="contact_name">صمد المکچی</h3>
+							<p class="role" data-key="contact_role">DevOps & Full Stack Developer</p>
+						</div>
+						<div class="contact-info">
+							<div class="contact-info-item">
+								<i class="fas fa-map-marker-alt text-cyan"></i>
+								<span data-key="contact_location">تبریز، ایران</span>
+							</div>
+							<div class="contact-info-item">
+								<i class="fas fa-clock text-violet"></i>
+								<span data-key="contact_timezone">UTC+3:30 (Tehran Time)</span>
+							</div>
+							<div class="contact-info-item">
+								<i class="fas fa-briefcase text-emerald"></i>
+								<span data-key="contact_status">آماده پروژه‌های فریلنس و همکاری</span>
+							</div>
+						</div>
+						<a href="https://elmakchi.ir/" target="_blank" rel="noopener noreferrer" class="contact-cta">
+							<i class="fas fa-globe" style="font-size:0.875rem;"></i>
+							<span data-key="website_btn">مشاهده وبسایت رسمی</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ========== FOOTER ========== -->
+		<footer role="contentinfo">
+			<div class="footer-inner">
+				<div class="footer-brand">
+					<div class="footer-logo">
+						<img src="samad-elmakchi.jpg" alt="صمد المکچی" width="32" height="32">
+					</div>
+					<span class="footer-name" data-key="footer_name">صمد المکچی | Samad Elmakchi</span>
+				</div>
+				<p class="footer-tech">DevOps · Full Stack · SEO</p>
+				<div class="footer-social">
+					<a href="https://github.com/samadelmakchi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a href="https://www.instagram.com/samad.elmakchi" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+		<!-- ========== SCROLL TO TOP ========== -->
+		<button id="scroll-top" title="رفتن به بالا" aria-label="بازگشت به بالای صفحه">
+			<i class="fas fa-arrow-up" style="font-size:0.875rem;"></i>
+		</button>
+		<!-- ========== SCRIPTS ========== -->
+		<script src="translations.js"></script>
+		<script src="main.js"></script>
+	</body>
 
-    body {
-      background: var(--bg);
-      color: #f3f4f6;
-      font-family: 'Estedad', system-ui, sans-serif;
-      overflow-x: hidden;
-      line-height: 1.6;
-    }
-
-    .font-mono { font-family: 'Fira Code', monospace; }
-
-    /* Scrollbar */
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
-
-    /* Background */
-    .bg-fixed { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
-    .bg-gradient { position: absolute; inset: 0; background: linear-gradient(135deg, #030712, #111827, #030712); }
-    .bg-orb { position: absolute; border-radius: 50%; filter: blur(80px); animation: pulse-slow 4s ease-in-out infinite alternate; }
-    .bg-orb-1 { width: 24rem; height: 24rem; top: 0; left: 25%; background: rgba(34,197,94,0.04); }
-    .bg-orb-2 { width: 20rem; height: 20rem; bottom: 25%; right: 25%; background: rgba(59,130,246,0.04); animation-delay: 1s; }
-    .bg-orb-3 { width: 16rem; height: 16rem; top: 50%; left: 50%; transform: translate(-50%,-50%); background: rgba(20,184,166,0.04); animation-delay: 2s; }
-
-    #matrix-bg {
-      position: absolute; inset: 0; opacity: 0.03; overflow: hidden;
-      display: flex; justify-content: space-around;
-    }
-    .matrix-col {
-      font-family: monospace; font-size: 14px; line-height: 1.2;
-      color: var(--green); animation: matrix-fall linear infinite;
-      white-space: pre; display: flex; flex-direction: column;
-    }
-    @keyframes matrix-fall {
-      0% { transform: translateY(-100%); }
-      100% { transform: translateY(100vh); }
-    }
-    @keyframes pulse-slow {
-      0% { opacity: 0.5; transform: scale(1); }
-      100% { opacity: 1; transform: scale(1.05); }
-    }
-
-    /* Nav */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
-      background: rgba(3,7,18,0.85); backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      transition: background 0.3s;
-    }
-    nav.scrolled { background: rgba(3,7,18,0.95); }
-    .nav-inner {
-      max-width: 80rem; margin: 0 auto; padding: 0 1rem;
-      display: flex; align-items: center; justify-content: space-between; height: 4rem;
-    }
-    .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
-    .nav-logo {
-      width: 2.25rem; height: 2.25rem; border-radius: 0.5rem;
-      background: linear-gradient(135deg, var(--green), var(--blue));
-      display: flex; align-items: center; justify-content: center;
-    }
-    .nav-logo span { color: #fff; font-weight: 700; font-size: 0.8rem; font-family: monospace; }
-    .nav-name { font-weight: 700; color: #fff; font-size: 1rem; }
-    .nav-links { display: flex; align-items: center; gap: 0.25rem; }
-    .nav-link {
-      padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.875rem;
-      color: #9ca3af; text-decoration: none; transition: all 0.2s;
-    }
-    .nav-link:hover, .nav-link.active { color: var(--green); }
-    .nav-social { display: flex; gap: 0.75rem; }
-    .nav-social a {
-      width: 2.25rem; height: 2.25rem; border-radius: 0.5rem;
-      background: #1f2937; display: flex; align-items: center; justify-content: center;
-      color: #9ca3af; text-decoration: none; transition: all 0.2s; font-size: 0.8rem;
-    }
-    .nav-social a:hover { color: #fff; background: #374151; }
-    #menu-btn {
-      display: none; width: 2.25rem; height: 2.25rem; border-radius: 0.5rem;
-      background: #1f2937; border: none; color: #9ca3af; cursor: pointer;
-      align-items: center; justify-content: center; font-size: 0.8rem;
-    }
-
-    /* Mobile Menu */
-    .mobile-menu {
-      display: none; background: rgba(17,24,39,0.95);
-      backdrop-filter: blur(8px); border-top: 1px solid #1f2937;
-    }
-    .mobile-menu.open { display: block; }
-    .mobile-menu a {
-      display: block; padding: 0.5rem 1rem; border-radius: 0.5rem;
-      color: #9ca3af; text-decoration: none; transition: all 0.2s;
-    }
-    .mobile-menu a:hover { color: var(--green); background: #1f2937; }
-
-    /* Sections */
-    section { position: relative; z-index: 1; }
-    .section-inner { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
-    .section-title { text-align: center; margin-bottom: 4rem; }
-    .section-subtitle { color: var(--green); font-family: monospace; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; }
-    .section-title h2 { font-size: 2rem; font-weight: 700; color: #fff; margin-top: 0.5rem; }
-    .section-line { width: 5rem; height: 0.25rem; background: linear-gradient(90deg, var(--green), var(--blue)); border-radius: 9999px; margin: 1rem auto 0; }
-
-    /* Hero */
-    .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 4rem; }
-    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; min-height: calc(100vh - 4rem); }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.375rem 0.75rem; border-radius: 9999px;
-      background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2);
-      margin-bottom: 1.5rem;
-    }
-    .hero-badge .dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
-    .hero-badge span { color: var(--green); font-size: 0.875rem; font-weight: 500; }
-    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-
-    .hero h1 { font-size: 3.5rem; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 1rem; }
-    .hero h1 .gradient {
-      display: block; background: linear-gradient(270deg, var(--green), var(--blue), var(--teal));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero-line { height: 1px; background: linear-gradient(90deg, transparent, #374151, transparent); margin: 1.5rem 0; }
-    .hero-role { font-size: 1.5rem; color: #d1d5db; font-weight: 500; height: 2rem; overflow: hidden; }
-    .hero-desc { color: #9ca3af; line-height: 1.7; margin-bottom: 2rem; max-width: 36rem; }
-
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.75rem 1.5rem; border-radius: 0.75rem;
-      background: linear-gradient(90deg, var(--green), var(--blue));
-      color: #fff; font-weight: 600; text-decoration: none;
-      transition: all 0.3s; border: none; cursor: pointer;
-    }
-    .btn-primary:hover { box-shadow: 0 8px 25px rgba(34,197,94,0.25); transform: translateY(-2px); }
-    .btn-outline {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.75rem 1.5rem; border-radius: 0.75rem;
-      border: 1px solid #374151; color: #d1d5db; font-weight: 600;
-      text-decoration: none; transition: all 0.3s;
-    }
-    .btn-outline:hover { border-color: #6b7280; color: #fff; background: rgba(31,41,55,0.5); }
-
-    .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; }
-
-    /* Stats */
-    .stats { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 3rem; }
-    .stat { text-align: center; }
-    .stat-val { font-size: 1.875rem; font-weight: 800; color: #fff; }
-    .stat-label { font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem; }
-    .stat-divider { width: 1px; background: #1f2937; }
-
-    /* Terminal */
-    .terminal {
-      border-radius: 1rem; overflow: hidden; border: 1px solid #1f2937;
-      background: rgba(17,24,39,0.8); backdrop-filter: blur(8px);
-      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
-      direction: ltr;
-    }
-    .terminal-header {
-      display: flex; align-items: center; gap: 0.5rem;
-      padding: 0.75rem 1rem; background: rgba(31,41,39,0.8);
-      border-bottom: 1px solid #374151;
-    }
-    .terminal-dot { width: 0.75rem; height: 0.75rem; border-radius: 50%; }
-    .dot-red { background: #ef4444; }
-    .dot-yellow { background: #eab308; }
-    .dot-green { background: #22c55e; }
-    .terminal-title { color: #9ca3af; font-family: monospace; font-size: 0.75rem; flex: 1; text-align: center; }
-    .terminal-body { padding: 1.25rem; font-family: monospace; font-size: 0.875rem; line-height: 1.6; }
-    .t-line { display: flex; align-items: center; }
-    .t-user { color: #34d399; }
-    .t-sep { color: #6b7280; }
-    .t-host { color: var(--green); }
-    .t-cmd { color: #d1d5db; margin-left: 0.5rem; }
-    .t-output { color: #9ca3af; margin: 0.25rem 0 0.75rem 0; }
-    .t-yaml-key { color: #a78bfa; }
-    .t-yaml-val { color: #d1d5db; }
-    .t-yaml-dash { color: var(--green); }
-    .t-table-header { color: #eab308; font-size: 0.75rem; white-space: nowrap; }
-    .t-table-row { color: #9ca3af; font-size: 0.75rem; white-space: nowrap; }
-    .cursor {
-      display: inline-block; width: 0.5rem; height: 1rem;
-      background: #d1d5db; animation: blink 1s step-end infinite;
-    }
-    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
-
-    /* Tech Badges */
-    .tech-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; justify-content: center; }
-    .tech-badge {
-      padding: 0.375rem 0.75rem; border-radius: 0.5rem;
-      font-family: monospace; font-size: 0.75rem; border: 1px solid;
-    }
-    .badge-green { background: rgba(34,197,94,0.1); border-color: rgba(34,197,94,0.2); color: #4ade80; }
-    .badge-blue { background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2); color: #60a5fa; }
-    .badge-teal { background: rgba(20,184,166,0.1); border-color: rgba(20,184,166,0.2); color: #2dd4bf; }
-    .badge-orange { background: rgba(249,115,22,0.1); border-color: rgba(249,115,22,0.2); color: #fb923c; }
-    .badge-green2 { background: rgba(34,197,94,0.1); border-color: rgba(34,197,94,0.2); color: var(--green); }
-    .badge-yellow { background: rgba(234,179,8,0.1); border-color: rgba(234,179,8,0.2); color: #eab308; }
-    .badge-red { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.2); color: #f87171; }
-    .badge-pink { background: rgba(236,72,153,0.1); border-color: rgba(236,72,153,0.2); color: #f472b6; }
-
-    /* About */
-    .about { padding: 6rem 0; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: center; }
-    .about-avatar-wrap {
-      width: 16rem; height: 16rem; margin: 0 auto;
-      border-radius: 1rem;
-      background: linear-gradient(135deg, rgba(34,197,94,0.2), rgba(59,130,246,0.2));
-      border: 1px solid #374151; display: flex; align-items: center; justify-content: center;
-      position: relative;
-    }
-    .about-avatar {
-      width: 10rem;
-      height: 10rem;
-      border-radius: 1rem;
-      overflow: hidden;
-      background: linear-gradient(135deg, var(--green), var(--blue));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .about-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .about-avatar span { display: none; }
-    .about-avatar-name { color: #9ca3af; font-size: 0.875rem; margin-top: 1rem; }
-    .about-avatar-role { color: var(--green); font-family: monospace; font-size: 0.75rem; }
-    .about-deco {
-      position: absolute; width: 4rem; height: 4rem; border-radius: 0.75rem;
-      display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
-    }
-    .deco-docker { top: -1rem; right: -1rem; background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2); color: var(--green); }
-    .deco-k8s { bottom: -1rem; left: -1rem; background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); color: var(--blue); }
-
-    .about-text { display: flex; flex-direction: column; gap: 1.5rem; }
-    .about-text p { color: #d1d5db; line-height: 1.7; }
-    .about-text .muted { color: #9ca3af; }
-    .text-cyan { color: var(--green); }
-    .text-violet { color: var(--blue); }
-    .text-emerald { color: var(--teal); }
-    .text-white { color: #fff; }
-    .font-bold { font-weight: 700; }
-
-    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
-    .info-card {
-      padding: 1rem; border-radius: 0.75rem;
-      background: rgba(17,24,39,0.6); border: 1px solid #1f2937;
-    }
-    .info-card i { margin-bottom: 0.5rem; }
-    .info-card .label { color: #6b7280; font-size: 0.75rem; }
-    .info-card .value { color: #fff; font-size: 0.875rem; font-weight: 500; }
-
-    .social-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
-    .social-link {
-      display: flex; align-items: center; gap: 0.5rem;
-      padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.875rem;
-      text-decoration: none; transition: all 0.2s;
-    }
-    .sl-blue { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); color: #60a5fa; }
-    .sl-blue:hover { background: rgba(59,130,246,0.2); }
-    .sl-gray { background: rgba(55,65,81,0.4); border: 1px solid #374151; color: #d1d5db; }
-    .sl-gray:hover { background: rgba(55,65,81,0.6); }
-    .sl-pink { background: rgba(236,72,153,0.1); border: 1px solid rgba(236,72,153,0.2); color: #f472b6; }
-    .sl-pink:hover { background: rgba(236,72,153,0.2); }
-
-    /* Skills */
-    .skills { padding: 6rem 0; background: rgba(17,24,39,0.3); }
-    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .skill-card {
-      padding: 1.5rem; border-radius: 1rem;
-      background: rgba(17,24,39,0.6); border: 1px solid #1f2937;
-      transition: all 0.3s;
-    }
-    .skill-card:hover { transform: translateY(-4px); }
-    .skill-card-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
-    .skill-icon {
-      width: 3rem; height: 3rem; border-radius: 0.75rem;
-      display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
-    }
-    .skill-card h3 { color: #fff; font-weight: 700; }
-    .skill-card .subtitle { color: #6b7280; font-size: 0.75rem; }
-    .skill-item { margin-bottom: 0.75rem; }
-    .skill-item-header { display: flex; justify-content: space-between; margin-bottom: 0.25rem; }
-    .skill-item-name { color: #d1d5db; font-size: 0.875rem; }
-    .skill-item-pct { font-size: 0.75rem; }
-    .skill-bar-bg { height: 0.375rem; background: #1f2937; border-radius: 9999px; overflow: hidden; }
-    .skill-bar-fill { height: 100%; border-radius: 9999px; transition: width 1s ease; }
-    .bar-cyan { background: linear-gradient(90deg, #16a34a, var(--green)); }
-    .bar-violet { background: linear-gradient(90deg, #2563eb, var(--blue)); }
-    .bar-emerald { background: linear-gradient(90deg, #0d9488, var(--teal)); }
-    .pct-cyan { color: var(--green); }
-    .pct-violet { color: var(--blue); }
-    .pct-emerald { color: var(--teal); }
-
-    .tag-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .tag {
-      padding: 0.375rem 0.75rem; border-radius: 0.5rem;
-      background: rgba(31,41,59,0.5); border: 1px solid #374151;
-      color: #d1d5db; font-size: 0.75rem;
-    }
-
-    .sc-devops:hover { border-color: rgba(34,197,94,0.4); }
-    .sc-monitoring:hover { border-color: rgba(59,130,246,0.4); }
-    .sc-backend:hover { border-color: rgba(20,184,166,0.4); }
-    .sc-arch:hover { border-color: rgba(249,115,22,0.4); }
-    .sc-frontend:hover { border-color: rgba(236,72,153,0.4); }
-    .sc-ai:hover { border-color: rgba(234,179,8,0.4); }
-
-    /* DevOps */
-    .devops { padding: 6rem 0; }
-    .pipeline { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0; margin-bottom: 4rem; }
-    .pipeline-step { display: flex; flex-direction: column; align-items: center; }
-    .pipeline-icon {
-      width: 4rem; height: 4rem; border-radius: 1rem;
-      background: var(--bg); display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem; transition: all 0.3s; cursor: default;
-    }
-    .pipeline-icon:hover { transform: scale(1.1); }
-    .pipeline-label { color: #9ca3af; font-size: 0.75rem; font-family: monospace; margin-top: 0.5rem; }
-    .pipeline-arrow { color: #4b5563; font-size: 1.5rem; margin: 0 0.5rem; }
-
-    .border-cyan { border: 2px solid rgba(34,197,94,0.4); }
-    .border-violet { border: 2px solid rgba(59,130,246,0.4); }
-    .border-orange { border: 2px solid rgba(249,115,22,0.4); }
-    .border-blue { border: 2px solid rgba(59,130,246,0.4); }
-    .border-emerald { border: 2px solid rgba(20,184,166,0.4); }
-    .border-yellow { border: 2px solid rgba(234,179,8,0.4); }
-    .border-red { border: 2px solid rgba(239,68,68,0.4); }
-    .border-pink { border: 2px solid rgba(236,72,153,0.4); }
-    .border-indigo { border: 2px solid rgba(99,102,241,0.4); }
-    .border-green { border: 2px solid rgba(34,197,94,0.4); }
-    .border-gray { border: 2px solid rgba(107,114,128,0.4); }
-
-    .hov-cyan:hover { border-color: var(--green); }
-    .hov-violet:hover { border-color: var(--blue); }
-    .hov-orange:hover { border-color: #f97316; }
-    .hov-blue:hover { border-color: #3b82f6; }
-    .hov-emerald:hover { border-color: var(--teal); }
-    .hov-yellow:hover { border-color: #eab308; }
-    .hov-red:hover { border-color: #ef4444; }
-    .hov-pink:hover { border-color: #ec4899; }
-    .hov-indigo:hover { border-color: #6366f1; }
-    .hov-green:hover { border-color: #22c55e; }
-    .hov-gray:hover { border-color: #6b7280; }
-
-    .tech-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }
-    .tech-card {
-      padding: 1rem; border-radius: 0.75rem;
-      background: rgba(17,24,39,0.6); border: 1px solid #1f2937;
-      text-align: center; transition: all 0.3s; cursor: default;
-    }
-    .tech-card:hover { transform: translateY(-4px); }
-    .tech-card .icon {
-      width: 3rem; height: 3rem; border-radius: 0.75rem;
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 0.75rem; font-size: 1.5rem; transition: all 0.3s;
-    }
-    .tech-card p.name { color: #fff; font-size: 0.875rem; font-weight: 500; }
-    .tech-card p.desc { color: #6b7280; font-size: 0.75rem; }
-
-    .bg-blue-10 { background: rgba(59,130,246,0.1); }
-    .bg-blue-20 { background: rgba(59,130,246,0.2); }
-    .bg-cyan-10 { background: rgba(34,197,94,0.1); }
-    .bg-cyan-20 { background: rgba(34,197,94,0.2); }
-    .bg-gray-70-30 { background: rgba(55,65,81,0.3); }
-    .bg-gray-70-50 { background: rgba(55,65,81,0.5); }
-    .bg-orange-10 { background: rgba(249,115,22,0.1); }
-    .bg-orange-20 { background: rgba(249,115,22,0.2); }
-    .bg-yellow-10 { background: rgba(234,179,8,0.1); }
-    .bg-yellow-20 { background: rgba(234,179,8,0.2); }
-    .bg-violet-10 { background: rgba(59,130,246,0.1); }
-    .bg-violet-20 { background: rgba(59,130,246,0.2); }
-    .bg-red-10 { background: rgba(239,68,68,0.1); }
-    .bg-red-20 { background: rgba(239,68,68,0.2); }
-    .bg-green-10 { background: rgba(34,197,94,0.1); }
-    .bg-green-20 { background: rgba(34,197,94,0.2); }
-    .bg-pink-10 { background: rgba(236,72,153,0.1); }
-    .bg-pink-20 { background: rgba(236,72,153,0.2); }
-    .bg-indigo-10 { background: rgba(99,102,241,0.1); }
-    .bg-indigo-20 { background: rgba(99,102,241,0.2); }
-
-    .c-blue { color: #60a5fa; }
-    .c-cyan { color: var(--green); }
-    .c-gray-300 { color: #d1d5db; }
-    .c-orange { color: #fb923c; }
-    .c-yellow { color: #eab308; }
-    .c-violet { color: #a78bfa; }
-    .c-red { color: #f87171; }
-    .c-green { color: #4ade80; }
-    .c-pink { color: #f472b6; }
-    .c-indigo { color: #818cf8; }
-
-    /* Projects */
-    .projects { padding: 6rem 0; background: rgba(17,24,39,0.3); }
-    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .project-card {
-      padding: 1.5rem; border-radius: 1rem;
-      background: rgba(17,24,39,0.6); border: 1px solid #1f2937;
-      transition: all 0.3s;
-    }
-    .project-card:hover { transform: translateY(-4px); }
-    .project-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1rem; }
-    .project-icon {
-      width: 3rem; height: 3rem; border-radius: 0.75rem;
-      display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
-    }
-    .project-tag {
-      padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; border: 1px solid;
-    }
-    .project-card h3 { color: #fff; font-weight: 700; font-size: 1.125rem; margin-bottom: 0.5rem; }
-    .project-card .desc { color: #9ca3af; font-size: 0.875rem; line-height: 1.6; margin-bottom: 1rem; }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .tag-sm {
-      padding: 0.125rem 0.5rem; border-radius: 0.25rem;
-      background: rgba(31,41,59,0.5); border: 1px solid #374151;
-      color: #d1d5db; font-size: 0.75rem;
-    }
-    .projects-cta { text-align: center; margin-top: 2.5rem; }
-    .projects-cta a {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.75rem 1.5rem; border-radius: 0.75rem;
-      border: 1px solid #374151; color: #d1d5db; text-decoration: none;
-      transition: all 0.3s;
-    }
-    .projects-cta a:hover { border-color: rgba(34,211,238,0.4); color: var(--green); }
-
-    /* Experience */
-    .experience { padding: 6rem 0; }
-    .timeline { position: relative; }
-    .timeline-line {
-      position: absolute; right: 1rem; top: 0; bottom: 0; width: 1px;
-      background: linear-gradient(180deg, rgba(34,197,94,0.5), rgba(59,130,246,0.5), transparent);
-    }
-    @media (min-width: 640px) { .timeline-line { right: 50%; } }
-    .timeline-items { display: flex; flex-direction: column; gap: 2rem; }
-    .timeline-item { display: flex; flex-direction: column; gap: 1rem; position: relative; }
-    @media (min-width: 640px) {
-      .timeline-item { flex-direction: row; gap: 2rem; align-items: flex-start; }
-    }
-    .timeline-content { flex: 1; }
-    @media (min-width: 640px) {
-      .tl-left .timeline-content { text-align: left; padding-right: 2rem; }
-      .tl-right .timeline-content { padding-left: 2rem; }
-      .tl-left .timeline-empty { display: block; }
-      .tl-right .timeline-empty { display: block; }
-    }
-    .timeline-dot {
-      width: 2rem; height: 2rem; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      z-index: 10; font-size: 0.75rem; flex-shrink: 0;
-      position: relative;
-    }
-    .exp-card {
-      padding: 1.25rem; border-radius: 0.75rem;
-      background: rgba(17,24,39,0.6); border: 1px solid #1f2937;
-      transition: all 0.3s;
-    }
-    .exp-tag {
-      display: inline-block; padding: 0.125rem 0.5rem; border-radius: 9999px;
-      font-size: 0.75rem; border: 1px solid; margin-bottom: 0.5rem;
-    }
-    .exp-card h3 { color: #fff; font-weight: 700; }
-    .exp-card .desc { color: #9ca3af; font-size: 0.875rem; line-height: 1.6; margin-top: 0.25rem; }
-
-    .dot-cyan { background: rgba(34,197,94,0.2); border: 2px solid var(--green); }
-    .dot-orange { background: rgba(249,115,22,0.2); border: 2px solid #f97316; }
-    .dot-violet { background: rgba(59,130,246,0.2); border: 2px solid var(--blue); }
-    .dot-emerald { background: rgba(20,184,166,0.2); border: 2px solid var(--teal); }
-    .dot-pink { background: rgba(236,72,153,0.2); border: 2px solid #ec4899; }
-
-    .clients { margin-top: 5rem; }
-    .clients-title { text-align: center; color: #9ca3af; font-family: monospace; font-size: 0.875rem; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em; }
-    .clients-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
-    .client-badge {
-      padding: 0.625rem 1.25rem; border-radius: 0.75rem;
-      background: rgba(17,24,39,0.6); border: 1px solid #1f2937;
-      color: #9ca3af; font-size: 0.875rem; transition: all 0.2s; cursor: default;
-    }
-    .client-badge:hover { border-color: #4b5563; color: #d1d5db; }
-
-    /* Contact */
-    .contact { padding: 6rem 0; background: rgba(17,24,39,0.3); }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-    .contact-items { display: flex; flex-direction: column; gap: 1rem; }
-    .contact-item {
-      display: flex; align-items: center; gap: 1rem;
-      padding: 1.25rem; border-radius: 0.75rem;
-      background: rgba(17,24,39,0.6); border: 1px solid #1f2937;
-      text-decoration: none; transition: all 0.3s;
-    }
-    .contact-item:hover { transform: translateY(-2px); }
-    .ci-icon {
-      width: 3rem; height: 3rem; border-radius: 0.75rem;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.25rem; flex-shrink: 0; transition: all 0.2s;
-    }
-    .ci-info { flex: 1; }
-    .ci-label { color: #6b7280; font-size: 0.75rem; }
-    .ci-value { color: #fff; font-weight: 500; }
-    .ci-arrow { color: #4b5563; transition: all 0.2s; margin-left: auto; }
-    .ci-green .ci-icon { background: rgba(34,197,94,0.1); color: #4ade80; }
-    .ci-green:hover { border-color: rgba(34,197,94,0.4); }
-    .ci-green:hover .ci-icon { background: rgba(34,197,94,0.2); }
-    .ci-green:hover .ci-arrow { color: #4ade80; }
-    .ci-blue .ci-icon { background: rgba(59,130,246,0.1); color: #60a5fa; }
-    .ci-blue:hover { border-color: rgba(59,130,246,0.4); }
-    .ci-blue:hover .ci-icon { background: rgba(59,130,246,0.2); }
-    .ci-blue:hover .ci-arrow { color: #60a5fa; }
-    .ci-gray .ci-icon { background: rgba(55,65,81,0.3); color: #d1d5db; }
-    .ci-gray:hover { border-color: rgba(107,114,128,0.4); }
-    .ci-gray:hover .ci-icon { background: rgba(55,65,81,0.5); }
-    .ci-gray:hover .ci-arrow { color: #d1d5db; }
-    .ci-cyan .ci-icon { background: rgba(34,197,94,0.1); color: var(--green); }
-    .ci-cyan:hover { border-color: rgba(34,211,238,0.4); }
-    .ci-cyan:hover .ci-icon { background: rgba(34,197,94,0.2); }
-    .ci-cyan:hover .ci-arrow { color: var(--green); }
-    .ci-pink .ci-icon { background: rgba(236,72,153,0.1); color: #f472b6; }
-    .ci-pink:hover { border-color: rgba(236,72,153,0.4); }
-    .ci-pink:hover .ci-icon { background: rgba(236,72,153,0.2); }
-    .ci-pink:hover .ci-arrow { color: #f472b6; }
-
-    .contact-card {
-      padding: 2rem; border-radius: 1rem;
-      background: linear-gradient(135deg, rgba(17,24,39,0.8), rgba(17,24,39,0.4));
-      border: 1px solid #1f2937; display: flex; flex-direction: column; justify-content: center;
-    }
-    .contact-card-header { text-align: center; margin-bottom: 2rem; }
-    .contact-card-avatar {
-      width: 5rem; height: 5rem; border-radius: 1rem;
-      background: linear-gradient(135deg, var(--green), var(--blue));
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 1rem;
-      overflow: hidden;
-    }
-    .contact-card-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .contact-card-avatar span { display: none; }
-    .contact-card-header h3 { color: #fff; font-weight: 700; font-size: 1.25rem; }
-    .contact-card-header .role { color: var(--green); font-family: monospace; font-size: 0.875rem; margin-top: 0.25rem; }
-    .contact-info { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
-    .contact-info-item { display: flex; align-items: center; gap: 0.75rem; color: #9ca3af; font-size: 0.875rem; }
-    .contact-info-item i { width: 1rem; }
-    .contact-cta {
-      width: 100%; padding: 0.75rem; border-radius: 0.75rem;
-      background: linear-gradient(90deg, var(--green), var(--blue));
-      color: #fff; font-weight: 600; text-align: center; text-decoration: none;
-      transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 0.5rem;
-      border: none; cursor: pointer;
-    }
-    .contact-cta:hover { box-shadow: 0 8px 25px rgba(34,211,238,0.25); transform: translateY(-2px); }
-
-    /* Footer */
-    footer {
-      position: relative; z-index: 1;
-      padding: 2.5rem 0; border-top: 1px solid rgba(31,41,39,0.5);
-    }
-    .footer-inner {
-      max-width: 80rem; margin: 0 auto; padding: 0 1rem;
-      display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-      gap: 1rem;
-    }
-    @media (min-width: 640px) { .footer-inner { flex-direction: row; } }
-    .footer-brand { display: flex; align-items: center; gap: 0.75rem; }
-    .footer-logo {
-      width: 2rem; height: 2rem; border-radius: 0.5rem;
-      background: linear-gradient(135deg, var(--green), var(--blue));
-      display: flex; align-items: center; justify-content: center;
-    }
-    .footer-logo span { color: #fff; font-weight: 700; font-size: 0.75rem; font-family: monospace; }
-    .footer-name { color: #9ca3af; font-size: 0.875rem; }
-    .footer-tech { color: #4b5563; font-family: monospace; font-size: 0.75rem; }
-    .footer-social { display: flex; gap: 0.75rem; }
-    .footer-social a { color: #6b7280; transition: color 0.2s; text-decoration: none; }
-    .footer-social a:hover { color: #fff; }
-    .footer-social a:hover.s-tw:hover { color: #38bdf8; }
-    .footer-social a:hover.s-li:hover { color: #60a5fa; }
-    .footer-social a:hover.s-ig:hover { color: #f472b6; }
-
-    /* Scroll to top */
-    #scroll-top {
-      position: fixed; bottom: 2rem; left: 2rem; z-index: 50;
-      width: 2.5rem; height: 2.5rem; border-radius: 0.75rem;
-      background: rgba(17,24,39,0.8); backdrop-filter: blur(8px);
-      border: 1px solid #1f2937; color: #9ca3af;
-      display: none; align-items: center; justify-content: center;
-      cursor: pointer; transition: all 0.3s; font-size: 0.875rem;
-    }
-    #scroll-top.visible { display: flex; }
-    #scroll-top:hover { color: #fff; border-color: #374151; }
-
-    /* Animations */
-    .fade-up {
-      opacity: 0; transform: translateY(20px);
-      transition: opacity 0.6s, transform 0.6s;
-    }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2.25rem; }
-      .hero-grid { grid-template-columns: 1fr; }
-      .hero-content { order: 2; }
-      .hero-terminal { order: 1; }
-      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .skills-grid { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .tech-grid { grid-template-columns: repeat(2, 1fr); }
-      .pipeline { gap: 0.5rem; }
-      .pipeline-arrow { display: none; }
-      .nav-links { display: none; }
-      #menu-btn { display: flex; }
-      .section-title h2 { font-size: 1.75rem; }
-      .timeline-line { display: none; }
-      .timeline-empty { display: none; }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Background -->
-  <div class="bg-fixed">
-    <div class="bg-gradient"></div>
-    <div class="bg-orb bg-orb-1"></div>
-    <div class="bg-orb bg-orb-2"></div>
-    <div class="bg-orb bg-orb-3"></div>
-    <div id="matrix-bg"></div>
-  </div>
-
-  <!-- Nav -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <div class="nav-brand">
-        <div class="nav-logo"><span>SE</span></div>
-        <span class="nav-name">Samad Elmakchi</span>
-      </div>
-      <div class="nav-links">
-        <a href="#home" class="nav-link active">خانه</a>
-        <a href="#about" class="nav-link">درباره من</a>
-        <a href="#skills" class="nav-link">مهارت‌ها</a>
-        <a href="#devops" class="nav-link">دواپس</a>
-        <a href="#projects" class="nav-link">پروژه‌ها</a>
-        <a href="#experience" class="nav-link">تجربیات</a>
-        <a href="#contact" class="nav-link">تماس</a>
-      </div>
-      <div class="nav-social">
-        <a href="https://github.com/samadelmakchi" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <button id="menu-btn"><i class="fas fa-bars"></i></button>
-      </div>
-    </div>
-    <div id="mobile-menu" class="mobile-menu">
-      <div style="padding:0.75rem 1rem;">
-        <a href="#home">خانه</a>
-        <a href="#about">درباره من</a>
-        <a href="#skills">مهارت‌ها</a>
-        <a href="#devops">دواپس</a>
-        <a href="#projects">پروژه‌ها</a>
-        <a href="#experience">تجربیات</a>
-        <a href="#contact">تماس</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="section-inner" style="width:100%;">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge"><div class="dot"></div><span>Available for work</span></div>
-          <h1>صمد<span class="gradient">المکچی</span></h1>
-          <div class="hero-line"></div>
-          <div class="hero-role"><div id="typewriter"></div></div>
-          <p class="hero-desc">مهندس DevOps و توسعه‌دهنده Backend با بیش از ۲۰ سال تجربه در اکوسیستم فناوری. متخصص در Docker، Kubernetes، CI/CD، Laravel، FastAPI و معماری میکروسرویس.</p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane" style="font-size:0.875rem;"></i> ارتباط با من</a>
-            <a href="https://github.com/samadelmakchi" target="_blank" class="btn-outline"><i class="fab fa-github" style="font-size:0.875rem;"></i> مشاهده GitHub</a>
-          </div>
-          <div class="stats">
-            <div class="stat"><div class="stat-val">20+</div><div class="stat-label">سال تجربه</div></div>
-            <div class="stat-divider"></div>
-            <div class="stat"><div class="stat-val">50+</div><div class="stat-label">پروژه</div></div>
-            <div class="stat-divider"></div>
-            <div class="stat"><div class="stat-val">30+</div><div class="stat-label">ابزار DevOps</div></div>
-            <div class="stat-divider"></div>
-            <div class="stat"><div class="stat-val">15+</div><div class="stat-label">مشتری</div></div>
-          </div>
-        </div>
-        <div class="hero-terminal">
-          <div class="terminal">
-            <div class="terminal-header">
-              <div class="terminal-dot dot-red"></div>
-              <div class="terminal-dot dot-yellow"></div>
-              <div class="terminal-dot dot-green"></div>
-              <span class="terminal-title">samad@devops:~$</span>
-            </div>
-            <div class="terminal-body">
-              <div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="t-cmd">whoami</span></div>
-              <div class="t-output">Samad Elmakchi — DevOps Engineer & Backend Dev</div>
-              <div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="t-cmd">cat skills.yaml</span></div>
-              <div style="margin:0.25rem 0 0.75rem;">
-                <div><span class="t-yaml-key">devops:</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Docker / Compose</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Kubernetes</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">GitHub Actions / Jenkins</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Prometheus / Grafana</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Ansible / Terraform</span></div>
-                <div><span class="t-yaml-key">backend:</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">PHP (Laravel)</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Python (FastAPI)</span></div>
-                <div style="padding-right:1rem;"><span class="t-yaml-dash">- </span><span class="t-yaml-val">Node.js / Go</span></div>
-              </div>
-              <div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="t-cmd">docker ps --all</span></div>
-              <div style="margin:0.25rem 0 0.75rem; overflow-x:auto;">
-                <div class="t-table-header whitespace-nowrap">CONTAINER ID   IMAGE          STATUS</div>
-                <div class="t-table-row">a1b2c3d4e5f6   nginx:alpine   Up 99 days</div>
-                <div class="t-table-row">b2c3d4e5f6a7   postgres:16    Up 99 days</div>
-                <div class="t-table-row">c3d4e5f6a7b8   redis:7        Up 99 days</div>
-              </div>
-              <div class="t-line"><span class="t-user">samad@devops</span><span class="t-sep">:</span><span class="t-host">~</span><span class="t-sep">$</span><span class="cursor"></span></div>
-            </div>
-          </div>
-          <div class="tech-badges">
-            <span class="tech-badge badge-green">Docker</span>
-            <span class="tech-badge badge-blue">Kubernetes</span>
-            <span class="tech-badge badge-teal">CI/CD</span>
-            <span class="tech-badge badge-orange">Laravel</span>
-            <span class="tech-badge badge-cyan">FastAPI</span>
-            <span class="tech-badge badge-yellow">Terraform</span>
-            <span class="tech-badge badge-red">Prometheus</span>
-            <span class="tech-badge badge-pink">Grafana</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about">
-    <div class="section-inner">
-      <div class="section-title fade-up">
-        <span class="section-subtitle">About Me</span>
-        <h2>درباره من</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-grid">
-        <div>
-          <div class="about-avatar-wrap">
-            <div class="about-avatar"><img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad Elmakchi"></div>
-            <p class="about-avatar-name" style="position:absolute;bottom:2rem;">Samad Elmakchi</p>
-            <p class="about-avatar-role" style="position:absolute;bottom:1.25rem;">DevOps Engineer</p>
-            <div class="about-deco deco-docker"><i class="fab fa-docker"></i></div>
-            <div class="about-deco deco-k8s"><i class="fas fa-dharmachakra"></i></div>
-          </div>
-        </div>
-        <div class="about-text">
-          <p>من <strong class="text-white font-bold">صمد المکچی</strong> هستم، مهندس DevOps و توسعه‌دهنده Backend با بیش از <strong class="text-cyan font-bold">۲۰ سال</strong> سابقه فعالیت مستمر در اکوسیستم فناوری ایران.</p>
-          <p class="muted">تخصص من در نقطه تلاقی <strong class="text-violet font-bold">مهندسی نرم‌افزار</strong>، <strong class="text-emerald font-bold">زیرساخت ابری</strong> و <strong class="text-cyan font-bold">اتوماسیون</strong> قرار دارد. از طراحی معماری‌های پیچیده بک‌اند و پیاده‌سازی pipeline‌های CI/CD گرفته تا مدیریت کلاسترهای Kubernetes و مانیتورینگ با Prometheus/Grafana.</p>
-          <p class="muted">به رویکرد «<strong class="text-white font-bold">Infrastructure as Code</strong>» و «<strong class="text-white font-bold">Everything as Code</strong>» معتقدم و هدفم خلق سیستم‌های قابل اطمینان، مقیاس‌پذیر و خودکار است.</p>
-          <div class="info-grid">
-            <div class="info-card"><i class="fas fa-map-marker-alt text-cyan"></i><p class="label">مکان</p><p class="value">تبریز، ایران</p></div>
-            <div class="info-card"><i class="fas fa-briefcase text-violet"></i><p class="label">وضعیت</p><p class="value">آماده همکاری</p></div>
-            <div class="info-card"><i class="fas fa-code text-emerald"></i><p class="label">تخصص اصلی</p><p class="value">DevOps & Backend</p></div>
-            <div class="info-card"><i class="fas fa-graduation-cap" style="color:#fb923c;"></i><p class="label">تجربه</p><p class="value">+۲۰ سال</p></div>
-          </div>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank" class="social-link sl-blue"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-            <a href="https://github.com/samadelmakchi" target="_blank" class="social-link sl-gray"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.instagram.com/samad.elmakchi" target="_blank" class="social-link sl-pink"><i class="fab fa-instagram"></i> Instagram</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <div class="section-inner">
-      <div class="section-title fade-up">
-        <span class="section-subtitle">Technical Skills</span>
-        <h2>مهارت‌های فنی</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="skills-grid">
-
-        <!-- DevOps -->
-        <div class="skill-card sc-devops fade-up">
-          <div class="skill-card-header">
-            <div class="skill-icon bg-cyan-10"><i class="fas fa-infinity c-cyan"></i></div>
-            <div><h3>DevOps & Infrastructure</h3><p class="subtitle">کانتینرسازی و CI/CD</p></div>
-          </div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Docker / Compose</span><span class="skill-item-pct pct-cyan">95%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:95%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Kubernetes</span><span class="skill-item-pct pct-cyan">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:80%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">GitHub Actions / Jenkins</span><span class="skill-item-pct pct-cyan">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:85%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Ansible / Terraform</span><span class="skill-item-pct pct-cyan">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:75%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Traefik / Nginx</span><span class="skill-item-pct pct-cyan">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:88%"></div></div></div>
-        </div>
-
-        <!-- Monitoring -->
-        <div class="skill-card sc-monitoring fade-up">
-          <div class="skill-card-header">
-            <div class="skill-icon bg-violet-10"><i class="fas fa-chart-line c-violet"></i></div>
-            <div><h3>Monitoring & Security</h3><p class="subtitle">مانیتورینگ و امنیت</p></div>
-          </div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Prometheus</span><span class="skill-item-pct pct-violet">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-violet" style="width:85%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Grafana</span><span class="skill-item-pct pct-violet">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-violet" style="width:88%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Loki / Tempo</span><span class="skill-item-pct pct-violet">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-violet" style="width:75%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">HashiCorp Vault</span><span class="skill-item-pct pct-violet">70%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-violet" style="width:70%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">AWS Cloud</span><span class="skill-item-pct pct-violet">72%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-violet" style="width:72%"></div></div></div>
-        </div>
-
-        <!-- Backend -->
-        <div class="skill-card sc-backend fade-up">
-          <div class="skill-card-header">
-            <div class="skill-icon bg-emerald-10"><i class="fas fa-server c-emerald"></i></div>
-            <div><h3>Backend Development</h3><p class="subtitle">توسعه سمت سرور</p></div>
-          </div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">PHP / Laravel</span><span class="skill-item-pct pct-emerald">92%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-emerald" style="width:92%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Python / FastAPI</span><span class="skill-item-pct pct-emerald">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-emerald" style="width:88%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">Node.js</span><span class="skill-item-pct pct-emerald">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-emerald" style="width:75%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">RESTful / GraphQL</span><span class="skill-item-pct pct-emerald">90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-emerald" style="width:90%"></div></div></div>
-          <div class="skill-item"><div class="skill-item-header"><span class="skill-item-name">MySQL / PostgreSQL</span><span class="skill-item-pct pct-emerald">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill bar-emerald" style="width:88%"></div></div></div>
-        </div>
-
-        <!-- Architecture -->
-        <div class="skill-card sc-arch fade-up">
-          <div class="skill-card-header">
-            <div class="skill-icon bg-orange-10"><i class="fas fa-sitemap c-orange"></i></div>
-            <div><h3>Architecture & Design</h3><p class="subtitle">معماری نرم‌افزار</p></div>
-          </div>
-          <div class="tag-grid">
-            <span class="tag">Microservices</span><span class="tag">Event-Driven</span><span class="tag">Clean Architecture</span><span class="tag">DDD</span><span class="tag">CQRS</span><span class="tag">Event Sourcing</span><span class="tag">Repository Pattern</span><span class="tag">Layered</span>
-          </div>
-        </div>
-
-        <!-- Frontend -->
-        <div class="skill-card sc-frontend fade-up">
-          <div class="skill-card-header">
-            <div class="skill-icon bg-pink-10"><i class="fas fa-layer-group c-pink"></i></div>
-            <div><h3>Frontend & Full-Stack</h3><p class="subtitle">توسعه فرانت‌اند</p></div>
-          </div>
-          <div class="tag-grid">
-            <span class="tag">Vue.js</span><span class="tag">Nuxt.js</span><span class="tag">Inertia.js</span><span class="tag">Tailwind CSS</span><span class="tag">Bootstrap</span><span class="tag">JavaScript/ES6</span><span class="tag">TypeScript</span>
-          </div>
-        </div>
-
-        <!-- AI -->
-        <div class="skill-card sc-ai fade-up">
-          <div class="skill-card-header">
-            <div class="skill-icon bg-yellow-10"><i class="fas fa-robot c-yellow"></i></div>
-            <div><h3>AI & Automation</h3><p class="subtitle">هوش مصنوعی و اتوماسیون</p></div>
-          </div>
-          <div class="tag-grid">
-            <span class="tag">AI Agent Design</span><span class="tag">n8n Workflow</span><span class="tag">AI DevOps</span><span class="tag">ML Pipeline</span><span class="tag">Pandas / NumPy</span><span class="tag">Data Mining</span><span class="tag">AI Coding</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- DevOps -->
-  <section id="devops" class="devops">
-    <div class="section-inner">
-      <div class="section-title fade-up">
-        <span class="section-subtitle">DevOps Expertise</span>
-        <h2>زیرساخت و DevOps</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="pipeline fade-up">
-        <div class="pipeline-step"><div class="pipeline-icon border-cyan hov-cyan"><i class="fab fa-github c-cyan"></i></div><span class="pipeline-label">Code</span></div>
-        <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step"><div class="pipeline-icon border-violet hov-violet"><i class="fas fa-vials c-violet"></i></div><span class="pipeline-label">Test</span></div>
-        <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step"><div class="pipeline-icon border-orange hov-orange"><i class="fas fa-hammer c-orange"></i></div><span class="pipeline-label">Build</span></div>
-        <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step"><div class="pipeline-icon border-blue hov-blue"><i class="fab fa-docker c-blue"></i></div><span class="pipeline-label">Containerize</span></div>
-        <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step"><div class="pipeline-icon border-emerald hov-emerald"><i class="fas fa-dharmachakra c-emerald"></i></div><span class="pipeline-label">Deploy K8s</span></div>
-        <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step"><div class="pipeline-icon border-yellow hov-yellow"><i class="fas fa-chart-bar c-yellow"></i></div><span class="pipeline-label">Monitor</span></div>
-        <div class="pipeline-arrow">→</div>
-        <div class="pipeline-step"><div class="pipeline-icon border-red hov-red"><i class="fas fa-bell c-red"></i></div><span class="pipeline-label">Alert</span></div>
-      </div>
-
-      <div class="tech-grid fade-up">
-        <div class="tech-card"><div class="icon bg-blue-10 bg-blue-20"><i class="fab fa-docker c-blue"></i></div><p class="name">Docker</p><p class="desc">Containerization</p></div>
-        <div class="tech-card"><div class="icon bg-cyan-10 bg-cyan-20"><i class="fas fa-dharmachakra c-cyan"></i></div><p class="name">Kubernetes</p><p class="desc">Orchestration</p></div>
-        <div class="tech-card"><div class="icon bg-gray-70-30 bg-gray-70-50"><i class="fab fa-github c-gray-300"></i></div><p class="name">GitHub Actions</p><p class="desc">CI/CD</p></div>
-        <div class="tech-card"><div class="icon bg-orange-10 bg-orange-20"><i class="fas fa-fire c-orange"></i></div><p class="name">Prometheus</p><p class="desc">Monitoring</p></div>
-        <div class="tech-card"><div class="icon bg-yellow-10 bg-yellow-20"><i class="fas fa-tachometer-alt c-yellow"></i></div><p class="name">Grafana</p><p class="desc">Visualization</p></div>
-        <div class="tech-card"><div class="icon bg-violet-10 bg-violet-20"><i class="fas fa-cloud c-violet"></i></div><p class="name">Terraform</p><p class="desc">IaC</p></div>
-        <div class="tech-card"><div class="icon bg-red-10 bg-red-20"><i class="fas fa-tasks c-red"></i></div><p class="name">Ansible</p><p class="desc">Automation</p></div>
-        <div class="tech-card"><div class="icon bg-green-10 bg-green-20"><i class="fas fa-shield-alt c-green"></i></div><p class="name">Vault</p><p class="desc">Security</p></div>
-        <div class="tech-card"><div class="icon bg-orange-10 bg-orange-20"><i class="fab fa-aws c-orange"></i></div><p class="name">AWS</p><p class="desc">Cloud</p></div>
-        <div class="tech-card"><div class="icon bg-cyan-10 bg-cyan-20"><i class="fas fa-route c-cyan"></i></div><p class="name">Traefik</p><p class="desc">Reverse Proxy</p></div>
-        <div class="tech-card"><div class="icon bg-pink-10 bg-pink-20"><i class="fas fa-database c-pink"></i></div><p class="name">Loki</p><p class="desc">Log Aggregation</p></div>
-        <div class="tech-card"><div class="icon bg-indigo-10 bg-indigo-20"><i class="fas fa-plug c-indigo"></i></div><p class="name">Jenkins</p><p class="desc">CI/CD</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <div class="section-inner">
-      <div class="section-title fade-up">
-        <span class="section-subtitle">Portfolio</span>
-        <h2>پروژه‌ها و دستاوردها</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="projects-grid fade-up">
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon bg-cyan-10"><i class="fas fa-infinity c-cyan"></i></div>
-            <span class="project-tag bg-cyan-10 c-cyan border-cyan">DevOps</span>
-          </div>
-          <h3>پلتفرم CI/CD سازمانی</h3>
-          <p class="desc">پیاده‌سازی کامل pipeline اتوماتیک با GitHub Actions، Docker Registry، تست‌های خودکار و deploy به Kubernetes</p>
-          <div class="project-tags"><span class="tag-sm">GitHub Actions</span><span class="tag-sm">Docker</span><span class="tag-sm">K8s</span><span class="tag-sm">Helm</span></div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon bg-orange-10"><i class="fab fa-php c-orange"></i></div>
-            <span class="project-tag bg-orange-10 c-orange border-orange">Backend</span>
-          </div>
-          <h3>سیستم API مقیاس‌پذیر با Laravel</h3>
-          <p class="desc">طراحی و پیاده‌سازی RESTful API بر اساس Clean Architecture، DDD، Redis Caching و مستندسازی OpenAPI</p>
-          <div class="project-tags"><span class="tag-sm">Laravel</span><span class="tag-sm">PostgreSQL</span><span class="tag-sm">Redis</span><span class="tag-sm">OpenAPI</span></div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon bg-yellow-10"><i class="fas fa-chart-bar c-yellow"></i></div>
-            <span class="project-tag bg-yellow-10 c-yellow border-yellow">Monitoring</span>
-          </div>
-          <h3>داشبورد مانیتورینگ کامل</h3>
-          <p class="desc">راه‌اندازی stack کامل Prometheus + Grafana + Loki + Tempo برای مانیتورینگ سرویس‌های میکروسرویس</p>
-          <div class="project-tags"><span class="tag-sm">Prometheus</span><span class="tag-sm">Grafana</span><span class="tag-sm">Loki</span><span class="tag-sm">Tempo</span></div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon bg-emerald-10"><i class="fas fa-brain c-emerald"></i></div>
-            <span class="project-tag bg-emerald-10 c-emerald border-emerald">AI</span>
-          </div>
-          <h3>AI Agent اتوماسیون با n8n</h3>
-          <p class="desc">طراحی workflow‌های هوشمند با n8n برای اتوماسیون فرآیندهای تجاری و ادغام با سرویس‌های مختلف</p>
-          <div class="project-tags"><span class="tag-sm">n8n</span><span class="tag-sm">AI Agent</span><span class="tag-sm">Python</span><span class="tag-sm">API</span></div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon bg-violet-10"><i class="fas fa-cloud c-violet"></i></div>
-            <span class="project-tag bg-violet-10 c-violet border-violet">IaC</span>
-          </div>
-          <h3>زیرساخت ابری با Terraform</h3>
-          <p class="desc">طراحی و پیاده‌سازی زیرساخت کامل AWS با Terraform و Ansible برای configuration management</p>
-          <div class="project-tags"><span class="tag-sm">Terraform</span><span class="tag-sm">Ansible</span><span class="tag-sm">AWS</span><span class="tag-sm">IaC</span></div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon bg-pink-10"><i class="fas fa-coins c-pink"></i></div>
-            <span class="project-tag bg-pink-10 c-pink border-pink">Blockchain</span>
-          </div>
-          <h3>سیستم تریدینگ الگوریتمی</h3>
-          <p class="desc">توسعه ربات‌های تریدینگ با Python و Pine Script، تحلیل داده با Pandas و پیاده‌سازی Smart Contract</p>
-          <div class="project-tags"><span class="tag-sm">Python</span><span class="tag-sm">Pine Script</span><span class="tag-sm">MQL5</span><span class="tag-sm">Solidity</span></div>
-        </div>
-      </div>
-      <div class="projects-cta">
-        <a href="https://github.com/samadelmakchi" target="_blank"><i class="fab fa-github"></i> مشاهده همه پروژه‌ها در GitHub <i class="fas fa-arrow-left" style="font-size:0.75rem;"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="experience">
-    <div class="section-inner">
-      <div class="section-title fade-up">
-        <span class="section-subtitle">Career</span>
-        <h2>تجربیات و نقش‌ها</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="timeline fade-up">
-        <div class="timeline-line"></div>
-        <div class="timeline-items">
-          <div class="timeline-item tl-left">
-            <div class="timeline-content"><div class="exp-card"><span class="exp-tag bg-cyan-10 c-cyan border-cyan">DevOps</span><h3>مهندس DevOps</h3><p class="desc">طراحی و پیاده‌سازی pipeline‌های CI/CD، مدیریت کلاستر Kubernetes، مانیتورینگ با Prometheus/Grafana</p></div></div>
-            <div class="timeline-dot dot-cyan"><i class="fas fa-infinity c-cyan"></i></div>
-            <div class="timeline-content timeline-empty"></div>
-          </div>
-          <div class="timeline-item tl-right">
-            <div class="timeline-content timeline-empty"></div>
-            <div class="timeline-dot dot-orange"><i class="fas fa-code c-orange"></i></div>
-            <div class="timeline-content"><div class="exp-card"><span class="exp-tag bg-orange-10 c-orange border-orange">Backend</span><h3>توسعه‌دهنده Backend</h3><p class="desc">طراحی API‌های مقیاس‌پذیر با Laravel و FastAPI، پیاده‌سازی معماری میکروسرویس و Clean Architecture</p></div></div>
-          </div>
-          <div class="timeline-item tl-left">
-            <div class="timeline-content"><div class="exp-card"><span class="exp-tag bg-violet-10 c-violet border-violet">Management</span><h3>اسکرام مستر و مالک محصول</h3><p class="desc">مدیریت تیم‌های نرم‌افزاری با متدولوژی Scrum/Kanban، استفاده از Jira، Confluence و Miro</p></div></div>
-            <div class="timeline-dot dot-violet"><i class="fas fa-users c-violet"></i></div>
-            <div class="timeline-content timeline-empty"></div>
-          </div>
-          <div class="timeline-item tl-right">
-            <div class="timeline-content timeline-empty"></div>
-            <div class="timeline-dot dot-emerald"><i class="fas fa-robot c-emerald"></i></div>
-            <div class="timeline-content"><div class="exp-card"><span class="exp-tag bg-emerald-10 c-emerald border-emerald">AI</span><h3>متخصص AI و اتوماسیون</h3><p class="desc">طراحی AI Agent، اتوماسیون با n8n، پیاده‌سازی ML Pipeline برای تحلیل داده و پیش‌بینی رفتار</p></div></div>
-          </div>
-          <div class="timeline-item tl-left">
-            <div class="timeline-content"><div class="exp-card"><span class="exp-tag bg-pink-10 c-pink border-pink">Blockchain</span><h3>برنامه‌نویس بلاکچین و بازارهای مالی</h3><p class="desc">توسعه Smart Contract با Solidity، ربات‌های تریدینگ با Python/MQL5 و تحلیل داده مالی</p></div></div>
-            <div class="timeline-dot dot-pink"><i class="fas fa-coins c-pink"></i></div>
-            <div class="timeline-content timeline-empty"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="clients fade-up">
-        <h3 class="clients-title">مشتریان منتخب</h3>
-        <div class="clients-list">
-          <div class="client-badge">طب آفرین</div>
-          <div class="client-badge">نیکان مهر</div>
-          <div class="client-badge">تیراژه چاپ تبریز</div>
-          <div class="client-badge">ماشین‌سازی آقایاری</div>
-          <div class="client-badge">مرکز رشد دانشگاه آزاد</div>
-          <div class="client-badge">دانشگاه شهید مدنی</div>
-          <div class="client-badge">دانشگاه علوم پزشکی تبریز</div>
-          <div class="client-badge">پاکت نیما</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="section-inner" style="max-width:64rem;">
-      <div class="section-title fade-up">
-        <span class="section-subtitle">Get in Touch</span>
-        <h2>ارتباط با من</h2>
-        <div class="section-line"></div>
-        <p class="muted" style="margin-top:1rem; max-width:32rem; margin-left:auto; margin-right:auto;">آماده همکاری در پروژه‌های DevOps، Backend، AI و مدیریت محصول هستم. بیایید با هم صحبت کنیم.</p>
-      </div>
-      <div class="contact-grid fade-up">
-        <div class="contact-items">
-          <a href="https://wa.me/989141189645" target="_blank" class="contact-item ci-green">
-            <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
-            <div class="ci-info"><p class="ci-label">واتساپ</p><p class="ci-value">ارسال پیام مستقیم</p></div>
-            <i class="fas fa-arrow-left ci-arrow"></i>
-          </a>
-          <a href="https://t.me/samadelmakchi" target="_blank" class="contact-item ci-cyan">
-            <div class="ci-icon"><i class="fab fa-telegram"></i></div>
-            <div class="ci-info"><p class="ci-label">تلگرام</p><p class="ci-value">samadelmakchi</p></div>
-            <i class="fas fa-arrow-left ci-arrow"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank" class="contact-item ci-blue">
-            <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
-            <div class="ci-info"><p class="ci-label">LinkedIn</p><p class="ci-value">samad-elmakchi</p></div>
-            <i class="fas fa-arrow-left ci-arrow"></i>
-          </a>
-          <a href="https://github.com/samadelmakchi" target="_blank" class="contact-item ci-gray">
-            <div class="ci-icon"><i class="fab fa-github"></i></div>
-            <div class="ci-info"><p class="ci-label">GitHub</p><p class="ci-value">samadelmakchi</p></div>
-            <i class="fas fa-arrow-left ci-arrow"></i>
-          </a>
-          <a href="https://www.instagram.com/samad.elmakchi" target="_blank" class="contact-item ci-pink">
-            <div class="ci-icon"><i class="fab fa-instagram"></i></div>
-            <div class="ci-info"><p class="ci-label">Instagram</p><p class="ci-value">samad.elmakchi</p></div>
-            <i class="fas fa-arrow-left ci-arrow"></i>
-          </a>
-        </div>
-        <div class="contact-card">
-          <div class="contact-card-header">
-            <div class="contact-card-avatar"><img src="https://avatars.githubusercontent.com/u/6169366?v=4" alt="Samad Elmakchi"></div>
-            <h3>صمد المکچی</h3>
-            <p class="role">DevOps Engineer & Backend Dev</p>
-          </div>
-          <div class="contact-info">
-            <div class="contact-info-item"><i class="fas fa-map-marker-alt text-cyan"></i> تبریز، ایران</div>
-            <div class="contact-info-item"><i class="fas fa-clock text-violet"></i> UTC+3:30 (Tehran Time)</div>
-            <div class="contact-info-item"><i class="fas fa-briefcase text-emerald"></i> آماده پروژه‌های فریلنس و همکاری</div>
-          </div>
-          <a href="https://elmakchi.ir/" target="_blank" class="contact-cta"><i class="fas fa-globe" style="font-size:0.875rem;"></i> مشاهده وبسایت رسمی</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo"><span>SE</span></div>
-        <span class="footer-name">صمد المکچی | Samad Elmakchi</span>
-      </div>
-      <p class="footer-tech">Built with HTML + TailwindCSS</p>
-      <div class="footer-social">
-        <a href="https://github.com/samadelmakchi" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/samad-elmakchi" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/samad.elmakchi" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://x.com/elmakchi" target="_blank"><i class="fab fa-x-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <button id="scroll-top" title="رفتن به بالا"><i class="fas fa-arrow-up" style="font-size:0.875rem;"></i></button>
-
-  <script>
-    // Matrix background
-    (function() {
-      var bg = document.getElementById('matrix-bg');
-      var chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      var cols = Math.floor(window.innerWidth / 20);
-      for (var i = 0; i < cols; i++) {
-        var col = document.createElement('div');
-        col.className = 'matrix-col';
-        col.style.left = (i / cols * 100) + '%';
-        col.style.animationDuration = (10 + Math.random() * 10) + 's';
-        col.style.animationDelay = (Math.random() * 5) + 's';
-        var lines = 15 + Math.floor(Math.random() * 5);
-        var text = '';
-        for (var j = 0; j < lines; j++) {
-          text += chars[Math.floor(Math.random() * chars.length)] + '\n';
-        }
-        col.textContent = text;
-        bg.appendChild(col);
-      }
-    })();
-
-    // Typewriter
-    (function() {
-      var roles = ['توسعه‌دهنده Backend', 'مهندس DevOps', 'متخصص Docker/Kubernetes', 'طراح معماری میکروسرویس', ' متخصص CI/CD'];
-      var el = document.getElementById('typewriter');
-      var ri = 0, ci = 0, deleting = false;
-      function tick() {
-        var current = roles[ri];
-        if (!deleting) {
-          el.textContent = current.substring(0, ci + 1);
-          ci++;
-          if (ci === current.length) { setTimeout(function() { deleting = true; tick(); }, 2000); return; }
-          setTimeout(tick, 80);
-        } else {
-          el.textContent = current.substring(0, ci - 1);
-          ci--;
-          if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; setTimeout(tick, 500); return; }
-          setTimeout(tick, 40);
-        }
-      }
-      tick();
-    })();
-
-    // Scroll animations
-    (function() {
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(e) {
-          if (e.isIntersecting) { e.target.classList.add('visible'); }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
-    })();
-
-    // Active nav link on scroll
-    (function() {
-      var sections = document.querySelectorAll('section[id]');
-      var links = document.querySelectorAll('.nav-link');
-      window.addEventListener('scroll', function() {
-        var scrollY = window.scrollY + 100;
-        sections.forEach(function(s) {
-          var top = s.offsetTop, h = s.offsetHeight, id = s.getAttribute('id');
-          if (scrollY >= top && scrollY < top + h) {
-            links.forEach(function(l) {
-              l.classList.remove('active');
-              if (l.getAttribute('href') === '#' + id) l.classList.add('active');
-            });
-          }
-        });
-      });
-    })();
-
-    // Mobile menu
-    document.getElementById('menu-btn').addEventListener('click', function() {
-      document.getElementById('mobile-menu').classList.toggle('open');
-    });
-    document.querySelectorAll('.mobile-menu a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.remove('open');
-      });
-    });
-
-    // Scroll to top
-    var stb = document.getElementById('scroll-top');
-    window.addEventListener('scroll', function() {
-      stb.classList.toggle('visible', window.scrollY > 400);
-    });
-    stb.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
-
-    // Nav background on scroll
-    window.addEventListener('scroll', function() {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-    });
-  </script>
-</body>
 </html>

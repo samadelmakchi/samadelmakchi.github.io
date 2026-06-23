@@ -1,30 +1,25 @@
 const CACHE_NAME = 'samad-portfolio-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  'https://fonts.googleapis.com/css2?family=Estedad:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
-];
+const urlsToCache = ['/', '/index.html', '/main.css', '/main.js', '/translations.js', '/manifest.json'];
 
-self.addEventListener('install', event => {
+self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then(function (cache) {
+      return cache.addAll(urlsToCache);
+    })
   );
 });
-
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
-    caches.match(event.request)
-      .then(response => response || fetch(event.request))
+    caches.match(event.request).then(function (response) {
+      return response || fetch(event.request);
+    })
   );
 });
-
-self.addEventListener('activate', event => {
+self.addEventListener('activate', function (event) {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
+    caches.keys().then(function (cacheNames) {
       return Promise.all(
-        cacheNames.map(cache => {
+        cacheNames.map(function (cache) {
           if (cache !== CACHE_NAME) {
             return caches.delete(cache);
           }
