@@ -1,10 +1,14 @@
-# مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو
+# Python Developer
 
-من صمد المکچی هستم، مهندس DevOps، توسعه‌دهنده Full Stack و متخصص سئو با بیش از ۲۰ سال سابقه فعالیت مستمر در اکوسیستم فناوری ایران.
+من صمد المکچی هستم، توسعه‌دهنده حرفه‌ای Python با بیش از ۲۰ سال سابقه فعالیت مستمر در اکوسیستم فناوری.
 
-تخصص من در سه حوزه DevOps، Full Stack Development و SEO & Digital Marketing قرار دارد. از طراحی معماری‌های پیچیده بک‌اند و پیاده‌سازی pipeline‌های CI/CD گرفته تا مدیریت کلاسترهای Kubernetes و بهینه‌سازی سئو برای رشد ارگانیک.
+تخصص من در چهار حوزه اصلی Python قرار دارد:
+🐍 Backend Development با Django، FastAPI و Flask
+🧠 Machine Learning & Deep Learning با PyTorch و TensorFlow
+📊 Data Science با Pandas، NumPy و Scikit-learn
+🐳 Automation & Deployment با Docker و CI/CD
 
-به رویکرد Infrastructure as Code و Everything as Code معتقدم و هدفم خلق سیستم‌های قابل اطمینان، مقیاس‌پذیر و خودکار است..
+به کدنویسی تمیز، مستند و آزمون‌پذیر با رعایت استانداردهای PEP8، استفاده از Type Hints و Design Patterns در پروژه‌های پایتون معتقدم.
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samad-elmakchi)
 [![Instagram](https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/samad.elmakchi)
