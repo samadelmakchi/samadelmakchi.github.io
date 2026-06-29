@@ -1,18 +1,18 @@
 # Python Developer
 
-من صمد المکچی هستم، توسعه‌دهنده حرفه‌ای Python با بیش از ۲۰ سال سابقه فعالیت مستمر در اکوسیستم فناوری.
+I'm Samad Elmakchi, a professional Python developer with over 20 years of continuous experience in the technology ecosystem.
 
-تخصص من در چهار حوزه اصلی Python قرار دارد:
+My expertise spans across four main Python domains:
 
-🐍 Backend Development با Django، FastAPI و Flask
+🐍 Backend Development with Django, FastAPI, and Flask
 
-🧠 Machine Learning & Deep Learning با PyTorch و TensorFlow
+🧠 Machine Learning & Deep Learning with PyTorch and TensorFlow
 
-📊 Data Science با Pandas، NumPy و Scikit-learn
+📊 Data Science with Pandas, NumPy, and Scikit-learn
 
-🐳 Automation & Deployment با Docker و CI/CD
+🐳 Automation & Deployment with Docker and CI/CD
 
-به کدنویسی تمیز، مستند و آزمون‌پذیر با رعایت استانداردهای PEP8، استفاده از Type Hints و Design Patterns در پروژه‌های پایتون معتقدم.
+I believe in writing clean, documented, and testable code following PEP8 standards, using Type Hints and Design Patterns in Python projects.
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samad-elmakchi)
 [![Instagram](https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/samad.elmakchi)
