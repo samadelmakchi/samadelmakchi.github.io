@@ -1,532 +1,818 @@
 var translations = {
-    fa: {
-        // ===== NAVIGATION =====
-        nav_name: "صمد المکچی",
-        nav_home: "خانه",
-        nav_about: "درباره من",
-        nav_skills: "مهارت‌ها",
-        nav_projects: "پروژه‌ها",
-        nav_experience: "تجربیات",
-        nav_contact: "تماس",
-
-        // ===== HERO =====
-        hero_name: "صمد",
-        hero_lastname: "المکچی",
-        badge_available: "آماده همکاری",
-        hero_desc: 'توسعه‌دهنده حرفه‌ای <strong class="text-cyan font-bold">Python</strong> با بیش از <strong class="text-cyan font-bold">۲۰ سال</strong> تجربه. متخصص در <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> و ساخت سیستم‌های هوشمند.',
-
-        // ===== BUTTONS =====
-        contact_btn: "ارتباط با من",
-        github_btn: "مشاهده GitHub",
-
-        // ===== STATS =====
-        stat_years: "سال تجربه",
-        stat_projects: "پروژه پایتون",
-        stat_tools: "کتابخانه Python",
-        stat_clients: "مشتری",
-
-        // ===== ABOUT =====
-        about_subtitle: "درباره من",
-        about_title: "درباره من",
-        about_p1: 'من <strong class="text-white font-bold">صمد المکچی</strong> هستم، توسعه‌دهنده حرفه‌ای <strong class="text-cyan font-bold">Python</strong> با بیش از <strong class="text-cyan font-bold">۲۰ سال</strong> سابقه فعالیت مستمر در اکوسیستم فناوری.',
-        about_p2: 'تخصص من در چهار حوزه اصلی <strong class="text-violet font-bold">Python</strong> قرار دارد:<br>🐍 <strong class="text-cyan">Backend Development</strong> با Django، FastAPI و Flask<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> با PyTorch و TensorFlow<br>📊 <strong class="text-yellow">Data Science</strong> با Pandas، NumPy و Scikit-learn<br>🐳 <strong class="text-orange">Automation & Deployment</strong> با Docker و CI/CD',
-        about_p3: 'به کدنویسی تمیز، مستند و آزمون‌پذیر با رعایت استانداردهای <strong class="text-white font-bold">PEP8</strong>، استفاده از <strong class="text-white font-bold">Type Hints</strong> و <strong class="text-white font-bold">Design Patterns</strong> در پروژه‌های پایتون معتقدم.',
-
-        // ===== INFO CARDS =====
-        info_location_label: "مکان",
-        info_location_value: "تبریز، ایران",
-        info_status_label: "وضعیت",
-        info_status_value: "آماده همکاری",
-        info_specialty_label: "تخصص اصلی",
-        info_specialty_value: "Python Developer",
-        info_exp_label: "تجربه",
-        info_exp_value: "+۲۰ سال",
-
-        // ===== SKILLS =====
-        skills_subtitle: "Python Skills",
-        skills_title: "مهارت‌های پایتون",
-
-        // Backend
-        skill_backend_title: "Backend Development",
-        skill_backend_sub: "API & Web",
-
-        // AI & ML
-        skill_ai_title: "AI & Machine Learning",
-        skill_ai_sub: "Deep Learning & NLP",
-
-        // Data Science
-        skill_ds_title: "Data Science",
-        skill_ds_sub: "Analysis & Visualization",
-
-        // Automation
-        skill_auto_title: "Automation & Deployment",
-        skill_auto_sub: "CI/CD & Containerization",
-
-        // Project Management
-        skill_mgmt_title: "مدیریت پروژه",
-        skill_mgmt_sub: "اسکرام و Agile",
-
-        // Soft Skills
-        skill_soft_title: "مهارت‌های نرم",
-        skill_soft_sub: "Soft Skills",
-
-        // ===== PROJECTS =====
-        projects_subtitle: "Python Portfolio",
-        projects_title: "۶ پروژه برتر پایتون",
-        projects_desc: "از Backend و DevOps تا Machine Learning، Deep Learning و Data Science",
-
-        project1_title: "🐳 خودکارسازی استقرار با Docker + GitHub Actions",
-        project1_desc: "با هر git push روی برنچ اصلی، پروژه پایتون به‌طور خودکار تست، بیلد و روی VPS با Docker استقرار پیدا می‌کند. کاهش زمان استقرار از ۳۰ دقیقه به ۲ دقیقه.",
-
-        project2_title: "📈 پیش‌بینی شاخص‌های کلان اقتصادی",
-        project2_desc: "ترکیب مدل‌های کلاسیک اقتصادسنجی (VAR، ARIMA، GARCH) با یادگیری عمیق (LSTM، Transformer) برای پیش‌بینی قیمت طلا، دلار و نفت با دقت بالاتر.",
-
-        project3_title: "🤖 مرکز پاسخ‌گویی یکپارچه ۶ پیام‌رسان",
-        project3_desc: "دریافت و پاسخ‌دهی خودکار از واتساپ، تلگرام، اینستاگرام، روبیکا، بله و ایتا با هوش مصنوعی مولد (RAG) و حفظ تاریخچه مکالمه.",
-
-        project4_title: "📊 داشبورد رشد و تعامل اینستاگرام",
-        project4_desc: "تحلیل احساسات کامنت‌ها با مدل‌های زبان فارسی، تشخیص بهترین زمان ارسال، تولید گزارش هفتگی خودکار و شناسایی اینفلوئنسرهای مؤثر.",
-
-        project5_title: "📋 داشبورد مدیریت فروش ووکامرس",
-        project5_desc: "اتصال مستقیم به دیتابیس و REST API ووکامرس، نمایش KPIهای کلیدی (AOV، Conversion Rate)، پیش‌بینی فروش و هشدار موجودی انبار.",
-
-        project6_title: "🪙 سیستم غربالگری هوشمند رمزارزها",
-        project6_desc: "اسکن خودکار کوین‌های جدید با تحلیل چندعاملی (فنی، احساسات، شبکه‌های اجتماعی) و شناسایی کوین‌های با پتانسیل رشد حداقل ۵۰٪ در ۷ روز.",
-
-        github_all: "مشاهده همه پروژه‌ها در GitHub",
-
-        // ===== EXPERIENCE =====
-        exp_subtitle: "Career",
-        exp_title: "تجربیات پایتون",
-
-        exp1_title: "توسعه‌دهنده ارشد Python",
-        exp1_desc: "طراحی و توسعه اپلیکیشن‌های وب با Django، FastAPI و Flask. پیاده‌سازی معماری میکروسرویس، RESTful API، WebSocket و بهینه‌سازی دیتابیس با PostgreSQL و Redis.",
-
-        exp2_title: "متخصص Machine Learning",
-        exp2_desc: "طراحی و پیاده‌سازی مدل‌های یادگیری عمیق با PyTorch و TensorFlow برای پیش‌بینی مالی، تحلیل احساسات، سیستم‌های توصیه‌گر و پردازش زبان طبیعی (NLP).",
-
-        exp3_title: "متخصص Data Science",
-        exp3_desc: "طراحی داشبوردهای BI با Streamlit و Plotly، تحلیل داده‌های تراکنشی با Pandas، ساخت سیستم‌های پیش‌بینی و گزارش‌گیری خودکار.",
-
-        exp4_title: "اسکرام مستر و مالک محصول",
-        exp4_desc: "مدیریت تیم‌های نرم‌افزاری با متدولوژی Scrum/Kanban، استفاده از Jira، Confluence و Miro برای بهبود فرآیندهای توسعه.",
-
-        exp5_title: "متخصص اتوماسیون و استقرار",
-        exp5_desc: "طراحی pipeline‌های CI/CD با GitHub Actions، کانتینرسازی با Docker، استقرار روی VPS و اتوماسیون فرآیندهای تکراری با Python.",
-
-        clients_title: "مشتریان منتخب",
-
-        // ===== CONTACT =====
-        contact_subtitle: "Get in Touch",
-        contact_title: "ارتباط با من",
-        contact_desc: 'آماده همکاری در پروژه‌های <strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> و <strong class="text-white">اتوماسیون</strong> هستم. بیایید با هم صحبت کنیم.',
-        whatsapp_label: "واتساپ",
-        whatsapp_value: "ارسال پیام مستقیم",
-        telegram_label: "تلگرام",
-        contact_name: "صمد المکچی",
-        contact_role: "Python Developer",
-        contact_location: "تبریز، ایران",
-        contact_timezone: "UTC+3:30 (ساعت تهران)",
-        contact_status: "آماده پروژه‌های فریلنس و همکاری",
-        website_btn: "مشاهده وبسایت رسمی",
-
-        // ===== FOOTER =====
-        footer_name: "صمد المکچی | Samad Elmakchi"
-    },
-
-    // ================================================================
-    // ==================== ENGLISH ====================
-    // ================================================================
-    en: {
-        // ===== NAVIGATION =====
-        nav_name: "Samad Elmakchi",
-        nav_home: "Home",
-        nav_about: "About",
-        nav_skills: "Skills",
-        nav_projects: "Projects",
-        nav_experience: "Experience",
-        nav_contact: "Contact",
-
-        // ===== HERO =====
-        hero_name: "Samad",
-        hero_lastname: "Elmakchi",
-        badge_available: "Available for work",
-        hero_desc: 'Professional <strong class="text-cyan font-bold">Python</strong> Developer with over <strong class="text-cyan font-bold">20 years</strong> of experience. Expert in <strong class="text-white">FastAPI</strong>, <strong class="text-white">Flask</strong>, <strong class="text-emerald font-bold">Machine Learning</strong>, <strong class="text-emerald font-bold">Deep Learning</strong>, <strong class="text-yellow font-bold">Data Science</strong> and building intelligent systems.',
-
-        // ===== BUTTONS =====
-        contact_btn: "Contact Me",
-        github_btn: "View GitHub",
-
-        // ===== STATS =====
-        stat_years: "Years Exp",
-        stat_projects: "Python Projects",
-        stat_tools: "Python Libs",
-        stat_clients: "Clients",
-
-        // ===== ABOUT =====
-        about_subtitle: "About Me",
-        about_title: "About Me",
-        about_p1: 'I am <strong class="text-white font-bold">Samad Elmakchi</strong>, a professional <strong class="text-cyan font-bold">Python</strong> Developer with over <strong class="text-cyan font-bold">20 years</strong> of experience in the technology ecosystem.',
-        about_p2: 'My expertise lies in four main areas of <strong class="text-violet font-bold">Python</strong>:<br>🐍 <strong class="text-cyan">Backend Development</strong> with Django, FastAPI and Flask<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> with PyTorch and TensorFlow<br>📊 <strong class="text-yellow">Data Science</strong> with Pandas, NumPy and Scikit-learn<br>🐳 <strong class="text-orange">Automation & Deployment</strong> with Docker and CI/CD',
-        about_p3: 'I believe in clean, documented and testable code following <strong class="text-white font-bold">PEP8</strong> standards, using <strong class="text-white font-bold">Type Hints</strong> and <strong class="text-white font-bold">Design Patterns</strong> in Python projects.',
-
-        // ===== INFO CARDS =====
-        info_location_label: "Location",
-        info_location_value: "Tabriz, Iran",
-        info_status_label: "Status",
-        info_status_value: "Available",
-        info_specialty_label: "Main Specialty",
-        info_specialty_value: "Python Developer",
-        info_exp_label: "Experience",
-        info_exp_value: "+20 Years",
-
-        // ===== SKILLS =====
-        skills_subtitle: "Python Skills",
-        skills_title: "Python Skills",
-
-        skill_backend_title: "Backend Development",
-        skill_backend_sub: "API & Web",
-
-        skill_ai_title: "AI & Machine Learning",
-        skill_ai_sub: "Deep Learning & NLP",
-
-        skill_ds_title: "Data Science",
-        skill_ds_sub: "Analysis & Visualization",
-
-        skill_auto_title: "Automation & Deployment",
-        skill_auto_sub: "CI/CD & Containerization",
-
-        skill_mgmt_title: "Project Management",
-        skill_mgmt_sub: "Scrum & Agile",
-
-        skill_soft_title: "Soft Skills",
-        skill_soft_sub: "Soft Skills",
-
-        // ===== PROJECTS =====
-        projects_subtitle: "Python Portfolio",
-        projects_title: "6 Top Python Projects",
-        projects_desc: "From Backend and DevOps to Machine Learning, Deep Learning and Data Science",
-
-        project1_title: "🐳 Automated Deployment with Docker + GitHub Actions",
-        project1_desc: "With every git push on the main branch, the Python project is automatically tested, built and deployed on VPS with Docker. Reducing deployment time from 30 minutes to 2 minutes.",
-
-        project2_title: "📈 Macroeconomic Indicators Forecasting",
-        project2_desc: "Combining classical econometric models (VAR, ARIMA, GARCH) with deep learning (LSTM, Transformer) to predict gold, dollar and oil prices with higher accuracy.",
-
-        project3_title: "🤖 Unified Inbox for 6 Messengers",
-        project3_desc: "Automated receiving and responding from WhatsApp, Telegram, Instagram, Rubika, Bale and Eitaa using Generative AI (RAG) with conversation history.",
-
-        project4_title: "📊 Instagram Growth & Engagement Dashboard",
-        project4_desc: "Sentiment analysis of comments with Persian language models, detecting best posting times, automatic weekly report generation and identifying influential influencers.",
-
-        project5_title: "📋 WooCommerce Sales Management Dashboard",
-        project5_desc: "Direct connection to WooCommerce database and REST API, displaying key KPIs (AOV, Conversion Rate), sales forecasting and inventory alerts.",
-
-        project6_title: "🪙 AI-Powered Crypto Gem Hunter",
-        project6_desc: "Automated scanning of new coins with multi-factor analysis (technical, sentiment, social networks) to identify coins with at least 50% growth potential in 7 days.",
-
-        github_all: "View all projects on GitHub",
-
-        // ===== EXPERIENCE =====
-        exp_subtitle: "Career",
-        exp_title: "Python Experience",
-
-        exp1_title: "Senior Python Developer",
-        exp1_desc: "Design and development of web applications with Django, FastAPI and Flask. Implementation of microservices architecture, RESTful API, WebSocket and database optimization with PostgreSQL and Redis.",
-
-        exp2_title: "Machine Learning Specialist",
-        exp2_desc: "Design and implementation of deep learning models with PyTorch and TensorFlow for financial forecasting, sentiment analysis, recommender systems and Natural Language Processing (NLP).",
-
-        exp3_title: "Data Science Specialist",
-        exp3_desc: "Design of BI dashboards with Streamlit and Plotly, transactional data analysis with Pandas, building forecasting systems and automated reporting.",
-
-        exp4_title: "Scrum Master & Product Owner",
-        exp4_desc: "Software team management with Scrum/Kanban methodology, using Jira, Confluence and Miro to improve development processes.",
-
-        exp5_title: "Automation & Deployment Specialist",
-        exp5_desc: "CI/CD pipeline design with GitHub Actions, containerization with Docker, VPS deployment and automation of repetitive processes with Python.",
-
-        clients_title: "Selected Clients",
-
-        // ===== CONTACT =====
-        contact_subtitle: "Get in Touch",
-        contact_title: "Contact Me",
-        contact_desc: 'Ready for collaboration on <strong class="text-cyan">Python</strong>, <strong class="text-emerald">Machine Learning</strong>, <strong class="text-yellow">Data Science</strong> and <strong class="text-white">Automation</strong> projects.',
-        whatsapp_label: "WhatsApp",
-        whatsapp_value: "Send direct message",
-        telegram_label: "Telegram",
-        contact_name: "Samad Elmakchi",
-        contact_role: "Python Developer",
-        contact_location: "Tabriz, Iran",
-        contact_timezone: "UTC+3:30 (Tehran Time)",
-        contact_status: "Available for freelance and collaboration",
-        website_btn: "Visit Official Website",
-
-        // ===== FOOTER =====
-        footer_name: "Samad Elmakchi"
-    },
-
-    // ================================================================
-    // ==================== ARABIC ====================
-    // ================================================================
-    ar: {
-        // ===== NAVIGATION =====
-        nav_name: "صمد المکچي",
-        nav_home: "الرئيسية",
-        nav_about: "عني",
-        nav_skills: "المهارات",
-        nav_projects: "المشاريع",
-        nav_experience: "الخبرات",
-        nav_contact: "اتصل بي",
-
-        // ===== HERO =====
-        hero_name: "صمد",
-        hero_lastname: "المکچي",
-        badge_available: "متاح للعمل",
-        hero_desc: 'مطور <strong class="text-cyan font-bold">Python</strong> محترف مع أكثر من <strong class="text-cyan font-bold">۲۰ عامًا</strong> من الخبرة. خبير في <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> وبناء الأنظمة الذكية.',
-
-        // ===== BUTTONS =====
-        contact_btn: "اتصل بي",
-        github_btn: "عرض GitHub",
-
-        // ===== STATS =====
-        stat_years: "سنوات خبرة",
-        stat_projects: "مشاريع Python",
-        stat_tools: "مكتبات Python",
-        stat_clients: "عميل",
-
-        // ===== ABOUT =====
-        about_subtitle: "عني",
-        about_title: "عني",
-        about_p1: 'أنا <strong class="text-white font-bold">صمد المکچي</strong>، مطور <strong class="text-cyan font-bold">Python</strong> محترف مع أكثر من <strong class="text-cyan font-bold">۲۰ عامًا</strong> من الخبرة في النظام البيئي التكنولوجي.',
-        about_p2: 'تكمن خبرتي في أربعة مجالات رئيسية من <strong class="text-violet font-bold">Python</strong>:<br>🐍 <strong class="text-cyan">تطوير Backend</strong> مع Django و FastAPI و Flask<br>🧠 <strong class="text-emerald">Machine Learning و Deep Learning</strong> مع PyTorch و TensorFlow<br>📊 <strong class="text-yellow">Data Science</strong> مع Pandas و NumPy و Scikit-learn<br>🐳 <strong class="text-orange">الأتمتة والنشر</strong> مع Docker و CI/CD',
-        about_p3: 'أؤمن بالكود النظيف والموثق والقابل للاختبار وفقًا لمعايير <strong class="text-white font-bold">PEP8</strong>، واستخدام <strong class="text-white font-bold">Type Hints</strong> و <strong class="text-white font-bold">Design Patterns</strong> في مشاريع Python.',
-
-        // ===== INFO CARDS =====
-        info_location_label: "الموقع",
-        info_location_value: "تبريز، إيران",
-        info_status_label: "الحالة",
-        info_status_value: "متاح",
-        info_specialty_label: "التخصص الرئيسي",
-        info_specialty_value: "مطور Python",
-        info_exp_label: "الخبرة",
-        info_exp_value: "+20 سنة",
-
-        // ===== SKILLS =====
-        skills_subtitle: "مهارات Python",
-        skills_title: "مهارات Python",
-
-        skill_backend_title: "تطوير Backend",
-        skill_backend_sub: "API و Web",
-
-        skill_ai_title: "الذكاء الاصطناعي و ML",
-        skill_ai_sub: "Deep Learning و NLP",
-
-        skill_ds_title: "علم البيانات",
-        skill_ds_sub: "التحليل والتصور",
-
-        skill_auto_title: "الأتمتة والنشر",
-        skill_auto_sub: "CI/CD والحاويات",
-
-        skill_mgmt_title: "إدارة المشاريع",
-        skill_mgmt_sub: "سكرام وأجايل",
-
-        skill_soft_title: "المهارات الناعمة",
-        skill_soft_sub: "Soft Skills",
-
-        // ===== PROJECTS =====
-        projects_subtitle: "معرض Python",
-        projects_title: "6 مشاريع Python",
-        projects_desc: "من Backend و DevOps إلى Machine Learning و Deep Learning و Data Science",
-
-        project1_title: "🐳 النشر الآلي مع Docker + GitHub Actions",
-        project1_desc: "مع كل git push على الفرع الرئيسي، يتم اختبار مشروع Python تلقائيًا وبناؤه ونشره على VPS مع Docker. تقليل وقت النشر من 30 دقيقة إلى دقيقتين.",
-
-        project2_title: "📈 توقع المؤشرات الاقتصادية الكلية",
-        project2_desc: "الجمع بين نماذج الاقتصاد القياسي الكلاسيكية (VAR، ARIMA، GARCH) مع التعلم العميق (LSTM، Transformer) لتوقع أسعار الذهب والدولار والنفط بدقة أعلى.",
-
-        project3_title: "🤖 صندوق وارد موحد لـ 6 تطبيقات مراسلة",
-        project3_desc: "استقبال والرد تلقائيًا من واتساب وتلغرام وإنستغرام وروبيكا وبله وإيتا باستخدام الذكاء الاصطناعي التوليدي (RAG) مع تاريخ المحادثة.",
-
-        project4_title: "📊 لوحة تحكم نمو وتفاعل إنستغرام",
-        project4_desc: "تحليل المشاعر للتعليقات بنماذج اللغة الفارسية، اكتشاف أفضل أوقات النشر، إنشاء تقارير أسبوعية تلقائية وتحديد المؤثرين الفعالين.",
-
-        project5_title: "📋 لوحة تحكم إدارة مبيعات ووكومرس",
-        project5_desc: "اتصال مباشر بقاعدة بيانات و REST API ووكومرس، عرض مؤشرات الأداء الرئيسية (AOV، معدل التحويل)، توقع المبيعات وتنبيهات المخزون.",
-
-        project6_title: "🪙 نظام فحص العملات الرقمية الذكي",
-        project6_desc: "فحص تلقائي للعملات الجديدة مع تحليل متعدد العوامل (فني، مشاعر، شبكات اجتماعية) لتحديد العملات التي لديها إمكانية نمو لا تقل عن 50٪ في 7 أيام.",
-
-        github_all: "عرض جميع المشاريع على GitHub",
-
-        // ===== EXPERIENCE =====
-        exp_subtitle: "المسيرة المهنية",
-        exp_title: "خبرات Python",
-
-        exp1_title: "مطور Python أول",
-        exp1_desc: "تصميم وتطوير تطبيقات الويب مع Django و FastAPI و Flask. تنفيذ بنية الخدمات المصغرة و RESTful API و WebSocket وتحسين قاعدة البيانات مع PostgreSQL و Redis.",
-
-        exp2_title: "أخصائي Machine Learning",
-        exp2_desc: "تصميم وتنفيذ نماذج التعلم العميق مع PyTorch و TensorFlow للتوقع المالي وتحليل المشاعر وأنظمة التوصية ومعالجة اللغة الطبيعية (NLP).",
-
-        exp3_title: "أخصائي Data Science",
-        exp3_desc: "تصميم لوحات تحكم BI مع Streamlit و Plotly، تحليل البيانات المعاملاتية مع Pandas، بناء أنظمة التوقع والتقارير التلقائية.",
-
-        exp4_title: "Scrum Master و Product Owner",
-        exp4_desc: "إدارة فرق البرمجيات باستخدام Scrum/Kanban، استخدام Jira و Confluence و Miro لتحسين عمليات التطوير.",
-
-        exp5_title: "أخصائي الأتمتة والنشر",
-        exp5_desc: "تصميم خطوط أنابيب CI/CD مع GitHub Actions، الحاويات مع Docker، النشر على VPS وأتمتة العمليات المتكررة مع Python.",
-
-        clients_title: "العملاء المختارون",
-
-        // ===== CONTACT =====
-        contact_subtitle: "تواصل معي",
-        contact_title: "اتصل بي",
-        contact_desc: 'مستعد للتعاون في مشاريع <strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> و <strong class="text-white">الأتمتة</strong>.',
-        whatsapp_label: "واتساب",
-        whatsapp_value: "إرسال رسالة مباشرة",
-        telegram_label: "تيليجرام",
-        contact_name: "صمد المکچي",
-        contact_role: "مطور Python",
-        contact_location: "تبريز، إيران",
-        contact_timezone: "UTC+3:30 (توقيت طهران)",
-        contact_status: "متاح للمشاريع المستقلة والتعاون",
-        website_btn: "زيارة الموقع الرسمي",
-
-        // ===== FOOTER =====
-        footer_name: "صمد المکچي | Samad Elmakchi"
-    },
-
-    // ================================================================
-    // ==================== AZERBAIJANI ====================
-    // ================================================================
-    az: {
-        // ===== NAVIGATION =====
-        nav_name: "Samad Elmakchi",
-        nav_home: "Ana səhifə",
-        nav_about: "Haqqımda",
-        nav_skills: "Bacarıqlar",
-        nav_projects: "Layihələr",
-        nav_experience: "Təcrübə",
-        nav_contact: "Əlaqə",
-
-        // ===== HERO =====
-        hero_name: "Samad",
-        hero_lastname: "Elmakchi",
-        badge_available: "İş üçün hazırdır",
-        hero_desc: '<strong class="text-cyan font-bold">Python</strong> üzrə peşəkar Tərtibatçı <strong class="text-cyan font-bold">20+ il</strong> təcrübə ilə. <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> və ağıllı sistemlər qurmaq üzrə mütəxəssis.',
-
-        // ===== BUTTONS =====
-        contact_btn: "Əlaqə",
-        github_btn: "GitHub",
-
-        // ===== STATS =====
-        stat_years: "İl Təcrübə",
-        stat_projects: "Python Layihələri",
-        stat_tools: "Python Kitabxanaları",
-        stat_clients: "Müştəri",
-
-        // ===== ABOUT =====
-        about_subtitle: "Haqqımda",
-        about_title: "Haqqımda",
-        about_p1: 'Mən <strong class="text-white font-bold">Samad Elmakchi</strong>، <strong class="text-cyan font-bold">Python</strong> üzrə peşəkar Tərtibatçı <strong class="text-cyan font-bold">20+ il</strong> təcrübə ilə.',
-        about_p2: 'Təcrübəm <strong class="text-violet font-bold">Python</strong>-un dörd əsas sahəsindədir:<br>🐍 <strong class="text-cyan">Backend Development</strong> Django, FastAPI və Flask ilə<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> PyTorch və TensorFlow ilə<br>📊 <strong class="text-yellow">Data Science</strong> Pandas, NumPy və Scikit-learn ilə<br>🐳 <strong class="text-orange">Automation & Deployment</strong> Docker və CI/CD ilə',
-        about_p3: '<strong class="text-white font-bold">PEP8</strong> standartlarına uyğun təmiz, sənədləşdirilmiş və test edilə bilən kod yazmağa, <strong class="text-white font-bold">Type Hints</strong> və <strong class="text-white font-bold">Design Patterns</strong> istifadəsinə inanıram.',
-
-        // ===== INFO CARDS =====
-        info_location_label: "Məkan",
-        info_location_value: "Təbriz, İran",
-        info_status_label: "Status",
-        info_status_value: "Hazır",
-        info_specialty_label: "Əsas ixtisas",
-        info_specialty_value: "Python Developer",
-        info_exp_label: "Təcrübə",
-        info_exp_value: "+20 il",
-
-        // ===== SKILLS =====
-        skills_subtitle: "Python Bacarıqları",
-        skills_title: "Python Bacarıqları",
-
-        skill_backend_title: "Backend Development",
-        skill_backend_sub: "API & Web",
-
-        skill_ai_title: "AI & Machine Learning",
-        skill_ai_sub: "Deep Learning & NLP",
-
-        skill_ds_title: "Data Science",
-        skill_ds_sub: "Analysis & Visualization",
-
-        skill_auto_title: "Automation & Deployment",
-        skill_auto_sub: "CI/CD & Containerization",
-
-        skill_mgmt_title: "Layihə İdarəetmə",
-        skill_mgmt_sub: "Scrum & Agile",
-
-        skill_soft_title: "Yumşaq Bacarıqlar",
-        skill_soft_sub: "Soft Skills",
-
-        // ===== PROJECTS =====
-        projects_subtitle: "Python Portfolio",
-        projects_title: "6 Ən Yaxşı Python Layihəsi",
-        projects_desc: "Backend və DevOps-dan Machine Learning, Deep Learning və Data Science-a qədər",
-
-        project1_title: "🐳 Docker + GitHub Actions ilə Avtomatik Deploy",
-        project1_desc: "Hər git push-da Python layihəsi avtomatik test olunur, build edilir və VPS-ə Docker ilə deploy olunur. Deploy vaxtı 30 dəqiqədən 2 dəqiqəyə enir.",
-
-        project2_title: "📈 Makroiqtisadi Göstəricilərin Proqnozu",
-        project2_desc: "Klassik ekonometrik modellərin (VAR, ARIMA, GARCH) dərin öyrənmə (LSTM, Transformer) ilə birləşdirilməsi ilə qızıl, dollar və neft qiymətlərinin daha dəqiq proqnozu.",
-
-        project3_title: "🤖 6 Mesencer üçün Vahid Inbox",
-        project3_desc: "WhatsApp, Telegram, Instagram, Rubika, Bale və Eitaa-dan avtomatik mesaj qəbulu və cavablandırılması Generative AI (RAG) ilə söhbət tarixçəsi saxlanılmaqla.",
-
-        project4_title: "📊 Instagram Artım və İnteraktivlik Paneli",
-        project4_desc: "Şərhlərin sentiment analizi Fars dil modelləri ilə, ən yaxşı paylaşma vaxtlarının təyini, avtomatik həftəlik hesabat və təsirli influenserlərin identifikasiyası.",
-
-        project5_title: "📋 WooCommerce Satış İdarəetmə Paneli",
-        project5_desc: "WooCommerce verilənlər bazasına və REST API-yə birbaşa qoşulma, əsas KPI-ların (AOV, Conversion Rate) göstərilməsi, satış proqnozu və anbar xəbərdarlıqları.",
-
-        project6_title: "🪙 AI ilə Kripto Gem Hunter",
-        project6_desc: "Yeni coin-lərin avtomatik skan edilməsi çoxfaktorlu analiz ilə (texniki, sentiment, sosial şəbəkələr) 7 gündə 50%+ artım potensialı olan coin-lərin identifikasiyası.",
-
-        github_all: "Bütün layihələri GitHub-da gör",
-
-        // ===== EXPERIENCE =====
-        exp_subtitle: "Karyera",
-        exp_title: "Python Təcrübəsi",
-
-        exp1_title: "Böyük Python Developer",
-        exp1_desc: "Django, FastAPI və Flask ilə veb tətbiqlərin dizaynı və inkişafı. Mikroservis memarlığı, RESTful API, WebSocket və PostgreSQL və Redis ilə verilənlər bazası optimallaşdırılması.",
-
-        exp2_title: "Machine Learning Mütəxəssisi",
-        exp2_desc: "PyTorch və TensorFlow ilə dərin öyrənmə modellərinin dizaynı və tətbiqi maliyyə proqnozu, sentiment analizi, tövsiyə sistemləri və Təbii Dil Emalı (NLP) üçün.",
-
-        exp3_title: "Data Science Mütəxəssisi",
-        exp3_desc: "Streamlit və Plotly ilə BI panellərinin dizaynı, Pandas ilə tranzaksiya məlumatlarının analizi, proqnoz sistemləri və avtomatik hesabat qurulması.",
-
-        exp4_title: "Scrum Master və Product Owner",
-        exp4_desc: "Scrum/Kanban metodologiyası ilə proqram komandalarının idarə edilməsi, Jira, Confluence və Miro istifadəsi inkişaf proseslərinin yaxşılaşdırılması üçün.",
-
-        exp5_title: "Avtomatlaşdırma və Deploy Mütəxəssisi",
-        exp5_desc: "GitHub Actions ilə CI/CD pipeline dizaynı, Docker ilə konteynerləşdirmə, VPS-ə deploy və Python ilə təkrarlanan proseslərin avtomatlaşdırılması.",
-
-        clients_title: "Seçilmiş Müştərilər",
-
-        // ===== CONTACT =====
-        contact_subtitle: "Əlaqə",
-        contact_title: "Əlaqə",
-        contact_desc: '<strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> və <strong class="text-white">Avtomatlaşdırma</strong> layihələrində əməkdaşlığa hazıram.',
-        whatsapp_label: "WhatsApp",
-        whatsapp_value: "Birbaşa mesaj göndər",
-        telegram_label: "Telegram",
-        contact_name: "Samad Elmakchi",
-        contact_role: "Python Developer",
-        contact_location: "Təbriz, İran",
-        contact_timezone: "UTC+3:30 (Tehran Vaxtı)",
-        contact_status: "Freelance və əməkdaşlıq üçün hazırdır",
-        website_btn: "Rəsmi Vebsaytı Ziyarət Et",
-
-        // ===== FOOTER =====
-        footer_name: "Samad Elmakchi"
-    }
+	// ================================================================
+	// ==================== ENGLISH (پیش‌فرض) ====================
+	// ================================================================
+	en: {
+		// ===== NAVIGATION =====
+		nav_name: "Samad Elmakchi",
+		nav_home: "Home",
+		nav_about: "About",
+		nav_skills: "Skills",
+		nav_projects: "Projects",
+		nav_experience: "Experience",
+		nav_contact: "Contact",
+		// ===== HERO =====
+		hero_name: "Samad",
+		hero_lastname: "Elmakchi",
+		badge_available: "Available for work",
+		hero_desc: 'Professional <strong class="text-cyan font-bold">Python</strong> Developer with over <strong class="text-cyan font-bold">20 years</strong> of experience. Expert in <strong class="text-white">FastAPI</strong>, <strong class="text-white">Flask</strong>, <strong class="text-emerald font-bold">Machine Learning</strong>, <strong class="text-emerald font-bold">Deep Learning</strong>, <strong class="text-yellow font-bold">Data Science</strong> and building intelligent systems.',
+		// ===== BUTTONS =====
+		contact_btn: "Contact Me",
+		github_btn: "View GitHub",
+		// ===== STATS =====
+		stat_years: "Years Exp",
+		stat_projects: "Python Projects",
+		stat_tools: "Python Libs",
+		stat_clients: "Clients",
+		// ===== ABOUT =====
+		about_subtitle: "About Me",
+		about_title: "About Me",
+		about_p1: 'I am <strong class="text-white font-bold">Samad Elmakchi</strong>, a professional <strong class="text-cyan font-bold">Python</strong> Developer with over <strong class="text-cyan font-bold">20 years</strong> of experience in the technology ecosystem.',
+		about_p2: 'My expertise lies in four main areas of <strong class="text-violet font-bold">Python</strong>:<br>🐍 <strong class="text-cyan">Backend Development</strong> with Django, FastAPI and Flask<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> with PyTorch and TensorFlow<br>📊 <strong class="text-yellow">Data Science</strong> with Pandas, NumPy and Scikit-learn<br>🐳 <strong class="text-orange">Automation & Deployment</strong> with Docker and CI/CD',
+		about_p3: 'I believe in clean, documented and testable code following <strong class="text-white font-bold">PEP8</strong> standards, using <strong class="text-white font-bold">Type Hints</strong> and <strong class="text-white font-bold">Design Patterns</strong> in Python projects.',
+		// ===== INFO CARDS =====
+		info_location_label: "Location",
+		info_location_value: "Tabriz, Iran",
+		info_status_label: "Status",
+		info_status_value: "Available",
+		info_specialty_label: "Main Specialty",
+		info_specialty_value: "Python Developer",
+		info_exp_label: "Experience",
+		info_exp_value: "+20 Years",
+		// ===== SKILLS =====
+		skills_subtitle: "Python Skills",
+		skills_title: "Python Skills",
+		skill_backend_title: "Backend Development",
+		skill_backend_sub: "API & Web",
+		skill_ai_title: "AI & Machine Learning",
+		skill_ai_sub: "Deep Learning & NLP",
+		skill_ds_title: "Data Science",
+		skill_ds_sub: "Analysis & Visualization",
+		skill_auto_title: "Automation & Deployment",
+		skill_auto_sub: "CI/CD & Containerization",
+		skill_mgmt_title: "Project Management",
+		skill_mgmt_sub: "Scrum & Agile",
+		skill_soft_title: "Soft Skills",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "Python Portfolio",
+		projects_title: "6 Top Python Projects",
+		projects_desc: "From Backend and DevOps to Machine Learning, Deep Learning and Data Science",
+		project1_title: "🐳 Automated Deployment with Docker + GitHub Actions",
+		project1_desc: "With every git push on the main branch, the Python project is automatically tested, built and deployed on VPS with Docker. Reducing deployment time from 30 minutes to 2 minutes.",
+		project2_title: "📈 Macroeconomic Indicators Forecasting",
+		project2_desc: "Combining classical econometric models (VAR, ARIMA, GARCH) with deep learning (LSTM, Transformer) to predict gold, dollar and oil prices with higher accuracy.",
+		project3_title: "🤖 Unified Inbox for 6 Messengers",
+		project3_desc: "Automated receiving and responding from WhatsApp, Telegram, Instagram, Rubika, Bale and Eitaa using Generative AI (RAG) with conversation history.",
+		project4_title: "📊 Instagram Growth & Engagement Dashboard",
+		project4_desc: "Sentiment analysis of comments with Persian language models, detecting best posting times, automatic weekly report generation and identifying influential influencers.",
+		project5_title: "📋 WooCommerce Sales Management Dashboard",
+		project5_desc: "Direct connection to WooCommerce database and REST API, displaying key KPIs (AOV, Conversion Rate), sales forecasting and inventory alerts.",
+		project6_title: "🪙 AI-Powered Crypto Gem Hunter",
+		project6_desc: "Automated scanning of new coins with multi-factor analysis (technical, sentiment, social networks) to identify coins with at least 50% growth potential in 7 days.",
+		github_all: "View all projects on GitHub",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "Career",
+		exp_title: "Python Experience",
+		exp1_title: "Senior Python Developer",
+		exp1_desc: "Design and development of web applications with Django, FastAPI and Flask. Implementation of microservices architecture, RESTful API, WebSocket and database optimization with PostgreSQL and Redis.",
+		exp2_title: "Machine Learning Specialist",
+		exp2_desc: "Design and implementation of deep learning models with PyTorch and TensorFlow for financial forecasting, sentiment analysis, recommender systems and Natural Language Processing (NLP).",
+		exp3_title: "Data Science Specialist",
+		exp3_desc: "Design of BI dashboards with Streamlit and Plotly, transactional data analysis with Pandas, building forecasting systems and automated reporting.",
+		exp4_title: "Scrum Master & Product Owner",
+		exp4_desc: "Software team management with Scrum/Kanban methodology, using Jira, Confluence and Miro to improve development processes.",
+		exp5_title: "Automation & Deployment Specialist",
+		exp5_desc: "CI/CD pipeline design with GitHub Actions, containerization with Docker, VPS deployment and automation of repetitive processes with Python.",
+		clients_title: "Selected Clients",
+		// ===== CONTACT =====
+		contact_subtitle: "Get in Touch",
+		contact_title: "Contact Me",
+		contact_desc: 'Ready for collaboration on <strong class="text-cyan">Python</strong>, <strong class="text-emerald">Machine Learning</strong>, <strong class="text-yellow">Data Science</strong> and <strong class="text-white">Automation</strong> projects.',
+		whatsapp_label: "WhatsApp",
+		whatsapp_value: "Send direct message",
+		telegram_label: "Telegram",
+		contact_name: "Samad Elmakchi",
+		contact_role: "Python Developer",
+		contact_location: "Tabriz, Iran",
+		contact_timezone: "UTC+3:30 (Tehran Time)",
+		contact_status: "Available for freelance and collaboration",
+		website_btn: "Visit Official Website",
+		// ===== FOOTER =====
+		footer_name: "Samad Elmakchi"
+	},
+	// ================================================================
+	// ==================== PERSIAN / FARSI ====================
+	// ================================================================
+	fa: {
+		// ===== NAVIGATION =====
+		nav_name: "صمد المکچی",
+		nav_home: "خانه",
+		nav_about: "درباره من",
+		nav_skills: "مهارت‌ها",
+		nav_projects: "پروژه‌ها",
+		nav_experience: "تجربیات",
+		nav_contact: "تماس",
+		// ===== HERO =====
+		hero_name: "صمد",
+		hero_lastname: "المکچی",
+		badge_available: "آماده همکاری",
+		hero_desc: 'توسعه‌دهنده حرفه‌ای <strong class="text-cyan font-bold">Python</strong> با بیش از <strong class="text-cyan font-bold">۲۰ سال</strong> تجربه. متخصص در <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> و ساخت سیستم‌های هوشمند.',
+		// ===== BUTTONS =====
+		contact_btn: "ارتباط با من",
+		github_btn: "مشاهده GitHub",
+		// ===== STATS =====
+		stat_years: "سال تجربه",
+		stat_projects: "پروژه پایتون",
+		stat_tools: "کتابخانه Python",
+		stat_clients: "مشتری",
+		// ===== ABOUT =====
+		about_subtitle: "درباره من",
+		about_title: "درباره من",
+		about_p1: 'من <strong class="text-white font-bold">صمد المکچی</strong> هستم، توسعه‌دهنده حرفه‌ای <strong class="text-cyan font-bold">Python</strong> با بیش از <strong class="text-cyan font-bold">۲۰ سال</strong> سابقه فعالیت مستمر در اکوسیستم فناوری.',
+		about_p2: 'تخصص من در چهار حوزه اصلی <strong class="text-violet font-bold">Python</strong> قرار دارد:<br>🐍 <strong class="text-cyan">Backend Development</strong> با Django، FastAPI و Flask<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> با PyTorch و TensorFlow<br>📊 <strong class="text-yellow">Data Science</strong> با Pandas، NumPy و Scikit-learn<br>🐳 <strong class="text-orange">Automation & Deployment</strong> با Docker و CI/CD',
+		about_p3: 'به کدنویسی تمیز، مستند و آزمون‌پذیر با رعایت استانداردهای <strong class="text-white font-bold">PEP8</strong>، استفاده از <strong class="text-white font-bold">Type Hints</strong> و <strong class="text-white font-bold">Design Patterns</strong> در پروژه‌های پایتون معتقدم.',
+		// ===== INFO CARDS =====
+		info_location_label: "مکان",
+		info_location_value: "تبریز، ایران",
+		info_status_label: "وضعیت",
+		info_status_value: "آماده همکاری",
+		info_specialty_label: "تخصص اصلی",
+		info_specialty_value: "Python Developer",
+		info_exp_label: "تجربه",
+		info_exp_value: "+۲۰ سال",
+		// ===== SKILLS =====
+		skills_subtitle: "Python Skills",
+		skills_title: "مهارت‌های پایتون",
+		skill_backend_title: "Backend Development",
+		skill_backend_sub: "API & Web",
+		skill_ai_title: "AI & Machine Learning",
+		skill_ai_sub: "Deep Learning & NLP",
+		skill_ds_title: "Data Science",
+		skill_ds_sub: "Analysis & Visualization",
+		skill_auto_title: "Automation & Deployment",
+		skill_auto_sub: "CI/CD & Containerization",
+		skill_mgmt_title: "مدیریت پروژه",
+		skill_mgmt_sub: "اسکرام و Agile",
+		skill_soft_title: "مهارت‌های نرم",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "Python Portfolio",
+		projects_title: "۶ پروژه برتر پایتون",
+		projects_desc: "از Backend و DevOps تا Machine Learning، Deep Learning و Data Science",
+		project1_title: "🐳 خودکارسازی استقرار با Docker + GitHub Actions",
+		project1_desc: "با هر git push روی برنچ اصلی، پروژه پایتون به‌طور خودکار تست، بیلد و روی VPS با Docker استقرار پیدا می‌کند. کاهش زمان استقرار از ۳۰ دقیقه به ۲ دقیقه.",
+		project2_title: "📈 پیش‌بینی شاخص‌های کلان اقتصادی",
+		project2_desc: "ترکیب مدل‌های کلاسیک اقتصادسنجی (VAR، ARIMA، GARCH) با یادگیری عمیق (LSTM، Transformer) برای پیش‌بینی قیمت طلا، دلار و نفت با دقت بالاتر.",
+		project3_title: "🤖 مرکز پاسخ‌گویی یکپارچه ۶ پیام‌رسان",
+		project3_desc: "دریافت و پاسخ‌دهی خودکار از واتساپ، تلگرام، اینستاگرام، روبیکا، بله و ایتا با هوش مصنوعی مولد (RAG) و حفظ تاریخچه مکالمه.",
+		project4_title: "📊 داشبورد رشد و تعامل اینستاگرام",
+		project4_desc: "تحلیل احساسات کامنت‌ها با مدل‌های زبان فارسی، تشخیص بهترین زمان ارسال، تولید گزارش هفتگی خودکار و شناسایی اینفلوئنسرهای مؤثر.",
+		project5_title: "📋 داشبورد مدیریت فروش ووکامرس",
+		project5_desc: "اتصال مستقیم به دیتابیس و REST API ووکامرس، نمایش KPIهای کلیدی (AOV، Conversion Rate)، پیش‌بینی فروش و هشدار موجودی انبار.",
+		project6_title: "🪙 سیستم غربالگری هوشمند رمزارزها",
+		project6_desc: "اسکن خودکار کوین‌های جدید با تحلیل چندعاملی (فنی، احساسات، شبکه‌های اجتماعی) و شناسایی کوین‌های با پتانسیل رشد حداقل ۵۰٪ در ۷ روز.",
+		github_all: "مشاهده همه پروژه‌ها در GitHub",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "Career",
+		exp_title: "تجربیات پایتون",
+		exp1_title: "توسعه‌دهنده ارشد Python",
+		exp1_desc: "طراحی و توسعه اپلیکیشن‌های وب با Django، FastAPI و Flask. پیاده‌سازی معماری میکروسرویس، RESTful API، WebSocket و بهینه‌سازی دیتابیس با PostgreSQL و Redis.",
+		exp2_title: "متخصص Machine Learning",
+		exp2_desc: "طراحی و پیاده‌سازی مدل‌های یادگیری عمیق با PyTorch و TensorFlow برای پیش‌بینی مالی، تحلیل احساسات، سیستم‌های توصیه‌گر و پردازش زبان طبیعی (NLP).",
+		exp3_title: "متخصص Data Science",
+		exp3_desc: "طراحی داشبوردهای BI با Streamlit و Plotly، تحلیل داده‌های تراکنشی با Pandas، ساخت سیستم‌های پیش‌بینی و گزارش‌گیری خودکار.",
+		exp4_title: "اسکرام مستر و مالک محصول",
+		exp4_desc: "مدیریت تیم‌های نرم‌افزاری با متدولوژی Scrum/Kanban، استفاده از Jira، Confluence و Miro برای بهبود فرآیندهای توسعه.",
+		exp5_title: "متخصص اتوماسیون و استقرار",
+		exp5_desc: "طراحی pipeline‌های CI/CD با GitHub Actions، کانتینرسازی با Docker، استقرار روی VPS و اتوماسیون فرآیندهای تکراری با Python.",
+		clients_title: "مشتریان منتخب",
+		// ===== CONTACT =====
+		contact_subtitle: "Get in Touch",
+		contact_title: "ارتباط با من",
+		contact_desc: 'آماده همکاری در پروژه‌های <strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> و <strong class="text-white">اتوماسیون</strong> هستم.',
+		whatsapp_label: "واتساپ",
+		whatsapp_value: "ارسال پیام مستقیم",
+		telegram_label: "تلگرام",
+		contact_name: "صمد المکچی",
+		contact_role: "Python Developer",
+		contact_location: "تبریز، ایران",
+		contact_timezone: "UTC+3:30 (ساعت تهران)",
+		contact_status: "آماده پروژه‌های فریلنس و همکاری",
+		website_btn: "مشاهده وبسایت رسمی",
+		// ===== FOOTER =====
+		footer_name: "صمد المکچی | Samad Elmakchi"
+	},
+	// ================================================================
+	// ==================== ARABIC ====================
+	// ================================================================
+	ar: {
+		// ===== NAVIGATION =====
+		nav_name: "صمد المکچي",
+		nav_home: "الرئيسية",
+		nav_about: "عني",
+		nav_skills: "المهارات",
+		nav_projects: "المشاريع",
+		nav_experience: "الخبرات",
+		nav_contact: "اتصل بي",
+		// ===== HERO =====
+		hero_name: "صمد",
+		hero_lastname: "المکچي",
+		badge_available: "متاح للعمل",
+		hero_desc: 'مطور <strong class="text-cyan font-bold">Python</strong> محترف مع أكثر من <strong class="text-cyan font-bold">۲۰ عامًا</strong> من الخبرة. خبير في <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> وبناء الأنظمة الذكية.',
+		// ===== BUTTONS =====
+		contact_btn: "اتصل بي",
+		github_btn: "عرض GitHub",
+		// ===== STATS =====
+		stat_years: "سنوات خبرة",
+		stat_projects: "مشاريع Python",
+		stat_tools: "مكتبات Python",
+		stat_clients: "عميل",
+		// ===== ABOUT =====
+		about_subtitle: "عني",
+		about_title: "عني",
+		about_p1: 'أنا <strong class="text-white font-bold">صمد المکچي</strong>، مطور <strong class="text-cyan font-bold">Python</strong> محترف مع أكثر من <strong class="text-cyan font-bold">۲۰ عامًا</strong> من الخبرة في النظام البيئي التكنولوجي.',
+		about_p2: 'تكمن خبرتي في أربعة مجالات رئيسية من <strong class="text-violet font-bold">Python</strong>:<br>🐍 <strong class="text-cyan">تطوير Backend</strong> مع Django و FastAPI و Flask<br>🧠 <strong class="text-emerald">Machine Learning و Deep Learning</strong> مع PyTorch و TensorFlow<br>📊 <strong class="text-yellow">Data Science</strong> مع Pandas و NumPy و Scikit-learn<br>🐳 <strong class="text-orange">الأتمتة والنشر</strong> مع Docker و CI/CD',
+		about_p3: 'أؤمن بالكود النظيف والموثق والقابل للاختبار وفقًا لمعايير <strong class="text-white font-bold">PEP8</strong>، واستخدام <strong class="text-white font-bold">Type Hints</strong> و <strong class="text-white font-bold">Design Patterns</strong> في مشاريع Python.',
+		// ===== INFO CARDS =====
+		info_location_label: "الموقع",
+		info_location_value: "تبريز، إيران",
+		info_status_label: "الحالة",
+		info_status_value: "متاح",
+		info_specialty_label: "التخصص الرئيسي",
+		info_specialty_value: "مطور Python",
+		info_exp_label: "الخبرة",
+		info_exp_value: "+20 سنة",
+		// ===== SKILLS =====
+		skills_subtitle: "مهارات Python",
+		skills_title: "مهارات Python",
+		skill_backend_title: "تطوير Backend",
+		skill_backend_sub: "API و Web",
+		skill_ai_title: "الذكاء الاصطناعي و ML",
+		skill_ai_sub: "Deep Learning و NLP",
+		skill_ds_title: "علم البيانات",
+		skill_ds_sub: "التحليل والتصور",
+		skill_auto_title: "الأتمتة والنشر",
+		skill_auto_sub: "CI/CD والحاويات",
+		skill_mgmt_title: "إدارة المشاريع",
+		skill_mgmt_sub: "سكرام وأجايل",
+		skill_soft_title: "المهارات الناعمة",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "معرض Python",
+		projects_title: "6 مشاريع Python",
+		projects_desc: "من Backend و DevOps إلى Machine Learning و Deep Learning و Data Science",
+		project1_title: "🐳 النشر الآلي مع Docker + GitHub Actions",
+		project1_desc: "مع كل git push على الفرع الرئيسي، يتم اختبار مشروع Python تلقائيًا وبناؤه ونشره على VPS مع Docker. تقليل وقت النشر من 30 دقيقة إلى دقيقتين.",
+		project2_title: "📈 توقع المؤشرات الاقتصادية الكلية",
+		project2_desc: "الجمع بين نماذج الاقتصاد القياسي الكلاسيكية (VAR، ARIMA، GARCH) مع التعلم العميق (LSTM، Transformer) لتوقع أسعار الذهب والدولار والنفط بدقة أعلى.",
+		project3_title: "🤖 صندوق وارد موحد لـ 6 تطبيقات مراسلة",
+		project3_desc: "استقبال والرد تلقائيًا من واتساب وتلغرام وإنستغرام وروبيكا وبله وإيتا باستخدام الذكاء الاصطناعي التوليدي (RAG) مع تاريخ المحادثة.",
+		project4_title: "📊 لوحة تحكم نمو وتفاعل إنستغرام",
+		project4_desc: "تحليل المشاعر للتعليقات بنماذج اللغة الفارسية، اكتشاف أفضل أوقات النشر، إنشاء تقارير أسبوعية تلقائية وتحديد المؤثرين الفعالين.",
+		project5_title: "📋 لوحة تحكم إدارة مبيعات ووكومرس",
+		project5_desc: "اتصال مباشر بقاعدة بيانات و REST API ووكومرس، عرض مؤشرات الأداء الرئيسية (AOV، معدل التحويل)، توقع المبيعات وتنبيهات المخزون.",
+		project6_title: "🪙 نظام فحص العملات الرقمية الذكي",
+		project6_desc: "فحص تلقائي للعملات الجديدة مع تحليل متعدد العوامل (فني، مشاعر، شبكات اجتماعية) لتحديد العملات التي لديها إمكانية نمو لا تقل عن 50٪ في 7 أيام.",
+		github_all: "عرض جميع المشاريع على GitHub",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "المسيرة المهنية",
+		exp_title: "خبرات Python",
+		exp1_title: "مطور Python أول",
+		exp1_desc: "تصميم وتطوير تطبيقات الويب مع Django و FastAPI و Flask. تنفيذ بنية الخدمات المصغرة و RESTful API و WebSocket وتحسين قاعدة البيانات مع PostgreSQL و Redis.",
+		exp2_title: "أخصائي Machine Learning",
+		exp2_desc: "تصميم وتنفيذ نماذج التعلم العميق مع PyTorch و TensorFlow للتوقع المالي وتحليل المشاعر وأنظمة التوصية ومعالجة اللغة الطبيعية (NLP).",
+		exp3_title: "أخصائي Data Science",
+		exp3_desc: "تصميم لوحات تحكم BI مع Streamlit و Plotly، تحليل البيانات المعاملاتية مع Pandas، بناء أنظمة التوقع والتقارير التلقائية.",
+		exp4_title: "Scrum Master و Product Owner",
+		exp4_desc: "إدارة فرق البرمجيات باستخدام Scrum/Kanban، استخدام Jira و Confluence و Miro لتحسين عمليات التطوير.",
+		exp5_title: "أخصائي الأتمتة والنشر",
+		exp5_desc: "تصميم خطوط أنابيب CI/CD مع GitHub Actions، الحاويات مع Docker، النشر على VPS وأتمتة العمليات المتكررة مع Python.",
+		clients_title: "العملاء المختارون",
+		// ===== CONTACT =====
+		contact_subtitle: "تواصل معي",
+		contact_title: "اتصل بي",
+		contact_desc: 'مستعد للتعاون في مشاريع <strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> و <strong class="text-white">الأتمتة</strong>.',
+		whatsapp_label: "واتساب",
+		whatsapp_value: "إرسال رسالة مباشرة",
+		telegram_label: "تيليجرام",
+		contact_name: "صمد المکچي",
+		contact_role: "مطور Python",
+		contact_location: "تبريز، إيران",
+		contact_timezone: "UTC+3:30 (توقيت طهران)",
+		contact_status: "متاح للمشاريع المستقلة والتعاون",
+		website_btn: "زيارة الموقع الرسمي",
+		// ===== FOOTER =====
+		footer_name: "صمد المکچي | Samad Elmakchi"
+	},
+	// ================================================================
+	// ==================== AZERBAIJANI ====================
+	// ================================================================
+	az: {
+		// ===== NAVIGATION =====
+		nav_name: "Samad Elmakchi",
+		nav_home: "Ana səhifə",
+		nav_about: "Haqqımda",
+		nav_skills: "Bacarıqlar",
+		nav_projects: "Layihələr",
+		nav_experience: "Təcrübə",
+		nav_contact: "Əlaqə",
+		// ===== HERO =====
+		hero_name: "Samad",
+		hero_lastname: "Elmakchi",
+		badge_available: "İş üçün hazırdır",
+		hero_desc: '<strong class="text-cyan font-bold">Python</strong> üzrə peşəkar Tərtibatçı <strong class="text-cyan font-bold">20+ il</strong> təcrübə ilə. <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> və ağıllı sistemlər qurmaq üzrə mütəxəssis.',
+		// ===== BUTTONS =====
+		contact_btn: "Əlaqə",
+		github_btn: "GitHub",
+		// ===== STATS =====
+		stat_years: "İl Təcrübə",
+		stat_projects: "Python Layihələri",
+		stat_tools: "Python Kitabxanaları",
+		stat_clients: "Müştəri",
+		// ===== ABOUT =====
+		about_subtitle: "Haqqımda",
+		about_title: "Haqqımda",
+		about_p1: 'Mən <strong class="text-white font-bold">Samad Elmakchi</strong>، <strong class="text-cyan font-bold">Python</strong> üzrə peşəkar Tərtibatçı <strong class="text-cyan font-bold">20+ il</strong> təcrübə ilə.',
+		about_p2: 'Təcrübəm <strong class="text-violet font-bold">Python</strong>-un dörd əsas sahəsindədir:<br>🐍 <strong class="text-cyan">Backend Development</strong> Django, FastAPI və Flask ilə<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> PyTorch və TensorFlow ilə<br>📊 <strong class="text-yellow">Data Science</strong> Pandas, NumPy və Scikit-learn ilə<br>🐳 <strong class="text-orange">Automation & Deployment</strong> Docker və CI/CD ilə',
+		about_p3: '<strong class="text-white font-bold">PEP8</strong> standartlarına uyğun təmiz, sənədləşdirilmiş və test edilə bilən kod yazmağa, <strong class="text-white font-bold">Type Hints</strong> və <strong class="text-white font-bold">Design Patterns</strong> istifadəsinə inanıram.',
+		// ===== INFO CARDS =====
+		info_location_label: "Məkan",
+		info_location_value: "Təbriz, İran",
+		info_status_label: "Status",
+		info_status_value: "Hazır",
+		info_specialty_label: "Əsas ixtisas",
+		info_specialty_value: "Python Developer",
+		info_exp_label: "Təcrübə",
+		info_exp_value: "+20 il",
+		// ===== SKILLS =====
+		skills_subtitle: "Python Bacarıqları",
+		skills_title: "Python Bacarıqları",
+		skill_backend_title: "Backend Development",
+		skill_backend_sub: "API & Web",
+		skill_ai_title: "AI & Machine Learning",
+		skill_ai_sub: "Deep Learning & NLP",
+		skill_ds_title: "Data Science",
+		skill_ds_sub: "Analysis & Visualization",
+		skill_auto_title: "Automation & Deployment",
+		skill_auto_sub: "CI/CD & Containerization",
+		skill_mgmt_title: "Layihə İdarəetmə",
+		skill_mgmt_sub: "Scrum & Agile",
+		skill_soft_title: "Yumşaq Bacarıqlar",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "Python Portfolio",
+		projects_title: "6 Ən Yaxşı Python Layihəsi",
+		projects_desc: "Backend və DevOps-dan Machine Learning, Deep Learning və Data Science-a qədər",
+		project1_title: "🐳 Docker + GitHub Actions ilə Avtomatik Deploy",
+		project1_desc: "Hər git push-da Python layihəsi avtomatik test olunur, build edilir və VPS-ə Docker ilə deploy olunur. Deploy vaxtı 30 dəqiqədən 2 dəqiqəyə enir.",
+		project2_title: "📈 Makroiqtisadi Göstəricilərin Proqnozu",
+		project2_desc: "Klassik ekonometrik modellərin (VAR, ARIMA, GARCH) dərin öyrənmə (LSTM, Transformer) ilə birləşdirilməsi ilə qızıl, dollar və neft qiymətlərinin daha dəqiq proqnozu.",
+		project3_title: "🤖 6 Mesencer üçün Vahid Inbox",
+		project3_desc: "WhatsApp, Telegram, Instagram, Rubika, Bale və Eitaa-dan avtomatik mesaj qəbulu və cavablandırılması Generative AI (RAG) ilə söhbət tarixçəsi saxlanılmaqla.",
+		project4_title: "📊 Instagram Artım və İnteraktivlik Paneli",
+		project4_desc: "Şərhlərin sentiment analizi Fars dil modelləri ilə, ən yaxşı paylaşma vaxtlarının təyini, avtomatik həftəlik hesabat və təsirli influenserlərin identifikasiyası.",
+		project5_title: "📋 WooCommerce Satış İdarəetmə Paneli",
+		project5_desc: "WooCommerce verilənlər bazasına və REST API-yə birbaşa qoşulma, əsas KPI-ların (AOV, Conversion Rate) göstərilməsi, satış proqnozu və anbar xəbərdarlıqları.",
+		project6_title: "🪙 AI ilə Kripto Gem Hunter",
+		project6_desc: "Yeni coin-lərin avtomatik skan edilməsi çoxfaktorlu analiz ilə (texniki, sentiment, sosial şəbəkələr) 7 gündə 50%+ artım potensialı olan coin-lərin identifikasiyası.",
+		github_all: "Bütün layihələri GitHub-da gör",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "Karyera",
+		exp_title: "Python Təcrübəsi",
+		exp1_title: "Böyük Python Developer",
+		exp1_desc: "Django, FastAPI və Flask ilə veb tətbiqlərin dizaynı və inkişafı. Mikroservis memarlığı, RESTful API, WebSocket və PostgreSQL və Redis ilə verilənlər bazası optimallaşdırılması.",
+		exp2_title: "Machine Learning Mütəxəssisi",
+		exp2_desc: "PyTorch və TensorFlow ilə dərin öyrənmə modellərinin dizaynı və tətbiqi maliyyə proqnozu, sentiment analizi, tövsiyə sistemləri və Təbii Dil Emalı (NLP) üçün.",
+		exp3_title: "Data Science Mütəxəssisi",
+		exp3_desc: "Streamlit və Plotly ilə BI panellərinin dizaynı, Pandas ilə tranzaksiya məlumatlarının analizi, proqnoz sistemləri və avtomatik hesabat qurulması.",
+		exp4_title: "Scrum Master və Product Owner",
+		exp4_desc: "Scrum/Kanban metodologiyası ilə proqram komandalarının idarə edilməsi, Jira, Confluence və Miro istifadəsi inkişaf proseslərinin yaxşılaşdırılması üçün.",
+		exp5_title: "Avtomatlaşdırma və Deploy Mütəxəssisi",
+		exp5_desc: "GitHub Actions ilə CI/CD pipeline dizaynı, Docker ilə konteynerləşdirmə, VPS-ə deploy və Python ilə təkrarlanan proseslərin avtomatlaşdırılması.",
+		clients_title: "Seçilmiş Müştərilər",
+		// ===== CONTACT =====
+		contact_subtitle: "Əlaqə",
+		contact_title: "Əlaqə",
+		contact_desc: '<strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> və <strong class="text-white">Avtomatlaşdırma</strong> layihələrində əməkdaşlığa hazıram.',
+		whatsapp_label: "WhatsApp",
+		whatsapp_value: "Birbaşa mesaj göndər",
+		telegram_label: "Telegram",
+		contact_name: "Samad Elmakchi",
+		contact_role: "Python Developer",
+		contact_location: "Təbriz, İran",
+		contact_timezone: "UTC+3:30 (Tehran Vaxtı)",
+		contact_status: "Freelance və əməkdaşlıq üçün hazırdır",
+		website_btn: "Rəsmi Vebsaytı Ziyarət Et",
+		// ===== FOOTER =====
+		footer_name: "Samad Elmakchi"
+	},
+	// ================================================================
+	// ==================== TURKISH ====================
+	// ================================================================
+	tr: {
+		// ===== NAVIGATION =====
+		nav_name: "Samad Elmakchi",
+		nav_home: "Ana Sayfa",
+		nav_about: "Hakkımda",
+		nav_skills: "Yetenekler",
+		nav_projects: "Projeler",
+		nav_experience: "Deneyim",
+		nav_contact: "İletişim",
+		// ===== HERO =====
+		hero_name: "Samad",
+		hero_lastname: "Elmakchi",
+		badge_available: "İş için uygun",
+		hero_desc: '<strong class="text-cyan font-bold">Python</strong> uzmanı Geliştirici <strong class="text-cyan font-bold">20+ yıl</strong> deneyim ile. <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> ve akıllı sistemler konusunda uzman.',
+		// ===== BUTTONS =====
+		contact_btn: "İletişime Geç",
+		github_btn: "GitHub'ı Gör",
+		// ===== STATS =====
+		stat_years: "Yıl Deneyim",
+		stat_projects: "Python Projeleri",
+		stat_tools: "Python Kütüphaneleri",
+		stat_clients: "Müşteri",
+		// ===== ABOUT =====
+		about_subtitle: "Hakkımda",
+		about_title: "Hakkımda",
+		about_p1: 'Ben <strong class="text-white font-bold">Samad Elmakchi</strong>, <strong class="text-cyan font-bold">Python</strong> uzmanı Geliştirici <strong class="text-cyan font-bold">20+ yıl</strong> deneyim ile teknoloji ekosisteminde.',
+		about_p2: 'Uzmanlığım <strong class="text-violet font-bold">Python</strong>\'un dört ana alanındadır:<br>🐍 <strong class="text-cyan">Backend Development</strong> Django, FastAPI ve Flask ile<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> PyTorch ve TensorFlow ile<br>📊 <strong class="text-yellow">Data Science</strong> Pandas, NumPy ve Scikit-learn ile<br>🐳 <strong class="text-orange">Automation & Deployment</strong> Docker ve CI/CD ile',
+		about_p3: '<strong class="text-white font-bold">PEP8</strong> standartlarına uygun temiz, belgelenmiş ve test edilebilir kod yazmaya, <strong class="text-white font-bold">Type Hints</strong> ve <strong class="text-white font-bold">Design Patterns</strong> kullanmaya inanıyorum.',
+		// ===== INFO CARDS =====
+		info_location_label: "Konum",
+		info_location_value: "Tebriz, İran",
+		info_status_label: "Durum",
+		info_status_value: "Uygun",
+		info_specialty_label: "Ana Uzmanlık",
+		info_specialty_value: "Python Developer",
+		info_exp_label: "Deneyim",
+		info_exp_value: "+20 Yıl",
+		// ===== SKILLS =====
+		skills_subtitle: "Python Yetenekleri",
+		skills_title: "Python Yetenekleri",
+		skill_backend_title: "Backend Geliştirme",
+		skill_backend_sub: "API & Web",
+		skill_ai_title: "AI & Machine Learning",
+		skill_ai_sub: "Deep Learning & NLP",
+		skill_ds_title: "Veri Bilimi",
+		skill_ds_sub: "Analiz & Görselleştirme",
+		skill_auto_title: "Otomasyon & Dağıtım",
+		skill_auto_sub: "CI/CD & Containerization",
+		skill_mgmt_title: "Proje Yönetimi",
+		skill_mgmt_sub: "Scrum & Agile",
+		skill_soft_title: "Yumuşak Beceriler",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "Python Portföyü",
+		projects_title: "6 En İyi Python Projesi",
+		projects_desc: "Backend ve DevOps'tan Machine Learning, Deep Learning ve Data Science'a",
+		project1_title: "🐳 Docker + GitHub Actions ile Otomatik Dağıtım",
+		project1_desc: "Ana dalda her git push'da Python projesi otomatik olarak test edilir, build edilir ve VPS'ye Docker ile dağıtılır. Dağıtım süresi 30 dakikadan 2 dakikaya düşer.",
+		project2_title: "📈 Makroekonomik Göstergeler Tahmini",
+		project2_desc: "Klasik ekonometrik modellerin (VAR, ARIMA, GARCH) derin öğrenme (LSTM, Transformer) ile birleştirilmesi ile altın, dolar ve petrol fiyatlarının daha yüksek doğrulukla tahmini.",
+		project3_title: "🤖 6 Mesajlaşma Uygulaması için Birleşik Kutusu",
+		project3_desc: "WhatsApp, Telegram, Instagram, Rubika, Bale ve Eitaa'dan Üretken AI (RAG) ile otomatik mesaj alma ve yanıtlama, konuşma geçmişi ile.",
+		project4_title: "📊 Instagram Büyüme ve Etkileşim Paneli",
+		project4_desc: "Farsça dil modelleri ile yorumların duygu analizi, en iyi paylaşım zamanlarının tespiti, otomatik haftalık rapor oluşturma ve etkili influencer'ların belirlenmesi.",
+		project5_title: "📋 WooCommerce Satış Yönetim Paneli",
+		project5_desc: "WooCommerce veritabanına ve REST API'ye doğrudan bağlantı, temel KPI'ların (AOV, Conversion Rate) görüntülenmesi, satış tahmini ve stok uyarıları.",
+		project6_title: "🪙 AI Destekli Kripto Gem Hunter",
+		project6_desc: "Çok faktörlü analiz (teknik, duygu, sosyal ağlar) ile yeni coin'lerin otomatik taranması ve 7 günde en az %50 büyüme potansiyeli olan coin'lerin belirlenmesi.",
+		github_all: "Tüm projeleri GitHub'da gör",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "Kariyer",
+		exp_title: "Python Deneyimi",
+		exp1_title: "Kıdemli Python Geliştirici",
+		exp1_desc: "Django, FastAPI ve Flask ile web uygulamalarının tasarımı ve geliştirilmesi. Mikroservis mimarisi, RESTful API, WebSocket ve PostgreSQL ve Redis ile veritabanı optimizasyonu.",
+		exp2_title: "Machine Learning Uzmanı",
+		exp2_desc: "PyTorch ve TensorFlow ile derin öğrenme modellerinin tasarımı ve uygulanması finansal tahmin, duygu analizi, tavsiye sistemleri ve Doğal Dil İşleme (NLP) için.",
+		exp3_title: "Veri Bilimi Uzmanı",
+		exp3_desc: "Streamlit ve Plotly ile BI panellerinin tasarımı, Pandas ile işlem verilerinin analizi, tahmin sistemleri ve otomatik raporlama.",
+		exp4_title: "Scrum Master & Product Owner",
+		exp4_desc: "Scrum/Kanban metodolojisi ile yazılım ekibi yönetimi, Jira, Confluence ve Miro kullanımı geliştirme süreçlerini iyileştirmek için.",
+		exp5_title: "Otomasyon ve Dağıtım Uzmanı",
+		exp5_desc: "GitHub Actions ile CI/CD pipeline tasarımı, Docker ile konteynerleştirme, VPS dağıtımı ve Python ile tekrarlayan süreçlerin otomasyonu.",
+		clients_title: "Seçilmiş Müşteriler",
+		// ===== CONTACT =====
+		contact_subtitle: "İletişime Geç",
+		contact_title: "İletişime Geç",
+		contact_desc: '<strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> ve <strong class="text-white">Otomasyon</strong> projelerinde işbirliğine hazırım.',
+		whatsapp_label: "WhatsApp",
+		whatsapp_value: "Doğrudan mesaj gönder",
+		telegram_label: "Telegram",
+		contact_name: "Samad Elmakchi",
+		contact_role: "Python Developer",
+		contact_location: "Tebriz, İran",
+		contact_timezone: "UTC+3:30 (Tahran Saati)",
+		contact_status: "Freelance ve işbirliği için uygun",
+		website_btn: "Resmi Web Sitesini Ziyaret Et",
+		// ===== FOOTER =====
+		footer_name: "Samad Elmakchi"
+	},
+	// ================================================================
+	// ==================== ARMENIAN ====================
+	// ================================================================
+	am: {
+		// ===== NAVIGATION =====
+		nav_name: "Սամադ Էլմաքչի",
+		nav_home: "Գլխավոր",
+		nav_about: "Իմ մասին",
+		nav_skills: "Հմտություններ",
+		nav_projects: "Նախագծեր",
+		nav_experience: "Փորձ",
+		nav_contact: "Կապ",
+		// ===== HERO =====
+		hero_name: "Սամադ",
+		hero_lastname: "Էլմաքչի",
+		badge_available: "Աշխատանքի համար պատրաստ",
+		hero_desc: '<strong class="text-cyan font-bold">Python</strong> մասնագետ Ծրագրավորող <strong class="text-cyan font-bold">20+ տարի</strong> փորձով. <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> և խելացի համակարգերի կառուցման մասնագետ.',
+		// ===== BUTTONS =====
+		contact_btn: "Կապվեք ինձ հետ",
+		github_btn: "Դիտել GitHub",
+		// ===== STATS =====
+		stat_years: "Տարվա Փորձ",
+		stat_projects: "Python Նախագծեր",
+		stat_tools: "Python Գրադարաններ",
+		stat_clients: "Հաճախորդ",
+		// ===== ABOUT =====
+		about_subtitle: "Իմ մասին",
+		about_title: "Իմ մասին",
+		about_p1: 'Ես <strong class="text-white font-bold">Սամադ Էլմաքչին</strong> եմ, <strong class="text-cyan font-bold">Python</strong> մասնագետ Ծրագրավորող <strong class="text-cyan font-bold">20+ տարի</strong> փորձով տեխնոլոգիական էկոհամակարգում։',
+		about_p2: 'Իմ փորձը <strong class="text-violet font-bold">Python</strong> չորս հիմնական ոլորտներում է՝<br>🐍 <strong class="text-cyan">Backend Development</strong> Django, FastAPI և Flask-ով<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> PyTorch և TensorFlow-ով<br>📊 <strong class="text-yellow">Data Science</strong> Pandas, NumPy և Scikit-learn-ով<br>🐳 <strong class="text-orange">Automation & Deployment</strong> Docker և CI/CD-ով',
+		about_p3: 'Հավատում եմ <strong class="text-white font-bold">PEP8</strong> չափանիշներին հետևող մաքուր, փաստաթղթավորված և փորձարկվող կոդին՝ <strong class="text-white font-bold">Type Hints</strong> և <strong class="text-white font-bold">Design Patterns</strong> օգտագործելով Python նախագծերում։',
+		// ===== INFO CARDS =====
+		info_location_label: "Վայր",
+		info_location_value: "Թավրիզ, Իրան",
+		info_status_label: "Կարգավիճակ",
+		info_status_value: "Հասանելի",
+		info_specialty_label: "Հիմնական մասնագիտություն",
+		info_specialty_value: "Python Developer",
+		info_exp_label: "Փորձ",
+		info_exp_value: "+20 Տարի",
+		// ===== SKILLS =====
+		skills_subtitle: "Python Հմտություններ",
+		skills_title: "Python Հմտություններ",
+		skill_backend_title: "Backend Development",
+		skill_backend_sub: "API & Web",
+		skill_ai_title: "AI & Machine Learning",
+		skill_ai_sub: "Deep Learning & NLP",
+		skill_ds_title: "Տվյալների Գիտություն",
+		skill_ds_sub: "Analysis & Visualization",
+		skill_auto_title: "Automation & Deployment",
+		skill_auto_sub: "CI/CD & Containerization",
+		skill_mgmt_title: "Նախագծերի Կառավարում",
+		skill_mgmt_sub: "Scrum & Agile",
+		skill_soft_title: "Փափուկ Հմտություններ",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "Python Պորտֆոլիո",
+		projects_title: "6 Լավագույն Python Նախագծեր",
+		projects_desc: "Backend-ից և DevOps-ից մինչև Machine Learning, Deep Learning և Data Science",
+		project1_title: "🐳 Docker + GitHub Actions-ով Ավտոմատ Տեղակայում",
+		project1_desc: "Հիմնական ճյուղում յուրաքանչյուր git push-ի ժամանակ Python նախագիծը ավտոմատ կերպով փորձարկվում է, կառուցվում և տեղակայվում VPS-ում Docker-ով։",
+		project2_title: "📈 Մակրոտնտեսական Ցուցանիշների Կանխատեսում",
+		project2_desc: "Դասական էկոնոմետրիկ մոդելների (VAR, ARIMA, GARCH) համակցումը խորը ուսուցման (LSTM, Transformer) հետ՝ ոսկու, դոլարի և նավթի գների ավելի ճշգրիտ կանխատեսման համար։",
+		project3_title: "🤖 6 Մեսենջերների Միասնական Inbox",
+		project3_desc: "WhatsApp-ից, Telegram-ից, Instagram-ից, Rubika-ից, Bale-ից և Eitaa-ից ավտոմատ ընդունում և պատասխանում Generative AI (RAG) միջոցով՝ զրույցի պատմությամբ։",
+		project4_title: "📊 Instagram Աճի և Ներգրավման Վահանակ",
+		project4_desc: "Մեկնաբանությունների սենտիմենտ վերլուծություն պարսկերեն լեզվի մոդելներով, հրապարակման լավագույն ժամերի հայտնաբերում, ավտոմատ շաբաթական հաշվետվության ստեղծում:",
+		project5_title: "📋 WooCommerce Վաճառքի Կառավարման Վահանակ",
+		project5_desc: "Ուղղակի միացում WooCommerce տվյալների բազային և REST API-ին, հիմնական KPI-ների ցուցադրում (AOV, Conversion Rate), վաճառքի կանխատեսում և պահեստի ծանուցումներ։",
+		project6_title: "🪙 AI-ով Աշխատող Crypto Gem Hunter",
+		project6_desc: "Նոր մետաղադրամների ավտոմատ սկանավորում բազմագործոն վերլուծությամբ (տեխնիկական, սենտիմենտ, սոցիալական ցանցեր)՝ 7 օրվա ընթացքում առնվազն 50% աճի ներուժ ունեցող մետաղադրամները հայտնաբերելու համար։",
+		github_all: "Դիտել բոլոր նախագծերը GitHub-ում",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "Կարիերա",
+		exp_title: "Python Փորձ",
+		exp1_title: "Ավագ Python Ծրագրավորող",
+		exp1_desc: "Django, FastAPI և Flask-ով վեբ հավելվածների նախագծում և մշակում։ Միկրոսերվիսային ճարտարապետության, RESTful API, WebSocket-ի և PostgreSQL/Redis-ով տվյալների բազայի օպտիմալացման ներդրում։",
+		exp2_title: "Machine Learning Մասնագետ",
+		exp2_desc: "PyTorch և TensorFlow-ով խորը ուսուցման մոդելների նախագծում և ներդրում ֆինանսական կանխատեսման, սենտիմենտ վերլուծության, առաջարկությունների համակարգերի և Բնական Լեզվի Մշակման (NLP) համար։",
+		exp3_title: "Data Science Մասնագետ",
+		exp3_desc: "BI վահանակների նախագծում Streamlit և Plotly-ով, գործարքային տվյալների վերլուծություն Pandas-ով, կանխատեսման համակարգերի և ավտոմատ հաշվետվության կառուցում։",
+		exp4_title: "Scrum Master & Product Owner",
+		exp4_desc: "Ծրագրային թիմի կառավարում Scrum/Kanban մեթոդաբանությամբ, Jira, Confluence և Miro-ի օգտագործում մշակման գործընթացները բարելավելու համար։",
+		exp5_title: "Ավտոմատացման և Տեղակայման Մասնագետ",
+		exp5_desc: "CI/CD pipeline-ի նախագծում GitHub Actions-ով, Docker-ով կոնտեյներացում, VPS տեղակայում և Python-ով կրկնվող գործընթացների ավտոմատացում։",
+		clients_title: "Ընտրված Հաճախորդներ",
+		// ===== CONTACT =====
+		contact_subtitle: "Կապ",
+		contact_title: "Կապ",
+		contact_desc: 'Պատրաստ եմ համագործակցության <strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> և <strong class="text-white">Ավտոմատացման</strong> նախագծերում։',
+		whatsapp_label: "WhatsApp",
+		whatsapp_value: "Ուղղակի հաղորդագրություն",
+		telegram_label: "Telegram",
+		contact_name: "Սամադ Էլմաքչի",
+		contact_role: "Python Developer",
+		contact_location: "Թավրիզ, Իրան",
+		contact_timezone: "UTC+3:30 (Թեհրանի Ժամ)",
+		contact_status: "Հասանելի է ֆրիլանսի և համագործակցության համար",
+		website_btn: "Այցելել Պաշտոնական Կայք",
+		// ===== FOOTER =====
+		footer_name: "Samad Elmakchi"
+	},
+	// ================================================================
+	// ==================== RUSSIAN ====================
+	// ================================================================
+	ru: {
+		// ===== NAVIGATION =====
+		nav_name: "Самад Элмакчи",
+		nav_home: "Главная",
+		nav_about: "Обо мне",
+		nav_skills: "Навыки",
+		nav_projects: "Проекты",
+		nav_experience: "Опыт",
+		nav_contact: "Контакты",
+		// ===== HERO =====
+		hero_name: "Самад",
+		hero_lastname: "Элмакчи",
+		badge_available: "Готов к работе",
+		hero_desc: 'Профессиональный <strong class="text-cyan font-bold">Python</strong> разработчик с <strong class="text-cyan font-bold">20+ лет</strong> опыта. Эксперт в <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> и создании интеллектуальных систем.',
+		// ===== BUTTONS =====
+		contact_btn: "Связаться со мной",
+		github_btn: "Посмотреть GitHub",
+		// ===== STATS =====
+		stat_years: "Лет Опыта",
+		stat_projects: "Python Проектов",
+		stat_tools: "Python Библиотек",
+		stat_clients: "Клиентов",
+		// ===== ABOUT =====
+		about_subtitle: "Обо мне",
+		about_title: "Обо мне",
+		about_p1: 'Я <strong class="text-white font-bold">Самад Элмакчи</strong>, профессиональный <strong class="text-cyan font-bold">Python</strong> разработчик с <strong class="text-cyan font-bold">20+ лет</strong> опыта в технологической экосистеме.',
+		about_p2: 'Моя экспертиза лежит в четырех основных областях <strong class="text-violet font-bold">Python</strong>:<br>🐍 <strong class="text-cyan">Backend Development</strong> с Django, FastAPI и Flask<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> с PyTorch и TensorFlow<br>📊 <strong class="text-yellow">Data Science</strong> с Pandas, NumPy и Scikit-learn<br>🐳 <strong class="text-orange">Automation & Deployment</strong> с Docker и CI/CD',
+		about_p3: 'Я верю в чистый, документированный и тестируемый код, следующий стандартам <strong class="text-white font-bold">PEP8</strong>, с использованием <strong class="text-white font-bold">Type Hints</strong> и <strong class="text-white font-bold">Design Patterns</strong> в Python проектах.',
+		// ===== INFO CARDS =====
+		info_location_label: "Местоположение",
+		info_location_value: "Тебриз, Иран",
+		info_status_label: "Статус",
+		info_status_value: "Доступен",
+		info_specialty_label: "Основная специализация",
+		info_specialty_value: "Python Developer",
+		info_exp_label: "Опыт",
+		info_exp_value: "+20 Лет",
+		// ===== SKILLS =====
+		skills_subtitle: "Навыки Python",
+		skills_title: "Навыки Python",
+		skill_backend_title: "Backend Разработка",
+		skill_backend_sub: "API & Web",
+		skill_ai_title: "AI & Machine Learning",
+		skill_ai_sub: "Deep Learning & NLP",
+		skill_ds_title: "Data Science",
+		skill_ds_sub: "Анализ & Визуализация",
+		skill_auto_title: "Автоматизация & Деплой",
+		skill_auto_sub: "CI/CD & Контейнеризация",
+		skill_mgmt_title: "Управление Проектами",
+		skill_mgmt_sub: "Scrum & Agile",
+		skill_soft_title: "Мягкие Навыки",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "Python Портфолио",
+		projects_title: "6 Лучших Python Проектов",
+		projects_desc: "От Backend и DevOps до Machine Learning, Deep Learning и Data Science",
+		project1_title: "🐳 Автоматический деплой с Docker + GitHub Actions",
+		project1_desc: "При каждом git push в основную ветку Python проект автоматически тестируется, собирается и разворачивается на VPS с Docker. Время развертывания сокращается с 30 минут до 2 минут.",
+		project2_title: "📈 Прогнозирование макроэкономических показателей",
+		project2_desc: "Сочетание классических эконометрических моделей (VAR, ARIMA, GARCH) с глубоким обучением (LSTM, Transformer) для прогнозирования цен на золото, доллар и нефть с более высокой точностью.",
+		project3_title: "🤖 Единый почтовый ящик для 6 мессенджеров",
+		project3_desc: "Автоматический прием и ответ из WhatsApp, Telegram, Instagram, Rubika, Bale и Eitaa с использованием генеративного ИИ (RAG) с историей разговора.",
+		project4_title: "📊 Панель роста и вовлеченности Instagram",
+		project4_desc: "Анализ тональности комментариев с моделями персидского языка, определение лучшего времени для публикации, автоматическое создание еженедельных отчетов и выявление влиятельных инфлюенсеров.",
+		project5_title: "📋 Панель управления продажами WooCommerce",
+		project5_desc: "Прямое подключение к базе данных и REST API WooCommerce, отображение ключевых KPI (AOV, Conversion Rate), прогнозирование продаж и оповещения о запасах.",
+		project6_title: "🪙 AI-Помощник для поиска крипто-монет",
+		project6_desc: "Автоматическое сканирование новых монет с многофакторным анализом (технический, сентимент, социальные сети) для выявления монет с потенциалом роста не менее 50% за 7 дней.",
+		github_all: "Посмотреть все проекты на GitHub",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "Карьера",
+		exp_title: "Опыт Python",
+		exp1_title: "Старший Python Разработчик",
+		exp1_desc: "Проектирование и разработка веб-приложений с Django, FastAPI и Flask. Внедрение микросервисной архитектуры, RESTful API, WebSocket и оптимизация базы данных с PostgreSQL и Redis.",
+		exp2_title: "Специалист по Machine Learning",
+		exp2_desc: "Проектирование и внедрение моделей глубокого обучения с PyTorch и TensorFlow для финансового прогнозирования, анализа тональности, рекомендательных систем и обработки естественного языка (NLP).",
+		exp3_title: "Специалист по Data Science",
+		exp3_desc: "Проектирование BI-панелей с Streamlit и Plotly, анализ транзакционных данных с Pandas, создание систем прогнозирования и автоматической отчетности.",
+		exp4_title: "Scrum Master & Product Owner",
+		exp4_desc: "Управление командами разработчиков с использованием Scrum/Kanban, использование Jira, Confluence и Miro для улучшения процессов разработки.",
+		exp5_title: "Специалист по автоматизации и деплою",
+		exp5_desc: "Проектирование CI/CD pipeline с GitHub Actions, контейнеризация с Docker, развертывание на VPS и автоматизация повторяющихся процессов с Python.",
+		clients_title: "Избранные Клиенты",
+		// ===== CONTACT =====
+		contact_subtitle: "Связь",
+		contact_title: "Связь",
+		contact_desc: 'Готов к сотрудничеству в проектах <strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> и <strong class="text-white">Автоматизации</strong>.',
+		whatsapp_label: "WhatsApp",
+		whatsapp_value: "Отправить сообщение",
+		telegram_label: "Telegram",
+		contact_name: "Самад Элмакчи",
+		contact_role: "Python Developer",
+		contact_location: "Тебриз, Иран",
+		contact_timezone: "UTC+3:30 (Тегеранское Время)",
+		contact_status: "Доступен для фриланса и сотрудничества",
+		website_btn: "Посетить Официальный Сайт",
+		// ===== FOOTER =====
+		footer_name: "Samad Elmakchi"
+	},
+	// ================================================================
+	// ==================== GEORGIAN ====================
+	// ================================================================
+	ge: {
+		// ===== NAVIGATION =====
+		nav_name: "სამად ელმაქჩი",
+		nav_home: "მთავარი",
+		nav_about: "ჩემს შესახებ",
+		nav_skills: "უნარები",
+		nav_projects: "პროექტები",
+		nav_experience: "გამოცდილება",
+		nav_contact: "კონტაქტი",
+		// ===== HERO =====
+		hero_name: "სამად",
+		hero_lastname: "ელმაქჩი",
+		badge_available: "ხელმისაწვდომია სამუშაოდ",
+		hero_desc: '<strong class="text-cyan font-bold">Python</strong> პროფესიონალი დეველოპერი <strong class="text-cyan font-bold">20+ წელი</strong> გამოცდილებით. ექსპერტი <strong class="text-white">FastAPI</strong>، <strong class="text-white">Flask</strong>، <strong class="text-emerald font-bold">Machine Learning</strong>، <strong class="text-emerald font-bold">Deep Learning</strong>، <strong class="text-yellow font-bold">Data Science</strong> და ინტელექტუალური სისტემების შექმნაში.',
+		// ===== BUTTONS =====
+		contact_btn: "დამიკავშირდი",
+		github_btn: "GitHub-ის ნახვა",
+		// ===== STATS =====
+		stat_years: "წელი გამოცდილება",
+		stat_projects: "Python პროექტი",
+		stat_tools: "Python ბიბლიოთეკა",
+		stat_clients: "კლიენტი",
+		// ===== ABOUT =====
+		about_subtitle: "ჩემს შესახებ",
+		about_title: "ჩემს შესახებ",
+		about_p1: 'მე ვარ <strong class="text-white font-bold">სამად ელმაქჩი</strong>, <strong class="text-cyan font-bold">Python</strong> პროფესიონალი დეველოპერი <strong class="text-cyan font-bold">20+ წელი</strong> გამოცდილებით ტექნოლოგიურ ეკოსისტემაში.',
+		about_p2: 'ჩემი ექსპერტიზა <strong class="text-violet font-bold">Python</strong>-ის ოთხ ძირითად სფეროშია:<br>🐍 <strong class="text-cyan">Backend Development</strong> Django, FastAPI და Flask-ით<br>🧠 <strong class="text-emerald">Machine Learning & Deep Learning</strong> PyTorch და TensorFlow-ით<br>📊 <strong class="text-yellow">Data Science</strong> Pandas, NumPy და Scikit-learn-ით<br>🐳 <strong class="text-orange">Automation & Deployment</strong> Docker და CI/CD-ით',
+		about_p3: 'მჯერა სუფთა, დოკუმენტირებული და ტესტირებადი კოდის <strong class="text-white font-bold">PEP8</strong> სტანდარტების დაცვით, <strong class="text-white font-bold">Type Hints</strong> და <strong class="text-white font-bold">Design Patterns</strong> გამოყენებით Python პროექტებში.',
+		// ===== INFO CARDS =====
+		info_location_label: "მდებარეობა",
+		info_location_value: "თავრიზი, ირანი",
+		info_status_label: "სტატუსი",
+		info_status_value: "ხელმისაწვდომი",
+		info_specialty_label: "მთავარი სპეციალობა",
+		info_specialty_value: "Python Developer",
+		info_exp_label: "გამოცდილება",
+		info_exp_value: "+20 წელი",
+		// ===== SKILLS =====
+		skills_subtitle: "Python უნარები",
+		skills_title: "Python უნარები",
+		skill_backend_title: "Backend Development",
+		skill_backend_sub: "API & Web",
+		skill_ai_title: "AI & Machine Learning",
+		skill_ai_sub: "Deep Learning & NLP",
+		skill_ds_title: "მონაცემთა მეცნიერება",
+		skill_ds_sub: "Analysis & Visualization",
+		skill_auto_title: "Automation & Deployment",
+		skill_auto_sub: "CI/CD & Containerization",
+		skill_mgmt_title: "პროექტების მენეჯმენტი",
+		skill_mgmt_sub: "Scrum & Agile",
+		skill_soft_title: "რბილი უნარები",
+		skill_soft_sub: "Soft Skills",
+		// ===== PROJECTS =====
+		projects_subtitle: "Python პორტფოლიო",
+		projects_title: "6 საუკეთესო Python პროექტი",
+		projects_desc: "Backend-დან და DevOps-დან Machine Learning, Deep Learning და Data Science-მდე",
+		project1_title: "🐳 ავტომატური დეპლოი Docker + GitHub Actions-ით",
+		project1_desc: "ყოველი git push-ისას მთავარ ბრანჩში, Python პროექტი ავტომატურად ტესტირდება, აშენდება და დეპლოიდება VPS-ზე Docker-ით. დეპლოის დრო 30 წუთიდან 2 წუთამდე მცირდება.",
+		project2_title: "📈 მაკროეკონომიკური ინდიკატორების პროგნოზირება",
+		project2_desc: "კლასიკური ეკონომეტრიული მოდელების (VAR, ARIMA, GARCH) კომბინაცია ღრმა სწავლებასთან (LSTM, Transformer) ოქროს, დოლარის და ნავთობის ფასების უფრო ზუსტი პროგნოზირებისთვის.",
+		project3_title: "🤖 6 მესენჯერის ერთიანი ინბოქსი",
+		project3_desc: "ავტომატური მიღება და პასუხი WhatsApp-დან, Telegram-დან, Instagram-დან, Rubika-დან, Bale-დან და Eitaa-დან Generative AI (RAG) გამოყენებით საუბრის ისტორიით.",
+		project4_title: "📊 Instagram-ის ზრდის და ჩართულობის დაშბორდი",
+		project4_desc: "კომენტარების სენტიმენტ ანალიზი სპარსული ენის მოდელებით, საუკეთესო გამოქვეყნების დროის განსაზღვრა, ავტომატური ყოველკვირეული ანგარიშის გენერაცია.",
+		project5_title: "📋 WooCommerce გაყიდვების მართვის დაშბორდი",
+		project5_desc: "პირდაპირი კავშირი WooCommerce-ის მონაცემთა ბაზასთან და REST API-სთან, ძირითადი KPI-ების ჩვენება (AOV, Conversion Rate), გაყიდვების პროგნოზირება და ინვენტარის გაფრთხილებები.",
+		project6_title: "🪙 AI-ით მომუშავე კრიპტო ძებნა",
+		project6_desc: "ახალი მონეტების ავტომატური სკანირება მრავალფაქტორული ანალიზით (ტექნიკური, სენტიმენტი, სოციალური ქსელები) მონეტების იდენტიფიცირებისთვის, რომლებსაც აქვთ მინიმუმ 50% ზრდის პოტენციალი 7 დღეში.",
+		github_all: "ყველა პროექტის ნახვა GitHub-ზე",
+		// ===== EXPERIENCE =====
+		exp_subtitle: "კარიერა",
+		exp_title: "Python გამოცდილება",
+		exp1_title: "უფროსი Python დეველოპერი",
+		exp1_desc: "ვებ აპლიკაციების დიზაინი და განვითარება Django, FastAPI და Flask-ით. მიკროსერვისების არქიტექტურის, RESTful API, WebSocket-ის და მონაცემთა ბაზის ოპტიმიზაციის დანერგვა PostgreSQL და Redis-ით.",
+		exp2_title: "Machine Learning სპეციალისტი",
+		exp2_desc: "ღრმა სწავლების მოდელების დიზაინი და დანერგვა PyTorch და TensorFlow-ით ფინანსური პროგნოზირების, სენტიმენტ ანალიზის, რეკომენდაციების სისტემების და ბუნებრივი ენის დამუშავებისთვის (NLP).",
+		exp3_title: "Data Science სპეციალისტი",
+		exp3_desc: "BI დაშბორდების დიზაინი Streamlit და Plotly-ით, ტრანზაქციული მონაცემების ანალიზი Pandas-ით, პროგნოზირების სისტემების და ავტომატური ანგარიშგების შექმნა.",
+		exp4_title: "Scrum Master & Product Owner",
+		exp4_desc: "პროგრამული უზრუნველყოფის გუნდის მართვა Scrum/Kanban მეთოდოლოგიით, Jira, Confluence და Miro-ს გამოყენება განვითარების პროცესების გასაუმჯობესებლად.",
+		exp5_title: "ავტომატიზაციის და დეპლოის სპეციალისტი",
+		exp5_desc: "CI/CD pipeline-ის დიზაინი GitHub Actions-ით, კონტეინერიზაცია Docker-ით, VPS-ზე დეპლოი და განმეორებადი პროცესების ავტომატიზაცია Python-ით.",
+		clients_title: "რჩეული კლიენტები",
+		// ===== CONTACT =====
+		contact_subtitle: "კონტაქტი",
+		contact_title: "კონტაქტი",
+		contact_desc: 'მზად ვარ თანამშრომლობისთვის <strong class="text-cyan">Python</strong>، <strong class="text-emerald">Machine Learning</strong>، <strong class="text-yellow">Data Science</strong> და <strong class="text-white">ავტომატიზაციის</strong> პროექტებში.',
+		whatsapp_label: "WhatsApp",
+		whatsapp_value: "პირდაპირი შეტყობინება",
+		telegram_label: "Telegram",
+		contact_name: "სამად ელმაქჩი",
+		contact_role: "Python Developer",
+		contact_location: "თავრიზი, ირანი",
+		contact_timezone: "UTC+3:30 (თეირანის დრო)",
+		contact_status: "ხელმისაწვდომია ფრილანსისა და თანამშრომლობისთვის",
+		website_btn: "ოფიციალური ვებსაიტის ნახვა",
+		// ===== FOOTER =====
+		footer_name: "Samad Elmakchi"
+	}
 };
