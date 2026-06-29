@@ -4,8 +4,11 @@
 
 تخصص من در چهار حوزه اصلی Python قرار دارد:
 🐍 Backend Development با Django، FastAPI و Flask
+
 🧠 Machine Learning & Deep Learning با PyTorch و TensorFlow
+
 📊 Data Science با Pandas، NumPy و Scikit-learn
+
 🐳 Automation & Deployment با Docker و CI/CD
 
 به کدنویسی تمیز، مستند و آزمون‌پذیر با رعایت استانداردهای PEP8، استفاده از Type Hints و Design Patterns در پروژه‌های پایتون معتقدم.
