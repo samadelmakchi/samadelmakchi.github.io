@@ -1,10 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- ===== HOME PAGE ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samadelmakchi.github.io/" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://samadelmakchi.github.io/?lang=fa" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://samadelmakchi.github.io/?lang=ar" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    <xhtml:link rel="alternate" hreflang="az" href="https://samadelmakchi.github.io/?lang=az" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://samadelmakchi.github.io/?lang=tr" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    <xhtml:link rel="alternate" hreflang="am" href="https://samadelmakchi.github.io/?lang=am" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://samadelmakchi.github.io/?lang=ru" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+    <xhtml:link rel="alternate" hreflang="ge" href="https://samadelmakchi.github.io/?lang=ge" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>
+  </url>
 
-	<url>
-		<loc>https://elmakchi.ir/</loc>
-		<lastmod>2020-08-22</lastmod>
-	</url>
+  <!-- ===== ABOUT PAGE ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#about</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-</urlset> 
+  <!-- ===== SKILLS PAGE ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#skills</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===== PROJECTS PAGE ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#projects</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== EXPERIENCE PAGE ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#experience</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ===== CONTACT PAGE ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#contact</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ===== PROJECT 1: Docker + CI/CD ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#project1</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ===== PROJECT 2: Financial Forecasting ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#project2</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ===== PROJECT 3: Unified Inbox ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#project3</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ===== PROJECT 4: Instagram Analytics ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#project4</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ===== PROJECT 5: WooCommerce BI ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#project5</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ===== PROJECT 6: AI Crypto Hunter ===== -->
+  <url>
+    <loc>https://samadelmakchi.github.io/#project6</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

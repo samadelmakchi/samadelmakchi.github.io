@@ -1,24 +1,62 @@
 {
-  "name": "Samad Elmakchi | DevOps Engineer",
+  "name": "Samad Elmakchi | Python Developer",
   "short_name": "Samad Elmakchi",
-  "description": "Portfolio of Samad Elmakchi - DevOps Engineer & Backend Developer",
+  "description": "Professional Python Developer with over 20 years of experience. Expert in Django, FastAPI, Flask, Machine Learning, Deep Learning, Data Science and building intelligent systems.",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#030712",
   "background_color": "#030712",
   "orientation": "portrait-primary",
+  "categories": [
+    "portfolio",
+    "developer",
+    "python",
+    "technology"
+  ],
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
-      "src": "https://avatars.githubusercontent.com/u/6169366?v=4",
+      "src": "favicon/favicon-192x192.png",
       "sizes": "192x192",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://avatars.githubusercontent.com/u/6169366?v=4",
+      "src": "favicon/favicon-512x512.png",
       "sizes": "512x512",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "samad-elmakchi.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/#home",
+      "description": "Go to homepage"
+    },
+    {
+      "name": "Projects",
+      "url": "/#projects",
+      "description": "View Python projects"
+    },
+    {
+      "name": "Contact",
+      "url": "/#contact",
+      "description": "Contact me"
     }
   ]
 }
