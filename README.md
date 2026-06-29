@@ -3,6 +3,7 @@
 من صمد المکچی هستم، توسعه‌دهنده حرفه‌ای Python با بیش از ۲۰ سال سابقه فعالیت مستمر در اکوسیستم فناوری.
 
 تخصص من در چهار حوزه اصلی Python قرار دارد:
+
 🐍 Backend Development با Django، FastAPI و Flask
 
 🧠 Machine Learning & Deep Learning با PyTorch و TensorFlow
