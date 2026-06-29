@@ -1,0 +1,55 @@
+# ============================================================
+# SECURITY POLICY - Samad Elmakchi | Python Developer
+# ============================================================
+
+# ========== VULNERABILITY REPORTING ==========
+
+We take security seriously. If you discover a security vulnerability, please report it responsibly.
+
+# ========== REPORTING PROCESS ==========
+
+1. Send an email to: samad.elmakchi@gmail.com
+2. Include detailed information about the vulnerability
+3. Allow reasonable time for investigation and resolution
+4. We will acknowledge receipt within 48 hours
+
+# ========== WHAT TO REPORT ==========
+
+- Cross-Site Scripting (XSS)
+- SQL Injection
+- Cross-Site Request Forgery (CSRF)
+- Security Misconfigurations
+- Sensitive Data Exposure
+- Authentication/Authorization Issues
+- Denial of Service (DoS)
+
+# ========== WHAT NOT TO REPORT ==========
+
+- Vulnerabilities in third-party libraries (report upstream)
+- Social engineering attacks
+- Physical security issues
+- Already known issues
+
+# ========== SAFE HARBOR ==========
+
+If you follow this policy, we will not take legal action against you for your research.
+
+# ========== RESPONSE TIMELINE ==========
+
+- 48 hours: Acknowledgment
+- 7 days: Initial assessment
+- 30 days: Resolution or mitigation plan
+
+# ========== PGP KEY ==========
+
+Encryption: https://samadelmakchi.github.io/.well-known/pgp-key.txt
+
+# ========== CONTACT ==========
+
+Email: samad.elmakchi@gmail.com
+GitHub: https://github.com/samadelmakchi
+Telegram: https://t.me/samadelmakchi
+
+# ========== UPDATED ==========
+
+# Last updated: 2026-06-29

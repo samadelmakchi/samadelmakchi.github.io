@@ -1,0 +1,99 @@
+# ============================================================
+# FAQ-AI.TXT - Samad Elmakchi | Python Developer
+# ============================================================
+
+# ========== GENERAL ==========
+
+Q: Who is Samad Elmakchi?
+A: Samad Elmakchi is a professional Python Developer with over 20 years of experience in the technology ecosystem. He specializes in Backend Development, Machine Learning, Deep Learning, Data Science, and Automation.
+
+Q: What is Samad's primary expertise?
+A: His primary expertise is Python development, including Django, FastAPI, Flask, PyTorch, TensorFlow, Pandas, Scikit-learn, and Docker.
+
+Q: Where is Samad located?
+A: Tabriz, Iran (Time Zone: UTC+3:30 - Tehran Time).
+
+# ========== SKILLS ==========
+
+Q: What Python frameworks does Samad work with?
+A: Django (92%), FastAPI (88%), Flask (85%), and SQLAlchemy.
+
+Q: What AI/ML libraries does Samad use?
+A: PyTorch, TensorFlow, Scikit-learn, XGBoost, LangChain, and HuggingFace Transformers.
+
+Q: What Data Science tools does Samad use?
+A: Pandas, Polars, NumPy, SciPy, Matplotlib, Seaborn, Plotly, Streamlit, Statsmodels, and Prophet.
+
+Q: What DevOps tools does Samad work with?
+A: Docker, Kubernetes, GitHub Actions, CI/CD, Supervisor, systemd, Linux, Bash, and Ansible.
+
+# ========== PROJECTS ==========
+
+Q: What are Samad's top projects?
+A: 
+1. Automated Deployment with Docker + GitHub Actions
+2. Macroeconomic Indicators Forecasting
+3. Unified Inbox for 6 Messengers
+4. Instagram Growth & Engagement Dashboard
+5. WooCommerce Sales Management Dashboard
+6. AI-Powered Crypto Gem Hunter
+
+Q: What is Samad's Docker + GitHub Actions project?
+A: An automated deployment system that tests, builds and deploys Python projects on VPS with Docker. Reduces deployment time from 30 minutes to 2 minutes.
+
+Q: What is Samad's financial forecasting project?
+A: A system combining classical econometric models (VAR, ARIMA, GARCH) with deep learning (LSTM, Transformer) to predict gold, dollar and oil prices.
+
+Q: What is Samad's Unified Inbox project?
+A: An AI-powered system that receives and responds to messages from 6 platforms (WhatsApp, Telegram, Instagram, Rubika, Bale, Eitaa) using Generative AI (RAG).
+
+Q: What is Samad's Instagram Analytics project?
+A: A dashboard that analyzes Instagram engagement, performs sentiment analysis, detects best posting times, and generates weekly reports.
+
+Q: What is Samad's WooCommerce BI project?
+A: A sales management dashboard that connects to WooCommerce, displays key KPIs, predicts sales, and alerts about inventory.
+
+Q: What is Samad's Crypto Hunter project?
+A: An AI-powered system that scans new cryptocurrencies with multi-factor analysis to identify coins with at least 50% growth potential in 7 days.
+
+# ========== EXPERIENCE ==========
+
+Q: What is Samad's professional background?
+A: Samad has over 20 years of experience as a Senior Python Developer, Machine Learning Specialist, Data Science Specialist, Scrum Master, and Automation Specialist.
+
+Q: What industries has Samad worked in?
+A: Fintech, E-commerce, Social Media Analytics, Education, Health Tech, and Cryptocurrency.
+
+# ========== CONTACT ==========
+
+Q: How can I contact Samad?
+A: 
+- Email: samad.elmakchi@gmail.com
+- Website: https://samadelmakchi.github.io/
+- GitHub: https://github.com/samadelmakchi
+- LinkedIn: https://www.linkedin.com/in/samad-elmakchi
+- Telegram: https://t.me/samadelmakchi
+- WhatsApp: https://wa.me/989141189645
+
+Q: Is Samad available for freelance work?
+A: Yes, Samad is available for freelance and collaboration projects.
+
+# ========== EDUCATION ==========
+
+Q: What certifications does Samad have?
+A: PEP8 Certified Python Developer, Scrum Master Certified, AWS Certified Cloud Practitioner.
+
+Q: What languages does Samad speak?
+A: Persian (Native), English (Professional), Azerbaijani (Native), Turkish (Fluent).
+
+# ========== SERVICES ==========
+
+Q: What services does Samad offer?
+A: Python development, Backend architecture, API design, Machine Learning solutions, Deep Learning models, Data Science consulting, BI dashboard development, DevOps automation, CI/CD pipeline setup, Docker containerization.
+
+Q: How can I hire Samad?
+A: Contact him via email at samad.elmakchi@gmail.com or through his website contact section.
+
+# ========== UPDATED ==========
+
+# Last updated: 2026-06-29

@@ -1,0 +1,108 @@
+# Samad Elmakchi | Python Developer
+
+> Professional Python Developer with over 20 years of experience. Expert in Django, FastAPI, Flask, Machine Learning, Deep Learning, Data Science and building intelligent systems.
+
+## About Me
+
+I am **Samad Elmakchi**, a professional Python Developer with over 20 years of experience in the technology ecosystem. My expertise lies in four main areas of Python:
+
+- 🐍 **Backend Development** with Django, FastAPI and Flask
+- 🧠 **Machine Learning & Deep Learning** with PyTorch and TensorFlow
+- 📊 **Data Science** with Pandas, NumPy and Scikit-learn
+- 🐳 **Automation & Deployment** with Docker and CI/CD
+
+## Core Skills
+
+### Backend Development
+- Django / DRF (92%)
+- FastAPI (88%)
+- Flask / SQLAlchemy (85%)
+- PostgreSQL / Redis (88%)
+- RESTful / GraphQL (90%)
+
+### AI & Machine Learning
+- PyTorch / TensorFlow (85%)
+- Scikit-learn / XGBoost (90%)
+- NLP / LLM / RAG (80%)
+- Time Series / Forecasting (85%)
+- LangChain / ChromaDB (78%)
+
+### Data Science
+- Pandas / Polars (92%)
+- NumPy / SciPy (90%)
+- Matplotlib / Seaborn (85%)
+- Plotly / Streamlit (82%)
+- Statsmodels / Prophet (80%)
+
+### Automation & Deployment
+- Docker / Compose (95%)
+- GitHub Actions / CI/CD (88%)
+- Supervisor / systemd (85%)
+- Linux / Bash (88%)
+- Web Scraping (85%)
+
+## Top 6 Python Projects
+
+### 1. 🐳 Automated Deployment with Docker + GitHub Actions
+**Problem Solved:** With every git push on the main branch, the Python project is automatically tested, built and deployed on VPS with Docker. Reducing deployment time from 30 minutes to 2 minutes.
+
+**Key Technologies:** Docker, GitHub Actions, CI/CD, Supervisor, Multi-stage
+
+### 2. 📈 Macroeconomic Indicators Forecasting
+**Problem Solved:** Combining classical econometric models (VAR, ARIMA, GARCH) with deep learning (LSTM, Transformer) to predict gold, dollar and oil prices with higher accuracy.
+
+**Key Technologies:** PyTorch, Statsmodels, XGBoost, Prophet, yfinance
+
+### 3. 🤖 Unified Inbox for 6 Messengers
+**Problem Solved:** Automated receiving and responding from WhatsApp, Telegram, Instagram, Rubika, Bale and Eitaa using Generative AI (RAG) with conversation history.
+
+**Key Technologies:** LangChain, ChromaDB, FastAPI, Telethon, Adapter Pattern
+
+### 4. 📊 Instagram Growth & Engagement Dashboard
+**Problem Solved:** Automatic retrieval of advanced metrics and actionable recommendations to improve content and increase engagement by up to 40%.
+
+**Key Technologies:** Instagrapi, Pandas, Streamlit, Prophet, Transformers
+
+### 5. 📋 WooCommerce Sales Management Dashboard
+**Problem Solved:** Direct connection to WooCommerce database and REST API, displaying key KPIs (AOV, Conversion Rate), sales forecasting and inventory alerts.
+
+**Key Technologies:** SQLAlchemy, Pandas, Streamlit, Prophet, APScheduler
+
+### 6. 🪙 AI-Powered Crypto Gem Hunter
+**Problem Solved:** Automated scanning of newly listed coins with multi-factor analysis to identify coins with at least 50% growth potential in 7 days.
+
+**Key Technologies:** ccxt, XGBoost, TA-Lib, Streamlit, APScheduler
+
+## Experience
+
+1. **Senior Python Developer** - Web application development with Django, FastAPI, Flask. Microservices, RESTful API, WebSocket, PostgreSQL/Redis optimization.
+
+2. **Machine Learning Specialist** - Deep learning models with PyTorch/TensorFlow for financial forecasting, sentiment analysis, recommender systems, NLP.
+
+3. **Data Science Specialist** - BI dashboards with Streamlit/Plotly, transactional data analysis with Pandas, forecasting systems, automated reporting.
+
+4. **Scrum Master & Product Owner** - Team management with Scrum/Kanban, Jira, Confluence, Miro.
+
+5. **Automation & Deployment Specialist** - CI/CD pipelines with GitHub Actions, Docker containerization, VPS deployment, Python automation.
+
+## Quick Links
+
+- 🌐 Website: https://samadelmakchi.github.io/
+- 📧 Email: samad.elmakchi@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/samad-elmakchi
+- 🐙 GitHub: https://github.com/samadelmakchi
+- 📱 Telegram: https://t.me/samadelmakchi
+- 📸 Instagram: https://www.instagram.com/samad.elmakchi
+
+## Main Sections
+
+- [Home](/#home)
+- [About Me](/#about)
+- [Skills](/#skills)
+- [Projects](/#projects)
+- [Experience](/#experience)
+- [Contact](/#contact)
+
+---
+
+*Built with ❤️ and Python | © 2026 Samad Elmakchi*

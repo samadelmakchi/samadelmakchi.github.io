@@ -1,0 +1,40 @@
+# ============================================================
+# AI.TXT - Samad Elmakchi | Python Developer
+# ============================================================
+
+# ========== AI BOT PERMISSIONS ==========
+
+# Allow AI bots to crawl and use content for training
+User-agent: *
+Allow: /
+
+# ========== CONTENT USAGE POLICY ==========
+
+# This website content may be used for:
+# - Training language models and AI systems
+# - Generating AI responses and summaries
+# - Research and academic purposes
+# - Creating AI-powered applications and services
+
+# Content usage conditions:
+# - Proper attribution to the author is required
+# - Content should not be used for harmful purposes
+# - AI-generated responses should cite the source when possible
+
+# ========== AI OPTIMIZATION ==========
+
+# This site uses:
+# - Schema.org structured data (JSON-LD)
+# - Semantic HTML5 markup
+# - Clean, well-structured content
+# - llms.txt for LLM-friendly navigation
+
+# ========== CONTACT ==========
+
+# For questions about content usage:
+# Email: samad.elmakchi@gmail.com
+# GitHub: https://github.com/samadelmakchi
+
+# ========== UPDATED ==========
+
+# Last updated: 2026-06-29

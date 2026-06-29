@@ -1,0 +1,37 @@
+# ============================================================
+# SECURITY.TXT - Samad Elmakchi | Python Developer
+# ============================================================
+
+# ========== SECURITY CONTACT ==========
+
+Contact: mailto:samad.elmakchi@gmail.com
+Contact: https://github.com/samadelmakchi
+Contact: https://t.me/samadelmakchi
+
+# ========== ENCRYPTION ==========
+
+Encryption: https://samadelmakchi.github.io/.well-known/pgp-key.txt
+
+# ========== ACKNOWLEDGMENTS ==========
+
+Acknowledgments: https://samadelmakchi.github.io/.well-known/security-acknowledgments.txt
+
+# ========== POLICY ==========
+
+Policy: https://samadelmakchi.github.io/.well-known/security-policy.txt
+
+# ========== CANONICAL ==========
+
+Canonical: https://samadelmakchi.github.io/.well-known/security.txt
+
+# ========== EXPIRES ==========
+
+Expires: 2027-12-31T00:00:00.000Z
+
+# ========== PREFERRED LANGUAGES ==========
+
+Preferred-Languages: en, fa
+
+# ========== HIRING ==========
+
+Hiring: https://samadelmakchi.github.io/#contact

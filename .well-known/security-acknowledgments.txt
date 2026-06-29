@@ -1,0 +1,27 @@
+# ============================================================
+# SECURITY ACKNOWLEDGMENTS - Samad Elmakchi
+# ============================================================
+
+# This file recognizes security researchers who have 
+# responsibly disclosed vulnerabilities.
+
+# ========== ACKNOWLEDGMENTS ==========
+
+# No vulnerability reports have been submitted yet.
+# If you report a vulnerability responsibly, you will be 
+# acknowledged here.
+
+# ========== GUIDELINES ==========
+
+# Responsible disclosure is appreciated.
+# Please allow time for issue resolution.
+# Public disclosure should be coordinated.
+
+# ========== CONTACT ==========
+
+# Email: samad.elmakchi@gmail.com
+# GitHub: https://github.com/samadelmakchi
+
+# ========== UPDATED ==========
+
+# Last updated: 2026-06-29

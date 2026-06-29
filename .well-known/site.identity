@@ -1,0 +1,48 @@
+# ============================================================
+# SITE.IDENTITY - Samad Elmakchi | Python Developer
+# ============================================================
+
+# ========== BASIC INFORMATION ==========
+
+site_name: Samad Elmakchi | Python Developer
+site_url: https://samadelmakchi.github.io/
+site_description: Professional Python Developer with over 20 years of experience. Expert in Django, FastAPI, Flask, Machine Learning, Deep Learning, Data Science and building intelligent systems.
+site_type: personal_portfolio
+site_language: en
+
+# ========== AUTHOR INFORMATION ==========
+
+author_name: Samad Elmakchi
+author_role: Python Developer
+author_location: Tabriz, Iran
+author_email: samad.elmakchi@gmail.com
+
+# ========== SOCIAL MEDIA ==========
+
+github: https://github.com/samadelmakchi
+linkedin: https://www.linkedin.com/in/samad-elmakchi
+instagram: https://www.instagram.com/samad.elmakchi
+telegram: https://t.me/samadelmakchi
+whatsapp: https://wa.me/989141189645
+
+# ========== SKILLS ==========
+
+skills: Python, Django, FastAPI, Flask, PyTorch, TensorFlow, Pandas, Scikit-learn, Docker, GitHub Actions, Linux, Bash
+
+# ========== PROJECTS ==========
+
+project_1: Automated Deployment with Docker + GitHub Actions
+project_2: Macroeconomic Indicators Forecasting
+project_3: Unified Inbox for 6 Messengers
+project_4: Instagram Growth & Engagement Dashboard
+project_5: WooCommerce Sales Management Dashboard
+project_6: AI-Powered Crypto Gem Hunter
+
+# ========== CONTACT ==========
+
+preferred_contact: Email
+contact_email: samad.elmakchi@gmail.com
+
+# ========== UPDATED ==========
+
+# Last updated: 2026-06-29

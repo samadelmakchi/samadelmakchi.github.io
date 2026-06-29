@@ -1,0 +1,111 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "identifier": "samad-elmakchi",
+    "name": "Samad Elmakchi",
+    "familyName": "Elmakchi",
+    "givenName": "Samad",
+    "jobTitle": "Python Developer",
+    "description": "Professional Python Developer with over 20 years of experience. Expert in Django, FastAPI, Flask, Machine Learning, Deep Learning, Data Science and building intelligent systems.",
+    "url": "https://samadelmakchi.github.io/",
+    "image": "https://avatars.githubusercontent.com/u/6169366?v=4",
+    "email": "samad.elmakchi@gmail.com",
+    "telephone": "+989141189645",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tabriz",
+        "addressRegion": "East Azerbaijan",
+        "addressCountry": "IR"
+    },
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Freelancer"
+    },
+    "knowsAbout": [
+        "Python",
+        "Django",
+        "FastAPI",
+        "Flask",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Docker",
+        "CI/CD",
+        "DevOps",
+        "Natural Language Processing",
+        "Time Series Analysis",
+        "Web Scraping",
+        "API Design",
+        "Database Optimization"
+    ],
+    "sameAs": [
+        "https://github.com/samadelmakchi",
+        "https://www.linkedin.com/in/samad-elmakchi",
+        "https://www.instagram.com/samad.elmakchi",
+        "https://t.me/samadelmakchi",
+        "https://x.com/elmakchi"
+    ],
+    "skills": [
+        {
+            "name": "Django",
+            "proficiency": "92%"
+        },
+        {
+            "name": "FastAPI",
+            "proficiency": "88%"
+        },
+        {
+            "name": "PyTorch",
+            "proficiency": "85%"
+        },
+        {
+            "name": "TensorFlow",
+            "proficiency": "85%"
+        },
+        {
+            "name": "Docker",
+            "proficiency": "95%"
+        },
+        {
+            "name": "GitHub Actions",
+            "proficiency": "88%"
+        },
+        {
+            "name": "Pandas",
+            "proficiency": "92%"
+        },
+        {
+            "name": "Scikit-learn",
+            "proficiency": "90%"
+        }
+    ],
+    "languages": [
+        {
+            "name": "Persian",
+            "fluency": "Native"
+        },
+        {
+            "name": "English",
+            "fluency": "Professional"
+        },
+        {
+            "name": "Azerbaijani",
+            "fluency": "Native"
+        },
+        {
+            "name": "Turkish",
+            "fluency": "Fluent"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "PEP8 Certified Python Developer"
+        },
+        {
+            "name": "Scrum Master Certified"
+        },
+        {
+            "name": "AWS Certified Cloud Practitioner"
+        }
+    ]
+}

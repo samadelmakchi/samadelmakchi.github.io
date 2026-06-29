@@ -1,0 +1,124 @@
+# Samad Elmakchi | Python Developer - Full Documentation
+
+## Professional Summary
+
+Professional Python Developer with over 20 years of experience in the technology ecosystem. Expert in Django, FastAPI, Flask, Machine Learning, Deep Learning, Data Science and building intelligent systems. I believe in clean, documented and testable code following PEP8 standards, using Type Hints and Design Patterns in Python projects.
+
+## Technical Skills Matrix
+
+| Category | Technology | Proficiency |
+|----------|------------|-------------|
+| Backend | Django / DRF | 92% |
+| Backend | FastAPI | 88% |
+| Backend | Flask / SQLAlchemy | 85% |
+| Backend | PostgreSQL / Redis | 88% |
+| Backend | RESTful / GraphQL | 90% |
+| AI/ML | PyTorch / TensorFlow | 85% |
+| AI/ML | Scikit-learn / XGBoost | 90% |
+| AI/ML | NLP / LLM / RAG | 80% |
+| AI/ML | Time Series / Forecasting | 85% |
+| AI/ML | LangChain / ChromaDB | 78% |
+| Data Science | Pandas / Polars | 92% |
+| Data Science | NumPy / SciPy | 90% |
+| Data Science | Matplotlib / Seaborn | 85% |
+| Data Science | Plotly / Streamlit | 82% |
+| Data Science | Statsmodels / Prophet | 80% |
+| DevOps | Docker / Compose | 95% |
+| DevOps | GitHub Actions / CI/CD | 88% |
+| DevOps | Supervisor / systemd | 85% |
+| DevOps | Linux / Bash | 88% |
+| DevOps | Web Scraping | 85% |
+
+## Project Details
+
+### Project 1: Automated Deployment with Docker + GitHub Actions
+- **Category:** DevOps
+- **Duration:** 2024
+- **Technologies:** Docker, GitHub Actions, CI/CD, Supervisor, Systemd
+- **Description:** With every git push on the main branch, the Python project is automatically tested, built and deployed on VPS with Docker. Reducing deployment time from 30 minutes to 2 minutes.
+- **Highlights:** Multi-stage Dockerfile for 70% image size reduction, smart entrypoint.sh script, GitHub Secrets, Telegram notifications
+
+### Project 2: Macroeconomic Indicators Forecasting
+- **Category:** AI / Machine Learning
+- **Duration:** 2023-2024
+- **Technologies:** PyTorch, Statsmodels, XGBoost, Prophet, yfinance, Ray
+- **Description:** Combining classical econometric models (VAR, ARIMA, GARCH) with deep learning (LSTM, Transformer) to predict gold, dollar and oil prices with higher accuracy.
+- **Highlights:** Backtesting Engine, Market regime detection, Ensemble approach, Streamlit dashboard, InfluxDB storage
+
+### Project 3: Unified Inbox for 6 Messengers
+- **Category:** AI / NLP
+- **Duration:** 2024
+- **Technologies:** LangChain, ChromaDB, FastAPI, Telethon, instagrapi, Selenium
+- **Description:** Automated receiving and responding from WhatsApp, Telegram, Instagram, Rubika, Bale and Eitaa using Generative AI (RAG) with conversation history.
+- **Highlights:** Adapter Pattern, Conversation Memory, Local models, Persian language detection
+
+### Project 4: Instagram Growth & Engagement Dashboard
+- **Category:** Data Science
+- **Duration:** 2023
+- **Technologies:** Instagrapi, Pandas, Streamlit, Prophet, Transformers, ReportLab
+- **Description:** Automatic retrieval of advanced metrics and actionable recommendations to improve content and increase engagement by up to 40%.
+- **Highlights:** Sentiment Analysis, Best posting time detection, Weekly PDF reports, Influencer identification
+
+### Project 5: WooCommerce Sales Management Dashboard
+- **Category:** BI / Analytics
+- **Duration:** 2023-2024
+- **Technologies:** SQLAlchemy, Pandas, Streamlit, Prophet, APScheduler, Plotly
+- **Description:** Direct connection to WooCommerce database and REST API, displaying key KPIs (AOV, Conversion Rate), sales forecasting and inventory alerts.
+- **Highlights:** Abstraction layer, Net profit calculation, Sales forecasting, Inventory alerts, Excel/CSV export
+
+### Project 6: AI-Powered Crypto Gem Hunter
+- **Category:** AI / Crypto
+- **Duration:** 2024
+- **Technologies:** ccxt, XGBoost, TA-Lib, Redis, Streamlit, APScheduler
+- **Description:** Automated scanning of newly listed coins with multi-factor analysis (technical, sentiment, social networks) to identify coins with at least 50% growth potential in 7 days.
+- **Highlights:** ETL pipeline, Classification model, Scoring system, Pump detection, Telegram alerts
+
+## Experience Details
+
+### Senior Python Developer
+- **Duration:** 2015 - Present
+- **Responsibilities:** Web application development with Django, FastAPI and Flask. Implementation of microservices architecture, RESTful API, WebSocket and database optimization with PostgreSQL and Redis.
+- **Achievements:** Reduced API response time by 40%, implemented CI/CD pipelines
+
+### Machine Learning Specialist
+- **Duration:** 2018 - Present
+- **Responsibilities:** Design and implementation of deep learning models with PyTorch and TensorFlow for financial forecasting, sentiment analysis, recommender systems and NLP.
+- **Achievements:** 25% improvement in forecasting accuracy
+
+### Data Science Specialist
+- **Duration:** 2016 - Present
+- **Responsibilities:** Design of BI dashboards with Streamlit and Plotly, transactional data analysis with Pandas, building forecasting systems and automated reporting.
+- **Achievements:** Automated 80% of reporting tasks
+
+### Scrum Master & Product Owner
+- **Duration:** 2014 - Present
+- **Responsibilities:** Software team management with Scrum/Kanban methodology, using Jira, Confluence and Miro to improve development processes.
+- **Achievements:** 30% increase in team productivity
+
+### Automation & Deployment Specialist
+- **Duration:** 2013 - Present
+- **Responsibilities:** CI/CD pipeline design with GitHub Actions, containerization with Docker, VPS deployment and automation of repetitive processes with Python.
+- **Achievements:** Reduced deployment time by 93%
+
+## Contact Information
+
+- **Name:** Samad Elmakchi
+- **Location:** Tabriz, Iran
+- **Time Zone:** UTC+3:30 (Tehran Time)
+- **Email:** samad.elmakchi@gmail.com
+- **Website:** https://samadelmakchi.github.io/
+- **GitHub:** https://github.com/samadelmakchi
+- **LinkedIn:** https://www.linkedin.com/in/samad-elmakchi
+- **Telegram:** https://t.me/samadelmakchi
+- **Instagram:** https://www.instagram.com/samad.elmakchi
+- **WhatsApp:** https://wa.me/989141189645
+
+## Certifications
+
+- PEP8 Certified Python Developer
+- Scrum Master Certified
+- AWS Certified Cloud Practitioner
+
+---
+
+*Generated: 2026-06-29 | © 2026 Samad Elmakchi*

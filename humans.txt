@@ -1,0 +1,36 @@
+# ============================================================
+# HUMANS.TXT - Samad Elmakchi | Python Developer
+# ============================================================
+
+# ========== ABOUT THE SITE ==========
+
+# This is the personal portfolio website of Samad Elmakchi.
+# A professional Python Developer with over 20 years of experience.
+
+# ========== TECHNOLOGIES ==========
+
+# Built with: HTML5, CSS3, JavaScript
+# Font: IranSans (Local)
+# Icons: Font Awesome
+# Hosting: GitHub Pages
+# PWA: Progressive Web App
+# SEO: Schema.org, JSON-LD, Open Graph
+
+# ========== TEAM ==========
+
+# Developer: Samad Elmakchi
+# Role: Owner & Developer
+# Contact: samad.elmakchi@gmail.com
+
+# ========== COPYRIGHT ==========
+
+# Copyright (c) 2026 Samad Elmakchi
+# All rights reserved.
+
+# ========== THANKS ==========
+
+# Thank you for visiting my portfolio!
+
+# ========== UPDATED ==========
+
+# Last updated: 2026-06-29

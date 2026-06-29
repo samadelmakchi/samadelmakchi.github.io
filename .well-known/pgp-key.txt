@@ -1,0 +1,19 @@
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+# ============================================================
+# PGP KEY - Samad Elmakchi | Python Developer
+# ============================================================
+#
+# Key ID: SAMAD-ELMAKCHI-PGP-2026
+# Created: 2026-06-29
+# Expires: 2027-12-31
+#
+# To verify: gpg --verify samad-elmakchi-pgp-key.asc
+#
+# ============================================================
+
+-----END PGP PUBLIC KEY BLOCK-----
+
+# Note: Replace this block with your actual PGP public key.
+# Generate a key with: gpg --full-generate-key
+# Export with: gpg --armor --export your-email@example.com
