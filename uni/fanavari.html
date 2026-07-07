@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <title>۵۰ سوال کلیدی - فناوری‌های نوظهور</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #1a2a3a;
+            padding: 2rem 1.5rem;
+            line-height: 1.8;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.12);
+            padding: 2.5rem 2rem;
+            transition: all 0.2s ease;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #0a2a3f;
+            border-bottom: 4px solid #2d6a8f;
+            padding-bottom: 0.6rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        h1 i {
+            color: #2d6a8f;
+            margin-left: 0.6rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            background: #e3edf5;
+            padding: 0.7rem 1.5rem;
+            border-radius: 60px 12px 12px 60px;
+            border-right: 6px solid #2d6a8f;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #1a4055;
+        }
+
+        h2 i {
+            color: #2d6a8f;
+            margin-left: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            color: #1a4055;
+            margin-top: 1.6rem;
+            margin-bottom: 0.2rem;
+            padding-right: 0.5rem;
+            border-right: 4px solid #6a9ec0;
+            padding-right: 0.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 0.7rem;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 0.3rem 0 0.9rem 0;
+            padding-right: 1.8rem;
+        }
+
+        li {
+            margin-bottom: 0.2rem;
+        }
+
+        strong {
+            color: #1a5a7a;
+            font-weight: 700;
+        }
+
+        .question-block {
+            background: #f8fbfd;
+            border-radius: 20px;
+            padding: 1.1rem 1.6rem;
+            margin: 1.4rem 0;
+            border: 1px solid #d6e3ed;
+            transition: 0.15s ease;
+        }
+
+        .question-block:hover {
+            background: #f2f8ff;
+            border-color: #b2cee0;
+        }
+
+        .q-badge {
+            display: inline-block;
+            background: #2d6a8f;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.15rem 0.9rem;
+            border-radius: 30px;
+            margin-left: 0.6rem;
+        }
+
+        .answer {
+            background: #ffffff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 16px;
+            margin-top: 0.4rem;
+            border-right: 4px solid #6a9ec0;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .answer i {
+            color: #2d6a8f;
+            margin-left: 0.4rem;
+        }
+
+        .answer .check {
+            color: #2a7a5e;
+        }
+
+        hr {
+            margin: 2.8rem 0;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to left, #c5d8e6, transparent);
+        }
+
+        .note-footer {
+            background: #e3edf5;
+            border-radius: 40px;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 500;
+            color: #1a4055;
+        }
+
+        .note-footer i {
+            color: #2d6a8f;
+            margin-left: 0.6rem;
+        }
+
+        .note-footer ul {
+            list-style-type: none;
+            padding-right: 0;
+            margin-top: 0.4rem;
+        }
+
+        .fa, .fas, .far {
+            margin-left: 6px;
+            color: #2d6a8f;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0.8rem;
+            }
+            .container {
+                padding: 1.5rem 1rem;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+                padding: 0.5rem 1rem;
+            }
+            .question-block {
+                padding: 0.8rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .container {
+                padding: 1rem 0.6rem;
+            }
+            .question-block {
+                padding: 0.6rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1><i class="fas fa-microchip"></i> ۵۰ سوال مهم و کلیدی با پاسخ</h1>
+    <p style="font-size:1.1rem; color: #2a5a7a; margin-top: -0.5rem;">درس فناوری‌های نوظهور</p>
+
+    <!-- ========== بخش اول ========== -->
+    <h2><i class="fas fa-laptop-code"></i> بخش اول: مفاهیم پایه و فناوری اطلاعات (IT)</h2>
+
+    <!-- سوال 1 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱</span> تفاوت اصلی بین «هوش مصنوعی مولد» و «عوامل هوشمند» چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> هوش مصنوعی مولد (مثل ChatGPT) قادر به تولید محتوای جدید (متن، تصویر، ویدئو) است، در حالی که عوامل هوشمند (Intelligent Agents) وظایف خاصی را مانند جستجو، تصمیم‌گیری و انجام عملیات خودکار بر اساس اهداف تعیین‌شده انجام می‌دهند و لزوماً محتوای جدید تولید نمی‌کنند.
+        </div>
+    </div>
+
+    <!-- سوال 2 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲</span> کاربرد واقعی «هوش مصنوعی مولد» در حوزه فناوری اطلاعات چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تولید کد نویسی خودکار، مستندسازی، تولید گزارش‌های تحلیلی، و حتی طراحی اولیه رابط‌های کاربری.
+        </div>
+    </div>
+
+    <!-- سوال 3 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳</span> تهدید اصلی «حملات رمزنگاری کوانتومی» برای امنیت اطلاعات چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> الگوریتم‌های رمزنگاری سنتی مانند RSA با استفاده از کامپیوترهای کوانتومی قابل شکستن هستند و امنیت داده‌های کنونی را در آینده به خطر می‌اندازند.
+        </div>
+    </div>
+
+    <!-- سوال 4 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴</span> استراتژی «Harvest Now, Decrypt Later» به چه معناست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> به این معنا که مهاجمان سایبری امروز داده‌های رمزگذاری‌شده را ذخیره می‌کنند تا در آینده که کامپیوترهای کوانتومی در دسترس قرار گیرند، آن‌ها را رمزگشایی کنند.
+        </div>
+    </div>
+
+    <!-- سوال 5 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵</span> علت اصلی تغییر معماری شبکه‌ها به سمت «اعتماد صفر (Zero Trust)» چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> به دلیل افزایش حملات سایبری، دورکاری و محیط‌های ابری، مرزهای شبکه سنتی از بین رفته است و دیگر نمی‌توان به هیچ کاربر یا دستگاهی به‌طور پیش‌فرض اعتماد کرد.
+        </div>
+    </div>
+
+    <!-- سوال 6 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶</span> فلسفه اصلی معماری «اعتماد صفر (Zero Trust)» چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> «هرگز اعتماد نکن، همیشه تأیید کن»؛ یعنی هر درخواست دسترسی، صرف‌نظر از مبدأ، باید احراز هویت و مجوزدهی شود.
+        </div>
+    </div>
+
+    <!-- سوال 7 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷</span> چرا معماری «اعتماد صفر» در صنعت IT به یک ضرورت تبدیل شده است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا حملات سایبری پیشرفته‌تر شده‌اند و مرزهای سنتی شبکه (Firewall) دیگر کافی نیستند؛ همچنین دورکاری و چندبری (Multi-cloud) تهدیدات جدیدی ایجاد کرده‌اند.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش دوم ========== -->
+    <h2><i class="fas fa-graduation-cap"></i> بخش دوم: فناوری آموزشی (EdTech)</h2>
+
+    <!-- سوال 8 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸</span> بر اساس متن، فناوری آموزشی (EdTech) امروزه بیشتر بر کدام مورد تأکید دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بازطراحی ساختارمند فرآیند یادگیری برای افزایش اثربخشی و تعامل پویا (نه صرفاً وارد کردن تجهیزات سخت‌افزاری).
+        </div>
+    </div>
+
+    <!-- سوال 9 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹</span> سیر صحیح تکامل رسانه‌های آموزشی از گذشته به آینده چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کامپیوترهای رومیزی و CD-ROM → یادگیری الکترونیکی وب‌محور → عصر هوش مصنوعی و متاورس.
+        </div>
+    </div>
+
+    <!-- سوال 10 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۰</span> کدام نظریه یادگیری بر نقش «یادگیرنده به عنوان یک فرد خودتعیین‌کننده» تأکید دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> یادگیری خودفرمان (Heutagogy).
+        </div>
+    </div>
+
+    <!-- سوال 11 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۱</span> بر اساس آمار متن، چه نسبتی از دانشجویان دانشگاه‌های تراز اول جهان به‌طور مستمر از هوش مصنوعی برای اهداف آموزشی استفاده می‌کنند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> حدود ۹۲ درصد.
+        </div>
+    </div>
+
+    <!-- سوال 12 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۲</span> ترتیب صحیح روش‌های یادگیری بر اساس «میزان ماندگاری مطالب» در ذهن دانشجو (از کمترین به بیشترین) چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کلاس سنتی سخنرانی‌محور ← آموزش الکترونیکی استاندارد ← یادگیری تعاملی ← شخصی‌سازی با هوش مصنوعی.
+        </div>
+    </div>
+
+    <!-- سوال 13 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۳</span> هسته اصلی فرآیند تنظیم «یادگیری تطبیقی (Adaptive Learning)» بر چه مبنایی انجام می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> با پایش مستمر رفتار کاربر و تحلیل خطاها برای تعدیل سطح دشواری.
+        </div>
+    </div>
+
+    <!-- سوال 14 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۴</span> یکی از چالش‌های اخلاقی مهم در عصر فناوری‌های آموزشی نوین چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقض حریم خصوصی ناشی از پایش مستمر رفتار آنلاین و احساسات کاربران.
+        </div>
+    </div>
+
+    <!-- سوال 15 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۵</span> فناوری «بلاک‌چین» چه نقشی در انقلاب آموزشی دیجیتال ایفا می‌کند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> برای اعتبارسنجی غیرمتمرکز مدارک تحصیلی و جلوگیری از جعل.
+        </div>
+    </div>
+
+    <!-- سوال 16 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۶</span> تفاوت واقعیت افزوده (AR) با واقعیت مجازی (VR) در یادگیری غوطه‌ور چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> VR انتقال کامل حس حضور به محیط دیجیتال است، اما AR لایه‌های اطلاعاتی را به محیط واقعی اضافه می‌کند.
+        </div>
+    </div>
+
+    <!-- سوال 17 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۷</span> مشکل «شکاف دیجیتال (Digital Divide)» عمدتاً ناشی از چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> محدودیت زیرساخت‌های مخابراتی، هزینه‌های سخت‌افزاری و عدم دسترسی‌پذیری برای معلولان.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش سوم ========== -->
+    <h2><i class="fas fa-tractor"></i> بخش سوم: فناوری در دامپروری و کشاورزی</h2>
+
+    <!-- سوال 18 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۸</span> چرا با وجود رتبه بالای ایران در تعداد دام سبک، تولید گوشت و شیر به ازای هر راس پایین است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> به دلیل غالب بودن روش‌های سنتی و عدم مدیریت داده‌محور.
+        </div>
+    </div>
+
+    <!-- سوال 19 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۹</span> تفاوت راهبردی بین دامداری صنعتی و عشایری از نظر بهره‌وری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> دامداری صنعتی با سهم کمتر از نظر تعداد دام، سهم بیشتری در تأمین گوشت دارد که نشان از بهره‌وری بالاتر است.
+        </div>
+    </div>
+
+    <!-- سوال 20 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۰</span> کارکرد اصلی اینترنت اشیاء (IoT) در پرورش دام سبک چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پایش لحظه‌ای و هشداردهی زودهنگام در مورد سلامت و بیماری دام.
+        </div>
+    </div>
+
+    <!-- سوال 21 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۱</span> دلیل تأکید بر مدیریت تغذیه هوشمند در دامپروری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا خوراک بیشترین سهم هزینه‌های دامداری (۶۰ تا ۷۰ درصد) را به خود اختصاص می‌دهد.
+        </div>
+    </div>
+
+    <!-- سوال 22 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۲</span> مزیت کلیدی بلاک‌چین در زنجیره تأمین دام چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ثبت غیرقابل تغییر و شفاف اطلاعات از مزرعه تا سفره.
+        </div>
+    </div>
+
+    <!-- سوال 23 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۳</span> نقش پهپادها در دامپروری عشایری چیست که با حسگرهای گردنبندی قابل جایگزینی کامل نیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مدیریت مراتع، شناسایی مناطق چرا و پیدا کردن دام‌های گمشده در مناطق صعب‌العبور.
+        </div>
+    </div>
+
+    <!-- سوال 24 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۴</span> چرا آموزش دامداران با واقعیت افزوده مؤثرتر از آموزش سنتی است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا امکان شبیه‌سازی فرآیندهای دامپزشکی و تشخیص اولیه بیماری را بدون نیاز به حضور متخصص فراهم می‌کند.
+        </div>
+    </div>
+
+    <!-- سوال 25 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۵</span> شرط اصلی موفقیت فناوری‌های نوظهور در دام سبک ایران چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> سرمایه‌گذاری اولیه، آموزش و حمایت دولتی به‌طور هم‌زمان.
+        </div>
+    </div>
+
+    <!-- سوال 26 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۶</span> تفاوت کشاورزی هوشمند با کشاورزی سنتی چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تصمیم‌گیری بر اساس داده‌ها و فناوری، نه صرفاً تجربه و نیروی انسانی.
+        </div>
+    </div>
+
+    <!-- سوال 27 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۷</span> فناوری جمع‌آوری لحظه‌ای اطلاعات مزرعه و خاک کدام است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> اینترنت اشیاء (IoT) با استفاده از حسگرها.
+        </div>
+    </div>
+
+    <!-- سوال 28 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۸</span> در روش ایروپونیک (هواکشت)، گیاهان چگونه رشد می‌کنند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بدون خاک و با ریشه‌های معلق در هوا.
+        </div>
+    </div>
+
+    <!-- سوال 29 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۹</span> هدف اصلی دوقلوی دیجیتال (Digital Twin) در کشاورزی چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> آزمایش سناریوهای مختلف قبل از اجرای واقعی.
+        </div>
+    </div>
+
+    <!-- سوال 30 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۰</span> بلاک‌چین در کشاورزی چه کاربردی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ثبت مسیر محصول از بذر تا بشقاب و افزایش شفافیت.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش چهارم ========== -->
+    <h2><i class="fas fa-umbrella-beach"></i> بخش چهارم: گردشگری، بانکداری و مدیریت منابع انسانی</h2>
+
+    <!-- سوال 31 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۱</span> اینترنت اشیاء (IoT) در صنعت گردشگری به چه معناست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> اتصال دستگاه‌های روزمره از طریق اینترنت برای ارسال و دریافت داده‌ها (مانند کنترل هوشمند هتل).
+        </div>
+    </div>
+
+    <!-- سوال 32 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۲</span> ترکیب هوش مصنوعی (AI) و اینترنت اشیا (IoT) در حمل‌ونقل گردشگران به چه فناوری منجر می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خودروهای خودران و تاکسی‌های خودران.
+        </div>
+    </div>
+
+    <!-- سوال 33 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۳</span> در بانکداری مدرن، «بیومتریک» به چه معناست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> شناسایی فرد از طریق ویژگی‌های جسمی (مثل اثر انگشت یا چهره).
+        </div>
+    </div>
+
+    <!-- سوال 34 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۴</span> هدف اصلی هوش مصنوعی در خدمات مشتریان بانک چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پاسخگویی سریع و ۲۴ ساعته (مثلاً از طریق چت‌بات‌ها).
+        </div>
+    </div>
+
+    <!-- سوال 35 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۵</span> تکنولوژی «بلاک‌چین» در اصل چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> یک دفترچه حساب دیجیتال و توزیع‌شده که تغییر آن سخت است.
+        </div>
+    </div>
+
+    <!-- سوال 36 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۶</span> کاربرد بلاک‌چین در مدیریت استعداد چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تأیید سوابق تحصیلی و شغلی به‌صورت غیرقابل تغییر.
+        </div>
+    </div>
+
+    <!-- سوال 37 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۷</span> هدف اصلی تحلیل پیش‌بینانه (Predictive Analytics) در مدیریت استعداد چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پیش‌بینی ترک خدمت کارکنان.
+        </div>
+    </div>
+
+    <!-- سوال 38 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۸</span> فناوری واقعیت مجازی (VR) چه نقشی در آموزش کارکنان دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> امکان آموزش تعاملی در محیط شبیه‌سازی‌شده.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش پنجم ========== -->
+    <h2><i class="fas fa-heartbeat"></i> بخش پنجم: پزشکی و سلامت</h2>
+
+    <!-- سوال 39 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۹</span> فناوری چاپ زیستی سه‌بعدی چه هدفی را دنبال می‌کند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ساخت بافت و اندام‌های زنده (مانند کبد یا کلیه) از سلول‌های خود بیمار.
+        </div>
+    </div>
+
+    <!-- سوال 40 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۰</span> مفهوم «دوقلوی دیجیتال» در پزشکی دیجیتال چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ایجاد یک مدل مجازی دقیق از بدن یا یک عضو برای شبیه‌سازی درمان قبل از اجرای واقعی.
+        </div>
+    </div>
+
+    <!-- سوال 41 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۱</span> فناوری «پزشکی از راه دور (Telemedicine)» بیشترین تأثیر را در کدام بخش دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> افزایش دسترسی به مراقبت‌های سلامت در مناطق دورافتاده.
+        </div>
+    </div>
+
+    <!-- سوال 42 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۲</span> کاربرد اصلی نانوسنسورها (Nanosensors) در بدن چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پایش لحظه‌ای و بسیار دقیق تغییرات شیمیایی یا بیولوژیک در سطح سلولی.
+        </div>
+    </div>
+
+    <!-- سوال 43 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۳</span> منظور از «اینترفیس مغز و رایانه (BCI)» چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> سیستمی که مسیر ارتباطی مستقیم بین مغز و دستگاه‌های خارجی ایجاد می‌کند (مثل کنترل پروتز با فکر).
+        </div>
+    </div>
+
+    <!-- سوال 44 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۴</span> کدام فناوری به درمان بیماری‌ها از طریق تغییر ساختار DNA کمک می‌کند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ویرایش ژنی (Gene Editing) مانند CRISPR.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ششم ========== -->
+    <h2><i class="fas fa-paint-brush"></i> بخش ششم: بازاریابی، هنر و طراحی گرافیک</h2>
+
+    <!-- سوال 45 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۵</span> مهم‌ترین هدف فناوری‌های نوظهور در بازاریابی چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> شناخت بهتر و دقیق‌تر مشتری.
+        </div>
+    </div>
+
+    <!-- سوال 46 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۶</span> اینترنت اشیا (IoT) در بازاریابی چه کاربردی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> اتصال دستگاه‌ها به اینترنت برای جمع‌آوری داده‌های رفتاری مشتریان.
+        </div>
+    </div>
+
+    <!-- سوال 47 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۷</span> سیستم‌های توصیه‌گر (Recommendation Systems) چه می‌کنند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پیشنهاد محصولات مرتبط به کاربر بر اساس رفتار گذشته.
+        </div>
+    </div>
+
+    <!-- سوال 48 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۸</span> تکنولوژی NFT در هنر چه کاربردی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> برای خرید و فروش مستقیم آثار دیجیتال و اثبات مالکیت.
+        </div>
+    </div>
+
+    <!-- سوال 49 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۹</span> هدف از استفاده تکنولوژی در کنسرت‌های جدید چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ایجاد تجربه جذاب‌تر برای مخاطب (مانند کنسرت ABBA Voyage با آواتارهای دیجیتال).
+        </div>
+    </div>
+
+    <!-- سوال 50 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۰</span> تحول اصلی در ماهیت جنگ‌های مدرن چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> استفاده از فناوری‌های نوظهور مانند پهپادها، هوش مصنوعی، جنگ سایبری و فناوری فضایی.
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="note-footer">
+        <i class="fas fa-lightbulb"></i> نکته نهایی برای امتحان:
+        <ul>
+            <li>✅ سوالات بیشتر بر <strong>کاربردهای عینی</strong> فناوری‌ها تأکید دارند (نه فقط تعاریف تئوریک).</li>
+            <li>✅ مفاهیم کلیدی مانند <strong>بلاک‌چین، اینترنت اشیا، هوش مصنوعی، واقعیت مجازی/افزوده، اعتماد صفر، دوقلوی دیجیتال، بیومتریک، و چاپ زیستی</strong> بسیار پرتکرار هستند.</li>
+            <li>✅ حتماً بر <strong>چالش‌های اخلاقی و شکاف دیجیتال</strong> مسلط باشید.</li>
+        </ul>
+    </div>
+
+</div> <!-- end container -->
+</body>
+</html>
