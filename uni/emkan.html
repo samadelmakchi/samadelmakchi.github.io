@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <title>۵۰ سوال تشریحی - امکان‌سنجی و تدوین طرح کسب‌وکار</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f9fc;
+            color: #1a2a3a;
+            padding: 2rem 1.5rem;
+            line-height: 1.8;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.12);
+            padding: 2.5rem 2rem;
+            transition: all 0.2s ease;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #0a2a3f;
+            border-bottom: 4px solid #c44536;
+            padding-bottom: 0.6rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        h1 i {
+            color: #c44536;
+            margin-left: 0.6rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            background: #f2e8e5;
+            padding: 0.7rem 1.5rem;
+            border-radius: 60px 12px 12px 60px;
+            border-right: 6px solid #c44536;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #4d2c24;
+        }
+
+        h2 i {
+            color: #c44536;
+            margin-left: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #4d2c24;
+            margin-top: 1.8rem;
+            margin-bottom: 0.3rem;
+            padding-right: 0.5rem;
+            border-right: 4px solid #d97a6b;
+            padding-right: 0.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 0.4rem 0 1rem 0;
+            padding-right: 1.8rem;
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+
+        strong {
+            color: #8a3a2b;
+            font-weight: 700;
+        }
+
+        .question-block {
+            background: #fcfaf9;
+            border-radius: 20px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.6rem 0;
+            border: 1px solid #e5d6d1;
+            transition: 0.15s ease;
+        }
+
+        .question-block:hover {
+            background: #f8f3f0;
+            border-color: #cfb8b0;
+        }
+
+        .q-badge {
+            display: inline-block;
+            background: #c44536;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.9rem;
+            border-radius: 30px;
+            margin-left: 0.6rem;
+        }
+
+        .answer {
+            background: #ffffff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 16px;
+            margin-top: 0.5rem;
+            border-right: 4px solid #d97a6b;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .answer i {
+            color: #c44536;
+            margin-left: 0.4rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 20, 10, 0.04);
+        }
+
+        th {
+            background: #6b3a2e;
+            color: #fff;
+            padding: 10px 12px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        td {
+            background: #fdfaf8;
+            padding: 10px 12px;
+            border-bottom: 1px solid #e8dbd5;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: #f6efeb;
+        }
+
+        .example-box {
+            background: #f3ece8;
+            border-radius: 20px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid #dccbc4;
+        }
+
+        .example-box i {
+            color: #c44536;
+            margin-left: 0.5rem;
+        }
+
+        hr {
+            margin: 2.8rem 0;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to left, #dccbc4, transparent);
+        }
+
+        .note-footer {
+            background: #f0e6e2;
+            border-radius: 40px;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 500;
+            color: #4d2c24;
+        }
+
+        .note-footer i {
+            color: #c44536;
+            margin-left: 0.6rem;
+        }
+
+        .fa, .fas, .far {
+            margin-left: 6px;
+            color: #c44536;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0.8rem;
+            }
+            .container {
+                padding: 1.5rem 1rem;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+                padding: 0.5rem 1rem;
+            }
+            .question-block {
+                padding: 0.8rem 1rem;
+            }
+            table {
+                font-size: 0.8rem;
+            }
+            th, td {
+                padding: 6px 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .container {
+                padding: 1rem 0.6rem;
+            }
+            .question-block {
+                padding: 0.6rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1><i class="fas fa-clipboard-list"></i> ۵۰ سوال تشریحی با پاسخ</h1>
+    <p style="font-size:1.2rem; color: #5a3a30; margin-top: -0.5rem;">درس امکان‌سنجی و تدوین طرح کسب‌وکار</p>
+
+    <!-- ========== بخش اول ========== -->
+    <h2><i class="fas fa-cubes"></i> بخش اول: مفاهیم پایه (سوالات ۱ تا ۱۰)</h2>
+
+    <!-- سوال 1 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱</span> تعریف طرح کسب‌وکار را بنویسید و سه هدف اصلی آن را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> طرح کسب‌وکار سندی مکتوب برای تشریح اهداف، راهبردها، تحلیل بازار، ساختار سازمانی و پیش‌بینی‌های مالی یک کسب‌وکار است.<br>
+            <strong>اهداف:</strong>
+            <ol>
+                <li>جذب سرمایه‌گذار و اخذ تسهیلات</li>
+                <li>راهنمای عملیاتی برای مدیران</li>
+                <li>ارزیابی توجیه‌پذیری قبل از شروع</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 2 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲</span> تفاوت «ایده» و «فرصت کسب‌وکار» چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ایده یک تصور اولیه است، اما فرصت کسب‌وکار وقتی شکل می‌گیرد که آن ایده دارای بازار کافی، مزیت رقابتی و قابلیت اجرایی و مالی باشد. هر فرصتی از ایده می‌آید، ولی هر ایده‌ای به فرصت تبدیل نمی‌شود.
+        </div>
+    </div>
+
+    <!-- سوال 3 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳</span> امکان‌سنجی چه تفاوتی با طرح کسب‌وکار دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> امکان‌سنجی قبل از طرح کسب‌وکار انجام می‌شود و به این می‌پردازد که آیا پروژه از جنبه‌های فنی، بازار، مالی و حقوقی شدنی است یا خیر. طرح کسب‌وکار، پس از تأیید امکان‌سنجی، برنامهٔ دقیق اجرا را ارائه می‌دهد.
+        </div>
+    </div>
+
+    <!-- سوال 4 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴</span> مراحل اصلی یک مطالعهٔ امکان‌سنجی را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>مطالعات مقدماتی</li>
+                <li>تحلیل بازار و تقاضا</li>
+                <li>مطالعات فنی و مهندسی</li>
+                <li>مطالعات مالی و اقتصادی</li>
+                <li>بررسی حقوقی و زیستمحیطی</li>
+                <li>تحلیل ریسک</li>
+                <li>جمع‌بندی و تصمیم‌گیری</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 5 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵</span> تحلیل SWOT چیست و چه کاربردی در امکان‌سنجی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> SWOT شامل نقاط قوت، ضعف، فرصت‌ها و تهدیدهاست. این ابزار به شناسایی عوامل درونی و بیرونی مؤثر بر پروژه کمک کرده و مبنای تدوین راهبردهای رقابتی است.
+        </div>
+    </div>
+
+    <!-- سوال 6 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶</span> تفاوت هزینه‌های ثابت و متغیر را با مثال توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هزینه‌های ثابت مستقل از حجم تولیدند (مثل اجاره و حقوق پایه). هزینه‌های متغیر با حجم تولید تغییر می‌کنند (مثل مواد اولیه و هزینه حمل). تفکیک این دو برای محاسبهٔ نقطهٔ سربه‌سر ضروری است.
+        </div>
+    </div>
+
+    <!-- سوال 7 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷</span> نقطهٔ سربه‌سر چیست و چگونه محاسبه می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نقطه‌ای که در آن درآمد کل برابر با هزینهٔ کل است (نه سود و نه زیان).<br>
+            <strong>فرمول:</strong> نقطه سربه‌سر (تعداد واحد) = هزینه‌های ثابت ÷ (قیمت فروش هر واحد – هزینه متغیر هر واحد)
+        </div>
+    </div>
+
+    <!-- سوال 8 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸</span> چهار نوع ریسک اصلی در طرح‌های کسب‌وکار را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>ریسک بازار (کاهش تقاضا)</li>
+                <li>ریسک فنی (مشکلات تولید)</li>
+                <li>ریسک مالی (نوسان نرخ ارز و بهره)</li>
+                <li>ریسک حقوقی و مقرراتی (تغییر قوانین)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 9 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹</span> NPV چیست و چه کاربردی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ارزش خالص فعلی، مجموع ارزش فعلی جریان‌های نقدی آتی منهای سرمایه‌گذاری اولیه است. اگر NPV مثبت باشد، پروژه توجیه مالی دارد.
+        </div>
+    </div>
+
+    <!-- سوال 10 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۰</span> نرخ بازده داخلی (IRR) چه رابطه‌ای با نرخ تنزیل دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> IRR نرخ تنزیلی است که NPV را برابر صفر می‌کند. اگر IRR از نرخ هزینهٔ سرمایه (نرخ تنزیل) بیشتر باشد، پروژه قابل قبول است.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش دوم ========== -->
+    <h2><i class="fas fa-chart-line"></i> بخش دوم: مطالعات بازار و بازاریابی (سوالات ۱۱ تا ۲۵)</h2>
+
+    <!-- سوال 11 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۱</span> مراحل انجام مطالعهٔ بازار را بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>تعریف مسئله و اهداف</li>
+                <li>طراحی تحقیق (کمی/کیفی)</li>
+                <li>گردآوری داده‌ها (اولیه و ثانویه)</li>
+                <li>تحلیل داده‌ها</li>
+                <li>برآورد تقاضا و اندازه بازار</li>
+                <li>ارائهٔ گزارش</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 12 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۲</span> تفاوت داده‌های اولیه و ثانویه در تحقیقات بازار چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> داده‌های اولیه مستقیماً از طریق پرسشنامه و مصاحبه از جامعهٔ هدف جمع‌آوری می‌شوند. داده‌های ثانویه از منابع موجود مانند آمار دولتی و گزارش‌های صنعتی استخراج می‌شوند.
+        </div>
+    </div>
+
+    <!-- سوال 13 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۳</span> بخش‌بندی بازار چیست و چه مزایایی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تقسیم بازار کل به گروه‌های کوچکتر با نیازها یا ویژگی‌های مشابه.<br>
+            <strong>مزایا:</strong> هدفمندتر شدن بازاریابی، کاهش هزینه‌ها، طراحی محصول متناسب با هر بخش و افزایش رضایت مشتری.
+        </div>
+    </div>
+
+    <!-- سوال 14 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۴</span> انواع بخش‌بندی بازار را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>جغرافیایی (منطقه، آب‌وهوا)</li>
+                <li>جمعیت‌شناختی (سن، جنسیت، درآمد)</li>
+                <li>روان‌شناختی (سبک زندگی، شخصیت)</li>
+                <li>رفتاری (وفاداری، میزان مصرف)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 15 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۵</span> موقعیتیابی (Positioning) در بازاریابی به چه معناست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ایجاد یک تصویر ذهنی مشخص و مطلوب از برند یا محصول در ذهن مشتریان هدف، نسبت به رقبا. این کار از طریق ترکیب عناصر آمیختهٔ بازاریابی انجام می‌شود.
+        </div>
+    </div>
+
+    <!-- سوال 16 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۶</span> آمیختهٔ بازاریابی (۴P) را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ul>
+                <li><strong>Product:</strong> ویژگی‌ها، کیفیت، بسته‌بندی</li>
+                <li><strong>Price:</strong> استراتژی قیمت‌گذاری و تخفیف‌ها</li>
+                <li><strong>Place:</strong> کانال‌های توزیع و پوشش جغرافیایی</li>
+                <li><strong>Promotion:</strong> تبلیغات، روابط عمومی، فروش شخصی</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- سوال 17 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۷</span> چرخهٔ عمر محصول شامل چه مراحلی است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>معرفی (Introduction)</li>
+                <li>رشد (Growth)</li>
+                <li>بلوغ (Maturity)</li>
+                <li>افول (Decline)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 18 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۸</span> تحلیل رقبا شامل چه ابعادی می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> شناسایی رقبای مستقیم و غیرمستقیم، تحلیل سهم بازار، نقاط قوت و ضعف، استراتژی قیمت‌گذاری، کانال‌های توزیع و کیفیت محصول آنها.
+        </div>
+    </div>
+
+    <!-- سوال 19 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۹</span> پنج روش اصلی قیمت‌گذاری را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>بر اساس هزینه (Cost-Plus)</li>
+                <li>بر اساس ارزش درک‌شده (Value-Based)</li>
+                <li>رقابتی (Competitive)</li>
+                <li>نفوذی (Penetration)</li>
+                <li>اسکیمینگ (قیمت بالا در ابتدا)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 20 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۰</span> کانال توزیع چیست و انواع آن را بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مسیری که محصول از تولیدکننده به مصرف‌کننده می‌رسد.<br>
+            <strong>انواع:</strong>
+            <ul>
+                <li>مستقیم (تولیدکننده → مصرف‌کننده)</li>
+                <li>یک‌سطحی (تولیدکننده → خرده‌فروش → مصرف‌کننده)</li>
+                <li>دو‌سطحی (تولیدکننده → عمده‌فروش → خرده‌فروش → مصرف‌کننده)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- سوال 21 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۱</span> چرا وفاداری مشتری برای کسب‌وکارهای نوپا حیاتی است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> جذب مشتری جدید ۵ تا ۷ برابر هزینه‌برتر از حفظ مشتری موجود است. مشتریان وفادار درآمد پایدار و بازاریابی دهان‌به‌دهان مثبت ایجاد می‌کنند.
+        </div>
+    </div>
+
+    <!-- سوال 22 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۲</span> برندینگ را تعریف کرده و سه مزیت آن را بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> برندینگ فرایند ایجاد هویت منحصربه‌فرد برای محصول یا شرکت است.<br>
+            <strong>مزایا:</strong>
+            <ol>
+                <li>تمایز از رقبا</li>
+                <li>افزایش اعتماد و وفاداری</li>
+                <li>امکان قیمت‌گذاری بالاتر</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 23 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۳</span> تفاوت بازاریابی سنتی و دیجیتال چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> بازاریابی سنتی شامل رسانه‌های چاپی، تلویزیون و رادیوست. بازاریابی دیجیتال از اینترنت، شبکه‌های اجتماعی و ایمیل استفاده می‌کند که قابل اندازه‌گیری، هدفمندتر و کم‌هزینه‌تر است.
+        </div>
+    </div>
+
+    <!-- سوال 24 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۴</span> ماتریس BCG چه کاربردی در تحلیل سبد محصولات دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> محصولات بر اساس دو بعد «سهم نسبی بازار» و «نرخ رشد بازار» به چهار دسته تقسیم می‌شوند:
+            <ul>
+                <li><strong>ستاره (Star):</strong> سرمایه‌گذاری</li>
+                <li><strong>گاو شیرده (Cash Cow):</strong> برداشت سود</li>
+                <li><strong>علامت سؤال (Question Mark):</strong> تصمیم‌گیری</li>
+                <li><strong>سگ (Dog):</strong> خروج</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- سوال 25 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۵</span> پیش‌بینی فروش در طرح کسب‌وکار چگونه انجام می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> با ترکیب روش‌های کمی (روندهای تاریخی، رگرسیون) و کیفی (نظرات کارشناسان) و در سه سناریوی خوش‌بینانه، محتمل و بدبینانه ارائه می‌شود.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش سوم ========== -->
+    <h2><i class="fas fa-cogs"></i> بخش سوم: مطالعات فنی و عملیاتی (سوالات ۲۶ تا ۳۵)</h2>
+
+    <!-- سوال 26 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۶</span> مطالعهٔ فنی در امکان‌سنجی شامل چه مواردی است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>تعیین ظرفیت تولید</li>
+                <li>انتخاب فناوری و ماشین‌آلات</li>
+                <li>برآورد مواد اولیه</li>
+                <li>طراحی فرایند تولید</li>
+                <li>جانمایی محل کسب‌وکار</li>
+                <li>برآورد نیروی انسانی</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 27 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۷</span> ظرفیت اسمی و واقعی تولید را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ظرفیت اسمی حداکثر خروجی در شرایط ایده‌آل است، اما ظرفیت واقعی با در نظر گرفتن توقف‌ها، خرابی‌ها و نگهداری، معمولاً کمتر از آن است.
+        </div>
+    </div>
+
+    <!-- سوال 28 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۸</span> عوامل مؤثر در انتخاب فناوری مناسب را بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هزینهٔ خرید و نگهداری، سطح دانش فنی نیروی کار، در دسترس بودن قطعات یدکی، سازگاری با محیط‌زیست و انعطاف‌پذیری در برابر تغییرات.
+        </div>
+    </div>
+
+    <!-- سوال 29 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۹</span> نمودار جریان فرایند چه کاربردی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مراحل تولید را به‌صورت گرافیکی نشان می‌دهد و به شناسایی گلوگاه‌ها، کاهش اتلاف و بهبود بهره‌وری کمک می‌کند.
+        </div>
+    </div>
+
+    <!-- سوال 30 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۰</span> عوامل مؤثر در مکان‌گزینی کسب‌وکار را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نزدیکی به مواد اولیه، دسترسی به بازار مصرف، هزینهٔ زمین، دسترسی به نیروی کار ماهر، زیرساخت‌های حمل‌ونقل و قوانین محلی.
+        </div>
+    </div>
+
+    <!-- سوال 31 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۱</span> تولید ناب (Lean Production) چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> رویکردی که بر حذف هرگونه اتلاف (زمان، مواد، حرکت و موجودی) در فرایند تولید تأکید دارد و هدف آن افزایش ارزش برای مشتری با کاهش هزینه‌هاست.
+        </div>
+    </div>
+
+    <!-- سوال 32 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۲</span> تفاوت مدیریت کیفیت جامع (TQM) با کنترل کیفیت آماری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> TQM یک فلسفهٔ مدیریتی برای بهبود مستمر با مشارکت همهٔ کارکنان است، اما کنترل کیفیت آماری ابزاری فنی برای نمونه‌گیری و اندازه‌گیری انحرافات از استاندارد است.
+        </div>
+    </div>
+
+    <!-- سوال 33 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۳</span> چرا برآورد دقیق نیروی انسانی در طرح کسب‌وکار اهمیت دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هزینهٔ نیروی انسانی سهم عمد‌ای از هزینه‌های جاری را تشکیل می‌دهد. برآورد اشتباه باعث کمبود یا مازاد نیرو، افزایش هزینه‌ها و کاهش بهره‌وری می‌شود.
+        </div>
+    </div>
+
+    <!-- سوال 34 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۴</span> تفاوت تولید سفارشی و تولید انبوه چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> در تولید سفارشی، محصول بر اساس نیاز خاص هر مشتری ساخته می‌شود (هزینه بالا، زمان طولانی). در تولید انبوه، محصولات یکسان در حجم بالا تولید می‌شوند (هزینه هر واحد پایین، سرعت بالا).
+        </div>
+    </div>
+
+    <!-- سوال 35 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۵</span> مدیریت زنجیرهٔ تأمین (SCM) چه نقشی در امکان‌سنجی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> به تأمین مواد اولیه، مدیریت موجودی، حمل‌ونقل و توزیع محصولات می‌پردازد. ارزیابی هزینه‌ها و ریسک‌های زنجیرهٔ تأمین برای تضمین پایداری پروژه ضروری است.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش چهارم ========== -->
+    <h2><i class="fas fa-coins"></i> بخش چهارم: مطالعات مالی و اقتصادی (سوالات ۳۶ تا ۴۵)</h2>
+
+    <!-- سوال 36 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۶</span> هدف از انجام مطالعات مالی در امکان‌سنجی چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تعیین توجیه‌پذیری مالی پروژه از طریق برآورد هزینه‌ها، درآمدها، جریان‌های نقدی و شاخص‌هایی مثل NPV، IRR و دورهٔ بازگشت سرمایه.
+        </div>
+    </div>
+
+    <!-- سوال 37 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۷</span> هزینه‌های سرمایه‌ای (Capital Costs) شامل چه مواردی هستند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> خرید زمین، ساختمان، ماشین‌آلات، تجهیزات، نرم‌افزارهای اساسی و هزینه‌های قبل از بهره‌برداری (مطالعات و مجوزها).
+        </div>
+    </div>
+
+    <!-- سوال 38 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۸</span> تفاوت صورت سود و زیان با صورت جریان وجوه نقد چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> صورت سود و زیان درآمد و هزینه‌ها را در یک دوره نشان می‌دهد (بدون توجه به زمان دریافت یا پرداخت نقدی)، اما صورت جریان وجوه نقد، ورود و خروج واقعی پول را ثبت می‌کند.
+        </div>
+    </div>
+
+    <!-- سوال 39 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۹</span> ترازنامه چه اطلاعاتی را ارائه می‌دهد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> وضعیت مالی کسب‌وکار را در یک لحظهٔ خاص نشان می‌دهد: دارایی‌ها، بدهی‌ها و حقوق صاحبان سهام.
+        </div>
+    </div>
+
+    <!-- سوال 40 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۰</span> چرا استهلاک در پیش‌بینی‌های مالی اهمیت دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> استهلاک یک هزینهٔ غیرنقدی است که ارزش دارایی‌های ثابت را کاهش می‌دهد. باعث کاهش سود مشمول مالیات می‌شود و در محاسبهٔ جریان نقدی عملیاتی باید به آن توجه کرد.
+        </div>
+    </div>
+
+    <!-- سوال 41 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۱</span> سرمایه در گردش چیست و چگونه محاسبه می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> سرمایه در گردش = دارایی‌های جاری – بدهی‌های جاری. نشان‌دهندهٔ توانایی کسب‌وکار در تأمین هزینه‌های روزمره است.
+        </div>
+    </div>
+
+    <!-- سوال 42 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۲</span> تفاوت تحلیل حساسیت و تحلیل سناریو در ارزیابی ریسک مالی چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> در تحلیل حساسیت، تأثیر تغییر یک متغیر (مثلاً قیمت) بر NPV بررسی می‌شود. در تحلیل سناریو، ترکیبی از تغییرات چندین متغیر همزمان در سناریوهای مختلف (بدبینانه، محتمل، خوش‌بینانه) ارزیابی می‌گردد.
+        </div>
+    </div>
+
+    <!-- سوال 43 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۳</span> نسبت جاری (Current Ratio) چه چیزی را نشان می‌دهد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نسبت جاری = دارایی‌های جاری ÷ بدهی‌های جاری. توانایی شرکت در پرداخت بدهی‌های کوتاه‌مدت را نشان می‌دهد. نسبت بالای ۱ معمولاً مطلوب است.
+        </div>
+    </div>
+
+    <!-- سوال 44 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۴</span> تأمین مالی از طریق بدهی و تأمین مالی از طریق حقوق صاحبان سهام را مقایسه کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ul>
+                <li><strong>بدهی:</strong> وام با بازپرداخت الزامی و هزینهٔ بهره، ولی مالکیت تغییر نمی‌کند.</li>
+                <li><strong>حقوق صاحبان سهام:</strong> فروش سهام، بازپرداخت ندارد، اما مالکیت و کنترل تقسیم می‌شود.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- سوال 45 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۵</span> چگونه از طریق تحلیل نقطهٔ سربه‌سر، میزان فروش هدف را تعیین می‌کنیم؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> با استفاده از فرمول: (هزینه‌های ثابت + سود هدف) ÷ (قیمت فروش – هزینه متغیر هر واحد) = تعداد واحد مورد نیاز برای رسیدن به سود هدف.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش پنجم ========== -->
+    <h2><i class="fas fa-pen-fancy"></i> بخش پنجم: تدوین و نگارش طرح کسب‌وکار (سوالات ۴۶ تا ۵۰)</h2>
+
+    <!-- سوال 46 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۶</span> ساختار استاندارد یک طرح کسب‌وکار را به ترتیب بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>خلاصهٔ اجرایی</li>
+                <li>شرح شرکت و محصولات</li>
+                <li>تحلیل بازار و بازاریابی</li>
+                <li>مطالعهٔ فنی و عملیاتی</li>
+                <li>ساختار سازمانی و مدیریت</li>
+                <li>برنامهٔ زمانی اجرا</li>
+                <li>پیش‌بینی‌های مالی</li>
+                <li>تحلیل ریسک</li>
+                <li>ضمائم</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- سوال 47 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۷</span> خلاصهٔ اجرایی چه اهمیتی دارد و شامل چه مواردی است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> اولین بخشی است که خواننده می‌خواند و تصمیم‌گیری نهایی بر اساس آن انجام می‌شود.<br>
+            <strong>شامل:</strong> چشمانداز، محصول، فرصت بازار، مزیت رقابتی، پیش‌بینی مالی مختصر و میزان سرمایهٔ مورد نیاز.
+        </div>
+    </div>
+
+    <!-- سوال 48 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۸</span> در بخش «ساختار سازمانی و مدیریتی»، چه عناصری مهم هستند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نمودار سازمانی، معرفی تیم مدیریتی با سوابق، شرح وظایف کلیدی، تعداد و نوع پرسنل و برنامهٔ جذب و آموزش نیروی انسانی.
+        </div>
+    </div>
+
+    <!-- سوال 49 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۹</span> تحلیل ریسک در طرح کسب‌وکار چگونه انجام می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> شامل شناسایی ریسک‌های اصلی (بازار، فنی، مالی، حقوقی)، ارزیابی احتمال وقوع و شدت تأثیر، و ارائهٔ راهکارهای کاهش ریسک (تنوع‌بخشی، بیمه، قراردادهای بلندمدت و ذخیرهٔ مالی).
+        </div>
+    </div>
+
+    <!-- سوال 50 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۰</span> رایج‌ترین اشتباهات در نگارش طرح کسب‌وکار کدامند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+            <ul>
+                <li>بزرگ‌نمایی بیش از حد بازار و فروش</li>
+                <li>نادیده گرفتن رقبا</li>
+                <li>تخمین پایین هزینه‌ها و بالا بردن درآمدها</li>
+                <li>عدم ارائهٔ تحلیل ریسک</li>
+                <li>نگارش طولانی و غیرمتمرکز</li>
+                <li>عدم انطباق اعداد مالی با همدیگر</li>
+            </ul>
+        </div>
+    </div>
+
+</div> <!-- end container -->
+</body>
+</html>
