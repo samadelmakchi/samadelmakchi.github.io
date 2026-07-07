@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترم دوم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f9;
+            color: #1e2a36;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px -12px rgba(0, 20, 30, 0.15);
+            padding: 2.8rem 2.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2.8rem;
+            border-bottom: 2px solid #e8edf4;
+            padding-bottom: 1.8rem;
+        }
+
+        .header h1 {
+            font-size: 2.4rem;
+            color: #0a2940;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header h1 i {
+            color: #2a7a6a;
+            margin-left: 12px;
+        }
+
+        .header p {
+            color: #3a5a6e;
+            font-size: 1.1rem;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        .subtitle {
+            display: inline-block;
+            background: #e6f0f5;
+            padding: 0.3rem 1.6rem;
+            border-radius: 40px;
+            color: #1a4a5e;
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-top: 6px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .card {
+            background: #fafcfe;
+            border-radius: 28px;
+            padding: 1.8rem 1.5rem 1.6rem;
+            border: 1px solid #e1e9f0;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #b8cedd;
+            box-shadow: 0 16px 32px -12px rgba(0, 50, 70, 0.12);
+            background: #ffffff;
+        }
+
+        .card-icon {
+            font-size: 2.4rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            background: #eaf1f7;
+            color: #1f5a70;
+            transition: 0.2s;
+        }
+
+        .card:hover .card-icon {
+            background: #d4e4ef;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0a2a3f;
+            margin-bottom: 0.4rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #3d5b6e;
+            line-height: 1.7;
+            flex: 1;
+            margin-bottom: 0.8rem;
+        }
+
+        .card .badge {
+            display: inline-block;
+            background: #e2edf5;
+            color: #1a4a60;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.9rem;
+            border-radius: 40px;
+            align-self: flex-start;
+            margin-top: 0.3rem;
+            letter-spacing: 0.3px;
+        }
+
+        .card .fa-arrow-left {
+            font-size: 0.8rem;
+            margin-right: 4px;
+            opacity: 0.6;
+            transition: 0.2s;
+        }
+
+        .card:hover .fa-arrow-left {
+            opacity: 1;
+            transform: translateX(-4px);
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            text-align: center;
+            border-top: 1px solid #e8edf4;
+            padding-top: 1.8rem;
+            color: #4a6a7e;
+            font-size: 0.95rem;
+        }
+
+        .footer-note i {
+            color: #2a7a6a;
+            margin-left: 6px;
+        }
+
+        /* color accents per card */
+        .card:nth-child(1) .card-icon { background: #e1f0ea; color: #1f6a5a; }
+        .card:nth-child(2) .card-icon { background: #f0e8e0; color: #8a5a3a; }
+        .card:nth-child(3) .card-icon { background: #e3e9f5; color: #3a5a8a; }
+        .card:nth-child(4) .card-icon { background: #f0e6f0; color: #6a4a7a; }
+        .card:nth-child(5) .card-icon { background: #dceee8; color: #2a7a6a; }
+        .card:nth-child(6) .card-icon { background: #f5ece0; color: #b06a3a; }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 1rem;
+            }
+            .container {
+                padding: 1.8rem 1.2rem;
+                border-radius: 28px;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .card {
+                padding: 1.4rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 1.2rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-graduation-cap"></i> مرکز نمونه سوالات</h1>
+            <p>دروس کارآفرینی و کسب‌وکار – مجموعه‌ای جامع از سوالات تشریحی با پاسخ</p>
+            <span class="subtitle"><i class="fas fa-book-open"></i> ۶ مجموعه کامل</span>
+        </div>
+
+        <div class="grid">
+            <!-- 1. mohit.html -->
+            <a href="mohit.html" class="card">
+                <div class="card-icon"><i class="fas fa-globe-asia"></i></div>
+                <h3>محیط کسب‌وکار و اکوسیستم کارآفرینی</h3>
+                <p>پاسخ به سوالات جزوه اصلی + تجربه گرجستان – مفاهیم PESTEL، نورث، بامول و نگاشت اکوسیستم</p>
+                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+            </a>
+
+            <!-- 2. forsat.html -->
+            <a href="forsat.html" class="card">
+                <div class="card-icon"><i class="fas fa-search"></i></div>
+                <h3>شناسایی فرصت و ایده‌پردازی</h3>
+                <p>۵۰ سوال از مبانی نظری، کشف فرصت، ابزار مسیریاب و نظریه شین و ونکاتارامان</p>
+                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+            </a>
+
+            <!-- 3. emkan.html -->
+            <a href="emkan.html" class="card">
+                <div class="card-icon"><i class="fas fa-clipboard-check"></i></div>
+                <h3>امکان‌سنجی و تدوین طرح کسب‌وکار</h3>
+                <p>۵۰ سوال در ۵ بخش: مفاهیم پایه، بازار، فنی، مالی و نگارش طرح – به همراه فرمول‌ها</p>
+                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+            </a>
+
+            <!-- 4. ahkam.html -->
+            <a href="ahkam.html" class="card">
+                <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                <h3>اخلاق و احکام کسب‌وکار</h3>
+                <p>۵۰ سوال از اخلاق، رقابت، بازار اسلامی، احتکار، قواعد فقهی و معاملات – با پاسخ‌نامه</p>
+                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+            </a>
+
+            <!-- 5. fanavari.html -->
+            <a href="fanavari.html" class="card">
+                <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                <h3>فناوری‌های نوظهور</h3>
+                <p>۵۰ سوال کلیدی از IT، EdTech، کشاورزی هوشمند، گردشگری، پزشکی و بازاریابی</p>
+                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+            </a>
+
+            <!-- 6. nazar.html -->
+            <a href="nazar.html" class="card">
+                <div class="card-icon"><i class="fas fa-brain"></i></div>
+                <h3>نظریه‌های کارآفرینی و نوآوری</h3>
+                <p>۵۰ سوال از مقالات کاردون، بندورا، دیماجیو – اشتیاق، خودکارآمدی و چیستی نظریه</p>
+                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+            </a>
+        </div>
+
+        <div class="footer-note">
+            <i class="fas fa-check-circle"></i> تمامی فایل‌ها به‌صورت ریسپانسیو و با استایل خوانا طراحی شده‌اند.
+            <span style="display:inline-block; margin-right:12px; opacity:0.6;">|</span>
+            <i class="fas fa-mobile-alt"></i> سازگار با موبایل و تبلت
+        </div>
+    </div>
+</body>
+</html>
