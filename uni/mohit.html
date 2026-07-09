@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
-    <title>محیط کسب و کار</title>
-    <!-- Font (Vazir) & Font Awesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پاسخ به سوالات درس محیط کسب و کار و اکوسیستم کارآفرینی</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Reset & base */
         * {
             margin: 0;
             padding: 0;
@@ -33,23 +31,40 @@
             transition: all 0.2s ease;
         }
 
-        /* headings */
-        h1, h2, h3, h4, h5 {
-            color: #0b2a3b;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+        /* Back button */
+        .back-home {
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            background: #e8f0f5;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            color: #1a4a5e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .back-home i {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .back-home:hover {
+            background: #d4e3ed;
+            border-color: #b8cedd;
+            transform: translateX(-4px);
         }
 
         h1 {
             font-size: 2.2rem;
+            color: #0a2a3f;
             border-bottom: 4px solid #2a7faa;
             padding-bottom: 0.5rem;
             display: inline-block;
-            margin-top: 0.5rem;
+            margin-top: 0.2rem;
             margin-bottom: 1.8rem;
-            color: #0a2a3f;
         }
 
         h2 {
@@ -77,7 +92,6 @@
             font-weight: 600;
         }
 
-        /* paragraphs & lists */
         p {
             margin-bottom: 1rem;
             text-align: justify;
@@ -92,7 +106,6 @@
             margin-bottom: 0.4rem;
         }
 
-        /* tables */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -126,45 +139,6 @@
             background: #f3f9ff;
         }
 
-        /* blockquote / special notes */
-        blockquote {
-            background: #e8f0f7;
-            padding: 1rem 1.8rem;
-            border-right: 6px solid #2a7faa;
-            border-radius: 20px 4px 4px 20px;
-            margin: 1.8rem 0;
-            font-style: normal;
-            box-shadow: 0 2px 6px rgba(0, 40, 60, 0.04);
-        }
-
-        blockquote p {
-            margin-bottom: 0.2rem;
-        }
-
-        /* highlight inline */
-        strong {
-            color: #004466;
-            font-weight: 700;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #1f5a74;
-            color: #fff;
-            font-size: 0.75rem;
-            padding: 0.2rem 0.8rem;
-            border-radius: 40px;
-            margin-left: 0.4rem;
-        }
-
-        hr {
-            margin: 2.5rem 0;
-            border: 0;
-            height: 2px;
-            background: linear-gradient(to left, #b8d4e8, transparent);
-        }
-
-        /* card for examples */
         .example-box {
             background: #f3f9ff;
             border-radius: 24px;
@@ -178,7 +152,66 @@
             margin-left: 0.6rem;
         }
 
-        /* responsive */
+        .correction-box {
+            background: #fff8e6;
+            border-radius: 24px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.5rem 0;
+            border: 1px solid #f0dca8;
+            border-right: 6px solid #e8a838;
+        }
+
+        .correction-box i {
+            color: #d49a2a;
+            margin-left: 0.6rem;
+        }
+
+        .correction-box strong {
+            color: #8a6a1a;
+        }
+
+        hr {
+            margin: 2.5rem 0;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to left, #b8d4e8, transparent);
+        }
+
+        .note-box {
+            background: #e6f0f7;
+            border-radius: 40px;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            font-weight: 500;
+            color: #0a3142;
+        }
+
+        .note-box i {
+            color: #1a6e8e;
+            margin-left: 0.6rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1f5a74;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            margin-left: 0.4rem;
+        }
+
+        strong {
+            color: #004466;
+            font-weight: 700;
+        }
+
+        .fa, .fas, .far {
+            margin-left: 6px;
+            color: #1f5a74;
+        }
+
         @media (max-width: 700px) {
             body {
                 padding: 0.8rem;
@@ -200,7 +233,7 @@
             th, td {
                 padding: 8px 6px;
             }
-            .example-box {
+            .example-box, .correction-box {
                 padding: 0.8rem 1rem;
             }
         }
@@ -219,30 +252,14 @@
                 font-size: 0.75rem;
             }
         }
-
-        /* misc */
-        .fa, .fas, .far {
-            margin-left: 6px;
-            color: #1f5a74;
-        }
-
-        .section-divider {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 2rem 0 0.5rem;
-        }
-        .section-divider span {
-            background: #cddce8;
-            height: 2px;
-            flex: 1;
-        }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <h1>📘 محیط کسب و کار و اکوسیستم کارآفرینی</h1>
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی</a>
+
+    <h1>📘 پاسخ به سوالات درس محیط کسب و کار و اکوسیستم کارآفرینی</h1>
     <p style="color: #3e5f72; margin-top: -0.5rem;"><i class="fas fa-layer-group"></i> (تجمیع شده از جزوه اصلی و فایل‌های الحاقی - تجربه گرجستان)</p>
 
     <!-- =============== بخش اول =============== -->
@@ -316,15 +333,14 @@
         </tbody>
     </table>
 
-    <!-- سوال 5 -->
-    <h3>۵- نقش سیستم‌ها در اکوسیستم کسب و کار را توضیح دهید؟</h3>
-    <p>نقش سیستم‌ها، ایجاد یک <strong>دیدگاه سیستمی و تکاملی</strong> به جای نگاه فردگرایانه است:</p>
-    <ul>
-        <li>کارآفرین تنها بازیگر سیستم نیست؛ بلکه در بستر الیه‌های متعددی (اجتماعی، فرهنگی، اقتصادی و سیاسی) فعالیت می‌کند.</li>
-        <li>بازیگران اکوسیستم در یک مکان جغرافیایی مشخص مستقر هستند و یک <strong>رابطه سیستمی پویا</strong> بین آن‌ها شکل می‌گیرد.</li>
-        <li>کارآفرینان به دلیل حضور در میدان، بیشترین اطلاعات را راجع به محدودیت‌های اکوسیستم و فرآیندهای بازخوردگیری (Feedback Mechanism) دارند.</li>
-        <li>مدل اسلم اشپیگل بر <strong>مکانیزم‌های بازخورد</strong> در درون اکوسیستم تأکید دارد، به این معنی که تغییر در یک بخش (مثل سیاست‌گذاری دولت) می‌تواند بازخوردهای گسترده‌ای در سایر بخش‌ها (مانند کاهش سرمایه‌گذاری) ایجاد کند.</li>
-    </ul>
+    <!-- سوال 5 - تصحیح شده با جواب صحیح -->
+    <div class="correction-box">
+        <i class="fas fa-edit"></i> <strong>⚠️ اصلاحیه سوال ۵:</strong> سوال قبلی "نقش سیستم‌ها در اکوسیستم کسب و کار را توضیح دهید" بود که پاسخ صحیح آن به شرح زیر است:
+    </div>
+
+    <h3>۵- نقش دولت‌ها در اکوسیستم کسب و کار را توضیح دهید؟</h3>
+    <p>دولت یکی از سه عامل اصلی شکل‌گیری محیط کسب‌وکار در کنار بازار و جامعه است. دولت با قانون‌گذاری، سیاست‌گذاری و ایجاد نهادها می‌تواند هزینه فعالیت اقتصادی را کاهش دهد، امنیت حقوقی و اقتصادی ایجاد کند، سرمایه‌گذاری را افزایش دهد و زمینه رقابت سالم و نوآوری را فراهم کند.</p>
+    <p>همچنین دولت باید قوانین شفاف، قابل پیش‌بینی، ساده و هماهنگ با نیاز بازار تدوین کند، از انحصار جلوگیری نماید، زیرساخت‌های حقوقی و دیجیتال را توسعه دهد و ثبات اقتصادی را در زمینه تورم، نرخ ارز، کسری بودجه و بدهی دولت حفظ کند.</p>
 
     <!-- سوال 6 -->
     <h3>۶- انواع روش‌های نگاشت اکوسیستم را نام ببرید و توضیح دهید؟</h3>
@@ -398,9 +414,9 @@
     <hr>
 
     <!-- =============== بخش دوم =============== -->
-    <h2>📁 بخش دوم: تجربه گرجستان - کتاب اقتصاد در میدان عمل</h2>
+    <h2>📁 بخش دوم: پاسخ به سوالات فایل‌های الحاقی (تجربه گرجستان - کتاب اقتصاد در میدان عمل)</h2>
 
-    <h3>📄فایل 1 </h3>
+    <h3>📄 سوالات فایل 1</h3>
 
     <h4>سوال ۱: اوضاع اقتصادی و اداری گرجستان در سال ۲۰۰۴ چگونه بود و رویکرد «اقتصاد در میدان عمل» چه ویژگی‌هایی داشت؟</h4>
     <ul>
@@ -421,7 +437,7 @@
         <li><strong>درس:</strong> اصلاحات باید مستمر باشند، مخصوصاً در حوزه عدالت.</li>
     </ul>
 
-    <h3>📄فایل 2 </h3>
+    <h3>📄 سوالات فایل 2</h3>
 
     <h4>سوال ۱: ویژگی‌های اصلی یک «قطب اقتصادی» (Hub Economy) از نظر نویسنده چیست؟</h4>
     <table>
@@ -443,7 +459,7 @@
     <p>دولت گرجستان تصمیم گرفت به جای اختراع دوباره چرخ، به استانداردهای کشورهای پیشرفته اعتماد کند. طبق این سیاست، اگر دارویی تأییدیه سازمان‌های معتبر جهانی (اتحادیه اروپا، آمریکا یا ژاپن) را داشت، به‌صورت خودکار در گرجستان نیز تأییدشده محسوب می‌شد.</p>
     <p><strong>نتایج:</strong> شکستن انحصار، افزایش <strong>۹۴ درصدی</strong> داروهای ثبت شده و کاهش <strong>۳۰ درصدی</strong> قیمت دارو در سال اول اجرا.</p>
 
-    <h3>📄فایل 3 </h3>
+    <h3>📄 سوالات فایل 3</h3>
 
     <h4>سوال ۱: مدل مالیاتی استونی که در گرجستان نیز پذیرفته شد، چه ویژگی بارزی دارد؟</h4>
     <p>در این مدل، سود توزیع نشده (سودی که مجدداً در کسب‌وکار سرمایه‌گذاری می‌شود) معاف از مالیات است و مالیات تنها زمانی اخذ می‌شود که سود به صورت سود سهام پرداخت گردد.</p>
@@ -454,7 +470,7 @@
     <h4>سوال ۳: اصلاحات گمرکی چگونه به تحقق مفهوم «قطبیت اقتصادی» در گرجستان کمک کرد؟</h4>
     <p>با کاهش تعرفه‌ها (صفر کردن تعرفه ۸۰٪ کالاها) و ساده‌سازی ترخیص، گرجستان به مرکز ترانزیت و تجارت منطقه‌ای، به‌ویژه در بازار خودروهای دست دوم تبدیل شد.</p>
 
-    <h3>📄فایل 4 </h3>
+    <h3>📄 سوالات فایل 4</h3>
 
     <h4>سوال ۱: دلیل اصلی خطر ورشکستگی گرجستان در اوایل دهه ۲۰۰۰ چه بود و چرا یارانه‌های اجتماعی در آن زمان به هدف خود نمی‌رسیدند؟</h4>
     <p>وجود تعداد زیادی یارانه و کمک‌های دولتی غیرهدفمند (برق، گاز، حمل‌ونقل و...) که بیشتر برای جلب رأی در انتخابات ایجاد شده بودند. این کمک‌ها به دلیل فساد گسترده و ساختار ناکارآمد، به نیازمندان واقعی نمی‌رسید؛ افراد غیرنیازمند از آن بهره می‌بردند اما مستمری نیازمندان واقعی (مانند سالمندان) بسیار ناچیز و همراه با تأخیر بود.</p>
@@ -487,6 +503,6 @@
     <p><strong>پیام اصلی:</strong> دولت‌ها باید به جای توزیع همگانی و غیرهدفمند یارانه‌ها، نیازمندان واقعی را شناسایی کرده و منابع محدود خود را به صورت نقدی و هدفمند به آن‌ها اختصاص دهند.</p>
 
 
-</div>
+</div> <!-- end container -->
 </body>
 </html>
