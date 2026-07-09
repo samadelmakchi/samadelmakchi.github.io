@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
-    <title>۵۰ سوال تشریحی - امکان‌سنجی و تدوین طرح کسب‌وکار</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پاسخ به سوالات درس محیط کسب و کار و اکوسیستم کارآفرینی</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -15,7 +15,7 @@
         body {
             font-family: 'Segoe UI', 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
             background: #f5f9fc;
-            color: #1a2a3a;
+            color: #1e2b3c;
             padding: 2rem 1.5rem;
             line-height: 1.8;
             direction: rtl;
@@ -26,132 +26,108 @@
             margin: 0 auto;
             background: #ffffff;
             border-radius: 32px;
-            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.12);
+            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.15);
             padding: 2.5rem 2rem;
             transition: all 0.2s ease;
+        }
+
+        /* Back button */
+        .back-home {
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            background: #e8f0f5;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            color: #1a4a5e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .back-home i {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .back-home:hover {
+            background: #d4e3ed;
+            border-color: #b8cedd;
+            transform: translateX(-4px);
         }
 
         h1 {
             font-size: 2.2rem;
             color: #0a2a3f;
-            border-bottom: 4px solid #c44536;
-            padding-bottom: 0.6rem;
+            border-bottom: 4px solid #2a7faa;
+            padding-bottom: 0.5rem;
             display: inline-block;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-
-        h1 i {
-            color: #c44536;
-            margin-left: 0.6rem;
+            margin-top: 0.2rem;
+            margin-bottom: 1.8rem;
         }
 
         h2 {
-            font-size: 1.7rem;
-            background: #f2e8e5;
-            padding: 0.7rem 1.5rem;
-            border-radius: 60px 12px 12px 60px;
-            border-right: 6px solid #c44536;
-            margin: 2.5rem 0 1.5rem 0;
-            color: #4d2c24;
-        }
-
-        h2 i {
-            color: #c44536;
-            margin-left: 0.5rem;
+            font-size: 1.8rem;
+            border-right: 6px solid #2a7faa;
+            padding-right: 1rem;
+            background: #f0f6fb;
+            padding: 0.7rem 1.2rem;
+            border-radius: 40px 8px 8px 40px;
+            margin-top: 2.5rem;
         }
 
         h3 {
-            font-size: 1.2rem;
-            color: #4d2c24;
+            font-size: 1.4rem;
+            color: #1a4b62;
             margin-top: 1.8rem;
-            margin-bottom: 0.3rem;
-            padding-right: 0.5rem;
-            border-right: 4px solid #d97a6b;
-            padding-right: 0.8rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px dashed #b6d2e3;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: #1f5a74;
+            margin-top: 1.5rem;
             font-weight: 600;
         }
 
         p {
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
             text-align: justify;
         }
 
         ul, ol {
-            margin: 0.4rem 0 1rem 0;
+            margin: 0.8rem 0 1.5rem 0;
             padding-right: 1.8rem;
         }
 
         li {
-            margin-bottom: 0.3rem;
-        }
-
-        strong {
-            color: #8a3a2b;
-            font-weight: 700;
-        }
-
-        .question-block {
-            background: #fcfaf9;
-            border-radius: 20px;
-            padding: 1.2rem 1.8rem;
-            margin: 1.6rem 0;
-            border: 1px solid #e5d6d1;
-            transition: 0.15s ease;
-        }
-
-        .question-block:hover {
-            background: #f8f3f0;
-            border-color: #cfb8b0;
-        }
-
-        .q-badge {
-            display: inline-block;
-            background: #c44536;
-            color: #fff;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 0.2rem 0.9rem;
-            border-radius: 30px;
-            margin-left: 0.6rem;
-        }
-
-        .answer {
-            background: #ffffff;
-            padding: 0.8rem 1.2rem;
-            border-radius: 16px;
-            margin-top: 0.5rem;
-            border-right: 4px solid #d97a6b;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
-        }
-
-        .answer i {
-            color: #c44536;
-            margin-left: 0.4rem;
+            margin-bottom: 0.4rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1rem 0;
+            margin: 1.8rem 0;
             font-size: 0.95rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0, 20, 10, 0.04);
         }
 
         th {
-            background: #6b3a2e;
-            color: #fff;
-            padding: 10px 12px;
-            text-align: center;
+            background: #1b4c66;
+            color: #ffffff;
             font-weight: 600;
+            padding: 12px 10px;
+            text-align: center;
         }
 
         td {
-            background: #fdfaf8;
-            padding: 10px 12px;
-            border-bottom: 1px solid #e8dbd5;
+            background: #fafdff;
+            padding: 12px 10px;
+            border-bottom: 1px solid #e2ecf3;
             vertical-align: top;
         }
 
@@ -160,47 +136,80 @@
         }
 
         tr:hover td {
-            background: #f6efeb;
+            background: #f3f9ff;
         }
 
         .example-box {
-            background: #f3ece8;
-            border-radius: 20px;
-            padding: 1rem 1.5rem;
-            margin: 1rem 0;
-            border: 1px solid #dccbc4;
+            background: #f3f9ff;
+            border-radius: 24px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.5rem 0;
+            border: 1px solid #d5e6f2;
         }
 
         .example-box i {
-            color: #c44536;
-            margin-left: 0.5rem;
+            color: #1f5a74;
+            margin-left: 0.6rem;
+        }
+
+        .correction-box {
+            background: #fff8e6;
+            border-radius: 24px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.5rem 0;
+            border: 1px solid #f0dca8;
+            border-right: 6px solid #e8a838;
+        }
+
+        .correction-box i {
+            color: #d49a2a;
+            margin-left: 0.6rem;
+        }
+
+        .correction-box strong {
+            color: #8a6a1a;
         }
 
         hr {
-            margin: 2.8rem 0;
+            margin: 2.5rem 0;
             border: 0;
             height: 2px;
-            background: linear-gradient(to left, #dccbc4, transparent);
+            background: linear-gradient(to left, #b8d4e8, transparent);
         }
 
-        .note-footer {
-            background: #f0e6e2;
+        .note-box {
+            background: #e6f0f7;
             border-radius: 40px;
             padding: 1rem 2rem;
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             font-weight: 500;
-            color: #4d2c24;
+            color: #0a3142;
         }
 
-        .note-footer i {
-            color: #c44536;
+        .note-box i {
+            color: #1a6e8e;
             margin-left: 0.6rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1f5a74;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 40px;
+            margin-left: 0.4rem;
+        }
+
+        strong {
+            color: #004466;
+            font-weight: 700;
         }
 
         .fa, .fas, .far {
             margin-left: 6px;
-            color: #c44536;
+            color: #1f5a74;
         }
 
         @media (max-width: 700px) {
@@ -212,35 +221,35 @@
                 border-radius: 24px;
             }
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.7rem;
             }
             h2 {
-                font-size: 1.3rem;
+                font-size: 1.4rem;
                 padding: 0.5rem 1rem;
             }
-            .question-block {
-                padding: 0.8rem 1rem;
-            }
             table {
-                font-size: 0.8rem;
+                font-size: 0.85rem;
             }
             th, td {
-                padding: 6px 6px;
+                padding: 8px 6px;
+            }
+            .example-box, .correction-box {
+                padding: 0.8rem 1rem;
             }
         }
 
         @media (max-width: 480px) {
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.4rem;
             }
             h2 {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             .container {
-                padding: 1rem 0.6rem;
+                padding: 1rem 0.8rem;
             }
-            .question-block {
-                padding: 0.6rem 0.8rem;
+            table {
+                font-size: 0.75rem;
             }
         }
     </style>
@@ -248,542 +257,252 @@
 <body>
 <div class="container">
 
-    <h1><i class="fas fa-clipboard-list"></i> ۵۰ سوال تشریحی با پاسخ</h1>
-    <p style="font-size:1.2rem; color: #5a3a30; margin-top: -0.5rem;">درس امکان‌سنجی و تدوین طرح کسب‌وکار</p>
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی</a>
 
-    <!-- ========== بخش اول ========== -->
-    <h2><i class="fas fa-cubes"></i> بخش اول: مفاهیم پایه (سوالات ۱ تا ۱۰)</h2>
+    <h1>📘 پاسخ به سوالات درس محیط کسب و کار و اکوسیستم کارآفرینی</h1>
+    <p style="color: #3e5f72; margin-top: -0.5rem;"><i class="fas fa-layer-group"></i> (تجمیع شده از جزوه اصلی و فایل‌های الحاقی - تجربه گرجستان)</p>
+
+    <!-- =============== بخش اول =============== -->
+    <h2>📌 بخش اول: پاسخ به سوالات جزوه اصلی</h2>
 
     <!-- سوال 1 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱</span> تعریف طرح کسب‌وکار را بنویسید و سه هدف اصلی آن را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> طرح کسب‌وکار سندی مکتوب برای تشریح اهداف، راهبردها، تحلیل بازار، ساختار سازمانی و پیش‌بینی‌های مالی یک کسب‌وکار است.<br>
-            <strong>اهداف:</strong>
-            <ol>
-                <li>جذب سرمایه‌گذار و اخذ تسهیلات</li>
-                <li>راهنمای عملیاتی برای مدیران</li>
-                <li>ارزیابی توجیه‌پذیری قبل از شروع</li>
-            </ol>
-        </div>
-    </div>
+    <h3>۱- منظور از محیط کسب و کار چیست؟ و محیط‌ها را توضیح دهید؟</h3>
+    <p><strong>منظور از محیط کسب و کار:</strong> مجموعه‌ای از نیروها، نهادها و عواملی که <strong>خارج از کنترل</strong> سازمان هستند و بر عملکرد، بقا و سودآوری آن اثر مستقیم می‌گذارند. یک اصل کلیدی: حتی بهترین مدیر دنیا هم اگر نتواند محیط خود را تحلیل کند، شکست خواهد خورد.</p>
+    <p><strong>محیط‌های کسب و کار بر اساس دیدگاه الیه‌ای به سه سطح تقسیم می‌شوند:</strong></p>
+    <ul>
+        <li><strong>الف) محیط بین‌المللی (Global Environment):</strong> عواملی فراتر از مرزهای ملی که بر اقتصاد داخلی تأثیر می‌گذارد. هیچ محیط ملی‌ای نمی‌تواند جدا از جهان عمل کند.
+            <br><span style="background: #e3edf5; padding:0 8px; border-radius:12px;"><i class="fas fa-globe-asia"></i> مثال:</span> تنش در تنگه هرمز که زنجیره تأمین جهانی را مختل می‌کند، یا توافق برجام که بر جذب سرمایه خارجی (FDI) تأثیر می‌گذارد.</li>
+        <li><strong>ب) محیط ملی (National Environment):</strong> شامل فرآیندها، فرهنگ، اقتصاد و ابزارهای قانونی خاص یک کشور.
+            <br><span style="background: #e3edf5; padding:0 8px; border-radius:12px;"><i class="fas fa-flag"></i> مثال:</span> سیاست‌های حمایتی بازتولیدکننده در ایران.</li>
+        <li><strong>ج) محیط خرد (محیط وظیفه‌ای):</strong> شامل ذینفعان مستقیم مانند مشتریان، رقبا، تأمین‌کنندگان و جامعه محلی.
+            <br><span style="background: #e3edf5; padding:0 8px; border-radius:12px;"><i class="fas fa-industry"></i> مثال (تحلیل موردی):</span> کارخانه فولاد مبارکه که به دلیل مصرف بالای آب و آلودگی هوا با بحران اجتماعی و جنگ خاموش با مردم محلی روبرو شد و برای جبران، مدرن‌ترین مرکز درمانی سرطان را در اصفهان راه‌اندازی کرد.
+            <br><span style="background: #e3edf5; padding:0 8px; border-radius:12px;"><i class="fas fa-tree"></i> مثال دیگر:</span> انحراف اقامتگاه‌های بوم‌گردی از اهداف پایداری به ساخت‌وسازهای مجلل و بی‌احترامی به حریم محیطی (مانند ساخت استخر در مناطق خشک).</li>
+    </ul>
 
     <!-- سوال 2 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲</span> تفاوت «ایده» و «فرصت کسب‌وکار» چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ایده یک تصور اولیه است، اما فرصت کسب‌وکار وقتی شکل می‌گیرد که آن ایده دارای بازار کافی، مزیت رقابتی و قابلیت اجرایی و مالی باشد. هر فرصتی از ایده می‌آید، ولی هر ایده‌ای به فرصت تبدیل نمی‌شود.
-        </div>
-    </div>
+    <h3>۲- اکوسیستم کارآفرینی چیست؟ و فرآیندهای کارآفرینی که در این اکوسیستم فعال هستند را نام ببرید؟</h3>
+    <p><strong>تعریف اکوسیستم کارآفرینی:</strong> مجموعه‌ای از عوامل، بازیگران و نهادها در ابعاد ملی، منطقه‌ای و جهانی که دست به دست هم می‌دهند تا راه‌اندازی، توسعه و پیشرفت کارآفرینان را تسهیل کنند یا برای آن‌ها محدودیت بسازند. واژه اکوسیستم از علوم زیستی وام گرفته شده و به سیستمی اشاره دارد که در آن همه اجزا به هم متصل هستند و اگر حلقه‌ای به درستی کار نکند، کل سیستم فرو می‌پاشد.</p>
+    <p><strong>فرآیندها و اجزای اصلی فعال در این اکوسیستم:</strong></p>
+    <ol>
+        <li><strong>تأمین مالی:</strong> سرمایه‌گذاران خطرپذیر (VCs)، فرشتگان سرمایه‌گذار (Angel Investors) و بانک‌ها.</li>
+        <li><strong>نهادهای پشتیبان و آموزشی:</strong> دانشگاه‌ها، مراکز رشد (انکوباتورها)، پارک‌های علم و فناوری.</li>
+        <li><strong>نهادهای تنظیم‌گر (حکمرانی):</strong> دولت، تدوین‌کنندگان قواعد، مقررات و سیاست‌های کلان.</li>
+        <li><strong>بخش خصوصی:</strong> استارتاپ‌ها، بنگاه‌ها و شرکت‌های صنعتی که با اهداف مشابه یا مکمل فعالیت می‌کنند.</li>
+    </ol>
 
     <!-- سوال 3 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳</span> امکان‌سنجی چه تفاوتی با طرح کسب‌وکار دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> امکان‌سنجی قبل از طرح کسب‌وکار انجام می‌شود و به این می‌پردازد که آیا پروژه از جنبه‌های فنی، بازار، مالی و حقوقی شدنی است یا خیر. طرح کسب‌وکار، پس از تأیید امکان‌سنجی، برنامهٔ دقیق اجرا را ارائه می‌دهد.
-        </div>
+    <h3>۳- مدل PESTEL را در حوزه‌های مختلف نام ببرید و یک مورد را توضیح دهید؟</h3>
+    <p>مدل PESTEL شامل شش حوزه اصلی است:</p>
+    <table>
+        <thead>
+            <tr><th>حوزه</th><th>عنوان</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>P</td><td>حوزه سیاسی (Political)</td></tr>
+            <tr><td>E</td><td>حوزه اقتصادی (Economic)</td></tr>
+            <tr><td>S</td><td>حوزه اجتماعی-فرهنگی (Social)</td></tr>
+            <tr><td>T</td><td>حوزه فناوری (Technological)</td></tr>
+            <tr><td>E</td><td>حوزه زیست‌محیطی (Environmental)</td></tr>
+            <tr><td>L</td><td>حوزه قانونی (Legal)</td></tr>
+        </tbody>
+    </table>
+    <div class="example-box">
+        <i class="fas fa-landmark"></i> <strong>توضیح یک مورد (حوزه سیاسی با مثال برجام و ترامپ):</strong>
+        <p style="margin-top:6px;">محیط سیاسی شامل متغیرهایی مثل ثبات دولت، سیاست خارجی، تنش‌های منطقه‌ای و نگاه حاکمیت به بخش خصوصی است. این حوزه به طور مستقیم استراتژی شرکت‌ها را تعیین می‌کند.</p>
+        <p><strong>مثال:</strong> پس از برجام در سال ۱۳۹۴، استارتاپ‌های ایرانی استراتژی خود را بر جذب سرمایه خارجی تنظیم کردند. اما در سال ۱۳۹۷، با خروج ترامپ از برجام و بازگشت تحریم‌ها، همان استارتاپ‌ها برای بقا، استراتژی خود را ۱۸۰ درجه تغییر داده و به سمت «بومی‌سازی» رفتند.</p>
     </div>
 
     <!-- سوال 4 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴</span> مراحل اصلی یک مطالعهٔ امکان‌سنجی را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>مطالعات مقدماتی</li>
-                <li>تحلیل بازار و تقاضا</li>
-                <li>مطالعات فنی و مهندسی</li>
-                <li>مطالعات مالی و اقتصادی</li>
-                <li>بررسی حقوقی و زیستمحیطی</li>
-                <li>تحلیل ریسک</li>
-                <li>جمع‌بندی و تصمیم‌گیری</li>
-            </ol>
-        </div>
+    <h3>۴- نظریه North و نظریه ویلیام بامول را توضیح دهید؟</h3>
+    <p><strong>نظریه داگلاس نورث (نهادهای رسمی و غیررسمی):</strong></p>
+    <p>نورث معتقد است «نهادها، قواعد بازی در یک جامعه هستند». این قواعد، تعاملات انسانی را شکل می‌دهند و گاهی از خود بازی مهم‌ترند. نهادها به دو دسته تقسیم می‌شوند:</p>
+    <ul>
+        <li><strong>نهادهای رسمی:</strong> قوانین مکتوب، مقررات، چارچوب‌های حقوقی و سیاست‌های دولتی.
+            <br><span style="background: #e3edf5; padding:0 8px; border-radius:12px;">مثال:</span> قانون چک صیادی که با مسدودی خودکار حساب‌ها، رفتار معامله‌گران را محتاط‌تر کرد.</li>
+        <li><strong>نهادهای غیررسمی:</strong> فرهنگ، ارزش‌ها، هنجارها، باورها و شبکه‌های اجتماعی.
+            <br><span style="background: #e3edf5; padding:0 8px; border-radius:12px;">مثال:</span> در گذشته «حرف و اعتبار» یک بازاری از هزار مدرک مکتوب معتبرتر بود، اما امروزه این حلقه‌های طلایی فرهنگ تجاری در ایران با چالش جدی مواجه شده است.</li>
+    </ul>
+    <p><strong>نظریه ویلیام بامول (سه نوع کارآفرینی):</strong></p>
+    <p>بامول معتقد است استعداد کارآفرینانه همیشه وجود دارد، اما «قواعد بازی» مشخص می‌کند که به کدام سمت هدایت شود:</p>
+    <table>
+        <thead><tr><th>نوع کارآفرینی</th><th>توضیح</th><th>مثال</th></tr></thead>
+        <tbody>
+            <tr><td><strong>مولد (Productive)</strong></td><td>منجر به نوآوری، کاهش هزینه‌ها و ثروت‌آفرینی واقعی</td><td>فعالان صنعت برق خورشیدی با نیت پاک</td></tr>
+            <tr><td><strong>غیرمولد (Unproductive)</strong></td><td>ارزش جدیدی خلق نمی‌کند، بلکه به دنبال «رانت‌جویی» است</td><td>افرادی که به اسم صنعت برق، به دنبال وام‌های کلان دولتی بودند</td></tr>
+            <tr><td><strong>مخرب (Destructive)</strong></td><td>ساختار اقتصادی را تخریب کرده و بستر فساد را فراهم می‌کند</td><td>افرادی که به بهانه مزارع خورشیدی، زمین‌های مرغوب را تصاحب و به ویلا تبدیل کردند</td></tr>
+        </tbody>
+    </table>
+
+    <!-- سوال 5 - تصحیح شده با جواب صحیح -->
+    <div class="correction-box">
+        <i class="fas fa-edit"></i> <strong>⚠️ اصلاحیه سوال ۵:</strong> سوال قبلی "نقش سیستم‌ها در اکوسیستم کسب و کار را توضیح دهید" بود که پاسخ صحیح آن به شرح زیر است:
     </div>
 
-    <!-- سوال 5 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۵</span> تحلیل SWOT چیست و چه کاربردی در امکان‌سنجی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> SWOT شامل نقاط قوت، ضعف، فرصت‌ها و تهدیدهاست. این ابزار به شناسایی عوامل درونی و بیرونی مؤثر بر پروژه کمک کرده و مبنای تدوین راهبردهای رقابتی است.
-        </div>
-    </div>
+    <h3>۵- نقش دولت‌ها در اکوسیستم کسب و کار را توضیح دهید؟</h3>
+    <p>دولت یکی از سه عامل اصلی شکل‌گیری محیط کسب‌وکار در کنار بازار و جامعه است. دولت با قانون‌گذاری، سیاست‌گذاری و ایجاد نهادها می‌تواند هزینه فعالیت اقتصادی را کاهش دهد، امنیت حقوقی و اقتصادی ایجاد کند، سرمایه‌گذاری را افزایش دهد و زمینه رقابت سالم و نوآوری را فراهم کند.</p>
+    <p>همچنین دولت باید قوانین شفاف، قابل پیش‌بینی، ساده و هماهنگ با نیاز بازار تدوین کند، از انحصار جلوگیری نماید، زیرساخت‌های حقوقی و دیجیتال را توسعه دهد و ثبات اقتصادی را در زمینه تورم، نرخ ارز، کسری بودجه و بدهی دولت حفظ کند.</p>
 
     <!-- سوال 6 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۶</span> تفاوت هزینه‌های ثابت و متغیر را با مثال توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هزینه‌های ثابت مستقل از حجم تولیدند (مثل اجاره و حقوق پایه). هزینه‌های متغیر با حجم تولید تغییر می‌کنند (مثل مواد اولیه و هزینه حمل). تفکیک این دو برای محاسبهٔ نقطهٔ سربه‌سر ضروری است.
-        </div>
-    </div>
+    <h3>۶- انواع روش‌های نگاشت اکوسیستم را نام ببرید و توضیح دهید؟</h3>
+    <p><strong>۱. نگاشت بر اساس شش نقش حیاتی (Role Mapping):</strong></p>
+    <p>در یک اکوسیستم، شش نقش کلیدی وجود دارد:</p>
+    <table>
+        <thead><tr><th>نقش</th><th>عنوان</th><th>توضیح</th></tr></thead>
+        <tbody>
+            <tr><td>۱</td><td><strong>آتش‌افروز (Igniter)</strong></td><td>کسی که ایده یا اولین جرقه را ایجاد می‌کند</td></tr>
+            <tr><td>۲</td><td><strong>مقیاس‌دهنده (Scaler)</strong></td><td>مدیر عملیاتی که تیم را از چند نفر به چند ده نفر می‌رساند</td></tr>
+            <tr><td>۳</td><td><strong>متصل‌کننده (Connector)</strong></td><td>شبکه‌ساز حرفه‌ای که افراد و منابع را به هم مرتبط می‌کند</td></tr>
+            <tr><td>۴</td><td><strong>تأمین‌کننده سرمایه (Investor/Provider)</strong></td><td>فرد یا نهادی که سرمایه یا منابع مالی را فراهم می‌کند</td></tr>
+            <tr><td>۵</td><td><strong>تأییدکننده نهادی (Validator)</strong></td><td>منتورهای صنعتی یا مشتریان اولیه معروف که به استارتاپ اعتبار می‌بخشند</td></tr>
+            <tr><td>۶</td><td><strong>خروج‌دهنده (Exiter)</strong></td><td>مشاورانی که شرکت را برای عرضه اولیه سهام (IPO) یا فروش آماده می‌کنند</td></tr>
+        </tbody>
+    </table>
+    <p><strong>۲. استفاده از ابزارهای تحلیل شبکه‌های اجتماعی:</strong></p>
+    <p>برای ترسیم نقشه تعاملات، از نرم‌افزارهایی مانند <strong>Gephi</strong> یا پلتفرم <strong>Kumu</strong> استفاده می‌شود تا روابط و تأثیرگذاری بازیگران را به دقت تحلیل کنند.</p>
 
     <!-- سوال 7 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۷</span> نقطهٔ سربه‌سر چیست و چگونه محاسبه می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نقطه‌ای که در آن درآمد کل برابر با هزینهٔ کل است (نه سود و نه زیان).<br>
-            <strong>فرمول:</strong> نقطه سربه‌سر (تعداد واحد) = هزینه‌های ثابت ÷ (قیمت فروش هر واحد – هزینه متغیر هر واحد)
-        </div>
-    </div>
+    <h3>۷- همکاری و منازعه در اکوسیستم را توضیح دهید؟</h3>
+    <p><strong>همکاری:</strong> برای تسهیل رشد و توسعه ضروری است. شامل شبکه‌سازی، هم‌آفرینی و استفاده از فضاهای کار اشتراکی (Coworking Spaces). میانجی‌های نوآوری (مانند دانشگاه‌ها) نقش کلیدی در هماهنگی (Coordination) بین بازیگران و کاهش اصطکاک دارند.</p>
+    <p><strong>منازعه:</strong> ریشه در <strong>تعارض منافع دائمی</strong> بین بازیگران دارد. برای مثال، سرمایه‌گذاران به دنبال خروج سریع و سودآور (Fast Exit) هستند، در حالی که بنیان‌گذاران فنی به دنبال حفظ استقلال فنی (Technical Autonomy) خود هستند.</p>
+    <p>قدرت در طول چرخه حیات اکوسیستم جابه‌جا می‌شود:</p>
+    <ul>
+        <li>در مراحل اولیه (تاسیس)، قدرت با حامیان محلی است.</li>
+        <li>در مرحله رشد سریع، قدرت به بازیگران کلیدی و سرمایه‌گذاران منتقل می‌شود.</li>
+        <li>در مرحله بلوغ، نهادهای تنظیم‌گر و دولت (نگهبانان دروازه - Gatekeepers) به قدرت اصلی تبدیل می‌شوند و می‌توانند با سیاست‌گذاری‌های خود، انحصار یا قفل‌شدگی (Lock-in) ایجاد کنند.</li>
+    </ul>
 
     <!-- سوال 8 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۸</span> چهار نوع ریسک اصلی در طرح‌های کسب‌وکار را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>ریسک بازار (کاهش تقاضا)</li>
-                <li>ریسک فنی (مشکلات تولید)</li>
-                <li>ریسک مالی (نوسان نرخ ارز و بهره)</li>
-                <li>ریسک حقوقی و مقرراتی (تغییر قوانین)</li>
-            </ol>
-        </div>
-    </div>
+    <h3>۸- مکانیزم طناب‌کشی نوآوری را توضیح دهید؟</h3>
+    <p><strong>طناب‌کشی نوآوری (Innovation Tug of War)</strong> استعاره‌ای برای توصیف کشمکش دائمی بین دو نیروی اصلی در اکوسیستم است:</p>
+    <table>
+        <thead><tr><th>سمت طناب</th><th>بازیگران</th><th>هدف</th></tr></thead>
+        <tbody>
+            <tr><td><strong>یک سر طناب</strong></td><td>سرمایه‌گذاران و مشتریان</td><td><strong>خروج سریع (Fast Exit)</strong>، بازگشت سرمایه و تولید محصول کاملاً متناسب با بازار (Product-Market Fit)</td></tr>
+            <tr><td><strong>سر دیگر طناب</strong></td><td>بنیان‌گذاران فنی (تیم فناور)</td><td><strong>حفظ استقلال فنی (Technical Autonomy)</strong>، نوآوری رادیکال و ایده‌آل‌گرایی در محصول</td></tr>
+        </tbody>
+    </table>
+    <p><strong>وظیفه تسهیل‌گران اکوسیستم</strong> (مانند شتاب‌دهنده‌ها) ایجاد تعادل بین این دو نیرو با شفافیت اطلاعاتی و قراردادهای هوشمند (Smart Contracts) است تا نوآوری متوقف نشود و از سوی دیگر، کسب‌وکار به سمت ورشکستگی نرود.</p>
 
     <!-- سوال 9 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۹</span> NPV چیست و چه کاربردی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ارزش خالص فعلی، مجموع ارزش فعلی جریان‌های نقدی آتی منهای سرمایه‌گذاری اولیه است. اگر NPV مثبت باشد، پروژه توجیه مالی دارد.
-        </div>
+    <h3>۹- فلسفه بساز-ثبت کن-به اشتراک بزار را توضیح دهید؟</h3>
+    <p>این فلسفه با عنوان <strong>«بساز، ثبت کن، به اشتراک بگذار» (Make, Document, Share)</strong> پایه و اساس نسل چهارم فضاهای کار اشتراکی (هیبریدی) و آزمایشگاه‌های ساخت (FabLabs) است:</p>
+    <table>
+        <thead><tr><th>مرحله</th><th>توضیح</th></tr></thead>
+        <tbody>
+            <tr><td><strong>بساز</strong></td><td>کارآفرینان به ابزارهای پیشرفته تولید (پرینترهای سه‌بعدی صنعتی، لیزرهای برشی) دسترسی همگانی و ارزان‌قیمت دارند تا <strong>نمونه اولیه (Prototype)</strong> خود را سریع و کم‌هزینه تولید کنند</td></tr>
+            <tr><td><strong>ثبت کن</strong></td><td>فرآیند ساخت مستندسازی می‌شود (مدیریت دانش - Knowledge Management) تا دانش در اکوسیستم باقی بماند و قابل تکرار باشد</td></tr>
+            <tr><td><strong>به اشتراک بگذار</strong></td><td>دانش و نمونه‌های ساخته‌شده با جامعه بزرگ‌تر به اشتراک گذاشته می‌شود تا از دوباره‌کاری جلوگیری شده و چرخه نوآوری تسریع یابد</td></tr>
+        </tbody>
+    </table>
+    <div class="example-box">
+        <i class="fas fa-city"></i> <strong>مثال موفق (مدل بارسلونا):</strong> استارتاپ‌ها نمونه اولیه خود را در کمتر از ۲۴ ساعت و با هزینه ناچیز (حدود ۱۵۰ یورو) در این فضاها می‌سازند. پس از تست موفق، تولید انبوه به کارخانه‌های سنتی در شعاع ۵۰ کیلومتری سپرده می‌شود و مانع ورشکستگی در مرحله پرهزینه ساخت نمونه اولیه می‌شود.
     </div>
 
     <!-- سوال 10 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۰</span> نرخ بازده داخلی (IRR) چه رابطه‌ای با نرخ تنزیل دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> IRR نرخ تنزیلی است که NPV را برابر صفر می‌کند. اگر IRR از نرخ هزینهٔ سرمایه (نرخ تنزیل) بیشتر باشد، پروژه قابل قبول است.
-        </div>
-    </div>
+    <h3>۱۰- طبقه‌بندی ۴ گانه در حوزه استارتاپ‌ها را توضیح دهید؟</h3>
+    <p>طبقه‌بندی ۴ گانه به <strong>مدل‌های تأمین مالی و حمایت از استارتاپ‌ها</strong> بر اساس زمان ورود، نوع مشارکت و ساختار مالکیت اشاره دارد:</p>
+    <table>
+        <thead><tr><th>مدل مالی</th><th>زمان ورود به استارتاپ</th><th>هدف استراتژیک</th><th>نوع مشارکت عملیاتی</th><th>ساختار مالکیت (سهام)</th></tr></thead>
+        <tbody>
+            <tr><td><strong>مرکز رشد (انکوباتور)</strong></td><td>مرحله صفر (پیش از ثبت رسمی - ایده خام)</td><td>تبدیل ایده به مدل کسب‌وکار و افزایش نرخ بقای اولیه</td><td>منتورینگ پایه، ارائه فضا و زیرساخت فیزیکی مشترک</td><td><strong>بدون دریافت سهام (Equity-free)</strong></td></tr>
+            <tr><td><strong>شتاب‌دهنده (Accelerator)</strong></td><td>پس از ساخت نمونه اولیه (MVP)</td><td>رشد سریع در دوره فشرده (۳ تا ۶ ماهه) و شبکه‌سازی</td><td>فرامنتورینگ، نظارت هفتگی/ماهانه، مداخله مداوم در جزئیات</td><td>دریافت درصد مشخص و محدود از سهام</td></tr>
+            <tr><td><strong>سرمایه‌گذاری خطرپذیر (VC)</strong></td><td>مرحله تثبیت و بلوغ (از چرخه Seed تا خروج نهایی)</td><td>دستیابی به تناسب محصول با بازار (PMF)، مقیاس‌پذیری و توسعه بازار</td><td>تمرکز بر مدیریت کلان، اعمال کنترل از طریق کسب کرسی در هیئت مدیره</td><td>دریافت سهم قابل‌ملاحظه و مدیریتی از شرکت</td></tr>
+            <tr><td><strong>استودیوی استارتاپ (Venture Builder)</strong></td><td>مرحله پیش از ایده (نقطه صفر مطلق)</td><td>تکامل مدل‌های حمایتی سنتی و خلق استارتاپ از درون خود</td><td>مشارکت ۱۰۰٪، ایفای نقش به عنوان بنیان‌گذار عملیاتی و تأمین کامل تیم</td><td>مالکیت بخش اعظم سهام (به دلیل خلق و اجرا از صفر)</td></tr>
+        </tbody>
+    </table>
 
     <hr>
 
-    <!-- ========== بخش دوم ========== -->
-    <h2><i class="fas fa-chart-line"></i> بخش دوم: مطالعات بازار و بازاریابی (سوالات ۱۱ تا ۲۵)</h2>
+    <!-- =============== بخش دوم =============== -->
+    <h2>📁 بخش دوم: پاسخ به سوالات فایل‌های الحاقی (تجربه گرجستان - کتاب اقتصاد در میدان عمل)</h2>
 
-    <!-- سوال 11 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۱</span> مراحل انجام مطالعهٔ بازار را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>تعریف مسئله و اهداف</li>
-                <li>طراحی تحقیق (کمی/کیفی)</li>
-                <li>گردآوری داده‌ها (اولیه و ثانویه)</li>
-                <li>تحلیل داده‌ها</li>
-                <li>برآورد تقاضا و اندازه بازار</li>
-                <li>ارائهٔ گزارش</li>
-            </ol>
-        </div>
-    </div>
+    <h3>📄 سوالات فایل 1</h3>
 
-    <!-- سوال 12 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۲</span> تفاوت داده‌های اولیه و ثانویه در تحقیقات بازار چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> داده‌های اولیه مستقیماً از طریق پرسشنامه و مصاحبه از جامعهٔ هدف جمع‌آوری می‌شوند. داده‌های ثانویه از منابع موجود مانند آمار دولتی و گزارش‌های صنعتی استخراج می‌شوند.
-        </div>
-    </div>
+    <h4>سوال ۱: اوضاع اقتصادی و اداری گرجستان در سال ۲۰۰۴ چگونه بود و رویکرد «اقتصاد در میدان عمل» چه ویژگی‌هایی داشت؟</h4>
+    <ul>
+        <li><strong>اوضاع:</strong> خزانه خالی، حقوق ۱۰ ماه عقب افتاده، قطعی برق و فساد گسترده.</li>
+        <li><strong>ویژگی‌های رویکرد:</strong> عمل‌گرایی (حل مسئله به جای نظریه)، انفجار بزرگ (اصلاح هم‌زمان) و یادگیری تطبیقی (اقدام، اشتباه و اصلاح سریع).</li>
+    </ul>
 
-    <!-- سوال 13 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۳</span> بخش‌بندی بازار چیست و چه مزایایی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تقسیم بازار کل به گروه‌های کوچکتر با نیازها یا ویژگی‌های مشابه.<br>
-            <strong>مزایا:</strong> هدفمندتر شدن بازاریابی، کاهش هزینه‌ها، طراحی محصول متناسب با هر بخش و افزایش رضایت مشتری.
-        </div>
-    </div>
+    <h4>سوال ۲: دولت گرجستان برای مبارزه با فساد و حل بحران برق چه راهکارهایی به کار گرفت؟</h4>
+    <ul>
+        <li><strong>مبارزه با فساد:</strong> افزایش حقوق (هویج) و مجازات سخت (چماق)، ساده‌سازی قوانین (کاهش مجوزها و مالیات‌ها).</li>
+        <li><strong>حل بحران برق:</strong> متمرکز کردن پاسخ‌گویی در وزارت انرژی و قطع برق استراتژیک برای پایان دادن به استثناها.</li>
+    </ul>
 
-    <!-- سوال 14 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۴</span> انواع بخش‌بندی بازار را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>جغرافیایی (منطقه، آب‌وهوا)</li>
-                <li>جمعیت‌شناختی (سن، جنسیت، درآمد)</li>
-                <li>روان‌شناختی (سبک زندگی، شخصیت)</li>
-                <li>رفتاری (وفاداری، میزان مصرف)</li>
-            </ol>
-        </div>
-    </div>
+    <h4>سوال ۳: واکنش به بحران ۲۰۰۹ چه تفاوتی با ریاضت اقتصادی داشت؟ دلیل شکست در ۲۰۱۲ و درس آن چیست؟</h4>
+    <ul>
+        <li><strong>تفاوت با ریاضت:</strong> برعکس توصیه‌ها، مالیات کم کرد و هزینه‌های زیرساختی را افزایش داد تا اعتماد بسازد.</li>
+        <li><strong>دلیل شکست ۲۰۱۲:</strong> توقف اصلاحات و ناقص ماندن نظام قضایی.</li>
+        <li><strong>درس:</strong> اصلاحات باید مستمر باشند، مخصوصاً در حوزه عدالت.</li>
+    </ul>
 
-    <!-- سوال 15 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۵</span> موقعیتیابی (Positioning) در بازاریابی به چه معناست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ایجاد یک تصویر ذهنی مشخص و مطلوب از برند یا محصول در ذهن مشتریان هدف، نسبت به رقبا. این کار از طریق ترکیب عناصر آمیختهٔ بازاریابی انجام می‌شود.
-        </div>
-    </div>
+    <h3>📄 سوالات فایل 2</h3>
 
-    <!-- سوال 16 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۶</span> آمیختهٔ بازاریابی (۴P) را توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ul>
-                <li><strong>Product:</strong> ویژگی‌ها، کیفیت، بسته‌بندی</li>
-                <li><strong>Price:</strong> استراتژی قیمت‌گذاری و تخفیف‌ها</li>
-                <li><strong>Place:</strong> کانال‌های توزیع و پوشش جغرافیایی</li>
-                <li><strong>Promotion:</strong> تبلیغات، روابط عمومی، فروش شخصی</li>
-            </ul>
-        </div>
-    </div>
+    <h4>سوال ۱: ویژگی‌های اصلی یک «قطب اقتصادی» (Hub Economy) از نظر نویسنده چیست؟</h4>
+    <table>
+        <thead><tr><th>شماره</th><th>ویژگی</th><th>توضیح</th></tr></thead>
+        <tbody>
+            <tr><td>۱</td><td><strong>موقعیت دروازه‌ای</strong></td><td>موقعیت جغرافیایی که کشور را به پل ارتباطی با سایر کشورها تبدیل کند</td></tr>
+            <tr><td>۲</td><td><strong>اقتصاد باز</strong></td><td>اجازه تجارت آزاد با اکثر کشورهای منطقه</td></tr>
+            <tr><td>۳</td><td><strong>زیرساخت توسعه‌یافته</strong></td><td>داشتن شبکه حمل‌ونقل و لجستیک قوی</td></tr>
+            <tr><td>۴</td><td><strong>فساد پایین</strong></td><td>ایجاد امنیت برای سرمایه‌گذاری</td></tr>
+            <tr><td>۵</td><td><strong>محیط جذاب تجاری</strong></td><td>داشتن قوانین ساده و مالیات‌های اندک</td></tr>
+        </tbody>
+    </table>
 
-    <!-- سوال 17 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۷</span> چرخهٔ عمر محصول شامل چه مراحلی است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>معرفی (Introduction)</li>
-                <li>رشد (Growth)</li>
-                <li>بلوغ (Maturity)</li>
-                <li>افول (Decline)</li>
-            </ol>
-        </div>
-    </div>
+    <h4>سوال ۲: قانون «سکوت نشانه رضایت است» را توضیح دهید و بگویید چه تأثیری بر بروکراسی داشت؟</h4>
+    <p>بر اساس این قانون، سقف زمانی مشخصی (مثلاً ۳۰ روز برای پروانه‌ها) برای پاسخ‌گویی دولت تعیین شد. اگر دستگاه دولتی در این مهلت پاسخ نمی‌داد، درخواست به‌صورت خودکار <strong>تأییدشده</strong> تلقی می‌شد.</p>
+    <p>این قانون «قدرت چانه‌زنی» بروکرات‌ها را برای دریافت رشوه در ازای تسریع کار از بین برد و آن‌ها را مجبور کرد برای عقب نماندن از مهلت قانونی، فرآیندها را ساده‌سازی کنند.</p>
 
-    <!-- سوال 18 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۸</span> تحلیل رقبا شامل چه ابعادی می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> شناسایی رقبای مستقیم و غیرمستقیم، تحلیل سهم بازار، نقاط قوت و ضعف، استراتژی قیمت‌گذاری، کانال‌های توزیع و کیفیت محصول آنها.
-        </div>
-    </div>
+    <h4>سوال ۳: مفهوم «الگوبرداری» (Piggybacking) در بخش دارو چگونه اجرا شد و چه نتایجی داشت؟</h4>
+    <p>دولت گرجستان تصمیم گرفت به جای اختراع دوباره چرخ، به استانداردهای کشورهای پیشرفته اعتماد کند. طبق این سیاست، اگر دارویی تأییدیه سازمان‌های معتبر جهانی (اتحادیه اروپا، آمریکا یا ژاپن) را داشت، به‌صورت خودکار در گرجستان نیز تأییدشده محسوب می‌شد.</p>
+    <p><strong>نتایج:</strong> شکستن انحصار، افزایش <strong>۹۴ درصدی</strong> داروهای ثبت شده و کاهش <strong>۳۰ درصدی</strong> قیمت دارو در سال اول اجرا.</p>
 
-    <!-- سوال 19 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۹</span> پنج روش اصلی قیمت‌گذاری را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>بر اساس هزینه (Cost-Plus)</li>
-                <li>بر اساس ارزش درک‌شده (Value-Based)</li>
-                <li>رقابتی (Competitive)</li>
-                <li>نفوذی (Penetration)</li>
-                <li>اسکیمینگ (قیمت بالا در ابتدا)</li>
-            </ol>
-        </div>
-    </div>
+    <h3>📄 سوالات فایل 3</h3>
 
-    <!-- سوال 20 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۰</span> کانال توزیع چیست و انواع آن را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مسیری که محصول از تولیدکننده به مصرف‌کننده می‌رسد.<br>
-            <strong>انواع:</strong>
-            <ul>
-                <li>مستقیم (تولیدکننده → مصرف‌کننده)</li>
-                <li>یک‌سطحی (تولیدکننده → خرده‌فروش → مصرف‌کننده)</li>
-                <li>دو‌سطحی (تولیدکننده → عمده‌فروش → خرده‌فروش → مصرف‌کننده)</li>
-            </ul>
-        </div>
-    </div>
+    <h4>سوال ۱: مدل مالیاتی استونی که در گرجستان نیز پذیرفته شد، چه ویژگی بارزی دارد؟</h4>
+    <p>در این مدل، سود توزیع نشده (سودی که مجدداً در کسب‌وکار سرمایه‌گذاری می‌شود) معاف از مالیات است و مالیات تنها زمانی اخذ می‌شود که سود به صورت سود سهام پرداخت گردد.</p>
 
-    <!-- سوال 21 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۱</span> چرا وفاداری مشتری برای کسب‌وکارهای نوپا حیاتی است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> جذب مشتری جدید ۵ تا ۷ برابر هزینه‌برتر از حفظ مشتری موجود است. مشتریان وفادار درآمد پایدار و بازاریابی دهان‌به‌دهان مثبت ایجاد می‌کنند.
-        </div>
-    </div>
+    <h4>سوال ۲: طرح «قرعه‌کشی رسیدها» با چه هدفی اجرا شد و چه مکانیزمی داشت؟</h4>
+    <p>با هدف ترغیب خریداران به مطالبه رسید نقدی اجرا شد. این کار فروشندگان را مجبور می‌کرد درآمدهای خود را به اداره مالیات گزارش دهند تا مشتریان شانس برنده شدن جایزه نقدی داشته باشند.</p>
 
-    <!-- سوال 22 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۲</span> برندینگ را تعریف کرده و سه مزیت آن را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> برندینگ فرایند ایجاد هویت منحصربه‌فرد برای محصول یا شرکت است.<br>
-            <strong>مزایا:</strong>
-            <ol>
-                <li>تمایز از رقبا</li>
-                <li>افزایش اعتماد و وفاداری</li>
-                <li>امکان قیمت‌گذاری بالاتر</li>
-            </ol>
-        </div>
-    </div>
+    <h4>سوال ۳: اصلاحات گمرکی چگونه به تحقق مفهوم «قطبیت اقتصادی» در گرجستان کمک کرد؟</h4>
+    <p>با کاهش تعرفه‌ها (صفر کردن تعرفه ۸۰٪ کالاها) و ساده‌سازی ترخیص، گرجستان به مرکز ترانزیت و تجارت منطقه‌ای، به‌ویژه در بازار خودروهای دست دوم تبدیل شد.</p>
 
-    <!-- سوال 23 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۳</span> تفاوت بازاریابی سنتی و دیجیتال چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> بازاریابی سنتی شامل رسانه‌های چاپی، تلویزیون و رادیوست. بازاریابی دیجیتال از اینترنت، شبکه‌های اجتماعی و ایمیل استفاده می‌کند که قابل اندازه‌گیری، هدفمندتر و کم‌هزینه‌تر است.
-        </div>
-    </div>
+    <h3>📄 سوالات فایل 4</h3>
 
-    <!-- سوال 24 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۴</span> ماتریس BCG چه کاربردی در تحلیل سبد محصولات دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> محصولات بر اساس دو بعد «سهم نسبی بازار» و «نرخ رشد بازار» به چهار دسته تقسیم می‌شوند:
-            <ul>
-                <li><strong>ستاره (Star):</strong> سرمایه‌گذاری</li>
-                <li><strong>گاو شیرده (Cash Cow):</strong> برداشت سود</li>
-                <li><strong>علامت سؤال (Question Mark):</strong> تصمیم‌گیری</li>
-                <li><strong>سگ (Dog):</strong> خروج</li>
-            </ul>
-        </div>
-    </div>
+    <h4>سوال ۱: دلیل اصلی خطر ورشکستگی گرجستان در اوایل دهه ۲۰۰۰ چه بود و چرا یارانه‌های اجتماعی در آن زمان به هدف خود نمی‌رسیدند؟</h4>
+    <p>وجود تعداد زیادی یارانه و کمک‌های دولتی غیرهدفمند (برق، گاز، حمل‌ونقل و...) که بیشتر برای جلب رأی در انتخابات ایجاد شده بودند. این کمک‌ها به دلیل فساد گسترده و ساختار ناکارآمد، به نیازمندان واقعی نمی‌رسید؛ افراد غیرنیازمند از آن بهره می‌بردند اما مستمری نیازمندان واقعی (مانند سالمندان) بسیار ناچیز و همراه با تأخیر بود.</p>
 
-    <!-- سوال 25 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۵</span> پیش‌بینی فروش در طرح کسب‌وکار چگونه انجام می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> با ترکیب روش‌های کمی (روندهای تاریخی، رگرسیون) و کیفی (نظرات کارشناسان) و در سه سناریوی خوش‌بینانه، محتمل و بدبینانه ارائه می‌شود.
-        </div>
-    </div>
+    <h4>سوال ۲: دو مورد از مصادیق فساد و سوءاستفاده از نظام رفاهی قبلی گرجستان را نام ببرید؟</h4>
+    <ul>
+        <li>پرداخت رشوه برای دریافت مدارک جعلی معلولیت</li>
+        <li>دریافت مستمری برای اعضای فوت‌شده خانواده</li>
+        <li>استفاده شرکت‌ها و تاجران از نام افراد معلول برای فرار از پرداخت عوارض گمرکی (مانند واردات سیگار)</li>
+    </ul>
 
-    <hr>
+    <h4>سوال ۳: چرا دولت گرجستان در سیستم امتیازدهی (آزمون وسع) به جای «درآمد»، معیارهای دیگری مانند دارایی‌ها و هزینه‌های زندگی را ملاک قرار داد؟ این معیارها چه بودند؟</h4>
+    <p>چون بسیاری از مردم در اقتصاد غیررسمی فعالیت داشتند و درآمد واقعی آن‌ها مشخص نبود. به همین دلیل معیارهایی نظیر زمین، خانه، خودرو، وسایل زندگی، میزان هزینه‌های آب، برق، گاز، اجاره‌خانه و تعداد اعضای خانواده بررسی می‌شد.</p>
 
-    <!-- ========== بخش سوم ========== -->
-    <h2><i class="fas fa-cogs"></i> بخش سوم: مطالعات فنی و عملیاتی (سوالات ۲۶ تا ۳۵)</h2>
+    <h4>سوال ۴: منطق دولت گرجستان برای «حذف یارانه‌های غیرهدفمند و جایگزینی آن با پرداخت نقدی مستقیم» چه بود؟ با ذکر یک مثال توضیح دهید.</h4>
+    <table>
+        <thead><tr><th>منطق</th><th>توضیح</th></tr></thead>
+        <tbody>
+            <tr><td><strong>منطق اول</strong></td><td>هر خانواده بهتر از دولت اولویت‌های خود (غذا، دارو، قبض و...) را می‌داند</td></tr>
+            <tr><td><strong>منطق دوم</strong></td><td>یارانه‌های غیرنقدی (مثل یارانه بنزین) بیشتر به نفع ثروتمندان است چون مصرف بالاتری دارند، اما پرداخت نقدی مستقیماً به دست فقرا می‌رسد</td></tr>
+        </tbody>
+    </table>
 
-    <!-- سوال 26 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۶</span> مطالعهٔ فنی در امکان‌سنجی شامل چه مواردی است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>تعیین ظرفیت تولید</li>
-                <li>انتخاب فناوری و ماشین‌آلات</li>
-                <li>برآورد مواد اولیه</li>
-                <li>طراحی فرایند تولید</li>
-                <li>جانمایی محل کسب‌وکار</li>
-                <li>برآورد نیروی انسانی</li>
-            </ol>
-        </div>
-    </div>
+    <h4>سوال ۵: بر اساس گزارش بانک جهانی، اجرای این اصلاحات از سال ۲۰۰۶ چه نتایجی در پی داشت و پیام اصلی این تجربه اقتصادی چیست؟</h4>
+    <p><strong>نتایج:</strong></p>
+    <ul>
+        <li>نرخ فقر از ۲۱ درصد در سال ۲۰۱۰ به کمتر از ۱۵ درصد در سال ۲۰۱۲ رسید</li>
+        <li>فقر مطلق از ۷ درصد به ۴ درصد کاهش یافت</li>
+    </ul>
+    <p><strong>پیام اصلی:</strong> دولت‌ها باید به جای توزیع همگانی و غیرهدفمند یارانه‌ها، نیازمندان واقعی را شناسایی کرده و منابع محدود خود را به صورت نقدی و هدفمند به آن‌ها اختصاص دهند.</p>
 
-    <!-- سوال 27 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۷</span> ظرفیت اسمی و واقعی تولید را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> ظرفیت اسمی حداکثر خروجی در شرایط ایده‌آل است، اما ظرفیت واقعی با در نظر گرفتن توقف‌ها، خرابی‌ها و نگهداری، معمولاً کمتر از آن است.
-        </div>
-    </div>
 
-    <!-- سوال 28 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۸</span> عوامل مؤثر در انتخاب فناوری مناسب را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هزینهٔ خرید و نگهداری، سطح دانش فنی نیروی کار، در دسترس بودن قطعات یدکی، سازگاری با محیط‌زیست و انعطاف‌پذیری در برابر تغییرات.
-        </div>
-    </div>
-
-    <!-- سوال 29 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۹</span> نمودار جریان فرایند چه کاربردی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مراحل تولید را به‌صورت گرافیکی نشان می‌دهد و به شناسایی گلوگاه‌ها، کاهش اتلاف و بهبود بهره‌وری کمک می‌کند.
-        </div>
-    </div>
-
-    <!-- سوال 30 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۰</span> عوامل مؤثر در مکان‌گزینی کسب‌وکار را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نزدیکی به مواد اولیه، دسترسی به بازار مصرف، هزینهٔ زمین، دسترسی به نیروی کار ماهر، زیرساخت‌های حمل‌ونقل و قوانین محلی.
-        </div>
-    </div>
-
-    <!-- سوال 31 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۱</span> تولید ناب (Lean Production) چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> رویکردی که بر حذف هرگونه اتلاف (زمان، مواد، حرکت و موجودی) در فرایند تولید تأکید دارد و هدف آن افزایش ارزش برای مشتری با کاهش هزینه‌هاست.
-        </div>
-    </div>
-
-    <!-- سوال 32 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۲</span> تفاوت مدیریت کیفیت جامع (TQM) با کنترل کیفیت آماری چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> TQM یک فلسفهٔ مدیریتی برای بهبود مستمر با مشارکت همهٔ کارکنان است، اما کنترل کیفیت آماری ابزاری فنی برای نمونه‌گیری و اندازه‌گیری انحرافات از استاندارد است.
-        </div>
-    </div>
-
-    <!-- سوال 33 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۳</span> چرا برآورد دقیق نیروی انسانی در طرح کسب‌وکار اهمیت دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هزینهٔ نیروی انسانی سهم عمد‌ای از هزینه‌های جاری را تشکیل می‌دهد. برآورد اشتباه باعث کمبود یا مازاد نیرو، افزایش هزینه‌ها و کاهش بهره‌وری می‌شود.
-        </div>
-    </div>
-
-    <!-- سوال 34 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۴</span> تفاوت تولید سفارشی و تولید انبوه چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> در تولید سفارشی، محصول بر اساس نیاز خاص هر مشتری ساخته می‌شود (هزینه بالا، زمان طولانی). در تولید انبوه، محصولات یکسان در حجم بالا تولید می‌شوند (هزینه هر واحد پایین، سرعت بالا).
-        </div>
-    </div>
-
-    <!-- سوال 35 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۵</span> مدیریت زنجیرهٔ تأمین (SCM) چه نقشی در امکان‌سنجی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> به تأمین مواد اولیه، مدیریت موجودی، حمل‌ونقل و توزیع محصولات می‌پردازد. ارزیابی هزینه‌ها و ریسک‌های زنجیرهٔ تأمین برای تضمین پایداری پروژه ضروری است.
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- ========== بخش چهارم ========== -->
-    <h2><i class="fas fa-coins"></i> بخش چهارم: مطالعات مالی و اقتصادی (سوالات ۳۶ تا ۴۵)</h2>
-
-    <!-- سوال 36 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۶</span> هدف از انجام مطالعات مالی در امکان‌سنجی چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تعیین توجیه‌پذیری مالی پروژه از طریق برآورد هزینه‌ها، درآمدها، جریان‌های نقدی و شاخص‌هایی مثل NPV، IRR و دورهٔ بازگشت سرمایه.
-        </div>
-    </div>
-
-    <!-- سوال 37 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۷</span> هزینه‌های سرمایه‌ای (Capital Costs) شامل چه مواردی هستند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> خرید زمین، ساختمان، ماشین‌آلات، تجهیزات، نرم‌افزارهای اساسی و هزینه‌های قبل از بهره‌برداری (مطالعات و مجوزها).
-        </div>
-    </div>
-
-    <!-- سوال 38 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۸</span> تفاوت صورت سود و زیان با صورت جریان وجوه نقد چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> صورت سود و زیان درآمد و هزینه‌ها را در یک دوره نشان می‌دهد (بدون توجه به زمان دریافت یا پرداخت نقدی)، اما صورت جریان وجوه نقد، ورود و خروج واقعی پول را ثبت می‌کند.
-        </div>
-    </div>
-
-    <!-- سوال 39 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۹</span> ترازنامه چه اطلاعاتی را ارائه می‌دهد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> وضعیت مالی کسب‌وکار را در یک لحظهٔ خاص نشان می‌دهد: دارایی‌ها، بدهی‌ها و حقوق صاحبان سهام.
-        </div>
-    </div>
-
-    <!-- سوال 40 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۰</span> چرا استهلاک در پیش‌بینی‌های مالی اهمیت دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> استهلاک یک هزینهٔ غیرنقدی است که ارزش دارایی‌های ثابت را کاهش می‌دهد. باعث کاهش سود مشمول مالیات می‌شود و در محاسبهٔ جریان نقدی عملیاتی باید به آن توجه کرد.
-        </div>
-    </div>
-
-    <!-- سوال 41 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۱</span> سرمایه در گردش چیست و چگونه محاسبه می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> سرمایه در گردش = دارایی‌های جاری – بدهی‌های جاری. نشان‌دهندهٔ توانایی کسب‌وکار در تأمین هزینه‌های روزمره است.
-        </div>
-    </div>
-
-    <!-- سوال 42 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۲</span> تفاوت تحلیل حساسیت و تحلیل سناریو در ارزیابی ریسک مالی چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> در تحلیل حساسیت، تأثیر تغییر یک متغیر (مثلاً قیمت) بر NPV بررسی می‌شود. در تحلیل سناریو، ترکیبی از تغییرات چندین متغیر همزمان در سناریوهای مختلف (بدبینانه، محتمل، خوش‌بینانه) ارزیابی می‌گردد.
-        </div>
-    </div>
-
-    <!-- سوال 43 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۳</span> نسبت جاری (Current Ratio) چه چیزی را نشان می‌دهد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نسبت جاری = دارایی‌های جاری ÷ بدهی‌های جاری. توانایی شرکت در پرداخت بدهی‌های کوتاه‌مدت را نشان می‌دهد. نسبت بالای ۱ معمولاً مطلوب است.
-        </div>
-    </div>
-
-    <!-- سوال 44 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۴</span> تأمین مالی از طریق بدهی و تأمین مالی از طریق حقوق صاحبان سهام را مقایسه کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ul>
-                <li><strong>بدهی:</strong> وام با بازپرداخت الزامی و هزینهٔ بهره، ولی مالکیت تغییر نمی‌کند.</li>
-                <li><strong>حقوق صاحبان سهام:</strong> فروش سهام، بازپرداخت ندارد، اما مالکیت و کنترل تقسیم می‌شود.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- سوال 45 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۵</span> چگونه از طریق تحلیل نقطهٔ سربه‌سر، میزان فروش هدف را تعیین می‌کنیم؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> با استفاده از فرمول: (هزینه‌های ثابت + سود هدف) ÷ (قیمت فروش – هزینه متغیر هر واحد) = تعداد واحد مورد نیاز برای رسیدن به سود هدف.
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- ========== بخش پنجم ========== -->
-    <h2><i class="fas fa-pen-fancy"></i> بخش پنجم: تدوین و نگارش طرح کسب‌وکار (سوالات ۴۶ تا ۵۰)</h2>
-
-    <!-- سوال 46 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۶</span> ساختار استاندارد یک طرح کسب‌وکار را به ترتیب بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>خلاصهٔ اجرایی</li>
-                <li>شرح شرکت و محصولات</li>
-                <li>تحلیل بازار و بازاریابی</li>
-                <li>مطالعهٔ فنی و عملیاتی</li>
-                <li>ساختار سازمانی و مدیریت</li>
-                <li>برنامهٔ زمانی اجرا</li>
-                <li>پیش‌بینی‌های مالی</li>
-                <li>تحلیل ریسک</li>
-                <li>ضمائم</li>
-            </ol>
-        </div>
-    </div>
-
-    <!-- سوال 47 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۷</span> خلاصهٔ اجرایی چه اهمیتی دارد و شامل چه مواردی است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> اولین بخشی است که خواننده می‌خواند و تصمیم‌گیری نهایی بر اساس آن انجام می‌شود.<br>
-            <strong>شامل:</strong> چشمانداز، محصول، فرصت بازار، مزیت رقابتی، پیش‌بینی مالی مختصر و میزان سرمایهٔ مورد نیاز.
-        </div>
-    </div>
-
-    <!-- سوال 48 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۸</span> در بخش «ساختار سازمانی و مدیریتی»، چه عناصری مهم هستند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نمودار سازمانی، معرفی تیم مدیریتی با سوابق، شرح وظایف کلیدی، تعداد و نوع پرسنل و برنامهٔ جذب و آموزش نیروی انسانی.
-        </div>
-    </div>
-
-    <!-- سوال 49 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۹</span> تحلیل ریسک در طرح کسب‌وکار چگونه انجام می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> شامل شناسایی ریسک‌های اصلی (بازار، فنی، مالی، حقوقی)، ارزیابی احتمال وقوع و شدت تأثیر، و ارائهٔ راهکارهای کاهش ریسک (تنوع‌بخشی، بیمه، قراردادهای بلندمدت و ذخیرهٔ مالی).
-        </div>
-    </div>
-
-    <!-- سوال 50 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۵۰</span> رایج‌ترین اشتباهات در نگارش طرح کسب‌وکار کدامند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ul>
-                <li>بزرگ‌نمایی بیش از حد بازار و فروش</li>
-                <li>نادیده گرفتن رقبا</li>
-                <li>تخمین پایین هزینه‌ها و بالا بردن درآمدها</li>
-                <li>عدم ارائهٔ تحلیل ریسک</li>
-                <li>نگارش طولانی و غیرمتمرکز</li>
-                <li>عدم انطباق اعداد مالی با همدیگر</li>
-            </ul>
-        </div>
-    </div>
-<hr>
-
-    <div class="note-footer">
-        <i class="fas fa-check-circle"></i> این مجموعه ۵۰ سوال، مبانی اصلی درس امکان‌سنجی و تدوین طرح کسب‌وکار را پوشش می‌دهد. پیشنهاد می‌شود هر سوال را ابتدا خودتان پاسخ دهید و سپس با پاسخ‌های ارائه‌شده مقایسه کنید.
-    </div>
 </div> <!-- end container -->
 </body>
 </html>
