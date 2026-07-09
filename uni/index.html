@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ترم دوم</title>
+    <title>برنامه امتحانات و منابع دروس کارآفرینی</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -73,7 +73,7 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1.8rem;
             margin-top: 0.5rem;
         }
@@ -99,7 +99,7 @@
         }
 
         .card-icon {
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             width: 60px;
             height: 60px;
             display: flex;
@@ -120,18 +120,63 @@
             font-size: 1.2rem;
             font-weight: 700;
             color: #0a2a3f;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.5rem;
         }
 
-        .card p {
-            font-size: 0.95rem;
+        .exam-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            font-size: 0.92rem;
             color: #3d5b6e;
             line-height: 1.7;
             flex: 1;
             margin-bottom: 0.8rem;
         }
 
-        .card .badge {
+        .exam-details .row {
+            display: flex;
+            align-items: baseline;
+            gap: 0.4rem;
+        }
+
+        .exam-details .label {
+            font-weight: 600;
+            color: #1a4a60;
+            min-width: 50px;
+        }
+
+        .exam-details .value {
+            color: #2a4a5e;
+        }
+
+        .exam-details .day {
+            color: #c44536;
+            font-weight: 600;
+        }
+
+        .exam-details .time {
+            color: #2a6a7a;
+            font-weight: 500;
+        }
+
+        .exam-details .lecturer {
+            color: #1a5a4a;
+            font-weight: 500;
+        }
+
+        .exam-details .score {
+            display: inline-block;
+            background: #e2edf5;
+            color: #1a4a60;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.1rem 0.8rem;
+            border-radius: 40px;
+            margin-right: 0.3rem;
+        }
+
+        .card .badge-link {
             display: inline-block;
             background: #e2edf5;
             color: #1a4a60;
@@ -178,6 +223,11 @@
         .card:nth-child(5) .card-icon { background: #dceee8; color: #2a7a6a; }
         .card:nth-child(6) .card-icon { background: #f5ece0; color: #b06a3a; }
 
+        .unknown {
+            color: #a08060;
+            font-style: italic;
+        }
+
         @media (max-width: 700px) {
             body {
                 padding: 1rem;
@@ -205,65 +255,106 @@
             .container {
                 padding: 1.2rem 0.8rem;
             }
+            .exam-details {
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-graduation-cap"></i> مرکز نمونه سوالات دروس کارآفرینی و کسب‌وکار</h1>
-            <span class="subtitle"><i class="fas fa-book-open"></i> ۶ مجموعه کامل</span>
+            <h1><i class="fas fa-calendar-alt"></i> برنامه امتحانات پایان ترم</h1>
+            <p>دروس کارآفرینی و کسب‌وکار – به همراه لینک منابع نمونه سوالات</p>
+            <span class="subtitle"><i class="fas fa-clock"></i> تیر ماه ۱۴۰۴</span>
         </div>
 
         <div class="grid">
-            <!-- 1. mohit.html -->
+            <!-- 1. احکام و اخلاق -->
+            <a href="ahkam.html" class="card">
+                <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+                <h3>احکام و اخلاق کسب‌وکار</h3>
+                <div class="exam-details">
+                    <div class="row"><span class="label">روز:</span><span class="value day">شنبه</span></div>
+                    <div class="row"><span class="label">تاریخ:</span><span class="value">۲۰ تیر</span></div>
+                    <div class="row"><span class="label">ساعت:</span><span class="value time">۱۴:۰۰</span></div>
+                    <div class="row"><span class="label">استاد:</span><span class="value lecturer">آقای جبار باباشاهی</span></div>
+                    <div class="row"><span class="label">نمره:</span><span class="value"><span class="score">۲۰</span> پایان ترم</span></div>
+                </div>
+                <span class="badge-link"><i class="fas fa-arrow-left"></i> مشاهده نمونه سوالات</span>
+            </a>
+
+            <!-- 2. محیط کسب و کار -->
             <a href="mohit.html" class="card">
                 <div class="card-icon"><i class="fas fa-globe-asia"></i></div>
                 <h3>محیط کسب‌وکار و اکوسیستم کارآفرینی</h3>
-                <p>پاسخ به سوالات جزوه اصلی + تجربه گرجستان – مفاهیم PESTEL، نورث، بامول و نگاشت اکوسیستم</p>
-                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+                <div class="exam-details">
+                    <div class="row"><span class="label">روز:</span><span class="value day">یکشنبه</span></div>
+                    <div class="row"><span class="label">تاریخ:</span><span class="value">۲۱ تیر</span></div>
+                    <div class="row"><span class="label">ساعت:</span><span class="value time">۸:۳۰</span></div>
+                    <div class="row"><span class="label">استاد:</span><span class="value lecturer">آقای سید محمد حسینی</span></div>
+                    <div class="row"><span class="label">نمره:</span><span class="value"><span class="unknown">نامشخص</span></span></div>
+                </div>
+                <span class="badge-link"><i class="fas fa-arrow-left"></i> مشاهده نمونه سوالات</span>
             </a>
 
-            <!-- 2. forsat.html -->
-            <a href="forsat.html" class="card">
-                <div class="card-icon"><i class="fas fa-search"></i></div>
-                <h3>شناسایی فرصت و ایده‌پردازی</h3>
-                <p>۵۰ سوال از مبانی نظری، کشف فرصت، ابزار مسیریاب و نظریه شین و ونکاتارامان</p>
-                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
-            </a>
-
-            <!-- 3. emkan.html -->
+            <!-- 3. امکان سنجی -->
             <a href="emkan.html" class="card">
                 <div class="card-icon"><i class="fas fa-clipboard-check"></i></div>
                 <h3>امکان‌سنجی و تدوین طرح کسب‌وکار</h3>
-                <p>۵۰ سوال در ۵ بخش: مفاهیم پایه، بازار، فنی، مالی و نگارش طرح – به همراه فرمول‌ها</p>
-                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+                <div class="exam-details">
+                    <div class="row"><span class="label">روز:</span><span class="value day">سه‌شنبه</span></div>
+                    <div class="row"><span class="label">تاریخ:</span><span class="value">۲۳ تیر</span></div>
+                    <div class="row"><span class="label">ساعت:</span><span class="value time">۱۰:۳۰</span></div>
+                    <div class="row"><span class="label">استاد:</span><span class="value lecturer">آقای سعید توکلیان</span></div>
+                    <div class="row"><span class="label">نمره:</span><span class="value"><span class="unknown">نامشخص</span></span></div>
+                </div>
+                <span class="badge-link"><i class="fas fa-arrow-left"></i> مشاهده نمونه سوالات</span>
             </a>
 
-            <!-- 4. ahkam.html -->
-            <a href="ahkam.html" class="card">
-                <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
-                <h3>اخلاق و احکام کسب‌وکار</h3>
-                <p>۵۰ سوال از اخلاق، رقابت، بازار اسلامی، احتکار، قواعد فقهی و معاملات – با پاسخ‌نامه</p>
-                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
-            </a>
-
-            <!-- 5. fanavari.html -->
-            <a href="fanavari.html" class="card">
-                <div class="card-icon"><i class="fas fa-microchip"></i></div>
-                <h3>فناوری‌های نوظهور</h3>
-                <p>۵۰ سوال کلیدی از IT، EdTech، کشاورزی هوشمند، گردشگری، پزشکی و بازاریابی</p>
-                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
-            </a>
-
-            <!-- 6. nazar.html -->
+            <!-- 4. نظریه های کارآفرینی -->
             <a href="nazar.html" class="card">
                 <div class="card-icon"><i class="fas fa-brain"></i></div>
                 <h3>نظریه‌های کارآفرینی و نوآوری</h3>
-                <p>۵۰ سوال از مقالات کاردون، بندورا، دیماجیو – اشتیاق، خودکارآمدی و چیستی نظریه</p>
-                <span class="badge"><i class="fas fa-arrow-left"></i> مشاهده</span>
+                <div class="exam-details">
+                    <div class="row"><span class="label">روز:</span><span class="value day">شنبه</span></div>
+                    <div class="row"><span class="label">تاریخ:</span><span class="value">۲۷ تیر</span></div>
+                    <div class="row"><span class="label">ساعت:</span><span class="value time">۱۴:۰۰</span></div>
+                    <div class="row"><span class="label">استاد:</span><span class="value lecturer">خانم تهمینه احسانی‌فر</span></div>
+                    <div class="row"><span class="label">نمره:</span><span class="value"><span class="score">۱۰</span> پایان ترم</span></div>
+                </div>
+                <span class="badge-link"><i class="fas fa-arrow-left"></i> مشاهده نمونه سوالات</span>
+            </a>
+
+            <!-- 5. شناسایی فرصت ها -->
+            <a href="forsat.html" class="card">
+                <div class="card-icon"><i class="fas fa-search"></i></div>
+                <h3>شناسایی فرصت و ایده‌پردازی</h3>
+                <div class="exam-details">
+                    <div class="row"><span class="label">روز:</span><span class="value day">دوشنبه</span></div>
+                    <div class="row"><span class="label">تاریخ:</span><span class="value">۲۹ تیر</span></div>
+                    <div class="row"><span class="label">ساعت:</span><span class="value time">۸:۳۰</span></div>
+                    <div class="row"><span class="label">استاد:</span><span class="value lecturer">خانم نیلوفر سلاجقه</span></div>
+                    <div class="row"><span class="label">نمره:</span><span class="value"><span class="score">۱۰</span> پایان ترم</span></div>
+                </div>
+                <span class="badge-link"><i class="fas fa-arrow-left"></i> مشاهده نمونه سوالات</span>
+            </a>
+
+            <!-- 6. اثرات فناوری -->
+            <a href="fanavari.html" class="card">
+                <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                <h3>فناوری‌های نوظهور</h3>
+                <div class="exam-details">
+                    <div class="row"><span class="label">روز:</span><span class="value day">چهارشنبه</span></div>
+                    <div class="row"><span class="label">تاریخ:</span><span class="value">۳۱ تیر</span></div>
+                    <div class="row"><span class="label">ساعت:</span><span class="value time">۱۴:۰۰</span></div>
+                    <div class="row"><span class="label">استاد:</span><span class="value lecturer">خانم فائزه قمی</span></div>
+                    <div class="row"><span class="label">نمره:</span><span class="value"><span class="unknown">نامشخص</span></span></div>
+                </div>
+                <span class="badge-link"><i class="fas fa-arrow-left"></i> مشاهده نمونه سوالات</span>
             </a>
         </div>
+
     </div>
 </body>
 </html>
