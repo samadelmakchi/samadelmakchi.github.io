@@ -89,13 +89,96 @@
             display: flex;
             flex-direction: column;
             box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            position: relative;
         }
 
-        .card:hover {
+        .card:hover:not(.done) {
             transform: translateY(-6px);
             border-color: #b8cedd;
             box-shadow: 0 16px 32px -12px rgba(0, 50, 70, 0.12);
             background: #ffffff;
+        }
+
+        /* استایل کارت‌های تمام‌شده */
+        .card.done {
+            opacity: 0.6;
+            cursor: default;
+            background: #f5f7fa;
+            border-color: #d5dce3;
+            pointer-events: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card.done::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 8px,
+                rgba(200, 210, 220, 0.15) 8px,
+                rgba(200, 210, 220, 0.15) 16px
+            );
+            pointer-events: none;
+            border-radius: 28px;
+        }
+
+        .card.done .card-icon {
+            opacity: 0.5;
+            filter: grayscale(0.5);
+        }
+
+        .card.done .badge-link {
+            opacity: 0.4;
+        }
+
+        .card.done .exam-details .value {
+            color: #8a9aa8;
+        }
+
+        .card.done .exam-details .day {
+            color: #a08070;
+        }
+
+        .card.done .exam-details .lecturer {
+            color: #8a9aa8;
+        }
+
+        .card.done h3 {
+            color: #7a8a98;
+        }
+
+        /* نشان گذراندن */
+        .done-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: #2a7a6a;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.25rem 0.9rem;
+            border-radius: 40px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(42, 122, 106, 0.25);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .done-badge i {
+            font-size: 0.65rem;
+            color: #fff;
+        }
+
+        .card.done .done-badge {
+            background: #4a7a6a;
         }
 
         .card-icon {
@@ -112,7 +195,7 @@
             transition: 0.2s;
         }
 
-        .card:hover .card-icon {
+        .card:hover:not(.done) .card-icon {
             background: #d4e4ef;
         }
 
@@ -196,7 +279,7 @@
             transition: 0.2s;
         }
 
-        .card:hover .fa-arrow-left {
+        .card:hover:not(.done) .fa-arrow-left {
             opacity: 1;
             transform: translateX(-4px);
         }
@@ -246,6 +329,12 @@
             .card {
                 padding: 1.4rem 1.2rem;
             }
+            .done-badge {
+                top: 0.7rem;
+                left: 0.7rem;
+                font-size: 0.6rem;
+                padding: 0.2rem 0.7rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -270,8 +359,9 @@
         </div>
 
         <div class="grid">
-            <!-- 1. احکام و اخلاق -->
-            <a href="ahkam.html" class="card">
+            <!-- 1. احکام و اخلاق - تمام شده -->
+            <a href="ahkam.html" class="card done">
+                <span class="done-badge"><i class="fas fa-check-circle"></i> انجام شده</span>
                 <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
                 <h3>احکام و اخلاق کسب‌وکار</h3>
                 <div class="exam-details">
@@ -284,8 +374,9 @@
                 <span class="badge-link"><i class="fas fa-arrow-left"></i> مشاهده نمونه سوالات</span>
             </a>
 
-            <!-- 2. محیط کسب و کار -->
-            <a href="mohit.html" class="card">
+            <!-- 2. محیط کسب و کار - تمام شده -->
+            <a href="mohit.html" class="card done">
+                <span class="done-badge"><i class="fas fa-check-circle"></i> انجام شده</span>
                 <div class="card-icon"><i class="fas fa-globe-asia"></i></div>
                 <h3>محیط کسب‌وکار و اکوسیستم کارآفرینی</h3>
                 <div class="exam-details">
@@ -355,6 +446,13 @@
             </a>
         </div>
 
+        <div class="footer-note">
+            <i class="fas fa-check-circle"></i> با کلیک روی هر کارت، به نمونه سوالات تشریحی آن درس دسترسی خواهید داشت.
+            <span style="display:inline-block; margin-right:12px; opacity:0.6;">|</span>
+            <i class="fas fa-mobile-alt"></i> سازگار با موبایل و تبلت
+            <span style="display:inline-block; margin-right:12px; opacity:0.6;">|</span>
+            <i class="fas fa-check" style="color:#2a7a6a;"></i> کارت‌های با هاشور و نشان <strong>«انجام شده»</strong> امتحان آنها برگزار شده است.
+        </div>
     </div>
 </body>
 </html>
