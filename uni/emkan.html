@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>۵۰ سوال تشریحی - امکان‌سنجی و تدوین طرح کسب‌وکار</title>
+    <title>۱۰۰ سوال تشریحی - امکان‌سنجی و تدوین طرح کسب‌وکار</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -79,12 +79,12 @@
         }
 
         h2 {
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             background: #f2e8e5;
-            padding: 0.7rem 1.5rem;
+            padding: 0.6rem 1.3rem;
             border-radius: 60px 12px 12px 60px;
             border-right: 6px solid #c44536;
-            margin: 2.5rem 0 1.5rem 0;
+            margin: 2.2rem 0 1.2rem 0;
             color: #4d2c24;
         }
 
@@ -94,9 +94,9 @@
         }
 
         h3 {
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             color: #4d2c24;
-            margin-top: 1.6rem;
+            margin-top: 1.2rem;
             margin-bottom: 0.2rem;
             padding-right: 0.5rem;
             border-right: 4px solid #d97a6b;
@@ -125,9 +125,9 @@
 
         .question-block {
             background: #fcfaf9;
-            border-radius: 20px;
-            padding: 1.1rem 1.6rem;
-            margin: 1.2rem 0;
+            border-radius: 18px;
+            padding: 0.9rem 1.4rem;
+            margin: 0.9rem 0;
             border: 1px solid #e5d6d1;
             transition: 0.15s ease;
         }
@@ -141,18 +141,18 @@
             display: inline-block;
             background: #c44536;
             color: #fff;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
-            padding: 0.15rem 0.9rem;
+            padding: 0.1rem 0.8rem;
             border-radius: 30px;
-            margin-left: 0.6rem;
+            margin-left: 0.5rem;
         }
 
         .answer {
             background: #ffffff;
-            padding: 0.7rem 1.2rem;
-            border-radius: 16px;
-            margin-top: 0.4rem;
+            padding: 0.5rem 1rem;
+            border-radius: 14px;
+            margin-top: 0.3rem;
             border-right: 4px solid #d97a6b;
             box-shadow: 0 1px 4px rgba(0,0,0,0.02);
         }
@@ -167,10 +167,22 @@
         }
 
         hr {
-            margin: 2.8rem 0;
+            margin: 2.5rem 0;
             border: 0;
             height: 2px;
             background: linear-gradient(to left, #dccbc4, transparent);
+        }
+
+        .section-divider {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 1.5rem 0 0.5rem;
+        }
+        .section-divider span {
+            background: #dccbc4;
+            height: 2px;
+            flex: 1;
         }
 
         .note-footer {
@@ -193,16 +205,37 @@
             color: #c44536;
         }
 
-        .section-divider {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 2rem 0 0.5rem;
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            font-size: 0.92rem;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
         }
-        .section-divider span {
-            background: #dccbc4;
-            height: 2px;
-            flex: 1;
+
+        .summary-table th {
+            background: #6b3a2e;
+            color: #fff;
+            padding: 10px 12px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .summary-table td {
+            background: #fdfaf8;
+            padding: 9px 12px;
+            border-bottom: 1px solid #e8dbd5;
+            text-align: center;
+        }
+
+        .summary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .summary-table tr:hover td {
+            background: #f6efeb;
         }
 
         @media (max-width: 700px) {
@@ -221,7 +254,13 @@
                 padding: 0.5rem 1rem;
             }
             .question-block {
-                padding: 0.8rem 1rem;
+                padding: 0.7rem 1rem;
+            }
+            .summary-table {
+                font-size: 0.75rem;
+            }
+            .summary-table th, .summary-table td {
+                padding: 6px 6px;
             }
         }
 
@@ -236,7 +275,7 @@
                 padding: 1rem 0.6rem;
             }
             .question-block {
-                padding: 0.6rem 0.8rem;
+                padding: 0.5rem 0.7rem;
             }
         }
     </style>
@@ -246,30 +285,25 @@
 
     <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی</a>
 
-    <h1><i class="fas fa-clipboard-list"></i> ۵۰ سوال تشریحی</h1>
-    <div class="subtitle">درس امکان‌سنجی و تدوین طرح کسب‌وکار</div>
+    <h1><i class="fas fa-clipboard-list"></i> ۱۰۰ سوال تشریحی</h1>
+    <div class="subtitle">درس امکان‌سنجی و تدوین طرح کسب‌وکار (برگرفته از جزوه)</div>
 
     <!-- ========== بخش اول ========== -->
-    <h2><i class="fas fa-cubes"></i> بخش اول: سوالات برگرفته از جزوه (۴۰ سوال)</h2>
+    <h2><i class="fas fa-heartbeat"></i> بخش اول: مفاهیم پایه (Gain & Pain) - سوالات ۱ تا ۱۲</h2>
 
-    <!-- زیربخش مفاهیم پایه (Gain & Pain) -->
-    <h3 style="border-right-color: #c44536; background: #f5ece8; padding: 0.4rem 1rem; border-radius: 30px; display: inline-block; margin-top: 1rem;">
-        <i class="fas fa-heartbeat"></i> مفاهیم پایه (Gain & Pain) - سوالات ۱ تا ۵
-    </h3>
-
-    <!-- سوال 1 -->
+    <!-- 1 -->
     <div class="question-block">
         <h3><span class="q-badge">۱</span> تعریف Gain و Pain را به همراه مثال توضیح دهید.</h3>
         <div class="answer">
             <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
-            <strong>Pain (درد مشتری):</strong> مشکلات، سختی‌ها و نگرانی‌های مشتری. کارآفرین ابتدا باید مشکل مشتری را بفهمد، سپس محصول را طراحی کند.<br>
-            <strong>Gain (منفعت مشتری):</strong> نتیجه و ارزشی که مشتری انتظار دارد به دست آورد.<br>
-            <strong>نکته:</strong> کسب‌وکارهای موفق عاشق حل مشکل مشتری هستند، نه عاشق محصولشان.<br>
+            <strong>Pain (درد مشتری):</strong> مشکلات، سختی‌ها، نگرانی‌ها و رنج‌هایی که مشتری دارد. کارآفرین ابتدا باید بفهمد مشتری چه مشکلی دارد، سپس محصول را طراحی کند.<br>
+            <strong>Gain (منفعت مشتری):</strong> نتیجه، منفعت یا ارزشی که مشتری انتظار دارد به دست آورد.<br>
+            <strong>نکته:</strong> کسب‌وکارهای موفق عاشق محصولشان نیستند؛ عاشق حل مشکل مشتری هستند.<br>
             <strong>مثال:</strong> مردم دریل نمی‌خرند؛ سوراخ روی دیوار را می‌خرند.
         </div>
     </div>
 
-    <!-- سوال 2 -->
+    <!-- 2 -->
     <div class="question-block">
         <h3><span class="q-badge">۲</span> چرا بعضی محصولات با اینکه از نظر فنی عالی هستند، فروش نمی‌روند؟</h3>
         <div class="answer">
@@ -277,569 +311,917 @@
             <ol>
                 <li>مشکل مهمی از مشتری را حل نمی‌کنند.</li>
                 <li>منفعت ارزشمندی برای مشتری ایجاد نمی‌کنند.</li>
-                <li>گاهی کارآفرین باید نیاز پنهان مشتری را کشف کند.</li>
+                <li>گاهی کارآفرین باید نیاز پنهان مشتری را کشف کند، چون مشتری همیشه نمی‌داند چه می‌خواهد.</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 3 -->
+    <!-- 3 -->
     <div class="question-block">
-        <h3><span class="q-badge">۳</span> «مردم خود محصول را نمی‌خرند؛ نتیجه‌ای را می‌خرند که محصول برایشان ایجاد می‌کند.» توضیح دهید.</h3>
+        <h3><span class="q-badge">۳</span> «مردم خود محصول را نمی‌خرند؛ نتیجه‌ای را می‌خرند که محصول برایشان ایجاد می‌کند.» این جمله را با یک مثال توضیح دهید.</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مشتری به دنبال کارکرد و نتیجه محصول است، نه خود محصول. مردم آب نمی‌خرند؛ رفع تشنگی را می‌خرند. مردم خودرو نمی‌خرند؛ حمل‌ونقل و راحتی را می‌خرند.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> این جمله به این معناست که مشتری به دنبال کارکرد و نتیجه محصول است، نه خود محصول.<br>
+            <strong>مثال:</strong> مردم آب نمی‌خرند؛ رفع تشنگی را می‌خرند. مردم خودرو نمی‌خرند؛ حمل‌ونقل، راحتی و موقعیت اجتماعی را می‌خرند. مردم دریل نمی‌خرند؛ سوراخ روی دیوار را می‌خرند.
         </div>
     </div>
 
-    <!-- سوال 4 -->
+    <!-- 4 -->
     <div class="question-block">
-        <h3><span class="q-badge">۴</span> تفاوت بین «نیاز آشکار» و «نیاز پنهان» مشتری چیست؟</h3>
+        <h3><span class="q-badge">۴</span> تفاوت بین «نیاز آشکار» و «نیاز پنهان» مشتری را توضیح دهید.</h3>
         <div class="answer">
             <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
-            <strong>نیاز آشکار:</strong> نیازی که مشتری به آن آگاه است.<br>
-            <strong>نیاز پنهان:</strong> نیازی که مشتری به آن آگاه نیست. کارآفرین موفق نیازهای پنهان را کشف می‌کند.
+            <strong>نیاز آشکار:</strong> نیازی که خود مشتری به آن آگاه است و می‌تواند آن را بیان کند.<br>
+            <strong>نیاز پنهان:</strong> نیازی که مشتری به آن آگاه نیست یا نمی‌تواند به‌درستی بیان کند. کارآفرین موفق کسی است که نیازهای پنهان را کشف کرده و برای آنها راه‌حل ارائه دهد.<br>
+            <strong>مثال:</strong> قبل از اختراع گوشی‌های هوشمند، مشتریان نمی‌دانستند که به دستگاهی با این همه قابلیت نیاز دارند.
         </div>
     </div>
 
-    <!-- سوال 5 -->
+    <!-- 5 -->
     <div class="question-block">
         <h3><span class="q-badge">۵</span> عبارت «عاشق حل مشکل مشتری باشید، نه عاشق محصولتان» را تحلیل کنید.</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تمرکز کارآفرین باید بر مشکل مشتری باشد، نه محصول. موفقیت در گرو حل مشکل واقعی مشتری است.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> این عبارت تأکید دارد که تمرکز اصلی کارآفرین باید بر روی مشکل مشتری باشد، نه بر روی خود محصول. بسیاری از کارآفرینان به محصول خود علاقه‌مند می‌شوند و فراموش می‌کنند که محصول باید برای مشتری ارزش ایجاد کند. موفقیت یک کسب‌وکار در گرو این است که محصول بتواند مشکلی واقعی را حل کند.
         </div>
     </div>
 
-    <hr style="margin: 1.5rem 0;">
-
-    <!-- زیربخش کانال‌های فروش -->
-    <h3 style="border-right-color: #c44536; background: #f5ece8; padding: 0.4rem 1rem; border-radius: 30px; display: inline-block; margin-top: 0.5rem;">
-        <i class="fas fa-store"></i> کانال‌های فروش - سوالات ۶ تا ۱۶
-    </h3>
-
-    <!-- سوال 6 -->
+    <!-- 6 -->
     <div class="question-block">
-        <h3><span class="q-badge">۶</span> تعریف کانال فروش را بنویسید.</h3>
+        <h3><span class="q-badge">۶</span> آیا مشتری همیشه می‌داند چه می‌خواهد؟ توضیح دهید.</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش سازوکاری است که از طریق آن محصول یا خدمت به مشتری می‌رسد. اگر بهترین محصول را داشته باشیم اما راهی برای رساندن آن به مشتری نداشته باشیم، فروش اتفاق نمی‌افتد.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. گاهی کارآفرین باید نیاز پنهان مشتری را کشف کند. مشتری همیشه نمی‌داند چه می‌خواهد و کارآفرین موفق کسی است که نیازهای پنهان را شناسایی کرده و برای آنها راه‌حل ارائه دهد.
         </div>
     </div>
 
-    <!-- سوال 7 -->
+    <!-- 7 -->
     <div class="question-block">
-        <h3><span class="q-badge">۷</span> چرا بعضی شرکت‌ها محصول مشابه دارند، اما فروش یکی از دیگری بیشتر است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> به دلیل داشتن کانال‌های فروش مناسب که ارزش پیشنهادی را بهتر شناسانده و دسترسی مشتری را افزایش می‌دهد.
-        </div>
-    </div>
-
-    <!-- سوال 8 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۸</span> چهار نمونه از کانال‌های فروش را نام ببرید.</h3>
+        <h3><span class="q-badge">۷</span> تفاوت بین «محصول» و «نتیجه» را با مثال توضیح دهید.</h3>
         <div class="answer">
             <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>محصول:</strong> کالا یا خدمتی که ارائه می‌شود.<br>
+            <strong>نتیجه:</strong> اثری که محصول بر زندگی مشتری می‌گذارد.<br>
+            <strong>مثال:</strong> دریل یک محصول است، اما سوراخ روی دیوار نتیجه است. مردم نتیجه را می‌خرند، نه محصول را.
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸</span> چرا کسب‌وکارهای موفق عاشق حل مشکل مشتری هستند، نه عاشق محصولشان؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا مشتریان به دنبال حل مشکلات خود هستند، نه به دنبال خرید یک محصول خاص. اگر محصول نتواند مشکلی را حل کند، مشتری آن را نمی‌خرد. موفقیت کسب‌وکار در گرو حل مشکل واقعی مشتری است.
+        </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹</span> به نظر شما، اگر یک محصول از نظر فنی عالی باشد، آیا تضمینی برای فروش بالای آن وجود دارد؟ چرا؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر، چون ممکن است محصول مشکل مهمی از مشتری را حل نکند یا منفعت ارزشمندی برای مشتری ایجاد نکند. همچنین ممکن است مشتری نیاز خود را نشناسد و کارآفرین نتواند نیاز پنهان را کشف کند.
+        </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۰</span> مفهوم «نیاز پنهان» را با یک مثال جدید (غیر از مثال جزوه) توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نیاز پنهان، نیازی است که خود مشتری به آن آگاه نیست.<br>
+            <strong>مثال:</strong> قبل از ایجاد شبکه‌های اجتماعی، مردم نمی‌دانستند که به ارتباطات گسترده آنلاین با دوستان و خانواده نیاز دارند. فیسبوک و اینستاگرام این نیاز پنهان را کشف کردند.
+        </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۱</span> چگونه یک کارآفرین می‌تواند نیاز پنهان مشتری را کشف کند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> از طریق:
             <ol>
-                <li>وب‌سایت فروشگاهی</li>
-                <li>فروشگاه فیزیکی</li>
-                <li>پیج اینستاگرام</li>
-                <li>مارکت‌پلیس‌ها (دیجیکالا، آمازون)</li>
+                <li>مشاهده دقیق رفتار مشتریان</li>
+                <li>مصاحبه‌های عمیق با مشتریان</li>
+                <li>بررسی شکایت‌ها و مشکلات روزمره</li>
+                <li>تحلیل روندهای اجتماعی و فرهنگی</li>
+                <li>همدلی با مشتری و درک احساسات او</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 9 -->
+    <!-- 12 -->
     <div class="question-block">
-        <h3><span class="q-badge">۹</span> آیا کانال فروش برای همه کسب‌وکارها یکسان است؟</h3>
+        <h3><span class="q-badge">۱۲</span> اگر مشتری نداند چه می‌خواهد، وظیفه کارآفرین چیست؟</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. به عواملی مانند نوع محصول، مشتری هدف، بودجه و موقعیت بازار بستگی دارد.
-        </div>
-    </div>
-
-    <!-- سوال 10 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۰</span> آیا داشتن کانال‌های فروش بیشتر همیشه بهتر است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. ممکن است هزینه‌ها افزایش یابد، مدیریت سخت‌تر شود و بین کانال‌ها تعارض ایجاد شود. بسیاری از کسب‌وکارها به دلیل انتخاب نامناسب کانال فروش شکست می‌خورند.
-        </div>
-    </div>
-
-    <!-- سوال 11 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۱</span> در ارزیابی طرح کسب‌وکار، چه مواردی باید بررسی شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>ساخت محصول امکان‌پذیر است؟</li>
-                <li>کانال فروش مناسب وجود دارد؟</li>
-                <li>ساختار سازمانی مناسب است؟</li>
-                <li>بازار و رقبا بررسی شوند.</li>
-                <li>بودجه و منابع مالی در نظر گرفته شوند.</li>
-            </ol>
-        </div>
-    </div>
-
-    <!-- سوال 12 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۲</span> کانال فروش بر چه مواردی اثر می‌گذارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی، مدل درآمدی، تجربه مشتری، ساختار هزینه و سودآوری.
-        </div>
-    </div>
-
-    <!-- سوال 13 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۳</span> نقاط تماس (Touch Points) با مشتری را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> محل‌های ارتباط با مشتری شامل: معرفی محصول، تبلیغات، فروش، پشتیبانی و ارتباط با مشتری.
-        </div>
-    </div>
-
-    <!-- سوال 14 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۴</span> انواع کانال‌های فروش را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>مستقیم و غیرمستقیم (واسطه‌ها)</li>
-                <li>عمده‌فروش و خرده‌فروش</li>
-                <li>فروش فیزیکی و آنلاین</li>
-                <li>مارکت‌پلیس</li>
-                <li>فروش سازمانی (B2B)</li>
-            </ol>
-        </div>
-    </div>
-
-    <!-- سوال 15 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۵</span> معیارهای انتخاب کانال فروش را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نوع محصول، رفتار مشتری، بودجه، شرایط بازار، قابلیت توسعه، هزینه و میزان دسترسی مشتری.
-        </div>
-    </div>
-
-    <!-- سوال 16 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۶</span> تعارض کانال فروش چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> وقتی کانال‌های مختلف فروش با یکدیگر رقابت یا تداخل پیدا کنند و باعث کاهش کارایی شوند.
-        </div>
-    </div>
-
-    <hr style="margin: 1.5rem 0;">
-
-    <!-- زیربخش کانال توزیع و زنجیره تأمین -->
-    <h3 style="border-right-color: #c44536; background: #f5ece8; padding: 0.4rem 1rem; border-radius: 30px; display: inline-block; margin-top: 0.5rem;">
-        <i class="fas fa-truck"></i> کانال توزیع و زنجیره تأمین - سوالات ۱۷ تا ۲۶
-    </h3>
-
-    <!-- سوال 17 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۷</span> کانال توزیع چیست و انواع آن را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال توزیع مشخص می‌کند کالا از چه مسیری به مصرف‌کننده برسد.<br>
-            <strong>انواع:</strong> توزیع گسترده (Intensive)، انتخابی (Selective) و انحصاری (Exclusive).
-        </div>
-    </div>
-
-    <!-- سوال 18 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۸</span> زنجیره تأمین را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زنجیره‌ای از سازمان‌ها، فعالیت‌ها، منابع و اطلاعات که در خلق و انتقال کالا یا خدمت از تأمین‌کننده تا مصرف‌کننده نهایی مشارکت دارند.
-        </div>
-    </div>
-
-    <!-- سوال 19 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۱۹</span> آیا زنجیره تأمین فقط مخصوص کارخانه‌هاست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. تمام کسب‌وکارها، حتی خدماتی، زنجیره تأمین دارند.
-        </div>
-    </div>
-
-    <!-- سوال 20 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۰</span> عوامل شکست محصول مرتبط با زنجیره تأمین را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نارضایتی مشتری، توقف تولید، تأخیر در تحویل، نبود موجودی، از دست دادن مشتری، اختلال در تأمین و بحران در شرکت.
-        </div>
-    </div>
-
-    <!-- سوال 21 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۱</span> آیا زنجیره تأمین می‌تواند بخشی از ارزش پیشنهادی باشد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بله. مثال: تحویل سریع‌تر، ارسال به منزل. اگر زنجیره تأمین مختل شود، مشتری به رقیب می‌رود.
-        </div>
-    </div>
-
-    <!-- سوال 22 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۲</span> هدف زنجیره تأمین چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> رساندن محصول یا خدمت به‌موقع، با کیفیت مناسب و قیمت قابل قبول به مشتری نهایی.
-        </div>
-    </div>
-
-    <!-- سوال 23 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۳</span> زنجیره تأمین بر چه چیزهایی اثر می‌گذارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی، قیمت‌گذاری، کیفیت، رضایت مشتری، مدل درآمدی و مزیت رقابتی.
-        </div>
-    </div>
-
-    <!-- سوال 24 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۴</span> لجستیک معکوس (Reverse Logistics) را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> برگشت محصولات معیوب یا بازیافتی که امروزه اهمیت زیادی پیدا کرده است.
-        </div>
-    </div>
-
-    <!-- سوال 25 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۵</span> مزایای زنجیره تأمین مناسب را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کاهش هزینه‌ها، افزایش انعطاف‌پذیری، افزایش رضایت مشتری و ایجاد مزیت رقابتی.
-        </div>
-    </div>
-
-    <!-- سوال 26 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۶</span> اجزای اصلی زنجیره تأمین را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تأمین‌کنندگان، تولیدکنندگان، انبار، حمل‌ونقل، توزیع و مشتری نهایی.
-        </div>
-    </div>
-
-    <hr style="margin: 1.5rem 0;">
-
-    <!-- زیربخش قیمت‌گذاری و مدل‌های درآمدی -->
-    <h3 style="border-right-color: #c44536; background: #f5ece8; padding: 0.4rem 1rem; border-radius: 30px; display: inline-block; margin-top: 0.5rem;">
-        <i class="fas fa-tag"></i> قیمت‌گذاری و مدل‌های درآمدی - سوالات ۲۷ تا ۴۰
-    </h3>
-
-    <!-- سوال 27 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۷</span> قیمت‌گذاری بر چه مواردی اثر می‌گذارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی، درآمد، سودآوری و جایگاه بازار.
-        </div>
-    </div>
-
-    <!-- سوال 28 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۸</span> آیا قیمت فقط بر اساس هزینه تولید تعیین می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. عوامل دیگری مانند ارزش ادراک شده، کیفیت ادراک شده، برند و جایگاه محصول نیز مؤثرند.
-        </div>
-    </div>
-
-    <!-- سوال 29 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۲۹</span> عوامل مؤثر بر قیمت را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش ادراک شده، کیفیت ادراک شده، برند، جایگاه محصول و تجربه مشتری.
-        </div>
-    </div>
-
-    <!-- سوال 30 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۰</span> آیا قیمت پایین همیشه باعث افزایش فروش می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. گاهی قیمت پایین باعث کاهش کیفیت ادراک شده، جنگ قیمتی و کاهش ارزش برند می‌شود.
-        </div>
-    </div>
-
-    <!-- سوال 31 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۱</span> چرا بعضی مشتریان برای یک فنجان قهوه چند برابر بیشتر پول می‌دهند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا فقط قهوه نمی‌خرند؛ محیط، خدمات، تجربه، حس خوب و برند را نیز می‌خرند.
-        </div>
-    </div>
-
-    <!-- سوال 32 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۲</span> بهترین قیمت، کمترین قیمت است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. بهترین قیمت، قیمتی است که برای مشتری ارزش ایجاد کند و برای شرکت سودآور باشد.
-        </div>
-    </div>
-
-    <!-- سوال 33 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۳</span> قیمت‌گذاری وظیفه چه بخشی از سازمان است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> قیمت‌گذاری فقط وظیفه واحد مالی یا بازاریابی نیست؛ همه بخش‌ها باید مشارکت داشته باشند.
-        </div>
-    </div>
-
-    <!-- سوال 34 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۴</span> اهمیت انتخاب قیمت صحیح را توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> محصول باکیفیت و بازار مناسب نیز با قیمت‌گذاری نادرست، مشتریان را از دست می‌دهد.
-        </div>
-    </div>
-
-    <!-- سوال 35 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۵</span> در آمیخته بازاریابی، قیمت چه جایگاهی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> قیمت تنها عنصری است که مستقیماً درآمد ایجاد می‌کند؛ سایر عناصر هزینه ایجاد می‌کنند.
-        </div>
-    </div>
-
-    <!-- سوال 36 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۶</span> استراتژی قیمت‌گذاری را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مجموعه‌ای از تصمیم‌ها و سیاست‌های بلندمدت برای تعیین قیمت که بر ارزش پیشنهادی، فروش، سودآوری و مزیت رقابتی اثر می‌گذارد.
-        </div>
-    </div>
-
-    <!-- سوال 37 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۷</span> مدل درآمدی را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> سازوکاری که کسب‌وکار از طریق آن ارزش خلق شده را به درآمد تبدیل می‌کند و به این پرسش‌ها پاسخ می‌دهد: مشتری برای چه چیزی پول می‌دهد؟ چه مبلغی؟ چه زمانی؟ چند بار؟
-        </div>
-    </div>
-
-    <!-- سوال 38 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۸</span> آیا هر کسب‌وکاری که مشتری زیادی داشته باشد، موفق است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. ممکن است مشتری و فروش بالا باشد اما درآمد یا سود کافی نداشته باشد.
-        </div>
-    </div>
-
-    <!-- سوال 39 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۳۹</span> چرا برخی شرکت‌ها زیان‌ده هستند اما ارزش میلیاردی دارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا درآمد آنها فقط از فروش نیست؛ از تبلیغات، فروش داده‌ها، اشتراک، حق امتیاز و خدمات جانبی نیز تأمین می‌شود.
-        </div>
-    </div>
-
-    <!-- سوال 40 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۰</span> تفاوت فروش و درآمد را توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> فروش فقط یکی از منابع درآمد است. درآمد می‌تواند از تبلیغات، کارمزد، حق امتیاز و خدمات جانبی نیز تأمین شود.
-        </div>
-    </div>
-
-    <hr style="margin: 1.5rem 0;">
-
-    <!-- زیربخش تجربه مشتری و نقشه سفر مشتری -->
-    <h3 style="border-right-color: #c44536; background: #f5ece8; padding: 0.4rem 1rem; border-radius: 30px; display: inline-block; margin-top: 0.5rem;">
-        <i class="fas fa-user-friends"></i> تجربه مشتری و نقشه سفر مشتری - سوالات ۴۱ تا ۴۵
-    </h3>
-
-    <!-- سوال 41 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۱</span> تجربه مشتری را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مجموعه احساسات، ادراکات، تعاملات و تجربیات مشتری در ارتباط با برند، فروشگاه، محصول یا خدمت که کل مسیر ارتباط را شامل می‌شود.
-        </div>
-    </div>
-
-    <!-- سوال 42 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۲</span> نقشه سفر مشتری را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ابزاری که مسیر حرکت مشتری را از دید خودش بررسی می‌کند و شامل اقدامات، احساسات، نیازها و نقاط تماس مشتری است.
-        </div>
-    </div>
-
-    <!-- سوال 43 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۳</span> مراحل ارتباط مشتری با برند را توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
-            <ul>
-                <li><strong>قبل از خرید:</strong> تبلیغات، جستجو، بررسی محصول.</li>
-                <li><strong>هنگام خرید:</strong> فرآیند خرید، سهولت، رفتار فروشنده.</li>
-                <li><strong>بعد از خرید:</strong> تحویل، خدمات پس از فروش، پشتیبانی.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- سوال 44 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۴</span> چرا بعضی کسب‌وکارها با وجود امکانات خوب، ریزش مشتری دارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> به دلیل تجربه مشتری ضعیف: ثبت‌نام پیچیده، رابط کاربری نامناسب، پشتیبانی ضعیف، نبود اعتماد.
-        </div>
-    </div>
-
-    <!-- سوال 45 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۵</span> عوامل ایجاد تجربه مشتری در فروشگاه را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> عطر و فضای محیط، دما، رفتار کارکنان، زبان بدن، نحوه برخورد، سرعت خدمات.
-        </div>
-    </div>
-
-    <hr style="margin: 1.5rem 0;">
-
-    <!-- زیربخش ابزار نقشه سفر مشتری (CJM) -->
-    <h3 style="border-right-color: #c44536; background: #f5ece8; padding: 0.4rem 1rem; border-radius: 30px; display: inline-block; margin-top: 0.5rem;">
-        <i class="fas fa-map-signs"></i> ابزار نقشه سفر مشتری (CJM) - سوالات ۴۶ تا ۵۰
-    </h3>
-
-    <!-- سوال 46 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۶</span> ابزار CJM را تعریف کرده و هدف آن را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ابزاری برای تحلیل تجربه مشتری، مدل‌سازی مسیر حرکت و شناسایی نقاط قوت و ضعف ارتباط با مشتری. <strong>هدف:</strong> شناسایی نقاط و ارائه راه‌حل.
-        </div>
-    </div>
-
-    <!-- سوال 47 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۷</span> نکته مهم در طراحی نقشه سفر مشتری چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> باید حول محور مشتری طراحی شود، نه محصول یا شرکت.
-        </div>
-    </div>
-
-    <!-- سوال 48 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۸</span> نقاط اصطکاک (Pain Points) را تعریف کرده و مثال بزنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقاطی که تجربه منفی ایجاد می‌کنند. مثال: ثبت‌نام پیچیده، انتظار طولانی، پشتیبانی ضعیف.
-        </div>
-    </div>
-
-    <!-- سوال 49 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۴۹</span> اجزای اصلی نقشه سفر مشتری را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
-            <ol>
-                <li>پرسونا</li>
-                <li>مراحل سفر مشتری</li>
-                <li>نقاط تماس</li>
-                <li>اقدامات مشتری</li>
-                <li>افکار و احساسات مشتری</li>
-                <li>فرصت‌های بهبود</li>
-            </ol>
-        </div>
-    </div>
-
-    <!-- سوال 50 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۵۰</span> پرسونا را تعریف کنید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نماینده‌ای فرضی از مشتری هدف با ویژگی‌های مشخص شامل نیازها، رفتارها، مشکلات و اهداف.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> وظیفه کارآفرین این است که با تحقیق، مشاهده و همدلی، نیازهای پنهان مشتری را شناسایی کرده و محصولی طراحی کند که آن نیاز را برطرف سازد. کارآفرین نباید منتظر بماند تا مشتری نیاز خود را بیان کند.
         </div>
     </div>
 
     <hr>
 
     <!-- ========== بخش دوم ========== -->
-    <h2><i class="fas fa-plus-circle"></i> بخش دوم: سوالات تکمیلی (۱۰ سوال - خارج از جزوه)</h2>
+    <h2><i class="fas fa-store"></i> بخش دوم: کانال‌های فروش - سوالات ۱۳ تا ۳۰</h2>
 
-    <!-- سوال 51 -->
+    <!-- 13 -->
     <div class="question-block">
-        <h3><span class="q-badge">۵۱</span> مطالعه فنی در امکان‌سنجی شامل چه مواردی است؟</h3>
+        <h3><span class="q-badge">۱۳</span> تعریف کانال فروش را بنویسید.</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تعیین ظرفیت تولید، انتخاب فناوری، برآورد مواد اولیه، طراحی فرایند تولید، جانمایی و برآورد نیروی انسانی.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش سازوکاری است که از طریق آن محصول یا خدمت به مشتری می‌رسد. مشتری خرید انجام می‌دهد و محصول دریافت می‌شود.
         </div>
     </div>
 
-    <!-- سوال 52 -->
+    <!-- 14 -->
     <div class="question-block">
-        <h3><span class="q-badge">۵۲</span> NPV را تعریف کرده و بگویید چه کاربردی دارد؟</h3>
+        <h3><span class="q-badge">۱۴</span> اهمیت کانال فروش را توضیح دهید.</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مجموع ارزش فعلی جریان‌های نقدی آتی منهای سرمایه‌گذاری اولیه. اگر NPV مثبت باشد، پروژه توجیه مالی دارد.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> اگر بهترین محصول دنیا را تولید کنیم اما راهی برای رساندن آن به مشتری نداشته باشیم، فروش اتفاق نمی‌افتد. انتقال ارزش از تولیدکننده به مشتری از طریق کانال فروش انجام می‌شود. حتی بهترین هتل یا بهترین محصول هم بدون دسترسی مشتری، موفق نخواهد شد.
         </div>
     </div>
 
-    <!-- سوال 53 -->
+    <!-- 15 -->
     <div class="question-block">
-        <h3><span class="q-badge">۵۳</span> IRR چیست و چه رابطه‌ای با نرخ تنزیل دارد؟</h3>
+        <h3><span class="q-badge">۱۵</span> چرا بعضی شرکت‌ها محصول مشابه دارند، اما فروش یکی از دیگری بیشتر است؟</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نرخ تنزیلی که NPV را صفر می‌کند. اگر IRR از نرخ تنزیل بیشتر باشد، پروژه قابل قبول است.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> به دلیل داشتن کانال‌های فروش مناسب. کانال فروش مناسب باعث می‌شود ارزش پیشنهادی بهتر شناخته شود و مشتریان بیشتری به محصول دسترسی پیدا کنند. یک محصول عالی بدون کانال فروش مناسب، به موفقیت نمی‌رسد.
         </div>
     </div>
 
-    <!-- سوال 54 -->
+    <!-- 16 -->
     <div class="question-block">
-        <h3><span class="q-badge">۵۴</span> نقطه سربه‌سر را تعریف کرده و فرمول آن را بنویسید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقطه‌ای که درآمد کل برابر با هزینه کل است.<br>
-            <strong>فرمول:</strong> هزینه‌های ثابت ÷ (قیمت فروش – هزینه متغیر هر واحد)
-        </div>
-    </div>
-
-    <!-- سوال 55 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۵۵</span> تحلیل SWOT چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بررسی نقاط قوت، ضعف، فرصت‌ها و تهدیدها برای شناسایی عوامل مؤثر بر پروژه و تدوین راهبرد.
-        </div>
-    </div>
-
-    <!-- سوال 56 -->
-    <div class="question-block">
-        <h3><span class="q-badge">۵۶</span> ساختار استاندارد طرح کسب‌وکار را بنویسید.</h3>
+        <h3><span class="q-badge">۱۶</span> چهار نمونه از کانال‌های فروش را نام ببرید.</h3>
         <div class="answer">
             <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li>خلاصه اجرایی</li>
-                <li>شرح شرکت و محصول</li>
-                <li>تحلیل بازار</li>
-                <li>مطالعه فنی</li>
-                <li>ساختار سازمانی</li>
-                <li>برنامه زمانی</li>
-                <li>پیش‌بینی مالی</li>
-                <li>تحلیل ریسک</li>
-                <li>ضمائم</li>
+                <li>وب‌سایت فروشگاهی</li>
+                <li>فروشگاه فیزیکی</li>
+                <li>پیج اینستاگرام</li>
+                <li>مارکت‌پلیس‌ها (Marketplace) مثل دیجیکالا و آمازون</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 57 -->
+    <!-- 17 -->
     <div class="question-block">
-        <h3><span class="q-badge">۵۷</span> عوامل مؤثر در مکان‌گزینی کسب‌وکار را نام ببرید.</h3>
+        <h3><span class="q-badge">۱۷</span> آیا کانال فروش برای همه کسب‌وکارها یکسان است؟ توضیح دهید.</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نزدیکی به مواد اولیه، دسترسی به بازار، هزینه زمین، نیروی کار ماهر، زیرساخت‌ها و قوانین محلی.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. انتخاب کانال فروش به عواملی مانند نوع محصول، مشتری هدف، بودجه و موقعیت بازار بستگی دارد. هر کسب‌وکاری باید بر اساس ویژگی‌های خود، کانال‌های فروش مناسب را انتخاب کند.
         </div>
     </div>
 
-    <!-- سوال 58 -->
+    <!-- 18 -->
     <div class="question-block">
-        <h3><span class="q-badge">۵۸</span> تفاوت مدل کسب‌وکار و طرح کسب‌وکار چیست؟</h3>
+        <h3><span class="q-badge">۱۸</span> آیا داشتن کانال‌های فروش بیشتر همیشه بهتر است؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. داشتن کانال‌های فروش بیشتر ممکن است معایبی داشته باشد: هزینه‌ها افزایش می‌یابد، مدیریت سخت‌تر می‌شود و بین کانال‌ها تعارض ایجاد می‌شود. بسیاری از طرح‌های کسب‌وکار نه به خاطر ضعف محصول، بلکه به دلیل انتخاب نامناسب کانال فروش شکست می‌خورند.
+        </div>
+    </div>
+
+    <!-- 19 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۹</span> در ارزیابی طرح کسب‌وکار، چه مواردی باید بررسی شود؟</h3>
         <div class="answer">
             <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
-            <strong>مدل کسب‌وکار:</strong> چارچوب مفهومی ایجاد و کسب ارزش.<br>
-            <strong>طرح کسب‌وکار:</strong> سند عملیاتی برای اجرای مدل.
+            <ol>
+                <li>ساخت محصول امکان‌پذیر است یا خیر</li>
+                <li>کانال فروش مناسب وجود دارد یا خیر</li>
+                <li>ساختار سازمانی مناسب است یا خیر</li>
+                <li>بازار و رقبا بررسی شوند</li>
+                <li>بودجه و منابع مالی در نظر گرفته شوند</li>
+                <li>تمام اجزای کسب‌وکار به هم وابسته هستند</li>
+            </ol>
         </div>
     </div>
 
-    <!-- سوال 59 -->
+    <!-- 20 -->
     <div class="question-block">
-        <h3><span class="q-badge">۵۹</span> ماتریس BCG چه کاربردی دارد؟</h3>
+        <h3><span class="q-badge">۲۰</span> کانال فروش بر چه مواردی اثر می‌گذارد؟</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> طبقه‌بندی محصولات بر اساس سهم بازار و رشد بازار به: ستاره، گاو شیرده، علامت سؤال و سگ.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش بر موارد زیر اثر می‌گذارد: ارزش پیشنهادی، مدل درآمدی، تجربه مشتری، ساختار هزینه و سودآوری.
         </div>
     </div>
 
-    <!-- سوال 60 -->
+    <!-- 21 -->
     <div class="question-block">
-        <h3><span class="q-badge">۶۰</span> رایج‌ترین اشتباهات در نگارش طرح کسب‌وکار کدامند؟</h3>
+        <h3><span class="q-badge">۲۱</span> نقاط تماس (Touch Points) با مشتری را تعریف کنید.</h3>
         <div class="answer">
-            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بزرگنمایی بازار، نادیده گرفتن رقبا، تخمین پایین هزینه‌ها، عدم تحلیل ریسک، نگارش طولانی و عدم انطباق اعداد مالی.
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقاط تماس، محل‌های ارتباط با مشتری هستند که شامل معرفی محصول، تبلیغات، فروش، پشتیبانی و ارتباط با مشتری می‌شوند. در بسیاری از استارتاپ‌ها، کانال فروش بخشی از تجربه مشتری محسوب می‌شود.
+        </div>
+    </div>
+
+    <!-- 22 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۲</span> انواع کانال‌های فروش را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>مستقیم و غیرمستقیم (واسطه‌ها)</li>
+                <li>عمده‌فروش و خرده‌فروش</li>
+                <li>فروش فیزیکی و فروش آنلاین (وب‌سایت، شبکه‌های اجتماعی)</li>
+                <li>مارکت‌پلیس (Marketplace)</li>
+                <li>فروش سازمانی (B2B)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 23 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۳</span> معیارهای انتخاب کانال فروش را بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نوع محصول، رفتار مشتری، بودجه تبلیغات، شرایط بازار، قابلیت توسعه کانال، هزینه کانال، میزان دسترسی مشتری.
+        </div>
+    </div>
+
+    <!-- 24 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۴</span> تعارض کانال فروش چیست و چه تأثیری دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تعارض کانال فروش وقتی رخ می‌دهد که کانال‌های مختلف فروش با یکدیگر رقابت یا تداخل پیدا می‌کنند و باعث کاهش کارایی می‌شوند. مثال: وقتی یک محصول هم در فروشگاه فیزیکی و هم در وب‌سایت با قیمت‌های متفاوت عرضه شود، بین کانال‌ها تعارض ایجاد می‌شود.
+        </div>
+    </div>
+
+    <!-- 25 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۵</span> کانال فروش با سایر بخش‌های مدل کسب‌وکار چه ارتباطی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش با ارزش پیشنهادی، مدل درآمدی، تجربه مشتری، ساختار هزینه و سودآوری ارتباط مستقیم دارد و بر همه آنها اثر می‌گذارد.
+        </div>
+    </div>
+
+    <!-- 26 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۶</span> چرا انتخاب کانال فروش نامناسب یکی از دلایل شکست کسب‌وکارهاست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا حتی بهترین محصول هم اگر به دست مشتری نرسد، فروش نخواهد داشت. کانال فروش نامناسب باعث می‌شود محصول دیده نشود، مشتری به آن دسترسی نداشته باشد یا تجربه خرید ضعیفی داشته باشد.
+        </div>
+    </div>
+
+    <!-- 27 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۷</span> تفاوت بین کانال فروش مستقیم و غیرمستقیم را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>کانال مستقیم:</strong> تولیدکننده مستقیماً به مشتری می‌فروشد (مثل فروش از طریق وب‌سایت یا فروشگاه اختصاصی).<br>
+            <strong>کانال غیرمستقیم:</strong> از واسطه‌هایی مثل عمده‌فروش یا خرده‌فروش برای رسیدن به مشتری استفاده می‌شود.
+        </div>
+    </div>
+
+    <!-- 28 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۸</span> مارکت‌پلیس (Marketplace) چیست و چه مزیتی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مارکت‌پلیس پلتفرمی آنلاین است که فروشندگان مختلف محصولات خود را در آن عرضه می‌کنند (مثل دیجیکالا و آمازون).<br>
+            <strong>مزیت:</strong> دسترسی به مشتریان زیاد بدون نیاز به ساخت وب‌سایت اختصاصی.
+        </div>
+    </div>
+
+    <!-- 29 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۹</span> در چه شرایطی استفاده از کانال فروش غیرمستقیم (واسطه) بهتر است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li>وقتی محصول نیاز به توزیع گسترده دارد.</li>
+                <li>وقتی شرکت منابع کافی برای فروش مستقیم ندارد.</li>
+                <li>وقتی دسترسی به مشتریان از طریق واسطه‌ها آسان‌تر است.</li>
+                <li>وقتی واسطه‌ها تخصص و تجربه بیشتری در فروش دارند.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 30 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۰</span> تأثیر کانال فروش بر تجربه مشتری را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش مستقیماً بر تجربه مشتری تأثیر می‌گذارد. یک کانال فروش خوب باعث می‌شود مشتری به راحتی محصول را پیدا کند، خرید آسانی داشته باشد، خدمات مناسبی دریافت کند و در نهایت تجربه مثبتی از برند داشته باشد.
         </div>
     </div>
 
     <hr>
 
+    <!-- ========== بخش سوم ========== -->
+    <h2><i class="fas fa-truck"></i> بخش سوم: کانال توزیع و زنجیره تأمین - سوالات ۳۱ تا ۵۰</h2>
+
+    <!-- 31 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۱</span> کانال توزیع چیست و انواع آن را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال توزیع مشخص می‌کند که کالا از چه مسیری به دست مصرف‌کننده برسد.<br>
+            <strong>انواع توزیع:</strong> ۱. توزیع گسترده (Intensive) ۲. توزیع انتخابی (Selective) ۳. توزیع انحصاری (Exclusive)
+        </div>
+    </div>
+
+    <!-- 32 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۲</span> زنجیره تأمین را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زنجیره تأمین، زنجیره‌ای از سازمان‌ها، فعالیت‌ها، منابع و اطلاعات است که در خلق و انتقال کالا یا خدمت از تأمین‌کننده اولیه تا مصرف‌کننده نهایی مشارکت دارند.
+        </div>
+    </div>
+
+    <!-- 33 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۳</span> آیا زنجیره تأمین فقط مخصوص کارخانه‌هاست؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. تمام کسب‌وکارها، حتی خدماتی، زنجیره تأمین دارند. هر کسب‌وکاری که محصول یا خدمتی را به مشتری می‌رساند، دارای زنجیره تأمین است.
+        </div>
+    </div>
+
+    <!-- 34 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۴</span> عوامل شکست محصول مرتبط با زنجیره تأمین را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نارضایتی مشتری، توقف تولید، تأخیر در تحویل کالا، تأخیر در رسیدن مواد اولیه، نبود موجودی کالا، از دست دادن مشتری، اختلال در تأمین، بحران در شرکت.
+        </div>
+    </div>
+
+    <!-- 35 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۵</span> آیا زنجیره تأمین می‌تواند بخشی از ارزش پیشنهادی باشد؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بله. مثال‌ها: تحویل سریع‌تر کالا، ارسال به منزل، دریافت هزینه بیشتر در مقابل خدمات بهتر. اگر زنجیره تأمین مختل شود، شرکت وارد بحران می‌شود، مشتری به سمت رقیب می‌رود، موجودی کالا کاهش می‌یابد و رضایت مشتری کم می‌شود.
+        </div>
+    </div>
+
+    <!-- 36 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۶</span> هدف زنجیره تأمین چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> رساندن محصول یا خدمت به‌موقع، با کیفیت مناسب و با قیمت قابل قبول به مشتری نهایی.
+        </div>
+    </div>
+
+    <!-- 37 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۷</span> زنجیره تأمین بر چه چیزهایی اثر می‌گذارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی، قیمت‌گذاری، کیفیت، رضایت مشتری، مدل درآمدی، مزیت رقابتی.
+        </div>
+    </div>
+
+    <!-- 38 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۸</span> لجستیک معکوس (Reverse Logistics) را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> لجستیک معکوس به برگشت محصولات معیوب یا بازیافتی گفته می‌شود که امروزه اهمیت زیادی پیدا کرده است. این موضوع به بازیافت، بازگرداندن کالاهای معیوب و مدیریت ضایعات مربوط می‌شود.
+        </div>
+    </div>
+
+    <!-- 39 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۹</span> مزایای زنجیره تأمین مناسب را بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کاهش هزینه‌ها، افزایش انعطاف‌پذیری، افزایش رضایت مشتری، ایجاد مزیت رقابتی.
+        </div>
+    </div>
+
+    <!-- 40 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۰</span> اجزای اصلی زنجیره تأمین را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ۱. تأمین‌کنندگان ۲. تولیدکنندگان ۳. انبار ۴. حمل‌ونقل ۵. توزیع ۶. مشتری نهایی
+        </div>
+    </div>
+
+    <!-- 41 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۱</span> تولید در لحظه (Just-in-Time) چیست؟ مزایا و معایب آن را بنویسید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>ویژگی‌ها:</strong> کاهش موجودی انبار، کاهش هزینه نگهداری، افزایش بهره‌وری.<br>
+            <strong>معایب:</strong> در زمان بحران یا اختلال در تأمین ممکن است تولید متوقف شود.
+        </div>
+    </div>
+
+    <!-- 42 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۲</span> تفاوت بین توزیع گسترده، انتخابی و انحصاری را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>توزیع گسترده (Intensive):</strong> محصول در تمام فروشگاه‌های ممکن عرضه می‌شود (مثل نوشابه).<br>
+            <strong>توزیع انتخابی (Selective):</strong> محصول فقط در فروشگاه‌های خاص و منتخب عرضه می‌شود (مثل لوازم الکترونیکی).<br>
+            <strong>توزیع انحصاری (Exclusive):</strong> محصول فقط در یک فروشگاه خاص در هر منطقه عرضه می‌شود (مثل خودروهای لوکس).
+        </div>
+    </div>
+
+    <!-- 43 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۳</span> چرا اختلال در زنجیره تأمین می‌تواند باعث بحران در شرکت شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا اختلال در تأمین مواد اولیه باعث توقف تولید، تأخیر در تحویل، نارضایتی مشتری و در نهایت از دست دادن مشتری به نفع رقبا می‌شود.
+        </div>
+    </div>
+
+    <!-- 44 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۴</span> زنجیره تأمین چگونه می‌تواند مزیت رقابتی ایجاد کند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> با کاهش هزینه‌ها، افزایش سرعت تحویل، بهبود کیفیت و افزایش رضایت مشتری، زنجیره تأمین می‌تواند به مزیت رقابتی پایدار تبدیل شود.
+        </div>
+    </div>
+
+    <!-- 45 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۵</span> لجستیک معکوس چه اهمیتی برای کسب‌وکارها دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> با توجه به افزایش آگاهی زیست‌محیطی و قوانین بازیافت، مدیریت برگشت محصولات معیوب و بازیافتی امروزه اهمیت زیادی پیدا کرده است و می‌تواند به بهبود تصویر برند کمک کند.
+        </div>
+    </div>
+
+    <!-- 46 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۶</span> تفاوت بین زنجیره تأمین و لجستیک را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>زنجیره تأمین:</strong> مجموعه گسترده‌ای از سازمان‌ها و فعالیت‌ها که از تأمین مواد اولیه تا مصرف‌کننده نهایی را شامل می‌شود.<br>
+            <strong>لجستیک:</strong> بخشی از زنجیره تأمین است که به جابجایی، انبارداری و حمل‌ونقل کالاها می‌پردازد.
+        </div>
+    </div>
+
+    <!-- 47 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۷</span> چه عواملی باعث اختلال در زنجیره تأمین می‌شوند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بلایای طبیعی، بحران‌های اقتصادی، مشکلات تأمین‌کنندگان، تغییرات قوانین، مشکلات حمل‌ونقل، نوسانات بازار.
+        </div>
+    </div>
+
+    <!-- 48 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۸</span> چگونه می‌توان ریسک اختلال در زنجیره تأمین را کاهش داد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> داشتن تأمین‌کنندگان متعدد، نگهداری موجودی ایمنی، ایجاد قراردادهای بلندمدت با تأمین‌کنندگان، استفاده از فناوری‌های مدیریت زنجیره تأمین، برنامه‌ریزی برای شرایط بحرانی.
+        </div>
+    </div>
+
+    <!-- 49 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۹</span> ارتباط زنجیره تأمین با رضایت مشتری را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زنجیره تأمین تأمین به موقع، کیفیت مناسب و قیمت رقابتی را ممکن می‌سازد. هرگونه اختلال در این موارد باعث نارضایتی مشتری می‌شود. بنابراین زنجیره تأمین قوی یکی از کلیدهای اصلی رضایت مشتری است.
+        </div>
+    </div>
+
+    <!-- 50 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۰</span> آیا زنجیره تأمین بر مدل درآمدی کسب‌وکار اثر می‌گذارد؟ چگونه؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بله. زنجیره تأمین کارآمد هزینه‌ها را کاهش می‌دهد و باعث افزایش حاشیه سود می‌شود. همچنین امکان ارائه خدمات بهتر (مثل تحویل سریع‌تر) را فراهم می‌کند که می‌تواند منبع درآمد جدیدی ایجاد کند.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش چهارم ========== -->
+    <h2><i class="fas fa-tag"></i> بخش چهارم: قیمت‌گذاری - سوالات ۵۱ تا ۶۵</h2>
+
+    <!-- 51 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۱</span> قیمت‌گذاری بر چه مواردی اثر می‌گذارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی، درآمد، سودآوری، جایگاه بازار.
+        </div>
+    </div>
+
+    <!-- 52 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۲</span> آیا قیمت فقط بر اساس هزینه تولید تعیین می‌شود؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. دو محصول با هزینه تولید مشابه ممکن است قیمت‌های کاملاً متفاوتی داشته باشند. عوامل دیگری مانند ارزش ادراک شده، کیفیت ادراک شده، برند و جایگاه محصول در بازار نیز در قیمت‌گذاری مؤثرند.
+        </div>
+    </div>
+
+    <!-- 53 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۳</span> عوامل مؤثر بر قیمت را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش ادراک شده توسط مشتری، کیفیت ادراک شده، برند، جایگاه محصول در بازار، تجربه مشتری.
+        </div>
+    </div>
+
+    <!-- 54 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۴</span> آیا قیمت پایین همیشه باعث افزایش فروش می‌شود؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. گاهی قیمت پایین باعث می‌شود مشتری تصور کند کیفیت محصول پایین است، جنگ قیمتی ایجاد شود، کیفیت ادراک شده محصول در ذهن مشتری کاهش یابد و ارزش برند کم شود.
+        </div>
+    </div>
+
+    <!-- 55 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۵</span> چرا بعضی مشتریان برای یک فنجان قهوه چند برابر بیشتر پول می‌دهند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا فقط قهوه نمی‌خرند؛ بلکه محیط، خدمات، تجربه، حس خوب و برند را نیز می‌خرند. مشتری فقط محصول را نمی‌خرد؛ بلکه ارزش و تجربه‌ای را که دریافت می‌کند می‌خرد.
+        </div>
+    </div>
+
+    <!-- 56 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۶</span> بهترین قیمت، کمترین قیمت است؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. بهترین قیمت، قیمتی است که برای مشتری ارزش ایجاد کند و برای شرکت سودآور باشد.
+        </div>
+    </div>
+
+    <!-- 57 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۷</span> قیمت‌گذاری وظیفه چه بخشی از سازمان است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> قیمت‌گذاری فقط وظیفه واحد مالی یا بازاریابی نیست؛ بلکه همه بخش‌های مرتبط باید در آن مشارکت داشته باشند. تصمیم قیمت‌گذاری باید با هماهنگی بین بخش‌های مختلف انجام شود.
+        </div>
+    </div>
+
+    <!-- 58 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۸</span> اهمیت انتخاب قیمت صحیح را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> گاهی محصول بسیار باکیفیت است و بازار مناسبی هم دارد، اما به دلیل قیمت‌گذاری نادرست، مشتریان از دست می‌روند. قیمت‌گذاری اشتباه می‌تواند تمام زحمات دیگر بخش‌ها را بی‌اثر کند.
+        </div>
+    </div>
+
+    <!-- 59 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۹</span> در آمیخته بازاریابی (Marketing Mix)، قیمت چه جایگاهی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> در آمیخته بازاریابی، قیمت تنها عنصری است که مستقیماً درآمد ایجاد می‌کند؛ سایر عناصر (محصول، مکان، ترفیع) بیشتر هزینه ایجاد می‌کنند.
+        </div>
+    </div>
+
+    <!-- 60 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۰</span> استراتژی قیمت‌گذاری را تعریف کنید و بگویید بر چه مواردی اثر می‌گذارد.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> استراتژی قیمت‌گذاری مجموعه‌ای از تصمیم‌ها و سیاست‌های بلندمدت برای تعیین قیمت محصولات یا خدمات است.<br>
+            <strong>اثرات:</strong> ارزش پیشنهادی، مدل درآمدی، فروش، سودآوری، مزیت رقابتی.
+        </div>
+    </div>
+
+    <!-- 61 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۱</span> تفاوت بین قیمت‌گذاری بر اساس هزینه و قیمت‌گذاری بر اساس ارزش را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>بر اساس هزینه:</strong> قیمت = هزینه تولید + حاشیه سود. روش سنتی و ساده.<br>
+            <strong>بر اساس ارزش:</strong> قیمت بر اساس مقداری که مشتری برای محصول قائل است تعیین می‌شود، حتی اگر هزینه تولید پایین باشد.
+        </div>
+    </div>
+
+    <!-- 62 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۲</span> مفهوم «ارزش ادراک شده» را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش ادراک شده، ارزشی است که مشتری برای محصول یا خدمت قائل می‌شود، که ممکن است با هزینه تولید یا قیمت واقعی متفاوت باشد. این ارزش تحت تأثیر برند، تبلیغات، تجربه دیگران و عوامل روانشناختی قرار دارد.
+        </div>
+    </div>
+
+    <!-- 63 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۳</span> جنگ قیمتی چیست و چه عواقبی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> جنگ قیمتی وقتی رخ می‌دهد که رقبا قیمت‌های خود را برای جذب مشتری کاهش می‌دهند.<br>
+            <strong>عواقب:</strong> کاهش سودآوری همه، کاهش کیفیت ادراک شده محصول، کاهش ارزش برند در بلندمدت.
+        </div>
+    </div>
+
+    <!-- 64 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۴</span> چگونه می‌توان بدون کاهش قیمت، فروش را افزایش داد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> با افزایش ارزش ادراک شده از طریق: بهبود کیفیت محصول، ارائه خدمات بهتر، بهبود تجربه مشتری، تبلیغات مؤثرتر، ایجاد تمایز از رقبا.
+        </div>
+    </div>
+
+    <!-- 65 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۵</span> چرا قیمت‌گذاری یکی از مهم‌ترین تصمیمات استراتژیک کسب‌وکار است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا قیمت مستقیماً بر درآمد، سودآوری، جایگاه بازار و ارزش ادراک شده تأثیر می‌گذارد. قیمت اشتباه می‌تواند حتی بهترین محصول را به شکست بکشاند.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش پنجم ========== -->
+    <h2><i class="fas fa-coins"></i> بخش پنجم: مدل‌های درآمدی - سوالات ۶۶ تا ۷۸</h2>
+
+    <!-- 66 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۶</span> مدل درآمدی (Revenue Model) را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مدل درآمدی سازوکاری است که از طریق آن، یک کسب‌وکار ارزش خلق شده را به درآمد تبدیل می‌کند. مدل درآمدی به این پرسش‌ها پاسخ می‌دهد: مشتری برای چه چیزی پول می‌دهد؟ چه مبلغی پرداخت می‌کند؟ چه زمانی پرداخت می‌کند؟ چند بار پرداخت می‌کند؟ درآمد کسب‌وکار از چه منابعی تأمین می‌شود؟
+        </div>
+    </div>
+
+    <!-- 67 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۷</span> آیا هر کسب‌وکاری که مشتری زیادی داشته باشد، حتماً موفق است؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. ممکن است مشتریان زیادی داشته باشد و فروش بالایی داشته باشد اما درآمد یا سود کافی نداشته باشد. داشتن مشتری زیاد، الزاماً به معنای سودآوری نیست.
+        </div>
+    </div>
+
+    <!-- 68 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۸</span> چرا برخی شرکت‌ها زیان‌ده هستند اما ارزش میلیاردی دارند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا درآمد آنها فقط از فروش محصول نیست و ممکن است از منابع دیگری تأمین شود، مانند: تبلیغات، فروش داده‌ها، اشتراک‌های پریمیوم (Premium Subscription)، حق امتیاز (Royalty)، خدمات جانبی.
+        </div>
+    </div>
+
+    <!-- 69 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۶۹</span> تفاوت فروش و درآمد را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> فروش فقط یکی از منابع درآمد است. درآمد می‌تواند علاوه بر فروش، از راه‌های دیگری نیز به دست آید؛ مانند: تبلیغات، کارمزد، حق امتیاز (Royalty)، ارائه خدمات جانبی.
+        </div>
+    </div>
+
+    <!-- 70 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۰</span> آیا دو شرکت با محصول مشابه می‌توانند مدل درآمدی متفاوت داشته باشند؟ مثال بزنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بله.<br>
+            <strong>مثال:</strong> یک شبکه تلویزیونی از تبلیغات درآمد کسب می‌کند، اما یک پلتفرم فیلم مانند نتفلیکس از اشتراک کاربران درآمد دارد. هر دو محتوای تصویری ارائه می‌دهند اما مدل درآمدی متفاوتی دارند.
+        </div>
+    </div>
+
+    <!-- 71 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۱</span> مشکل بسیاری از کارآفرینان در زمینه درآمد چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بسیاری از کارآفرینان می‌دانند چه چیزی تولید کنند، اما نمی‌دانند چگونه از آن درآمد کسب کنند.
+        </div>
+    </div>
+
+    <!-- 72 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۲</span> مدل درآمدی به چه پرسش‌هایی پاسخ می‌دهد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مشتری برای چه چیزی پول می‌دهد؟ چه مبلغی پرداخت می‌کند؟ چه زمانی پرداخت می‌کند؟ چند بار پرداخت می‌کند؟ درآمد کسب‌وکار از چه منابعی تأمین می‌شود؟
+        </div>
+    </div>
+
+    <!-- 73 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۳</span> چرا مدل درآمدی یکی از مهم‌ترین بخش‌های طرح کسب‌وکار است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا بقای هر کسب‌وکار به داشتن یک مدل درآمدی مناسب وابسته است. بدون مدل درآمدی، حتی بهترین محصول هم نمی‌تواند دوام بیاورد.
+        </div>
+    </div>
+
+    <!-- 74 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۴</span> آیا محصول خوب برای موفقیت کافی است؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. بسیاری از محصولات باکیفیت به دلیل نداشتن مدل درآمدی مناسب شکست خورده‌اند.
+        </div>
+    </div>
+
+    <!-- 75 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۵</span> چند منبع درآمدی غیر از فروش محصول را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ۱. تبلیغات ۲. کارمزد ۳. حق امتیاز (Royalty) ۴. اشتراک‌های پریمیوم ۵. فروش داده‌ها ۶. خدمات جانبی
+        </div>
+    </div>
+
+    <!-- 76 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۶</span> تفاوت بین مدل درآمدی و استراتژی قیمت‌گذاری را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>مدل درآمدی:</strong> مشخص می‌کند کسب‌وکار چگونه ارزش را به درآمد تبدیل می‌کند (منابع درآمد).<br>
+            <strong>استراتژی قیمت‌گذاری:</strong> مشخص می‌کند قیمت هر محصول یا خدمت چقدر باشد.
+        </div>
+    </div>
+
+    <!-- 77 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۷</span> آیا یک کسب‌وکار می‌تواند چند مدل درآمدی داشته باشد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بله. بسیاری از کسب‌وکارها از ترکیب چند مدل درآمدی استفاده می‌کنند. مثلاً یک شرکت نرم‌افزاری هم از فروش اشتراک و هم از ارائه خدمات مشاوره درآمد کسب می‌کند.
+        </div>
+    </div>
+
+    <!-- 78 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۸</span> چه عواملی در انتخاب مدل درآمدی مؤثرند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نوع محصول یا خدمت، مشتری هدف، رقبا، شرایط بازار، استراتژی کلی کسب‌وکار.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ششم ========== -->
+    <h2><i class="fas fa-user-friends"></i> بخش ششم: تجربه مشتری و نقشه سفر مشتری - سوالات ۷۹ تا ۹۰</h2>
+
+    <!-- 79 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۷۹</span> تجربه مشتری را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تجربه مشتری مجموعه‌ای از احساسات، ادراکات، تعاملات و تجربیات است که مشتری در ارتباط با یک برند، فروشگاه، محصول یا خدمت طی می‌کند. تجربه مشتری فقط مربوط به خرید نیست؛ بلکه کل مسیر ارتباط مشتری با کسب‌وکار را شامل می‌شود.
+        </div>
+    </div>
+
+    <!-- 80 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۰</span> نقشه سفر مشتری (Customer Journey Map) را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقشه سفر مشتری ابزاری است که مسیر حرکت مشتری را از دید خودش بررسی می‌کند. این نقشه شامل اقدامات مشتری، احساسات مشتری، نیازها و مشکلات مشتری، نقاط تماس با کسب‌وکار (Touch Points) است.
+        </div>
+    </div>
+
+    <!-- 81 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۱</span> مراحل ارتباط مشتری با برند را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارتباط مشتری با برند در مراحل مختلف شکل می‌گیرد:<br>
+            <strong>قبل از خرید:</strong> تبلیغات، دیدن نظرات دیگران، جستجو و بررسی محصول، شناخت برند.<br>
+            <strong>هنگام خرید:</strong> فرآیند خرید، رفتار فروشنده، سهولت خرید، تجربه استفاده از فروشگاه یا سایت.<br>
+            <strong>بعد از خرید:</strong> تحویل محصول، خدمات پس از فروش، پشتیبانی، ارتباط با مشتری.<br>
+            همه این مراحل بخشی از سفر مشتری هستند.
+        </div>
+    </div>
+
+    <!-- 82 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۲</span> آیا مشتری فقط هنگام خرید با برند ارتباط دارد؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. ارتباط مشتری با برند در مراحل مختلف قبل، حین و بعد از خرید شکل می‌گیرد و همه این مراحل بر تجربه کلی مشتری تأثیر می‌گذارند.
+        </div>
+    </div>
+
+    <!-- 83 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۳</span> آیا محصول خوب فقط به دلیل کیفیت موفق می‌شود؟ توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. ممکن است محصول کیفیت خوبی داشته باشد و قیمت مناسبی هم داشته باشد، اما اگر تجربه کلی مشتری ضعیف باشد، مشتری دوباره خرید نمی‌کند. تجربه مشتری فقط به قیمت و کیفیت محصول وابسته نیست؛ بلکه به کل تجربه ارتباط دارد.
+        </div>
+    </div>
+
+    <!-- 84 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۴</span> چرا بعضی کسب‌وکارها با وجود امکانات خوب، ریزش مشتری دارند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا تجربه مشتری مناسبی ایجاد نکرده‌اند. دلایل: ثبت‌نام پیچیده، رابط کاربری نامناسب، فرآیند خرید سخت، پشتیبانی ضعیف، نبود حس اعتماد.
+        </div>
+    </div>
+
+    <!-- 85 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۵</span> عوامل ایجاد تجربه مشتری در یک فروشگاه را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> عطر و فضای محیط، دمای محیط، رفتار کارکنان، زبان بدن فروشندگان، نحوه برخورد، سرعت خدمات. همه این عوامل بر تجربه مشتری اثر می‌گذارند.
+        </div>
+    </div>
+
+    <!-- 86 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۶</span> اهمیت تجربه مشتری در کسب‌وکار را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> امروزه رقابت فقط روی محصول نیست؛ بلکه رقابت روی تجربه مشتری است. مشتریان گزینه‌های زیادی دارند، به راحتی برندها را تغییر می‌دهند و تجربه خود را با دیگران به اشتراک می‌گذارند. بنابراین کسب‌وکارهایی موفق‌تر هستند که تجربه مثبت ایجاد کنند.
+        </div>
+    </div>
+
+    <!-- 87 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۷</span> نقش کارآفرین در تجربه مشتری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کارآفرین باید مشخص کند مشتری چه تجربه‌ای باید داشته باشد. نباید فقط محصول را از دید خودمان ببینیم؛ باید از دید مشتری بررسی کنیم.
+        </div>
+    </div>
+
+    <!-- 88 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۸</span> ارتباط نقشه سفر مشتری با سایر بخش‌های کسب‌وکار را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقشه سفر مشتری با مدل درآمدی، استراتژی بازاریابی، ارزش پیشنهادی و وفاداری مشتری ارتباط مستقیم دارد.
+        </div>
+    </div>
+
+    <!-- 89 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۸۹</span> تجربه مشتری چگونه بر وفاداری مشتری تأثیر می‌گذارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تجربه مثبت باعث افزایش رضایت و وفاداری مشتری می‌شود. مشتریانی که تجربه خوبی دارند، دوباره خرید می‌کنند و برند را به دیگران توصیه می‌کنند.
+        </div>
+    </div>
+
+    <!-- 90 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۰</span> تفاوت بین تجربه مشتری و خدمات مشتری را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <strong>خدمات مشتری:</strong> بخش کوچکی از تجربه مشتری است که به پشتیبانی و کمک به مشتری مربوط می‌شود.<br>
+            <strong>تجربه مشتری:</strong> مجموعه کامل از تعاملات مشتری با برند در تمام مراحل (قبل، حین و بعد از خرید).
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش هفتم ========== -->
+    <h2><i class="fas fa-map-signs"></i> بخش هفتم: ابزار نقشه سفر مشتری (CJM) - سوالات ۹۱ تا ۱۰۰</h2>
+
+    <!-- 91 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۱</span> ابزار نقشه سفر مشتری (CJM) را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> CJM ابزاری است که با استفاده از آن تجربه مشتری تحلیل می‌شود، مسیر حرکت مشتری مدل‌سازی می‌شود و نقاط قوت و ضعف ارتباط مشتری با کسب‌وکار شناسایی می‌شود.
+        </div>
+    </div>
+
+    <!-- 92 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۲</span> هدف از استفاده از ابزار CJM چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> شناسایی نقاط قوت و ضعف ارتباط مشتری با کسب‌وکار و پیدا کردن راه‌حل برای بهبود آنها.
+        </div>
+    </div>
+
+    <!-- 93 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۳</span> نکته مهم در طراحی نقشه سفر مشتری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقشه سفر مشتری باید حول محور مشتری طراحی شود، نه حول محور محصول یا شرکت. باید ببینیم مشتری چه کاری انجام می‌دهد، چه احساسی دارد، چه مشکلی تجربه می‌کند و چه انتظاری دارد.
+        </div>
+    </div>
+
+    <!-- 94 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۴</span> نقاط اصطکاک (Pain Points) را تعریف کرده و مثال بزنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقاط اصطکاک، نقاطی هستند که باعث ایجاد تجربه منفی برای مشتری می‌شوند.<br>
+            <strong>نمونه‌ها:</strong> ثبت‌نام پیچیده، انتظار طولانی، پاسخ ندادن پشتیبانی، فرآیند خرید سخت، مشکلات پس از خرید.
+        </div>
+    </div>
+
+    <!-- 95 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۵</span> اجزای اصلی نقشه سفر مشتری را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ۱. پرسونا (Persona) ۲. مراحل سفر مشتری (Stages) ۳. نقاط تماس (Touch Points) ۴. اقدامات مشتری (Customer Actions) ۵. افکار و احساسات مشتری (Thoughts & Emotions) ۶. فرصت‌های بهبود (Opportunities)
+        </div>
+    </div>
+
+    <!-- 96 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۶</span> پرسونا (Persona) را تعریف کنید و توضیح دهید که شامل چه مواردی است.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پرسونا، نماینده‌ای فرضی از مشتری هدف است که ویژگی‌های او مشخص شده است. شامل نیازها، رفتارها، مشکلات و اهداف مشتری.
+        </div>
+    </div>
+
+    <!-- 97 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۷</span> مراحل سفر مشتری (Stages) را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مراحل مختلفی که مشتری طی می‌کند: آگاهی از محصول، بررسی و مقایسه، خرید، استفاده از محصول، پشتیبانی و وفاداری.
+        </div>
+    </div>
+
+    <!-- 98 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۸</span> نقاط تماس (Touch Points) در نقشه سفر مشتری را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقاط تماس، مکان‌هایی هستند که مشتری با کسب‌وکار ارتباط برقرار می‌کند؛ مانند تبلیغات، سایت، شبکه‌های اجتماعی، فروشنده، پشتیبانی، تحویل محصول.
+        </div>
+    </div>
+
+    <!-- 99 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۹۹</span> اقدامات مشتری (Customer Actions) در هر مرحله از سفر چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کارهایی که مشتری در هر مرحله انجام می‌دهد؛ مانند جستجو می‌کند، نظرات را می‌خواند، ثبت‌نام می‌کند، خرید انجام می‌دهد، با پشتیبانی تماس می‌گیرد.
+        </div>
+    </div>
+
+    <!-- 100 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۰۰</span> فرصت‌های بهبود (Opportunities) در نقشه سفر مشتری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بعد از تحلیل سفر مشتری مشخص می‌شود کجا باید فرآیند بهتر شود، چه مشکلی باید حل شود و چگونه تجربه مشتری بهتر شود.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== جمع‌بندی ========== -->
+    <h2><i class="fas fa-check-double"></i> جمع‌بندی نهایی</h2>
+
+    <table class="summary-table">
+        <thead>
+            <tr><th>بخش</th><th>تعداد سوالات</th><th>شماره سوالات</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>مفاهیم پایه (Gain & Pain)</td><td>۱۲</td><td>۱ تا ۱۲</td></tr>
+            <tr><td>کانال‌های فروش</td><td>۱۸</td><td>۱۳ تا ۳۰</td></tr>
+            <tr><td>کانال توزیع و زنجیره تأمین</td><td>۲۰</td><td>۳۱ تا ۵۰</td></tr>
+            <tr><td>قیمت‌گذاری</td><td>۱۵</td><td>۵۱ تا ۶۵</td></tr>
+            <tr><td>مدل‌های درآمدی</td><td>۱۳</td><td>۶۶ تا ۷۸</td></tr>
+            <tr><td>تجربه مشتری و نقشه سفر مشتری</td><td>۱۲</td><td>۷۹ تا ۹۰</td></tr>
+            <tr><td>ابزار CJM</td><td>۱۰</td><td>۹۱ تا ۱۰۰</td></tr>
+            <tr style="font-weight: 700; background: #f0e6e2;"><td>جمع کل</td><td>۱۰۰</td><td>۱ تا ۱۰۰</td></tr>
+        </tbody>
+    </table>
+
+    <hr>
+
     <div class="note-footer">
-        <i class="fas fa-check-circle"></i> این مجموعه شامل ۶۰ سوال تشریحی (۵۰ سوال از جزوه + ۱۰ سوال تکمیلی) از درس امکان‌سنجی و تدوین طرح کسب‌وکار است. پیشنهاد می‌شود هر سوال را ابتدا خودتان پاسخ دهید و سپس با پاسخ‌های ارائه‌شده مقایسه کنید.
+        <i class="fas fa-check-circle"></i> این مجموعه شامل ۱۰۰ سوال تشریحی از درس امکان‌سنجی و تدوین طرح کسب‌وکار (برگرفته از جزوه) است. پیشنهاد می‌شود هر سوال را ابتدا خودتان پاسخ دهید و سپس با پاسخ‌های ارائه‌شده مقایسه کنید.
     </div>
 
 </div> <!-- end container -->
