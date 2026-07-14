@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>۵۶ سوال جامع تشریحی - امکان‌سنجی و تدوین طرح کسب‌وکار</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #1a2a3a;
+            padding: 2rem 1.5rem;
+            line-height: 1.8;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.12);
+            padding: 2.5rem 2rem;
+            transition: all 0.2s ease;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            background: #e8edf4;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            color: #1a4a5e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .back-home i {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .back-home:hover {
+            background: #d4dfea;
+            border-color: #b8cbd8;
+            transform: translateX(-4px);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #0a2a3f;
+            border-bottom: 4px solid #c44536;
+            padding-bottom: 0.6rem;
+            display: inline-block;
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 i {
+            color: #c44536;
+            margin-left: 0.6rem;
+        }
+
+        .subtitle {
+            color: #4a5a6a;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .priority-badge {
+            display: inline-block;
+            background: #c44536;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.15rem 0.9rem;
+            border-radius: 40px;
+            margin-right: 0.5rem;
+            letter-spacing: 0.3px;
+        }
+
+        .merge-note {
+            display: inline-block;
+            background: #e8e0d8;
+            color: #5a4a3a;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.15rem 0.9rem;
+            border-radius: 40px;
+            margin-right: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            background: #f2e8e5;
+            padding: 0.6rem 1.3rem;
+            border-radius: 60px 12px 12px 60px;
+            border-right: 6px solid #c44536;
+            margin: 2.2rem 0 1.2rem 0;
+            color: #4d2c24;
+        }
+
+        h2 i {
+            color: #c44536;
+            margin-left: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: #4d2c24;
+            margin-top: 1.2rem;
+            margin-bottom: 0.2rem;
+            padding-right: 0.5rem;
+            border-right: 4px solid #d97a6b;
+            padding-right: 0.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 0.7rem;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 0.3rem 0 0.9rem 0;
+            padding-right: 1.8rem;
+        }
+
+        li {
+            margin-bottom: 0.2rem;
+        }
+
+        strong {
+            color: #8a3a2b;
+            font-weight: 700;
+        }
+
+        .question-block {
+            background: #fcfaf9;
+            border-radius: 18px;
+            padding: 0.9rem 1.4rem;
+            margin: 0.9rem 0;
+            border: 1px solid #e5d6d1;
+            transition: 0.15s ease;
+        }
+
+        .question-block:hover {
+            background: #f8f3f0;
+            border-color: #cfb8b0;
+        }
+
+        .q-badge {
+            display: inline-block;
+            background: #c44536;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.1rem 0.8rem;
+            border-radius: 30px;
+            margin-left: 0.5rem;
+        }
+
+        .answer {
+            background: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 14px;
+            margin-top: 0.3rem;
+            border-right: 4px solid #d97a6b;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .answer i {
+            color: #c44536;
+            margin-left: 0.4rem;
+        }
+
+        .answer .check {
+            color: #5a7a6a;
+        }
+
+        hr {
+            margin: 2.5rem 0;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to left, #dccbc4, transparent);
+        }
+
+        .note-footer {
+            background: #f0e6e2;
+            border-radius: 40px;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 500;
+            color: #4d2c24;
+        }
+
+        .note-footer i {
+            color: #c44536;
+            margin-left: 0.6rem;
+        }
+
+        .fa, .fas, .far {
+            margin-left: 6px;
+            color: #c44536;
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            font-size: 0.92rem;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+
+        .summary-table th {
+            background: #6b3a2e;
+            color: #fff;
+            padding: 10px 12px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .summary-table td {
+            background: #fdfaf8;
+            padding: 9px 12px;
+            border-bottom: 1px solid #e8dbd5;
+            text-align: center;
+        }
+
+        .summary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .summary-table tr:hover td {
+            background: #f6efeb;
+        }
+
+        .summary-table tr.highlight-row td {
+            background: #f0e6e2;
+            font-weight: 700;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0.8rem;
+            }
+            .container {
+                padding: 1.5rem 1rem;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+                padding: 0.5rem 1rem;
+            }
+            .question-block {
+                padding: 0.7rem 1rem;
+            }
+            .summary-table {
+                font-size: 0.75rem;
+            }
+            .summary-table th, .summary-table td {
+                padding: 6px 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .container {
+                padding: 1rem 0.6rem;
+            }
+            .question-block {
+                padding: 0.5rem 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی</a>
+
+    <h1><i class="fas fa-clipboard-list"></i> ۵۶ سوال جامع تشریحی</h1>
+    <div class="subtitle">
+        درس امکان‌سنجی و تدوین طرح کسب‌وکار (ادغام شده از ۷۶ سوال)
+        <span class="priority-badge"><i class="fas fa-star"></i> اولویت‌های استاد</span>
+        <span class="merge-note"><i class="fas fa-compress-alt"></i> ادغام سوالات مرتبط</span>
+    </div>
+
+    <!-- ========== بخش اول ========== -->
+    <h2><i class="fas fa-question-circle"></i> بخش اول: بیان مسئله (سوالات ۱ تا ۴)</h2>
+
+    <!-- سوالات ۱ تا ۴ ... (کد قبلی) ... -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱</span> بیان مسئله را در درس امکان‌سنجی تعریف کرده و بگویید در آن چه مواردی باید مشخص شود؟ و هدف از آن چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بیان مسئله اولین و مهم‌ترین مرحله در امکان‌سنجی است که در آن مشکل، نیاز یا فرصتی که کسب‌وکار قصد حل آن را دارد، به‌طور دقیق شناسایی و تعریف می‌شود.<br>
+            <strong>مواردی که باید مشخص شود:</strong> مشکل اصلی چیست؟ برای چه کسانی وجود دارد؟ علت ایجاد آن چیست؟ پیامدهای ادامه آن چیست؟ چرا حل آن اهمیت دارد؟<br>
+            <strong>هدف:</strong> شناخت دقیق نیاز مشتری و ایجاد پایه‌ای مناسب برای طراحی راه‌حل و ارائه ارزش پیشنهادی. بیان مسئله قبل از ارائه راه‌حل انجام می‌شود؛ یعنی ابتدا باید مشکل را بشناسیم، سپس محصول را طراحی کنیم.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲</span> چه رابطه‌ای بین بیان مسئله و ارزش پیشنهادی وجود دارد؟ و چرا بیان مسئله از اهمیت بالایی برخوردار است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بیان مسئله، شناسایی دقیق مشکل مشتری است و ارزش پیشنهادی، راه‌حلی است که آن مشکل را برطرف می‌کند. بدون بیان مسئله دقیق، ارزش پیشنهادی نمی‌تواند مؤثر باشد.<br>
+            <strong>اهمیت:</strong> زیرا اگر مسئله به‌درستی شناسایی نشود، راه‌حل ارائه‌شده نیز نامناسب خواهد بود و کسب‌وکار با شکست مواجه می‌شود.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳</span> تفاوت بین «بیان مسئله» و «ارائه راه‌حل» را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بیان مسئله، شناسایی و تعریف مشکل مشتری است، اما ارائه راه‌حل، طراحی محصول یا خدمتی است که آن مشکل را برطرف می‌کند. بیان مسئله همیشه قبل از راه‌حل انجام می‌شود و مسیر طراحی محصول و ارائه ارزش را مشخص می‌کند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴</span> چرا بیان مسئله در طرح کسب‌وکار، پایه‌ای برای طراحی ارزش پیشنهادی محسوب می‌شود؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا ارزش پیشنهادی بر اساس مشکلی که در بیان مسئله شناسایی شده، شکل می‌گیرد. اگر بیان مسئله دقیق نباشد، ارزش پیشنهادی نمی‌تواند نیاز واقعی مشتری را برطرف کند.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش دوم ========== -->
+    <h2><i class="fas fa-heartbeat"></i> بخش دوم: Pain و Gain (سوالات ۵ تا ۱۷)</h2>
+
+    <!-- سوالات ۵ تا ۱۷ ... (کد قبلی) ... -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵</span> Pain (درد مشتری) و Gain (منفعت مشتری) را تعریف کرده و نمونه‌هایی از هر کدام را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>Pain:</strong> مشکلات، دغدغه‌ها، سختی‌ها، هزینه‌ها و موانعی که مشتری در زندگی یا هنگام استفاده از محصول با آن روبه‌رو است.<br>
+            <strong>نمونه‌ها:</strong> اتلاف وقت، هزینه زیاد، کیفیت پایین، پیچیدگی، استرس و نگرانی.<br>
+            <strong>Gain:</strong> منافع، نتایج و ارزش‌هایی که مشتری انتظار دارد پس از استفاده از محصول به دست آورد.<br>
+            <strong>نمونه‌ها:</strong> صرفه‌جویی در زمان، کاهش هزینه، راحتی بیشتر، کیفیت بهتر، امنیت بیشتر.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۶</span> رابطه بین Pain و Gain را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> یک کسب‌وکار موفق ابتدا دردهای مشتری (Pain) را شناسایی می‌کند و سپس محصول یا خدمتی ارائه می‌دهد که این دردها را کاهش داده و ارزش و منفعت بیشتری (Gain) برای مشتری ایجاد کند. در واقع، Gain نتیجه‌ای است که پس از کاهش Pain حاصل می‌شود.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۷</span> چرا شناخت Pain و Gain اهمیت دارد؟ اگر این دو را نشناسیم چه اتفاقی می‌افتد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا اگر Pain و Gain را نشناسیم: ممکن است محصولی بسازیم که هیچ‌کس به آن نیاز نداشته باشد، ارزش پیشنهادی واقعی شکل نمی‌گیرد، رضایت مشتری کاهش می‌یابد، مدل درآمدی موفق نخواهد بود و سرمایه‌گذار جذب نمی‌شود.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۸</span> ترتیب صحیح طراحی کسب‌وکار چیست و چرا بسیاری از کارآفرینان این ترتیب را رعایت نمی‌کنند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ترتیب صحیح: ابتدا شناخت دردها و خواسته‌های مشتری، سپس طراحی محصول. بسیاری از کارآفرینان ابتدا محصول را طراحی می‌کنند و بعد به دنبال مشتری می‌گردند؛ در حالی که باید برعکس عمل کنند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۹</span> جمله طلایی «مردم محصول را نمی‌خرند» را توضیح داده و مثال بزنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مردم خود محصول را نمی‌خرند؛ بلکه ارزش و نتیجه‌ای را می‌خرند که محصول برایشان ایجاد می‌کند.<br>
+            <strong>مثال:</strong> مردم دریل نمی‌خرند؛ سوراخ شدن دیوار را می‌خرند. مردم قهوه نمی‌خرند؛ بلکه تجربه، محیط، خدمات و حس خوب را می‌خرند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۰</span> چرا بعضی محصولات با وجود کیفیت بالا شکست می‌خورند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا: مشکل مهمی از مشتری را حل نمی‌کنند، منفعت ارزشمندی برای مشتری ایجاد نمی‌کنند و ارزش پیشنهادی ضعیفی دارند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۱</span> مثال Pain و Gain را برای تاکسی اینترنتی (اسنپ) توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>Pain:</strong> انتظار طولانی، نامشخص بودن کرایه، چانه‌زنی، امنیت پایین، نبود امکان شکایت و پیگیری.<br>
+            <strong>Gain:</strong> درخواست سریع، اطلاع از کرایه قبل از سفر، پرداخت آنلاین، امنیت و راحتی بیشتر، امکان پیگیری سفر.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۲</span> انواع Pain مشتری را نام برده و هر کدام را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
+            <ol>
+                <li><strong>درد عملکردی:</strong> محصول خوب کار نمی‌کند.</li>
+                <li><strong>درد مالی:</strong> هزینه زیاد.</li>
+                <li><strong>درد زمانی:</strong> اتلاف وقت و صف.</li>
+                <li><strong>درد احساسی یا روانی:</strong> اضطراب، بی‌اعتمادی.</li>
+                <li><strong>درد اجتماعی:</strong> نگرانی از قضاوت دیگران یا کاهش پرستیژ.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۳</span> انواع Gain مشتری را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> صرفه‌جویی در زمان، کاهش هزینه، راحتی بیشتر، احساس امنیت، آرامش، لذت، کیفیت بهتر، پرستیژ و اعتبار اجتماعی.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۴</span> Pain Reliever و Gain Creator را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>Pain Reliever:</strong> کاهش یا از بین بردن دردهای مشتری. یعنی کسب‌وکار باید راه‌حلی ارائه دهد که مشکلات مشتری را کاهش دهد.<br>
+            <strong>Gain Creator:</strong> ایجاد منافع و ارزش‌های جدید برای مشتری. کسب‌وکار باید ارزش‌هایی فراتر از انتظارات مشتری ایجاد کند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۵</span> چگونه ارزش پیشنهادی قوی شکل می‌گیرد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی زمانی قوی است که دردهای مشتری را کاهش دهد (Pain Reliever) و منافع جدید ایجاد کند (Gain Creator).
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۶</span> مثال Pain و Gain را برای فروشگاه اینترنتی توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>Pain:</strong> ترافیک رفت‌وآمد، محدودیت ساعت خرید، زمان‌بر بودن جستجو.<br>
+            <strong>Gain:</strong> خرید ۲۴ ساعته، تنوع بیشتر کالا، مقایسه آسان محصولات، تحویل درب منزل.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۷</span> نقش کانال فروش در ایجاد Pain یا Gain برای مشتری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال‌های فروش می‌توانند خودشان Pain یا Gain ایجاد کنند.<br>
+            <strong>Pain:</strong> سایت کند، خرید پیچیده، پاسخگویی ضعیف.<br>
+            <strong>Gain:</strong> سایت سریع، پرداخت آسان، خرید ساده، تحویل سریع.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش سوم ========== -->
+    <h2><i class="fas fa-gem"></i> بخش سوم: ارزش پیشنهادی (Value Proposition) - سوالات ۱۸ تا ۲۳</h2>
+
+    <!-- سوالات ۱۸ تا ۲۳ ... (کد قبلی) ... -->
+    <div class="question-block">
+        <h3><span class="q-badge">۱۸</span> ارزش پیشنهادی را تعریف کرده و بگویید به چه سؤالی پاسخ می‌دهد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی مجموعه‌ای از ویژگی‌ها، منافع و ارزش‌هایی است که یک محصول یا خدمت برای رفع نیازها و مشکلات مشتری ارائه می‌کند. به این سؤال پاسخ می‌دهد: «چرا مشتری باید این محصول را انتخاب کند؟»
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۱۹</span> تفاوت بین ارزش پیشنهادی و مزیت رقابتی را با مثال توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>ارزش پیشنهادی:</strong> بر نیاز و خواسته مشتری تمرکز دارد و نشان می‌دهد چه ارزشی به مشتری ارائه می‌شود. هدف: جلب رضایت مشتری.<br>
+            <strong>مزیت رقابتی:</strong> بر برتری نسبت به رقبا تمرکز دارد و نشان می‌دهد چرا شرکت از رقبا بهتر است. هدف: کسب برتری و سهم بیشتر از بازار.<br>
+            <strong>مثال:</strong> اگر فروشگاه اینترنتی ارسال رایگان و سریع ارائه دهد، ارزش پیشنهادی آن راحتی و صرفه‌جویی است. اگر تنها شرکتی باشد که در کمتر از دو ساعت تحویل می‌دهد، این مزیت رقابتی است.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۰</span> ارزش پیشنهادی از چه مؤلفه‌هایی تشکیل شده است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ارزش پیشنهادی شامل: ویژگی‌های محصول، منافع برای مشتری، کاهش دردهای مشتری (Pain Reliever) و ایجاد منافع جدید (Gain Creator).
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۱</span> چه رابطه‌ای بین ارزش پیشنهادی و کانال فروش وجود دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش مسیری است که ارزش پیشنهادی را به مشتری منتقل می‌کند. حتی بهترین ارزش پیشنهادی بدون کانال فروش مناسب، به مشتری نمی‌رسد.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۲</span> چه رابطه‌ای بین ارزش پیشنهادی و بیان مسئله وجود دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بیان مسئله، شناسایی مشکل مشتری است و ارزش پیشنهادی، راه‌حلی است که آن مشکل را برطرف می‌کند. ارزش پیشنهادی بر اساس بیان مسئله دقیق شکل می‌گیرد.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۳</span> چرا ارزش پیشنهادی برای موفقیت کسب‌وکار حیاتی است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا اگر ارزش پیشنهادی ضعیف باشد، مشتری دلیلی برای خرید محصول نخواهد داشت، حتی اگر محصول از نظر فنی عالی باشد.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش چهارم ========== -->
+    <h2><i class="fas fa-coins"></i> بخش چهارم: مدل کسب‌وکار و مدل درآمدی (BM & RM) - سوالات ۲۴ تا ۳۲</h2>
+
+    <!-- سوالات ۲۴ تا ۳۲ ... (کد قبلی) ... -->
+    <div class="question-block">
+        <h3><span class="q-badge">۲۴</span> مدل درآمدی را تعریف کرده و بگویید به چه پرسش‌هایی پاسخ می‌دهد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مدل درآمدی سازوکاری است که از طریق آن، یک کسب‌وکار ارزش خلق‌شده را به درآمد تبدیل می‌کند. به این پرسش‌ها پاسخ می‌دهد: مشتری برای چه چیزی پول می‌دهد؟ چه مبلغی؟ چه زمانی؟ چند بار؟ درآمد از چه منابعی تأمین می‌شود؟
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۵</span> چرا مدل درآمدی یکی از مهم‌ترین بخش‌های طرح کسب‌وکار است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> زیرا بقای هر کسب‌وکار به داشتن یک مدل درآمدی مناسب وابسته است. حتی بهترین محصول بدون مدل درآمدی نمی‌تواند دوام بیاورد.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۶</span> تفاوت فروش و درآمد را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> فروش فقط یکی از منابع درآمد است. درآمد می‌تواند علاوه بر فروش، از راه‌های دیگری مانند تبلیغات، کارمزد، حق امتیاز (Royalty) و خدمات جانبی تأمین شود.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۷</span> آیا هر کسب‌وکاری که مشتری زیادی داشته باشد، موفق است؟ چرا برخی شرکت‌ها زیان‌ده اما ارزش میلیاردی دارند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر، داشتن مشتری زیاد الزاماً به معنای سودآوری نیست. برخی شرکت‌ها زیان‌ده اما ارزش میلیاردی دارند؛ زیرا درآمد آنها فقط از فروش نیست و از منابع دیگری مانند تبلیغات، فروش داده‌ها، اشتراک‌های پریمیوم، حق امتیاز و خدمات جانبی تأمین می‌شود.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۸</span> آیا دو شرکت با محصول مشابه می‌توانند مدل درآمدی متفاوت داشته باشند؟ مثال بزنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بله. یک شبکه تلویزیونی از تبلیغات درآمد کسب می‌کند، اما نتفلیکس از اشتراک کاربران درآمد دارد. هر دو محتوای تصویری ارائه می‌دهند اما مدل درآمدی متفاوتی دارند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۲۹</span> مشکل بسیاری از کارآفرینان در زمینه درآمد چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بسیاری از کارآفرینان می‌دانند چه چیزی تولید کنند، اما نمی‌دانند چگونه از آن درآمد کسب کنند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۰</span> مدل کسب‌وکار چه تفاوتی با مدل درآمدی دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مدل کسب‌وکار چارچوب کلی ایجاد، ارائه و کسب ارزش است، اما مدل درآمدی بخشی از آن است که نحوه کسب درآمد را مشخص می‌کند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۱</span> آیا محصول خوب برای موفقیت کافی است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر. بسیاری از محصولات باکیفیت به دلیل نداشتن مدل درآمدی مناسب شکست خورده‌اند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۲</span> چه عواملی در انتخاب مدل درآمدی مؤثرند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نوع محصول یا خدمت، مشتری هدف، رقبا، شرایط بازار و استراتژی کلی کسب‌وکار.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش پنجم ========== -->
+    <h2><i class="fas fa-store"></i> بخش پنجم: کانال‌های فروش (سوالات ۳۳ تا ۴۰)</h2>
+
+    <!-- سوالات ۳۳ تا ۴۰ ... (کد قبلی) ... -->
+    <div class="question-block">
+        <h3><span class="q-badge">۳۳</span> کانال فروش را تعریف کرده و اهمیت آن را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش راه یا مسیری است که از طریق آن ارزش پیشنهادی به دست مشتری می‌رسد و نشان می‌دهد مشتری چگونه محصول را پیدا، خرید و دریافت می‌کند.<br>
+            <strong>اهمیت:</strong> حتی بهترین محصول بدون کانال فروش مناسب موفق نمی‌شود؛ زیرا ارزش باید به مشتری برسد و بدون انتقال ارزش، فروش اتفاق نمی‌افتد.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۴</span> چرا دو شرکت با محصول مشابه فروش متفاوتی دارند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> یکی از مهم‌ترین دلایل، تفاوت در کانال‌های فروش است، نه لزوماً کیفیت محصول.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۵</span> آیا بهترین کانال فروش برای همه کسب‌وکارها یکسان است و آیا داشتن کانال‌های بیشتر همیشه بهتر است؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر، انتخاب کانال به عواملی مانند نوع محصول، مشتری هدف، بودجه و بازار بستگی دارد. داشتن کانال‌های بیشتر همیشه بهتر نیست؛ زیرا ممکن است هزینه‌ها افزایش یابد، مدیریت پیچیده‌تر شود و بین کانال‌ها تعارض ایجاد شود.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۶</span> علت شکست بسیاری از کسب‌وکارها در زمینه کانال فروش چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بسیاری از کارآفرینان زمان زیادی صرف طراحی محصول می‌کنند، اما به این سؤال پاسخ نمی‌دهند: «مشتری چگونه به محصول دسترسی پیدا می‌کند؟» در نتیجه، شکست بسیاری از کسب‌وکارها به دلیل انتخاب نامناسب کانال فروش است، نه ضعف محصول.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۷</span> نقاط تماس (Touchpoints) را تعریف کرده و تفاوت آن با تبلیغات را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقاط تماس، هر جایی است که مشتری با کسب‌وکار ارتباط برقرار می‌کند؛ مانند وب‌سایت، اینستاگرام، تماس تلفنی و پشتیبانی.<br>
+            <strong>تفاوت با تبلیغات:</strong> تبلیغات پیام بازاریابی است، اما اینکه این پیام در کجا به مشتری برسد، همان کانال یا Touchpoint است.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۸</span> جایگاه کانال در آمیخته بازاریابی (۴P) کجاست و نمونه‌هایی از کانال فروش را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> در آمیخته بازاریابی، کانال معادل Place است و به محل توزیع و دسترسی مشتری به محصول اشاره دارد.<br>
+            <strong>نمونه‌ها:</strong> فروشگاه فیزیکی، وب‌سایت، پیج اینستاگرام، اپلیکیشن، نمایندگی فروش.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۳۹</span> نقش کانال فروش در تجربه مشتری چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کانال فروش بر تجربه مشتری تأثیر مستقیم دارد. یک کانال مناسب باعث سهولت خرید، سرعت تحویل و خدمات بهتر می‌شود و در نتیجه تجربه مثبتی برای مشتری ایجاد می‌کند.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۰</span> تفاوت کانال فروش مستقیم و غیرمستقیم را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>مستقیم:</strong> فروش بدون واسطه و مستقیماً از تولیدکننده به مشتری (مثل وب‌سایت رسمی).<br>
+            <strong>غیرمستقیم:</strong> فروش از طریق واسطه‌ها مانند عمده‌فروش، نمایندگی یا فروشگاه.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ششم ========== -->
+    <h2><i class="fas fa-truck"></i> بخش ششم: زنجیره تأمین (سوالات ۴۱ تا ۴۶)</h2>
+
+    <!-- سوالات ۴۱ تا ۴۶ ... (کد قبلی) ... -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۱</span> زنجیره تأمین را تعریف کرده و تفاوت آن با لجستیک را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>زنجیره تأمین:</strong> شبکه‌ای از سازمان‌ها، فعالیت‌ها، منابع و اطلاعات است که در خلق و انتقال کالا یا خدمت از تأمین‌کننده اولیه تا مصرف‌کننده نهایی مشارکت دارند.<br>
+            <strong>تفاوت با لجستیک:</strong> زنجیره تأمین کل شبکه و سیستم استراتژیک است، اما لجستیک بخشی از آن است که بر حمل‌ونقل، انبارداری و جابه‌جایی کالا تمرکز دارد.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۲</span> چرا زنجیره تأمین اهمیت دارد و اگر ضعیف باشد چه اتفاقی می‌افتد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> حتی اگر شرکت محصول بسیار خوبی داشته باشد، ممکن است به دلیل ضعف در زنجیره تأمین شکست بخورد. پیامدها: نرسیدن به‌موقع مواد اولیه، توقف تولید، تأخیر در تحویل، کمبود موجودی، نارضایتی مشتری و رفتن مشتری به سمت رقبا.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۳</span> آیا زنجیره تأمین فقط برای کارخانه‌هاست؟ جریان‌های اصلی در زنجیره تأمین کدامند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> خیر، تقریباً هر کسب‌وکاری زنجیره تأمین دارد؛ مانند رستوران، داروخانه و فروشگاه اینترنتی.<br>
+            <strong>جریان‌های اصلی:</strong> ۱. جریان کالا (حرکت فیزیکی)، ۲. جریان اطلاعات (انتقال اطلاعات بین اعضا)، ۳. جریان مالی (حرکت پول و پرداخت‌ها).
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۴</span> لجستیک معکوس و تولید به‌موقع (JIT) را تعریف کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>لجستیک معکوس:</strong> مدیریت جریان بازگشت کالا از مشتری به سمت کسب‌وکار شامل مرجوعی، کالاهای معیوب و بازیافت.<br>
+            <strong>تولید به‌موقع (JIT):</strong> تأمین یا تولید کالا دقیقاً در زمانی که مورد نیاز است، نه زودتر. هدف: کاهش موجودی، کاهش هزینه نگهداری و کاهش ضایعات.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۵</span> چالش‌های زنجیره تأمین را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> سه موضوع معمولاً با هم تعارض دارند:
+            <ol>
+                <li>کاهش هزینه (ارزان‌تر شدن عملیات)</li>
+                <li>افزایش سرعت و انعطاف‌پذیری (پاسخ سریع‌تر به نیاز مشتری)</li>
+                <li>افزایش تاب‌آوری (مقاومت در برابر بحران‌ها)</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۶</span> نقش لجستیک در ارزش پیشنهادی چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> لجستیک می‌تواند خودش بخشی از ارزش پیشنهادی باشد. مشتری گاهی حاضر است برای سرعت و کیفیت بیشتر هزینه بیشتری پرداخت کند (مثال: گزینه «عجله دارم» در اسنپ).
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش هفتم ========== -->
+    <h2><i class="fas fa-chart-line"></i> بخش هفتم: تحلیل روند (سوالات ۴۷ تا ۵۰)</h2>
+
+    <!-- سوالات ۴۷ تا ۵۰ ... (کد قبلی) ... -->
+    <div class="question-block">
+        <h3><span class="q-badge">۴۷</span> تفاوت بین «روند» (Trend) و «مود» (Mode/Fad) را توضیح داده و مثال بزنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong><br>
+            <strong>مود:</strong> پدیده‌ای کوتاه‌مدت و زودگذر که پس از مدت کوتاهی از بین می‌رود (تأثیر ماندگار ندارد).<br>
+            <strong>روند:</strong> تغییری تدریجی و نسبتاً پایدار که در بلندمدت ادامه می‌یابد و می‌تواند رفتار مشتری، بازار و فناوری را تغییر دهد.<br>
+            <strong>مثال:</strong> هوش مصنوعی یک روند است، نه مود؛ زیرا به‌صورت تدریجی در حال گسترش است و تأثیر بلندمدتی دارد.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۸</span> وظیفه اصلی کارآفرین در مواجهه با آینده چیست و چرا تحلیل روند در طرح کسب‌وکار اهمیت دارد؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کارآفرین آینده را پیش‌بینی نمی‌کند؛ بلکه روندها را شناسایی، سناریوهای محتمل را طراحی و برای هر سناریو آماده می‌شود.<br>
+            <strong>اهمیت تحلیل روند:</strong> بسیاری از طرح‌ها بر اساس شرایط امروز نوشته می‌شوند، اما ممکن است محصولی امروز جذاب باشد و چند سال بعد به دلیل تغییرات محیطی جذابیت خود را از دست بدهد.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۴۹</span> تحلیل روند بر چه بخش‌هایی از طرح کسب‌وکار تأثیر می‌گذارد و تعریف آن چیست؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تحلیل روند بر شناسایی فرصت‌ها، تحلیل بازار، ارزش پیشنهادی، طراحی محصول، مدل درآمدی، استراتژی رقابتی، برنامه بازاریابی و برآوردهای مالی تأثیر می‌گذارد.<br>
+            <strong>تعریف:</strong> تحلیل روند فرایند شناسایی، بررسی و تفسیر تغییرات نسبتاً پایدار در محیط کسب‌وکار، به‌منظور تشخیص جهت حرکت بازار و اتخاذ تصمیمات استراتژیک است.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <h3><span class="q-badge">۵۰</span> نکته مهم درباره تحلیل روند چیست و چرا شرکت‌های بزرگ موفق گاهی بازار را از دست می‌دهند؟</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نکته مهم: تحلیل روند به معنای پیش‌بینی دقیق آینده نیست، بلکه هدف آن شناسایی نیروها و عوامل مؤثر بر آینده و تحلیل آنهاست.<br>
+            <strong>دلیل از دست دادن بازار توسط شرکت‌های بزرگ:</strong> زیرا تغییرات محیطی و روندهای جدید را به‌موقع تشخیص نمی‌دهند و خود را با آنها تطبیق نمی‌دهند (مثال: نوکیا).
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش هشتم: مفاهیم تکمیلی و استراتژیک ========== -->
+    <h2><i class="fas fa-chess-queen"></i> بخش هشتم: مفاهیم تکمیلی و استراتژیک (سوالات ۵۱ تا ۵۶)</h2>
+
+    <!-- 51 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۱</span> استراتژی (Strategy) را در کسب‌وکار تعریف کنید و سه کارکرد اصلی آن را توضیح دهید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> استراتژی یعنی شخصی‌سازی مسیر رسیدن به هدف؛ مجموعه تصمیمات آگاهانه برای رسیدن به اهداف بلندمدت.<br>
+            <strong>سه کارکرد اصلی:</strong>
+            <ol>
+                <li><strong>جهت‌دهی:</strong> مشخص می‌کند سازمان روی چه چیزهایی تمرکز کند و منابع محدود را چگونه مصرف کند.</li>
+                <li><strong>مزیت رقابتی:</strong> ویژگی که ما را نسبت به رقبا برتر می‌کند، باید پایدار و سخت‌الکپی باشد.</li>
+                <li><strong>تصمیمات متمرکزتر:</strong> اولویت‌بندی می‌کند و باعث هماهنگی و بقا می‌شود.</li>
+            </ol>
+            استراتژی مشخص می‌کند که چگونه وارد بازار شویم، مشتریان هدف چه کسانی هستند، چگونه درآمد کسب کنیم و چگونه رشد کنیم.
+        </div>
+    </div>
+
+    <!-- 52 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۲</span> مدل پنج نیروی پورتر (Porter's Five Forces) را تعریف کرده و هر پنج نیرو را نام ببرید و توضیح دهید که چگونه به تحلیل رقابت کمک می‌کند.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> این مدل به ما کمک می‌کند تا فشارهای رقابتی را بشناسیم و برای خنثی‌سازی آنها سنگر بسازیم.<br>
+            <strong>اهمیت آن:</strong> واقع‌گرایی (جلوگیری از خوش‌بینی خام)، پیش‌بینی‌پذیری (شناخت محل فشار بر سود) و ایجاد تمایز و مزیت رقابتی.<br>
+            <strong>پنج نیرو:</strong>
+            <ol>
+                <li><strong>موانع ورود (تازه واردان)</strong></li>
+                <li><strong>دسترسی به کانال‌های توزیع</strong></li>
+                <li><strong>قانون‌گذاری و مالکیت فکری</strong></li>
+                <li><strong>قدرت چانه‌زنی خریداران</strong> (هزینه‌های جایگزین مانند هزینه زمانی برای یادگیری)</li>
+                <li><strong>قدرت چانه‌زنی تأمین‌کنندگان</strong></li>
+            </ol>
+            یک استراتژیست باید کاری کند که هزینه جایگزین کردن محصول یا خدماتش برای مشتری بالا برود تا رقیب نتواند سریعاً جایگزینش کند.
+        </div>
+    </div>
+
+    <!-- 53 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۳</span> پرسونای مشتری (Customer Persona) را تعریف کنید و اهمیت آن را در تدوین طرح کسب‌وکار توضیح دهید. همچنین روش‌های طراحی پرسونا را نام ببرید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پرسونا یک تصویر نیمه‌واقعی از مشتریان ایده‌آل است که بر اساس داده‌ها ساخته می‌شود و به هدفمندسازی تبلیغات، قیمت‌گذاری و طراحی تجربه کاربری کمک می‌کند.<br>
+            <strong>اهمیت:</strong> اگر شناخت عمیقی از مشتری نداشته باشیم، تبلیغات هدر می‌رود، نرخ تبدیل پایین می‌آید، محصول اشتباه ساخته می‌شود و در نهایت کسب‌وکار شکست می‌خورد.<br>
+            <strong>روش‌های طراحی:</strong> مصاحبه با مشتریان، پرسشنامه برای تحلیل الگو، تحلیل شبکه‌های اجتماعی، تحلیل داده‌های فروش و مشاهده رفتار مشتری.<br>
+            <strong>اشتباهات رایج:</strong> ساختن پرسونا بر اساس حدس و گمان، کلی گفتن (مثل "همه مردم") یا تعداد زیادی فیلتر گذاشتن که باعث پیچیدگی می‌شود.
+        </div>
+    </div>
+
+    <!-- 54 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۴</span> سه صورت مالی اصلی در طرح کسب‌وکار را نام ببرید و هر کدام را توضیح دهید. همچنین اهمیت تحلیل مالی را در امکان‌سنجی بیان کنید.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بخش مالی، زبان رسمی کسب‌وکار است. سرمایه‌گذار فقط ایده را نمی‌خرد، به دنبال توجیه اقتصادی و توان سودآوری است.<br>
+            <strong>سه صورت مالی اصلی:</strong>
+            <ol>
+                <li><strong>صورت سود و زیان:</strong> درآمد، هزینه و سود یا زیان خالص را نشان می‌دهد.</li>
+                <li><strong>ترازنامه:</strong> تصویر لحظه‌ای از دارایی‌ها، بدهی‌ها و سهم مالک را نشان می‌دهد و ساختار مالی و سلامت آن را بررسی می‌کند.</li>
+                <li><strong>صورت جریان وجوه نقد:</strong> ورود و خروج واقعی پول نقد را نشان می‌دهد که حیاتی‌ترین بخش است.</li>
+            </ol>
+            <strong>نکات مهم:</strong> ممکن است فروش بالا باشد ولی جریان نقدی منفی باشد (مثلاً فروش چکی و اقساطی). ممکن است سودآور باشیم اما نقدینگی کافی برای پرداخت بدهی‌ها نداشته باشیم. تحلیل مالی اشتباه منجر به تصمیم‌گیری غلط، سرمایه‌گذاری پرریسک و ورشکستگی می‌شود.
+        </div>
+    </div>
+
+    <!-- 55 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۵</span> مفاهیم TAM، SAM و SOM را در اندازه‌گیری بازار تعریف کرده و با یک مثال توضیح دهید که چگونه یک کسب‌وکار از این مفاهیم برای ارزیابی پتانسیل بازار استفاده می‌کند.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بزرگ بودن بازار به معنی سودآوری نیست؛ ممکن است رقابت شدید یا اشباع باشد.<br>
+            <strong>TAM (کل بازار بالقوه):</strong> مثلاً کل افرادی که به آموزش زبان انگلیسی نیاز دارند.<br>
+            <strong>SAM (بازار قابل دسترس):</strong> بخشی از TAM که شرکت می‌تواند به آن خدمت دهد (مثلاً آموزش به بزرگسالان).<br>
+            <strong>SOM (بازار قابل دستیابی):</strong> بخشی از SAM که شرکت واقعاً می‌تواند به دست آورد (مثلاً بزرگسالان دارای گوشی هوشمند در اصفهان).<br>
+            <strong>هدف سرمایه‌گذار از پرسیدن اندازه بازار:</strong> می‌خواهند بدانند با یک بازار کوچک شروع می‌کنیم، چقدر قرار است رشد کنیم، به کجا می‌رسیم و چه تغییراتی در مسیر و قوانین منتظر ماست. همچنین باید بررسی شود که آیا اصلاً بازار کافی برای آن ایده وجود دارد یا نه.
+        </div>
+    </div>
+
+    <!-- 56 -->
+    <div class="question-block">
+        <h3><span class="q-badge">۵۶</span> مفهوم «شکست روی کاغذ» (Fail on Paper) را در طرح کسب‌وکار توضیح دهید و بگویید که چگونه این رویکرد به کارآفرینان کمک می‌کند تا ریسک شکست را کاهش دهند.</h3>
+        <div class="answer">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> طرح کسب‌وکار یک سند مکتوب برای برنامه‌ریزی مسیر کسب‌وکار است. حتی اگر کسی بدون طرح شروع کند، در ذهنش الگویی دارد، اما مکتوب کردن آن دو اصل مهم را دنبال می‌کند:
+            <ol>
+                <li><strong>اصل برنامه‌ریزی:</strong> بدانیم الان کجا هستیم، چه منابع و سرمایه‌ای داریم و چگونه به اهدافمان می‌رسیم.</li>
+                <li><strong>اصل چک‌لیست:</strong> مثل چک‌لیست آزمایشگاه، نکات مهم را مرور کنیم تا چیزی را فراموش نکنیم.</li>
+            </ol>
+            <strong>مزیت اصلی طرح «شکست روی کاغذ»:</strong> به جای اینکه در بازار واقعی شکست بخوریم و سرمایه‌مان را از دست بدهیم، شکست را روی کاغذ تجربه می‌کنیم و از اشتباهات درس می‌گیریم. تحلیل‌های مختلف (جمعیتی، اقتصادی و...) در طرح انجام می‌شود تا از بیراهه رفتن جلوگیری کنیم. همچنین طرح کسب‌وکار باعث می‌شود ذهنمان گرم شود و مطالب را بهتر حفظ کرده و از آنها استفاده کنیم.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ========== جمع‌بندی ========== -->
+    <h2><i class="fas fa-check-double"></i> جمع‌بندی نهایی</h2>
+
+    <table class="summary-table">
+        <thead>
+            <tr><th>بخش</th><th>تعداد سوالات</th><th>شماره سوالات</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>بیان مسئله</td><td>۴</td><td>۱ تا ۴</td></tr>
+            <tr><td>Pain & Gain</td><td>۱۳</td><td>۵ تا ۱۷</td></tr>
+            <tr><td>ارزش پیشنهادی (VP)</td><td>۶</td><td>۱۸ تا ۲۳</td></tr>
+            <tr><td>مدل کسب‌وکار و درآمدی (BM & RM)</td><td>۹</td><td>۲۴ تا ۳۲</td></tr>
+            <tr><td>کانال‌های فروش</td><td>۸</td><td>۳۳ تا ۴۰</td></tr>
+            <tr><td>زنجیره تأمین</td><td>۶</td><td>۴۱ تا ۴۶</td></tr>
+            <tr><td>تحلیل روند</td><td>۴</td><td>۴۷ تا ۵۰</td></tr>
+            <tr><td>مفاهیم تکمیلی و استراتژیک</td><td>۶</td><td>۵۱ تا ۵۶</td></tr>
+            <tr class="highlight-row"><td>جمع کل</td><td>۵۶</td><td>۱ تا ۵۶</td></tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <div class="note-footer">
+        <i class="fas fa-check-circle"></i> این مجموعه شامل ۵۶ سوال جامع تشریحی است که از ۷۶ سوال اولیه با ادغام سوالات مرتبط و مکمل تهیه شده است. تمام محتوای اصلی حفظ شده و با اولویت‌های اعلام‌شده استاد (بیان مسئله، Pain/Gain، ارزش پیشنهادی، مدل کسب‌وکار و درآمدی) و همچنین مفاهیم تکمیلی استراتژیک هماهنگ می‌باشد.
+        <br><br>
+        <i class="fas fa-star" style="color: #c44536;"></i> <strong>موفق باشید! 🎓</strong>
+    </div>
+
+</div> <!-- end container -->
+</body>
+</html>
