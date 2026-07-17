@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راهنمای جامع نظریه‌های کارآفرینی و نوآوری</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            color: #1a2a3a;
+            padding: 2rem 1.5rem;
+            line-height: 1.8;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px -12px rgba(0, 20, 30, 0.10);
+            padding: 2.5rem 2rem;
+            transition: all 0.2s ease;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            background: #e8edf4;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            color: #1a4a5e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .back-home i {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .back-home:hover {
+            background: #d4dfea;
+            border-color: #b8cbd8;
+            transform: translateX(-4px);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #132a3a;
+            border-bottom: 4px solid #6b4c7a;
+            padding-bottom: 0.6rem;
+            display: inline-block;
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 i {
+            color: #6b4c7a;
+            margin-left: 0.6rem;
+        }
+
+        .subtitle {
+            color: #4a3d5a;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-exam {
+            display: inline-block;
+            background: #c44536;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.15rem 0.9rem;
+            border-radius: 40px;
+            margin-right: 0.5rem;
+            letter-spacing: 0.3px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            background: #ede7f0;
+            padding: 0.6rem 1.3rem;
+            border-radius: 60px 12px 12px 60px;
+            border-right: 6px solid #6b4c7a;
+            margin: 2.2rem 0 1.2rem 0;
+            color: #2d1f3a;
+        }
+
+        h2 i {
+            color: #6b4c7a;
+            margin-left: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #2d1f3a;
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            padding-right: 0.5rem;
+            border-right: 4px solid #a583b8;
+            padding-right: 0.8rem;
+        }
+
+        h4 {
+            font-size: 1.05rem;
+            color: #3d2a4a;
+            margin-top: 1.2rem;
+            margin-bottom: 0.3rem;
+            padding-right: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 0.7rem;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 0.3rem 0 0.9rem 0;
+            padding-right: 1.8rem;
+        }
+
+        li {
+            margin-bottom: 0.2rem;
+        }
+
+        strong {
+            color: #4d2d5e;
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: #f5f0fa;
+            border-radius: 18px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            border-right: 4px solid #6b4c7a;
+        }
+
+        .highlight-box i {
+            color: #6b4c7a;
+            margin-left: 0.5rem;
+        }
+
+        .key-term-box {
+            background: #faf8fc;
+            border-radius: 16px;
+            padding: 0.8rem 1.2rem;
+            margin: 0.8rem 0;
+            border: 1px solid #ddd6e6;
+        }
+
+        .key-term-box strong {
+            color: #4d2d5e;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            font-size: 0.92rem;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+        }
+
+        th {
+            background: #4d2d5e;
+            color: #fff;
+            padding: 10px 12px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        td {
+            background: #fdfaf8;
+            padding: 9px 12px;
+            border-bottom: 1px solid #e8dbd5;
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: #f6efeb;
+        }
+
+        .toc {
+            background: #f9f6fb;
+            border-radius: 20px;
+            padding: 1.2rem 1.8rem;
+            margin: 1.5rem 0;
+            border: 1px solid #e0d6e8;
+        }
+
+        .toc a {
+            color: #4d2d5e;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0.2rem 0;
+            transition: 0.2s;
+        }
+
+        .toc a:hover {
+            color: #7a5a8a;
+            padding-right: 0.3rem;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-right: 0.5rem;
+        }
+
+        .toc ul li {
+            margin-bottom: 0.15rem;
+        }
+
+        .arrow-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            background: #f5f0fa;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            margin: 1rem 0;
+            font-weight: 600;
+            color: #4d2d5e;
+        }
+
+        .arrow-flow .arrow {
+            color: #6b4c7a;
+            font-size: 1.4rem;
+        }
+
+        .arrow-flow .box {
+            background: #fff;
+            padding: 0.3rem 1rem;
+            border-radius: 12px;
+            border: 1px solid #ddd6e6;
+        }
+
+        hr {
+            margin: 2.5rem 0;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to left, #d5c8df, transparent);
+        }
+
+        .note-footer {
+            background: #ede7f0;
+            border-radius: 40px;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 500;
+            color: #2d1f3a;
+        }
+
+        .note-footer i {
+            color: #6b4c7a;
+            margin-left: 0.6rem;
+        }
+
+        .fa, .fas, .far {
+            margin-left: 6px;
+            color: #6b4c7a;
+        }
+
+        .check-list {
+            list-style-type: none;
+            padding-right: 0;
+        }
+
+        .check-list li::before {
+            content: "✅ ";
+            color: #5a7a6a;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0.8rem;
+            }
+            .container {
+                padding: 1.5rem 1rem;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+                padding: 0.5rem 1rem;
+            }
+            table {
+                font-size: 0.8rem;
+            }
+            th, td {
+                padding: 6px 6px;
+            }
+            .arrow-flow {
+                font-size: 0.85rem;
+                padding: 0.7rem 1rem;
+            }
+            .arrow-flow .arrow {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            .container {
+                padding: 1rem 0.6rem;
+            }
+            table {
+                font-size: 0.7rem;
+            }
+            th, td {
+                padding: 4px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی</a>
+
+    <h1><i class="fas fa-brain"></i> راهنمای جامع نظریه‌های کارآفرینی و نوآوری</h1>
+    <div class="subtitle">
+        به همراه مبانی نظریه‌پردازی
+        <span class="badge-exam"><i class="fas fa-graduation-cap"></i> مرور نهایی • امتحان پایان‌ترم</span>
+    </div>
+
+    <!-- ========== فهرست ========== -->
+    <div class="toc">
+        <h4 style="margin-top:0; border-right:none; padding-right:0;"><i class="fas fa-list-ul"></i> فهرست مطالب</h4>
+        <ul>
+            <li><a href="#section1">۱. نظریه خودکارآمدی (بندورا)</a></li>
+            <li><a href="#section2">۲. نظریه اشتیاق کارآفرینی (کاردون)</a></li>
+            <li><a href="#section3">۳. نظریه اثرسازی (ساراسواتی)</a></li>
+            <li><a href="#section4">۴. مقایسه سه نظریه</a></li>
+            <li><a href="#section5">۵. نظریه چیست و چیست نیست؟</a></li>
+            <li><a href="#section6">۶. یادگیری معنادار و سطوح شناخت</a></li>
+            <li><a href="#section7">۷. جمع‌بندی نهایی</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ۱ ========== -->
+    <h2 id="section1"><i class="fas fa-user-check"></i> ۱. نظریه خودکارآمدی (بندورا)</h2>
+
+    <h3>توضیح مختصر</h3>
+    <p>آلبرت بندورا (۱۹۲۵) روانشناس آمریکایی و یکی از برجسته‌ترین نظریه‌پردازان قرن، نظریه یادگیری اجتماعی-شناختی را مطرح کرد. پرسش اصلی او این بود که <strong>چرا برخی افراد با وجود داشتن توانایی، عملگرا نیستند و برخی دیگر عملگرا هستند؟</strong> پاسخ او در مفهوم <strong>خودکارآمدی</strong> نهفته است.</p>
+
+    <h3>توضیح کامل</h3>
+    <p><strong>خودکارآمدی (Self-Efficacy)</strong>: باور فرد به توانایی‌های خود برای سازماندهی و اجرای دوره‌های کنشی مورد نیاز برای مدیریت موقعیت‌های پیش‌رو.</p>
+    <p>به عبارت ساده‌تر: «باور به توانایی برای تولید نتایج مطلوب توسط اقدامات خود»</p>
+
+    <h4>نکات کلیدی:</h4>
+    <table>
+        <thead>
+            <tr><th>ویژگی</th><th>توضیح</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>موضوعی بودن</strong></td><td>خودکارآمدی یک ویژگی کلی شخصیت نیست؛ فرد ممکن است در یک حوزه خودکارآمدی بالا و در حوزه دیگر پایین باشد.</td></tr>
+            <tr><td><strong>تفاوت با اعتماد به نفس</strong></td><td>خودکارآمدی = باور به توانایی انجام کار؛ اعتماد به نفس = احساس کلی درباره ارزشمندی خود.</td></tr>
+            <tr><td><strong>قابلیت تغییر</strong></td><td>خودکارآمدی با تمرین، تکرار و آموزش افزایش می‌یابد.</td></tr>
+            <tr><td><strong>ارتباط با تاب‌آوری</strong></td><td>خودکارآمدی بالا → تاب‌آوری بیشتر در کسب‌وکار.</td></tr>
+            <tr><td><strong>ارتباط با اضطراب</strong></td><td>خودکارآمدی بالا → اضطراب پایین‌تر (رابطه معکوس).</td></tr>
+            <tr><td><strong>ارتباط با انعطاف‌پذیری استراتژیک</strong></td><td>خودکارآمدی بالا → انعطاف‌پذیری بیشتر در شرایط عدم‌اطمینان.</td></tr>
+        </tbody>
+    </table>
+
+    <h4>چهار منبع خودکارآمدی:</h4>
+    <table>
+        <thead>
+            <tr><th>منبع</th><th>توضیح</th><th>مثال در کارآفرینی</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>۱. تجربه تسلط‌یابنده (Mastery Experience)</strong></td><td>موفقیت‌های مستقیم و شخصی – قوی‌ترین منبع</td><td>راه‌اندازی موفق یک کسب‌وکار کوچک و یادگیری از آن</td></tr>
+            <tr><td><strong>۲. تجربه غیرمستقیم (Vicarious Experience)</strong></td><td>مشاهده دیگرانی که شبیه ما هستند و موفق می‌شوند</td><td>دیدن موفقیت یک کارآفرین هم‌صنف</td></tr>
+            <tr><td><strong>۳. ترغیب کلامی (Verbal Persuasion)</strong></td><td>تشویق و حمایت دیگران</td><td>مشاور یا منتور گفتن «تو می‌توانی»</td></tr>
+            <tr><td><strong>۴. حالات فیزیولوژیکی و عاطفی</strong></td><td>تفسیر حالات جسمی و عاطفی به‌عنوان نشانه توانایی</td><td>کاهش اضطراب هنگام ارائه ایده به سرمایه‌گذار</td></tr>
+        </tbody>
+    </table>
+
+    <h4>مفاهیم کلیدی مرتبط:</h4>
+    <ul>
+        <li><strong>عاملیت انسانی (Human Agency)</strong>: فرد خود را عامل و مسئول می‌داند؛ یعنی انتخاب می‌کند، تصمیم می‌گیرد و بر محیط تأثیر می‌گذارد.</li>
+        <li><strong>علیت متقابل سه‌گانه (Triadic Reciprocal Causation)</strong>: سه عامل (رفتار، عوامل شخصی، عوامل محیطی) به‌طور متقابل بر یکدیگر تأثیر می‌گذارند.</li>
+        <li><strong>تفکر خودارجاعی (Self-Referent Thought)</strong>: سیستم باوری ما مثل یک فیلتر عمل می‌کند و نمی‌گذارد اطلاعات جدید را بپذیریم، مگر با باورهای قبلی هماهنگ باشد.</li>
+    </ul>
+
+    <div class="highlight-box">
+        <i class="fas fa-lightbulb"></i> <strong>نکته مهم:</strong> دانش زیاد به تنهایی کافی نیست. تفکر خودارجاعی می‌تواند مانع تبدیل دانش به کنش شود.
+    </div>
+
+    <h4>Key Terms</h4>
+    <div class="key-term-box">
+        <strong>Self-Efficacy</strong> (خودکارآمدی) • <strong>Human Agency</strong> (عاملیت انسانی) • <strong>Mastery Experience</strong> (تجربه تسلط‌یابنده) • <strong>Vicarious Experience</strong> (تجربه غیرمستقیم) • <strong>Verbal Persuasion</strong> (ترغیب کلامی) • <strong>Physiological/Affective States</strong> (حالات فیزیولوژیکی) • <strong>Triadic Reciprocal Causation</strong> (علیت متقابل سه‌گانه) • <strong>Self-Referent Thought</strong> (تفکر خودارجاعی)
+    </div>
+
+    <h4>Key Facts</h4>
+    <ul class="check-list">
+        <li>خودکارآمدی = باور به توانایی برای انجام کارها</li>
+        <li>خودکارآمدی تعیین می‌کند که فرد اقدام می‌کند یا نه</li>
+        <li>چهار منبع خودکارآمدی: تجربه موفقیت، مشاهده، تشویق، حالات جسمی</li>
+        <li>افراد با خودکارآمدی بالا: تاب‌آوری بیشتر، اضطراب کمتر، انعطاف‌پذیری استراتژیک بیشتر</li>
+        <li>خودکارآمدی یک امر موضوعی (وظیفه‌محور) است</li>
+        <li>دانش به‌تنهایی کافی نیست؛ تفکر خودارجاعی مانع تبدیل دانش به کنش می‌شود</li>
+        <li>خودکارآمدی زیرمجموعه عاملیت انسانی است</li>
+        <li>خودکارآمدی با تمرین و تکرار افزایش می‌یابد</li>
+    </ul>
+
+    <h4>مثال از کارآفرینی</h4>
+    <div class="highlight-box">
+        <i class="fas fa-user"></i> <strong>مریم</strong>، یک کارآفرین تازه‌کار، تصمیم دارد یک استارتاپ فناوری راه‌اندازی کند. او در گذشته یک پروژه کوچک آنلاین را با موفقیت مدیریت کرده است (تجربه تسلط‌یابنده). دوستش که استارتاپ موفقی دارد، او را تشویق می‌کند (ترغیب کلامی). مریم داستان موفقیت یک کارآفرین زن دیگر را خوانده است (تجربه غیرمستقیم). با وجود استرس اولیه، او باور دارد که می‌تواند از پس چالش‌ها برآید (حالات فیزیولوژیک مثبت). بنابراین، خودکارآمدی بالایی دارد و اقدام به تأسیس شرکت می‌کند.
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ۲ ========== -->
+    <h2 id="section2"><i class="fas fa-fire"></i> ۲. نظریه اشتیاق کارآفرینی (کاردون)</h2>
+
+    <h3>توضیح مختصر</h3>
+    <p>کاردون و همکاران (۲۰۱۳) با هدف ساخت و اعتباریابی ابزاری برای سنجش اشتیاق کارآفرینی، نشان دادند که اشتیاق فقط احساسات شدید مثبت نیست، بلکه شامل <strong>مرکزیت هویتی</strong> آن فعالیت‌ها برای کارآفرین نیز می‌شود. پرسش اصلی: <strong>چه چیزی کارآفرینان را به تالش مستمر، پشتکار و خلاقیت وادار می‌کند؟</strong></p>
+
+    <h3>توضیح کامل</h3>
+    <p><strong>اشتیاق کارآفرینی (Entrepreneurial Passion)</strong>: احساسات مثبت شدید نسبت به حوزه‌های اختراع، تأسیس و توسعه، همراه با هویت‌بخشی به این حوزه‌ها برای خودپنداره کارآفرین.</p>
+
+    <h4>دو مؤلفه اصلی:</h4>
+    <table>
+        <thead>
+            <tr><th>مؤلفه</th><th>توضیح</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>احساسات مثبت شدید (Intense Positive Feelings)</strong></td><td>شور و شوق در انجام فعالیت‌های کارآفرینانه</td></tr>
+            <tr><td><strong>مرکزیت هویتی (Identity Centrality)</strong></td><td>فعالیت کارآفرینانه برای هویت فرد اهمیت دارد و بخشی از «کیستی» اوست</td></tr>
+        </tbody>
+    </table>
+    <p>این دو مؤلفه یک <strong>چرخه تقویت‌کننده</strong> ایجاد می‌کنند.</p>
+
+    <h4>سه حوزه اشتیاق:</h4>
+    <table>
+        <thead>
+            <tr><th>حوزه</th><th>فعالیت‌ها</th><th>نمونه کارآفرین</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>اختراع (Inventing)</strong></td><td>جستجوی ایده‌های جدید، توسعه محصولات جدید، حل مسائل بازار</td><td>استیو جابز، نیکولا تسلا</td></tr>
+            <tr><td><strong>تأسیس (Founding)</strong></td><td>راه‌اندازی کسب‌وکار، جذب منابع، استخدام</td><td>سر ریچارد برانسون</td></tr>
+            <tr><td><strong>توسعه (Developing)</strong></td><td>رشد و گسترش شرکت، افزایش فروش</td><td>ری کروک (مک‌دونالد)، هرب کلهر</td></tr>
+        </tbody>
+    </table>
+
+    <h4>اشتیاق هماهنگ در مقابل اشتیاق وسواسی:</h4>
+    <table>
+        <thead>
+            <tr><th>نوع اشتیاق</th><th>ویژگی‌ها</th><th>پیامدها</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>هماهنگ (Harmonious)</strong></td><td>کنترل‌شده، متعادل</td><td>درآمد بالاتر، شبکه قوی‌تر، مرکزیت شبکه بالاتر</td></tr>
+            <tr><td><strong>وسواسی (Obsessive)</strong></td><td>کنترل‌نشده، افراطی</td><td>درآمد کمتر، شبکه ضعیف‌تر</td></tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box">
+        <i class="fas fa-lightbulb"></i> <strong>نکته مهم:</strong> اشتیاق در طول زمان (حداقل ۱۸ ماه) پایدار است و یک هیجان زودگذر نیست.
+    </div>
+
+    <h4>Key Terms</h4>
+    <div class="key-term-box">
+        <strong>Entrepreneurial Passion</strong> (اشتیاق کارآفرینی) • <strong>Passion for Inventing</strong> (اشتیاق برای اختراع) • <strong>Passion for Founding</strong> (اشتیاق برای تأسیس) • <strong>Passion for Developing</strong> (اشتیاق برای توسعه) • <strong>Identity Centrality</strong> (مرکزیت هویتی) • <strong>Harmonious Passion</strong> (اشتیاق هماهنگ) • <strong>Obsessive Passion</strong> (اشتیاق وسواسی)
+    </div>
+
+    <h4>Key Facts</h4>
+    <ul class="check-list">
+        <li>اشتیاق کارآفرینی = احساسات مثبت شدید + مرکزیت هویتی</li>
+        <li>اشتیاق سه بعد دارد: اختراع، تأسیس، توسعه</li>
+        <li>اشتیاق هماهنگ با درآمد بالاتر و شبکه قوی‌تر همراه است</li>
+        <li>اشتیاق وسواسی با نتایج منفی همراه است</li>
+        <li>اشتیاق در قلب کارآفرینی قرار دارد و به تالش، پشتکار و خلاقیت منجر می‌شود</li>
+        <li>ابزار سنجش نهایی شامل ۱۵ گویه (۱۲ گویه برای احساسات + ۳ گویه برای هویت) است</li>
+        <li>سه حوزه اشتیاق از یکدیگر متمایز هستند و نباید با هم ترکیب شوند</li>
+        <li>تعامل احساسات و هویت، کلید اصلی تأثیر اشتیاق است</li>
+    </ul>
+
+    <h4>مثال از کارآفرینی</h4>
+    <div class="highlight-box">
+        <i class="fas fa-user"></i> <strong>علی</strong>، بنیان‌گذار یک استارتاپ فینتک، عاشق ایده‌پردازی و توسعه محصولات جدید است. او ساعت‌ها در مورد راه‌حل‌های نوآورانه برای مسائل مالی فکر می‌کند و این کار برایش لذت‌بخش است (اشتیاق برای اختراع). اما او از فرایند جذب سرمایه و استخدام کارمندان لذت نمی‌برد (اشتیاق کم برای تأسیس). پس از راه‌اندازی شرکت، او بیشتر وقت خود را صرف توسعه محصول و ورود به بازارهای جدید می‌کند (اشتیاق برای توسعه). این فعالیت‌ها برای هویت او مرکزی هستند؛ او خود را یک «نوآور» می‌داند.
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ۳ ========== -->
+    <h2 id="section3"><i class="fas fa-rocket"></i> ۳. نظریه اثرسازی (ساراسواتی)</h2>
+
+    <h3>توضیح مختصر</h3>
+    <p>ساراسواتی (۲۰۰۸) با مطالعه کارآفرینان خبره، منطقی به نام <strong>اثرسازی (Effectuation)</strong> را کشف کرد که در شرایط عدم‌اطمینان شدید و آینده مبهم به کار می‌رود. پرسش اصلی: <strong>کارآفرینان در شرایطی که آینده واقعاً ناشناخته است، چگونه تصمیم می‌گیرند و عمل می‌کنند؟</strong></p>
+
+    <h3>توضیح کامل</h3>
+    <p><strong>اثرسازی (Effectuation)</strong>: منطق تصمیم‌گیری در شرایط ابهام و عدم‌اطمینان رادیکال که بر <strong>کنترل بدون پیش‌بینی</strong> تأکید دارد.</p>
+
+    <h4>تفاوت علت‌سازی و اثرسازی:</h4>
+    <table>
+        <thead>
+            <tr><th>ویژگی</th><th>علت‌سازی (Causation)</th><th>اثرسازی (Effectuation)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>جهت‌گیری</strong></td><td>از هدف به ابزار</td><td>از ابزار به هدف</td></tr>
+            <tr><td><strong>نوع کنترل</strong></td><td>پیش‌بینی محور</td><td>کنترل بدون پیش‌بینی</td></tr>
+            <tr><td><strong>آینده</strong></td><td>قابل پیش‌بینی</td><td>قابل خلق</td></tr>
+            <tr><td><strong>فرصت‌ها</strong></td><td>پیدا می‌شوند</td><td>خلق می‌شوند</td></tr>
+            <tr><td><strong>مناسب برای</strong></td><td>شرایط قابل پیش‌بینی</td><td>شرایط عدم‌اطمینان</td></tr>
+        </tbody>
+    </table>
+
+    <h4>پنج اصل اثرسازی:</h4>
+    <table>
+        <thead>
+            <tr><th>اصل</th><th>توضیح</th><th>مثال</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>۱. پرنده در دست (Bird-in-Hand)</strong></td><td>حرکت بر اساس داشته‌ها، نه اهداف از پیش تعیین‌شده</td><td>کارآفرین از مهارت‌ها و شبکه خود شروع می‌کند</td></tr>
+            <tr><td><strong>۲. ضرر قابل‌تحمل (Affordable Loss)</strong></td><td>تعهد به مقداری که توان از دست دادنش را دارد، نه محاسبه بازده مورد انتظار</td><td>سرمایه‌گذاری فقط به اندازه‌ای که در صورت شکست، زندگی را مختل نکند</td></tr>
+            <tr><td><strong>۳. لحاف چهل‌تکه (Crazy-Quilt)</strong></td><td>مذاکره با ذی‌نفعانی که خود را متعهد می‌کنند و اهداف را با هم می‌سازند</td><td>همکاری با مشتریان اولیه برای شکل‌دهی محصول</td></tr>
+            <tr><td><strong>۴. لیموناد (Lemonade)</strong></td><td>بهره‌برداری از شانس‌ها و پیشامدها، نه اجتناب از آن‌ها</td><td>استفاده از یک شکست اولیه برای کشف بازار جدید</td></tr>
+            <tr><td><strong>۵. خلبان در هواپیما (Pilot-in-the-Plane)</strong></td><td>تکیه بر عاملیت انسانی برای کنترل آینده، نه پیش‌بینی آن</td><td>باور به اینکه اقدامات کارآفرین، آینده را می‌سازد</td></tr>
+        </tbody>
+    </table>
+
+    <div class="highlight-box">
+        <i class="fas fa-lightbulb"></i> <strong>نکته کلیدی:</strong> اثرگذاران فرصت‌ها را <strong>می‌سازند</strong>، نه اینکه آنها را <strong>پیدا کنند</strong>. اثرسازی یک <strong>مهارت قابل یادگیری</strong> است، نه یک استعداد ذاتی.
+    </div>
+
+    <h4>Key Terms</h4>
+    <div class="key-term-box">
+        <strong>Effectuation</strong> (اثرسازی) • <strong>Causation</strong> (علت‌سازی) • <strong>Non-Predictive Control</strong> (کنترل بدون پیش‌بینی) • <strong>Bird-in-Hand Principle</strong> (اصل پرنده در دست) • <strong>Affordable Loss Principle</strong> (اصل ضرر قابل‌تحمل) • <strong>Crazy-Quilt Principle</strong> (اصل لحاف چهل‌تکه) • <strong>Lemonade Principle</strong> (اصل لیموناد) • <strong>Pilot-in-the-Plane Principle</strong> (اصل خلبان در هواپیما)
+    </div>
+
+    <h4>Key Facts</h4>
+    <ul class="check-list">
+        <li>اثرسازی = کنترل بدون پیش‌بینی</li>
+        <li>علت‌سازی = پیش‌بینی برای کنترل</li>
+        <li>اثرگذاران فرصت‌ها را می‌سازند، نه اینکه آنها را پیدا کنند</li>
+        <li>اثرگذاران به‌جای راه‌حل‌های کامل، به دنبال راه‌حل‌هایی هستند که محدودیت‌ها را برطرف کنند</li>
+        <li>اثرسازی یک مهارت قابل یادگیری است، نه استعداد ذاتی</li>
+        <li>پنج اصل اثرسازی: پرنده در دست، ضرر قابل‌تحمل، لحاف چهل‌تکه، لیموناد، خلبان در هواپیما</li>
+        <li>اثرسازی در شرایط عدم‌اطمینان رادیکال کاربرد دارد</li>
+        <li>بر کنترل غیرپیش‌بینی‌کننده تأکید دارد</li>
+    </ul>
+
+    <h4>مثال از کارآفرینی</h4>
+    <div class="highlight-box">
+        <i class="fas fa-user"></i> <strong>سارا</strong>، یک کارآفرین در حوزه گردشگری فضایی، هیچ داده‌ای درباره بازار ندارد (عدم‌اطمینان رادیکال). او به جای پیش‌بینی، از داشته‌هایش شروع می‌کند: مهارت‌های مهندسی، علاقه به فضا، و شبکه تماس‌هایش (پرنده در دست). او با چند سرمایه‌گذار صحبت می‌کند و مبلغی را که توان از دست دادنش را دارد، تعیین می‌کند (ضرر قابل‌تحمل). مشتریان اولیه به او کمک می‌کنند تا خدمات را شکل دهد (لحاف چهل‌تکه). وقتی یک شکست فنی رخ می‌دهد، از آن برای بهبود محصول استفاده می‌کند (لیموناد). سارا باور دارد که اقداماتش آینده را می‌سازد (خلبان در هواپیما).
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ۴ ========== -->
+    <h2 id="section4"><i class="fas fa-arrows-left-right"></i> ۴. مقایسه سه نظریه</h2>
+
+    <h3>جدول تطبیقی جامع</h3>
+    <table>
+        <thead>
+            <tr><th>بعد مقایسه</th><th>بندورا (خودکارآمدی)</th><th>کاردون (اشتیاق)</th><th>ساراسواتی (اثرسازی)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>موضوع اصلی</strong></td><td>باور به توانایی انجام وظایف خاص</td><td>احساس مثبت شدید نسبت به فعالیت‌های هویتی</td><td>منطق عمل در شرایط عدم‌اطمینان شدید</td></tr>
+            <tr><td><strong>سؤال اصلی</strong></td><td>آیا به توانایی خود برای انجام کار باور دارم؟</td><td>از فعالیت کارآفرینانه لذت می‌برم و برای هویتم مهم است؟</td><td>با داشته‌هایم و همکاری دیگران، آینده‌ای می‌سازم که پیش‌بینی‌اش ممکن نیست؟</td></tr>
+            <tr><td><strong>نوع سازه</strong></td><td>شناختی-انگیزشی</td><td>عاطفی-هویتی</td><td>راهبردی-عملیاتی</td></tr>
+            <tr><td><strong>نقش هویت</strong></td><td>نقشی مستقیم ندارد</td><td>هویت جزء لاینفک اشتیاق است</td><td>هویت در قالب «کیستی» یکی از وسایل اولیه است</td></tr>
+            <tr><td><strong>منابع شکل‌گیری</strong></td><td>تجربه، مشاهده، ترغیب، حالات فیزیولوژیک</td><td>احساسات مثبت + شناسایی با نقش (هویت)</td><td>داشته‌های شخصی، شبکه، تعهدات ذی‌نفعان</td></tr>
+            <tr><td><strong>دامنه کاربرد</strong></td><td>بسیار گسترده (ترس، ورزش، اعتیاد، تحصیل، شغل)</td><td>مختص کارآفرینی (سه حوزه)</td><td>مختص شرایط عدم‌اطمینان و کارآفرینی</td></tr>
+            <tr><td><strong>روش پژوهش</strong></td><td>آزمایش‌های خردنگر با سنجش دقیق تکالیف</td><td>پیمایش، تحلیل عاملی، مطالعه پیگیری طولی</td><td>پروتکل فکری-بلند، مطالعه خبرگان</td></tr>
+            <tr><td><strong>پایداری زمانی</strong></td><td>خودکارآمدی می‌تواند تغییر کند (با تجربه)</td><td>اشتیاق پایدار است (حداقل ۱۸ ماه)</td><td>رویکردی پویا و متغیر با شرایط</td></tr>
+            <tr><td><strong>کاربرد اصلی</strong></td><td>مکانیزم عمومی برای تغییر رفتار و کاهش اضطراب</td><td>ابزار سنجش دقیق برای پژوهش در کارآفرینی</td><td>چارچوب تصمیم‌گیری در شرایط خلاقانه و پیش‌بینی‌ناپذیر</td></tr>
+        </tbody>
+    </table>
+
+    <h3>ارتباط منطقی سه نظریه</h3>
+    <p>سه نظریه یک <strong>زنجیره مکمل</strong> را تشکیل می‌دهند:</p>
+
+    <div class="arrow-flow">
+        <span class="box"><i class="fas fa-brain"></i> خودکارآمدی <small>(بندورا)</small></span>
+        <span class="arrow"><i class="fas fa-arrow-left"></i></span>
+        <span class="box"><i class="fas fa-heart"></i> اشتیاق <small>(کاردون)</small></span>
+        <span class="arrow"><i class="fas fa-arrow-left"></i></span>
+        <span class="box"><i class="fas fa-cogs"></i> اثرسازی <small>(ساراسواتی)</small></span>
+    </div>
+    <p style="text-align:center; color:#4a3d5a; font-size:0.95rem;">(باور به توانایی) → (عشق به کار) → (اقدام در فضای مبهم)</p>
+
+    <div class="highlight-box">
+        <i class="fas fa-lightbulb"></i> <strong>به بیان دیگر:</strong>
+        <ul style="margin-top:0.5rem;">
+            <li><strong>بندورا</strong>: زیربنای شناختی (باور به توانایی) را فراهم می‌کند → «من می‌توانم»</li>
+            <li><strong>کاردون</strong>: با افزودن هویت و احساسات، آن را به حوزه کارآفرینی خاص می‌کند → «من عاشق این هستم و این هویت من است»</li>
+            <li><strong>ساراسواتی</strong>: چارچوبی عملیاتی برای اقدام در شرایط ابهام ارائه می‌دهد → «با داشته‌هایم آینده‌ای می‌سازم که پیش‌بینی‌اش ممکن نیست»</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ۵ ========== -->
+    <h2 id="section5"><i class="fas fa-question-circle"></i> ۵. نظریه چیست و چیست نیست؟</h2>
+
+    <h3>نظریه چیست؟ (بر اساس ساتن و استاو، ۱۹۹۵)</h3>
+    <div class="highlight-box">
+        <i class="fas fa-quote-right"></i> <strong>«داستانی درباره اینکه چرا اعمال، رویدادها، ساختارها و افکار رخ می‌دهند»</strong>
+    </div>
+
+    <h4>ویژگی‌های نظریه:</h4>
+    <ul>
+        <li>توضیح رابطه علت و معلولی</li>
+        <li>تبیین «چرایی» وقوع پدیده</li>
+        <li>مشخص کردن شرایط مرزی (کجا کاربرد دارد و کجا نه)</li>
+        <li>شناسایی متغیرهای مهم و شرح روابط بین آنها</li>
+        <li>آشکارسازی منطق پشت پدیده</li>
+    </ul>
+
+    <h4>وظایف نظریه:</h4>
+    <ol>
+        <li>توضیح دهد که چرا پدیده‌ها رخ می‌دهند</li>
+        <li>پیش‌بینی کند که چه اتفاقی خواهد افتاد</li>
+        <li>کمک کند برای بهبود پدیده، مداخله کنیم</li>
+    </ol>
+
+    <h3>نظریه چیست؟ (دیدگاه دیماچیو، ۱۹۹۵)</h3>
+    <p>دیماچیو سه دیدگاه مختلف از «نظریه خوب» معرفی می‌کند:</p>
+    <table>
+        <thead>
+            <tr><th>دیدگاه</th><th>توضیح</th><th>مثال</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>قوانین جامع (Covering Laws)</strong></td><td>نظریه به‌عنوان تعمیم‌هایی که جهان را توصیف می‌کنند</td><td>«هرچه عدم‌اطمینان محیطی بیشتر باشد، تمایل به کارآفرینی کمتر است»</td></tr>
+            <tr><td><strong>روشنگری (Enlightenment)</strong></td><td>نظریه به‌عنوان ابزار آشنایی‌زدایی و درک جدید</td><td>نظریه تخریب خلاق شومپیتر</td></tr>
+            <tr><td><strong>روایت (Narrative)</strong></td><td>نظریه به‌عنوان داستان منسجم</td><td>روایت شکل‌گیری یک استارتاپ موفق</td></tr>
+        </tbody>
+    </table>
+    <div class="highlight-box">
+        <i class="fas fa-lightbulb"></i> <strong>نکته:</strong> نظریه‌ها مثل <strong>لنز</strong> عمل می‌کنند؛ هر نظریه یک زاویه دید به پدیده می‌دهد و به ما کمک می‌کند تصمیمات دقیق‌تری بگیریم.
+    </div>
+
+    <h3>پنج چیزی که نظریه نیست (ساتن و استاو)</h3>
+    <table>
+        <thead>
+            <tr><th>مورد</th><th>توضیح</th><th>مثال</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>۱. ارجاعات</strong></td><td>ارجاع به کارهای دیگران، خود نظریه نیست</td><td>صرفاً گفتن «بندورا می‌گوید...»</td></tr>
+            <tr><td><strong>۲. داده‌ها</strong></td><td>یافته‌های تجربی پشتیبان نظریه هستند، نه خود نظریه</td><td>«۵۶٪ کسب‌وکارهای ایران خدماتی هستند»</td></tr>
+            <tr><td><strong>۳. فهرست متغیرها</strong></td><td>صرفاً نام بردن متغیرها بدون توضیح روابط</td><td>«عوامل موفقیت: سرمایه، شبکه، تیم»</td></tr>
+            <tr><td><strong>۴. نمودارها</strong></td><td>نمودارها فرآیند و منطق را توضیح نمی‌دهند</td><td>جعبه‌ها و فلش‌ها بدون توضیح کلامی</td></tr>
+            <tr><td><strong>۵. فرضیه‌ها</strong></td><td>فرضیه پیش‌بینی می‌کند، اما نظریه چرایی آن را توضیح می‌دهد</td><td>«استفاده از اینترنت با درآمد رابطه دارد»</td></tr>
+        </tbody>
+    </table>
+
+    <h3>چگونه داده به نظریه تبدیل می‌شود؟ (مثال)</h3>
+    <div class="highlight-box">
+        <strong>داده:</strong> «استفاده از اینترنت با درآمد رابطه دارد»<br>
+        <strong>تبدیل به نظریه:</strong>
+        <div style="margin-top:0.5rem; padding:0.5rem 1rem; background:#fff; border-radius:12px;">
+            دسترسی به اینترنت → افزایش اطلاعات در بازار → کاهش هزینه جستجو → صرفه‌جویی در زمان و هزینه → تصمیمات بهینه و کارآمدتر → درآمد بیشتر
+        </div>
+    </div>
+
+    <h3>دیدگاه ویک (Weick, 1995) – تکمیل نظریه استاو</h3>
+    <p>ویک معتقد است که اگرچه پنج عنصر مذکور خود نظریه نیستند، اما <strong>مسیر به سوی نظریه</strong> هستند:</p>
+    <ul>
+        <li>ارجاعات → به نظریه نزدیک می‌شوند</li>
+        <li>داده‌ها → پشتیبان نظریه هستند</li>
+        <li>متغیرها → حاوی اطلاعات پنهان درباره روابط علی هستند</li>
+        <li>نمودارها → ساختار روابط را نشان می‌دهند</li>
+        <li>فرضیه‌ها → می‌توانند به نظریه تبدیل شوند اگر توضیح عمیق داشته باشند</li>
+    </ul>
+    <div class="highlight-box">
+        <i class="fas fa-lightbulb"></i> <strong>نکته کلیدی ویک:</strong> نظریه‌پردازی یک <strong>فرایند</strong> است، نه محصول نهایی. مسیر نظریه‌پردازی از خود نظریه مهم‌تر است.
+    </div>
+
+    <h3>راه تشخیص فرضیه از نظریه</h3>
+    <div class="highlight-box">
+        <i class="fas fa-quote-right"></i> نوشته را از مقاله حذف کنید. اگر حرفی برای گفتن داشتید، یعنی نظریه داشتید؛ اگر نه، فرضیه بود.
+    </div>
+
+    <hr>
+
+    <!-- ========== بخش ۶ ========== -->
+    <h2 id="section6"><i class="fas fa-graduation-cap"></i> ۶. یادگیری معنادار و سطوح شناخت</h2>
+
+    <h3>سه مؤلفه اصلی یادگیری معنادار</h3>
+    <table>
+        <thead>
+            <tr><th>مؤلفه</th><th>توضیح</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>۱. یادآوری (Recall)</strong></td><td>به خاطر سپردن وقایع کلیدی (Key Facts) و کلیدواژه‌ها (Key Terms)</td></tr>
+            <tr><td><strong>۲. انتقال (Transfer)</strong></td><td>توانایی کاربست آموخته‌ها در موقعیت‌های جدید</td></tr>
+            <tr><td><strong>۳. شناخت (Cognition)</strong></td><td>فرایند ذهنی که از یادآوری به فهم و سپس به کاربرد می‌رسد</td></tr>
+        </tbody>
+    </table>
+
+    <h3>سه دسته یادگیری</h3>
+    <table>
+        <thead>
+            <tr><th>نوع یادگیری</th><th>ویژگی‌ها</th><th>مثال</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>بدون یادگیری (No Learning)</strong></td><td>فقط Key Terms را دارد، درک عمیقی ندارد</td><td>حضور در جلسه و فقط دانستن نام جلسه</td></tr>
+            <tr><td><strong>یادگیری طوطی‌وار (Rote Learning)</strong></td><td>هم Key Terms و هم Key Facts را دارد، اما قابل انتقال نیست</td><td>حفظ کردن مطالب برای امتحان بدون درک</td></tr>
+            <tr><td><strong>یادگیری معنادار (Meaningful Learning)</strong></td><td>هم قابلیت بازخوانی و هم قابلیت انتقال دارد</td><td>درک عمیق و توانایی توضیح با زبان خود</td></tr>
+        </tbody>
+    </table>
+
+    <h3>پنج سطح شناخت (بلوم)</h3>
+    <table>
+        <thead>
+            <tr><th>سطح</th><th>توضیح</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>۱. یادآوری (Remembering)</strong></td><td>به خاطر آوردن Key Terms و Key Facts</td></tr>
+            <tr><td><strong>۲. فهم (Understanding)</strong></td><td>تفسیر، بازگویی مولد، مثال‌زنی، دسته‌بندی، استنتاج</td></tr>
+            <tr><td><strong>۳. کاربرد (Applying)</strong></td><td>استفاده از نظریه در موقعیت‌های جدید (همان Transfer)</td></tr>
+            <tr><td><strong>۴. تحلیل (Analyzing)</strong></td><td>نقد، مقایسه، تشخیص اجزای تشکیل‌دهنده</td></tr>
+            <tr><td><strong>۵. آفرینش‌گری (Creating)</strong></td><td>ارائه نظریه جدید</td></tr>
+        </tbody>
+    </table>
+
+    <h4>شاخص‌های فهم:</h4>
+    <ul class="check-list">
+        <li><strong>یادآوری</strong>: به خاطر سپردن کلیدواژه‌ها و حقایق کلیدی</li>
+        <li><strong>بازگویی مولد</strong>: توضیح یک پدیده و آنچه در ذیل آن قرار دارد، بدون نگاه به منبع</li>
+        <li><strong>مثال‌زنی</strong>: ارائه مثال عینی از دنیای واقعی برای نظریه</li>
+        <li><strong>دسته‌بندی</strong>: طبقه‌بندی نظریه بر اساس منطق</li>
+        <li><strong>استنتاج</strong>: استخراج مفاهیم کلی از جزئیات (استقرا) یا برعکس (قیاس)</li>
+    </ul>
+
+    <hr>
+
+    <!-- ========== بخش ۷ ========== -->
+    <h2 id="section7"><i class="fas fa-check-double"></i> ۷. جمع‌بندی نهایی</h2>
+
+    <h3>Key Terms نهایی (مرور سریع)</h3>
+    <table>
+        <thead>
+            <tr><th>موضوع</th><th>Key Terms</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>استاو</strong></td><td>Theory, References, Data, Variables, Diagrams, Hypotheses</td></tr>
+            <tr><td><strong>ویک</strong></td><td>Process, Product, Approximation, Continuum, Context</td></tr>
+            <tr><td><strong>دیماچیو</strong></td><td>Covering Laws, Enlightenment, Narrative, Paradox</td></tr>
+            <tr><td><strong>بندورا</strong></td><td>Self-Efficacy, Mastery, Vicarious, Verbal Persuasion, Physiological States, Triadic Reciprocal Causation, Human Agency, Self-Referent Thought</td></tr>
+            <tr><td><strong>کاردون</strong></td><td>Entrepreneurial Passion, Inventing, Founding, Developing, Identity Centrality, Harmonious Passion, Obsessive Passion</td></tr>
+            <tr><td><strong>ساراسواتی</strong></td><td>Effectuation, Causation, Bird-in-Hand, Affordable Loss, Lemonade, Crazy-Quilt, Pilot-in-the-Plane</td></tr>
+            <tr><td><strong>یادگیری</strong></td><td>Meaningful Learning, Rote Learning, No Learning, Transfer, Cognition</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Key Facts نهایی (مرور سریع)</h3>
+    <table>
+        <thead>
+            <tr><th>موضوع</th><th>Key Facts</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>نظریه چیست؟</strong></td><td>داستانی درباره چرایی وقوع پدیده‌ها (ساتن و استاو)</td></tr>
+            <tr><td><strong>پنج چیزی که نظریه نیست</strong></td><td>ارجاعات، داده‌ها، متغیرها، نمودارها، فرضیه‌ها</td></tr>
+            <tr><td><strong>خودکارآمدی</strong></td><td>باور به توانایی؛ چهار منبع: تجربه، مشاهده، تشویق، حالات جسمی</td></tr>
+            <tr><td><strong>اشتیاق</strong></td><td>احساسات مثبت + مرکزیت هویتی؛ سه بعد: اختراع، تأسیس، توسعه</td></tr>
+            <tr><td><strong>اثرسازی</strong></td><td>کنترل بدون پیش‌بینی؛ پنج اصل: پرنده در دست، ضرر قابل‌تحمل، لحاف چهل‌تکه، لیموناد، خلبان در هواپیما</td></tr>
+            <tr><td><strong>سه دیدگاه فرصت</strong></td><td>تخصیصی، اکتشافی، خلاق</td></tr>
+            <tr><td><strong>یادگیری معنادار</strong></td><td>یادآوری + انتقال + شناخت</td></tr>
+        </tbody>
+    </table>
+
+    <h3>نکته نهایی برای امتحان</h3>
+    <div class="highlight-box" style="border-right-color: #c44536;">
+        <i class="fas fa-star" style="color:#c44536;"></i> برای پاسخ‌گویی به سوالات تشریحی، <strong>شاخص‌های فهم</strong> را رعایت کنید:
+        <ol style="margin-top:0.5rem;">
+            <li><strong>یادآوری</strong>: Key Terms و Key Facts را به خاطر بسپارید</li>
+            <li><strong>بازگویی</strong>: مفاهیم را به زبان خودتان توضیح دهید</li>
+            <li><strong>مثال‌زنی</strong>: برای هر مفهوم مثال عینی از کارآفرینی بیاورید</li>
+            <li><strong>تبیین</strong>: «چرا» و «چگونه» پشت هر نظریه را توضیح دهید</li>
+            <li><strong>تطبیق</strong>: تفاوت‌های نظریه‌ها را با هم مقایسه کنید</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <div class="note-footer">
+        <i class="fas fa-check-circle"></i> این راهنما شامل تمام مباحث کلیدی نظریه‌های کارآفرینی و نوآوری به همراه مبانی نظریه‌پردازی است.
+        <br><br>
+        <i class="fas fa-star" style="color: #6b4c7a;"></i> <strong>موفق باشید! 🎓</strong>
+    </div>
+
+</div> <!-- end container -->
+</body>
+</html>
