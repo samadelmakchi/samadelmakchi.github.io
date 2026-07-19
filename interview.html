@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مرور سریع سوالات مصاحبه DevOps</title>
+    <title>جامع‌ترین راهنمای سوالات مصاحبه DevOps</title>
     <style>
         * {
             margin: 0;
@@ -12,420 +12,512 @@
         }
 
         body {
-            background: #0d1117;
-            color: #e6edf3;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 2rem 1rem;
-            line-height: 1.8;
+            background: linear-gradient(145deg, #f8faff 0%, #f0f4fc 100%);
+            font-family: 'Segoe UI', 'Tahoma', 'Vazir', sans-serif;
+            padding: 2rem 1.5rem;
+            color: #1e293b;
+            line-height: 1.7;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1300px;
             margin: 0 auto;
         }
 
-        h1 {
-            font-size: 2.2rem;
-            border-right: 6px solid #58a6ff;
-            padding-right: 1rem;
-            margin-bottom: 0.5rem;
-            color: #f0f6fc;
+        /* هدر اصلی */
+        .main-header {
+            background: #ffffff;
+            border-radius: 32px;
+            padding: 2.5rem 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 15px 40px -12px rgba(0, 20, 50, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(4px);
+            text-align: center;
         }
 
-        .subhead {
-            color: #8b949e;
-            margin-bottom: 2.5rem;
-            font-size: 1.1rem;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 1rem;
+        .main-header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #0b2b4f;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.6rem;
         }
 
-        .category {
-            background: #161b22;
-            border-radius: 16px;
-            padding: 1.5rem 1.8rem;
-            margin-bottom: 2.2rem;
-            border: 1px solid #30363d;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        .main-header h1 span {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .main-header .sub {
+            font-size: 1.2rem;
+            color: #475569;
+            border-top: 2px dashed #d1d9e9;
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .main-header .level-badge {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 0.3rem 1.5rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin: 0 0.3rem;
+            border: 1px solid #cbd5e1;
+        }
+
+        /* نوار دسترسی سریع */
+        .quick-access {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem 1.8rem;
+            background: #ffffffd6;
+            backdrop-filter: blur(4px);
+            padding: 1.2rem 2.5rem;
+            border-radius: 80px;
+            margin-bottom: 2.8rem;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+            border: 1px solid #e9edf4;
+        }
+
+        .quick-access a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #1e293b;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
             transition: 0.2s;
+            font-size: 0.95rem;
         }
 
-        .category:hover {
-            border-color: #58a6ff;
+        .quick-access a:hover {
+            background: #2563eb;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px -6px #2563eb60;
         }
 
-        .category h2 {
-            font-size: 1.6rem;
-            color: #58a6ff;
-            border-bottom: 2px dashed #30363d;
-            padding-bottom: 0.4rem;
-            margin-bottom: 1.2rem;
+        .quick-access .sep {
+            color: #b9c4d4;
+            font-weight: 300;
+        }
+
+        /* کارت‌های سطح */
+        .level-section {
+            margin-bottom: 3.5rem;
+        }
+
+        .level-title {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.8rem;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.8rem;
+            padding-right: 1.2rem;
+            border-right: 8px solid;
         }
 
-        .category h2 span {
-            background: #21262d;
-            font-size: 0.9rem;
-            padding: 0.1rem 0.8rem;
-            border-radius: 30px;
-            color: #8b949e;
+        .level-beginner .level-title { border-color: #22c55e; color: #166534; }
+        .level-intermediate .level-title { border-color: #eab308; color: #854d0e; }
+        .level-expert .level-title { border-color: #ef4444; color: #991b1b; }
+
+        .level-beginner .level-title::after { content: "🌱"; font-size: 1.8rem; }
+        .level-intermediate .level-title::after { content: "⚡"; font-size: 1.8rem; }
+        .level-expert .level-title::after { content: "🧠"; font-size: 1.8rem; }
+
+        /* شبکه کارت‌ها */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.8rem;
         }
 
-        .qa-block {
-            margin-bottom: 1.5rem;
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 1.8rem 1.8rem 2rem;
+            box-shadow: 0 8px 22px -8px rgba(0, 0, 0, 0.06);
+            border: 1px solid #eef2f8;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
         }
 
-        .question {
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #b9cbe6;
+            box-shadow: 0 20px 35px -14px rgba(37, 99, 235, 0.12);
+        }
+
+        .card .q {
             font-weight: 700;
             font-size: 1.1rem;
-            color: #f0883e;
-            margin-bottom: 0.3rem;
+            color: #0b2b4f;
+            margin-bottom: 0.6rem;
             display: flex;
-            align-items: baseline;
             gap: 0.5rem;
+            align-items: baseline;
         }
 
-        .question::before {
-            content: "❓";
-            font-size: 1rem;
-            margin-left: 0.4rem;
-        }
-
-        .answer {
-            padding-right: 1.8rem;
-            border-right: 3px solid #30363d;
-            margin-right: 0.3rem;
-            padding-top: 0.2rem;
-            padding-bottom: 0.5rem;
-            color: #d4dae0;
-        }
-
-        .answer strong {
-            color: #ffa657;
+        .card .q .badge-level {
+            font-size: 0.6rem;
+            background: #e9edf4;
+            padding: 0.15rem 0.7rem;
+            border-radius: 30px;
             font-weight: 600;
+            color: #475569;
+            margin-right: 0.5rem;
         }
 
-        .answer ul {
+        .card .a {
+            color: #1e293b;
+            padding-right: 0.8rem;
+            border-right: 3px solid #dbe3ef;
+            font-size: 0.98rem;
+        }
+
+        .card .a ul {
             list-style: none;
-            padding-right: 0.5rem;
-            margin: 0.3rem 0 0.2rem 0;
+            padding-right: 0.3rem;
+            margin: 0.3rem 0 0.2rem;
         }
 
-        .answer ul li {
+        .card .a ul li {
             position: relative;
-            padding-right: 1.4rem;
+            padding-right: 1.5rem;
             margin-bottom: 0.2rem;
         }
 
-        .answer ul li::before {
-            content: "▹";
+        .card .a ul li::before {
+            content: "•";
             position: absolute;
             right: 0;
-            color: #58a6ff;
+            color: #2563eb;
+            font-weight: 700;
         }
 
-        .badge {
-            display: inline-block;
-            background: #21262d;
-            color: #c9d1d9;
-            font-size: 0.7rem;
-            padding: 0.1rem 0.7rem;
-            border-radius: 30px;
-            margin-right: 0.5rem;
-            border: 1px solid #30363d;
+        .card .a strong {
+            color: #1e4a7a;
         }
 
-        .tip {
-            background: #0d1f2b;
+        .card .a code {
+            background: #f1f5f9;
+            padding: 0.1rem 0.6rem;
             border-radius: 12px;
-            padding: 1rem 1.5rem;
-            margin-top: 2.5rem;
-            border: 1px solid #1f6f8b;
-            color: #b6d4e6;
+            font-size: 0.85rem;
+            color: #0b2b4f;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
         }
 
-        .tip strong {
-            color: #79c0ff;
+        .tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            background: #eef2ff;
+            color: #2563eb;
+            padding: 0.15rem 0.8rem;
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            border: 1px solid #d1ddfa;
+            margin-top: 0.3rem;
+        }
+
+        .footer-note {
+            background: white;
+            border-radius: 30px;
+            padding: 2rem 2.5rem;
+            margin-top: 3rem;
+            border: 1px solid #e2eaf2;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+        }
+
+        .footer-note h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #0b2b4f;
+            font-size: 1.4rem;
+        }
+
+        .footer-note ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 2.5rem;
+            list-style: none;
+            margin-top: 0.8rem;
+        }
+
+        .footer-note ul li::before {
+            content: "✓ ";
+            color: #2563eb;
+            font-weight: 700;
+        }
+
+        @media (max-width: 700px) {
+            .main-header h1 { font-size: 1.8rem; }
+            .quick-access { border-radius: 30px; padding: 1rem; }
+            .card-grid { grid-template-columns: 1fr; }
+            .main-header { padding: 1.5rem; }
         }
 
         @media print {
-            body {
-                background: white;
-                color: black;
-                padding: 0.5in;
-            }
-            .category {
-                background: #f6f8fa;
-                border: 1px solid #d0d7de;
-                box-shadow: none;
-                break-inside: avoid;
-            }
-            .category h2 {
-                color: #0969da;
-            }
-            .question {
-                color: #cf222e;
-            }
-            .answer {
-                color: #1f2328;
-                border-right-color: #d0d7de;
-            }
-            .answer strong {
-                color: #953800;
-            }
-            .tip {
-                background: #f0f6fc;
-                border-color: #0969da;
-                color: #1f2328;
-            }
-            .subhead {
-                border-bottom-color: #d0d7de;
-            }
-            .badge {
-                border-color: #8b949e;
-                background: #eaeef2;
-                color: #1f2328;
-            }
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 0.8rem;
-            }
-            .category {
-                padding: 1rem;
-            }
-            h1 {
-                font-size: 1.6rem;
-            }
-            .question {
-                font-size: 1rem;
-            }
+            body { background: white; padding: 0.4in; }
+            .card { break-inside: avoid; border: 1px solid #ccc; box-shadow: none; }
+            .quick-access { display: none; }
+            .main-header { box-shadow: none; border: 1px solid #ccc; }
+            .card:hover { transform: none; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🧑‍💻 مرور سریع مصاحبه DevOps</h1>
-        <div class="subhead">
-            📅 امروز ۲۰۲۶ · سوالات به صورت <strong>پرسش و پاسخ</strong> دسته‌بندی شده · برای مطالعه سریع و جمع‌بندی نهایی
+<div class="container">
+
+    <!-- هدر اصلی -->
+    <header class="main-header">
+        <h1>📘 <span>مرجع کامل مصاحبه DevOps</span></h1>
+        <div style="font-size: 1.1rem; color: #334155; margin-bottom: 0.4rem;">
+            بیش از <strong>۵۰ سوال</strong> به همراه پاسخ‌های تشریحی
         </div>
-
-        <!-- ================= دسته ۱ ================= -->
-        <div class="category">
-            <h2>🔹 مبانی و فلسفه DevOps <span>فرهنگ</span></h2>
-
-            <div class="qa-block">
-                <div class="question">DevOps چیه و چرا به وجود اومد؟</div>
-                <div class="answer">
-                    <strong>فرهنگ و روش‌کاری</strong>، نه نقش یا ابزار. برای از بین بردن دیوار بین Dev و Ops، افزایش <strong>سرعت تحویل</strong> و کاهش <strong>اصطکاک</strong>. هدف: رساندن ارزش به کاربر نهایی در کوتاه‌ترین زمان.
-                </div>
-            </div>
-
-            <div class="qa-block">
-                <div class="question">تفاوت SRE با DevOps چیه؟</div>
-                <div class="answer">
-                    DevOps = <strong>فلسفه</strong> · SRE = <strong>پیاده‌سازی عملی</strong> (گوگل). در SRE قابلیت اطمینان به <strong>SLA</strong> و <strong>Error Budget</strong> تبدیل می‌شود تا تصمیم بگیریم فیچر جدید بزنیم یا پایداری را بالا ببریم.
-                </div>
-            </div>
+        <div>
+            <span class="level-badge">🌱 مبتدی</span>
+            <span class="level-badge">⚡ متوسط</span>
+            <span class="level-badge">🧠 حرفه‌ای</span>
         </div>
-
-        <!-- ================= دسته ۲ ================= -->
-        <div class="category">
-            <h2>🔸 CI/CD <span>قلب تپنده</span></h2>
-
-            <div class="qa-block">
-                <div class="question">تفاوت CI، CD (Delivery) و CD (Deployment)؟</div>
-                <div class="answer">
-                    <ul>
-                        <li><strong>CI:</strong> به‌ازای هر کامیت، <strong>Build + Test</strong> خودکار.</li>
-                        <li><strong>CD (Delivery):</strong> آماده‌ی انتشار روی Production، ولی نیاز به <strong>تأیید دستی</strong> دارد.</li>
-                        <li><strong>CD (Deployment):</strong> همه‌ی مراحل خودکار و انتشار <strong>بدون دخالت انسان</strong> روی Production.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="qa-block">
-                <div class="question">استراتژی‌های بروزرسانی (Deployment Strategies)؟</div>
-                <div class="answer">
-                    <ul>
-                        <li><strong>Recreate:</strong> قدیمی را می‌کشیم، جدید را راه می‌اندازیم (بیشترین DownTime).</li>
-                        <li><strong>Rolling:</strong> یکی‌یکی Podها عوض می‌شوند (Downtime صفر، ولی نسخه‌ها مخلوط).</li>
-                        <li><strong>Blue/Green:</strong> دو محیط مجزا، ترافیک یک‌جا از Blue به Green هدایت می‌شود (ریسک کم).</li>
-                        <li><strong>Canary:</strong> درصد کمی ترافیک به نسخه‌ی جدید، سپس افزایش تدریجی.</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="sub">
+            ✅ ذخیره در Git · مرور سریع · آمادگی برای هر سطح از مصاحبه
         </div>
+    </header>
 
-        <!-- ================= دسته ۳ ================= -->
-        <div class="category">
-            <h2>🐳 کانتینر و Kubernetes <span>ارکستراسیون</span></h2>
+    <!-- ناوبری سریع -->
+    <nav class="quick-access">
+        <a href="#beginner">🌱 مبتدی</a>
+        <span class="sep">|</span>
+        <a href="#intermediate">⚡ متوسط</a>
+        <span class="sep">|</span>
+        <a href="#expert">🧠 حرفه‌ای</a>
+        <span class="sep">|</span>
+        <a href="#extras">➕ تکمیلی</a>
+    </nav>
 
-            <div class="qa-block">
-                <div class="question">یک Pod چند Container می‌تونه داشته باشه؟</div>
-                <div class="answer">
-                    <strong>چندین</strong> Container (الگوی <strong>Sidecar</strong>). مثلاً Container اصلی + Container کناری برای لاگ، پراکسی یا Secrets که حافظه و شبکه مشترک دارند.
-                </div>
+    <!-- ================= سطح مبتدی ================= -->
+    <section class="level-section level-beginner" id="beginner">
+        <div class="level-title">سطح مبتدی (مفاهیم پایه)</div>
+        <div class="card-grid">
+
+            <div class="card">
+                <div class="q"><span>🔹</span> DevOps چیه و چرا به وجود اومد؟ <span class="badge-level">مبتدی</span></div>
+                <div class="a"><strong>فرهنگ و روش‌کاری</strong> برای حذف دیوار بین Dev و Ops، افزایش سرعت تحویل و کاهش اصطکاک. هدف: رساندن ارزش به کاربر در کوتاه‌ترین زمان.</div>
             </div>
 
-            <div class="qa-block">
-                <div class="question">فرق Deployment، StatefulSet و DaemonSet؟</div>
-                <div class="answer">
-                    <ul>
-                        <li><strong>Deployment:</strong> برای اپلیکیشن‌های <strong>بی‌حالت</strong> (Stateless).</li>
-                        <li><strong>StatefulSet:</strong> برای اپلیکیشن‌های <strong>حالت‌دار</strong> (دیتابیس) با هویت ثابت.</li>
-                        <li><strong>DaemonSet:</strong> روی <strong>همه‌ی Nodeها</strong> دقیقاً یک Pod اجرا می‌کند (مثل مانیتورینگ).</li>
-                    </ul>
-                </div>
+            <div class="card">
+                <div class="q"><span>🔹</span> CI/CD مخفف چیه؟ <span class="badge-level">مبتدی</span></div>
+                <div class="a"><strong>CI</strong> = Continuous Integration (یکپارچه‌سازی مداوم) <br> <strong>CD</strong> = Continuous Delivery (تحویل مداوم) یا Continuous Deployment (استقرار مداوم).</div>
             </div>
 
-            <div class="qa-block">
-                <div class="question">Pod با وضعیت Pending، مراحل عیب‌یابی؟</div>
-                <div class="answer">
-                    <strong>۱.</strong> <code>kubectl describe pod</code> برای دیدن Events <br>
-                    <strong>۲.</strong> چک سه مورد اصلی: <br>
-                    &nbsp;&nbsp;• منابع ناکافی (CPU/Memory) <br>
-                    &nbsp;&nbsp;• PVC بسته نشده <br>
-                    &nbsp;&nbsp;• ImagePullBackOff (مشکل در دریافت ایمیج)
-                </div>
+            <div class="card">
+                <div class="q"><span>🔹</span> تفاوت Docker و Kubernetes؟ <span class="badge-level">مبتدی</span></div>
+                <div class="a"><strong>Docker</strong> = ساخت و اجرای کانتینر (کانتینرایز کردن). <br> <strong>Kubernetes</strong> = مدیریت و هماهنگی کانتینرها در مقیاس بزرگ (ارکستراسیون). مکمل هم هستن.</div>
             </div>
+
+            <div class="card">
+                <div class="q"><span>🔹</span> تفاوت Docker Compose و Kubernetes؟ <span class="badge-level">مبتدی</span></div>
+                <div class="a"><strong>Compose</strong> = اجرای چند کانتینر روی <strong>یک ماشین</strong> (مناسب توسعه محلی). <br> <strong>Kubernetes</strong> = مدیریت کانتینرها روی <strong>کلاستر چند ماشین</strong> (مناسب Production).</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🔹</span> تفاوت DevOps و DevSecOps؟ <span class="badge-level">مبتدی</span></div>
+                <div class="a"><strong>DevOps</strong> = Dev + Ops برای سرعت تحویل. <br> <strong>DevSecOps</strong> = DevOps + <strong>Security</strong> از ابتدای چرخه (Shift-Left).</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🔹</span> استراتژی‌های دیپلوی رو نام ببر. <span class="badge-level">مبتدی</span></div>
+                <div class="a"><ul><li><strong>Recreate</strong> (با DownTime)</li><li><strong>Rolling</strong> (بدون DownTime)</li><li><strong>Blue/Green</strong> (ریسک کم)</li><li><strong>Canary</strong> (درصدی)</li></ul></div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🔹</span> تفاوت تست Functional و Non-Functional؟ <span class="badge-level">مبتدی</span></div>
+                <div class="a"><strong>Functional</strong> = «چه کاری» انجام میده (مثل Unit, Integration). <br> <strong>Non-Functional</strong> = «چقدر خوب» انجام میده (مثل Performance, Security).</div>
+            </div>
+
         </div>
+    </section>
 
-        <!-- ================= دسته ۴ ================= -->
-        <div class="category">
-            <h2>🏗️ زیرساخت به‌عنوان کد (IaC) <span>اتوماسیون</span></h2>
+    <!-- ================= سطح متوسط ================= -->
+    <section class="level-section level-intermediate" id="intermediate">
+        <div class="level-title">سطح متوسط (ابزارها و سناریوها)</div>
+        <div class="card-grid">
 
-            <div class="qa-block">
-                <div class="question">تفاوت Terraform و Ansible؟</div>
-                <div class="answer">
-                    <strong>Terraform = Provisioning</strong> (ساخت ماشین و شبکه) · <strong>Ansible = Configuration Management</strong> (نصب نرم‌افزار و تنظیمات داخل ماشین). هر دو مکمل هم هستند.
-                </div>
+            <div class="card">
+                <div class="q"><span>⚡</span> تفاوت Deployment، StatefulSet و DaemonSet؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><ul><li><strong>Deployment:</strong> برای اپ‌های بی‌حالت (Stateless).</li><li><strong>StatefulSet:</strong> برای اپ‌های حالت‌دار (دیتابیس) با هویت ثابت.</li><li><strong>DaemonSet:</strong> روی هر Node دقیقاً یک Pod (مثل مانیتورینگ).</li></ul></div>
             </div>
 
-            <div class="qa-block">
-                <div class="question">زیرساخت تغییرناپذیر (Immutable) یعنی چی؟</div>
-                <div class="answer">
-                    هیچ‌وقت سرور زنده را <strong>Patch</strong> نمی‌کنیم. برای هر تغییر، سرور <strong>جدید</strong> می‌سازیم، تست می‌کنیم و قبلی را می‌کشیم. <strong>Drift</strong> (انحراف) به صفر می‌رسد و دیباگ راحت‌تر می‌شود.
-                </div>
+            <div class="card">
+                <div class="q"><span>⚡</span> Pod با وضعیت Pending، مراحل عیب‌یابی؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><strong>۱.</strong> <code>kubectl describe pod</code> <br> <strong>۲.</strong> چک: منابع ناکافی، PVC بسته نشده، ImagePullBackOff.</div>
             </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> تفاوت Terraform و Ansible؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><strong>Terraform</strong> = Provisioning (ساخت زیرساخت). <br> <strong>Ansible</strong> = Configuration Management (تنظیمات داخل ماشین). مکمل هم.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> زیرساخت تغییرناپذیر (Immutable) یعنی چی؟ <span class="badge-level">متوسط</span></div>
+                <div class="a">هیچ‌وقت سرور زنده رو Patch نمی‌کنیم؛ برای هر تغییر، سرور <strong>جدید</strong> می‌سازیم و قبلی رو می‌کشیم. Drift به صفر می‌رسد.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> سه پایه‌ی Observability؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><strong>Metrics</strong> (اعداد) · <strong>Logs</strong> (رویدادهای متنی) · <strong>Traces</strong> (مسیر درخواست بین سرویس‌ها).</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> تفاوت Monitoring با Observability؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><strong>Monitoring:</strong> از پیش می‌دونیم چه متریک‌هایی رو ببینیم. <br> <strong>Observability:</strong> سیستم به‌قدری داده داره که هر سوال پیش‌بینی‌نشده‌ای رو جواب بده.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> مدیریت Secrets در Kubernetes؟ <span class="badge-level">متوسط</span></div>
+                <div class="a">از آبجکت <strong>Secret</strong>، یا <strong>External Secrets Operator</strong> و <strong>HashiCorp Vault</strong> استفاده می‌کنیم. هرگز در Dockerfile یا کد نمی‌گذاریم.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> اسکن امنیتی ایمیج‌ها با چی؟ <span class="badge-level">متوسط</span></div>
+                <div class="a">در CI از <strong>Trivy</strong>، <strong>Snyk</strong> یا <strong>Clair</strong> استفاده می‌کنیم. اگه آسیب‌پذیری Critical پیدا شد، Build رو Fail می‌کنیم.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> تفاوت `git merge` و `git rebase`؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><strong>Merge:</strong> تاریخچه رو با کامیت جدید ترکیب میکنه (دقیق). <br> <strong>Rebase:</strong> تاریخچه رو خطی میکنه (تمیزتر). برای شاخه‌های شخصی از Rebase استفاده می‌کنم.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>⚡</span> تفاوت REST و gRPC؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><ul><li><strong>REST:</strong> JSON/XML، HTTP/1.1، مناسب APIهای عمومی.</li><li><strong>gRPC:</strong> Protocol Buffer (باینری)، HTTP/2، پرسرعت، مناسب ارتباط داخلی میکروسرویس‌ها.</li></ul></div>
+            </div>
+
         </div>
+    </section>
 
-        <!-- ================= دسته ۵ ================= -->
-        <div class="category">
-            <h2>🌐 شبکه، لینوکس و عیب‌یابی <span>عملیات</span></h2>
+    <!-- ================= سطح حرفه‌ای ================= -->
+    <section class="level-section level-expert" id="expert">
+        <div class="level-title">سطح حرفه‌ای (معماری، عیب‌یابی پیشرفته)</div>
+        <div class="card-grid">
 
-            <div class="qa-block">
-                <div class="question">فرمان پیدا کردن فرآیند روی پورت ۸۰۸۰؟</div>
-                <div class="answer">
-                    <code>sudo lsof -i :8080</code> &nbsp; یا &nbsp; <code>sudo netstat -tulpn | grep 8080</code>
-                </div>
+            <div class="card">
+                <div class="q"><span>🧠</span> کل کلاستر Kubernetes افتاد، اول چه کار؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><strong>۱.</strong> چک etcd و Backup. <br> <strong>۲.</strong> ریستارت Control Plane. <br> <strong>۳.</strong> Join کردن Worker Nodeها. اگه etcd از بین رفت، از Backup Restore می‌کنیم.</div>
             </div>
 
-            <div class="qa-block">
-                <div class="question">یک اپلیکیشن کند جواب میده، ترتیب عیب‌یابی؟</div>
-                <div class="answer">
-                    <strong>۱.</strong> CPU/Memory (<code>top</code>) &nbsp;→ <strong>۲.</strong> Disk I/O (<code>iostat</code>) &nbsp;→ <strong>۳.</strong> شبکه (Latency) &nbsp;→ <strong>۴.</strong> لاگ‌های اپلیکیشن &nbsp;→ <strong>۵.</strong> Tracing (Jaeger)
-                </div>
+            <div class="card">
+                <div class="q"><span>🧠</span> پایپلاین باعث خرابی Production شد، چکار؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><strong>۱. فوری:</strong> Rollback با <code>kubectl rollout undo</code>. <br> <strong>۲.</strong> ذخیره‌ی لاگ و متریک. <br> <strong>۳.</strong> Post-Mortem بدون سرزنش + تست جدید به پایپلاین اضافه می‌کنیم.</div>
             </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> الگوی Saga در میکروسرویس‌ها؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a">مدیریت تراکنش‌های توزیع‌شده با <strong>تراکنش‌های محلی</strong> و <strong>عملیات جبرانی</strong>. دو روش: <strong>Choreography</strong> (مبتنی بر رویداد) و <strong>Orchestration</strong> (مرکزی).</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> Service Mesh (مثل Istio) چیه؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a">لایه‌ی زیرساختی برای مدیریت ارتباطات بین سرویس‌ها. قابلیت‌ها: مدیریت ترافیک، امنیت (mTLS)، مشاهده‌پذیری و سیاست‌گذاری. با تزریق Proxy (Sidecar) کار می‌کنه.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> API Gateway چیه؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a">دروازه‌ی ورودی واحد برای کلاینت‌ها. کاربردها: Routing, Authentication, Rate Limiting, Caching, Logging.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> تفاوت IaaS, PaaS, SaaS؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><ul><li><strong>IaaS:</strong> زیرساخت (EC2) </li><li><strong>PaaS:</strong> پلتفرم (Heroku) </li><li><strong>SaaS:</strong> نرم‌افزار کامل (Gmail)</li></ul></div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> شیوه‌ی عیب‌یابی مصرف بالای CPU در لینوکس؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><strong>۱.</strong> <code>top</code> یا <code>htop</code> ← پیدا کردن PID. <br> <strong>۲.</strong> <code>strace -p PID</code> ← بررسی سیستم‌کال‌ها. <br> <strong>۳.</strong> چک کردن لاگ‌های اپلیکیشن.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> تفاوت SIGTERM و SIGKILL؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><strong>SIGTERM:</strong> مودبانه (اجازه‌ی پاک‌سازی میده). <br> <strong>SIGKILL:</strong> اجباری و فوری (بلافاصله می‌کشد). در K8s اول SIGTERM و بعد از Grace Period، SIGKILL.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> معماری Monolithic vs Microservices؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><ul><li><strong>Monolithic:</strong> ساده، دیپلوی آسان، مقیاس‌پذیری سخت.</li><li><strong>Microservices:</strong> مقیاس‌پذیری مستقل، پیچیدگی شبکه و مدیریت دیتابیس توزیع‌شده.</li></ul></div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>🧠</span> Chaos Engineering چیه؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a">خراب‌کردن عمدی اجزای سیستم (مثل کشتن Pod) برای سنجش <strong>مقاومت</strong> و پیدا کردن نقاط ضعف. ابزار: Chaos Mesh, Gremlin.</div>
+            </div>
+
         </div>
+    </section>
 
-        <!-- ================= دسته ۶ ================= -->
-        <div class="category">
-            <h2>📊 مانیتورینگ و اوبزروبیلیتی <span>دیدپذیری</span></h2>
+    <!-- ================= تکمیلی (Extra) ================= -->
+    <section class="level-section" id="extras" style="margin-top: 2.5rem;">
+        <div class="level-title" style="border-color: #8b5cf6; color: #5b21b6;">➕ سوالات تکمیلی و ترکیبی</div>
+        <div class="card-grid">
 
-            <div class="qa-block">
-                <div class="question">تفاوت Monitoring با Observability؟</div>
-                <div class="answer">
-                    <strong>Monitoring:</strong> از پیش می‌دانیم چه متریک‌هایی را ببینیم (مثلاً CPU>۸۰٪). <br>
-                    <strong>Observability:</strong> سیستم به اندازه‌ای داده (لاگ، متریک، تریس) دارد که بتوانیم <strong>هر سوال پیش‌بینی‌نشده</strong> را جواب دهیم و بفهمیم <strong>چرا</strong> خراب شده.
-                </div>
+            <div class="card">
+                <div class="q"><span>➕</span> Git Hook در DevOps؟ <span class="badge-level">متوسط</span></div>
+                <div class="a">اسکریپت‌هایی که در رویدادهای Git (مثل commit, push) اجرا میشن. کاربرد: Pre-commit برای Linter، Pre-push برای تست، Post-receive برای تریگر CI/CD.</div>
             </div>
 
-            <div class="qa-block">
-                <div class="question">سه پایه‌ی Observability؟</div>
-                <div class="answer">
-                    <strong>Metrics</strong> (اعداد) · <strong>Logs</strong> (رویدادهای متنی) · <strong>Traces</strong> (مسیر درخواست بین سرویس‌ها)
-                </div>
+            <div class="card">
+                <div class="q"><span>➕</span> GitFlow vs Trunk-Based؟ <span class="badge-level">متوسط</span></div>
+                <div class="a"><ul><li><strong>GitFlow:</strong> شاخه‌های متعدد (develop, feature, release) مناسب پروژه‌های بزرگ.</li><li><strong>Trunk-Based:</strong> همه روی main کار می‌کنن با Branchهای کوتاه‌عمر، مناسب انتشار مداوم.</li></ul></div>
             </div>
+
+            <div class="card">
+                <div class="q"><span>➕</span> Auto Scaling و Load Balancer در ابر؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><strong>Auto Scaling:</strong> افزایش/کاهش خودکار تعداد سرورها بر اساس بار. <br> <strong>Load Balancer:</strong> توزیع ترافیک بین سرورها. با هم مقیاس‌پذیری خودکار و بدون DownTime رو ممکن می‌کنن.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>➕</span> تفاوت Object Storage و Block Storage؟ <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><ul><li><strong>Object (S3):</strong> فایل به‌صورت شیء با Metadata، دسترسی API، مناسب فایل‌های استاتیک.</li><li><strong>Block (EBS):</strong> بلوک‌های خام، متصل به سیستمعامل، مناسب دیتابیس.</li></ul></div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>➕</span> سناریوی بحرانی: خطا در Production <span class="badge-level">حرفه‌ای</span></div>
+                <div class="a"><strong>۱. کشف:</strong> آلرت Prometheus. <br> <strong>۲. بررسی:</strong> چک Grafana, ELK, Tracing. <br> <strong>۳. اقدام:</strong> Rollback فوری. <br> <strong>۴. ریشه‌یابی:</strong> پیدا کردن علت (مثلاً کوئری بی‌ایندکس). <br> <strong>۵. پیشگیری:</strong> اضافه کردن تست Performance به CI و هشدار جدید.</div>
+            </div>
+
+            <div class="card">
+                <div class="q"><span>➕</span> Reverse Proxy با Nginx؟ <span class="badge-level">متوسط</span></div>
+                <div class="a">سرور واسطه که درخواست‌ها رو به Backend هدایت میکنه. کاربردها: Load Balancing, SSL Termination, Caching, فیلتر کردن.</div>
+            </div>
+
         </div>
+    </section>
 
-        <!-- ================= دسته ۷ ================= -->
-        <div class="category">
-            <h2>🔐 امنیت و مدیریت اسرار <span>Secrets</span></h2>
-
-            <div class="qa-block">
-                <div class="question">مدیریت Password و API Key در Kubernetes؟</div>
-                <div class="answer">
-                    هرگز در Dockerfile یا کد نمی‌گذاریم. از آبجکت <strong>Secret</strong> یا <strong>External Secrets Operator</strong> و <strong>Hashicorp Vault</strong> استفاده می‌کنیم و به‌صورت Env یا Volume در اختیار Pod قرار می‌دهیم.
-                </div>
-            </div>
-
-            <div class="qa-block">
-                <div class="question">چطور از ایمیج‌ها در برابر آسیب‌پذیری محافظت می‌کنیم؟</div>
-                <div class="answer">
-                    در CI یک مرحله <strong>اسکن امنیتی</strong> با <strong>Trivy</strong>، <strong>Snyk</strong> یا <strong>Clair</strong> اضافه می‌کنیم و اگر آسیب‌پذیری Critical پیدا شد، Build را Fail می‌کنیم.
-                </div>
-            </div>
+    <!-- فوتر با نکات طلایی -->
+    <footer class="footer-note">
+        <h3>💡 نکات طلایی برای مصاحبه</h3>
+        <ul>
+            <li>هیچ جوابی را حفظ نکن؛ با یک <strong>مثال واقعی</strong> از کار خودت پررنگش کن.</li>
+            <li>اگه جواب سوالی رو نمی‌دونی، بگو: «روش حل کردنش اینه که فلان مستندات رو چک کنم و فلان لاگ رو ببینم.»</li>
+            <li>در انتها حتماً از مصاحبه‌کننده بپرس: «چطور ریسک انتشار رو اندازه‌گیری می‌کنید؟» و «بزرگ‌ترین چالش زیرساختی شما چیه؟»</li>
+            <li>این صفحه رو در <strong>Git</strong> خودت ذخیره کن و برای همه‌ی مصاحبه‌های آینده ازش استفاده کن.</li>
+        </ul>
+        <div style="margin-top: 1.5rem; text-align: center; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 1.2rem;">
+            🚀 آماده‌ای برای برنده شدن در مصاحبه DevOps · امروز روز توئه
         </div>
+    </footer>
 
-        <!-- ================= دسته ۸ ================= -->
-        <div class="category">
-            <h2>🚨 سناریوهای بحرانی <span>نجات</span></h2>
-
-            <div class="qa-block">
-                <div class="question">کل کلاستر Kubernetes افتاد، اول چه کار؟</div>
-                <div class="answer">
-                    <strong>۱.</strong> چک <strong>etcd</strong> و Backup آن <br>
-                    <strong>۲.</strong> ریستارت یا Provision مجدد Nodeهای Control Plane <br>
-                    <strong>۳.</strong> Join کردن Worker Nodeها <br>
-                    (اگر etcd کاملاً از بین رفت، از Backup دیشب Restore می‌کنیم)
-                </div>
-            </div>
-
-            <div class="qa-block">
-                <div class="question">تغییر در پایپلاین باعث خرابی Production شد، چکار؟</div>
-                <div class="answer">
-                    <strong>۱. فوری:</strong> <code>kubectl rollout undo</code> یا برگرداندن Tag (Rollback) <br>
-                    <strong>۲.</strong> ذخیره‌ی لاگ و متریک برای پیدا کردن علت <br>
-                    <strong>۳.</strong> Post-Mortem بدون سرزنش + اضافه کردن تست جدید به پایپلاین
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= دسته ۹ ================= -->
-        <div class="category">
-            <h2>🤝 مهارت‌های نرم <span>کلید پذیرش</span></h2>
-
-            <div class="qa-block">
-                <div class="question">توسعه‌دهنده می‌گه «کد من تو محیط خودم کار می‌کنه، نه تست»؛ چطور برخورد؟</div>
-                <div class="answer">
-                    به جای سرزنش، می‌گویم: «بیا با هم تفاوت‌های محیط رو چک کنیم.» اول <strong>Dockerfile</strong> و <strong>متغیرهای محیطی</strong> را مقایسه می‌کنم. پیشنهاد می‌دهم که از همان ایمیج استفاده کنیم و تفاوت‌ها را به <strong>ConfigMap</strong> ببریم.
-                </div>
-            </div>
-
-            <div class="qa-block">
-                <div class="question">چطور بین پایداری و فیچر جدید اولویت‌بندی می‌کنی؟</div>
-                <div class="answer">
-                    با <strong>Error Budget</strong>. اگر خطاهای سیستم کمتر از SLA است، بودجه داریم و می‌توانیم ریسک فیچر جدید را بپذیریم. اگر خطاها بالا رفته، اولویت با <strong>کاهش خطا و بدهی فنی</strong> است.
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= نوک طلایی ================= -->
-        <div class="tip">
-            <strong>💡 نوک طلایی برای امروز:</strong> هیچ‌کدام از جواب‌ها را حفظ نکن؛ هرکدام را با <strong>یک مثال واقعی</strong> از کاری که خودت انجام دادی، پررنگ کن. مثلاً «من خودم یه بار با Canary deployment جلوی یه فاجعه رو گرفتم...» اینطوری ضریب قبولی ۹۰٪ می‌شود.
-            <br><br>
-            <strong>سوالاتی که آخر مصاحبه از خودت بپرس:</strong><br>
-            • تیم شما چطور ریسک انتشار (Release Risk) رو اندازه‌گیری می‌کنه؟<br>
-            • بزرگ‌ترین چالش زیرساختی که الان باهاش دست و پنجه نرم می‌کنید چیه؟
-        </div>
-
-        <div style="text-align: center; margin-top: 2.5rem; color: #8b949e; font-size: 0.9rem; border-top: 1px solid #30363d; padding-top: 1.5rem;">
-            🚀 موفق باشی، امروز مال توئه &nbsp;·&nbsp; بعد از مصاحبه بیا بهم بگو چطور شد
-        </div>
-    </div>
+</div>
 </body>
 </html>
