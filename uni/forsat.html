@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
-    <title>۵۰ شناسایی فرصت و ایده‌پردازی کارآفرینانه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>۵۰ سوال فشرده - شناسایی فرصت و ایده‌پردازی</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Segoe UI', 'Vazir', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f2f7fc;
+            background: #f5f7fa;
             color: #1a2a3a;
             padding: 2rem 1.5rem;
             line-height: 1.8;
@@ -31,160 +31,178 @@
             transition: all 0.2s ease;
         }
 
+        .back-home {
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            background: #e8edf4;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            color: #1a4a5e;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .back-home i {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .back-home:hover {
+            background: #d4dfea;
+            border-color: #b8cbd8;
+            transform: translateX(-4px);
+        }
+
         h1 {
             font-size: 2.2rem;
             color: #0a2a3f;
-            border-bottom: 4px solid #1f7a5e;
+            border-bottom: 4px solid #2a7a6a;
             padding-bottom: 0.6rem;
             display: inline-block;
+            margin-top: 0.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 i {
+            color: #2a7a6a;
+            margin-left: 0.6rem;
+        }
+
+        .subtitle {
+            color: #4a5a6a;
+            font-size: 1.05rem;
             margin-bottom: 1.5rem;
+        }
+
+        .exam-badge {
+            display: inline-block;
+            background: #c44536;
+            color: #fff;
+            font-size: 0.7rem;
             font-weight: 700;
+            padding: 0.15rem 0.9rem;
+            border-radius: 40px;
+            margin-right: 0.5rem;
+            letter-spacing: 0.3px;
         }
 
         h2 {
-            font-size: 1.7rem;
-            background: #e8f2ed;
-            padding: 0.7rem 1.5rem;
+            font-size: 1.5rem;
+            background: #e6f0ed;
+            padding: 0.5rem 1.3rem;
             border-radius: 60px 12px 12px 60px;
-            border-right: 6px solid #1f7a5e;
-            margin: 2.5rem 0 1.5rem 0;
-            color: #0b3d2e;
+            border-right: 6px solid #2a7a6a;
+            margin: 2rem 0 1rem 0;
+            color: #1a4a3a;
+        }
+
+        h2 i {
+            color: #2a7a6a;
+            margin-left: 0.5rem;
         }
 
         h3 {
-            font-size: 1.25rem;
-            color: #1a5a44;
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+            color: #1a4a3a;
+            margin-top: 1rem;
+            margin-bottom: 0.1rem;
             padding-right: 0.5rem;
-            border-right: 4px solid #4a9e7a;
+            border-right: 4px solid #6a9a8a;
             padding-right: 0.8rem;
+            font-weight: 600;
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             text-align: justify;
         }
 
         ul, ol {
-            margin: 0.5rem 0 1.2rem 0;
-            padding-right: 1.8rem;
+            margin: 0.2rem 0 0.6rem 0;
+            padding-right: 1.5rem;
         }
 
         li {
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.1rem;
         }
 
         strong {
-            color: #004d33;
+            color: #1a5a4a;
             font-weight: 700;
         }
 
         .question-block {
-            background: #f9fcfb;
-            border-radius: 20px;
-            padding: 1.2rem 1.8rem;
-            margin: 1.8rem 0;
-            border: 1px solid #d4e8e0;
+            background: #fafcfa;
+            border-radius: 16px;
+            padding: 0.7rem 1.2rem;
+            margin: 0.6rem 0;
+            border: 1px solid #d6e6e0;
             transition: 0.15s ease;
         }
 
         .question-block:hover {
-            background: #f4faf7;
-            border-color: #aacfc0;
+            background: #f5faf7;
+            border-color: #b0cec0;
         }
 
         .q-badge {
             display: inline-block;
-            background: #1f7a5e;
+            background: #2a7a6a;
             color: #fff;
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             font-weight: 600;
-            padding: 0.2rem 0.9rem;
+            padding: 0.05rem 0.7rem;
             border-radius: 30px;
-            margin-left: 0.6rem;
-        }
-
-        .answer {
-            background: #ffffff;
-            padding: 0.8rem 1.2rem;
-            border-radius: 16px;
-            margin-top: 0.6rem;
-            border-right: 4px solid #4a9e7a;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
-        }
-
-        .answer i {
-            color: #1f7a5e;
             margin-left: 0.4rem;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.2rem 0;
+        .answer-box {
+            background: #ffffff;
+            padding: 0.4rem 0.9rem;
+            border-radius: 12px;
+            margin-top: 0.2rem;
+            border-right: 4px solid #6a9a8a;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
             font-size: 0.95rem;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0, 20, 10, 0.04);
         }
 
-        th {
-            background: #1f5a44;
-            color: #fff;
-            padding: 10px 12px;
-            text-align: center;
-            font-weight: 600;
+        .answer-box i {
+            color: #2a7a6a;
+            margin-left: 0.4rem;
         }
 
-        td {
-            background: #fafdfc;
-            padding: 10px 12px;
-            border-bottom: 1px solid #dcebe4;
-            vertical-align: top;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        tr:hover td {
-            background: #f2f9f5;
-        }
-
-        .example-box {
-            background: #eef6f2;
-            border-radius: 20px;
-            padding: 1rem 1.5rem;
-            margin: 1.2rem 0;
-            border: 1px solid #c9dfd4;
-        }
-
-        .example-box i {
-            color: #1f7a5e;
-            margin-left: 0.5rem;
+        .answer-box .check {
+            color: #4a7a6a;
         }
 
         hr {
-            margin: 2.8rem 0;
+            margin: 2rem 0;
             border: 0;
             height: 2px;
-            background: linear-gradient(to left, #c0dad0, transparent);
+            background: linear-gradient(to left, #c0d6cc, transparent);
         }
 
         .note-footer {
-            background: #e2f0ea;
+            background: #e6f0ed;
             border-radius: 40px;
-            padding: 1rem 2rem;
+            padding: 0.8rem 1.5rem;
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             font-weight: 500;
-            color: #0b3d2e;
+            color: #1a4a3a;
         }
 
         .note-footer i {
-            color: #1f7a5e;
+            color: #2a7a6a;
             margin-left: 0.6rem;
+        }
+
+        .fa, .fas, .far {
+            margin-left: 6px;
+            color: #2a7a6a;
         }
 
         @media (max-width: 700px) {
@@ -192,530 +210,476 @@
                 padding: 0.8rem;
             }
             .container {
-                padding: 1.5rem 1rem;
+                padding: 1.2rem 0.8rem;
                 border-radius: 24px;
             }
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
             h2 {
-                font-size: 1.3rem;
-                padding: 0.5rem 1rem;
+                font-size: 1.2rem;
+                padding: 0.4rem 0.8rem;
             }
             .question-block {
-                padding: 0.8rem 1rem;
+                padding: 0.5rem 0.8rem;
             }
-            table {
-                font-size: 0.8rem;
-            }
-            th, td {
-                padding: 6px 6px;
+            .answer-box {
+                font-size: 0.9rem;
+                padding: 0.3rem 0.7rem;
             }
         }
 
         @media (max-width: 480px) {
             h1 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             h2 {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             .container {
-                padding: 1rem 0.6rem;
+                padding: 0.8rem 0.5rem;
             }
             .question-block {
-                padding: 0.6rem 0.8rem;
+                padding: 0.4rem 0.6rem;
             }
-        }
-
-        .fa, .fas, .far {
-            margin-left: 6px;
-            color: #1f7a5e;
+            .answer-box {
+                font-size: 0.85rem;
+                padding: 0.2rem 0.6rem;
+            }
         }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <h1><i class="fas fa-lightbulb"></i> ۵۰ سوال تشریحی با پاسخ</h1>
-    <p style="font-size:1.2rem; color: #1a5a44; margin-top: -0.5rem;">درس شناسایی فرصت و ایده‌پردازی کارآفرینانه</p>
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی</a>
+
+    <h1><i class="fas fa-search"></i> ۵۰ سوال تشریحی جمع‌وجور</h1>
+    <div class="subtitle">
+        درس شناسایی فرصت و ایده‌پردازی کارآفرینانه
+        <span class="exam-badge"><i class="fas fa-clock"></i> نسخه فشرده • امتحان فردا</span>
+    </div>
 
     <!-- ========== بخش اول ========== -->
-    <h2>📘 بخش اول: مبانی نظری و چارچوب مفهومی (سوالات ۱ تا ۱۵)</h2>
+    <h2><i class="fas fa-book"></i> بخش اول: مبانی نظری (سوالات ۱ تا ۱۵)</h2>
 
-    <!-- سوال 1 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱</span> مشکل اساسی حوزه کارآفرینی تا پیش از سال ۲۰۰۰ چه بود و مقاله شین و ونکاتارامان (۲۰۰۰) چه راه‌حلی برای آن ارائه کرد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مشکل اصلی این بود که پدیده کارآفرینی فاقد یک چارچوب مفهومی منسجم بود و صرفاً برچسبی برای مجموعه‌ای از پژوهش‌های پراکنده (مانند مطالعات کسب‌وکارهای کوچک یا شرکت‌های جدید) به شمار می‌رفت. این مسئله، مشروعیت این حوزه را تضعیف کرده و آن را از سایر حوزه‌های مطالعات کسب‌وکار متمایز نمی‌کرد. شین و ونکاتارامان با تکیه بر پژوهش‌های پیشین در علوم اجتماعی، یک چارچوب مفهومی ارائه دادند که پدیده‌های تجربی را تبیین کرده و نتایجی را پیش‌بینی می‌کند که در چارچوب‌های دیگر قابل تبیین نیستند. هدف آنها ایجاد یک قلمروی علمی مستقل برای کارآفرینی بود.
+        <h3><span class="q-badge">۱</span> مشکل حوزه کارآفرینی قبل از ۲۰۰۰ چه بود و مقاله شین چه کرد؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کارآفرینی فاقد چارچوب مفهومی بود و به مطالعات پراکنده کسب‌وکارهای کوچک محدود شده بود. شین با ارائه چارچوبی بر پایه «فرصت»، آن را به یک حوزه علمی مستقل تبدیل کرد.
         </div>
     </div>
 
-    <!-- سوال 2 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲</span> تعریف دقیق شین و ونکاتارامان از «حوزه پژوهشی کارآفرینی» چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> آنها کارآفرینی را به عنوان «بررسی علمی چگونگی، توسط چه کسانی و با چه اثراتی، فرصت‌هایی که کالاها و خدمات آینده را خلق می‌کنند، کشف، ارزیابی و بهره‌برداری می‌شوند» تعریف می‌کنند. به عبارت دیگر، قلمرو کارآفرینی شامل مطالعه (۱) منابع و ماهیت فرصت‌ها، (۲) فرآیندهای کشف، ارزیابی و بهره‌برداری از فرصت‌ها، و (۳) گروهی از افراد که این فرآیندها را انجام می‌دهند، می‌شود.
+        <h3><span class="q-badge">۲</span> تعریف شین از کارآفرینی چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> بررسی علمی چگونگی، توسط چه کسانی و با چه اثراتی، فرصت‌های خلق کالاها و خدمات آینده، کشف، ارزیابی و بهره‌برداری می‌شوند.
         </div>
     </div>
 
-    <!-- سوال 3 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳</span> چرا تعریف کارآفرینی صرفاً بر اساس «کارآفرین کیست و چه می‌کند» ناقص است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> زیرا کارآفرینی دربرگیرنده <strong>پیوند دو پدیده</strong> است: وجود فرصت‌های سودآور (عینی) و حضور افرادی که آن‌ها را شناسایی و بهره‌برداری می‌کنند (ذهنی). تعریف صرفاً مبتنی بر فرد، به تولید تعاریف ناقصی منجر می‌شود که دوام علمی ندارند. به عنوان مثال، تأسیس یک سازمان جدید تنها یکی از راه‌های بهره‌برداری از فرصت است و کارآفرینی می‌تواند درون سازمان‌های موجود نیز رخ دهد.
+        <h3><span class="q-badge">۳</span> چرا تعریف کارآفرینی فقط بر اساس «کارآفرین کیست» ناقص است؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> چون کارآفرینی پیوند دو پدیده است: وجود فرصت‌های عینی + افرادی که آنها را کشف و بهره‌برداری می‌کنند. تعریف فردمحور، تأسیس شرکت را الزامی می‌داند درحالی‌که کارآفرینی درون‌سازمانی هم وجود دارد.
         </div>
     </div>
 
-    <!-- سوال 4 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴</span> پنج پیش‌فرض اصلی چارچوب پیشنهادی شین و ونکاتارامان را نام ببرید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۴</span> پنج پیش‌فرض چارچوب شین چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li>کارآفرینی مستلزم وجود فرصت‌هایی است که فارغ از اینکه کسی آن‌ها را کشف کند یا نه، وجود دارند.</li>
-                <li>کارآفرینی مستلزم وجود افرادی است که این فرصت‌ها را کشف، ارزیابی و بهره‌برداری کنند.</li>
-                <li>افراد در دسترسی به اطلاعات و توانایی‌های شناختی برای کشف فرصت‌ها با هم تفاوت دارند.</li>
-                <li>افراد در توانایی و تمایل خود برای بهره‌برداری از فرصت‌ها نیز متفاوت هستند.</li>
-                <li>کارآفرینی با بهره‌گیری از چارچوب‌های نوین ابزار-هدف، با عدم‌اطمینان روبروست و سودآوری آن تا پیش از بهره‌برداری، قطعی نیست.</li>
+                <li>فرصت‌ها مستقل از افراد وجود دارند.</li>
+                <li>افراد برای کشف و بهره‌برداری از فرصت‌ها لازم هستند.</li>
+                <li>افراد در اطلاعات و توانایی‌های شناختی متفاوتند.</li>
+                <li>افراد در تمایل به بهره‌برداری متفاوتند.</li>
+                <li>کارآفرینی با عدم‌اطمینان همراه است.</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 5 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۵</span> چه شروطی در چارچوب شین برای وقوع کارآفرینی <strong>ضروری نیستند</strong>؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۵</span> چه شروطی برای کارآفرینی ضروری نیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li>کارآفرینی مستلزم ایجاد یک شرکت نوین نیست و می‌تواند در سازمان‌های موجود رخ دهد (کارآفرینی درون‌سازمانی).</li>
-                <li>کارآفرینی یک فرآیند است که می‌تواند توسط بیش از یک فرد انجام شود (کارآفرینی یک نقش است، نه یک کاراکتر).</li>
-                <li>کارآفرینی لزوماً به موفقیت نمی‌انجامد.</li>
-                <li>عواملی که برای کشف فرصت تاثیرگذارند، لزوماً برای بهره‌برداری از آن نیز تاثیرگذار نیستند.</li>
+                <li>ایجاد شرکت جدید (کارآفرینی درون‌سازمانی).</li>
+                <li>تک‌فردی بودن (فرآیند گروهی).</li>
+                <li>موفقیت (شکست هم کارآفرینی است).</li>
+                <li>یکسان بودن عوامل کشف و بهره‌برداری.</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 6 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۶</span> با توجه به چارچوب شین، چرا مطالعه کارآفرینی برای درک علم اقتصاد و کسب‌وکار ضروری است؟ (سه دلیل)</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۶</span> چرا مطالعه کارآفرینی ضروری است؟ (۳ دلیل)</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li><strong>تبدیل اطلاعات فنی:</strong> بخش زیادی از اطلاعات فنی در نهایت در محصولات و خدمات تجسم می‌یابند و کارآفرینی، مکانیزم اصلی تبدیل این اطلاعات به محصولات و خدمات نوین است.</li>
-                <li><strong>موتور تغییرات:</strong> شومپیeter، نوآوری مبتنی بر کارآفرینی را به عنوان موتور حیاتی فرآیند تغییر در جامعه معرفی کرد.</li>
-                <li><strong>تکمیل درک ما:</strong> بدون درک کارآفرینی، درک ما از بازارها، شرکت‌ها، سازمان‌ها و تغییرات ناقص است. همانطور که بومول اشاره کرد، مطالعه کسب‌وکار بدون کارآفرینی، مانند مطالعه شکسپیر بدون شخصیت «شاهزاده دانمارک» است.</li>
+                <li>تبدیل اطلاعات فنی به محصول.</li>
+                <li>موتور تغییرات اقتصادی (شومپیeter).</li>
+                <li>تکمیل درک ما از بازار و سازمان.</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 7 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۷</span> چه تفاوتی بین «فرصت‌های کارآفرینانه» و «فرصت‌های بهبود کارایی» وجود دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> فرصت‌های کارآفرینانه شامل <strong>کشف روابط جدید ابزار-هدف</strong> هستند (یعنی خلق کالاها، خدمات یا روش‌های جدید)، در حالی که فرصت‌های بهبود کارایی شامل <strong>بهینه‌سازی در چارچوب‌های موجود</strong> ابزار-هدف هستند (مانند استفاده بهتر از منابع موجود). فرصت‌های کارآفرینانه ماهیتاً با عدم‌اطمینان بیشتری همراه هستند و نمی‌توان آن‌ها را با محاسبات مکانیکی بهینه‌سازی تصمیم‌گیری کرد.
+        <h3><span class="q-badge">۷</span> فرصت کارآفرینانه چه تفاوتی با فرصت بهبود کارایی دارد؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> فرصت کارآفرینانه = کشف روابط <strong>جدید</strong> ابزار-هدف (خلاقیت). فرصت بهبود کارایی = <strong>بهینه‌سازی</strong> روابط موجود.
         </div>
     </div>
 
-    <!-- سوال 8 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۸</span> تعریف دقیق «فرصت کارآفرینانه» چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> فرصت‌های کارآفرینانه، موقعیت‌هایی هستند که در آنها می‌توان کالاها، خدمات، مواد خام و روش‌های سازمان‌دهی نوین را با قیمتی بیش از هزینه تولیدشان معرفی و به فروش رساند. این فرصت‌ها <strong>پدیده‌های عینی</strong> هستند که مستقل از ذهن کارآفرین وجود دارند، هرچند کشف آنها یک فرآیند شناختی و ذهنی است.
+        <h3><span class="q-badge">۸</span> تعریف فرصت کارآفرینانه چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> موقعیتی که در آن می‌توان کالا/خدمت جدید را با قیمتی بیش از هزینه تولید، معرفی و فروخت.
         </div>
     </div>
 
-    <!-- سوال 9 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۹</span> چرا و چگونه «باورهای متفاوت» افراد نسبت به ارزش منابع، منجر به وجود فرصت‌های کارآفرینی می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> برای وقوع کارآفرینی، کارآفرین باید حدس بزند که می‌تواند منابع را به شکلی ارزشمندتر ترکیب کند. اگر مالکان منابع نیز همین حدس را داشتند، قیمت منابع را به اندازه‌ای افزایش می‌دادند که سود کارآفرین به صفر برسد. بنابراین، وجود باورهای متفاوت (عدم‌تقارن اطلاعاتی) شرط لازم است تا کارآفرین بتواند منابع را با قیمت پایین‌تر خریده، ترکیب کرده و با قیمت بالاتر بفروشد.
+        <h3><span class="q-badge">۹</span> باورهای متفاوت چه نقشی در ایجاد فرصت دارند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> اگر مالکان منابع هم باور کارآفرین را داشتند، قیمت را بالا می‌بردند و سود از بین می‌رفت. اختلاف باور (عدم‌تقارن اطلاعاتی) شرط کسب سود است.
         </div>
     </div>
 
-    <!-- سوال 10 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۰</span> دو دیدگاه اصلی در مورد منشأ عدم‌تعادل در بازار و ایجاد فرصت‌های کارآفرینی چیست؟ (دیدگاه کرزنر و شومپیeter را توضیح دهید).</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۱۰</span> دو دیدگاه منشأ فرصت را توضیح دهید.</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ul>
-                <li><strong>دیدگاه کرزنری (نگاه عدم‌تعادل ناشی از خطا):</strong> فرصت‌ها از اشتباهات بازیگران بازار ناشی می‌شوند. افراد بر اساس حدس‌ها و اطلاعات ناقص تصمیم می‌گیرند که منجر به کمبود، مازاد یا تخصیص نادرست منابع می‌شود. کارآفرین با کشف این «خطاها»، منابع را از جایی که قیمت «خیلی پایین» است خریده و در جایی که قیمت «بیش از حد بالا» است، می‌فروشد.</li>
-                <li><strong>دیدگاه شومپیتری (نگاه عدم‌تعادل ناشی از تغییر):</strong> فرصت‌ها از تغییرات برون‌زا (فناوری، سیاسی، اجتماعی، قانونی) ناشی می‌شوند که اطلاعات جدیدی را به بازار معرفی کرده و ارزش منابع را تغییر می‌دهند. کارآفرینانی که زودتر به این اطلاعات جدید دسترسی پیدا می‌کنند، می‌توانند از آن سود ببرند.</li>
+                <li><strong>کرزنر:</strong> فرصت از <strong>خطاهای</strong> بازیگران بازار ناشی می‌شود (کمبود، مازاد).</li>
+                <li><strong>شومپیeter:</strong> فرصت از <strong>تغییرات برون‌زا</strong> (فناوری، سیاست، اجتماع) ناشی می‌شود.</li>
             </ul>
         </div>
     </div>
 
-    <!-- سوال 11 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۱</span> «راهروهای اطلاعاتی» چگونه بر کشف فرصت‌ها تأثیر می‌گذارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هر فرد دارای ذخیره‌ای منحصر‌به‌فرد از اطلاعات است که حاصل تجارب، تحصیلات و شبکه اجتماعی اوست. این ذخایر اطلاعاتی، <strong>طرح‌های ذهنی</strong> (چارچوب‌های شناختی) را ایجاد می‌کنند که به فرد اجازه می‌دهند اطلاعات جدید را درک کرده و ارتباطات جدید بین ابزارها و اهداف را شناسایی کند. به همین دلیل، افرادی با ذخایر اطلاعاتی متفاوت، فرصت‌های متفاوتی را کشف می‌کنند. هیچ دو نفری اطلاعات یکسانی را به اشتراک نمی‌گذارند.
+        <h3><span class="q-badge">۱۱</span> راهروهای اطلاعاتی چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ذخایر اطلاعاتی منحصربه‌فرد هر فرد (از تجربه، تحصیلات، شبکه) که طرح‌های ذهنی ایجاد کرده و به کشف فرصت‌های خاص کمک می‌کند.
         </div>
     </div>
 
-    <!-- سوال 12 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۲</span> علاوه بر داشتن اطلاعات قبلی، چه ویژگی‌های شناختی در کشف فرصت‌ها نقش دارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> افراد در توانایی شناسایی <strong>روابط جدید ابزار-هدف</strong> با یکدیگر تفاوت دارند. برخی افراد در تبدیل مفاهیم و اطلاعات موجود به ایده‌های جدید مهارت بیشتری دارند. برای مثال، تحقیقات نشان داده است که کارآفرینان موفق، فرصت‌ها را در موقعیت‌هایی می‌بینند که دیگران ریسک می‌بینند و آنها کمتر دچار پشیمانی از فرصت‌های از دست رفته (تفکر خلاف‌واقعیت) می‌شوند.
+        <h3><span class="q-badge">۱۲</span> ویژگی‌های شناختی در کشف فرصت چه نقشی دارند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> توانایی دیدن روابط جدید ابزار-هدف. کارآفرینان فرصت را جایی می‌بینند که دیگران ریسک می‌بینند و کمتر پشیمان می‌شوند.
         </div>
     </div>
 
-    <!-- سوال 13 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۳</span> چرا همه فرصت‌های کشف‌شده به بهره‌برداری نمی‌رسند؟ (نقش ماهیت فرصت را توضیح دهید).</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تصمیم به بهره‌برداری به <strong>ارزش مورد انتظار</strong> فرصت بستگی دارد. افراد از فرصت‌هایی بهره‌برداری می‌کنند که ارزش مورد انتظار سود آنها به اندازه کافی بزرگ باشد تا هزینه فرصت (از دست دادن سایر گزینه‌ها)، ریسک عدم‌اطمینان و کمبود نقدینگی را پوشش دهد. به طور خاص، بهره‌برداری زمانی محتمل‌تر است که تقاضای مورد انتظار زیاد، حاشیه سود بالا، فناوری جوان، رقابت متعادل و هزینه سرمایه پایین باشد.
+        <h3><span class="q-badge">۱۳</span> چرا همه فرصت‌های کشف‌شده بهره‌برداری نمی‌شوند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> به ارزش مورد انتظار بستگی دارد. باید هزینه فرصت، ریسک و کمبود نقدینگی را پوشش دهد. تقاضای بالا، حاشیه سود بالا و رقابت متعادل، بهره‌برداری را افزایش می‌دهد.
         </div>
     </div>
 
-    <!-- سوال 14 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۴</span> چه تفاوت‌های فردی (غیرروان‌شناختی و روان‌شناختی) بر تصمیم به بهره‌برداری از فرصت تأثیر می‌گذارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۱۴</span> تفاوت‌های فردی مؤثر بر بهره‌برداری را نام ببرید.</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ul>
-                <li><strong>غیرروان‌شناختی:</strong> هزینه فرصت پایین‌تر، دسترسی بیشتر به منابع مالی، شبکه‌های اجتماعی قوی‌تر، اطلاعات شغلی قبلی مرتبط، و تجربه کارآفرینی قبلی.</li>
-                <li><strong>روان‌شناختی:</strong> ریسک‌پذیری بیشتر، خوش‌بینی، خودکارآمدی و مرکز کنترل درونی بالا، تحمل ابهام بیشتر، و نیاز بالاتر به پیشرفت (توفیق‌طلبی).</li>
+                <li><strong>غیرروان‌شناختی:</strong> سرمایه، شبکه، تجربه، هزینه فرصت پایین.</li>
+                <li><strong>روان‌شناختی:</strong> ریسک‌پذیری، خوش‌بینی، خودکارآمدی، تحمل ابهام، نیاز به پیشرفت.</li>
             </ul>
         </div>
     </div>
 
-    <!-- سوال 15 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۵</span> آیا ویژگی‌هایی که احتمال بهره‌برداری از فرصت را افزایش می‌دهند، لزوماً احتمال موفقیت را نیز افزایش می‌دهند؟ توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> خیر. برای مثال، <strong>خوش‌بینی بیش از حد</strong> ممکن است احتمال بهره‌برداری را افزایش دهد، اما با احتمال شکست بالاتری نیز همراه است، زیرا فرد تصویر واقع‌بینانه‌ای از رقابت و موانع ندارد و ممکن است وارد بازاری شود که ظرفیت رقابت را ندارد. افراد بدبین‌تر ممکن است از بهره‌برداری از برخی فرصت‌ها صرف‌نظر کنند، اما اگر بهره‌برداری کنند، احتمال موفقیتشان بیشتر است.
+        <h3><span class="q-badge">۱۵</span> آیا ویژگی‌های افزایش‌دهنده بهره‌برداری، موفقیت را هم افزایش می‌دهند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نه. خوش‌بینی بیش از حد، بهره‌برداری را زیاد می‌کند اما شانس شکست را هم بالا می‌برد.
         </div>
     </div>
 
     <hr>
 
     <!-- ========== بخش دوم ========== -->
-    <h2>📌 بخش دوم: وجود، کشف و بهره‌برداری از فرصت‌ها (سوالات ۱۶ تا ۳۰)</h2>
+    <h2><i class="fas fa-compass"></i> بخش دوم: وجود، کشف و بهره‌برداری (سوالات ۱۶ تا ۳۰)</h2>
 
-    <!-- سوال 16 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۶</span> چگونه انتشار اطلاعات در بلندمدت، ماهیت موقت (ناپایدار) فرصت‌های کارآفرینی را توضیح می‌دهد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> با بهره‌برداری از یک فرصت، اطلاعات مربوط به سودآوری آن به دیگران منتقل می‌شود. این امر منجر به ورود کارآفرینان مقلد به بازار می‌شود که با افزایش رقابت، سود را بین بازیگران بیشتری تقسیم کرده و از جذابیت آن می‌کاهد. همچنین، ارائه‌دهندگان منابع متوجه ارزش بالاتر منابع خود شده و قیمت‌ها را افزایش می‌دهند. این مکانیسم‌ها در نهایت انگیزه برای دنبال کردن آن فرصت خاص را کاهش می‌دهند.
+        <h3><span class="q-badge">۱۶</span> چرا فرصت‌ها ماهیت موقت دارند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> با بهره‌برداری، اطلاعات منتشر شده، رقبا وارد می‌شوند و سود تقسیم می‌گردد. همچنین مالکان منابع قیمت را افزایش می‌دهند.
         </div>
     </div>
 
-    <!-- سوال 17 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۷</span> چه عواملی می‌توانند مدت زمان سودآوری یک فرصت را افزایش دهند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> عواملی مانند اعطای حقوق انحصاری (مثلاً از طریق ثبت اختراع)، کندی انتشار اطلاعات، تأخیر در شناسایی اطلاعات توسط دیگران، موانع تقلید (مانند منابع نادر یا منحنی‌های یادگیری پیچیده)، و مزیت پیشگام (First-mover Advantage) همگی می‌توانند مدت زمان سودآوری یک فرصت را افزایش دهند.
+        <h3><span class="q-badge">۱۷</span> چه عواملی طول عمر فرصت را زیاد می‌کنند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> حقوق انحصاری (پتنت)، کندی انتشار اطلاعات، موانع تقلید، مزیت پیشگام.
         </div>
     </div>
 
-    <!-- سوال 18 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۸</span> دو ساختار اصلی برای بهره‌برداری از فرصت‌های کارآفرینی کدامند و هر کدام چه زمانی ارجحیت دارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> دو ساختار اصلی عبارتند از:
+        <h3><span class="q-badge">۱۸</span> دو ساختار بهره‌برداری از فرصت چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li><strong>ایجاد شرکت‌های جدید (سلسله‌مراتب):</strong> زمانی ارجح است که تأمین مالی برای کارآفرینان مستقل دشوار باشد، سازمان‌های بزرگ انگیزه کافی برای نوآوری نداشته باشند، موانع ورود صنعت کم باشد و فرصت‌ها به دارایی‌های مکمل نیاز نداشته باشند.</li>
-                <li><strong>فروش فرصت‌ها به شرکت‌های موجود (بازار):</strong> زمانی ارجح است که اطلاعات به خوبی توسط قوانین مالکیت فکری محافظت می‌شوند و فروش فرصت به شرکت‌های بزرگ امکان‌پذیر است.</li>
+                <li>ایجاد شرکت جدید (وقتی تأمین مالی سخت، موانع ورود کم).</li>
+                <li>فروش به شرکت‌های موجود (وقتی مالکیت فکری قوی).</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 19 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۱۹</span> با استناد به مقاله شین، چه ارتباطی بین «اطلاعات فنی» و «کارآفرینی» وجود دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> اطلاعات فنی به‌تنهایی ارزش اقتصادی ندارند. کارآفرینی مکانیزمی است که جامعه از طریق آن، اطلاعات فنی را به محصولات، خدمات و فرآیندهای نوینی تبدیل می‌کند که در نهایت به موتور تغییرات اقتصادی تبدیل می‌شوند. بنابراین، کارآفرینی نقش حیاتی در تجاری‌سازی دانش و نوآوری ایفا می‌کند.
+        <h3><span class="q-badge">۱۹</span> رابطه اطلاعات فنی و کارآفرینی چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کارآفرینی، اطلاعات فنی را به محصولات و خدمات تبدیل می‌کند (تجاری‌سازی دانش).
         </div>
     </div>
 
-    <!-- سوال 20 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۰</span> چرا شین و ونکاتارامان معتقدند که مطالعه فرآیند «ایجاد شرکت» (Company Formation) متفاوت از مطالعه «کارآفرینی» است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مطالعه ایجاد شرکت بر «چگونگی» بسیج منابع، سازماندهی و بازارسازی یک شرکت جدید متمرکز است و پیش‌فرض آن وجود یک فرصت کشف‌شده است. اما مطالعه کارآفرینی به «چرایی و چگونگی» وجود، کشف و ارزیابی خود فرصت‌ها می‌پردازد. کارآفرینی را می‌توان بدون ایجاد شرکت جدید (مثلاً از طریق فروش فرصت یا کارآفرینی درون‌سازمانی) نیز مطالعه کرد.
+        <h3><span class="q-badge">۲۰</span> تفاوت مطالعه «ایجاد شرکت» و «کارآفرینی» چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ایجاد شرکت = چگونگی سازماندهی (پس از وجود فرصت). کارآفرینی = چرایی وجود، کشف و ارزیابی فرصت.
         </div>
     </div>
 
-    <!-- سوال 21 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۱</span> مفهوم «تولید مشترک» در کارآفرینی چیست و چه ارتباطی با باورهای متفاوت دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تولید مشترک به معنای گرد هم آوردن منابع مختلف از مالکان مختلف برای خلق یک محصول یا خدمت جدید است. برای اینکه کارآفرین بتواند این کار را انجام دهد و سود کسب کند، باید حدس او درباره قیمت منابع با مالکان و سایر رقبا <strong>متفاوت</strong> باشد. اگر مالکان نیز همین حدس را داشتند، قیمت را افزایش می‌دادند و سود کارآفرین از بین می‌رفت.
+        <h3><span class="q-badge">۲۱</span> تولید مشترک چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> گرد هم آوردن منابع مختلف برای خلق محصول جدید. نیازمند اختلاف باور با مالکان منابع است.
         </div>
     </div>
 
-    <!-- سوال 22 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۲</span> «حدس کارآفرینانه» (Entrepreneurial Guess) چیست و چگونه شکل می‌گیرد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> حدس کارآفرینانه، باوری است که یک فرد درباره ارزش بالقوه یک ترکیب جدید از منابع دارد. این حدس زمانی شکل می‌گیرد که اطلاعات قبلی فرد با اطلاعات جدیدی ترکیب شده و او را به این نتیجه برساند که می‌تواند از یک فرصت سود کسب کند. این حدس، نقطه شروع فرآیند کارآفرینی است.
+        <h3><span class="q-badge">۲۲</span> حدس کارآفرینانه چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> باوری درباره ارزش بالقوه ترکیب جدید منابع که از ترکیب اطلاعات قبلی و جدید شکل می‌گیرد.
         </div>
     </div>
 
-    <!-- سوال 23 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۳</span> مفهوم «تخریب خلاق» (Creative Destruction) شومپیeter را توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تخریب خلاق، فرآیندی است که در آن نوآوری‌های کارآفرینانه، به‌طور مداوم و از درون، ساختارهای اقتصادی موجود را نابود کرده و ساختارهای جدید و کارآمدتری را جایگزین آن می‌کنند. به عبارت دیگر، کارآفرینان با معرفی محصولات، فرآیندها و مدل‌های کسب‌وکار جدید، صنایع و مشاغل قدیمی را از رده خارج می‌کنند و زمینه‌ساز رشد و پیشرفت اقتصادی می‌شوند.
+        <h3><span class="q-badge">۲۳</span> تخریب خلاق چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> فرآیندی که نوآوری‌های کارآفرینانه، ساختارهای قدیمی را نابود و ساختارهای جدید جایگزین می‌کنند.
         </div>
     </div>
 
-    <!-- سوال 24 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۴</span> «کارآفرینی درون‌سازمانی» (Intrapreneurship) چیست و چرا در چارچوب شین مطرح شده است؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> کارآفرینی درون‌سازمانی به فرآیند کشف و بهره‌برداری از فرصت‌ها در داخل یک سازمان موجود اشاره دارد. این مفهوم در چارچوب شین مطرح شده است تا نشان دهد که کارآفرینی لزوماً نیازمند ایجاد یک شرکت جدید نیست و می‌تواند توسط کارکنان یک سازمان بزرگ نیز انجام شود. این موضوع، یکی از شروطی است که برای وقوع کارآفرینی ضروری نیست.
+        <h3><span class="q-badge">۲۴</span> کارآفرینی درون‌سازمانی چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کشف و بهره‌برداری از فرصت درون سازمان موجود، بدون نیاز به ایجاد شرکت جدید.
         </div>
     </div>
 
-    <!-- سوال 25 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۵</span> چرا افراد با "اطلاعات قبلی ضروری" لزوماً فرصت‌ها را کشف نمی‌کنند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> زیرا علاوه بر اطلاعات قبلی، فرد به «ویژگی‌های شناختی» مناسب نیز نیاز دارد. او باید توانایی دیدن «روابط جدید ابزار-هدف» را داشته باشد و بتواند اطلاعات موجود را به روشی نوین ترکیب کند. ناتوانی در ایجاد این ارتباطات، حتی با وجود دانش مناسب، مانع از کشف فرصت می‌شود.
+        <h3><span class="q-badge">۲۵</span> چرا اطلاعات قبلی برای کشف فرصت کافی نیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نیاز به توانایی شناختی برای دیدن روابط جدید ابزار-هدف داریم.
         </div>
     </div>
 
-    <!-- سوال 26 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۶</span> بر اساس تحقیقات، کارآفرینان از نظر «تفکر خلاف‌واقعیت» (Counterfactual Thinking) با دیگران چه تفاوتی دارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تحقیقات نشان داده است که کارآفرینان ممکن است کمتر از دیگران به تفکر خلاف‌واقعیت بپردازند (یعنی کمتر به این فکر کنند که اگر موقعیت دیگری داشتند، چه اتفاقی می‌توانست بیفتد). در نتیجه، آنها کمتر بابت فرصت‌های از دست رفته پشیمان می‌شوند و کمتر دچار «بی‌عملی» (Inaction Inertia) می‌شوند، که همین امر احتمال بهره‌برداری از فرصت‌های جدید را در آنها افزایش می‌دهد.
+        <h3><span class="q-badge">۲۶</span> تفکر خلاف‌واقعیت در کارآفرینان چگونه است؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> کارآفرینان کمتر به «چه می‌شد اگر» فکر می‌کنند، کمتر پشیمان می‌شوند و بیشتر اقدام می‌کنند.
         </div>
     </div>
 
-    <!-- سوال 27 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۷</span> ویژگی‌های مختلف یک فرصت چگونه بر تصمیم به بهره‌برداری تأثیر می‌گذارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> فرصت‌هایی که تقاضای مورد انتظار بالاتر، حاشیه سود بیشتر، فناوری جوان‌تر (با پتانسیل رشد بیشتر)، رقابت متعادل، هزینه سرمایه پایین‌تر و قابلیت یادگیری بیشتری دارند، ارزش مورد انتظار بالاتری دارند و بنابراین با احتمال بیشتری مورد بهره‌برداری قرار می‌گیرند.
+        <h3><span class="q-badge">۲۷</span> ویژگی‌های فرصت مؤثر بر بهره‌برداری کدامند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تقاضای بالا، حاشیه سود زیاد، فناوری جوان، رقابت متعادل، هزینه سرمایه پایین.
         </div>
     </div>
 
-    <!-- سوال 28 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۸</span> چرا کارآفرینان معمولاً نسبت به شانس موفقیت خود خوش‌بین هستند و این خوش‌بینی چه پیامدهایی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> خوش‌بینی بیش از حد در کارآفرینان می‌تواند ناشی از تعصب شناختی، تکیه بر اطلاعات محدود و یا ویژگی‌های شخصیتی باشد. این خوش‌بینی، آنها را به اقدام و بهره‌برداری از فرصت‌ها سوق می‌دهد (نکته مثبت). اما پیامد منفی آن، ورود بیش از حد به بازارها و شکست‌های بالای شرکت‌های جدید است، زیرا آنها توانایی‌های خود و شانس موفقیت را بیش از حد واقعی تخمین می‌زنند.
+        <h3><span class="q-badge">۲۸</span> خوش‌بینی کارآفرینان چه پیامدی دارد؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> انگیزه بهره‌برداری را بالا می‌برد اما باعث ورود بیش از حد و شکست می‌شود.
         </div>
     </div>
 
-    <!-- سوال 29 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۲۹</span> "نیاز به پیشرفت" (Need for Achievement) چگونه بر رفتار کارآفرینانه تأثیر می‌گذارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> افرادی که نیاز بالایی به پیشرفت دارند، به دنبال چالش‌های متوسط، مسئولیت‌پذیری شخصی و بازخورد عملکرد هستند. کارآفرینی، بستری ایده‌آل برای ارضای این نیازها فراهم می‌کند. بنابراین، این افراد با احتمال بیشتری به دنبال کشف و بهره‌برداری از فرصت‌ها می‌روند.
+        <h3><span class="q-badge">۲۹</span> نیاز به پیشرفت چه تأثیری دارد؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> افراد با نیاز بالا به پیشرفت، بیشتر به دنبال چالش‌های کارآفرینانه می‌روند.
         </div>
     </div>
 
-    <!-- سوال 30 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۰</span> "موانع تقلید" (Imitability Barriers) چه نقشی در پایداری سود کارآفرینانه دارند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> موانع تقلید، عواملی هستند که ورود کارآفرینان مقلد را به یک بازار دشوار یا کند می‌کنند. این موانع می‌توانند شامل حقوق مالکیت معنوی (مانند پتنت)، پیچیدگی فناوری، دسترسی به منابع نادر، مزیت پیشگام یا روابط انحصاری با مشتریان باشند. این موانع، مدت زمان سودآوری یک فرصت را افزایش داده و به کارآفرین اجازه می‌دهند مدت بیشتری از سود خود محافظت کند.
+        <h3><span class="q-badge">۳۰</span> موانع تقلید چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> عواملی که ورود رقبا را دشوار می‌کنند: پتنت، پیچیدگی فناوری، منابع نادر، مزیت پیشگام.
         </div>
     </div>
 
     <hr>
 
     <!-- ========== بخش سوم ========== -->
-    <h2>🧭 بخش سوم: ابزار مسیریاب فرصت‌های کسب‌وکار (سوالات ۳۱ تا ۵۰)</h2>
+    <h2><i class="fas fa-map-signs"></i> بخش سوم: مسیریاب فرصت (سوالات ۳۱ تا ۵۰)</h2>
 
-    <!-- سوال 31 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۱</span> هدف اصلی از استفاده از ابزار «مسیریاب فرصت‌های کسب‌وکار» چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> هدف اصلی این ابزار، کمک به کارآفرینان و نوآوران برای اطمینان از این است که در مسیر درستی حرکت می‌کنند. این ابزار با ارائه یک چارچوب ساختاریافته، به سه سوال کلیدی پاسخ می‌دهد: ۱) چه فرصت‌هایی برای ما وجود دارد؟ ۲) جذاب‌ترین فرصت ما کدام است؟ ۳) بر کدام فرصت‌ها باید تمرکز کنیم؟ این ابزار به حفظ تعادل بین تمرکز و چابکی کمک می‌کند.
+        <h3><span class="q-badge">۳۱</span> هدف مسیریاب فرصت چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پاسخ به ۳ سوال: چه فرصت‌هایی داریم؟ جذاب‌ترین کدام است؟ بر کدام تمرکز کنیم؟
         </div>
     </div>
 
-    <!-- سوال 32 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۲</span> سه گام اصلی مسیریاب فرصت‌های کسب‌وکار را نام ببرید و توضیح مختصری از هر کدام ارائه دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۳۲</span> سه گام مسیریاب را نام ببرید.</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li><strong>شناخت مجموعه فرصت‌ها (کاربرگ ۱):</strong> بر اساس توانایی‌های منحصربه‌فرد تیم یا شرکت، فهرستی از تمام فرصت‌های بالقوه شناسایی می‌شود. فرصت، ترکیب کارکرد توانایی‌ها برای یک مجموعه مشخص از مشتریان است.</li>
-                <li><strong>ارزیابی جذابیت فرصت‌ها (کاربرگ ۲):</strong> هر فرصت بر اساس دو بعد «پتانسیل» (دلیل قانع‌کننده برای خرید، اندازه بازار و قابلیت سوددهی) و «چالش» (موانع اجرایی، فاصله تا درآمد و ریسک‌های بیرونی) ارزیابی شده و روی «نقشه جذابیت» قرار می‌گیرد.</li>
-                <li><strong>طراحی راهبرد تمرکز چابک (کاربرگ ۳):</strong> با استفاده از «تخته هدف»، یک فرصت اصلی (تمرکز)، یک فرصت پشتیبان (برای تغییر مسیر در صورت شکست) و یک فرصت رشد (برای توسعه در صورت موفقیت) انتخاب می‌شوند.</li>
+                <li>مجموعه فرصت (کاربرگ ۱).</li>
+                <li>نقشه جذابیت (کاربرگ ۲).</li>
+                <li>تخته هدف تمرکز چابک (کاربرگ ۳).</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 33 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۳</span> «مجموعه فرصت‌ها» چیست و چگونه ایجاد می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مجموعه فرصت‌ها، فهرستی از تمام فرصت‌های بالقوه‌ای است که یک تیم یا شرکت بر اساس توانایی‌های خاص خود می‌تواند دنبال کند. برای ایجاد آن، ابتدا باید <strong>توانایی‌های محوری</strong> (کارکردها و ویژگی‌ها) را به‌طور مستقل از محصول نهایی فهرست کرد. سپس با ترکیب این توانایی‌ها با نیازهای گروه‌های مختلف مشتریان (کاربردها)، فرصت‌های مختلف شناسایی می‌شوند. این توانایی‌ها محدود به فناوری نبوده و می‌توانند شامل مهارت‌های مدیریتی، شبکه ارتباطی و غیره باشند.
+        <h3><span class="q-badge">۳۳</span> مجموعه فرصت چگونه ایجاد می‌شود؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> فهرست توانایی‌های محوری + ترکیب با نیازهای گروه‌های مختلف مشتریان = فرصت‌ها.
         </div>
     </div>
 
-    <!-- سوال 34 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۴</span> «پتانسیل» یک فرصت از چه سه عامل اصلی تشکیل شده است و هر کدام را توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۳۴</span> پتانسیل فرصت از چه عواملی ساخته شده است؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li><strong>دلیل قانع‌کننده برای خرید:</strong> آیا یک نیاز برآورده‌نشده واقعی وجود دارد؟ آیا راه‌حل ارائه‌شده به‌طور معناداری بهتر از راه‌حل‌های موجود است؟</li>
-                <li><strong>اندازه بازار:</strong> بازار فعلی چقدر است و چقدر رشد خواهد کرد؟ (حتی یک نیاز واقعی، اگر بازار آن کوچک باشد، ارزش محدودی دارد).</li>
-                <li><strong>قابلیت سوددهی:</strong> آیا حاشیه سود قابل‌توجهی وجود دارد؟ آیا مشتریان توانایی پرداخت دارند؟ مشتریان چقدر ماندگار هستند؟</li>
+                <li>دلیل قانع‌کننده برای خرید.</li>
+                <li>اندازه بازار.</li>
+                <li>قابلیت سوددهی.</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 35 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۵</span> «چالش» یک فرصت از چه سه عامل اصلی تشکیل شده است و هر کدام را توضیح دهید.</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۳۵</span> چالش فرصت از چه عواملی ساخته شده است؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ol>
-                <li><strong>موانع اجرایی:</strong> موانع فناورانه، طراحی، استانداردها، دسترسی به کانال‌های توزیع و تأمین سرمایه اولیه چقدر دشوار است؟</li>
-                <li><strong>فاصله تا درآمد:</strong> چقدر طول می‌کشد تا جریان نقدی مثبت ایجاد شود؟ (زمان توسعه محصول، آمادگی بازار و طول چرخه فروش).</li>
-                <li><strong>ریسک‌های بیرونی:</strong> تهدید رقابت و وابستگی به شرکت‌ها یا بازیگران دیگر چقدر است؟</li>
+                <li>موانع اجرایی.</li>
+                <li>فاصله تا درآمد.</li>
+                <li>ریسک‌های بیرونی.</li>
             </ol>
         </div>
     </div>
 
-    <!-- سوال 36 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۶</span> «نقشه جذابیت» چیست و چه کاربردی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> نقشه جذابیت، یک نمودار دوبعدی است که فرصت‌ها را بر اساس دو محور «پتانسیل» (محور عمودی) و «چالش» (محور افقی) جای‌گذاری می‌کند. فرصت‌های با پتانسیل بالا و چالش پایین (ناحیه بالا-چپ) جذاب‌ترین گزینه‌ها هستند. این نقشه به کارآفرین کمک می‌کند تا فرصت‌های مختلف را با هم مقایسه کرده، درک بهتری از ماهیت هر فرصت پیدا کرده و جذاب‌ترین گزینه‌ها را برای سرمایه‌گذاری بیشتر انتخاب کند.
+        <h3><span class="q-badge">۳۶</span> نقشه جذابیت چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نمودار دوبعدی با محور پتانسیل (عمودی) و چالش (افقی). فرصت‌های بالا-چپ جذاب‌ترین هستند.
         </div>
     </div>
 
-    <!-- سوال 37 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۷</span> «تخته هدف تمرکز چابک» چیست و سه جزء اصلی آن کدامند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> تخته هدف، ابزاری برای طراحی راهبرد نهایی و انتخاب سبدی از فرصت‌ها به منظور حفظ تمرکز و در عین حال چابکی است. سه جزء اصلی آن عبارتند از:
-            <ol>
-                <li><strong>فرصت اصلی (Core):</strong> فرصتی که بیشترین تمرکز و منابع بر روی آن متمرکز می‌شود.</li>
-                <li><strong>گزینه پشتیبان (Fallback):</strong> فرصتی با ریسک‌های متفاوت که در صورت شکست فرصت اصلی، تیم می‌تواند به آن تغییر مسیر دهد.</li>
-                <li><strong>گزینه رشد (Growth):</strong> فرصتی که در صورت موفقیت در فرصت اصلی، به تیم اجازه می‌دهد ارزش بیشتری خلق کند.</li>
-            </ol>
+        <h3><span class="q-badge">۳۷</span> تخته هدف تمرکز چابک چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ابزار انتخاب سبد فرصت‌ها شامل: فرصت اصلی، گزینه پشتیبان، گزینه رشد.
         </div>
     </div>
 
-    <!-- سوال 38 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۸</span> مفهوم «ارتباط محصول» و «ارتباط بازار» در انتخاب گزینه‌های پشتیبان و رشد چه نقشی دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
+        <h3><span class="q-badge">۳۸</span> ارتباط محصول و ارتباط بازار چه نقشی دارند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong>
             <ul>
-                <li><strong>ارتباط محصول:</strong> به اشتراک در توانمندی‌های فنی، منابع و زنجیره تأمین اشاره دارد. ارتباط بالا، هزینه و زمان توسعه گزینه‌ها را کاهش می‌دهد.</li>
-                <li><strong>ارتباط بازار:</strong> به اشتراک در مشتریان، برند و کانال‌های فروش اشاره دارد. ارتباط بالا، امکان استفاده از شهرت و شبکه توزیع موجود را فراهم می‌کند.</li>
+                <li><strong>ارتباط محصول:</strong> اشتراک در فناوری و منابع ← کاهش هزینه توسعه.</li>
+                <li><strong>ارتباط بازار:</strong> اشتراک در مشتریان و برند ← کاهش هزینه بازاریابی.</li>
             </ul>
         </div>
     </div>
 
-    <!-- سوال 39 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۳۹</span> چرا در مسیریاب فرصت، تأکید بر «تمرکز» و در عین حال «چابکی» (انعطاف‌پذیری) وجود دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> <strong>تمرکز</strong> برای تخصیص بهینه منابع محدود و جلوگیری از پراکندگی ضروری است. اما محیط کسب‌وکار پویا است و ممکن است فرصت اصلی به بن‌بست برخورد کند. داشتن گزینه‌های <strong>پشتیبان و رشد</strong> (چابکی)، به کارآفرین اجازه می‌دهد بدون از دست دادن تمرکز، به سرعت مسیر خود را تغییر داده و ریسک کلی را مدیریت کند.
+        <h3><span class="q-badge">۳۹</span> چرا هم تمرکز و هم چابکی اهمیت دارد؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تمرکز = بهینه‌سازی منابع. چابکی = امکان تغییر مسیر در صورت شکست یا فرصت جدید.
         </div>
     </div>
 
-    <!-- سوال 40 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۰</span> با توجه به ابزار مسیریاب فرصت، «فرصت» چگونه تعریف می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> در این ابزار، فرصت به عنوان «ترکیب کارکرد توانایی‌های شما برای یک مجموعه مشخص از مشتریان» تعریف شده است. به عبارت دیگر، یک فرصت در نقطه اتصال «آنچه شما می‌توانید انجام دهید» (توانایی‌ها) و «نیازهای یک گروه خاص از مشتریان» (کاربرد) شکل می‌گیرد.
+        <h3><span class="q-badge">۴۰</span> تعریف فرصت در مسیریاب چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> ترکیب کارکرد توانایی‌های شما برای یک مجموعه مشخص از مشتریان.
         </div>
     </div>
 
-    <!-- سوال 41 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۱</span> چرا در ارزیابی پتانسیل فرصت، بر «دلیل قانع‌کننده برای خرید» تأکید زیادی می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> زیرا اگر هیچ‌کس محصول یا خدمات شما را نخواهد، بقیه ارزیابی‌ها (اندازه بازار و سوددهی) بی‌معنا خواهند بود. این عامل بررسی می‌کند که آیا یک نیاز واقعی و برآورده‌نشده وجود دارد و آیا راه‌حل شما به‌طور معناداری بهتر از سایر گزینه‌های موجود است.
+        <h3><span class="q-badge">۴۱</span> چرا دلیل قانع‌کننده برای خرید مهم است؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> اگر کسی نخرد، بقیه ارزیابی‌ها بی‌معناست.
         </div>
     </div>
 
-    <!-- سوال 42 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۲</span> چرا در مراحل اولیه ارزیابی یک فرصت، تهیه یک برنامه مالی دقیق معمولاً ممکن نیست و چه راهکار جایگزینی پیشنهاد می‌شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> در مراحل اولیه، اطلاعات مورد نیاز مبهم هستند. به‌جای آن، برای ارزیابی پتانسیل سوددهی، از سه سوال استفاده می‌شود: ۱) آیا حاشیه سود قابل‌توجهی وجود دارد؟ ۲) آیا مشتریان توانایی پرداخت دارند؟ ۳) مشتریان چقدر ماندگار هستند؟
+        <h3><span class="q-badge">۴۲</span> چرا برنامه مالی دقیق در ابتدا ممکن نیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> اطلاعات مبهم است. به‌جای آن، حاشیه سود، توانایی پرداخت و ماندگاری مشتری بررسی می‌شود.
         </div>
     </div>
 
-    <!-- سوال 43 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۳</span> «فاصله تا درآمد» چه مفهومی در ارزیابی چالش‌های یک فرصت دارد و چرا اهمیت دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> «فاصله تا درآمد» به مدت زمانی اشاره دارد که طول می‌کشد تا کسب‌وکار به جریان نقدی مثبت برسد. جریان نقدی برای شرکت‌های نوپا حیاتی است. اگر این دوره طولانی باشد، شرکت با چالش‌های جدی در تأمین مالی و بقا روبرو می‌شود.
+        <h3><span class="q-badge">۴۳</span> فاصله تا درآمد چیست و چرا مهم است؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> مدت زمان رسیدن به جریان نقدی مثبت. اگر طولانی باشد، خطر کمبود نقدینگی و شکست زیاد است.
         </div>
     </div>
 
-    <!-- سوال 44 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۴</span> «استارتاپ فالیبیلیتی» (Flyability) چه توانایی محوری‌ای داشت و چگونه به مجموعه‌ای از فرصت‌ها تبدیل شد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> توانایی محوری فالیبیلیتی، ساخت پهپاد مقاوم در برابر ضربه بود که می‌توانست در مکان‌های بسته و تاریک حرکت کند. آنها با ترکیب این توانایی با نیازهای گروه‌های مختلف مشتریان (بازرسی تانکرها، امداد و نجات، بازرسی پل‌ها و...) مجموعه‌ای از فرصت‌های بالقوه را شناسایی کردند.
+        <h3><span class="q-badge">۴۴</span> استارتاپ فالیبیلیتی چه کرد؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> توانایی پهپاد مقاوم در فضای بسته را با نیازهای مختلف (بازرسی، امداد) ترکیب و مجموعه فرصت ساخت.
         </div>
     </div>
 
-    <!-- سوال 45 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۵</span> در انتخاب گزینه‌های «پشتیبان» و «رشد» در مسیریاب، چه سوالاتی باید پرسیده شود؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong>
-            <ul>
-                <li>برای <strong>گزینه پشتیبان</strong> (اگر موفق نشدیم، چه کنیم؟): باید به دنبال فرصتی بود که ریسک‌های اصلی متفاوتی با فرصت اصلی دارد.</li>
-                <li>برای <strong>گزینه رشد</strong> (اگر موفق شدیم، چه کنیم؟): باید به دنبال فرصتی بود که با موفقیت در فرصت اصلی، بتوان از آن برای خلق ارزش بیشتر و توسعه کسب‌وکار استفاده کرد.</li>
-            </ul>
+        <h3><span class="q-badge">۴۵</span> گزینه پشتیبان و رشد چه سوالاتی را پاسخ می‌دهند؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> پشتیبان = اگر شکست خوردیم، چه کنیم؟ رشد = اگر موفق شدیم، چه کنیم؟
         </div>
     </div>
 
-    <!-- سوال 46 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۶</span> چرا مسیریاب فرصت، «مجموعه فرصت‌ها» را یک «دارایی ارزشمند» برای کسب‌وکار می‌داند؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> زیرا این مجموعه، فقط یک لیست ساده از ایده‌ها نیست، بلکه یک نقشه راه است که نشان می‌دهد کسب‌وکار بر اساس توانایی‌های منحصربه‌فرد خود، چه مسیرهای متنوعی برای رشد و توسعه پیش رو دارد. این آگاهی، به تیم اعتماد به نفس می‌دهد و از تصمیم‌گیری‌های واکنشی جلوگیری می‌کند.
+        <h3><span class="q-badge">۴۶</span> چرا مجموعه فرصت یک دارایی ارزشمند است؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نقشه راهی برای رشد و توسعه بر اساس توانایی‌های منحصربه‌فرد است.
         </div>
     </div>
 
-    <!-- سوال 47 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۷</span> کاربرد تحلیل PESTEL در فرآیند شناسایی فرصت‌های کارآفرینانه چیست؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> PESTEL (سیاسی، اقتصادی، اجتماعی، تکنولوژیک، زیست‌محیطی، قانونی) ابزاری برای تحلیل روندهای کلان محیطی است. با بررسی این روندها، کارآفرین می‌تواند تغییرات بزرگ را پیش‌بینی کرده و نیازها و مشکلات جدیدی را که این تغییرات ایجاد می‌کنند، شناسایی کند.
+        <h3><span class="q-badge">۴۷</span> PESTEL چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> تحلیل روندهای کلان: سیاسی، اقتصادی، اجتماعی، تکنولوژیک، زیست‌محیطی، قانونی.
         </div>
     </div>
 
-    <!-- سوال 48 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۸</span> چه تفاوتی بین یک «فرصت جذاب» و یک «فرصت اصلی» در مسیریاب وجود دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> یک «فرصت جذاب»، فرصتی است که بر اساس ارزیابی (کاربرگ ۲) پتانسیل بالا و چالش پایینی دارد. اما «فرصت اصلی»، آن فرصت جذابی است که تیم پس از بررسی استراتژیک، تصمیم می‌گیرد تمام تمرکز و منابع اصلی خود را بر روی آن متمرکز کند. انتخاب فرصت اصلی، یک تصمیم استراتژیک برای اولویت‌بندی است.
+        <h3><span class="q-badge">۴۸</span> تفاوت فرصت جذاب و فرصت اصلی چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> جذاب = پتانسیل بالا و چالش پایین. اصلی = همان فرصت جذابی که تیم برای تمرکز انتخاب می‌کند.
         </div>
     </div>
 
-    <!-- سوال 49 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۴۹</span> چرا باید «مجموعه فرصت» را به‌روز نگه داشت و آن را به یک «عادت» تبدیل کرد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> محیط کسب‌وکار پویا است و دائماً فناوری‌های جدید، رقبای جدید و نیازهای جدید مشتریان ظهور می‌کنند. یک مجموعه فرصت ایستا، پس از مدتی منسوخ می‌شود. به‌روز کردن منظم آن، به تیم اجازه می‌دهد تا از فرصت‌های جدید مطلع شده و استراتژی خود را با واقعیت‌های جدید تطبیق دهد.
+        <h3><span class="q-badge">۴۹</span> چرا مجموعه فرصت را به‌روز کنیم؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> محیط پویاست و فرصت‌های جدید دائماً ظهور می‌کنند.
         </div>
     </div>
 
-    <!-- سوال 50 -->
     <div class="question-block">
-        <h3><span class="q-badge">سوال ۵۰</span> چارچوب شین و ونکاتارامان را با ابزار مسیریاب فرصت مقایسه کنید. چه ارتباطی بین این دو وجود دارد؟</h3>
-        <div class="answer">
-            <i class="fas fa-check-circle"></i> <strong>پاسخ:</strong> مقاله شین و ونکاتارامان، «چرایی» و «چیستی» کارآفرینی را توضیح می‌دهد و یک چارچوب نظری ارائه می‌کند. اما «مسیریاب فرصت»، ابزاری عملی بر اساس این مفاهیم نظری است که به کارآفرینان کمک می‌کند تا «چگونه» این فرآیند را در عمل پیاده‌سازی کنند. به عبارت دیگر، نظریه شین، مبنای فکری طراحی ابزار مسیریاب (مجموعه فرصت = وجود فرصت‌ها، ارزیابی جذابیت = کشف و ارزیابی، تخته هدف = بهره‌برداری) است. مسیریاب، مفاهیم انتزاعی نظریه را عملیاتی می‌کند.
+        <h3><span class="q-badge">۵۰</span> رابطه نظریه شین و مسیریاب چیست؟</h3>
+        <div class="answer-box">
+            <i class="fas fa-check-circle check"></i> <strong>پاسخ:</strong> نظریه شین = چرایی و چیستی. مسیریاب = چگونه (ابزار عملی برای پیاده‌سازی نظریه).
         </div>
     </div>
 
-<hr>
+    <hr>
 
     <div class="note-footer">
-        <i class="fas fa-graduation-cap"></i> نکته پایانی: این ۵۰ سوال، هسته اصلی مطالب درسی را پوشش می‌دهند. توصیه می‌کنم ابتدا هر سوال را بخوانید، سعی کنید پاسخ را به خاطر بیاورید و سپس پاسخ نوشته‌شده را مرور کنید. برای سوالاتی که نیاز به مثال دارند، حتماً یک مثال واقعی یا فرضی در ذهن داشته باشید. موفق باشید!
+        <i class="fas fa-check-circle"></i> این مجموعه شامل ۵۰ سوال فشرده از درس شناسایی فرصت و ایده‌پردازی کارآفرینانه است.
+        <br><br>
+        <i class="fas fa-star" style="color: #c44536;"></i> <strong>موفق باشید! 👌</strong>
     </div>
+
 </div> <!-- end container -->
 </body>
 </html>
