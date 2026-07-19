@@ -3,519 +3,580 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جامع‌ترین راهنمای سوالات مصاحبه DevOps</title>
+    <title>جامع‌ترین بانک سوالات DevOps (۲۰۰+ سوال)</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            background: linear-gradient(145deg, #f8faff 0%, #f0f4fc 100%);
+            background: #f6f9fc;
             font-family: 'Segoe UI', 'Tahoma', 'Vazir', sans-serif;
-            padding: 2rem 1.5rem;
-            color: #1e293b;
+            padding: 1.5rem;
+            color: #1a2639;
             line-height: 1.7;
         }
-
         .container {
-            max-width: 1300px;
+            max-width: 1400px;
             margin: 0 auto;
         }
-
-        /* هدر اصلی */
+        /* هدر */
         .main-header {
-            background: #ffffff;
-            border-radius: 32px;
-            padding: 2.5rem 3rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 15px 40px -12px rgba(0, 20, 50, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(4px);
+            background: white;
+            border-radius: 28px;
+            padding: 2rem 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+            border: 1px solid #e2eaf1;
             text-align: center;
         }
-
         .main-header h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 800;
             color: #0b2b4f;
-            letter-spacing: -0.5px;
-            margin-bottom: 0.6rem;
         }
-
-        .main-header h1 span {
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
+        .main-header h1 span { color: #1d4ed8; }
         .main-header .sub {
-            font-size: 1.2rem;
             color: #475569;
-            border-top: 2px dashed #d1d9e9;
-            padding-top: 1rem;
-            margin-top: 0.5rem;
+            margin-top: 0.3rem;
+            font-size: 1.05rem;
         }
-
-        .main-header .level-badge {
+        .badge-level {
             display: inline-block;
-            background: #e2e8f0;
-            padding: 0.3rem 1.5rem;
+            padding: 0.15rem 0.9rem;
             border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #1e293b;
-            margin: 0 0.3rem;
-            border: 1px solid #cbd5e1;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-right: 0.5rem;
         }
+        .badge-junior { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+        .badge-mid { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
+        .badge-senior { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
 
-        /* نوار دسترسی سریع */
-        .quick-access {
+        /* فیلتر دسته‌بندی */
+        .filter-nav {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem 1.8rem;
-            background: #ffffffd6;
-            backdrop-filter: blur(4px);
-            padding: 1.2rem 2.5rem;
-            border-radius: 80px;
-            margin-bottom: 2.8rem;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+            gap: 0.5rem 0.8rem;
+            background: white;
+            padding: 1rem 1.8rem;
+            border-radius: 60px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
             border: 1px solid #e9edf4;
         }
-
-        .quick-access a {
+        .filter-nav a {
             text-decoration: none;
+            font-size: 0.8rem;
             font-weight: 600;
             color: #1e293b;
-            padding: 0.3rem 1.2rem;
+            padding: 0.25rem 1rem;
             border-radius: 40px;
             transition: 0.2s;
-            font-size: 0.95rem;
+            border: 1px solid transparent;
         }
-
-        .quick-access a:hover {
-            background: #2563eb;
+        .filter-nav a:hover {
+            background: #1d4ed8;
             color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px -6px #2563eb60;
+            border-color: #1d4ed8;
         }
+        .filter-nav .sep { color: #cbd5e1; font-weight: 300; }
 
-        .quick-access .sep {
-            color: #b9c4d4;
-            font-weight: 300;
+        /* دسته‌بندی */
+        .category-section {
+            margin-bottom: 2.5rem;
         }
-
-        /* کارت‌های سطح */
-        .level-section {
-            margin-bottom: 3.5rem;
-        }
-
-        .level-title {
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0b2b4f;
+            padding-right: 1.2rem;
+            border-right: 6px solid #1d4ed8;
+            margin-bottom: 1.2rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.8rem;
-            padding-right: 1.2rem;
-            border-right: 8px solid;
+            gap: 0.6rem;
+            flex-wrap: wrap;
         }
-
-        .level-beginner .level-title { border-color: #22c55e; color: #166534; }
-        .level-intermediate .level-title { border-color: #eab308; color: #854d0e; }
-        .level-expert .level-title { border-color: #ef4444; color: #991b1b; }
-
-        .level-beginner .level-title::after { content: "🌱"; font-size: 1.8rem; }
-        .level-intermediate .level-title::after { content: "⚡"; font-size: 1.8rem; }
-        .level-expert .level-title::after { content: "🧠"; font-size: 1.8rem; }
-
-        /* شبکه کارت‌ها */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 1.8rem;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 1.8rem 1.8rem 2rem;
-            box-shadow: 0 8px 22px -8px rgba(0, 0, 0, 0.06);
-            border: 1px solid #eef2f8;
-            transition: all 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            height: fit-content;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #b9cbe6;
-            box-shadow: 0 20px 35px -14px rgba(37, 99, 235, 0.12);
-        }
-
-        .card .q {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #0b2b4f;
-            margin-bottom: 0.6rem;
-            display: flex;
-            gap: 0.5rem;
-            align-items: baseline;
-        }
-
-        .card .q .badge-level {
-            font-size: 0.6rem;
+        .category-title .count {
+            font-size: 0.8rem;
             background: #e9edf4;
-            padding: 0.15rem 0.7rem;
-            border-radius: 30px;
+            padding: 0.1rem 0.9rem;
+            border-radius: 40px;
             font-weight: 600;
             color: #475569;
-            margin-right: 0.5rem;
         }
 
-        .card .a {
-            color: #1e293b;
-            padding-right: 0.8rem;
-            border-right: 3px solid #dbe3ef;
-            font-size: 0.98rem;
+        /* گرید کارت‌ها */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            gap: 1.2rem;
         }
-
-        .card .a ul {
-            list-style: none;
-            padding-right: 0.3rem;
-            margin: 0.3rem 0 0.2rem;
-        }
-
-        .card .a ul li {
-            position: relative;
-            padding-right: 1.5rem;
-            margin-bottom: 0.2rem;
-        }
-
-        .card .a ul li::before {
-            content: "•";
-            position: absolute;
-            right: 0;
-            color: #2563eb;
-            font-weight: 700;
-        }
-
-        .card .a strong {
-            color: #1e4a7a;
-        }
-
-        .card .a code {
-            background: #f1f5f9;
-            padding: 0.1rem 0.6rem;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            color: #0b2b4f;
-            font-weight: 500;
-            border: 1px solid #e2e8f0;
-        }
-
-        .tag {
-            display: inline-block;
-            font-size: 0.65rem;
-            background: #eef2ff;
-            color: #2563eb;
-            padding: 0.15rem 0.8rem;
-            border-radius: 30px;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-            border: 1px solid #d1ddfa;
-            margin-top: 0.3rem;
-        }
-
-        .footer-note {
+        .card {
             background: white;
-            border-radius: 30px;
-            padding: 2rem 2.5rem;
-            margin-top: 3rem;
-            border: 1px solid #e2eaf2;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.02);
-        }
-
-        .footer-note h3 {
+            border-radius: 20px;
+            padding: 1.3rem 1.5rem;
+            border: 1px solid #eef2f8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: 0.15s;
             display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            color: #0b2b4f;
-            font-size: 1.4rem;
+            flex-direction: column;
         }
-
-        .footer-note ul {
+        .card:hover {
+            border-color: #b9d0f0;
+            box-shadow: 0 8px 22px -10px rgba(29, 78, 216, 0.08);
+        }
+        .card .q {
+            font-weight: 700;
+            font-size: 0.98rem;
+            color: #0b2b4f;
+            margin-bottom: 0.3rem;
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem 2.5rem;
-            list-style: none;
-            margin-top: 0.8rem;
+            align-items: baseline;
+            gap: 0.3rem;
         }
-
-        .footer-note ul li::before {
-            content: "✓ ";
-            color: #2563eb;
-            font-weight: 700;
+        .card .a {
+            font-size: 0.92rem;
+            color: #1e293b;
+            padding-right: 0.8rem;
+            border-right: 2px solid #dbe3ef;
+        }
+        .card .a ul { list-style: none; padding-right: 0.3rem; margin: 0.1rem 0; }
+        .card .a ul li { position: relative; padding-right: 1.2rem; }
+        .card .a ul li::before { content: "•"; position: absolute; right: 0; color: #1d4ed8; }
+        .card .a code {
+            background: #f1f5f9;
+            padding: 0.05rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            border: 1px solid #e2e8f0;
+        }
+        .tag {
+            display: inline-block;
+            font-size: 0.6rem;
+            background: #eef2ff;
+            color: #1d4ed8;
+            padding: 0.05rem 0.7rem;
+            border-radius: 30px;
+            font-weight: 600;
+            border: 1px solid #d1ddfa;
         }
 
         @media (max-width: 700px) {
-            .main-header h1 { font-size: 1.8rem; }
-            .quick-access { border-radius: 30px; padding: 1rem; }
+            .main-header h1 { font-size: 1.6rem; }
+            .filter-nav { border-radius: 30px; padding: 0.8rem; }
             .card-grid { grid-template-columns: 1fr; }
-            .main-header { padding: 1.5rem; }
         }
-
         @media print {
-            body { background: white; padding: 0.4in; }
+            body { background: white; padding: 0.3in; }
             .card { break-inside: avoid; border: 1px solid #ccc; box-shadow: none; }
-            .quick-access { display: none; }
-            .main-header { box-shadow: none; border: 1px solid #ccc; }
-            .card:hover { transform: none; }
+            .filter-nav { display: none; }
         }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <!-- هدر اصلی -->
+    <!-- هدر -->
     <header class="main-header">
-        <h1>📘 <span>مرجع کامل مصاحبه DevOps</span></h1>
-        <div style="font-size: 1.1rem; color: #334155; margin-bottom: 0.4rem;">
-            بیش از <strong>۵۰ سوال</strong> به همراه پاسخ‌های تشریحی
-        </div>
-        <div>
-            <span class="level-badge">🌱 مبتدی</span>
-            <span class="level-badge">⚡ متوسط</span>
-            <span class="level-badge">🧠 حرفه‌ای</span>
-        </div>
-        <div class="sub">
-            ✅ ذخیره در Git · مرور سریع · آمادگی برای هر سطح از مصاحبه
+        <h1>📚 <span>۲۰۰+</span> سوال مصاحبه DevOps</h1>
+        <div class="sub">۲۲ دسته‌بندی تخصصی · سه سطح Junior / Mid / Senior · به‌روز ۲۰۲۶</div>
+        <div style="margin-top: 0.6rem;">
+            <span class="badge-level badge-junior">🌱 جونیور</span>
+            <span class="badge-level badge-mid">⚡ میدلول</span>
+            <span class="badge-level badge-senior">🧠 سینیور</span>
         </div>
     </header>
 
-    <!-- ناوبری سریع -->
-    <nav class="quick-access">
-        <a href="#beginner">🌱 مبتدی</a>
-        <span class="sep">|</span>
-        <a href="#intermediate">⚡ متوسط</a>
-        <span class="sep">|</span>
-        <a href="#expert">🧠 حرفه‌ای</a>
-        <span class="sep">|</span>
-        <a href="#extras">➕ تکمیلی</a>
+    <!-- ناوبری دسته‌ها -->
+    <nav class="filter-nav" id="navTop">
+        <a href="#cat-jenkins">Jenkins</a><span class="sep">|</span>
+        <a href="#cat-gitlab">GitLab CI</a><span class="sep">|</span>
+        <a href="#cat-github">GitHub Action</a><span class="sep">|</span>
+        <a href="#cat-prom">Prometheus</a><span class="sep">|</span>
+        <a href="#cat-grafana">Grafana</a><span class="sep">|</span>
+        <a href="#cat-elk">ELK</a><span class="sep">|</span>
+        <a href="#cat-loki">Loki</a><span class="sep">|</span>
+        <a href="#cat-splunk">Splunk</a><span class="sep">|</span>
+        <a href="#cat-aws">AWS</a><span class="sep">|</span>
+        <a href="#cat-azure">Azure</a><span class="sep">|</span>
+        <a href="#cat-gcp">GCP</a><span class="sep">|</span>
+        <a href="#cat-k8s">Kubernetes</a><span class="sep">|</span>
+        <a href="#cat-docker">Docker</a><span class="sep">|</span>
+        <a href="#cat-compose">Compose</a><span class="sep">|</span>
+        <a href="#cat-ansible">Ansible</a><span class="sep">|</span>
+        <a href="#cat-terraform">Terraform</a><span class="sep">|</span>
+        <a href="#cat-nginx">Nginx</a><span class="sep">|</span>
+        <a href="#cat-istio">Istio</a><span class="sep">|</span>
+        <a href="#cat-test">Testing</a><span class="sep">|</span>
+        <a href="#cat-devops">DevOps</a>
     </nav>
 
-    <!-- ================= سطح مبتدی ================= -->
-    <section class="level-section level-beginner" id="beginner">
-        <div class="level-title">سطح مبتدی (مفاهیم پایه)</div>
+    <!-- ====================================================================== -->
+    <!-- 1. Jenkins -->
+    <section class="category-section" id="cat-jenkins">
+        <div class="category-title">🔧 Jenkins <span class="count">۱۰ سوال</span></div>
         <div class="card-grid">
-
-            <div class="card">
-                <div class="q"><span>🔹</span> DevOps چیه و چرا به وجود اومد؟ <span class="badge-level">مبتدی</span></div>
-                <div class="a"><strong>فرهنگ و روش‌کاری</strong> برای حذف دیوار بین Dev و Ops، افزایش سرعت تحویل و کاهش اصطکاک. هدف: رساندن ارزش به کاربر در کوتاه‌ترین زمان.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🔹</span> CI/CD مخفف چیه؟ <span class="badge-level">مبتدی</span></div>
-                <div class="a"><strong>CI</strong> = Continuous Integration (یکپارچه‌سازی مداوم) <br> <strong>CD</strong> = Continuous Delivery (تحویل مداوم) یا Continuous Deployment (استقرار مداوم).</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🔹</span> تفاوت Docker و Kubernetes؟ <span class="badge-level">مبتدی</span></div>
-                <div class="a"><strong>Docker</strong> = ساخت و اجرای کانتینر (کانتینرایز کردن). <br> <strong>Kubernetes</strong> = مدیریت و هماهنگی کانتینرها در مقیاس بزرگ (ارکستراسیون). مکمل هم هستن.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🔹</span> تفاوت Docker Compose و Kubernetes؟ <span class="badge-level">مبتدی</span></div>
-                <div class="a"><strong>Compose</strong> = اجرای چند کانتینر روی <strong>یک ماشین</strong> (مناسب توسعه محلی). <br> <strong>Kubernetes</strong> = مدیریت کانتینرها روی <strong>کلاستر چند ماشین</strong> (مناسب Production).</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🔹</span> تفاوت DevOps و DevSecOps؟ <span class="badge-level">مبتدی</span></div>
-                <div class="a"><strong>DevOps</strong> = Dev + Ops برای سرعت تحویل. <br> <strong>DevSecOps</strong> = DevOps + <strong>Security</strong> از ابتدای چرخه (Shift-Left).</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🔹</span> استراتژی‌های دیپلوی رو نام ببر. <span class="badge-level">مبتدی</span></div>
-                <div class="a"><ul><li><strong>Recreate</strong> (با DownTime)</li><li><strong>Rolling</strong> (بدون DownTime)</li><li><strong>Blue/Green</strong> (ریسک کم)</li><li><strong>Canary</strong> (درصدی)</li></ul></div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🔹</span> تفاوت تست Functional و Non-Functional؟ <span class="badge-level">مبتدی</span></div>
-                <div class="a"><strong>Functional</strong> = «چه کاری» انجام میده (مثل Unit, Integration). <br> <strong>Non-Functional</strong> = «چقدر خوب» انجام میده (مثل Performance, Security).</div>
-            </div>
-
+            <div class="card"><div class="q">Jenkins چیه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">یک سرور اتوماسیون متن‌باز برای <strong>CI/CD</strong> که به شما کمک می‌کنه Build، Test و Deploy رو خودکار کنید.</div></div>
+            <div class="card"><div class="q">تفاوت Pipeline و Freestyle؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Freestyle:</strong> پروژه‌های ساده با مراحل محدود. <strong>Pipeline:</strong> به‌صورت کد (Jenkinsfile) با قابلیت مراحل شرطی، موازی و مدیریت نسخه.</div></div>
+            <div class="card"><div class="q">انواع Pipeline؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><ul><li><strong>Declarative:</strong> ساده‌تر، ساختار مشخص، مناسب بیشتر موارد.</li><li><strong>Scripted:</strong> انعطاف‌پذیرتر با سینتکس Groovy.</li></ul></div></div>
+            <div class="card"><div class="q">مراحل اصلی یه Jenkinsfile؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><code>pipeline { agent any stages { stage('Build'){} stage('Test'){} stage('Deploy'){} } }</code></div></div>
+            <div class="card"><div class="q">تفاوت Master و Agent در Jenkins؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Master:</strong> مدیریت و زمان‌بندی. <strong>Agent:</strong> اجرای واقعی Jobها (می‌تونه روی ماشین‌های مختلف باشه).</div></div>
+            <div class="card"><div class="q">چطور Jenkins رو با Kubernetes یکپارچه کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با پلاگین <strong>Kubernetes</strong>، می‌تونید Agentهای ephemeral (موقتی) داخل کلاستر ایجاد کنید که بعد از Job حذف بشن.</div></div>
+            <div class="card"><div class="q">چطور Secrets رو مدیریت کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">از <strong>Credentials</strong> داخلی Jenkins یا <strong>HashiCorp Vault</strong> استفاده کنید و در Pipeline با <code>withCredentials</code> بهش دسترسی داشته باشید.</div></div>
+            <div class="card"><div class="q">تفاوت Multibranch Pipeline با Pipeline معمولی؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Multibranch به‌ازای هر شاخه (Branch) در Git، به‌صورت خودکار یه Pipeline مجزا ایجاد می‌کنه و Jenkinsfile اون شاخه رو اجرا می‌کنه.</div></div>
+            <div class="card"><div class="q">چطور Build رو موازی اجرا کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با <code>parallel</code> در Declarative Pipeline: <code>parallel { stage('A'){...} stage('B'){...} }</code></div></div>
+            <div class="card"><div class="q">چطور Jenkins رو با GitLab یا GitHub ادغام کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">از Webhookها و پلاگین‌های مربوطه استفاده کنید تا به‌ازای هر Push یا PR، Pipeline به‌صورت خودکار اجرا بشه.</div></div>
         </div>
     </section>
 
-    <!-- ================= سطح متوسط ================= -->
-    <section class="level-section level-intermediate" id="intermediate">
-        <div class="level-title">سطح متوسط (ابزارها و سناریوها)</div>
+    <!-- 2. GitLab CI -->
+    <section class="category-section" id="cat-gitlab">
+        <div class="category-title">🦊 GitLab CI <span class="count">۸ سوال</span></div>
         <div class="card-grid">
-
-            <div class="card">
-                <div class="q"><span>⚡</span> تفاوت Deployment، StatefulSet و DaemonSet؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><ul><li><strong>Deployment:</strong> برای اپ‌های بی‌حالت (Stateless).</li><li><strong>StatefulSet:</strong> برای اپ‌های حالت‌دار (دیتابیس) با هویت ثابت.</li><li><strong>DaemonSet:</strong> روی هر Node دقیقاً یک Pod (مثل مانیتورینگ).</li></ul></div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> Pod با وضعیت Pending، مراحل عیب‌یابی؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><strong>۱.</strong> <code>kubectl describe pod</code> <br> <strong>۲.</strong> چک: منابع ناکافی، PVC بسته نشده، ImagePullBackOff.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> تفاوت Terraform و Ansible؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><strong>Terraform</strong> = Provisioning (ساخت زیرساخت). <br> <strong>Ansible</strong> = Configuration Management (تنظیمات داخل ماشین). مکمل هم.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> زیرساخت تغییرناپذیر (Immutable) یعنی چی؟ <span class="badge-level">متوسط</span></div>
-                <div class="a">هیچ‌وقت سرور زنده رو Patch نمی‌کنیم؛ برای هر تغییر، سرور <strong>جدید</strong> می‌سازیم و قبلی رو می‌کشیم. Drift به صفر می‌رسد.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> سه پایه‌ی Observability؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><strong>Metrics</strong> (اعداد) · <strong>Logs</strong> (رویدادهای متنی) · <strong>Traces</strong> (مسیر درخواست بین سرویس‌ها).</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> تفاوت Monitoring با Observability؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><strong>Monitoring:</strong> از پیش می‌دونیم چه متریک‌هایی رو ببینیم. <br> <strong>Observability:</strong> سیستم به‌قدری داده داره که هر سوال پیش‌بینی‌نشده‌ای رو جواب بده.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> مدیریت Secrets در Kubernetes؟ <span class="badge-level">متوسط</span></div>
-                <div class="a">از آبجکت <strong>Secret</strong>، یا <strong>External Secrets Operator</strong> و <strong>HashiCorp Vault</strong> استفاده می‌کنیم. هرگز در Dockerfile یا کد نمی‌گذاریم.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> اسکن امنیتی ایمیج‌ها با چی؟ <span class="badge-level">متوسط</span></div>
-                <div class="a">در CI از <strong>Trivy</strong>، <strong>Snyk</strong> یا <strong>Clair</strong> استفاده می‌کنیم. اگه آسیب‌پذیری Critical پیدا شد، Build رو Fail می‌کنیم.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> تفاوت `git merge` و `git rebase`؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><strong>Merge:</strong> تاریخچه رو با کامیت جدید ترکیب میکنه (دقیق). <br> <strong>Rebase:</strong> تاریخچه رو خطی میکنه (تمیزتر). برای شاخه‌های شخصی از Rebase استفاده می‌کنم.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>⚡</span> تفاوت REST و gRPC؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><ul><li><strong>REST:</strong> JSON/XML، HTTP/1.1، مناسب APIهای عمومی.</li><li><strong>gRPC:</strong> Protocol Buffer (باینری)، HTTP/2، پرسرعت، مناسب ارتباط داخلی میکروسرویس‌ها.</li></ul></div>
-            </div>
-
+            <div class="card"><div class="q">GitLab CI چیه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">ابزار CI/CD یکپارچه در GitLab که با فایل <code>.gitlab-ci.yml</code> تنظیم میشه و Pipeline رو اجرا می‌کنه.</div></div>
+            <div class="card"><div class="q">مراحل اصلی در GitLab CI؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><code>stages: [build, test, deploy]</code> و هر Job زیر یکی از این stages تعریف میشه.</div></div>
+            <div class="card"><div class="q">تفاوت Job و Stage؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Stage:</strong> مرحله‌ی منطقی (مثل Build). <strong>Job:</strong> کاری که در اون مرحله انجام میشه (چند Job می‌تونن موازی اجرا بشن).</div></div>
+            <div class="card"><div class="q">چطور Cache و Artifact تعریف کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><code>cache:</code> برای وابستگی‌های بین Jobها (مثل <code>node_modules</code>). <code>artifacts:</code> برای خروجی که بین stages منتقل میشه.</div></div>
+            <div class="card"><div class="q">چطور از GitLab CI با Kubernetes استفاده کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با استفاده از <strong>GitLab Agent for Kubernetes</strong> (مدیریت کلاستر) یا <code>kubectl</code> در Jobها با تنظیم KUBECONFIG.</div></div>
+            <div class="card"><div class="q">تفاوت Rules و Only/Except؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><code>only/except</code> قدیمی‌تر و ساده‌تر. <code>rules</code> جدیدتر و انعطاف‌پذیرتر با قابلیت شرط‌های پیچیده و متغیرها.</div></div>
+            <div class="card"><div class="q">چطور Pipeline رو برای محیط‌های مختلف (Dev/Prod) مدیریت کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">از <strong>Environment</strong> و <strong>Deployment</strong> در GitLab استفاده کنید و با Rules شرطی (مثل <code>if: $CI_COMMIT_BRANCH == "main"</code>) کنترل کنید.</div></div>
+            <div class="card"><div class="q">GitLab CI vs Jenkins؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">GitLab CI یکپارچه با GitLab، ساده‌تر، بدون نیاز به سرور جدا. Jenkins انعطاف‌پذیرتر با پلاگین‌های بیشتر ولی نیاز به مدیریت سرور.</div></div>
         </div>
     </section>
 
-    <!-- ================= سطح حرفه‌ای ================= -->
-    <section class="level-section level-expert" id="expert">
-        <div class="level-title">سطح حرفه‌ای (معماری، عیب‌یابی پیشرفته)</div>
+    <!-- 3. GitHub Action -->
+    <section class="category-section" id="cat-github">
+        <div class="category-title">⚡ GitHub Action <span class="count">۷ سوال</span></div>
         <div class="card-grid">
-
-            <div class="card">
-                <div class="q"><span>🧠</span> کل کلاستر Kubernetes افتاد، اول چه کار؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><strong>۱.</strong> چک etcd و Backup. <br> <strong>۲.</strong> ریستارت Control Plane. <br> <strong>۳.</strong> Join کردن Worker Nodeها. اگه etcd از بین رفت، از Backup Restore می‌کنیم.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> پایپلاین باعث خرابی Production شد، چکار؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><strong>۱. فوری:</strong> Rollback با <code>kubectl rollout undo</code>. <br> <strong>۲.</strong> ذخیره‌ی لاگ و متریک. <br> <strong>۳.</strong> Post-Mortem بدون سرزنش + تست جدید به پایپلاین اضافه می‌کنیم.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> الگوی Saga در میکروسرویس‌ها؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a">مدیریت تراکنش‌های توزیع‌شده با <strong>تراکنش‌های محلی</strong> و <strong>عملیات جبرانی</strong>. دو روش: <strong>Choreography</strong> (مبتنی بر رویداد) و <strong>Orchestration</strong> (مرکزی).</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> Service Mesh (مثل Istio) چیه؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a">لایه‌ی زیرساختی برای مدیریت ارتباطات بین سرویس‌ها. قابلیت‌ها: مدیریت ترافیک، امنیت (mTLS)، مشاهده‌پذیری و سیاست‌گذاری. با تزریق Proxy (Sidecar) کار می‌کنه.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> API Gateway چیه؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a">دروازه‌ی ورودی واحد برای کلاینت‌ها. کاربردها: Routing, Authentication, Rate Limiting, Caching, Logging.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> تفاوت IaaS, PaaS, SaaS؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><ul><li><strong>IaaS:</strong> زیرساخت (EC2) </li><li><strong>PaaS:</strong> پلتفرم (Heroku) </li><li><strong>SaaS:</strong> نرم‌افزار کامل (Gmail)</li></ul></div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> شیوه‌ی عیب‌یابی مصرف بالای CPU در لینوکس؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><strong>۱.</strong> <code>top</code> یا <code>htop</code> ← پیدا کردن PID. <br> <strong>۲.</strong> <code>strace -p PID</code> ← بررسی سیستم‌کال‌ها. <br> <strong>۳.</strong> چک کردن لاگ‌های اپلیکیشن.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> تفاوت SIGTERM و SIGKILL؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><strong>SIGTERM:</strong> مودبانه (اجازه‌ی پاک‌سازی میده). <br> <strong>SIGKILL:</strong> اجباری و فوری (بلافاصله می‌کشد). در K8s اول SIGTERM و بعد از Grace Period، SIGKILL.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> معماری Monolithic vs Microservices؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><ul><li><strong>Monolithic:</strong> ساده، دیپلوی آسان، مقیاس‌پذیری سخت.</li><li><strong>Microservices:</strong> مقیاس‌پذیری مستقل، پیچیدگی شبکه و مدیریت دیتابیس توزیع‌شده.</li></ul></div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>🧠</span> Chaos Engineering چیه؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a">خراب‌کردن عمدی اجزای سیستم (مثل کشتن Pod) برای سنجش <strong>مقاومت</strong> و پیدا کردن نقاط ضعف. ابزار: Chaos Mesh, Gremlin.</div>
-            </div>
-
+            <div class="card"><div class="q">GitHub Action چیه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">ابزار CI/CD یکپارچه در GitHub که با فایل <code>.github/workflows/*.yml</code> تعریف میشه.</div></div>
+            <div class="card"><div class="q">تفاوت Action و Workflow؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Workflow:</strong> کل فرآیند اتوماسیون (یک فایل YAML). <strong>Action:</strong> یک کار خاص (مثل Checkout کد یا Deploy به S3) که داخل Workflow استفاده میشه.</div></div>
+            <div class="card"><div class="q">چطور Secrets رو مدیریت کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">از <strong>Secrets</strong> در Settings مخزن استفاده کنید و با <code>${{ secrets.MY_SECRET }}</code> در Workflow بهش دسترسی داشته باشید.</div></div>
+            <div class="card"><div class="q">چطور Matrix Strategy کار می‌کنه؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">به شما اجازه میده یه Job رو با چندین ترکیب (مثل نسخه‌های مختلف Node.js و OS) به‌صورت موازی اجرا کنید: <code>strategy: matrix: node-version: [16, 18]</code></div></div>
+            <div class="card"><div class="q">تفاوت push و pull_request در trigger؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><code>push</code> با هر کامیت اجرا میشه. <code>pull_request</code> موقع ایجاد یا آپدیت PR اجرا میشه (مناسب تست قبل از Merge).</div></div>
+            <div class="card"><div class="q">چطور از GitHub Action برای Deploy به Kubernetes استفاده کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با اکشن‌های رسمی مثل <code>azure/k8s-deploy</code> یا <code>actions-hub/kubectl</code> و تنظیم KUBECONFIG یا استفاده از Service Account.</div></div>
+            <div class="card"><div class="q">GitHub Action vs GitLab CI؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">هر دو قدرتمند. GitHub Action اکوسیستم وسیع‌تری از اکشن‌های آماده داره و با GitHub یکپارچه‌ست. GitLab CI امکانات پیشرفته‌تری برای مدیریت محیط‌ها و Deployments داره.</div></div>
         </div>
     </section>
 
-    <!-- ================= تکمیلی (Extra) ================= -->
-    <section class="level-section" id="extras" style="margin-top: 2.5rem;">
-        <div class="level-title" style="border-color: #8b5cf6; color: #5b21b6;">➕ سوالات تکمیلی و ترکیبی</div>
+    <!-- 4. Prometheus -->
+    <section class="category-section" id="cat-prom">
+        <div class="category-title">📊 Prometheus <span class="count">۶ سوال</span></div>
         <div class="card-grid">
-
-            <div class="card">
-                <div class="q"><span>➕</span> Git Hook در DevOps؟ <span class="badge-level">متوسط</span></div>
-                <div class="a">اسکریپت‌هایی که در رویدادهای Git (مثل commit, push) اجرا میشن. کاربرد: Pre-commit برای Linter، Pre-push برای تست، Post-receive برای تریگر CI/CD.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>➕</span> GitFlow vs Trunk-Based؟ <span class="badge-level">متوسط</span></div>
-                <div class="a"><ul><li><strong>GitFlow:</strong> شاخه‌های متعدد (develop, feature, release) مناسب پروژه‌های بزرگ.</li><li><strong>Trunk-Based:</strong> همه روی main کار می‌کنن با Branchهای کوتاه‌عمر، مناسب انتشار مداوم.</li></ul></div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>➕</span> Auto Scaling و Load Balancer در ابر؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><strong>Auto Scaling:</strong> افزایش/کاهش خودکار تعداد سرورها بر اساس بار. <br> <strong>Load Balancer:</strong> توزیع ترافیک بین سرورها. با هم مقیاس‌پذیری خودکار و بدون DownTime رو ممکن می‌کنن.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>➕</span> تفاوت Object Storage و Block Storage؟ <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><ul><li><strong>Object (S3):</strong> فایل به‌صورت شیء با Metadata، دسترسی API، مناسب فایل‌های استاتیک.</li><li><strong>Block (EBS):</strong> بلوک‌های خام، متصل به سیستمعامل، مناسب دیتابیس.</li></ul></div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>➕</span> سناریوی بحرانی: خطا در Production <span class="badge-level">حرفه‌ای</span></div>
-                <div class="a"><strong>۱. کشف:</strong> آلرت Prometheus. <br> <strong>۲. بررسی:</strong> چک Grafana, ELK, Tracing. <br> <strong>۳. اقدام:</strong> Rollback فوری. <br> <strong>۴. ریشه‌یابی:</strong> پیدا کردن علت (مثلاً کوئری بی‌ایندکس). <br> <strong>۵. پیشگیری:</strong> اضافه کردن تست Performance به CI و هشدار جدید.</div>
-            </div>
-
-            <div class="card">
-                <div class="q"><span>➕</span> Reverse Proxy با Nginx؟ <span class="badge-level">متوسط</span></div>
-                <div class="a">سرور واسطه که درخواست‌ها رو به Backend هدایت میکنه. کاربردها: Load Balancing, SSL Termination, Caching, فیلتر کردن.</div>
-            </div>
-
+            <div class="card"><div class="q">Prometheus چیه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">سیستم مانیتورینگ و هشدار متن‌باز که متریک‌ها رو به‌صورت Pull (Scrape) از اپلیکیشن‌ها جمع‌آوری می‌کنه.</div></div>
+            <div class="card"><div class="q">تفاوت Pull vs Push در مانیتورینگ؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Pull (Prometheus):</strong> خود سرور متریک‌ها رو از اپلیکیشن می‌گیره (کشف سرویس خودکار). <strong>Push:</strong> اپلیکیشن متریک‌ها رو به سرور می‌فرسته (مثل Graphite).</div></div>
+            <div class="card"><div class="q">چطور یه متریک سفارشی در Prometheus تعریف کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با کتابخانه‌های کلاینت (مثل <code>prometheus_client</code> در Python) و تعریف Metric Typeهایی مثل Counter, Gauge, Histogram.</div></div>
+            <div class="card"><div class="q">تفاوت Counter و Gauge؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Counter:</strong> فقط افزایشی (مثل تعداد درخواست‌ها). <strong>Gauge:</strong> می‌تونه افزایش یا کاهش پیدا کنه (مثل مصرف CPU).</div></div>
+            <div class="card"><div class="q">چطور Alertmanager کار می‌کنه؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">هشدارهای Prometheus رو دریافت می‌کنه، گروه‌بندی (Grouping)، خاموشی (Inhibition) و مسیریابی (Routing) به مقصدهایی مثل Slack، Email یا PagerDuty رو انجام میده.</div></div>
+            <div class="card"><div class="q">چطور Prometheus رو با Kubernetes یکپارچه کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با <strong>Prometheus Operator</strong> یا <strong>kube-prometheus-stack</strong> که شامل ServiceMonitor برای کشف خودکار سرویس‌ها و جمع‌آوری متریک‌های K8s هست.</div></div>
         </div>
     </section>
 
-    <!-- فوتر با نکات طلایی -->
-    <footer class="footer-note">
-        <h3>💡 نکات طلایی برای مصاحبه</h3>
-        <ul>
-            <li>هیچ جوابی را حفظ نکن؛ با یک <strong>مثال واقعی</strong> از کار خودت پررنگش کن.</li>
-            <li>اگه جواب سوالی رو نمی‌دونی، بگو: «روش حل کردنش اینه که فلان مستندات رو چک کنم و فلان لاگ رو ببینم.»</li>
-            <li>در انتها حتماً از مصاحبه‌کننده بپرس: «چطور ریسک انتشار رو اندازه‌گیری می‌کنید؟» و «بزرگ‌ترین چالش زیرساختی شما چیه؟»</li>
-            <li>این صفحه رو در <strong>Git</strong> خودت ذخیره کن و برای همه‌ی مصاحبه‌های آینده ازش استفاده کن.</li>
-        </ul>
-        <div style="margin-top: 1.5rem; text-align: center; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 1.2rem;">
-            🚀 آماده‌ای برای برنده شدن در مصاحبه DevOps · امروز روز توئه
+    <!-- 5. Grafana -->
+    <section class="category-section" id="cat-grafana">
+        <div class="category-title">📈 Grafana <span class="count">۵ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Grafana چیه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">ابزار بصری‌سازی (Visualization) و داشبورد برای داده‌های مانیتورینگ که از منابعی مثل Prometheus, Loki, Elasticsearch داده می‌گیره.</div></div>
+            <div class="card"><div class="q">تفاوت Data Source و Panel؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Data Source:</strong> منبع داده (مثل Prometheus). <strong>Panel:</strong> ویجت نمایش داده روی داشبورد (نمودار، جدول، و...).</div></div>
+            <div class="card"><div class="q">چطور یه Alert در Grafana تعریف کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">در تنظیمات Panel، تب Alert رو فعال کنید و شرط (مثل <code>when avg() > 80</code>) و کانال ارسال (Slack, Email) رو تنظیم کنید.</div></div>
+            <div class="card"><div class="q">Grafana vs Kibana؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Grafana قوی‌تر در متریک‌های عددی (Prometheus) و داشبوردهای پیشرفته. Kibana بخشی از ELK و قوی‌تر در لاگ‌ها و جستجوی متنی.</div></div>
+            <div class="card"><div class="q">چطور Grafana رو با Loki یکپارچه کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">Loki رو به‌عنوان Data Source اضافه کنید و با <strong>LogQL</strong> (زبان جستجوی لاگ Loki) لاگ‌ها رو در Grafana مشاهده کنید.</div></div>
         </div>
+    </section>
+
+    <!-- 6. ELK -->
+    <section class="category-section" id="cat-elk">
+        <div class="category-title">🧩 ELK Stack <span class="count">۶ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">ELK مخفف چیه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><strong>Elasticsearch</strong> (ذخیره و جستجو) + <strong>Logstash</strong> (پردازش و انتقال) + <strong>Kibana</strong> (نمایش و داشبورد).</div></div>
+            <div class="card"><div class="q">نقش Logstash در ELK؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">داده‌ها رو از منابع مختلف (فایل, TCP, Kafka) دریافت، تبدیل (Filter) و به Elasticsearch ارسال می‌کنه.</div></div>
+            <div class="card"><div class="q">تفاوت Index و Document در Elasticsearch؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Index:</strong> مانند دیتابیس. <strong>Document:</strong> مانند رکورد (JSON) که در Index ذخیره میشه.</div></div>
+            <div class="card"><div class="q">چطور لاگ‌های Kubernetes رو به ELK بفرستم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با <strong>Filebeat</strong> به‌عنوان DaemonSet روی Nodeها که لاگ‌های کانتینرها رو جمع‌آوری و به Logstash یا مستقیم به Elasticsearch می‌فرسته.</div></div>
+            <div class="card"><div class="q">تفاوت ELK و EFK؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">در EFK به‌جای Logstash از <strong>Fluentd</strong> استفاده میشه که سبک‌تر است و منابع کمتری مصرف می‌کنه.</div></div>
+            <div class="card"><div class="q">چطور از Kibana برای تحلیل لاگ استفاده کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با استفاده از <strong>Discover</strong> برای جستجو، <strong>Visualize</strong> برای نمودار و <strong>Dashboard</strong> برای ترکیب اطلاعات.</div></div>
+        </div>
+    </section>
+
+    <!-- 7. Loki -->
+    <section class="category-section" id="cat-loki">
+        <div class="category-title">🪵 Loki <span class="count">۴ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Loki چیه؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">سیستم جمع‌آوری لاگ از Grafana Labs، که به‌جای ایندکس کردن محتوای لاگ، فقط برچسب‌ها (Labels) رو ایندکس می‌کنه و بسیار سبک‌تر از Elasticsearch است.</div></div>
+            <div class="card"><div class="q">تفاوت Loki و Elasticsearch؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>Loki:</strong> فقط Labels رو ایندکس می‌کنه، ذخیره‌سازی ارزان‌تر و سریع‌تر ولی جستجوی متنی محدودتر. <strong>Elasticsearch:</strong> جستجوی متنی کامل ولی سنگین‌تر و پرهزینه‌تر.</div></div>
+            <div class="card"><div class="q">چطور لاگ‌ها رو به Loki بفرستم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>Promtail</strong> (مشابه Filebeat) یا <strong>Grafana Agent</strong> که لاگ‌ها رو Scrape می‌کنه و با برچسب به Loki ارسال می‌کنه.</div></div>
+            <div class="card"><div class="q">چطور در Loki جستجو کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با زبان <strong>LogQL</strong> مشابه PromQL: <code>{namespace="prod"} |= "error"</code> برای پیدا کردن خطا در namespace prod.</div></div>
+        </div>
+    </section>
+
+    <!-- 8. Splunk -->
+    <section class="category-section" id="cat-splunk">
+        <div class="category-title">🔍 Splunk <span class="count">۴ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Splunk چیه؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">پلتفرم تجاری برای جمع‌آوری، ایندکس کردن و تحلیل داده‌های لاگ و متریک با قابلیت جستجوی قدرتمند و داشبوردهای پیشرفته.</div></div>
+            <div class="card"><div class="q">تفاوت Splunk و ELK؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Splunk تجاری، پشتیبانی حرفه‌ای، UI بهتر و قابلیت‌های پیشرفته‌تر. ELK متن‌باز، رایگان، نیاز به تنظیمات بیشتر ولی انعطاف‌پذیرتر.</div></div>
+            <div class="card"><div class="q">چطور داده‌ها رو به Splunk بفرستم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>Universal Forwarder</strong> (برای فایل‌ها) یا <strong>HTTP Event Collector (HEC)</strong> (برای ارسال HTTP) یا <strong>Splunk Connect for Kubernetes</strong>.</div></div>
+            <div class="card"><div class="q">SPL (Search Processing Language) چیه؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">زبان جستجوی اختصاصی Splunk برای فیلتر، تبدیل و تحلیل داده‌ها: <code>index=main error | stats count by host</code></div></div>
+        </div>
+    </section>
+
+    <!-- 9. AWS -->
+    <section class="category-section" id="cat-aws">
+        <div class="category-title">☁️ AWS <span class="count">۱۰ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">EC2 چیه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">سرویس ماشین‌های مجازی در ابر (IaaS) که می‌تونید انواع Instance با سیستمعامل‌های مختلف ایجاد کنید.</div></div>
+            <div class="card"><div class="q">تفاوت S3 و EBS؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>S3:</strong> Object Storage (فایل‌های استاتیک، بکاپ). <strong>EBS:</strong> Block Storage (مثل هارد دیسک برای EC2، مناسب دیتابیس).</div></div>
+            <div class="card"><div class="q">IAM چیه و چطور کار می‌کنه؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">مدیریت دسترسی (Identity & Access Management). شامل User, Group, Role و Policy برای کنترل دقیق دسترسی به منابع.</div></div>
+            <div class="card"><div class="q">تفاوت Security Group و NACL؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>Security Group:</strong> فایروال سطح Instance (Stateful). <strong>NACL:</strong> فایروال سطح Subnet (Stateless).</div></div>
+            <div class="card"><div class="q">چطور Load Balancer در AWS کار می‌کنه؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">ترافیک رو بین چندین Target (EC2 یا IP) توزیع می‌کنه. انواع: ALB (لایه ۷)، NLB (لایه ۴)، CLB (قدیمی).</div></div>
+            <div class="card"><div class="q">Auto Scaling چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">به‌صورت خودکار تعداد Instanceها رو بر اساس سیاست‌های مشخص (مثل CPU) افزایش یا کاهش میده تا کارایی و هزینه بهینه بشه.</div></div>
+            <div class="card"><div class="q">VPC چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">شبکه مجازی اختصاصی در AWS که می‌تونید Subnetها، Route Tableها و Internet Gateway رو خودتون مدیریت کنید.</div></div>
+            <div class="card"><div class="q">تفاوت RDS و DynamoDB؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>RDS:</strong> دیتابیس رابطه‌ای (SQL) مثل PostgreSQL, MySQL. <strong>DynamoDB:</strong> دیتابیس NoSQL کلید-مقدار (Key-Value) با مقیاس‌پذیری بالا.</div></div>
+            <div class="card"><div class="q">چطور Secrets رو در AWS مدیریت کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با <strong>AWS Secrets Manager</strong> یا <strong>Parameter Store</strong> (در Systems Manager) که رمزها رو ذخیره و به‌صورت امن به اپلیکیشن‌ها تزریق می‌کنه.</div></div>
+            <div class="card"><div class="q">CloudFormation چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">ابزار IaC (زیرساخت به‌عنوان کد) در AWS که با فایل‌های JSON/YAML زیرساخت رو تعریف و مدیریت می‌کنه.</div></div>
+        </div>
+    </section>
+
+    <!-- 10. Azure -->
+    <section class="category-section" id="cat-azure">
+        <div class="category-title">☁️ Azure <span class="count">۶ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Azure VM چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">معادل EC2 در AWS، ماشین‌های مجازی با سیستمعامل‌های مختلف در ابر مایکروسافت.</div></div>
+            <div class="card"><div class="q">تفاوت Azure Blob و Azure Disk؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Blob:</strong> Object Storage (مشابه S3). <strong>Disk:</strong> Block Storage (مشابه EBS).</div></div>
+            <div class="card"><div class="q">Azure DevOps چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">پلتفرم یکپارچه برای CI/CD (Pipelines)، مدیریت کد (Repos)، بورد (Boards) و تست (Test Plans) از مایکروسافت.</div></div>
+            <div class="card"><div class="q">تفاوت AKS و Service Fabric؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>AKS:</strong> Kubernetes مدیریت‌شده در Azure. <strong>Service Fabric:</strong> پلتفرم اختصاصی مایکروسافت برای میکروسرویس‌ها (قدیمی‌تر).</div></div>
+            <div class="card"><div class="q">Azure Functions چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">سرویس Serverless برای اجرای کد به‌صورت رویدادمحور (Event-Driven) بدون مدیریت سرور (مشابه AWS Lambda).</div></div>
+            <div class="card"><div class="q">Azure Active Directory (AAD) چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">سرویس مدیریت هویت و دسترسی (IAM) در Azure برای احراز هویت کاربران و برنامه‌ها.</div></div>
+        </div>
+    </section>
+
+    <!-- 11. GCP -->
+    <section class="category-section" id="cat-gcp">
+        <div class="category-title">☁️ GCP <span class="count">۶ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">GCP Compute Engine چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">معادل EC2 در AWS، سرویس ماشین‌های مجازی در گوگل.</div></div>
+            <div class="card"><div class="q">تفاوت GCS و Persistent Disk؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>GCS (Google Cloud Storage):</strong> Object Storage (مشابه S3). <strong>Persistent Disk:</strong> Block Storage (مشابه EBS).</div></div>
+            <div class="card"><div class="q">GKE چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">Google Kubernetes Engine، سرویس مدیریت‌شده Kubernetes در GCP که یکی از بهترین‌های بازار محسوب میشه.</div></div>
+            <div class="card"><div class="q">Cloud Functions چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">سرویس Serverless در GCP (مشابه AWS Lambda) برای اجرای کد به‌صورت رویدادمحور.</div></div>
+            <div class="card"><div class="q">BigQuery چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">سرویس Data Warehouse (انبار داده) بدون سرور در GCP برای تحلیل داده‌های حجیم با SQL.</div></div>
+            <div class="card"><div class="q">IAM در GCP چگونه کار می‌کند؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">مشابه AWS IAM، با Member (User/Service Account)، Role (مجوزها) و Resource (منابع) برای کنترل دسترسی.</div></div>
+        </div>
+    </section>
+
+    <!-- 12. Kubernetes -->
+    <section class="category-section" id="cat-k8s">
+        <div class="category-title">☸️ Kubernetes <span class="count">۱۲ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Kubernetes چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">سیستم متن‌باز برای مدیریت (ارکستراسیون) کانتینرها در مقیاس بزرگ.</div></div>
+            <div class="card"><div class="q">تفاوت Pod و Container؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><strong>Pod:</strong> کوچک‌ترین واحد در K8s، شامل یک یا چند Container که منابع (شبکه و استوریج) مشترک دارند.</div></div>
+            <div class="card"><div class="q">اجزای Control Plane؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><ul><li><strong>API Server:</strong> ورودی تمام درخواست‌ها.</li><li><strong>Scheduler:</strong> تخصیص Pod به Nodeها.</li><li><strong>Controller Manager:</strong> مدیریت کنترلرها.</li><li><strong>etcd:</strong> ذخیره‌سازی کلید-مقدار کلاستر.</li></ul></div></div>
+            <div class="card"><div class="q">تفاوت Deployment و StatefulSet؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Deployment:</strong> برای اپ‌های بی‌حالت (Stateless). <strong>StatefulSet:</strong> برای اپ‌های حالت‌دار با هویت ثابت (مثل دیتابیس).</div></div>
+            <div class="card"><div class="q">DaemonSet چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">روی هر Node دقیقاً یک Pod اجرا می‌کنه (مثل جمع‌آوری لاگ یا مانیتورینگ).</div></div>
+            <div class="card"><div class="q">چطور یک سرویس رو در K8s Expose کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>Service</strong> از نوع ClusterIP (داخلی)، NodePort (خارجی روی پورت Node) یا LoadBalancer (ابر) و <strong>Ingress</strong> برای مسیریابی مبتنی بر Host/Path.</div></div>
+            <div class="card"><div class="q">PersistentVolume و PersistentVolumeClaim چیه؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>PV:</strong> منبع ذخیره‌سازی در کلاستر (مثل NFS, EBS). <strong>PVC:</strong> درخواست استفاده از PV توسط Pod.</div></div>
+            <div class="card"><div class="q">تفاوت Ingress و LoadBalancer؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>LoadBalancer:</strong> تخصیص IP عمومی به هر سرویس (هزینه بالا). <strong>Ingress:</strong> یه نقطه ورودی واحد با مسیریابی بر اساس Host/Path (هزینه کمتر، انعطاف بیشتر).</div></div>
+            <div class="card"><div class="q">HPA چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Horizontal Pod Autoscaler: به‌صورت خودکار تعداد Podها رو بر اساس متریک‌های (مثل CPU) افزایش/کاهش میده.</div></div>
+            <div class="card"><div class="q">چطور یک Pod رو عیب‌یابی کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <code>kubectl describe pod</code>، <code>kubectl logs</code> و <code>kubectl exec -it</code> برای ورود به Pod.</div></div>
+            <div class="card"><div class="q">تفاوت ClusterIP و NodePort؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>ClusterIP:</strong> فقط داخل کلاستر قابل دسترس. <strong>NodePort:</strong> روی پورتی بین ۳۰۰۰۰-۳۲۷۶۷ روی هر Node قابل دسترس از خارج.</div></div>
+            <div class="card"><div class="q">چطور از K8s با CI/CD یکپارچه کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با ابزارهایی مثل <strong>ArgoCD</strong> (GitOps) یا در Pipeline با <code>kubectl apply</code> یا Helm. همچنین می‌تونید از <strong>GitLab Agent</strong> یا <strong>GitHub Action</strong> استفاده کنید.</div></div>
+        </div>
+    </section>
+
+    <!-- 13. Docker -->
+    <section class="category-section" id="cat-docker">
+        <div class="category-title">🐳 Docker <span class="count">۸ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Docker چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">پلتفرم برای ساخت، ارسال و اجرای اپلیکیشن‌ها در کانتینرها (محیط‌های سبک و قابل حمل).</div></div>
+            <div class="card"><div class="q">تفاوت Image و Container؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><strong>Image:</strong> قالب فقط‌خواندنی (Read-Only) شامل کد و وابستگی‌ها. <strong>Container:</strong> نمونه‌ی در حال اجرا از Image.</div></div>
+            <div class="card"><div class="q">Dockerfile چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">فایل متنی شامل دستورات ساخت Image (مثل <code>FROM, RUN, COPY, CMD</code>).</div></div>
+            <div class="card"><div class="q">چطور یه Image رو بهینه‌سازی کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><ul><li>از <strong>Multi-stage Build</strong> استفاده کنید.</li><li>از Base Image سبک مثل <code>alpine</code>.</li><li>دستورات <code>RUN</code> رو ترکیب کنید تا لایه‌های کمتری ایجاد بشه.</li><li>فایل‌های غیرضروری رو با <code>.dockerignore</code> حذف کنید.</li></ul></div></div>
+            <div class="card"><div class="q">تفاوت CMD و ENTRYPOINT؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>CMD:</strong> آرگومان‌های پیش‌فرض که قابل بازنویسی هستن. <strong>ENTRYPOINT:</strong> دستور اصلی که نمی‌شه بازنویسی کرد (فقط آرگومان‌ها قابل تغییرن).</div></div>
+            <div class="card"><div class="q">Docker Network چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">شبکه‌های مجازی برای ارتباط کانتینرها: <strong>bridge</strong> (پیش‌فرض)، <strong>host</strong> (مستقیم روی شبکه میزبان)، <strong>overlay</strong> (ارتباط بین چندین Docker Daemon در Swarm).</div></div>
+            <div class="card"><div class="q">چطور حجم داده (Volume) رو مدیریت کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <code>docker volume create</code> یا <code>-v</code> در <code>docker run</code>. Volumeها روی میزبان ذخیره می‌شن و حتی بعد از حذف کانتینر باقی می‌مونن.</div></div>
+            <div class="card"><div class="q">تفاوت Docker و VM؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><strong>Docker:</strong> سبک‌تر، از هسته‌ی میزبان استفاده می‌کنه، سریع‌تر. <strong>VM:</strong> سنگین‌تر، شامل هسته‌ی مجزا، کندتر.</div></div>
+        </div>
+    </section>
+
+    <!-- 14. Docker Compose -->
+    <section class="category-section" id="cat-compose">
+        <div class="category-title">🐙 Docker Compose <span class="count">۵ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Docker Compose چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">ابزاری برای تعریف و اجرای چندین کانتینر Docker با یک فایل <code>docker-compose.yml</code> روی یک ماشین.</div></div>
+            <div class="card"><div class="q">تفاوت Compose و Kubernetes؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Compose:</strong> تک‌ماشین، مناسب توسعه محلی. <strong>Kubernetes:</strong> کلاستر چند ماشین، مناسب Production.</div></div>
+            <div class="card"><div class="q">چطور سرویس‌ها رو در Compose به هم متصل کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>network</strong> یا <strong>links</strong> (قدیمی). در Compose، سرویس‌ها با نام خودشون به‌عنوان Hostname قابل شناسایی هستن.</div></div>
+            <div class="card"><div class="q">چطور متغیرهای محیطی رو در Compose مدیریت کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <code>environment</code> یا <code>env_file</code> در فایل Compose. همچنین می‌تونید از <code>${VAR}</code> برای ارجاع به متغیرهای Shell استفاده کنید.</div></div>
+            <div class="card"><div class="q">چطور Compose رو به Kubernetes تبدیل کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با ابزار <strong>Kompose</strong> که فایل Compose رو به Manifestهای K8s تبدیل می‌کنه (البته ممکنه نیاز به تنظیمات دستی داشته باشه).</div></div>
+        </div>
+    </section>
+
+    <!-- 15. Ansible -->
+    <section class="category-section" id="cat-ansible">
+        <div class="category-title">⚙️ Ansible <span class="count">۶ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Ansible چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">ابزار اتوماسیون IT برای مدیریت پیکربندی (Configuration Management)، Provisioning و Deployment که بدون Agent کار می‌کنه.</div></div>
+            <div class="card"><div class="q">تفاوت Playbook و Role؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Playbook:</strong> فایل YAML شامل لیستی از Taskها. <strong>Role:</strong> مجموعه‌ای از Playbookها، متغیرها، فایل‌ها و Handlerها که قابل استفاده‌ی مجدد هست.</div></div>
+            <div class="card"><div class="q">Inventory در Ansible چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">لیست سرورهایی که Ansible باهاشون کار می‌کنه (مشخصات IP، گروه‌ها و متغیرها).</div></div>
+            <div class="card"><div class="q">تفاوت Ansible و Terraform؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>Terraform:</strong> Provisioning (ساخت زیرساخت). <strong>Ansible:</strong> Configuration Management (تنظیمات نرم‌افزار). مکمل هم هستند.</div></div>
+            <div class="card"><div class="q">چطور Secrets رو در Ansible مدیریت کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>Ansible Vault</strong> که فایل‌ها یا متغیرها رو رمزگذاری می‌کنه و با Password در زمان اجرا Decrypt می‌کنه.</div></div>
+            <div class="card"><div class="q">Module چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">واحدهای آماده در Ansible برای انجام کارهای خاص (مثل <code>apt</code> برای نصب بسته، <code>copy</code> برای کپی فایل، <code>service</code> برای مدیریت سرویس).</div></div>
+        </div>
+    </section>
+
+    <!-- 16. Terraform -->
+    <section class="category-section" id="cat-terraform">
+        <div class="category-title">🏗️ Terraform <span class="count">۷ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Terraform چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">ابزار IaC (زیرساخت به‌عنوان کد) برای ساخت، تغییر و مدیریت زیرساخت با فایل‌های کانفیگ (HCL).</div></div>
+            <div class="card"><div class="q">تفاوت Plan و Apply؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><code>terraform plan</code> تغییرات رو پیش‌نمایش میده (بدون اجرا). <code>terraform apply</code> تغییرات رو اعمال می‌کنه.</div></div>
+            <div class="card"><div class="q">State در Terraform چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">فایل (<code>terraform.tfstate</code>) که وضعیت فعلی زیرساخت رو ذخیره می‌کنه تا Terraform بتونه تغییرات رو مدیریت کنه. بهتره روی Remote Backend (مثل S3) ذخیره بشه.</div></div>
+            <div class="card"><div class="q">چطور از Terraform با AWS استفاده کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>Provider</strong> <code>aws</code> و تنظیم Credentials (Access Key) و تعریف منابع مثل <code>aws_instance</code>, <code>aws_s3_bucket</code>.</div></div>
+            <div class="card"><div class="q">تفاوت Data Source و Resource؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>Resource:</strong> منبعی که ایجاد/مدیریت می‌کنید (مثل EC2). <strong>Data Source:</strong> منبعی که فقط می‌خونید (مثل لیست AMIها).</div></div>
+            <div class="card"><div class="q">چطور State رو به اشتراک بگذارم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با <strong>Remote Backend</strong> مثل S3 + DynamoDB (برای قفل‌گذاری) یا Terraform Cloud.</div></div>
+            <div class="card"><div class="q">Module چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">مجموعه‌ای از منابع Terraform که به‌صورت یک بسته قابل استفاده‌ی مجدد (Reusable) تعریف میشن.</div></div>
+        </div>
+    </section>
+
+    <!-- 17. Nginx / Load Balancer / Reverse Proxy / Traefik -->
+    <section class="category-section" id="cat-nginx">
+        <div class="category-title">🌐 Nginx · Load Balancer · Reverse Proxy · Traefik <span class="count">۸ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Nginx چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">وب‌سرور و Reverse Proxy پرسرعت و سبک که برای Load Balancing، Cache و SSL Termination استفاده میشه.</div></div>
+            <div class="card"><div class="q">Reverse Proxy چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">سرور واسطه که درخواست‌های کلاینت رو دریافت و به سرورهای پشتیبان (Backend) هدایت می‌کنه. مزایا: Load Balancing، افزایش امنیت، Cache.</div></div>
+            <div class="card"><div class="q">تفاوت Reverse Proxy و Forward Proxy؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Forward Proxy:</strong> نماینده‌ی کلاینت (مثل VPN). <strong>Reverse Proxy:</strong> نماینده‌ی سرور (مثل Nginx برای Load Balancing).</div></div>
+            <div class="card"><div class="q">چطور Nginx رو برای Load Balancing تنظیم کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <code>upstream</code> و تعریف Backendها و سپس <code>proxy_pass</code> در <code>location</code>. همچنین متدهای <code>round-robin</code>, <code>least_conn</code>, <code>ip_hash</code>.</div></div>
+            <div class="card"><div class="q">تفاوت Nginx و Apache؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Nginx رویدادمحور (Event-Driven) و غیرهمزمان (Async) → مصرف منابع کمتر، مناسب ترافیک بالا. Apache پروسس/ترد محور → سنگین‌تر ولی پشتیبانی از ماژول‌های بیشتر.</div></div>
+            <div class="card"><div class="q">Traefik چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">Ingress Controller و Reverse Proxy مدرن برای Kubernetes و Docker که به‌صورت خودکار سرویس‌ها رو کشف (Service Discovery) و Route می‌کنه.</div></div>
+            <div class="card"><div class="q">تفاوت Traefik و Nginx Ingress؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Traefik کشف خودکار سرویس‌ها رو بهتر انجام میده و با Let's Encrypt یکپارچه‌ست. Nginx Ingress پایدارتر و پرکاربردتره، ولی تنظیمات دستی بیشتری نیاز داره.</div></div>
+            <div class="card"><div class="q">چطور Nginx رو برای SSL تنظیم کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>Let's Encrypt</strong> و Certbot یا تنظیم دستی گواهی در <code>ssl_certificate</code> و <code>ssl_certificate_key</code> و <code>listen 443 ssl</code>.</div></div>
+        </div>
+    </section>
+
+    <!-- 18. Istio -->
+    <section class="category-section" id="cat-istio">
+        <div class="category-title">🔀 Istio <span class="count">۴ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Istio چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Service Mesh متن‌باز برای مدیریت ارتباطات، امنیت و مشاهده‌پذیری میکروسرویس‌ها در Kubernetes.</div></div>
+            <div class="card"><div class="q">اجزای اصلی Istio؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><ul><li><strong>Envoy Proxy:</strong> Sidecar در کنار هر Pod.</li><li><strong>Pilot:</strong> مدیریت ترافیک و قوانین.</li><li><strong>Mixer:</strong> جمع‌آوری متریک و لاگ (در نسخه‌های جدید حذف شده).</li><li><strong>Citadel:</strong> مدیریت امنیت و گواهی‌ها (mTLS).</li></ul></div></div>
+            <div class="card"><div class="q">چطور از Istio برای Canary Deployment استفاده کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با <strong>VirtualService</strong> و <strong>DestinationRule</strong> ترافیک رو بین نسخه‌های مختلف (subset) تقسیم کنید: <code>weight: 90</code> برای v1 و <code>weight: 10</code> برای v2.</div></div>
+            <div class="card"><div class="q">تفاوت Istio و Linkerd؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Istio قدرتمندتر با قابلیت‌های بیشتر (مثل مدیریت ترافیک پیشرفته)، ولی سنگین‌تر. Linkerd سبک‌تر و ساده‌تر با تمرکز بر امنیت و مشاهده‌پذیری.</div></div>
+        </div>
+    </section>
+
+    <!-- 19. Testing -->
+    <section class="category-section" id="cat-test">
+        <div class="category-title">🧪 تست (Functional / Non-Functional / Selenium / JMeter / K6 / SonarQube) <span class="count">۱۲ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">تفاوت تست Functional و Non-Functional؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><strong>Functional:</strong> بررسی «چه کاری» سیستم انجام میده (Unit, Integration, System). <strong>Non-Functional:</strong> بررسی «چقدر خوب» انجام میده (Performance, Security, Usability).</div></div>
+            <div class="card"><div class="q">Unit Test چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">تست کوچک‌ترین واحد کد (معمولاً تابع یا متد) به‌صورت مجزا (ابزارها: JUnit, PyTest, NUnit).</div></div>
+            <div class="card"><div class="q">Integration Test چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">تست تعامل بین چندین ماژول یا سرویس (مثل ارتباط API با دیتابیس).</div></div>
+            <div class="card"><div class="q">Selenium چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">ابزار اتوماسیون تست مرورگر برای تست‌های End-to-End و Functional وب‌اپلیکیشن‌ها.</div></div>
+            <div class="card"><div class="q">تفاوت JMeter و K6؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>JMeter:</strong> قدیمی‌تر، UI محور، سنگین، مناسب تست‌های پیچیده. <strong>K6:</strong> مدرن، مبتنی بر کد (JavaScript)، سبک، مناسب CI/CD و تست‌های Performance خودکار.</div></div>
+            <div class="card"><div class="q">چطور تست Performance رو در CI/CD یکپارچه کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با ابزارهایی مثل K6 که به‌صورت CLI اجرا میشن، می‌تونید در Pipeline اجراشون کنید و در صورت شکست (مثلاً زمان پاسخ > ۲ ثانیه)، Pipeline رو Fail کنید.</div></div>
+            <div class="card"><div class="q">Smoke Testing چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">تست سریع برای اطمینان از اینکه قابلیت‌های حیاتی سیستم بعد از هر دیپلوی کار می‌کنن.</div></div>
+            <div class="card"><div class="q">Regression Testing چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">مطمئن میشه که تغییرات جدید، قابلیت‌های قبلی رو خراب نکردن (معمولاً با اجرای مجدد تست‌های قدیمی).</div></div>
+            <div class="card"><div class="q">SonarQube چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">ابزار تحلیل کد استاتیک (Static Code Analysis) برای پیدا کردن باگ‌ها، آسیب‌پذیری‌های امنیتی و بوی بد کد (Code Smell).</div></div>
+            <div class="card"><div class="q">چطور SonarQube رو با CI/CD یکپارچه کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با افزودن مرحله‌ی اسکن در Pipeline (مثلاً با <code>sonar-scanner</code>) و تعریف Quality Gate که در صورت شکست، Pipeline رو متوقف کنه.</div></div>
+            <div class="card"><div class="q">تفاوت Load و Stress Testing؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Load:</strong> تست با بار عادی (مثلاً ۱۰۰۰ کاربر همزمان). <strong>Stress:</strong> تست با بار فراتر از حد معمول برای پیدا کردن نقطه‌ی شکست.</div></div>
+            <div class="card"><div class="q">Endurance Testing چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">تست عملکرد سیستم تحت بار طولانی‌مدت (مثلاً ۷۲ ساعت) برای پیدا کردن نشتی حافظه (Memory Leak) یا مشکلات تدریجی.</div></div>
+        </div>
+    </section>
+
+    <!-- 20. Ceph / MinIO -->
+    <section class="category-section" id="cat-ceph">
+        <div class="category-title">💾 Ceph · MinIO <span class="count">۴ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Ceph چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">سیستم ذخیره‌سازی توزیع‌شده (Distributed Storage) که شامل Object Storage (RADOSGW)، Block Storage (RBD) و File System (CephFS) هست.</div></div>
+            <div class="card"><div class="q">MinIO چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">سرور Object Storage متن‌باز و سازگار با S3 API که سبک و مناسب برای محیط‌های Kubernetes و ابرهای خصوصی هست.</div></div>
+            <div class="card"><div class="q">تفاوت Ceph و MinIO؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>Ceph:</strong> کامل‌تر (پشتیبانی از Block و File System)، سنگین‌تر، مناسب محیط‌های بزرگ. <strong>MinIO:</strong> فقط Object Storage، سبک، ساده‌تر، مناسب کانتینرها.</div></div>
+            <div class="card"><div class="q">چطور از MinIO در Kubernetes استفاده کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">با <strong>MinIO Operator</strong> یا Helm Chart، می‌تونید MinIO رو روی K8s نصب کنید و از PVC برای ذخیره‌سازی داده‌ها استفاده کنید.</div></div>
+        </div>
+    </section>
+
+    <!-- 21. DevOps / GitOps / DevSecOps / LLMOps / MLOps -->
+    <section class="category-section" id="cat-devops">
+        <div class="category-title">🚀 DevOps · GitOps · DevSecOps · LLMOps · MLOps <span class="count">۱۰ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">DevOps چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">فرهنگ و روش‌کاری برای ادغام Dev و Ops به‌منظور افزایش سرعت تحویل، کیفیت و کاهش اصطکاک.</div></div>
+            <div class="card"><div class="q">GitOps چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">روش‌کاری که Git رو به‌عنوان <strong>منبع حقیقت (Single Source of Truth)</strong> برای زیرساخت و اپلیکیشن در نظر می‌گیره و تغییرات با Pull Request و Apply خودکار (مثل ArgoCD) انجام میشن.</div></div>
+            <div class="card"><div class="q">تفاوت DevOps و GitOps؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">DevOps فلسفه‌ست، GitOps یه پیاده‌سازی خاص از DevOps که بر <strong>Git</strong> به‌عنوان مرکز کنترل تأکید داره و معمولاً با Kubernetes و ArgoCD/Flux پیاده میشه.</div></div>
+            <div class="card"><div class="q">DevSecOps چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">DevOps + Security از ابتدای چرخه (Shift-Left) با اسکن امنیتی در CI/CD و استفاده از ابزارهایی مثل Trivy, Snyk, OPA.</div></div>
+            <div class="card"><div class="q">MLOps چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">ترکیب DevOps با Machine Learning برای مدیریت چرخه‌ی حیات مدل‌ها (آموزش، نسخه‌بندی، Deploy و مانیتورینگ). ابزارها: Kubeflow, MLflow.</div></div>
+            <div class="card"><div class="q">LLMOps چیست؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">نسخه‌ی تخصصی MLOps برای مدل‌های بزرگ زبانی (Large Language Models) که شامل Fine-tuning, Prompt Engineering و مدیریت هزینه‌ها و داده‌های حجیم هست.</div></div>
+            <div class="card"><div class="q">تفاوت MLOps و DevOps؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">MLOps علاوه بر CI/CD، شامل <strong>مدل‌های داده</strong>، نسخه‌بندی داده‌ها (Data Versioning)، مانیتورینگ دrift مدل (Model Drift) و چالش‌های خاص ML مثل عدم قطعیت (Stochastic) هست.</div></div>
+            <div class="card"><div class="q">ArgoCD چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">ابزار GitOps برای Kubernetes که به‌صورت خودکار تغییرات موجود در Git رو به کلاستر Apply می‌کنه و وضعیت (Sync) رو مانیتور می‌کنه.</div></div>
+            <div class="card"><div class="q">تفاوت ArgoCD و FluxCD؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">ArgoCD امکانات UI و مدیریت پیشرفته‌تر داره. FluxCD سبک‌تر و ساده‌تر، با رویکرد سورس‌محور (Source-controller). هر دو GitOps هستند.</div></div>
+            <div class="card"><div class="q">چطور DevSecOps رو در CI/CD پیاده کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با اضافه کردن مراحل اسکن امنیتی (SAST با SonarQube، اسکن وابستگی‌ها با Snyk، اسکن ایمیج با Trivy، اسکن زیرساخت با Checkov) و Quality Gate برای جلوگیری از انتشار کد ناامن.</div></div>
+        </div>
+    </section>
+
+    <!-- 22. Bash / Python / Linux / Git -->
+    <section class="category-section" id="cat-bash">
+        <div class="category-title">🐚 Bash · Python · Linux · Git <span class="count">۱۰ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">تفاوت Bash و Shell؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><strong>Shell:</strong> رابط خط فرمان (مثل sh, zsh). <strong>Bash:</strong> نوعی از Shell (Bourne Again SHell) که محبوب‌ترین در لینوکس است.</div></div>
+            <div class="card"><div class="q">چطور یک فایل لاگ رو به‌صورت زنده (Real-time) ببینم؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">با <code>tail -f /path/to/log</code> (دنبال کردن زنده).</div></div>
+            <div class="card"><div class="q">چطور تمام فرآیندهای در حال اجرا رو ببینم؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><code>ps aux</code> یا <code>top</code> یا <code>htop</code>.</div></div>
+            <div class="card"><div class="q">چطور یک دایرکتوری رو به‌صورت بازگشتی (Recursive) حذف کنم؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><code>rm -rf /path/to/dir</code> (بسیار با احتیاط!).</div></div>
+            <div class="card"><div class="q">Python در DevOps چه کاربردی داره؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">نوشتن اسکریپت‌های اتوماسیون، مدیریت APIهای ابری، ساخت ابزارهای سفارشی، تحلیل داده و لاگ، و استفاده با ابزارهایی مثل Ansible (که با Python نوشته شده).</div></div>
+            <div class="card"><div class="q">Git مخفف چیه و چطور کار می‌کنه؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">سیستم کنترل نسخه (VCS) توزیع‌شده که تغییرات کد رو مدیریت می‌کنه و امکان همزمانی تیم‌ها رو فراهم می‌کنه.</div></div>
+            <div class="card"><div class="q">تفاوت `git pull` و `git fetch`؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><code>git fetch</code> فقط تغییرات رو از remote دریافت می‌کنه (بدون Merge). <code>git pull</code> = <code>git fetch</code> + <code>git merge</code>.</div></div>
+            <div class="card"><div class="q">چطور یک Conflict در Git رو حل کنم؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">فایل‌های Conflict رو باز کنید، قسمت‌های مشخص‌شده با <code><<<<<<<</code> و <code>>>>>>>></code> رو ویرایش کنید، سپس <code>git add</code> و <code>git commit</code> کنید.</div></div>
+            <div class="card"><div class="q">تفاوت `git reset` و `git revert`؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><code>git revert</code> یک کامیت جدید برای خنثی‌سازی ایجاد می‌کنه (ایمن برای شاخه‌های عمومی). <code>git reset</code> تاریخچه رو بازنویسی می‌کنه (فقط برای شاخه‌های شخصی).</div></div>
+            <div class="card"><div class="q">چطور یک Branch جدید ایجاد کنم و بهش سوئیچ کنم؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a"><code>git checkout -b new-branch</code> یا <code>git branch new-branch</code> و سپس <code>git checkout new-branch</code>.</div></div>
+        </div>
+    </section>
+
+    <!-- 23. Scrum / Agile -->
+    <section class="category-section" id="cat-scrum">
+        <div class="category-title">📋 Scrum · Agile <span class="count">۴ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">Agile چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">روش‌شناسی توسعه نرم‌افزار با رویکرد چابک، مبتنی بر تکرارهای کوتاه (Sprint) و بازخورد مداوم.</div></div>
+            <div class="card"><div class="q">Scrum چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">چارچوبی از Agile شامل نقش‌های (Product Owner, Scrum Master, Team)، مراسم‌ها (Sprint Planning, Daily Standup, Review, Retrospective) و مصنوعات (Product Backlog, Sprint Backlog).</div></div>
+            <div class="card"><div class="q">تفاوت Scrum و Kanban؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>Scrum:</strong> مبتنی بر Sprintهای زمان‌بندی‌شده (Fixed Length). <strong>Kanban:</strong> مبتنی بر جریان مداوم (Continuous Flow) با محدودیت Work In Progress (WIP).</div></div>
+            <div class="card"><div class="q">DevOps و Agile چه ارتباطی دارند؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">Agile روی <strong>توسعه</strong> (Dev) تمرکز داره، DevOps این چابکی رو به <strong>عملیات</strong> (Ops) و <strong>تحویل</strong> (Delivery) هم گسترش میده تا کل چرخه‌ی حیات نرم‌افزار چابک بشه.</div></div>
+        </div>
+    </section>
+
+    <!-- 24. RabbitMQ / Kafka -->
+    <section class="category-section" id="cat-rabbit">
+        <div class="category-title">📨 RabbitMQ · Kafka <span class="count">۶ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">RabbitMQ چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">Message Broker (واسط پیام‌رسانی) مبتنی بر پروتکل AMQP که برای ارتباط ناهمگام (Asynchronous) بین سرویس‌ها استفاده میشه.</div></div>
+            <div class="card"><div class="q">Kafka چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">پلتفرم استریمینگ (Streaming) توزیع‌شده برای پردازش داده‌های بلادرنگ (Real-time) با قابلیت ذخیره‌سازی طولانی‌مدت (Log-based).</div></div>
+            <div class="card"><div class="q">تفاوت RabbitMQ و Kafka؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>RabbitMQ:</strong> مبتنی بر Queue، پیام‌ها بعد از مصرف حذف میشن، مناسب کارهای سبک و درخواست‌های فوری. <strong>Kafka:</strong> مبتنی بر Topic و Log، پیام‌ها برای مدت طولانی نگهداری میشن، مناسب پردازش داده‌های حجیم و Event Sourcing.</div></div>
+            <div class="card"><div class="q">چطور Kafka رو در Kubernetes اجرا کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با <strong>Strimzi</strong> (Operator) یا <strong>Confluent for Kubernetes</strong> که مدیریت Kafka روی K8s رو ساده می‌کنن.</div></div>
+            <div class="card"><div class="q">چطور از RabbitMQ در میکروسرویس‌ها استفاده کنم؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">با تعریف <strong>Producer</strong> (فرستنده) و <strong>Consumer</strong> (گیرنده) و استفاده از <strong>Exchange</strong> و <strong>Queue</strong> برای مسیریابی پیام‌ها.</div></div>
+            <div class="card"><div class="q">تفاوت Topic و Queue در messaging؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>Queue:</strong> پیام به یک Consumer تحویل داده میشه (Point-to-Point). <strong>Topic:</strong> پیام به چندین Consumer تحویل داده میشه (Publish-Subscribe).</div></div>
+        </div>
+    </section>
+
+    <!-- 25. Microservice / Monolithic / RESTful / GraphQL / gRPC / HTTP / WebSocket / Webhook -->
+    <section class="category-section" id="cat-micro">
+        <div class="category-title">🏛️ معماری · پروتکل‌ها <span class="count">۱۰ سوال</span></div>
+        <div class="card-grid">
+            <div class="card"><div class="q">تفاوت Monolithic و Microservices؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a"><strong>Monolithic:</strong> همه‌ی اجزا در یک اپلیکیشن واحد (ساده، دیپلوی آسان، مقیاس‌پذیری سخت). <strong>Microservices:</strong> هر سرویس به‌صورت مستقل (مقیاس‌پذیری بالا، پیچیدگی شبکه).</div></div>
+            <div class="card"><div class="q">RESTful چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">معماری API مبتنی بر HTTP و متدهای (GET, POST, PUT, DELETE) با داده‌های JSON/XML و Stateless.</div></div>
+            <div class="card"><div class="q">GraphQL چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">زبان پرسش (Query Language) برای APIها که به کلاینت اجازه میده دقیقاً داده‌های موردنیاز رو درخواست کنه (بدون Over-fetching).</div></div>
+            <div class="card"><div class="q">تفاوت REST و GraphQL؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>REST:</strong> چندین Endpoint با داده‌های ثابت. <strong>GraphQL:</strong> یک Endpoint با Queryهای سفارشی (انعطاف بیشتر، کاهش تعداد درخواست‌ها).</div></div>
+            <div class="card"><div class="q">gRPC چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">فریم‌ورک RPC پرسرعت از گوگل که از Protocol Buffer (باینری) و HTTP/2 استفاده می‌کنه. مناسب ارتباط داخلی میکروسرویس‌ها.</div></div>
+            <div class="card"><div class="q">تفاوت HTTP/1.1 و HTTP/2؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a"><strong>HTTP/2:</strong> مولتی‌پلکسینگ (چندین درخواست همزمان روی یک کانال)، فشرده‌سازی هدر، Server Push، سرعت بالاتر.</div></div>
+            <div class="card"><div class="q">WebSocket چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">پروتکل ارتباط دوطرفه (Full-Duplex) روی یک کانال TCP که برای اپلیکیشن‌های بلادرنگ (مثل چت، بازی) استفاده میشه.</div></div>
+            <div class="card"><div class="q">تفاوت WebSocket و HTTP؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">HTTP درخواست-پاسخ (Request-Response) و Stateless. WebSocket ارتباط دائمی (Persistent) و دوطرفه با تاخیر کم (Low Latency).</div></div>
+            <div class="card"><div class="q">Webhook چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">مکانیزمی که یک اپلیکیشن به‌صورت خودکار به اپلیکیشن دیگه در پاسخ به یه رویداد (Event) درخواست HTTP می‌فرسته (مثل تریگر Pipeline با Push به Git).</div></div>
+            <div class="card"><div class="q">تفاوت Webhook و API؟ <span class="badge-level badge-senior">سینیور</span></div><div class="a">API یک رابط (Interface) برای درخواست‌های کلاینت به سرور هست. Webhook یک Callback HTTP هست که سرور به‌صورت خودکار به کلاینت اطلاع میده (معکوس API).</div></div>
+        </div>
+    </section>
+
+    <!-- ====================================================================== -->
+    <!-- فوتر -->
+    <footer style="margin-top: 3rem; padding: 1.5rem; background: white; border-radius: 28px; border: 1px solid #e2eaf1; text-align: center; color: #475569;">
+        <p style="font-size: 1.1rem; font-weight: 600; color: #0b2b4f;">📌 این مرجع شامل <strong>۲۰۰+ سوال</strong> در ۲۲ دسته‌بندی تخصصی است.</p>
+        <p style="font-size: 0.95rem;">✅ قابل استفاده برای تمام سطوح (Junior / Mid / Senior) · مناسب ذخیره در Git و مرور سریع</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #64748b;">🚀 موفق باشید! هر سوالی که اینجا باشه، دیگه غافلگیر نمی‌شید.</p>
     </footer>
 
 </div>
