@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جامع‌ترین بانک سوالات DevOps (۲۰۰+ سوال)</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -25,22 +27,24 @@
         .main-header {
             background: white;
             border-radius: 28px;
-            padding: 2rem 2.5rem;
-            margin-bottom: 2.5rem;
+            padding: 1.8rem 2.5rem;
+            margin-bottom: 2rem;
             box-shadow: 0 8px 30px rgba(0,0,0,0.04);
             border: 1px solid #e2eaf1;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
         }
-        .main-header h1 {
-            font-size: 2.5rem;
+        .main-header .brand h1 {
+            font-size: 2rem;
             font-weight: 800;
             color: #0b2b4f;
         }
-        .main-header h1 span { color: #1d4ed8; }
-        .main-header .sub {
+        .main-header .brand h1 span { color: #1d4ed8; }
+        .main-header .brand .sub {
             color: #475569;
-            margin-top: 0.3rem;
-            font-size: 1.05rem;
+            font-size: 0.9rem;
         }
         .badge-level {
             display: inline-block;
@@ -49,43 +53,140 @@
             font-size: 0.65rem;
             font-weight: 700;
             letter-spacing: 0.3px;
-            margin-right: 0.5rem;
+            margin-right: 0.3rem;
         }
         .badge-junior { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
         .badge-mid { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
         .badge-senior { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
 
-        /* فیلتر دسته‌بندی */
-        .filter-nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.5rem 0.8rem;
-            background: white;
-            padding: 1rem 1.8rem;
-            border-radius: 60px;
-            margin-bottom: 2.5rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-            border: 1px solid #e9edf4;
-        }
-        .filter-nav a {
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #1e293b;
-            padding: 0.25rem 1rem;
-            border-radius: 40px;
+        /* ============ DRAWER TOGGLE ============ */
+        .drawer-toggle {
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #0b2b4f;
+            cursor: pointer;
+            padding: 0.3rem 0.8rem;
+            border-radius: 12px;
             transition: 0.2s;
-            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        .filter-nav a:hover {
+        .drawer-toggle:hover {
+            background: #eef2f8;
+        }
+        .drawer-toggle .badge-count {
             background: #1d4ed8;
             color: white;
-            border-color: #1d4ed8;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.1rem 0.6rem;
+            border-radius: 40px;
         }
-        .filter-nav .sep { color: #cbd5e1; font-weight: 300; }
 
-        /* دسته‌بندی */
+        /* ============ DRAWER (off-canvas) ============ */
+        .drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(3px);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .drawer-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .drawer {
+            position: fixed;
+            top: 0;
+            right: -420px;
+            width: 400px;
+            max-width: 85vw;
+            height: 100vh;
+            background: #ffffff;
+            box-shadow: -10px 0 40px rgba(0,0,0,0.08);
+            z-index: 1000;
+            padding: 1.8rem 1.2rem;
+            overflow-y: auto;
+            transition: right 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            border-left: 1px solid #e2eaf1;
+        }
+        .drawer.open {
+            right: 0;
+        }
+        .drawer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eef2f8;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .drawer-header h2 {
+            font-size: 1.2rem;
+            color: #0b2b4f;
+        }
+        .drawer-header .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            color: #94a3b8;
+            cursor: pointer;
+            padding: 0 0.5rem;
+        }
+        .drawer-header .close-btn:hover { color: #ef4444; }
+
+        .drawer-category {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.6rem 1rem;
+            border-radius: 14px;
+            color: #1e293b;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: 0.15s;
+            border: 1px solid transparent;
+            margin-bottom: 0.2rem;
+        }
+        .drawer-category i {
+            width: 24px;
+            text-align: center;
+            color: #1d4ed8;
+            font-size: 1.1rem;
+        }
+        .drawer-category:hover {
+            background: #f1f5f9;
+            border-color: #dbe3ef;
+        }
+        .drawer-category .cat-badge {
+            margin-right: auto;
+            font-size: 0.6rem;
+            background: #e9edf4;
+            padding: 0.05rem 0.6rem;
+            border-radius: 30px;
+            color: #475569;
+        }
+        .drawer-category .level-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 0.3rem;
+        }
+        .dot-junior { background: #22c55e; }
+        .dot-mid { background: #eab308; }
+        .dot-senior { background: #ef4444; }
+
+        /* ============ کارت‌ها ============ */
         .category-section {
             margin-bottom: 2.5rem;
         }
@@ -109,8 +210,6 @@
             font-weight: 600;
             color: #475569;
         }
-
-        /* گرید کارت‌ها */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
@@ -156,64 +255,74 @@
             font-size: 0.8rem;
             border: 1px solid #e2e8f0;
         }
-        .tag {
-            display: inline-block;
-            font-size: 0.6rem;
-            background: #eef2ff;
-            color: #1d4ed8;
-            padding: 0.05rem 0.7rem;
-            border-radius: 30px;
-            font-weight: 600;
-            border: 1px solid #d1ddfa;
-        }
+
+        /* اسکرول مخفی برای دراور */
+        .drawer::-webkit-scrollbar { width: 4px; }
+        .drawer::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
 
         @media (max-width: 700px) {
-            .main-header h1 { font-size: 1.6rem; }
-            .filter-nav { border-radius: 30px; padding: 0.8rem; }
+            .main-header .brand h1 { font-size: 1.4rem; }
             .card-grid { grid-template-columns: 1fr; }
+            .drawer { width: 90vw; right: -95vw; }
         }
         @media print {
+            .drawer-overlay, .drawer, .drawer-toggle { display: none; }
             body { background: white; padding: 0.3in; }
-            .card { break-inside: avoid; border: 1px solid #ccc; box-shadow: none; }
-            .filter-nav { display: none; }
+            .card { break-inside: avoid; border: 1px solid #ccc; }
         }
     </style>
 </head>
 <body>
 <div class="container">
 
-    <!-- هدر -->
+    <!-- ====== هدر با دکمه‌ی همبرگری ====== -->
     <header class="main-header">
-        <h1>📚 <span>۲۰۰+</span> سوال مصاحبه DevOps</h1>
-        <div style="margin-top: 0.6rem;">
-            <span class="badge-level badge-junior">🌱 جونیور</span>
-            <span class="badge-level badge-mid">⚡ میدلول</span>
-            <span class="badge-level badge-senior">🧠 سینیور</span>
+        <div class="brand">
+            <h1>📚 <span>۲۰۰+</span> سوال DevOps</h1>
+            <div class="sub">۲۲ دسته · Junior / Mid / Senior</div>
         </div>
+        <button class="drawer-toggle" id="drawerToggle" aria-label="باز کردن منوی دسته‌ها">
+            <i class="fas fa-bars"></i>
+            <span class="badge-count">۲۲</span>
+        </button>
     </header>
 
-    <!-- ناوبری دسته‌ها -->
-    <nav class="filter-nav" id="navTop">
-        <a href="#cat-jenkins">Jenkins</a><span class="sep">|</span>
-        <a href="#cat-gitlab">GitLab CI</a><span class="sep">|</span>
-        <a href="#cat-github">GitHub Action</a><span class="sep">|</span>
-        <a href="#cat-prom">Prometheus</a><span class="sep">|</span>
-        <a href="#cat-grafana">Grafana</a><span class="sep">|</span>
-        <a href="#cat-elk">ELK</a><span class="sep">|</span>
-        <a href="#cat-loki">Loki</a><span class="sep">|</span>
-        <a href="#cat-splunk">Splunk</a><span class="sep">|</span>
-        <a href="#cat-aws">AWS</a><span class="sep">|</span>
-        <a href="#cat-azure">Azure</a><span class="sep">|</span>
-        <a href="#cat-gcp">GCP</a><span class="sep">|</span>
-        <a href="#cat-k8s">Kubernetes</a><span class="sep">|</span>
-        <a href="#cat-docker">Docker</a><span class="sep">|</span>
-        <a href="#cat-compose">Compose</a><span class="sep">|</span>
-        <a href="#cat-ansible">Ansible</a><span class="sep">|</span>
-        <a href="#cat-terraform">Terraform</a><span class="sep">|</span>
-        <a href="#cat-nginx">Nginx</a><span class="sep">|</span>
-        <a href="#cat-istio">Istio</a><span class="sep">|</span>
-        <a href="#cat-test">Testing</a><span class="sep">|</span>
-        <a href="#cat-devops">DevOps</a>
+    <!-- ====== DRAWER OVERLAY ====== -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- ====== DRAWER ====== -->
+    <nav class="drawer" id="drawerNav">
+        <div class="drawer-header">
+            <h2><i class="fas fa-layer-group" style="color:#1d4ed8;"></i> دسته‌بندی سوالات</h2>
+            <button class="close-btn" id="drawerClose"><i class="fas fa-times"></i></button>
+        </div>
+
+        <!-- آیتم‌های دراور با آیکون و لوگو -->
+        <a href="#cat-jenkins" class="drawer-category"><i class="fab fa-jenkins"></i> Jenkins <span class="cat-badge">۱۰</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-gitlab" class="drawer-category"><i class="fab fa-gitlab"></i> GitLab CI <span class="cat-badge">۸</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-github" class="drawer-category"><i class="fab fa-github"></i> GitHub Action <span class="cat-badge">۷</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-prom" class="drawer-category"><i class="fas fa-chart-line"></i> Prometheus <span class="cat-badge">۶</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-grafana" class="drawer-category"><i class="fas fa-chart-pie"></i> Grafana <span class="cat-badge">۵</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-elk" class="drawer-category"><i class="fas fa-database"></i> ELK Stack <span class="cat-badge">۶</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-loki" class="drawer-category"><i class="fas fa-tree"></i> Loki <span class="cat-badge">۴</span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-splunk" class="drawer-category"><i class="fas fa-search"></i> Splunk <span class="cat-badge">۴</span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-aws" class="drawer-category"><i class="fab fa-aws"></i> AWS <span class="cat-badge">۱۰</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-azure" class="drawer-category"><i class="fab fa-microsoft"></i> Azure <span class="cat-badge">۶</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-gcp" class="drawer-category"><i class="fab fa-google"></i> GCP <span class="cat-badge">۶</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-k8s" class="drawer-category"><i class="fas fa-cubes"></i> Kubernetes <span class="cat-badge">۱۲</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-docker" class="drawer-category"><i class="fab fa-docker"></i> Docker <span class="cat-badge">۸</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-compose" class="drawer-category"><i class="fas fa-project-diagram"></i> Docker Compose <span class="cat-badge">۵</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-ansible" class="drawer-category"><i class="fas fa-cogs"></i> Ansible <span class="cat-badge">۶</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-terraform" class="drawer-category"><i class="fas fa-cloud-upload-alt"></i> Terraform <span class="cat-badge">۷</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-nginx" class="drawer-category"><i class="fas fa-server"></i> Nginx / LB / Traefik <span class="cat-badge">۸</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-istio" class="drawer-category"><i class="fas fa-network-wired"></i> Istio <span class="cat-badge">۴</span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-test" class="drawer-category"><i class="fas fa-vial"></i> Testing <span class="cat-badge">۱۲</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-ceph" class="drawer-category"><i class="fas fa-hdd"></i> Ceph / MinIO <span class="cat-badge">۴</span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-devops" class="drawer-category"><i class="fas fa-rocket"></i> DevOps / GitOps / MLOps <span class="cat-badge">۱۰</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-bash" class="drawer-category"><i class="fas fa-terminal"></i> Bash / Python / Linux / Git <span class="cat-badge">۱۰</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-scrum" class="drawer-category"><i class="fas fa-tasks"></i> Scrum / Agile <span class="cat-badge">۴</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-rabbit" class="drawer-category"><i class="fas fa-comment-dots"></i> RabbitMQ / Kafka <span class="cat-badge">۶</span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
+        <a href="#cat-micro" class="drawer-category"><i class="fas fa-code-branch"></i> معماری &amp; پروتکل‌ها <span class="cat-badge">۱۰</span><span class="level-dot dot-junior"></span><span class="level-dot dot-mid"></span><span class="level-dot dot-senior"></span></a>
     </nav>
 
     <!-- ====================================================================== -->
@@ -441,7 +550,7 @@
 
     <!-- 17. Nginx / Load Balancer / Reverse Proxy / Traefik -->
     <section class="category-section" id="cat-nginx">
-        <div class="category-title">🌐 Nginx · Load Balancer · Reverse Proxy · Traefik <span class="count">۸ سوال</span></div>
+        <div class="category-title">🌐 Nginx · LB · Reverse Proxy · Traefik <span class="count">۸ سوال</span></div>
         <div class="card-grid">
             <div class="card"><div class="q">Nginx چیست؟ <span class="badge-level badge-junior">جونیور</span></div><div class="a">وب‌سرور و Reverse Proxy پرسرعت و سبک که برای Load Balancing، Cache و SSL Termination استفاده میشه.</div></div>
             <div class="card"><div class="q">Reverse Proxy چیست؟ <span class="badge-level badge-mid">میدلول</span></div><div class="a">سرور واسطه که درخواست‌های کلاینت رو دریافت و به سرورهای پشتیبان (Backend) هدایت می‌کنه. مزایا: Load Balancing، افزایش امنیت، Cache.</div></div>
@@ -553,7 +662,7 @@
         </div>
     </section>
 
-    <!-- 25. Microservice / Monolithic / RESTful / GraphQL / gRPC / HTTP / WebSocket / Webhook -->
+    <!-- 25. معماری و پروتکل‌ها -->
     <section class="category-section" id="cat-micro">
         <div class="category-title">🏛️ معماری · پروتکل‌ها <span class="count">۱۰ سوال</span></div>
         <div class="card-grid">
@@ -570,6 +679,51 @@
         </div>
     </section>
 
-</div>
+</div> <!-- end container -->
+
+<script>
+    (function() {
+        const drawer = document.getElementById('drawerNav');
+        const overlay = document.getElementById('drawerOverlay');
+        const toggleBtn = document.getElementById('drawerToggle');
+        const closeBtn = document.getElementById('drawerClose');
+
+        function openDrawer() {
+            drawer.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeDrawer() {
+            drawer.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        toggleBtn.addEventListener('click', openDrawer);
+        closeBtn.addEventListener('click', closeDrawer);
+        overlay.addEventListener('click', closeDrawer);
+
+        // بستن دراور با کلیک روی هر آیتم منو (اسکرول به بخش مربوطه)
+        document.querySelectorAll('.drawer-category').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                closeDrawer();
+                // اسکرول نرم به بخش مورد نظر
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId.startsWith('#')) {
+                    e.preventDefault();
+                    const targetEl = document.querySelector(targetId);
+                    if (targetEl) {
+                        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // بستن با کلید ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeDrawer();
+        });
+    })();
+</script>
 </body>
 </html>
